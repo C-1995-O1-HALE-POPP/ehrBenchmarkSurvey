@@ -1,0 +1,1021 @@
+last_updated: '2026-04-15'
+benchmarks:
+- canonical_name: EHR-Bench
+  aliases: []
+  benchmark_type: 'mixed: decision making + risk prediction'
+  source_system: MIMIC-IV
+  task_families:
+  - decision making
+  - risk prediction
+  source_papers:
+  - title: 'EHR-R1: A Reasoning-Enhanced Foundational Language Model'
+    year: 2025
+    url: https://arxiv.org/pdf/2510.25628
+    role_in_paper: primary in-distribution benchmark introduced and used by the paper
+  - title: 'EHR-R1: A Reasoning-Enhanced Foundational Language Model for Electronic Health Record Analysis'
+    year: 2025
+    url: https://arxiv.org/abs/2510.25628
+    role_in_paper: primary benchmark
+  notes: Benchmark spans 42 tasks across 12 subtypes according to the paper.
+- canonical_name: MIMIC-IV-CDM
+  aliases:
+  - MIMIC-IV Clinical Decision Making
+  - MIMIC-IV CDM
+  benchmark_type: decision making
+  source_system: MIMIC-IV
+  task_families:
+  - disease diagnosis
+  - decision making
+  source_papers:
+  - title: 'EHR-R1: A Reasoning-Enhanced Foundational Language Model'
+    year: 2025
+    url: https://arxiv.org/pdf/2510.25628
+    role_in_paper: generalization benchmark
+  - title: 'EHR-R1: A Reasoning-Enhanced Foundational Language Model for Electronic Health Record Analysis'
+    year: 2025
+    url: https://arxiv.org/abs/2510.25628
+    role_in_paper: generalization benchmark
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: Used for cross-task-formulation generalization; the paper evaluates main disease diagnosis and ICD-level diagnosis. BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: EHRSHOT
+  aliases: []
+  benchmark_type: risk prediction
+  source_system: Stanford Medicine EHR
+  task_families:
+  - operational outcomes
+  - lab result anticipation
+  - new diagnosis prediction
+  - risk prediction
+  - risk prediction + code generation
+  source_papers:
+  - title: 'EHR-R1: A Reasoning-Enhanced Foundational Language Model'
+    year: 2025
+    url: https://arxiv.org/pdf/2510.25628
+    role_in_paper: out-of-distribution generalization benchmark
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: benchmark used in paper
+  - title: 'EHR-R1: A Reasoning-Enhanced Foundational Language Model for Electronic Health Record Analysis'
+    year: 2025
+    url: https://arxiv.org/abs/2510.25628
+    role_in_paper: out-of-distribution generalization benchmark
+  notes: Public portion described in the paper as covering 7,000 patients and 14 risk-prediction tasks.
+- canonical_name: HealthBench
+  aliases: []
+  benchmark_type: generation + rubric evaluation
+  source_system: Mixed health conversation sources (synthetic pipeline + physician red-teaming + HealthSearchQA-derived conversations)
+  task_families:
+  - generation + rubric evaluation
+  source_papers:
+  - title: 'HealthBench: Evaluating Large Language Models Towards Improved Human Health'
+    year: 2025
+    url: https://arxiv.org/abs/2505.08775
+    role_in_paper: primary benchmark
+  notes: Primary benchmark introduced by the paper; 5,000 conversations and physician-written rubric evaluation.
+- canonical_name: HealthBench Consensus
+  aliases: []
+  benchmark_type: 'mixed: generation + rubric evaluation + classification (met / not-met)'
+  source_system: HealthBench subset with consensus criteria
+  task_families:
+  - generation + rubric evaluation
+  - classification (met / not-met)
+  source_papers:
+  - title: 'HealthBench: Evaluating Large Language Models Towards Improved Human Health'
+    year: 2025
+    url: https://arxiv.org/abs/2505.08775
+    role_in_paper: benchmark used in paper
+  notes: Subset of HealthBench retaining only consensus criteria; 3,671 examples with at least one positive consensus criterion.
+- canonical_name: HealthBench Hard
+  aliases: []
+  benchmark_type: generation + rubric evaluation
+  source_system: HealthBench difficulty-selected subset
+  task_families:
+  - generation + rubric evaluation
+  source_papers:
+  - title: 'HealthBench: Evaluating Large Language Models Towards Improved Human Health'
+    year: 2025
+    url: https://arxiv.org/abs/2505.08775
+    role_in_paper: benchmark used in paper
+  notes: Subset of 1,000 difficult HealthBench examples selected by low average score across multiple frontier models.
+- canonical_name: FHIR-AgentBench
+  aliases: []
+  benchmark_type: 'mixed: retrieval + qa grounding + qa + generation'
+  source_system: MIMIC-IV
+  task_families:
+  - retrieval + qa grounding
+  - qa + generation
+  source_papers:
+  - title: 'FHIR-AgentBench: Benchmarking LLM Agents for Realistic Interoperable EHR Question Answering'
+    year: 2025
+    url: https://arxiv.org/abs/2509.19319
+    role_in_paper: primary benchmark
+  notes: ''
+- canonical_name: MIMICSQL
+  aliases: []
+  benchmark_type: generation
+  source_system: MIMIC
+  task_families:
+  - generation
+  - generation (zero-shot transfer evaluation)
+  source_papers:
+  - title: Text-to-SQL Generation for Question Answering on Electronic Medical Records
+    year: 2019
+    url: https://arxiv.org/abs/1908.01839
+    role_in_paper: primary benchmark
+  - title: 'EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records'
+    year: 2023
+    url: https://arxiv.org/abs/2301.07695
+    role_in_paper: benchmark used in paper
+  notes: ''
+- canonical_name: EHRSQL 2024 Shared Task
+  aliases: []
+  benchmark_type: text-to-sql generation + selective prediction (abstention) / qa
+  source_system: MIMIC-IV
+  task_families:
+  - text-to-sql generation + selective prediction (abstention) / qa
+  source_papers:
+  - title: Overview of the EHRSQL 2024 Shared Task on Reliable Text-to-SQL Modeling on Electronic Health Records
+    year: 2024
+    url: https://arxiv.org/abs/2405.06673
+    role_in_paper: primary benchmark
+  notes: ''
+- canonical_name: MedAgentBench
+  aliases: []
+  benchmark_type: 'mixed: retrieval + retrieval + calculation + action execution + retrieval + conditional action'
+  source_system: De-identified STARR patient profiles deployed in a FHIR-compliant virtual EHR environment
+  task_families:
+  - retrieval
+  - retrieval + calculation
+  - action execution
+  - retrieval + conditional action
+  - tool-use agent task + code generation
+  source_papers:
+  - title: 'MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents'
+    year: 2025
+    url: https://arxiv.org/abs/2501.14654
+    role_in_paper: primary benchmark
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: benchmark used in paper
+  notes: Paper reports 300 clinician-written tasks grouped into 7 broad categories and evaluated with pass@1 task success rate.
+- canonical_name: EHRSQL
+  aliases: []
+  benchmark_type: 'mixed: generation + classification + classification + generation + execution-based evaluation'
+  source_system: MIMIC
+  task_families:
+  - generation + classification
+  - classification
+  - generation + execution-based evaluation
+  - semantic parsing + code generation
+  source_papers:
+  - title: 'EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records'
+    year: 2023
+    url: https://arxiv.org/abs/2301.07695
+    role_in_paper: primary benchmark
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: benchmark used in paper
+  notes: ''
+- canonical_name: MedAgentGym
+  aliases: []
+  benchmark_type: 'mixed: code generation + executable verification + code generation + classification + code generation + numeric prediction + code generation + tool-use planning + code generation + unit-test verification + code generation + workflow reproduction + risk prediction + code generation + code generation + statistical reasoning'
+  source_system: MIMIC
+  task_families:
+  - code generation + executable verification
+  - code generation + classification
+  - code generation + numeric prediction
+  - code generation + tool-use planning
+  - code generation + unit-test verification
+  - code generation + workflow reproduction
+  - risk prediction + code generation
+  - code generation + statistical reasoning
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: out-of-distribution generalization benchmark
+  notes: ''
+- canonical_name: TREQS
+  aliases: []
+  benchmark_type: semantic parsing + code generation
+  source_system: MIMIC
+  task_families:
+  - semantic parsing + code generation
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: benchmark used in paper
+  notes: ''
+- canonical_name: MedCalcBench
+  aliases: []
+  benchmark_type: numeric reasoning + code generation
+  source_system: ''
+  task_families:
+  - numeric reasoning + code generation
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: benchmark used in paper
+  notes: ''
+- canonical_name: BioCoder
+  aliases: []
+  benchmark_type: code generation
+  source_system: ''
+  task_families:
+  - code generation
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: benchmark used in paper
+  notes: ''
+- canonical_name: BioDSBench
+  aliases: []
+  benchmark_type: code generation + analytical reproduction
+  source_system: ''
+  task_families:
+  - code generation + analytical reproduction
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: benchmark used in paper
+  notes: ''
+- canonical_name: EHR-SeqSQL
+  aliases: []
+  benchmark_type: sequential semantic parsing + code generation
+  source_system: MIMIC
+  task_families:
+  - sequential semantic parsing + code generation
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: out-of-distribution generalization benchmark
+  notes: ''
+- canonical_name: EHRCon
+  aliases: []
+  benchmark_type: verification + code generation
+  source_system: ''
+  task_families:
+  - verification + code generation
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: out-of-distribution generalization benchmark
+  notes: ''
+- canonical_name: MIMIC-Extract
+  aliases: []
+  benchmark_type: risk prediction + code generation
+  source_system: MIMIC
+  task_families:
+  - risk prediction + code generation
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: out-of-distribution generalization benchmark
+  notes: ''
+- canonical_name: N-PowerAI
+  aliases: []
+  benchmark_type: statistical reasoning + code generation
+  source_system: ''
+  task_families:
+  - statistical reasoning + code generation
+  source_papers:
+  - title: 'MedAgentGym: A Scalable Agentic Training Environment for Code-Centric Reasoning in Biomedical Data Science'
+    year: 2025
+    url: https://arxiv.org/abs/2506.04405
+    role_in_paper: out-of-distribution generalization benchmark
+  notes: ''
+- canonical_name: EHR-ChatQA
+  aliases: []
+  benchmark_type: 'mixed: interactive qa + text-to-sql generation + interactive qa + conditional planning + text-to-sql generation'
+  source_system: MIMIC-IV
+  task_families:
+  - interactive qa + text-to-sql generation
+  - interactive qa + conditional planning + text-to-sql generation
+  source_papers:
+  - title: 'From Conversation to Query Execution: Benchmarking User and Tool Interactions for EHR Database Agents'
+    year: 2025
+    url: https://arxiv.org/abs/2509.23415
+    role_in_paper: primary benchmark
+  notes: ''
+- canonical_name: MIMIC-III Outcome
+  aliases: []
+  benchmark_type: text classification
+  source_system: MIMIC-III database
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 2 task(s).
+- canonical_name: MIMIC-IV BHC
+  aliases: []
+  benchmark_type: summarization
+  source_system: MIMIC-IV-Note dataset
+  task_families:
+  - summarization
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: MIMIC-IV DiReCT
+  aliases: []
+  benchmark_type: text classification
+  source_system: MIMIC-IV database
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 2 task(s).
+- canonical_name: ADE
+  aliases: []
+  benchmark_type: 'mixed: text classification + event extraction'
+  source_system: ADE
+  task_families:
+  - text classification
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 3 task(s).
+- canonical_name: BARR2
+  aliases: []
+  benchmark_type: event extraction
+  source_system: BARR2
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: BrainMRI-AIS
+  aliases: []
+  benchmark_type: text classification
+  source_system: Hallym University Sacred Heart Hospital in Korea
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: Brateca
+  aliases: []
+  benchmark_type: text classification
+  source_system: 10 hospitals across two Brazilian states
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 2 task(s). BRIDGE-new task reformulations: Brateca-Hospitalization, Brateca-Mortality.'
+- canonical_name: Cantemist
+  aliases: []
+  benchmark_type: 'mixed: normalization and coding + named entity recognition'
+  source_system: Cantemist
+  task_families:
+  - normalization and coding
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 3 task(s).
+- canonical_name: CARES
+  aliases: []
+  benchmark_type: 'mixed: text classification + normalization and coding'
+  source_system: CARES
+  task_families:
+  - text classification
+  - normalization and coding
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 4 task(s). BRIDGE-new task reformulations: CARES-Area, CARES ICD10 Block, CARES-ICD10 Sub-Block.'
+- canonical_name: CHIP-CDEE
+  aliases: []
+  benchmark_type: event extraction
+  source_system: disease history and imaging reports in Chinese EHRs
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: C-EMRS
+  aliases: []
+  benchmark_type: text classification
+  source_system: Huangshi Central Hospital
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 1 task(s). BRIDGE-new task reformulations: C-EMRS.'
+- canonical_name: CLEF eHealth 2020 - CodiEsp
+  aliases: []
+  benchmark_type: normalization and coding
+  source_system: the Barcelona Supercomputing Center
+  task_families:
+  - normalization and coding
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 2 task(s).
+- canonical_name: ClinicalNotes-UPMC
+  aliases: []
+  benchmark_type: text classification
+  source_system: the University of Pittsburgh Medical Center
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: Mexican Clinical Records
+  aliases: []
+  benchmark_type: text classification
+  source_system: the Mexican Social Security Institute (IMSS)
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: CLINpt
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: CLINpt
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: CLIP
+  aliases: []
+  benchmark_type: text classification
+  source_system: the popular clinical dataset MIMIC-III
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: cMedQA
+  aliases: []
+  benchmark_type: question answering
+  source_system: cMedQA
+  task_families:
+  - question answering
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: DialMed
+  aliases: []
+  benchmark_type: text classification
+  source_system: DialMed
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: DiSMed
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: the Medical Imaging Databank of the Valencian Region (BIMCV)
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: MIE
+  aliases: []
+  benchmark_type: event extraction
+  source_system: the Chunyu Doctor online platform
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: EHRQA
+  aliases: []
+  benchmark_type: 'mixed: text classification + question answering'
+  source_system: users and answers from doctors organized by medical departments
+  task_families:
+  - text classification
+  - question answering
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 3 task(s). BRIDGE-new task reformulations: EHRQA-Primary department, EHRQA-Sub department, EHRQA-QA.'
+- canonical_name: Ex4CDS
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: Ex4CDS
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 1 task(s). BRIDGE-new task reformulations: Ex4CDS.'
+- canonical_name: GOUT-CC
+  aliases: []
+  benchmark_type: text classification
+  source_system: records of an academic medical center in the southern United States
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 1 task(s). BRIDGE-new task reformulations: GOUT-CC-Consensus.'
+- canonical_name: n2c2 2006
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: Partners HealthCare
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: i2b2 2009
+  aliases: []
+  benchmark_type: event extraction
+  source_system: Partners Healthcare
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: i2b2 2010
+  aliases: []
+  benchmark_type: 'mixed: named entity recognition + event extraction'
+  source_system: Partners Healthcare
+  task_families:
+  - named entity recognition
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 3 task(s).
+- canonical_name: n2c2 2014 - De-identification
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: the Research Patient Data Repository of Partners Healthcare
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: IMCS-V2
+  aliases: []
+  benchmark_type: 'mixed: named entity recognition + event extraction + summarization + text classification'
+  source_system: an online medical consultation platform
+  task_families:
+  - named entity recognition
+  - event extraction
+  - summarization
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 4 task(s).
+- canonical_name: Japanese Case Reports
+  aliases: []
+  benchmark_type: semantic similarity
+  source_system: case reports extracted from the CiNii database
+  task_families:
+  - semantic similarity
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: meddocan
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: meddocan
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: MEDIQA_2019_Task2_RQE
+  aliases: []
+  benchmark_type: natural language inference
+  source_system: MEDIQA_2019_Task2_RQE
+  task_families:
+  - natural language inference
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: MedNLI
+  aliases: []
+  benchmark_type: natural language inference
+  source_system: the MIMIC-III v1
+  task_families:
+  - natural language inference
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: MedSTS
+  aliases: []
+  benchmark_type: semantic similarity
+  source_system: de-identified clinical notes at the Mayo Clinic
+  task_families:
+  - semantic similarity
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: mtsamples
+  aliases: []
+  benchmark_type: text classification
+  source_system: mtsamples
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: mtsamples-temporal
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: MTSamples
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: n2c2 2018 Track2
+  aliases: []
+  benchmark_type: event extraction
+  source_system: the MIMIC-III clinical care database
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: NorSynthClinical
+  aliases: []
+  benchmark_type: 'mixed: named entity recognition + event extraction'
+  source_system: NorSynthClinical
+  task_families:
+  - named entity recognition
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 2 task(s).
+- canonical_name: NUBES
+  aliases: []
+  benchmark_type: event extraction
+  source_system: anonymized health records provided by a Spanish private hospital
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 1 task(s). BRIDGE-new task reformulations: NUBES.'
+- canonical_name: MTS-Dialog-MEDIQA-2023
+  aliases: []
+  benchmark_type: 'mixed: summarization + text classification'
+  source_system: public MTSamples collection
+  task_families:
+  - summarization
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 3 task(s).
+- canonical_name: RuMedDaNet
+  aliases: []
+  benchmark_type: natural language inference
+  source_system: RuMedDaNet
+  task_families:
+  - natural language inference
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: CHIP-CDN
+  aliases: []
+  benchmark_type: normalization and coding
+  source_system: CHIP-CDN
+  task_families:
+  - normalization and coding
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: CHIP-CTC
+  aliases: []
+  benchmark_type: text classification
+  source_system: CHIP-CTC
+  task_families:
+  - text classification
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: CHIP-MDCFNPC
+  aliases: []
+  benchmark_type: event extraction
+  source_system: patient’s subjective complaint and the physician’s diagnostic assessment
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: MedDG
+  aliases: []
+  benchmark_type: question answering
+  source_system: Chinese online medical consultation platforms
+  task_families:
+  - question answering
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: n2c2 2014 - Heart Disease Challenge
+  aliases: []
+  benchmark_type: event extraction
+  source_system: 296 diabetic patients
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 5 task(s).
+- canonical_name: CAS
+  aliases: []
+  benchmark_type: 'mixed: event extraction + summarization'
+  source_system: CAS
+  task_families:
+  - event extraction
+  - summarization
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 2 task(s).
+- canonical_name: RuMedNLI
+  aliases: []
+  benchmark_type: natural language inference
+  source_system: RuMedNLI
+  task_families:
+  - natural language inference
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: RuDReC
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: the Russian drug review platform Otzovik
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: NorSynthClinical-PHI
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: NorSynthClinical-PHI
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: RuCCoN
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: RuCCoN
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: CLISTER
+  aliases: []
+  benchmark_type: semantic similarity
+  source_system: CLISTER
+  task_families:
+  - semantic similarity
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: BRONCO150
+  aliases: []
+  benchmark_type: event extraction
+  source_system: BRONCO150
+  task_families:
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: CARDIO:DE
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: CARDIO:DE
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: GraSSCo_PHI
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: GraSSCo_PHI
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: 'BRIDGE paper reuses this source dataset with 1 task(s). BRIDGE-new task reformulations: GraSSCo PHI.'
+- canonical_name: IFMIR
+  aliases: []
+  benchmark_type: 'mixed: text classification + named entity recognition + event extraction'
+  source_system: Japan Council for Quality Health (JQ)
+  task_families:
+  - text classification
+  - named entity recognition
+  - event extraction
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 3 task(s).
+- canonical_name: iCorpus
+  aliases: []
+  benchmark_type: named entity recognition
+  source_system: publicly accessible case reports sourced via J-STAGE
+  task_families:
+  - named entity recognition
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: icliniq-10k
+  aliases: []
+  benchmark_type: question answering
+  source_system: online medical consultation platforms
+  task_families:
+  - question answering
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).
+- canonical_name: HealthCareMagic-100k
+  aliases: []
+  benchmark_type: question answering
+  source_system: an online medical consultation platform
+  task_families:
+  - question answering
+  source_papers:
+  - title: 'BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text'
+    year: 2025
+    url: https://arxiv.org/abs/2504.19467
+    role_in_paper: benchmark used in paper under BRIDGE umbrella evaluation
+  notes: BRIDGE paper reuses this source dataset with 1 task(s).

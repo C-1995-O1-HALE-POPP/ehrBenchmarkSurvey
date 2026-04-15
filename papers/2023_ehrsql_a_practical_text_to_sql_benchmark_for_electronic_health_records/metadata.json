@@ -1,0 +1,12 @@
+{
+  "paper_key": "2023_ehrsql_a_practical_text_to_sql_benchmark_for_electronic_health_records",
+  "title": "EHRSQL: A Practical Text-to-SQL Benchmark for Electronic Health Records",
+  "year": 2023,
+  "paper_url": "https://arxiv.org/abs/2301.07695",
+  "pdf_url": "https://arxiv.org/pdf/2301.07695.pdf",
+  "input_url": "https://arxiv.org/pdf/2301.07695",
+  "summary_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/summaries/2023_ehrsql_a_practical_text_to_sql_benchmark_for_electronic_health_records_benchmark_summary.md",
+  "pdf_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2023_ehrsql_a_practical_text_to_sql_benchmark_for_electronic_health_records/source.pdf",
+  "text_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2023_ehrsql_a_practical_text_to_sql_benchmark_for_electronic_health_records/source.txt",
+  "created_on": "2026-04-15T13:57:26"
+}

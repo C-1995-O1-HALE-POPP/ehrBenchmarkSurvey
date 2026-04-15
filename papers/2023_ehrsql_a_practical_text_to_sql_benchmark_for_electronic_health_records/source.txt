@@ -1,0 +1,4398 @@
+arXiv:2301.07695v6 [cs.CL] 4 Mar 2026
+
+EHRSQL: A Practical Text-to-SQL Benchmark for
+Electronic Health Records
+Gyubok Lee1 , Hyeonji Hwang1 , Seongsu Bae1 , Yeonsu Kwon2 ,
+Woncheol Shin1 , Seongjun Yang1 , Minjoon Seo1 , Jongyeup Kim†, Edward Choi1
+KAIST, Daejeon1 Seoul Women’s University, Seoul2
+College of Medicine, Konyang University, Daejeon†
+{gyubok.lee,localh,seongsu,swc1905,seongjunyang,
+minjoon,edwardchoi}@kaist.ac.kr1
+dustn1259@swu.ac.kr2 , jykim@kyuh.ac.kr†
+
+Abstract
+We present a new text-to-SQL dataset for electronic health records (EHRs). The
+utterances were collected from 222 hospital staff members, including physicians,
+nurses, and insurance review and health records teams. To construct the QA dataset
+on structured EHR data, we conducted a poll at a university hospital and used
+the responses to create seed questions. We then manually linked these questions
+to two open-source EHR databases, MIMIC-III and eICU, and included various
+time expressions and held-out unanswerable questions in the dataset, which were
+also collected from the poll. Our dataset poses a unique set of challenges: the
+model needs to 1) generate SQL queries that reflect a wide range of needs in the
+hospital, including simple retrieval and complex operations such as calculating
+survival rate, 2) understand various time expressions to answer time-sensitive
+questions in healthcare, and 3) distinguish whether a given question is answerable
+or unanswerable. We believe our dataset, EHRSQL, can serve as a practical
+benchmark for developing and assessing QA models on structured EHR data and
+take a step further towards bridging the gap between text-to-SQL research and its
+real-life deployment in healthcare. EHRSQL is available at https://github.
+com/glee4810/EHRSQL.
+
+1
+
+Introduction
+
+Electronic health records (EHRs) are relational databases that store a patient’s entire medical history
+in the hospital. From hospital admission to patient treatment and discharge, all medical events
+that happened in the hospital are recorded and stored in the EHR. The records cover a wide range
+of clinical knowledge, from individual-level information to group-level insight, in various forms,
+including tables, text, and images [16, 17, 11, 15]. As a vast and comprehensive knowledge base,
+hospital staff, including physicians, nurses, and administrators, constantly interact with EHRs to store
+and retrieve patient information to make better clinical decisions [32, 3].
+Meanwhile, most hospital staff interact with the EHR database using pre-defined rule conversion
+systems. To look for information beyond the rules, one needs to undergo special training to modify
+and extend the system [32]. As a result, it is a massive bottleneck for the users to fully utilize the
+information stored in the EHR. An alternative way to tackle this problem is to build a system that
+can automatically translate questions directly into the corresponding SQL queries. Then, the users
+can simply type or verbally ask their questions to the system, and it will return the answers without
+going through any complicated process. Such systems will unleash the potential of EHR data and
+tremendously speed up any task involving data retrieval from the database.
+36th Conference on Neural Information Processing Systems (NeurIPS 2022) Track on Datasets and Benchmarks.
+
+Existing datasets that tackle question answering (QA) over structured EHR data are MIMICSQL [32]
+and emrKBQA [27]. MIMICSQL is the first dataset for healthcare QA on MIMIC-III [16], where the
+questions are automatically generated with pre-defined templates. emrKBQA is another dataset on
+MIMIC-III derived from emrQA [23], a clinical reading comprehension dataset. However, through a
+poll at a university hospital, we discover that the existing datasets are far from fulfilling the actual
+needs in the hospital workplace in several aspects.
+We present EHRSQL1 , a new large-scale text-to-SQL dataset linked to two open-source EHR
+databases—MIMIC-III [16] and eICU [25]. To the best of our knowledge, our work is the first
+EHR QA dataset that reflects the diverse needs of hospital staff while introducing practical issues in
+deploying healthcare QA systems. The unique challenges posed by our dataset are threefold:
+• Wide range of questions: We conducted a poll at a university hospital to collect questions
+frequently asked on structured EHR data. The total number of respondents was 222 people with
+varying years of experience in their professions (see Figure 1). After filtering and templatizing
+the responses, the resulting templates cover a wide range of questions, including retrieving
+patient records (e.g., vital signs measured and hospital cost) and conducting complex group-level
+operations (e.g., retrieving the top N medications prescribed after being diagnosed with a disease
+and calculating the N-year survival rate). See Table 1 for more examples.
+• Time-sensitive questions: Based on the poll, we learned that real-world questions in the hospital
+workplace are rich in time expressions, as time is one of the most crucial aspects of healthcare.
+To reflect this in the dataset, we systematically categorized time into multiple expression types
+(e.g., absolute, relative, and mixed), units (e.g., hospital visit, month, and day), and interval
+types (e.g., since, until, and in). Then, we combined the categorized time with the question
+templates to simulate time-sensitive questions asked in the hospital. More details are discussed in
+Section 3.1.2.
+• Trustworthy QA systems: Developing trustworthy systems is crucial for the adoption of AI in
+healthcare. Likewise, QA systems need to return only accurate answers and refuse to answer
+questions beyond their capabilities. To test this, we include unanswerable questions in the dataset,
+utilizing the remaining utterances from the poll result. These utterances are unanswerable due to
+incompatibility with the database schema or requiring external domain knowledge.
+
+2
+
+Related Works
+
+EHR QA Pampari et al. [23] proposed emrQA for question answering on clinical notes based on
+physicians’ frequently asked questions. Later, Raghavan et al. [27] proposed emrKBQA2 , which
+adapted emrQA to structured patient records in MIMIC-III. Due to the nature of the original dataset
+targeting outpatients, the scope of the questions in emrKBQA is limited to mostly asking about
+patients’ test results [27]. Recently, Wang et al. [32] proposed MIMICSQL, which first tackles EHR
+QA with the text-to-SQL generation task. To construct the dataset, they automatically generated
+questions based on pre-defined rules and filtered them through crowd-sourcing. However, MIMICSQL
+contains a limited scope of questions and simple SQL queries restricted to five tables, which are far
+from the actual use case in the hospital [24]. EHRSQL, on the other hand, originates from the actual
+poll result and covers a variety of real-world questions (spanning 13.5 tables on average) frequently
+asked on structured EHR data (see Table 1).
+Semantic parsing datasets Semantic parsing has been one of the most active areas of research in
+natural language processing over the past few decades [13, 37, 34, 9]. It involves converting natural
+language utterances to logical form representations, which are often executable programs such as
+Python scripts and SQL queries. WikiSQL [40] and Spider [35] are leading datasets that assess
+semantic parsing models on unseen databases. WikiSQL provides a wide range of database domains
+extracted from HTML tables in Wikipedia, but it only contains simple SQL queries and single tables.
+Spider aims to tackle complex queries, including joining and set operations, on multiple tables in
+multiple database domains. Recently, more realistic datasets have been proposed to bridge the gap
+between academic and practical settings in semantic parsing. KaggleDBQA [19] utilizes real-world
+databases from Kaggle and constructs domain-specific questions without relying on the database
+1
+2
+
+The dataset is distributed under the CC BY 4.0 license.
+emrKBQA is yet to be publicly released at the time of this work.
+
+2
+
+Table 1: Sample utterances in EHRSQL (SQL queries are labeled differently according to the
+MIMIC-III and eICU schemas).
+Type
+
+Sample question
+Tell me the birthdate of patient 92721?
+
+Prescription
+
+When was the first prescription time of patient 20000?
+
+Nursing
+
+What was the last arterial bp [systolic] for patient 23042?
+
+Physician, Nursing,
+Health records, Other
+
+Vital sign
+Question
+diversity
+
+Time-sensitive
+question
+
+Unanswerable
+question
+
+Department
+
+Demographics
+
+Nursing
+
+Cost
+
+What is the average total hospital cost that involves non-invasive mech vent?
+
+Insurance review
+
+Survival rate
+
+What are the five diagnoses which have the lowest four year survival rate?
+
+Nursing
+
+Longitudinal
+statistics
+
+What are the five most commonly prescribed drugs for patients who have been
+diagnosed with hypotension nos earlier since 2104 within 2 months?
+
+Physician, Nursing
+
+Absolute
+
+Is the heart rate of patient 2518 measured at 2105-12-31 12:00:00 less than
+the value measured at 2105-12-31 09:00:00?
+
+Physician
+
+Tell me the last specimen test given to patient 51177 in 10/2105?
+
+Nursing
+
+Relative
+
+Tell me patient 6990’s daily average gastric meds intake on the last ICU visit.
+
+-
+
+Mixed
+
+Tell me the medication that patient 3929 has been prescribed for the first time
+in 05/this year.
+
+Nursing
+
+Requiring
+external knowledge
+
+What is the name of the medication which should not be administered during
+the contrast arteriogram-leg treatment?
+
+Nursing
+
+Beyond DB schema
+
+When is the next earliest hospital visit of patient 73652?
+
+Nursing
+
+schema. SEDE [12] deals with complex SQL queries that Stack Exchange users ask in real life. Our
+motivation aligns with theirs in that additional challenges arise in real-world healthcare QA systems.
+Unanswerable questions in QA In the early days of question answering, unanswerable questions
+were generated via distant supervision [18, 4], rule-based editing [14], or adversarial creation by
+crowd workers [28]. Yet, in semantic parsing, most works assume that all input questions are valid
+and can be answered; however, this is not true in practice [38]. Retrieving answers to all the input
+questions is not always desirable for the model to ensure system reliability. To address this, Zhang
+et al. [38] utilized other text-to-SQL and chit-chat datasets to construct unanswerable questions and
+posed the problem as a classification task to detect unanswerable questions. Our work, on the other
+hand, addresses both system reliability and semantic parsing simultaneously and the unanswerable
+questions are naturally collected through the poll. In task-oriented dialog systems, the same task has
+been tackled in the name of Out-Of-Domain (OOD) detection, and several recent works approach this
+problem without explicitly showing OOD samples to the model during training for practical reasons.
+Following their setup, our unanswerable questions are only included in the validation and test sets.
+
+3
+
+Dataset Construction
+
+Data collection The motivation behind our work is to construct a dataset that reflects the actual
+needs of hospital staff and tackles several practical issues that can arise in real-world healthcare
+QA systems (see Table 1). To this end, we collaborated with the Konyang University Hospital3 and
+conducted a poll to collect real-world questions as if one is asking an AI speaker what they frequently
+look for in structured information in the EHR. In addition, to clarify what machines can and cannot
+answer, we provided typical negative examples of what should not be asked, such as requiring external
+knowledge, ambiguous or qualitative statements, or asking for reasons behind clinical decisions. As a
+result, we gathered a total of 1,742 utterances, and the number of valid respondents was 222 (see
+Figure 1 for respondent demographics).
+3.1
+
+Question and SQL Generation
+
+3.1.1
+
+Question template
+
+After the poll, we filtered out the utterances that did not meet the criteria, including ambiguous
+statements, those that require external knowledge, or those that go beyond the database schema. We
+3
+
+https://www.kyuh.ac.kr/eng/
+
+3
+
+Question:
+
+When was the last time that patient 1234 had a body temperature
+measured?
+
+SQL Query:
+
+SELECT chartevents.charttime
+FROM chartevents
+WHERE chartevents.icustay_id IN (
+SELECT icustays.icustay_id
+FROM icustays
+WHERE icustays.hadm_id IN (
+SELECT admissions.hadm_id
+FROM admissions
+WHERE admissions.subject_id = 1234 ) )
+AND chartevents.itemid IN (
+SELECT d_items.itemid
+FROM d_items
+WHERE d_items.label = 'temperature c (calc)'
+AND d_items.linksto = 'chartevents' )
+ORDER BY chartevents.charttime DESC LIMIT 1
+
+Schema: chartevents
+
+row_id
+
+transfers
+
+row_id
+
+icustay_id
+
+admission
+
+row_id
+
+subject_id hadm_id
+
+d_items
+
+row_id
+
+icustay_id
+
+itemid
+
+charttime
+
+hadm_id
+
+itemid
+
+…
+
+intime
+
+outtime
+
+…
+
+admittime
+
+dischtime
+
+…
+
+label
+
+linksto
+
+…
+
+Figure 1: Demographics of the 222 respondents Figure 2: EHR schema is structured in a hierarchy,
+by hospital departments and the years of experi- and real-world questions often require multi-step
+ence.
+reasoning over tables.
+then categorized the utterances into three patient-based scopes: a single patient, a group of patients,
+and no patient. For each scope, duplicate utterances, but differently phrased, were merged into a
+single question template. We also manually added question templates that were simple variants of
+existing templates. For example, we modified the type of medical events (e.g., lab test, prescription,
+etc.) in question templates, such as from “Count the number of times that a patient had a lab test”
+to “Count the number of times that a patient received a prescription.” To cover more questions
+on longitudinal statistics, we linked two different medical events together whenever possible. For
+example, the question “What are the top N prescriptions after a diagnosis,” which was originally
+collected, is extended to “What are the top N lab tests after a diagnosis.” Finally, the filtered-out
+utterances were also templatized and considered unanswerable. The unanswerable questions included
+side effects, next check-up schedules, primary care doctor, patient’s personal information, whether a
+patient has signed a consent form, diagnosis received in other departments, and more.
+Table 2: Sample question templates. The full list is reported in Supplementary B.1.
+Patient scope
+None
+Individual
+Group
+
+Unanswerable
+
+Question template
+What is the intake method of {drug_name}?
+Has patient {patient_id} received any procedure [time_filter_global]?
+Count the number of hospital visits of patient {patient_id} [time_filter_global].
+What are the top [n_rank] frequent procedures that patients received [time_filter_within]
+after having been diagnosed with {diagnosis_name} [time_filter_global]?
+What is the effect of {drug_name}?
+
+The resulting question templates are natural utterances with slots that are later filled with pre-defined
+values or database records (see Table 2). Slots containing “time_filter” are processed in the time
+template sampling stage, described in Section 3.1.2. We eliminate any ambiguity in the question
+templates that could cause the model to infer table or column names incorrectly. For example, “When
+did this patient get [slot] today?” is removed because it does not tell us whether we are interested in
+drugs, lab tests, or something else unless the slot is filled. Such linguistic ambiguity is later introduced
+in the paraphrase generation stage described in Section 3.3. As a result, we curated 230 question
+templates (174 for answerable and 56 for unanswerable) based on the MIMIC-III and eICU schemas.
+For answerable questions, their corresponding SQL queries were labeled for each database, which is
+further discussed in Section 3.1.3.
+3.1.2
+
+Time template
+
+Since the healthcare domain is inextricably linked to time, many utterances we collected were rich
+in time expressions. To reflect this in the dataset, we developed three time filter types and assigned
+different time factors (expression types, units, and interval types) to each filter type to compose
+a single time template. First, we define a “global” time filter ([time_filter_global]) that
+4
+
+constrains the full range of time we are interested in. Second, within the global time filter, we can
+also use a “within” time filter ([time_filter_within]) to indicate the time range between two
+or more medical events. Third, we can point to an exact time ([time_filter_exact]), such as
+“last” measurement or “at 2105-12-31 09:00:00” if we know the exact time or the order of an event.
+Each time filter type has three factors and an extra option: 1) Expression type is whether the filter
+is phrased in an absolute, relative, or mixed time expression (e.g., last year, in 2022, etc.); 2) Unit
+is the granularity of time, such as a standardized unit (e.g., year, month, day, etc.) or an arbitrary
+unit of events (e.g., hospital visit, ICU visit); 3) Interval type specifies the type of time interval
+(e.g., since, until, in, etc.). Depending on the use case, Option allows to choose one exact event
+(e.g., first, last) among the filtered events. Table 3 shows sample time templates and their natural
+language (NL) time expressions. It is important to note that each time template has its corresponding
+NL time expression (e.g., since {month}/{day}/{year}) and SQL time pattern (e.g., WHERE
+strftime('%Y-%m-%d',[time_column]) >= '{year}-{month}-{day}'), while
+the question templates are originally created in natural language. The NL time expressions are
+combined with the question templates to form complete questions. The SQL time patterns are
+combined with the labeled SQL queries to form complete SQL queries (see Section 3.1.4 for details).
+The full list of time templates (NL and SQL pairs) is reported in Supplementary B.2.
+Table 3: Sample time templates and their NL time expressions.
+Time filter type
+
+Expression type
+
+Unit
+
+Interval type
+
+Option
+
+Time template
+
+NL time expression
+
+absolute
+
+day
+
+since
+
+-
+
+abs-day-since
+
+since {month}/{day}/{year}
+
+relative
+
+year
+
+in
+
+[time_filter_global]
+
+last
+
+rel-year-last
+
+last year
+
+this
+
+rel-year-this
+
+this year
+
+-
+
+hospital
+
+in
+
+-
+
+within-hosp
+
+within the same hospital visit
+
+-
+
+day
+
+in
+
+-
+
+within-day
+
+within the same day
+
+relative
+
+exact
+
+at
+
+-
+
+exact-first
+
+first
+
+[time_filter_within]
+[time_filter_exact]
+
+3.1.3
+
+SQL annotation
+
+The SQL annotation process was conducted manually by four graduate students over the course of
+five months, with repeated revisions. Since the questions were collected independently of the database
+schema, SQL labeling required numerous assumptions (e.g., which medical event is mapped to which
+column in the database, the choice of rank functions in SQL, the occasion of using DISTINCT,
+etc.). To sync template and value sampling, the same slots introduced in Section 3.1.1 and 3.1.2
+(e.g., {drug_name}, [n_rank], [time_filter_global]) were also used in SQL labeling
+as placeholders. The SQL queries for question and time templates were labeled by one person,
+followed by a reviewer for each database. Unlike most SQL datasets, the students were asked to
+avoid using JOIN, which is a go-to operation when retrieving information across multiple tables. In
+MIMIC-III and eICU, several tables contain more than 100 million rows (e.g., 330 million rows in
+MIMIC-III chartevents) as the records are stored in a “log” based manner. In fact, it is extremely
+inefficient to merge all the tables in such large databases without understanding what specific columns
+are needed to answer a question. As a result, the students were asked to utilize the hierarchical
+structure of the EHR schema, as illustrated in Figure 2, and labeled each query in a nested manner
+whenever possible. SQL annotation details and the comparison between JOIN and nesting-based
+queries are discussed in Supplementary C.
+3.1.4
+
+Template combination and data generation
+
+Data generation starts by selecting a question template, followed by three sampling stages that add
+semantic variety: operation value sampling, time template sampling, and condition value sampling
+(See Figure 3). Stage 1 involves sampling operation values from pre-defined values that are independent of the database schema or records (e.g., maximum, five-year, two or more times, etc.). Then,
+time templates are sampled in Stage 2 based on the time filter types that each question template
+can have. Stage 2 in Figure 3 illustrates that the time templates ([time_filter_global]
+and [time_filter_within]) have already been sampled and converted into NL time expressions. More details are discussed in Supplementary B.3. Finally, condition value sampling (e.g.,
+{diagnosis_name}, {year}) occurs in Stage 3, and the slot filling process is complete. This
+5
+
+Question
+Templatization
+
+DB-independent
+Sampling
+
+Stage 0
+Question template
+What are the top [n_rank]
+frequently prescribed drugs
+that patients aged [age_group]
+were prescribed
+[time_filter_within] after having
+been diagnosed with
+{diagnosis_name}
+[time_filter_global1]?
+
+Stage 1
+
+X
+
+Operation value
+
+DB-dependent
+Sampling
+
+Stage 2
+
+X
+
+Time template
+What are the top three
+frequently prescribed drugs
+that patients aged 60 or
+above were prescribed
+within the same month
+after having been diagnosed
+with {diagnosis_name}
+since {year} year ago?
+
+What are the top three
+frequently prescribed drugs
+that patients aged 60 or
+above were prescribed
+[time_filter_within] after
+having been diagnosed with
+{diagnosis_name}
+[time_filter_global1]?
+
+Stage 3
+
+X
+
+Condition value
+What are the top three
+frequently prescribed drugs
+that patients aged 60 or
+above were prescribed
+within the same month
+after having been diagnosed
+with postsurgical
+hypothyroid
+since 5 year ago?
+
+Figure 3: Question generation process. The shaded region refers to the expansion of semantic
+diversity in the template pool.
+final stage is where the actual database records are sampled, and all generated SQL queries are
+checked to have at least one valid answer. Once the query is successfully executed, the pair of SQL
+and the corresponding question is added to the data pool, which is later used for data splitting.
+3.2
+
+Database Pre-processing
+
+Cost table We modified the original MIMIC-III and eICU databases to include a cost table in
+order to reflect hospital administration and insurance-related questions. When constructing the table,
+we referred to the OMOP Common Data Model4 to create new column names, which include:
+patient_id, hospital_admission_id, event_type (cost_domain_id), event_id
+(cost_event_id), chargetime, and cost. For cost sampling, we take a two-step sampling
+procedure to simulate cost values. First, we sampled discrete-valued mean costs for four different
+medical event types (diagnosis, procedure, prescription, and lab events) from a Poisson distribution
+with a mean of 10. Then, we sampled continuous-valued costs from Gaussian distributions with their
+corresponding means.
+Time shifting The time span of MIMIC-III is over a hundred years due to the de-identification
+process (originally seven years), while eICU’s time span remains intact (two years). To simulate a
+more realistic time span asked in the hospital and match the time across the databases, we shifted
+the admission time of every patient’s records ranging from 2100 to 2105. In addition, to incorporate
+the concept of current and the use of relative time expressions, we set the current time to be
+“2105-12-31 23:59:00” and removed any record past the current time. In this way, patients
+with missing hospital discharge time are considered current patients. The poll result revealed that
+many time expressions used in the hospital are relative time expressions (e.g., today, yesterday, last
+month, etc.), and therefore this process was necessary to reflect time-sensitive questions. More details
+are reported in Supplementary D.2.
+De-identification MIMIC-III and eICU databases are de-identified datasets, and a user needs
+to request credentialed access to PhysioNet5 to obtain them. Both datasets, however, do contain
+real patient records, and the questions derived from them could potentially reveal patient-specific
+information. For example, the question “What medication was given to patient ID 1234 after being
+diagnosed with diabetes?” implies that this patient was diagnosed with diabetes. Combined with
+some unforeseen external knowledge, this might lead to recovering the patient’s identity. To add
+another layer of de-identification, we randomly shuffled values across all patients in the database
+before sampling condition values. In this way, the semantic structure of the question remains the
+same, but sampled condition values are untraceable. More details of the de-identification process are
+reported in Supplementary D.3.
+4
+5
+
+http://ohdsi.github.io/CommonDataModel/cdm54.html
+https://physionet.org/
+
+6
+
+Table 4: The comparison between EHRSQL and other text-to-SQL datasets. # Nesting/Q is the
+average number of nesting levels per query. % Time Used/Q is the percentage of at least one time
+column used in queries. ?Schema is whether the question authors are unaware of the database
+schema when they first come up with their question. UnANS indicates whether the dataset contains
+unanswerable questions.
+Dataset
+
+# Example
+
+# DB
+
+# Table/DB
+
+# Row/Table
+
+# Table/Q
+
+# Nesting/Q
+
+% Time Used/Q
+
+?Schema
+
+UnANS
+
+Spider†
+KaggleDBQA
+SEDE
+
+8K
+0.3K
+12K
+
+160
+8
+1
+
+5.1
+2.3
+29
+
+2K
+280K
+-
+
+1.6
+1.2
+1.8
+
+1.2
+1.0
+1.3
+
+12.7%
+17.3%
+20.2%
+
+✗
+✗
+✗
+
+✗
+✗
+✗
+
+MIMICSQL
+emrKBQA‡
+
+10K
+940K
+
+1
+1
+
+5
+9
+
+7K
+-
+
+1.8
+-
+
+1.0
+-
+
+26.6%
+-
+
+✗
+✓
+
+✗
+✗
+
+2.7
+
+93.2%
+
+✓
+
+✓
+
+EHRSQL
+24K
+2
+13.5
+108K
+2.4
+†Train and validation sets are counted. ‡The dataset is yet to be publicly released.
+
+3.3
+
+Paraphrase Generation
+
+To add linguistic variety to the questions, we generated template paraphrases from the question
+templates with manual paraphrasing and the help of machine learning models. Before paraphrasing,
+we ensure that the templates do not contain any domain-specific expressions, making the paraphrasing
+process depart from the healthcare domain to leverage general-domain tools. The overall procedure
+is as follows:
+1. Human paraphrasing is first conducted to add more high-quality templates, averaging 21 paraphrases per question template.
+2. Based on the human paraphrases, more paraphrases are generated using machine learning models,
+such as T5 paraphrasers [6, 5, 1] and multilingual translation models for back-translation [8, 31].
+3. The paraphrases that are too different from the original meaning are filtered using a duplicate
+question detection model, specifically RoBERTa-large [20] trained on the Quora duplicate
+question detection dataset.
+4. The paraphrases are ranked by the perplexity score from GPT-Neo 1.3B [10] per question
+template and disregarded if they are too similar to the other paraphrases with lower perplexity.
+The Levenshtein distance is used to detect lexical similarity.
+5. The final paraphrases are reviewed by crowd workers to rate the quality of the paraphrases. In
+our case, we collaborated with a crowd-sourcing company named Selectstar6 . Three groups of
+annotators were assigned to this task and marked a pass or fail for each paraphrase sample. The
+samples with unanimous pass marks were considered the final machine-paraphrased templates,
+leaving 47 paraphrases per template on average.
+During the paraphrasing process, slots are replaced with generic values (e.g., {patient_id} →
+the patient) and returned to the original slots after the process is complete. Later, those slots are filled
+with the actual condition values in the value sampling process to construct the final question-to-SQL
+pairs. The overview of the paraphrase pipeline is illustrated in Supplementary E.
+3.4
+
+EHRSQL and Other Datasets
+
+Table 4 summarizes the statistics of EHRSQL and other text-to-SQL datasets in the literature.
+Compared to general domain datasets (first three rows), EHRSQL has a large number of textto-SQL pairs (# Example), tables per database (# Table/DB), and rows per table (# Row/Table).
+KaggleDBQA [19] and SEDE [12] are designed to bridge the gap between academic datasets and
+practical usability by using real databases and naturally-occurring utterances. However, we have
+gone one step further where the question authors (the poll respondents) were not presented with the
+database schema (?Schema), which adds more reality to the dataset [12]. Finally, EHRSQL contains
+unanswerable questions (UnANS) that were collected together from the poll, which may play a critical
+role in assessing the reliability of the QA model. To the best of our knowledge, EHRSQL is the first
+attempt to collect and combine answerable and unanswerable questions in the context of text-to-SQL.
+From a healthcare perspective, EHRSQL covers a variety of questions frequently asked in the hospital.
+The scope of these questions ranges from non-patient information (e.g., the cost of a procedure) to
+6
+
+https://selectstar.ai/en
+
+7
+
+Figure 4: Overview of trustworthy semantic parsing.
+
+individual-level information (e.g., retrieving patient demographics and the lab values) and group-level
+information (e.g., counting the number of patients in the hospital and the top N frequently prescribed
+drugs of patients over 60s), further combined with various time expressions (% Time Used/Q). The
+SQL queries are linked to two EHR databases: MIMIC-III and eICU, and this is the first attempt to
+label SQL queries on eICU, allowing questions about multi-center critical care to be answered.
+
+4
+
+Benchmarks
+
+4.1
+
+Task
+
+In this section, we define a new text-to-SQL task that assesses models under more realistic healthcare
+QA settings than prior works—namely, trustworthy semantic parsing. As illustrated in Figure 4, the
+trustworthy model needs to 1) generate SQL queries that reflect a wide range of needs in the hospital
+workplace, 2) understand various time expressions to answer time-sensitive questions in healthcare,
+and 3) have the capacity to distinguish whether a given question is answerable or unanswerable based
+on the prediction confidence. Among various ways to calculate the confidence score, we argue that
+a desirable way to calculate it is not based on the data the model is trained on, but on the model
+prediction itself. As illustrated in Figure 4, once a confidence score exceeds some threshold of choice
+(assuming that a greater score means less confidence), the generated SQL should not be sent to the
+database.
+To make the task feasible, we keep the condition values (e.g., prescription name) the same in this work,
+except for genders and vital signs, as this is another major challenge in semantic parsing [30, 29].
+When splitting the dataset into train, validation, and test sets, we ensure that all the question templates
+are present in each split. To create a more realistic QA setting, we include unanswerable questions
+only in the validation and test sets (consisting of 33% of each split), following the OOD detection
+setting [22, 39]. Among 24,411 question pairs in the dataset, the train, valid, and test splits contain
+9.3K, 1.1K, and 1.8K pairs, respectively, for each database. We release the train and valid splits,
+totaling 21K samples, and the other 3K samples are saved for a hidden test set. Details of data
+splitting are reported in Supplementary F.
+4.2
+
+Evaluation
+
+The goal of the trustworthy semantic parsing task is to correctly return the answers to answerable
+questions while disregarding unanswerable questions. This process can be evaluated in two aspects.
+The model first needs to have a strategy that distinguishes whether a given question is answerable or
+unanswerable. Given that the goal is to correctly recognize as many answerable questions as possible,
+the model’s performance can be measured in precision and recall. In this case, the precision (Pans )
+calculates the number of correctly recognized answerable questions among all questions predicted
+to be answerable, while recall (Rans ) calculates the number of correctly recognized answerable
+questions among all answerable questions. We use F1ans to combine these two scores.
+8
+
+Table 5: Performance on MIMIC-III (Left) and eICU (Right).
+Model
+
+Valid
+F1ans
+
+Test
+F1exe
+
+F1ans
+
+Pexe
+
+Rexe
+
+Model
+
+Pexe
+
+Rexe
+
+F1exe
+
+95.4
+95.3
+
+76.6
+76.6
+
+T5
+T5 + Schema
+
+Valid
+F1ans
+
+Test
+
+Pexe
+
+Rexe
+
+F1exe
+
+F1ans
+
+Pexe
+
+Rexe
+
+F1exe
+
+80.7
+80.7
+
+65.2
+64.4
+
+Threshold: None
+96.4
+77.8
+80.4
+64.0
+95.2
+76.8
+80.4
+64.1
+
+95.2
+95.4
+
+76.5
+76.7
+
+T5
+T5 + Schema
+
+80.8
+80.8
+
+65.2
+65.3
+
+Threshold: None
+96.3
+77.8
+80.3
+64.0
+96.4
+77.9
+80.3
+64.0
+
+T5
+T5 + Schema
+
+89.2
+87.9
+
+80.2
+77.3
+
+Threshold: Clustering-based
+95.5
+87.2
+86.5
+75.0
+96.2
+85.7
+84.8
+72.3
+
+94.8
+94.9
+
+83.8
+82.1
+
+T5
+T5 + Schema
+
+88.4
+86.6
+
+78.4
+73.8
+
+Threshold: Clustering-based
+95.5
+86.1
+86.1
+73.2
+95.1
+83.1
+85.1
+71.4
+
+94.5
+95.4
+
+82.5
+81.7
+
+T5
+T5 + Schema
+
+94.8
+93.5
+
+94.3
+93.0
+
+Threshold: Percentile-based
+93.3
+93.8
+91.4
+88.8
+92.0
+92.5
+90.6
+88.4
+
+91.1
+89.7
+
+89.9
+89.1
+
+T5
+T5 + Schema
+
+93.0
+94.2
+
+92.5
+92.5
+
+Threshold: Percentile-based
+91.7
+92.1
+90.8
+87.5
+91.7
+92.1
+90.9
+84.8
+
+91.6
+93.5
+
+89.5
+88.9
+
+Next, we must evaluate how well the model generates correct SQL queries, given that some questions
+are considered answerable and ready to predict. The word predict here means the actions of generating
+a query and sending it to the database, where extra care is needed because the answer from the database
+may be directly used for clinical decision-making. Combining the concept of F1ans and execution
+accuracy in semantic parsing, F1exe counts only when the returned answer is correct. In other words,
+F1exe is a combined score of Pexe and Rexe , where Pexe is the ratio of the number of correctly
+answered questions to all questions predicted to be answerable and Rexe is the ratio of the number
+of correctly answered questions to all answerable questions. As a result, the denominators of the
+precisions and recalls are the same, but the numerators are more strictly counted in metrics with exe.
+This gap between ans and exe reveals the model’s inability to generate correct SQL queries, given
+that the questions are both recognized as answerable and indeed answerable.
+4.3
+
+Model Development
+
+Most state-of-the-art (SOTA) semantic parsing models utilize grammar-based decoders and are only
+compatible with the grammars (or their subsets) defined in the Spider dataset. As the queries in
+EHRSQL are created in response to actual needs, most of them are incompatible with the Spider
+parser mainly due to time-related operators like strftime, datetime and NULL. Therefore,
+we chose general-purpose sequence-to-sequence models, T5-base [26] and T5-base with schema
+serialization [30, 12], as baseline models for our task. This choice aligns with a recent finding
+that transfer learning from pre-trained language models surpasses healthcare-specific text-to-SQL
+models [2]. Training details are reported in Supplementary G.
+To give a model the ability to refuse to answer questions, we adopt a simple uncertainty estimation
+method inspired by [21, 33]. If the maximum entropy during the decoding process exceeds a predefined threshold, we consider this a refusal. The threshold values are determined by two heuristic
+approaches, and they are compared with the result obtained without refusal.
+1. Clustering-based: Run K-means clustering with k = 2 on all maximum entropy values of
+validation samples, assuming that high-entropy samples are from unanswerable questions. The
+decision boundary between the two clusters is then used as the threshold.
+2. Percentile-based: Set the threshold to the 67th percentile of the maximum entropy values of
+the validation samples, based on the fact that 33% of the questions in the validation set are
+unanswerable.
+To illustrate the domain gap between general-domain and healthcare datasets, we create a subset
+of EHRSQL that could be parsed with the Spider parser. Then, we compare how well the SOTA
+cross-domain semantic parsing models generalize to healthcare text-to-SQL datasets. We choose
+MIMICSQL, which contains simple SQL queries that can all be parsed with the Spider grammar, and
+EHRSQL for the healthcare datasets. Among many SOTA models in the Spider leaderboard, we use
+Generation-Augmented Pre-training (GAP) [29] to test its zero-shot domain transfer performance.
+4.4
+
+Results and Findings
+
+The baseline results are reported in Table 5. Among the three different threshold approaches, the
+percentile-based threshold performs best on both the validation and test sets. This result is an expected
+outcome because the ratios of the answerable and unanswerable questions in the validation and test
+sets are kept the same in our setting. As for the clustering-based method, an additional training or
+9
+
+Table 6: Performance of zero-shot cross-domain transfer with GAP in execution accuracy. Easy,
+medium, hard, and extra refer to Spider’s SQL hardness criteria. The numbers in parenthesis indicate
+the number of correct cases divided by the number of answerable queries. All experiments are done
+on answerable questions in the validation set.
+Dataset
+
+Easy
+
+Medium
+
+Hard
+
+Extra
+
+Skipped
+
+All \ Skipped
+
+MIMICSQL[32]
+
+46.7 (79/169)
+
+10.5 (85/809)
+
+0.0 (0/22)
+
+-
+
+-
+
+16.4 (164/1000)
+
+EHRSQL
+MIMIC-III only
+eICU only
+
+23.8 (5/21)
+16.7 (2/12)
+3.3 (3/9)
+
+-
+
+0.0 (0/23)
+0.0 (0/15)
+0.0 (0/8)
+
+0.0 (0/63)
+0.0 (0/30)
+0.0 (0/33)
+
+(0/1408)
+(0/703)
+(0/705)
+
+4.7 (5/107)
+3.5 (2/57)
+6.0 (3/50)
+
+clustering technique is needed for the models to better discriminate the entropy values. The naive
+entropy values from the current models are not linearly separable across predictions (see Figure 7 in
+Supplementary H.4 for maximum entropy distributions). T5+Schema shows comparable performance
+to T5 in both databases. This result agrees with the recent finding in [12] that models trained in a
+single database setting do not effectively leverage schema information. Additional qualitative results
+are provided in Supplementary H, including SQL generation results by question complexity, time
+expressions, falsely executed results, and refused results.
+Table 6 shows the performance of zero-shot cross-domain transfer with the GAP model. Unlike
+the queries in MIMICSQL, which are all parsable with the Spider grammar, EHRSQL has much
+more complex SQL operators and structures, with only about 7% (107/1,515) of the answerable
+questions in the validation set being parsable. As for model performance, GAP achieves 16.4% in the
+full MIMICSQL validation set and 4.7% in the subset of the validation set in EHRSQL. This result
+motivates again the need for a new practical text-to-SQL dataset in healthcare and QA models that
+can handle multiple real-world challenges in the hospital.
+
+5
+
+Conclusion and Future Direction
+
+In this paper, we present EHRSQL, a new practical text-to-SQL dataset for question answering over
+structured information in EHRs. Through a poll conducted at a university hospital, we collected
+questions that are frequently asked on structured EHR data across various professions in the hospital.
+The questions reflect the actual needs in the hospital and different time expressions used in daily
+work, which are particularly crucial in healthcare. Additionally, we also collected unanswerable
+questions, which were the questions submitted by the respondents but turned out to be beyond the
+EHR schema or ambiguous. Finally, we manually labeled SQL queries for two open-source EHR
+databases—MIMIC-III and eICU—and cast these challenges as one task—trustworthy semantic
+parsing—where QA models should only answer the question when their predictions are confident but
+not otherwise.
+Though we have carefully designed the dataset, there are several limitations. First, despite more than
+two hundred people participating in the poll, the source of the questions is from one Korean university
+hospital, which may not reflect every unique situation in different hospitals worldwide. Secondly, the
+question templates are paraphrased using general-domain paraphrasers; therefore, paraphrases with
+the heavy use of medical jargon could make them more realistic. Finally, SQL labels for two EHR
+databases might not be a sufficient number of databases to train and test a model for unseen EHR
+databases.
+We expect numerous research directions with our dataset. The seed questions can be a valuable
+resource for expanding the scope of table-based healthcare QA tasks, such as creating interactive
+QA [36, 7] or developing it into multimodal QA datasets on EHRs. With the idea of trustworthy
+semantic parsing, a new class of end-to-end uncertainty-aware semantic parsing models can be
+proposed. As existing text-to-SQL models assume all inputs are answerable, this can be a unique
+venue for semantic parsing to bridge the gap between research and industrial needs.
+
+10
+
+Acknowledgments and Disclosure of Funding
+We would like to thank five anonymous reviewers for their time and insightful comments. We also
+thank Woochan Hwang for assisting us in clarifying our questions during the data labeling process.
+This work was supported by Institute of Information & communications Technology Planning
+& Evaluation (IITP) grant funded by the Korea government(MSIT) (No.2019-0-00075, Artificial
+Intelligence Graduate School Program(KAIST)), National Research Foundation of Korea (NRF)
+grant (NRF-2020H1D3A2A03100945) and Data Voucher grant (2021-DV-I-P-00114), funded by the
+Korea government (MSIT).
+
+References
+[1] Sai Vamsi Alisetti. Paraphrase generator with t5, 2020. URL https://github.com/Vamsi995/
+Paraphrase-Generator.
+[2] Seongsu Bae, Daeyoung Kim, Jiho Kim, and Edward Choi. Question answering for complex electronic
+health records database using unified encoder-decoder architecture. In Proceedings of Machine Learning
+for Health, volume 158 of Proceedings of Machine Learning Research, pages 13–25. PMLR, 04 Dec 2021.
+URL https://proceedings.mlr.press/v158/bae21a.html.
+[3] Jayetri Bardhan, Anthony Colas, Kirk Roberts, and Daisy Zhe Wang. Drugehrqa: A question answering
+dataset on structured and unstructured electronic health records for medicine related queries. arXiv preprint
+arXiv:2205.01290, 2022.
+[4] Christopher Clark and Matt Gardner. Simple and effective multi-paragraph reading comprehension. In
+Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long
+Papers), pages 845–855, Melbourne, Australia, July 2018. Association for Computational Linguistics. doi:
+10.18653/v1/P18-1078. URL https://aclanthology.org/P18-1078.
+[5] Prithiviraj Damodaran. Parrot: Paraphrase generation for nlu, 2021. URL https://github.com/
+PrithivirajDamodaran/Parrot_Paraphraser.
+[6] Prithiviraj Damodaran.
+Styleformer,
+PrithivirajDamodaran/Styleformer.
+
+2021.
+
+URL
+
+https://github.com/
+
+[7] Ahmed Elgohary, Saghar Hosseini, and Ahmed Hassan Awadallah. Speak to your parser: Interactive
+text-to-SQL with natural language feedback. In Proceedings of the 58th Annual Meeting of the Association
+for Computational Linguistics, pages 2065–2077, Online, July 2020. Association for Computational
+Linguistics. doi: 10.18653/v1/2020.acl-main.187. URL https://aclanthology.org/2020.
+acl-main.187.
+[8] Angela Fan, Shruti Bhosale, Holger Schwenk, Zhiyi Ma, Ahmed El-Kishky, Siddharth Goyal, Mandeep
+Baines, Onur Celebi, Guillaume Wenzek, Vishrav Chaudhary, et al. Beyond english-centric multilingual
+machine translation. Journal of Machine Learning Research, 22(107):1–48, 2021.
+[9] Catherine Finegan-Dollak, Jonathan K Kummerfeld, Li Zhang, Karthik Ramanathan, Sesh Sadasivam, Rui Zhang, and Dragomir Radev. Improving text-to-sql evaluation methodology. arXiv preprint
+arXiv:1806.09029, 2018.
+[10] Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang,
+Horace He, Anish Thite, Noa Nabeshima, et al. The pile: An 800gb dataset of diverse text for language
+modeling. arXiv preprint arXiv:2101.00027, 2020.
+[11] Ary L Goldberger, Luis AN Amaral, Leon Glass, Jeffrey M Hausdorff, Plamen Ch Ivanov, Roger G Mark,
+Joseph E Mietus, George B Moody, Chung-Kang Peng, and H Eugene Stanley. Physiobank, physiotoolkit,
+and physionet: components of a new research resource for complex physiologic signals. circulation, 101
+(23):e215–e220, 2000.
+[12] Moshe Hazoom, Vibhor Malik, and Ben Bogin. Text-to-sql in the wild: A naturally-occurring dataset
+based on stack exchange data. arXiv preprint arXiv:2106.05006, 2021.
+[13] Charles T. Hemphill, John J. Godfrey, and George R. Doddington. The ATIS spoken language systems pilot
+corpus. In Speech and Natural Language: Proceedings of a Workshop Held at Hidden Valley, Pennsylvania,
+June 24-27,1990, 1990. URL https://aclanthology.org/H90-1021.
+
+11
+
+[14] Robin Jia and Percy Liang. Adversarial examples for evaluating reading comprehension systems. In
+Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pages
+2021–2031, Copenhagen, Denmark, September 2017. Association for Computational Linguistics. doi:
+10.18653/v1/D17-1215. URL https://aclanthology.org/D17-1215.
+[15] Alistair Johnson, Lucas Bulgarelli, Tom Pollard, Steven Horng, Leo Anthony Celi, and Roger Mark.
+Mimic-iv (version 1.0). PhysioNet, 2021. doi: https://doi.org/10.13026/s6n6-xd98.
+[16] Alistair EW Johnson, Tom J Pollard, Lu Shen, H Lehman Li-Wei, Mengling Feng, Mohammad Ghassemi,
+Benjamin Moody, Peter Szolovits, Leo Anthony Celi, and Roger G Mark. Mimic-iii, a freely accessible
+critical care database. Scientific data, 3(1):1–9, 2016.
+[17] Alistair EW Johnson, Tom J Pollard, Seth J Berkowitz, Nathaniel R Greenbaum, Matthew P Lungren,
+Chih-ying Deng, Roger G Mark, and Steven Horng. Mimic-cxr, a de-identified publicly available database
+of chest radiographs with free-text reports. Scientific data, 6(1):1–8, 2019.
+[18] Mandar Joshi, Eunsol Choi, Daniel Weld, and Luke Zettlemoyer. TriviaQA: A large scale distantly
+supervised challenge dataset for reading comprehension. In Proceedings of the 55th Annual Meeting of
+the Association for Computational Linguistics (Volume 1: Long Papers), pages 1601–1611, Vancouver,
+Canada, July 2017. Association for Computational Linguistics. doi: 10.18653/v1/P17-1147. URL
+https://aclanthology.org/P17-1147.
+[19] Chia-Hsuan Lee, Oleksandr Polozov, and Matthew Richardson. Kaggledbqa: Realistic evaluation of
+text-to-sql parsers. arXiv preprint arXiv:2106.11455, 2021.
+[20] Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis,
+Luke Zettlemoyer, and Veselin Stoyanov. Roberta: A robustly optimized bert pretraining approach. arXiv
+preprint arXiv:1907.11692, 2019.
+[21] Andrey Malinin and Mark Gales. Uncertainty estimation in autoregressive structured prediction. arXiv
+preprint arXiv:2002.07650, 2020.
+[22] Petr Marek, Vishal Ishwar Naik, Vincent Auvray, and Anuj Goyal. Oodgan: Generative adversarial network
+for out-of-domain data generation. arXiv preprint arXiv:2104.02484, 2021.
+[23] Anusri Pampari, Preethi Raghavan, Jennifer Liang, and Jian Peng. emrqa: A large corpus for question
+answering on electronic medical records. In Proceedings of the 2018 Conference on Empirical Methods in
+Natural Language Processing, pages 2357–2368, 2018.
+[24] Junwoo Park, Youngwoo Cho, Haneol Lee, Jaegul Choo, and Edward Choi. Knowledge graph-based
+question answering with electronic health records. In Machine Learning for Healthcare Conference, pages
+36–53. PMLR, 2021.
+[25] Tom J Pollard, Alistair EW Johnson, Jesse D Raffa, Leo A Celi, Roger G Mark, and Omar Badawi. The
+eicu collaborative research database, a freely available multi-center database for critical care research.
+Scientific data, 5(1):1–13, 2018.
+[26] Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou,
+Wei Li, and Peter J Liu. Exploring the limits of transfer learning with a unified text-to-text transformer.
+arXiv preprint arXiv:1910.10683, 2019.
+[27] Preethi Raghavan, Jennifer J Liang, Diwakar Mahajan, Rachita Chandra, and Peter Szolovits. emrkbqa: A
+clinical knowledge-base question answering dataset. In Proceedings of the 20th Workshop on Biomedical
+Language Processing, pages 64–73, 2021.
+[28] Pranav Rajpurkar, Robin Jia, and Percy Liang. Know what you don’t know: Unanswerable questions for
+squad. arXiv preprint arXiv:1806.03822, 2018.
+[29] Peng Shi, Patrick Ng, Zhiguo Wang, Henghui Zhu, Alexander Hanbo Li, Jun Wang, Cicero Nogueira
+dos Santos, and Bing Xiang. Learning contextual representations for semantic parsing with generationaugmented pre-training. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 35,
+pages 13806–13814, 2021.
+[30] Alane Suhr, Ming-Wei Chang, Peter Shaw, and Kenton Lee. Exploring unexplored generalization challenges
+for cross-database semantic parsing. In Proceedings of the 58th Annual Meeting of the Association for
+Computational Linguistics, pages 8372–8388, 2020.
+
+12
+
+[31] Yuqing Tang, Chau Tran, Xian Li, Peng-Jen Chen, Naman Goyal, Vishrav Chaudhary, Jiatao Gu, and
+Angela Fan. Multilingual translation with extensible multilingual pretraining and finetuning. arXiv preprint
+arXiv:2008.00401, 2020.
+[32] Ping Wang, Tian Shi, and Chandan K Reddy. Text-to-sql generation for question answering on electronic
+medical records. In Proceedings of The Web Conference 2020, pages 350–361, 2020.
+[33] Yijun Xiao and William Yang Wang. On hallucination and predictive uncertainty in conditional language
+generation. In Proceedings of the 16th Conference of the European Chapter of the Association for
+Computational Linguistics: Main Volume, pages 2734–2744, 2021.
+[34] Navid Yaghmazadeh, Yuepeng Wang, Isil Dillig, and Thomas Dillig. Sqlizer: query synthesis from natural
+language. Proceedings of the ACM on Programming Languages, 1(OOPSLA):1–26, 2017.
+[35] Tao Yu, Rui Zhang, Kai Yang, Michihiro Yasunaga, Dongxu Wang, Zifan Li, James Ma, Irene Li, Qingning
+Yao, Shanelle Roman, et al. Spider: A large-scale human-labeled dataset for complex and cross-domain
+semantic parsing and text-to-sql task. In Proceedings of the 2018 Conference on Empirical Methods in
+Natural Language Processing, pages 3911–3921, 2018.
+[36] Tao Yu, Rui Zhang, Michihiro Yasunaga, Yi Chern Tan, Xi Victoria Lin, Suyi Li, Heyang Er, Irene Li,
+Bo Pang, Tao Chen, et al. Sparc: Cross-domain semantic parsing in context. In Proceedings of the 57th
+Annual Meeting of the Association for Computational Linguistics, pages 4511–4523, 2019.
+[37] John M Zelle and Raymond J Mooney. Learning to parse database queries using inductive logic programming. In Proceedings of the national conference on artificial intelligence, pages 1050–1055, 1996.
+[38] Yusen Zhang, Xiangyu Dong, Shuaichen Chang, Tao Yu, Peng Shi, and Rui Zhang. Did you ask a good
+question? a cross-domain question intention classification benchmark for text-to-sql. arXiv preprint
+arXiv:2010.12634, 2020.
+[39] Yinhe Zheng, Guanyi Chen, and Minlie Huang. Out-of-domain detection for natural language understanding
+in dialog systems. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 28:1198–1209,
+2020.
+[40] Victor Zhong, Caiming Xiong, and Richard Socher. Seq2sql: Generating structured queries from natural
+language using reinforcement learning. arXiv preprint arXiv:1709.00103, 2017.
+
+13
+
+Supplementary Material
+A
+
+Datasheet for Datasets
+
+The following section is answers to questions listed in datasheets for datasets.
+A.1
+
+Motivation
+• For what purpose was the dataset created?
+EHRSQL is created to serve as a benchmark for trustworthy question answering systems on
+structured data in electronic health records (EHRs).
+• Who created the dataset (e.g., which team, research group) and on behalf of which entity
+(e.g., company, institution, organization)?
+The authors of this paper.
+• Who funded the creation of the dataset? If there is an associated grant, please provide the
+name of the grantor and the grant name and number.
+This work was supported by Institute of Information & Communications Technology
+Planning & Evaluation (IITP) grant (No.2019-0-00075, Artificial Intelligence Graduate
+School Program(KAIST)), National Research Foundation of Korea (NRF) grant (NRF2020H1D3A2A03100945) and Data Voucher grant (2021-DV-I-P-00114), funded by the
+Korea government (MSIT).
+
+A.2
+
+Composition
+• What do the instances that comprise the dataset represent (e.g., documents, photos, people,
+countries)?
+EHRSQL contains natural questions and their corresponding SQL queries (text).
+• How many instances are there in total (of each type, if appropriate)?
+There are about 24.4K instances (22.5K answerable; 1.9K unanswerable).
+• Does the dataset contain all possible instances or is it a sample (not necessarily random) of
+instances from a larger set?
+We conducted a poll at a university hospital and collected a wide range of questions frequently asked on the structured EHR data. To reflect as many questions as possible, we
+templatized them and ensured that the final dataset contained all the question templates we
+created.
+• What data does each instance consist of?
+The dataset contains question-SQL pairs if the question is answerable. Unanswerable
+questions do not have SQL labels.
+• Is there a label or target associated with each instance?
+Labels are SQL queries.
+• Is any information missing from individual instances? If so, please provide a description,
+explaining why this information is missing (e.g., because it was unavailable). This does not
+include intentionally removed information, but might include, e.g., redacted text.
+N/A.
+• Are relationships between individual instances made explicit (e.g., users’ movie ratings,
+social network links)?
+N/A.
+• Are there recommended data splits (e.g., training, development/validation, testing)?
+See Section F.
+• Are there any errors, sources of noise, or redundancies in the dataset?
+Question templates are created to have slots that are later filled with pre-defined values
+and records from the database. As a result, final questions can sound unnatural or be
+grammatically incorrect depending on the sampled values (e.g., verb tense, articles, etc.).
+• Is the dataset self-contained, or does it link to or otherwise rely on external resources (e.g.,
+websites, tweets, other datasets)?
+14
+
+The labeled SQL queries rely on two open source databases: MIMIC-III (version 1.4)7 and
+eICU (version 2.0)8 , which are accessible on PhysioNet9 .
+• Does the dataset contain data that might be considered confidential (e.g., data that is protected
+by legal privilege or by doctor– patient confidentiality, data that includes the content of
+individuals’ non-public communications)?
+N/A.
+• Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety?
+N/A.
+• Does the dataset relate to people?
+Yes.
+• Does the dataset identify any subpopulations (e.g., by age, gender)?
+EHRSQL is based on patients in MIMIC-III and eICU. MIMIC-III includes over forty
+thousand patients who stayed in critical care units of the Beth Israel Deaconess Medical
+Center between 2001 and 2012. eICU contains patients who were discharged between 2014
+and 2015 in multiple critical care units in the United States.
+• Is it possible to identify individuals (i.e., one or more natural persons), either directly or
+indirectly (i.e., in combination with other data) from the dataset?
+Even though MIMIC-III and eICU are already de-identified datasets, we further corrupted
+patient-specific information to avoid any chance of recovering a patient’s identity. See
+Section D.3 for details.
+• Does the dataset contain data that might be considered sensitive in any way (e.g., data that
+reveals race or ethnic origins, sexual orientations, religious beliefs, political opinions or
+union memberships, or locations; financial or health data; biometric or genetic data; forms
+of government identification, such as social security numbers; criminal history)?
+The dataset is already de-identified.
+A.3
+
+Collection Process
+• How was the data associated with each instance acquired?
+We collaborated with the Konyang University Hospital10 and conducted a poll to collect
+real-world questions that are frequently asked on the structured EHR data.
+• What mechanisms or procedures were used to collect the data (e.g., hardware apparatuses or
+sensors, manual human curation, software programs, software APIs)?
+We used the website SurveyMonkey11 to create a poll and collect the responses. After the
+poll, we used Excel, Google Sheets, and Python to process and label the collected data.
+• If the dataset is a sample from a larger set, what was the sampling strategy (e.g., deterministic,
+probabilistic with specific sampling probabilities)?
+When it involves sampling (e.g., data splitting and patient de-identification), we sampled
+with a fixed random seed.
+• Who was involved in the data collection process (e.g., students, crowdworkers, contractors)
+and how were they compensated (e.g., how much were crowdworkers paid)?
+There were three parts that required human involvement in the data collection process: poll
+for the question collection, SQL labeling, and quality checking for machine-paraphrased
+text. For the poll, we provided a $10 worth of coffee gift card to all poll respondents. For
+SQL labeling, the authors in the paper manually labeled SQL queries based on the database
+schemas. We did not hire any crowd worker for this task because the databases contain
+patient-specific information, and the SQL labeling process required numerous assumptions
+(e.g., choice of SQL operations, schema linking, etc.). Lastly, we hired crowd workers to
+check the quality of machine paraphrased text, who were paid approximately $18 per hour.
+
+7
+
+https://physionet.org/content/mimiciii/1.4/
+https://physionet.org/content/eicu-crd/2.0/
+9
+https://physionet.org/
+10
+https://www.kyuh.ac.kr/eng/
+11
+www.surveymonkey.com
+8
+
+15
+
+• Over what timeframe was the data collected?
+The poll was conducted in February of 2021, but the results do not depend much on the date
+of data collection.
+• Were any ethical review processes conducted (e.g., by an institutional review board)?
+N/A.
+• Does the dataset relate to people?
+Yes.
+• Did you collect the data from the individuals in question directly, or obtain it via third parties
+or other sources (e.g., websites)?
+We directly collected the data through a poll.
+• Were the individuals in question notified about the data collection?
+Yes. The poll respondents were notified about the use of data. The actual website we used
+for the poll is here12 . The poll was conducted in Korean.
+• Did the individuals in question consent to the collection and use of their data?
+The purpose of the poll was announced to hospital staff, and only the staff who were
+interested in the poll participated.
+• If consent was obtained, were the consenting individuals provided with a mechanism to
+revoke their consent in the future or for certain uses?
+N/A.
+• Has an analysis of the potential impact of the dataset and its use on data subjects (e.g., a
+data protection impact analysis) been conducted?
+The dataset does not have individual-specific information.
+A.4
+
+Preprocessing/cleaning/labeling
+• Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing,
+tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?
+N/A.
+• Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to
+support unanticipated future uses)?
+N/A.
+• Is the software that was used to preprocess/clean/label the data available?
+Preprocessing, cleaning, and labeling are done via Excel, Google Sheets, and Python.
+
+A.5
+
+Uses
+• Has the dataset been used for any tasks already?
+No.
+• Is there a repository that links to any or all papers or systems that use the dataset?
+No.
+• What (other) tasks could the dataset be used for?
+In addition to solving trustworthy semantic parsing, the seed questions themselves can be a
+good starting point for any healthcare table-based question answering tasks.
+• Is there anything about the composition of the dataset or the way it was collected and
+preprocessed/cleaned/labeled that might impact future uses?
+N/A.
+• Are there tasks for which the dataset should not be used?
+N/A.
+
+12
+
+https://www.surveymonkey.com/r/Preview/?sm=hv3JkWYLdzXq2G8m_2Bh8yXI8Q_
+2FHVOzmZHcwFs7D5WhDYPQwgBHaa7OZXASgLWXsBw
+
+16
+
+A.6
+
+Distribution
+• Will the dataset be distributed to third parties outside of the entity (e.g., company, institution,
+organization) on behalf of which the dataset was created?
+No.
+• How will the dataset be distributed (e.g., tarball on website, API, GitHub)?
+The dataset is released at https://github.com/glee4810/EHRSQL.
+• When will the dataset be distributed?
+Now.
+• Will the dataset be distributed under a copyright or other intellectual property (IP) license,
+and/or under applicable terms of use (ToU)?
+The dataset is released under CC BY 4.0 license.
+• Have any third parties imposed IP-based or other restrictions on the data associated with the
+instances?
+No.
+• Do any export controls or other regulatory restrictions apply to the dataset or to individual
+instances?
+No.
+
+A.7
+
+Maintenance
+• Who will be supporting/hosting/maintaining the dataset?
+The authors of this paper.
+• How can the owner/curator/manager of the dataset be contacted (e.g., email address)?
+Contact the first author (gyubok.lee@kaist.ac.kr) or other authors.
+• Is there an erratum?
+No.
+• Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete
+instances)?
+If any correction is needed, we plan to upload a new version.
+• If the dataset relates to people, are there applicable limits on the retention of the data
+associated with the instances (e.g., were the individuals in question told that their data would
+be retained for a fixed period of time and then deleted)?
+N/A
+• Will older versions of the dataset continue to be supported/hosted/maintained?
+We plan to maintain the newest version only.
+• If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for
+them to do so?
+Contact the authors of the paper.
+
+B
+
+Full List of Templates
+
+B.1
+
+Question Templates
+
+The full list of question templates is reported in Table 7. The total number of answerable question
+templates is 174, but a few can be unanswerable depending on the database (e.g., a question about
+a procedure done in other hospitals is not answerable in MIMIC-III). For unanswerable questions,
+the template generation process explained in Section 3.1.1 is not strictly applied. As a result,
+unanswerable questions can contain ambiguous and too detailed questions (e.g., Tell me what
+medicine to use to relieve a headache in hypertensive patients). We do not provide a full list of
+unanswerable questions as they are not subject to training and can be anything complementary to the
+answerable ones.
+17
+
+Table 7: Full list of answerable question templates.
+Patient scope
+
+Question template
+
+Assumption
+
+None
+
+What is the intake method of {drug_name}?
+
+None
+
+What is the cost of a procedure named {procedure_name}?
+
+None
+
+What is the cost of a {lab_name} lab test?
+
+None
+
+What is the cost of a drug named {drug_name}?
+
+None
+
+What is the cost of diagnosing {diagnosis_name}?
+
+None
+
+What does {abbreviation} stand for?
+
+Single
+
+What is the gender of patient {patient_id}?
+
+Single
+
+What is the date of birth of patient {patient_id}?
+
+Single
+
+What was the [time_filter_exact1] length of hospital stay of patient {patient_id}?
+
+Single
+
+What is the change in the weight of patient {patient_id} from the [time_filter_exact2] value
+measured [time_filter_global1]?
+
+Single
+
+What is the change in the weight of patient {patient_id} from the [time_filter_exact2] value
+measured [time_filter_global2] compared to the [time_filter_exact1] value measured
+[time_filter_global1]?
+
+Single
+
+What is the change in the value of {lab_name} of patient {patient_id} from the
+[time_filter_exact2] value measured [time_filter_global2] compared to the
+[time_filter_exact1] value measured [time_filter_global1]?
+
+Single
+
+What is the change in the {vital_name} of patient {patient_id} from the
+[time_filter_exact2] value measured [time_filter_global2] compared to the
+[time_filter_exact1] value measured [time_filter_global1]?
+
+Single
+
+Is the value of {lab_name} of patient {patient_id} [time_filter_exact2] measured
+[time_filter_global2] [comparison] than the [time_filter_exact1] value measured
+[time_filter_global1]?
+
+Single
+
+Is the {vital_name} of patient {patient_id} [time_filter_exact2] measured
+[time_filter_global2] [comparison] than the [time_filter_exact1] value measured
+[time_filter_global1]?
+
+Single
+
+What is_verb the age of patient {patient_id} [time_filter_global1]?
+
+Single
+
+What is_verb the name of insurance of {patient_id} [time_filter_global1]?
+
+Single
+
+What is_verb the marital status of patient {patient_id} [time_filter_global1]?
+
+Single
+
+What percentile is the value of {lab_value} in a {lab_name} lab test among patients of the same age as
+patient {patient_id} [time_filter_global1]?
+
+Single
+
+How many [unit_count] have passed since patient {patient_id} was admitted to the hospital
+currently?
+
+Only current
+patient
+
+Single
+
+How many [unit_count] have passed since patient {patient_id} was admitted to the ICU currently?
+
+Only current
+ICU patient
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} stayed in careunit {careunit} on the current hospital visit?
+
+Only current
+patient
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} stayed in ward {ward_id} on the current hospital visit?
+
+Only current
+patient
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} received a procedure on the current hospital visit?
+
+Only current
+patient
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} received a {procedure_name} procedure on the current hospital visit?
+
+Only current
+patient
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} was diagnosed with {diagnosis_name} on the current hospital visit?
+
+Only current
+patient
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} was prescribed {drug_name} on the current hospital visit?
+
+Only current
+patient
+
+Only current
+patients
+
+Continued on next page
+
+18
+
+Table 7: Full list of answerable question templates. (Continued)
+Patient scope
+
+Question template
+
+Assumption
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} received a {lab_name} lab test on the current hospital visit?
+
+Only current
+patient
+
+Single
+
+How many [unit_count] have passed since the [time_filter_exact1] time patient
+{patient_id} had a {intake_name} intake on the current ICU visit?
+
+Only current
+ICU patient
+
+Single
+
+What was the [time_filter_exact1] hospital admission type of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+What was the [time_filter_exact1] ward of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+What was the [time_filter_exact1] careunit of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+What was the [time_filter_exact1] measured height of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+What was the [time_filter_exact1] measured weight of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+What was the name of the diagnosis that patient {patient_id} [time_filter_exact1] received
+[time_filter_global1]?
+
+Single
+
+What was the name of the procedure that patient {patient_id} [time_filter_exact1] received
+[time_filter_global1]?
+
+Single
+
+What was the name of the drug that patient {patient_id} was [time_filter_exact1] prescribed via
+{drug_route} route [time_filter_global1]?
+
+Single
+
+What was the name of the drug that patient {patient_id} was [time_filter_exact1] prescribed
+[time_filter_global1]?
+
+Single
+
+What was the name of the drug that patient {patient_id} was prescribed [time_filter_within]
+after having been diagnosed with {diagnosis_name} [time_filter_global1]?
+
+Single
+
+What was the name of the drug that patient {patient_id} was prescribed [time_filter_within]
+after having received a {procedure_name} procedure [time_filter_global1]?
+
+Single
+
+What was the dose of {drug_name} that patient {patient_id} was [time_filter_exact1]
+prescribed [time_filter_global1]?
+
+Single
+
+What was the total amount of dose of {drug_name} that patient {patient_id} were prescribed
+[time_filter_global1]?
+
+Single
+
+What was the name of the drug that patient {patient_id} were prescribed [n_times]
+[time_filter_global1]?
+
+Single
+
+What is the new prescription of patient {patient_id} [time_filter_global2] compared to the
+prescription [time_filter_global1]?
+
+Single
+
+What was the [time_filter_exact1] measured value of a {lab_name} lab test of patient
+{patient_id}[time_filter_global1]?
+
+Single
+
+What was the name of the lab test that patient {patient_id} [time_filter_exact1] received
+[time_filter_global1]?
+
+Single
+
+what was the [agg_function] {lab_name} value of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+What was the name of the allergy that patient {patient_id} had [time_filter_global1]?
+
+Single
+
+What was the name of the substance that patient {patient_id} was allergic to
+[time_filter_global1]?
+
+Single
+
+What was the organism name found in the [time_filter_exact1] {culture_name} microbiology
+test of patient {patient_id} [time_filter_global1]?
+
+Single
+
+What was the name of the specimen that patient {patient_id} was [time_filter_exact1] tested
+[time_filter_global1]?
+
+Single
+
+What was the name of the intake that patient {patient_id} [time_filter_exact1] had
+[time_filter_global1]?
+
+Single
+
+What was the total volume of {intake_name} intake that patient {patient_id} received
+[time_filter_global1]?
+
+global filters
+do not overlap
+
+Continued on next page
+
+19
+
+Table 7: Full list of answerable question templates. (Continued)
+Patient scope
+
+Question template
+
+Assumption
+
+Single
+
+What was the total volume of intake that patient {patient_id} received [time_filter_global1]?
+
+Single
+
+What was the name of the output that patient {patient_id} [time_filter_exact1] had
+[time_filter_global1]?
+
+Single
+
+What was the total volume of {output_name} output that patient {patient_id} had
+[time_filter_global1]?
+
+Single
+
+What was the total volume of output that patient {patient_id} had [time_filter_global1]?
+
+Single
+
+What is the difference between the total volume of intake and output of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+What was the [time_filter_exact1] measured {vital_name} of patient
+{patient_id}[time_filter_global1]?
+
+Single
+
+What was the {agg_function} {vital_name} of patient
+{patient_id}[time_filter_global1]?
+
+Single
+
+What is_verb the total hospital cost of patient {patient_id} [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] hospital admission time of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] hospital admission time that patient {patient_id} was
+admitted via {admission_route}[time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] hospital discharge time of patient
+{patient_id}[time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] length of ICU stay of patient {patient_id}?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} was diagnosed with
+{diagnosis_name} [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] procedure time of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} received a
+{procedure_name} procedure [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] prescription time of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} was prescribed
+{drug_name} [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} was prescribed
+{drug_name1} and {drug_name2} [time_filter_within] [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} was prescribed a
+medication via {drug_route} route [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} was prescribed a
+medication via {drug_route} route [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] lab test of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} received a {lab_test}
+lab test [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} had the [sort] value of
+{lab_name} [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] microbiology test of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+When was patient {patient_id}’s [time_filter_extract1] {culture_name} microbiology
+test [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} had a {intake_name}
+intake [time_filter_global1]?
+
+No current ICU
+patient
+
+Continued on next page
+
+20
+
+Table 7: Full list of answerable question templates. (Continued)
+Patient scope
+
+Question template
+
+Assumption
+
+Single
+
+When was the [time_filter_extract1] intake time of patient {patient_id}
+[time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} had a {output_name}
+output [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} had a {vital_name}
+measured [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that the {vital_name} of patient {patient_id}
+was [comparison] than {vital_value} [time_filter_global1]?
+
+Single
+
+When was the [time_filter_extract1] time that patient {patient_id} had the [sort]
+{vital_name} [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} received a {procedure_name} procedure in other than the current
+hospital [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} been admitted to the hospital [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} been to an emergency room [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} received any procedure [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} received a {procedure_name} procedure
+[time_filter_global1]?
+
+Single
+
+What was the name of the procedure that patient {patient_id} received [n_times]
+[time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} received any diagnosis [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} been diagnosed with {diagnosis_name}
+[time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} been prescribed {drug_name1},{drug_name2}, or {drug_name3}
+[time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} been prescribed any medication [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} been prescribed {drug_name} [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} received any lab test [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} received a {lab_name} lab test [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} had any allergy [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} had any microbiology test result [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} had any {culture_name} microbiology test result
+[time_filter_global1]?
+
+Single
+
+Has_verb there been any organism found in the [time_filter_extract1]{culture_name}
+microbiology test of patient {patient_id} [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} had any {intake_name} intake [time_filter_global1]?
+
+Single
+
+Has_verb patient {patient_id} had any {output_name} output [time_filter_global1]?
+
+Single
+
+Has_verb the {vital_name} of patient {patient_id} been ever [comparison] than
+{vital_value} [time_filter_global1]?
+
+Single
+
+Has_verb the {vital_name} of patient {patient_id} been normal [time_filter_global1]?
+
+Single
+
+List the hospital admission time of patient {patient_id} [time_filter_global1].
+
+Single
+
+List the [unit_average] [agg_function] {lab_name} lab value of patient {patient_id}
+[time_filter_global1].
+
+Single
+
+List the [unit_average] [agg_function] weight of patient {patient_id}
+[time_filter_global1].
+
+Single
+
+List the [unit_average] [agg_function] volume of {intake_name} intake that patient
+{patient_id} received [time_filter_global1].
+
+Only sample
+current patient
+
+Continued on next page
+
+21
+
+Table 7: Full list of answerable question templates. (Continued)
+Patient scope
+
+Question template
+
+Assumption
+
+Single
+
+List the [unit_average] [agg_function] volume of {output_name} output that patient
+{patient_id} had [time_filter_global1].
+
+Single
+
+List the [unit_average] [agg_function] {vital_name} of patient {patient_id}
+[time_filter_global1].
+
+Single
+
+Count the number of hospital visits of patient {patient_id} [time_filter_global1].
+
+Single
+
+Count the number of ICU visits of patient {patient_id} [time_filter_global1].
+
+Single
+
+Count the number of times that patient {patient_id} received a {procedure_name} procedure
+[time_filter_global1].
+
+Single
+
+Count the number of drugs patient {patient_id} was prescribed [time_filter_global1].
+
+Single
+
+Count the number of times that patient {patient_id} were prescribed {drug_name}
+[time_filter_global1].
+
+Single
+
+Count the number of times that patient {patient_id} received a {lab_name} lab test
+[time_filter_global1].
+
+Single
+
+Count the number of times that patient {patient_id} had a {intake_name} intake
+[time_filter_global1].
+
+Single
+
+Count the number of times that patient {patient_id} had a {output_name} output
+[time_filter_global1].
+
+Group
+
+Count the number of current patients.
+
+Group
+
+Count the number of current patients aged [age_group].
+
+Group
+
+What is the [n_survival_period] survival rate of patients diagnosed with {diagnosis_name}?
+
+Group
+
+What is the [n_survival_period] survival rate of patients who were prescribed {drug_name} after
+having been diagnosed with {diagnosis_name}?
+
+Group
+
+What are the top [n_rank] diagnoses that have the highest [n_survival_period] mortality rate?
+
+Group
+
+What is_verb the [agg_fuction] total hospital cost that involves a procedure named
+{procedure_name} [time_filter_global1]?
+
+Group
+
+What is_verb the [agg_fuction] total hospital cost that involves a {lab_name} lab test
+[time_filter_global1]?
+
+Group
+
+What is_verb the [agg_fuction] total hospital cost that involves a drug named {drug_name}
+[time_filter_global1]?
+
+Group
+
+What is_verb the [agg_fuction] total hospital cost that involves a diagnosis named {diagnosis_name}
+[time_filter_global1]?
+
+Group
+
+List the IDs of patients diagnosed with {diagnosis_name} [time_filter_global1].
+
+Group
+
+What is_verb the [agg_fuction] [unit_average]number of patient records diagnosed with
+{diagnosis_name} [time_filter_global1]?
+
+Group
+
+Count the number of patients who were dead after having been diagnosed with {diagnosis_name}
+[time_filter_within] [time_filter_global1].
+
+Group
+
+Count the number of patients who did not come back to the hospital [time_filter_within] after
+diagnosed with {diagnosis_name} [time_filter_global1].
+
+Group
+
+Count the number of patients who were admitted to the hospital [time_filter_global1].
+
+Group
+
+Count the number of patients who were discharged from the hospital [time_filter_global1].
+
+Group
+
+Count the number of patients who stayed in ward {ward_id} [time_filter_global1].
+
+Group
+
+Count the number of patients who stayed in careunit{careunit} [time_filter_global1].
+
+Group
+
+Count the number of patients who were diagnosed with{diagnosis_name} [time_filter_within]
+after having received a {procedure_name} procedure [time_filter_global1].
+
+Group
+
+Count the number of patients who were diagnosed with{diagnosis_name2} [time_filter_within]
+after having been diagnosed with {diagnosed_name1} [time_filter_global1].
+
+Continued on next page
+
+22
+
+Table 7: Full list of answerable question templates. (Continued)
+Patient scope
+
+Question template
+
+Assumption
+
+Group
+
+Count the number of patients who were diagnosed with {diagnosis_name}
+[time_filter_global1].
+
+Group
+
+Count the number of patients who received a {procedure_name} procedure
+[time_filter_global1].
+
+Group
+
+Count the number of patients who received a {procedure_name} procedure [n_times]
+[time_filter_global1].
+
+Group
+
+Count the number of patients who received a {procedure_name2} procedure
+[time_filter_within] after having received a {procedure_name1} procedure
+[time_filter_global1].
+
+Group
+
+Count the number of patients who received a {procedure_name} procedure [time_filter_within]
+after having been diagnosed with {diagnosis_name1} [time_filter_global1].
+
+Group
+
+Count the number of {procedure_name} procedure cases [time_filter_global1].
+
+Group
+
+Count the number of patients who were prescribed {drug_name} [time_filter_global1].
+
+Group
+
+Count the number of {drug_name} prescription cases [time_filter_global1].
+
+Group
+
+Count the number of patients who were prescribed {drug_name} [time_filter_within] after having
+received a {procedure_name} procedure [time_filter_global1].
+
+Group
+
+Count the number of patients who were prescribed {drug_name} [time_filter_within] after having
+been diagnosed with {diagnosis_name} [time_filter_global1].
+
+Group
+
+Count the number of patients who received a {lab_name} lab test [time_filter_global1].
+
+Group
+
+Count the number of patients who received a {culture_name} microbiology test
+[time_filter_global1].
+
+Group
+
+Count the number of patients who had a {intake_name} intake [time_filter_global1].
+
+Group
+
+What are_verb the top [n_rank] frequent diagnoses [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent diagnoses of patients aged [age_group]
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent diagnoses that patients were diagnosed
+[time_filter_within] after having received a {procedure_name} procedure
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent diagnoses that patients were diagnosed
+[time_filter_within] after having been diagnosed with {diagnosis_name}
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent procedures [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent procedures of patients aged [age_group]
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent procedures that patients received [time_filter_within]
+after having received a {procedure_name} procedure [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent procedures that patients received [time_filter_within]
+after having been diagnosed with {diagnosis_name} [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequently prescribed drugs [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequently prescribed drugs of patients aged [age_group]
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent prescribed drugs for patients who were also prescribed
+{drug_name} [time_filter_within] [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent drugs that patients were prescribed [time_filter_within]
+after having been prescribed with {drug_name} [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent drugs that patients were prescribed [time_filter_within]
+after having received a {procedure_name} procedure [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent drugs that patients were prescribed [time_filter_within]
+after having been diagnosed with {diagnosis_name} [time_filter_global1]?
+
+Continued on next page
+
+23
+
+Table 7: Full list of answerable question templates. (Continued)
+Patient scope
+
+Question template
+
+Group
+
+What are_verb the top [n_rank] frequently prescribed drugs that patients aged [age_group] were
+prescribed [time_filter_within] after having been diagnosed with {diagnosis_name}
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank]frequently prescribed drugs that {gender} patients aged [age_group]
+were prescribed [time_filter_within] after having been diagnosed with {diagnosis_name}
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent lab test [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent lab tests of patients aged [age_group]
+[time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent lab tests that patients had [time_filter_within] after
+having been diagnosed with {diagnosis_name} [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank]frequent lab tests that patients had [time_filter_within] after having
+received a {procedure_name} procedure [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent specimens tested [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent specimens that patients were tested [time_filter_within]
+after having been diagnosed with {diagnosis_name} [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent specimens that patients were tested [time_filter_within]
+after having received a {procedure_name} procedure [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent intake events [time_filter_global1]?
+
+Group
+
+What are_verb the top [n_rank] frequent output events [time_filter_global1]?
+
+Assumption
+
+Several question templates assume a specific range of patients (e.g., current patients or already
+discharged patients), as indicated in the “Assumption” column in Table 7. For example, depending on
+the patients, the way to calculate the duration of hospital stay can be different. The SQL query for
+already discharged patients (i.e., What was the [time_filter_exact1] length of hospital stay
+of patient patient_id?) calculates the time between the hospital admission and discharge, while
+the same query for the current patients (i.e., How many [unit_count] have passed since patient
+patient_id was admitted to the hospital currently?) calculates the time between the hospital
+admission and current time. We intentionally separated the templates to make the model better
+understand the hidden assumptions behind user utterances.
+Time slots with numbering (e.g., [time_filter_global1] and [time_filter_global2]
+) are the variants of the time slot without numbering (e.g., [time_filter_global]).
+The purpose of the numbering is to indicate the temporal order of time filters. Specifically, a higher number indicates the same or a later time for [time_filter_global1]
+and [time_filter_global2], and [time_filter_exact2] must be later than
+[time_filter_exact1].
+Some verbs that end with “_verb” in question templates indicate that the verb tense can change
+depending on the sampled time templates.
+
+B.2
+
+Time Templates
+
+Table 8 shows the full list of time templates with natural language (NL) time expressions and SQL
+time patterns. Based on the time filter types present in question templates, time templates are sampled,
+and their corresponding NL time expressions and SQL time patterns are added to the question
+templates and SQL queries. Column slots in the SQL time patterns such as [time_column]
+and [hospital_dischargetime] are replaced with the actual column names following the
+database schema. The blanks for the NL time expressions and SQL time patterns in the table indicate
+that no time filter is applied.
+24
+
+Table 8: Full list of NL time expressions and their corresponding SQL time patterns.
+Time filter type Expression type
+
+Unit
+
+Interval type Option
+
+NL time expression
+
+SQL time pattern
+
+global
+
+-
+
+-
+
+-
+
+-
+
+global
+
+relative
+
+hospital
+
+in
+
+first
+
+on the first hospital visit
+
+WHERE [hospital_dischargetime] IS NOT NULL
+ORDER BY [hospital_admittime] ASC LIMIT 1
+
+global
+
+relative
+
+hospital
+
+in
+
+last
+
+on the last hospital visit
+
+WHERE [hospital_dischargetime] IS NOT NULL
+ORDER BY [hospital_admittime] DESC LIMIT 1
+
+global
+
+relative
+
+hospital
+
+in
+
+current
+
+on the current hospital visit
+
+WHERE [hospital_dischargetime] IS NULL
+
+global
+
+relative
+
+ICU
+
+in
+
+first
+
+on the first ICU visit
+
+WHERE [icu_dischargetime] IS NOT NULL ORDER
+BY [icu_admittime] ASC LIMIT 1
+
+global
+
+relative
+
+ICU
+
+in
+
+last
+
+on the last ICU visit
+
+WHERE [icu_dischargetime] IS NOT NULL ORDER
+BY [icu_admittime] DESC LIMIT 1
+
+global
+
+relative
+
+ICU
+
+in
+
+current
+
+on the current ICU visit
+
+WHERE [icu_dischargetime] IS NULL
+
+global
+
+relative
+
+year
+
+in
+
+last
+
+last year
+
+WHERE datetime([time_column],'start of
+year') = datetime(current_time,'start of
+year ','-1 year')
+
+global
+
+relative
+
+year
+
+until
+
+last
+
+until last year
+
+WHERE datetime([time_column],'start of
+year') <= datetime(current_time,'start of
+year ','-1 year')
+
+global
+
+relative
+
+year
+
+since
+
+last
+
+since last year
+
+WHERE datetime([time_column],'start of
+year') >= datetime(current_time,'start of
+year ','-1 year')
+
+global
+
+relative
+
+year
+
+in
+
+this
+
+this year
+
+WHERE datetime([time_column],'start of
+year') = datetime(current_time,'start of
+year ','-0 year')
+
+global
+
+relative
+
+year
+
+until
+
+-
+
+until {year} year ago
+
+WHERE datetime([time_column]) <=
+datetime(current_time,'-{year} year')
+
+global
+
+relative
+
+year
+
+since
+
+-
+
+since {year} year ago
+
+WHERE datetime([time_column]) >=
+datetime(current_time,'-{year} year')
+
+global
+
+relative
+
+month
+
+in
+
+last
+
+last month
+
+WHERE datetime([time_column],'start of
+month') = datetime(current_time,'start of
+month','-1 month')
+
+global
+
+relative
+
+month
+
+until
+
+last
+
+until last month
+
+WHERE datetime([time_column],'start of
+month') <= datetime(current_time,'start of
+month','-1 month')
+
+global
+
+relative
+
+month
+
+since
+
+last
+
+since last month
+
+WHERE datetime([time_column],'start of
+month') >= datetime(current_time,'start of
+month','-1 month')
+
+global
+
+relative
+
+month
+
+in
+
+this
+
+this month
+
+WHERE datetime([time_column],'start of
+month') = datetime(current_time,'start of
+month','-0 month')
+
+global
+
+relative
+
+month
+
+until
+
+-
+
+until {month} month ago
+
+WHERE datetime([time_column]) <=
+datetime(current_time,'-{month} month')
+
+global
+
+relative
+
+month
+
+since
+
+-
+
+since {month} month ago
+
+WHERE datetime([time_column]) >=
+datetime(current_time,'-{month} month')
+
+global
+
+relative
+
+day
+
+in
+
+last
+
+yesterday
+
+WHERE datetime([time_column],'start of
+day') = datetime(current_time,'start of
+day','-1 day')
+
+global
+
+relative
+
+day
+
+in
+
+last
+
+until yesterday
+
+WHERE datetime([time_column],'start of
+day') <= datetime(current_time,'start of
+day','-1 day')
+
+global
+
+relative
+
+day
+
+in
+
+last
+
+since yesterday
+
+WHERE datetime([time_column],'start of
+day') >= datetime(current_time,'start of
+day','-1 day')
+
+global
+
+relative
+
+day
+
+in
+
+this
+
+today
+
+WHERE datetime([time_column],'start of
+day') = datetime(current_time,'start of
+day','-0 day')
+
+global
+
+relative
+
+day
+
+until
+
+-
+
+until {day} day ago
+
+WHERE datetime([time_column]) <=
+datetime(current_time,'-{day} day')
+
+global
+
+relative
+
+day
+
+since
+
+-
+
+since {day} day ago
+
+WHERE datetime([time_column]) >=
+datetime(current_time,'-{day} day')
+
+global
+
+absolute
+
+year
+
+in
+
+-
+
+in {year}
+
+WHERE strftime('%Y',[time_column])= '{year}'
+
+global
+
+absolute
+
+year
+
+until
+
+-
+
+until {year}
+
+WHERE strftime('%Y',[time_column]) <=
+'{year}'
+
+Continued on next page
+25
+
+Table 8: Full list of NL time expressions and their corresponding SQL time patterns. (Continued)
+Time filter type Expression type
+
+Unit
+
+Interval type Option
+
+NL time expression
+
+SQL time pattern
+
+global
+
+absolute
+
+year
+
+since
+
+-
+
+since {year}
+
+WHERE strftime('%Y',[time_column]) >=
+'{year}'
+
+global
+
+absolute
+
+month
+
+in
+
+-
+
+in {month}/{year}
+
+WHERE strftime('%Y-%m',[time_column])=
+'{year}-{month}'
+
+global
+
+absolute
+
+month
+
+until
+
+-
+
+until {month}/{year}
+
+WHERE strftime('%Y-%m',[time_column]) <=
+'{year}-{month}'
+
+global
+
+absolute
+
+month
+
+since
+
+-
+
+since {month}/{year}
+
+WHERE strftime('%Y-%m',[time_column]) >=
+'{year}-{month}'
+
+global
+
+absolute
+
+day
+
+in
+
+-
+
+on {month}/{day}/{year}
+
+WHERE strftime('%Y-%m-%d',[time_column]) =
+'{year}-{month}-{day}'
+
+global
+
+absolute
+
+day
+
+until
+
+-
+
+until {month}/{day}/{year}
+
+WHERE strftime('%Y-%m-%d',[time_column]) <=
+'{year}-{month}-{day}'
+
+global
+
+absolute
+
+day
+
+since
+
+-
+
+WHERE strftime('%Y-%m-%d',[time_column]) >=
+since {month}/{day}/{year}
+'{year}-{month}{day}'
+
+global
+
+mix
+
+month
+
+in
+
+last
+
+in {month}/last year
+
+WHERE datetime([time_column],'start of
+year') = datetime(current_time,'start of
+year','-1 year') AND
+strftime('%m',[time_column]) = '{month}'
+
+global
+
+mix
+
+month
+
+in
+
+this
+
+in {month}/this year
+
+WHERE datetime([time_column],'start of
+year') = datetime(current_time,'start of
+year','-0 year') AND
+strftime('%m',[time_column]) = '{month}'
+
+global
+
+mix
+
+day
+
+in
+
+last
+
+WHERE datetime([time_column],'start of
+year') = datetime(current_time,'start of
+on {month}/{day}/last year year','-1 year') AND
+strftime('%m-%d',[time_column]) =
+'{month}-{day}'
+
+global
+
+mix
+
+day
+
+in
+
+this
+
+WHERE datetime([time_column],'start of
+year') = datetime(current_time,'start of
+on {month}/{day}/this year year','-0 year') AND
+strftime('%m-%d',[time_column]) =
+'{month}-{day}'
+
+global
+
+mix
+
+day
+
+in
+
+last
+
+on last month/{day}
+
+WHERE datetime([time_column],'start of
+month') = datetime(current_time,'start of
+month','-1 month') AND
+strftime('%d',[time_column]) = '{day}'
+
+global
+
+mix
+
+day
+
+in
+
+this
+
+on this month/{day}
+
+WHERE datetime([time_column],'start of
+month') = datetime(current_time,'start of
+month','-0 month') AND
+strftime('%d',[time_column]) = '{day}'
+
+within
+
+-
+
+-
+
+-
+
+-
+
+within
+
+-
+
+hospital
+
+in
+
+-
+
+within the same hospital visit
+
+within
+
+-
+
+ICU
+
+in
+
+-
+
+within the same icu visit
+
+within
+
+-
+
+year
+
+in
+
+-
+
+within the same year
+
+WHERE datetime([time_column1],'start of
+year') = datetime([time_column2],'start of
+year'
+
+within
+
+-
+
+n_year
+
+in
+
+-
+
+within {year} year
+
+WHERE datetime([time_column2]) BETWEEN
+datetime([time_column1] AND
+datetime([time_column1],'+{year} year'
+
+within
+
+-
+
+month
+
+in
+
+-
+
+within the same month
+
+WHERE datetime([time_column1],'start of
+month') = datetime([time_column2],'start
+of month'
+
+within
+
+-
+
+n_month
+
+in
+
+-
+
+within {month} month
+
+WHERE datetime([time_column2]) BETWEEN
+datetime([time_column1] AND
+datetime([time_column1],'+{month} month'
+
+within
+
+-
+
+day
+
+in
+
+-
+
+within the same day
+
+WHERE datetime([time_column1],'start of
+day') = datetime([time_column2],'start of
+day'
+
+within
+
+-
+
+n_day
+
+in
+
+-
+
+within {day} day
+
+WHERE datetime([time_column2]) BETWEEN
+datetime([time_column1] AND
+datetime([time_column1],'+{day} day'
+
+within
+
+-
+
+exact
+
+in
+
+-
+
+at the same time
+
+WHERE datetime([time_column1]) =
+datetime([time_column2])
+
+WHERE [hospital_admission_id1] =
+[hospital_admission_id2]
+WHERE [icu_admission_id1] =
+[icu_admission_id2]
+
+Continued on next page
+
+26
+
+Table 8: Full list of NL time expressions and their corresponding SQL time patterns. (Continued)
+Time filter type Expression type
+
+Unit
+
+Interval type Option
+
+NL time expression
+
+SQL time pattern
+
+exact
+
+relative
+
+exact
+
+at
+
+-
+
+first
+
+ORDER BY [time_column] ASC LIMIT 1
+
+exact
+
+relative
+
+exact
+
+at
+
+-
+
+second
+
+ORDER BY [time_column] ASC LIMIT 1 OFFSET 1
+
+exact
+
+relative
+
+exact
+
+at
+
+-
+
+second to last
+
+ORDER BY [time_column] DESC LIMIT 1 OFFSET
+1
+
+exact
+
+relative
+
+exact
+
+at
+
+-
+
+exact
+
+absolute
+
+exact
+
+at
+
+last
+
+ORDER BY [time_column1] DESC LIMIT 1
+
+at {year}-{month}-{day} WHERE datetime([time_column]) =
+{hour}
+'{year}-{month}-{day} {hour}:{minute}
+:{minute}:{second}
+:{second}'
+
+-
+
+Time templates with the option “this” are not combined with the interval type of “since” or “until”
+because combining “this” with “since” is equivalent to combining “this” with “in” (i.e., since this
+year is equivalent to this year). Additionally, combining “this” with “until” is equivalent to no time
+constraint (i.e., until this year is equivalent to no time filter).
+In relative time expressions, the concept of N units before the current time is ambiguous because one
+year ago and the last year can differ depending on the context. Therefore, we strictly define “N units
+ago” as a time point exactly N units before the current time (e.g., one year ago of the current time
+2105-12-31 23:59:00 is 2104-12-31 23:59:00) and they can be combined with the “until” and “since”
+interval types. Figure 5 illustrates several time templates.
+
+current time
+
+since last year
+
+current time
+
+since last year
+
+since 3 years ago, since 07/01/2102, since 07/2102
+2101-01-01 00:00:00
+
+since 3 years ago, since 07/01/2102, since 07/2102
+
+2102-01-01 00:00:00
+
+2101-01-01 00:00:00
+
+2103-01-01 00:00:00
+
+2102-01-01 00:00:00
+
+2103-01-01 00:00:00
+
+2104-01-01 00:00:00
+
+2104-01-01 00:00:00
+
+until 3 years ago
+
+last year
+
+last year
+
+until 3 years ago
+
+2105-01-01 00:00:00
+
+2105-01-01 00:00:00
+
+this year
+this year
+
+until
+last year
+until last year
+2101-07-01 00:00:00
+2101-07-01 00:00:00
+
+2102-07-01
+00:00:00
+2102-07-01
+00:00:00
+
+2103-07-01 00:00:00
+2103-07-01
+00:00:00
+
+2104-07-01
+00:00:0000:00:00
+2104-07-01
+
+since last year
+
+WHERE datetime([time_column],'start of year') >= datetime('2105-07-01 00:00:00','start of year','-1 year')
+
+since 3 years ago
+
+WHERE datetime([time_column]) >= datetime('2105-07-01 00:00:00','-3 year')
+
+since 07/01/2102
+
+WHERE strftime('%Y-%m-%d',[time_column]) >= '2105-07-01'
+
+since 07/2102
+
+WHERE strftime('%Y-%m',[time_column]) >= '2105-07'
+
+this year
+
+WHERE datetime([time_column],'start of year') = datetime('2105-07-01 00:00:00','start of year','-0 year')
+
+last year
+
+WHERE datetime([time_column],'start of year') = datetime('2105-07-01 00:00:00','start of year','-1 year')
+
+until 3 years ago
+
+WHERE datetime([time_column]) <= datetime('2105-07-01 00:00:00','-3 year')
+
+until last year
+
+WHERE datetime([time_column],'start of year') <= datetime('2105-07-01 00:00:00','start of year','-1 year')
+
+2105-07-01 00:00:00
+2105-07-01 00:00:00
+
+Figure 5: Illustration of time templates.
+
+B.3
+
+Template Combination
+
+As question templates can be combined with multiple slots, we tagged each question to track what
+time templates and pre-defined values are combined to form the final question. Each tag (Q_tag,
+O_tag, and T_tag) represents Stages 0, 1, and 2 in Figure 3. Except for Q_tag, which indicates the
+question template, O_tag and T_tag have fixed numbers of placeholders that store each sampled
+template and value. O_tag stores nine different types of operation values in a tuple: ([age_group],
+[agg_function], [comparison], [n_rank], [n_survival_period], [n_times],
+[sort], [unit_average], [unit_count]), sampled in Stage 1.
+T_tag stores
+time templates in a tuple: ([time_filter_global1], [time_filter_global2],
+[time_filter_within], [time_filter_exact1], [time_filter_exact2]), sampled in Stage 2.
+27
+
+A full list of the operation values is reported in Table 9. Similar to time templates, the operation
+values have both NL expressions and SQL patterns.
+Table 9: Pre-defined operation values.
+
+C
+
+Operation value type
+
+NL operation expression
+
+[age_group]
+
+20's
+30's
+40's
+50's
+60 or above
+
+WHERE [age_col] BETWEEN 20 AND 29
+WHERE [age_col] BETWEEN 30 AND 39
+WHERE [age_col] BETWEEN 40 AND 49
+WHERE [age_col] BETWEEN 50 AND 59
+WHERE [age_col] >= 60
+
+SQL operation pattern
+
+[age_function]
+
+maximum
+minimum
+average
+
+MAX
+MIN
+AVG
+
+[comparison]
+
+greater
+less
+
+>
+<
+
+[n_rank]
+
+three
+four
+five
+
+3
+4
+5
+
+[n_survival_period]
+
+one year
+two year
+three year
+four year
+five year
+
+1 * 365
+2 * 365
+3 * 365
+4 * 365
+5 * 365
+
+[n_times]
+
+two times
+two or more times
+
+=2
+>= 2
+
+[sort]
+
+min
+max
+
+[unit_average]
+
+yearly
+monthly
+daily
+
+GROUP BY strftime('%Y',[time_col])
+GROUP BY strftime('%Y-%m',[time_col])
+GROUP BY strftime('%Y-%m-%d',[time_col])
+
+[unit_count]
+
+days
+hours
+
+1*
+24 *
+
+ORDER BY [sort_col] ASC LIMIT 1
+ORDER BY [sort_col] DESC LIMIT 1
+
+SQL Labeling Details
+
+Since the questions were collected independently of the database schema, our SQL labeling process
+required us to make numerous assumptions. Below is a list of the assumptions we made to label the
+queries.
+C.1
+
+Shared Assumptions
+• The age of a patient is calculated only once at each hospital admission time. Therefore, even
+if a patient stays more than a year without hospital discharge, the age remains the same.
+• To count the number of patients or hospital (or ICU) visits, DISTINCT is used in the
+SELECT clause.
+• The queries about the cost of or drug routes use DISTINCT.
+• When retrieving a lab value or vital sign, only the value is returned, not the unit of measurement.
+• DENSE_RANK is used for ranking questions, meaning multiple items with the same ranks
+can be returned together. For example, a query asking about the top three frequent diagnoses
+may retrieve more than three diagnosis names when items with the same rank exist in the
+answer. Additionally, the retrieved results can be fewer than the expected number N when
+the number of diagnoses under some conditions is smaller than the expected number.
+• When a question is related to both death and diagnosis, only the first diagnosis time is
+considered.
+• When calculating the N-year survival rate, if a death record exists between the first diagnosis
+time and N years later, it counts as death. But if there is no death record within N years or
+the death happens after N years, it counts as survived.
+• The current time and normal ranges of vital signs are post-processed after SQL generation
+so that they are independent of the modeling pipeline when the value changes.
+28
+
+• The vital signs we consider in the dataset are body temperature, SaO2, heart rate, respiratory
+rate, and blood pressures (systemic systolic, diastolic, and mean).
+C.1.1
+
+Assumptions in MIMIC-III
+• Diagnosis and procedure times are not available in the original database. To address this,
+we manually set diagnosis time as hospital admission time and procedure time as hospital
+discharge time. Thus, questions asking about current patients’ procedure time are excluded
+in the MIMIC-III questions.
+• Among many items in the CHARTEVENTS table, we only use weight, height, and the seven
+vital sign values.
+• We use INPUTEVENTS_CV instead of INPUTEVENTS_MV for input events as it contains
+more records and one time column per record (charttime), which is more closely aligned
+with eICU’s intakeoutput table.
+• For input and output events, we only use values stored in milliliters (mL) in the case of
+numerical reasoning within or between input and output events.
+
+C.1.2
+
+Assumptions in eICU
+• Diagnosis and treatment tables have path-based names for each record. Instead of using
+them directly, the paths are further pre-processed to have shorter names.
+• For vital signs, we choose the vitalperiodic table as it contains more records.
+• Questions about drug dose are not considered in eICU as drug doses are stored in free-text
+(values and units are mixed).
+
+C.2
+
+Mapping Between Condition Value Slots and Column Names
+
+The mapping between condition value slots and column names in both MIMIC-III and eICU is shown
+in Table 10.
+Table 10: Schema mapping in both MIMIC-III and eICU.
+Condition value slots
+
+MIMIC-III
+
+{abbreviation}
+
+d_icd_procedures.short_title
+d_icd_diagnoses.short_title
+
+eICU
+-
+
+{admission_route}
+
+admissions.admission_location
+
+patient.hospitaladmitsource
+
+{careunit}
+
+transfers.curr_careunit
+
+-
+
+{culture_name}
+
+microbiologyevents.spec_type_desc
+
+microlab.culturesite
+
+{diagnosis_name}
+
+d_icd_diagnoses.short_title
+
+diagnosis.diagnosisname
+
+{drug_name}
+
+prescriptions.drug_name
+
+medication.drugname
+
+{drug_route}
+
+prescriptions.route
+
+medication.routeadmin
+
+{gender}
+
+patients.gender
+
+patient.gender
+
+{intake_name}
+
+d_items.label
+
+intakeoutput.celllabel
+
+{lab_name}
+
+d_labitems.label
+
+lab.labname
+
+{lab_value}
+
+labevents.valuenum
+
+lab.labresult
+
+{output_name}
+
+d_items.label
+
+intakeoutput.celllabel
+
+{patient_id}
+
+patients.subject_id
+
+patient.uniquepid
+
+{procedure_name}
+
+d_icd_procedures.short_title
+
+treatment.treatmentname
+
+{vital_name}
+
+d_items.label
+
+-
+
+{vital_value}
+
+chartevents.valuenum
+
+vitalperiodic.temperature,
+vitalperiodic.sao2,
+vitalperiodic.heartrate,
+vitalperiodic.respiration,
+vitalperiodic.systemicsystolic,
+vitalperiodic.systemicdiastolic,
+vitalperiodic.systemicmean
+
+{ward_id}
+
+transfers.curr_wardid
+
+patient.wardid
+
+29
+
+<Question>
+
+How much of a difference is there in patient 2518's weight last measured on the current
+hospital visit compared to the second to last value measured on the current hospital visit?
+
+<JOIN-based query>
+
+<Nesting-based query>
+
+SELECT
+(
+SELECT chartevents.valuenum
+FROM chartevents
+WHERE chartevents.icustay_id IN (
+SELECT icustays.icustay_id
+FROM icustays
+WHERE icustays.hadm_id IN (
+SELECT admissions.hadm_id
+FROM admissions
+WHERE admissions.subject_id = 2518
+and admissions.dischtime is null
+)
+)
+AND chartevents.itemid IN (
+SELECT d_items.itemid
+FROM d_items
+WHERE d_items.label = 'admit wt'
+AND d_items.linksto = 'chartevents'
+)
+ORDER BY chartevents.charttime DESC LIMIT 1
+)
+(
+SELECT chartevents.valuenum
+FROM chartevents
+WHERE chartevents.icustay_id IN (
+SELECT icustays.icustay_id
+FROM icustays
+WHERE icustays.hadm_id IN (
+SELECT admissions.hadm_id
+FROM admissions
+WHERE admissions.subject_id = 2518
+and admissions.dischtime is null
+)
+)
+AND chartevents.itemid IN (
+SELECT d_items.itemid
+FROM d_items
+WHERE d_items.label = 'admit wt'
+AND d_items.linksto = 'chartevents'
+)
+ORDER BY chartevents.charttime DESC LIMIT 1 offset 1
+)
+
+SELECT
+(
+SELECT chartevents.valuenum
+FROM chartevents
+JOIN d_items
+ON chartevents.itemid = d_items.itemid
+JOIN icustays
+ON chartevents.icustay_id = icustays.icustay_id
+JOIN admissions
+ON icustays.hadm_id = admissions.hadm_id
+WHERE admissions.subject_id = 2518
+AND d_items.label = 'admit wt'
+AND d_items.linksto = 'chartevents'
+AND admissions.dischtime IS NULL
+ORDER BY chartevents.charttime DESC LIMIT 1
+)
+(
+SELECT chartevents.valuenum
+FROM chartevents
+JOIN d_items
+ON chartevents.itemid = d_items.itemid
+JOIN icustays
+ON chartevents.icustay_id = icustays.icustay_id
+JOIN admissions
+ON icustays.hadm_id = admissions.hadm_id
+WHERE admissions.subject_id = 2518
+AND d_items.label = 'admit wt'
+AND d_items.linksto = 'chartevents'
+AND admissions.dischtime IS NULL
+ORDER BY chartevents.charttime DESC LIMIT 1 OFFSET 1
+)
+
+Figure 6: JOIN-based and nesting-based queries.
+
+C.3
+
+Comparison Between JOIN-based and Nesting-based Queries
+
+Unlike most other semantic parsing datasets, the SQL queries in EHRSQL are labeled in a nested
+manner. Table 6 shows a comparison between queries with the naive use of JOIN and nesting. In
+terms of query length, JOIN-based queries are much shorter, but it is hard to follow the semantics in
+the queries. However, even if the length of the queries is long, T5 models are able to fully generate a
+long sequence of SQL (see Table 12 for qualitative results). As for execution speed, the naive use of
+JOIN takes almost four times slower than a nesting-based query in some cases (0.04 vs. 0.15 secs),
+as shown in Figure 6.
+
+D
+
+Database Pre-processing Details
+
+D.1
+
+Database Pre-processing Rules
+• Patients aged 11 to 89 are included. In eICU, ages recorded as “> 89” are mapped to 90 and
+thus retained.
+• 1,000 patients are sampled to cover a greater number of medical events (MIMICSQL and
+emrKBQA use 100 patients).
+• When the same type of value has multiple units of measurement, only the value with the
+most common unit is retained and other values are removed from the database.
+• All records are lower-cased.
+
+D.2
+
+Time-shifting Process
+
+To include questions with relative time expressions, we manually time-shift each patient’s hospital
+records. Specifically, we sample a random time point (between 2100 and 2105) to set the time of
+the first hospital visit. Then, we time-shift the whole patient records to the sampled time point while
+keeping all the record intervals the same. Additionally, we constrain the number of current patients to
+30
+
+10% of the total number of patients in patient sampling since any questions can be asked with relative
+time expressions, such as yesterday and last month.
+D.3
+
+De-identification Process
+
+Even though MIMIC-III and eICU are de-identified databases, they still contain patient-specific
+information. In our case, when one or more condition values are sampled along with a patient ID,
+there is a risk that the question and its paired SQL query might reveal patient-specific information.
+To avoid such risk, we randomly shuffle records of diagnosis, procedure, lab tests, prescription, chart
+events, input events, output events, microbiology tests, care units, and ward IDs across patients in the
+database, while keeping the time of the records the same.
+
+E
+
+Template Paraphrasing Pipeline
+
+Figure 7: Template paraphrasing pipeline.
+The overall template paraphrasing pipeline is illustrated in Figure 7.
+
+F
+
+Data Splitting
+
+We constrain the training, validation, and test sets to contain all question templates, but the template
+paraphrases do not overlap between the splits.
+• Training set: We provide more text-to-SQL pairs to question templates with a greater number
+of slots. Specifically, question templates with fewer than three slots are assigned thirty to
+sixty pairs. Questions with three or more slots and fewer than five receive forty to eighty
+pairs; questions with five or more slots receive fifty to one hundred pairs per question
+template.
+• Validation set: The number of pairs per question template is sampled between four and five.
+• Test set: Data sampling rules are identical to those of the validation set, except that we
+assign higher weights on the question templates that are considered important, which are
+labeled in “high,” “medium,” “low,” and “n/a” (not available) by a physician. With a score
+of 3 for “high,” 2 for “medium,” 1 for the rest, the final number of pairs in the test set is
+multiplied by the importance score for each question template.
+• Unanswerable question: They are assigned to the validation and test sets so that each split
+makes up 33%.
+31
+
+G
+
+Training Details
+
+We use pre-trained T5-base models from Hugging Face13 for both the no schema and schema versions.
+Without a schema, the model is trained to translate from natural questions to SQL queries. With a
+schema, we additionally append schema information to the questions. The training and evaluation
+configurations are in Table 11. All models are trained on NVIDIA GeForce RTX 3090s.
+Table 11: T5-base fine-tuning configurations.
+Training
+Total training step
+Batch size
+Max length
+Optimizer
+Learning rate
+Learning rate scheduler
+Max gradient norm
+Weight decay
+Validation step
+
+100,000
+32
+512
+Adam
+1e-4
+Fixed
+1.0
+0.1
+5,000
+
+Evaluation
+Num beams
+Repetition penalty
+Length penalty
+
+H
+
+Qualitative Results
+
+H.1
+
+SQL Generation by Question Complexity
+
+5
+1.0
+1.0
+
+Table 12 shows samples of generated SQL queries by the number of slots. A T5-base model trained
+on MIMIC-III can generate a very long sequence of SQL queries if they are seen in the training
+data. In most cases, the errors do not come from generating complex, long nested queries, but from
+failures in schema linking (identifying references of columns, tables, and condition values in natural
+utterances).
+H.2
+
+SQL Generation with Different Time Expressions
+
+Table 13 shows generated SQL samples with different time templates. The column Seen vs. Unseen
+indicates whether the exact question template (Q_tag) and time template (T_tag) combination is seen
+during training. Interestingly, the model can correctly generate SQL queries for both seen and unseen
+combinations.
+H.3
+
+Falsely Executed and Refused Results
+
+Table 14 and 15 show samples of falsely executed and refused questions, respectively. Falsely
+executed results are retrieved results of the model even though the input question is unanswerable
+(see Table 14). These errors are fatal mistakes that a healthcare QA system must avoid, as retrieving
+incorrect information may lead to wrong clinical decisions.
+Table 15 shows refused results of the model. In some cases, the model might be able to generate the
+SQL query, but chooses not to execute it due to low confidence.
+
+13
+
+https://huggingface.co/
+
+32
+
+Table 12: SQL generation results by complexity.
+Number of slots
+
+Question
+
+1
+
+what is the method for ingestion of danazol?
+
+select distinct prescriptions.route from prescriptions
+where prescriptions.drug = 'danazol'
+
+select distinct prescriptions.route from prescriptions
+where prescriptions.drug = 'ingestion of danazol'
+
+2
+
+how many patients were given temporary
+tracheostomy?
+
+select count( distinct admissions.subject_id ) from
+admissions where admissions.hadm_id in ( select
+procedures_icd.hadm_id from procedures_icd where
+procedures_icd.icd9_code = ( select
+d_icd_procedures.icd9_code from d_icd_procedures where
+d_icd_procedures.short_title = 'temporary tracheostomy') )
+
+select count( distinct admissions.subject_id ) from
+admissions where admissions.hadm_id in ( select
+procedures_icd.hadm_id from procedures_icd where
+procedures_icd.icd9_code = ( select
+d_icd_procedures.icd9_code from d_icd_procedures where
+d_icd_procedures.short_title = 'procedures_icd') )
+
+2
+
+tell me the length of the hospital stay of
+the last hospital stay of patient 3745.
+
+select strftime('%J',admissions.dischtime) strftime('%J',admissions.admittime) from admissions where
+admissions.subject_id = 3745 and admissions.dischtime is
+not null order by admissions.admittime desc limit 1
+
+select strftime('%J',admissions.dischtime) strftime('%J',admissions.admittime) from admissions where
+admissions.subject_id = 3745 and admissions.dischtime is
+not null order by admissions.admittime desc limit 1
+
+tell me the percentile of mcv 97.0 in
+patients of the same age as patient 2127
+during the last hospital visit?
+
+select distinct t1.c1 from ( select labevents.valuenum,
+percent_rank() over ( order by labevents.valuenum ) as c1
+from labevents where labevents.itemid in ( select
+d_labitems.itemid from d_labitems where d_labitems.label
+='mcv') and labevents.hadm_id in ( select
+admissions.hadm_id from admissions where admissions.age = (
+select admissions.age from admissions where
+admissions.subject_id = 2127 and admissions.dischtime is
+not null order by admissions.admittime desc limit 1 ) ) )
+as t1 where t1.valuenum = 97.0
+
+select distinct t1.c1 from ( select labevents.valuenum,
+percent_rank() over ( order by labevents.valuenum ) as c1
+from labevents where labevents.itemid in ( select
+d_labitems.itemid from d_labitems where d_labitems.label
+='mcv') and labevents.hadm_id in ( select
+admissions.hadm_id from admissions where admissions.age = (
+select admissions.age from admissions where
+admissions.subject_id = 2127 and admissions.dischtime is
+not null order by admissions.admittime desc limit 1 ) ) )
+as t1 where t1.valuenum = 97.0
+
+what's the potassium change/difference of
+patient 99747 second measured on the last
+hospital visit compared to the first value
+measured on the last hospital visit?
+
+select ( select labevents.valuenum from labevents where
+labevents.hadm_id in ( select admissions.hadm_id from
+admissions where admissions.subject_id = 99747 and
+admissions.dischtime is not null order by
+admissions.admittime desc limit 1 ) and labevents.itemid in
+( select d_labitems.itemid from d_labitems where
+d_labitems.label = 'potassium') order by
+labevents.charttime asc limit 1 offset 1 ) - ( select
+labevents.valuenum from labevents where labevents.hadm_id
+in ( select admissions.hadm_id from admissions where
+admissions.subject_id = 99747 and admissions.dischtime is
+not null order by admissions.admittime desc limit 1 ) and
+labevents.itemid in ( select d_labitems.itemid from
+d_labitems where d_labitems.label = 'potassium') order by
+labevents.charttime asc limit 1 )
+
+select ( select labevents.valuenum from labevents where
+labevents.hadm_id in ( select admissions.hadm_id from
+admissions where admissions.subject_id = 99747 and
+admissions.dischtime is not null order by
+admissions.admittime desc limit 1 ) and labevents.itemid in
+( select d_labitems.itemid from d_labitems where
+d_labitems.label = 'potassium') order by
+labevents.charttime asc limit 1 offset 1 ) - ( select
+labevents.valuenum from labevents where labevents.hadm_id
+in ( select admissions.hadm_id from admissions where
+admissions.subject_id = 99747 and admissions.dischtime is
+not null order by admissions.admittime desc limit 1 ) and
+labevents.itemid in ( select d_labitems.itemid from
+d_labitems where d_labitems.label = 'potassium') order by
+labevents.charttime asc limit 1 )
+
+4
+
+6
+
+Real SQL
+
+Generated SQL
+
+Table 13: SQL generation results with different time expressions.
+Question
+
+Real SQL & Generated SQL
+
+Q_tag × T_tag
+
+Seen vs.
+Unseen
+
+the first care unit of patient 46422 since
+2101 is?
+
+select transfers.careunit from transfers where
+transfers.hadm_id in ( select admissions.hadm_id from
+admissions where admissions.subject_id = 46422 ) and
+transfers.careunit is not null and
+strftime('%Y',transfers.intime) >= '2101' order by
+transfers.intime asc limit 1
+
+what was the [time_filter_exact1] careunit of
+patient {patient_id} [time_filter_global1]?
+×
+('abs-year-since', '', '', 'exact-first', '')
+
+seen
+
+what is the first careunit that patient
+53089 stayed on the last hospital
+encounter?
+
+select transfers.careunit from transfers where
+transfers.hadm_id in ( select admissions.hadm_id from
+admissions where admissions.subject_id = 53089 and
+admissions.dischtime is not null order by
+admissions.admittime desc limit 1 ) and transfers.careunit
+is not null order by transfers.intime asc limit 1
+
+what was the [time_filter_exact1] careunit of
+patient {patient_id} [time_filter_global1]?
+×
+('rel-hosp-last', '', '', 'exact-first', '')
+
+unseen
+
+count the number of patients that were
+prescribed aspirin ec within 2 months
+after having received a venous cath nec
+procedure until 4 years ago.
+
+select count( distinct t1.subject_id ) from ( select
+admissions.subject_id, procedures_icd.charttime from
+procedures_icd join admissions on procedures_icd.hadm_id =
+admissions.hadm_id where procedures_icd.icd9_code = (
+select d_icd_procedures.icd9_code from d_icd_procedures
+where d_icd_procedures.short_title ='venous cath nec') and
+datetime(procedures_icd.charttime) <= datetime('2105-12-31
+23:59:00','-4 year') ) as t1 join ( select
+admissions.subject_id, prescriptions.startdate from
+prescriptions join admissions on prescriptions.hadm_id =
+admissions.hadm_id where prescriptions.drug = 'aspirin ec'
+and datetime(prescriptions.startdate) <=
+datetime('2105-12-31 23:59:00','-4 year') ) as t2 on
+t1.subject_id = t2.subject_id where t1.charttime <
+t2.startdate and datetime(t2.startdate) between datetime(
+t1.charttime) and datetime(t1.charttime,'+2 month')
+
+count the number of patients who were
+prescribed {drug_name}
+[time_filter_within] after having
+received a {procedure_name} procedure
+[time_filter_global1].
+×
+('rel-year-until', '', 'within-n_month', '', '')
+
+seen
+
+how many patients were prescribed
+levothyroxine sodium within 2 months since
+2105 after the procedure of cath base
+invasv ep test.
+
+select count( distinct t1.subject_id ) from ( select
+admissions.subject_id, procedures_icd.charttime from
+procedures_icd join admissions on procedures_icd.hadm_id =
+admissions.hadm_id where procedures_icd.icd9_code = (
+select d_icd_procedures.icd9_code from d_icd_procedures
+where d_icd_procedures.short_title = 'cath base invasv ep
+test') and strftime('%Y',procedures_icd.charttime) >=
+'2105' ) as t1 join ( select admissions.subject_id,
+prescriptions.startdate from prescriptions join admissions
+on prescriptions.hadm_id = admissions.hadm_id where
+prescriptions.drug = 'levothyroxine sodium' and
+strftime('%Y',prescriptions.startdate) >= '2105' ) as t2 on
+t1.subject_id = t2.subject_id where t1.charttime <
+t2.startdate and datetime(t2.startdate) between datetime(
+t1.charttime) and datetime(t1.charttime,'+2 month')
+
+count the number of patients who were
+prescribed {drug_name}
+[time_filter_within] after having
+received a {procedure_name} procedure
+[time_filter_global1].
+×
+('abs-year-since', '', 'within-n_month', '', '')
+
+unseen
+
+H.4
+
+Entropy Distribution of the Model Outcome
+
+Figure 8 shows the maximum entropy values generated from T5. As the ground-truth labels (ANS:
+answerable; UnANS: unanswerable) indicate, the distributions of entropy values between answerable
+and unanswerable questions are significantly different (< 0.001 with the Mann-Whitney U test).
+Similar patterns are observed in models trained on eICU.
+33
+
+Table 14: Falsely executed results.
+Question
+
+Real SQL
+
+Generated SQL
+
+what was the duration of the packed cell
+transfusion procedure for patient 9566?
+
+nan
+
+select strftime('%J',admissions.dischtime) strftime('%J',procedures_icd.charttime) from procedures_icd
+where procedures_icd.icd9_code = ( select
+d_icd_procedures.icd9_code from d_icd_procedures where
+d_icd_procedures.short_title = ’packed cell transfusion’ ) )
+
+Retrieved Answer
+
+how long did it take to get venous cath nec for
+patient 31854?
+
+nan
+
+select strftime('%J',admissions.dischtime) strftime('%J',admissions.admittime) from admissions where
+admissions.subject_id = 31854 and admissions.dischtime is
+not null order by admissions.admittime asc limit 1
+
+Comment
+Execution
+error
+
+[(8.61111111100763,)]
+
+Incorrect answer
+retrieved
+
+Table 15: Refused results of both correct and incorrect samples.
+Question
+
+Real SQL
+
+Generated SQL
+
+Comment
+
+how many patients were prescribed with
+magnesium sulfate within the same month after
+the treatment of cont inv mec ven <96 hrs?
+
+select count( distinct t1.subject_id ) from ( select
+admissions.subject_id, procedures_icd.charttime from
+procedures_icd join admissions on procedures_icd.hadm_id =
+admissions.hadm_id where procedures_icd.icd9_code =
+( select d_icd_procedures.icd9_code from d_icd_procedures
+where d_icd_procedures.short_title = 'cont inv mec ven <96
+hrs') ) as t1 join ( select admissions.subject_id,
+prescriptions.startdate from prescriptions join admissions
+on prescriptions.hadm_id = admissions.hadm_id where
+prescriptions.drug ='magnesium sulfate') as t2 on
+t1.subject_id = t2.subject_id where t1.charttime <
+t2.startdate and datetime(t1.charttime,’start of month’) =
+datetime(t2.startdate,'start of month')
+
+select count( distinct t1.subject_id ) from ( select
+admissions.subject_id, procedures_icd.charttime from
+procedures_icd join admissions on procedures_icd.hadm_id =
+admissions.hadm_id where procedures_icd.icd9_code =
+( select d_icd_procedures.icd9_code from d_icd_procedures
+where d_icd_procedures.short_title = 'cont inv mec ven <96
+hrs') ) as t1 join ( select admissions.subject_id,
+prescriptions.startdate from prescriptions join admissions
+on prescriptions.hadm_id = admissions.hadm_id where
+prescriptions.drug ='magnesium sulfate') as t2 on
+t1.subject_id = t2.subject_id where t1.charttime <
+t2.startdate and datetime(t1.charttime,’start of month’) =
+datetime(t2.startdate,'start of month')
+
+Correctly generated
+but refused
+
+select distinct prescriptions.route from prescriptions
+where prescriptions.drug = 'naproxen'
+
+select inputevents_cv.amount from inputevents_cv where
+inputevents_cv.icustay_id in ( select icustays.icustay_id
+from icustays where icustays.hadm_id in ( select
+admissions.hadm_id from admissions where
+admissions.subject_id = naproxen ) ) and
+inputevents_cv.itemid in ( select d_items.itemid from
+d_items where d_items.label = 'niroxen'and d_items.linksto
+= 'inputevents_cv')
+
+Incorrectly generated
+and refused
+
+how is naproxen taken?
+
+Figure 8: Distribution of entropy values generated from T5.
+
+I
+
+Author statement
+
+The authors of this paper bear all responsibility in case of violation of rights, etc. associated with the
+EHRSQL dataset.
+
+34
+
+

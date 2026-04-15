@@ -1,0 +1,864 @@
+MedBench: A Large-Scale Chinese Benchmark
+for Evaluating Medical Large Language Models
+Yan Cai1 , Linlin Wang1,2 * , Ye Wang1 , Gerard de Melo3,4 , Ya Zhang2,5 , Yanfeng Wang2,5 , Liang He1
+1
+
+East China Normal University
+Shanghai Artificial Intelligence Laboratory
+3
+Hasso Plattner Institute 4 University of Potsdam
+5
+Cooperative Medianet Innovation Center, Shanghai Jiao Tong University
+{51255901104,yewang}@stu.ecnu.edu.cn, {llwang,lhe}@cs.ecnu.edu.cn, gdm@demelo.org,
+{ya zhang,wangyanfeng}@sjtu.edu.cn
+Abstract
+
+* Corresponding author.
+
+USA
+
+Introduction
+The advent of large language models (LLMs) has demonstrated substantial potential for diverse real-world applications, thanks to their remarkable language understanding capabilities. In the medical domain, a notable number of Chinese medical LLMs have successively emerged, including
+HuaTuo (Wang et al. 2023), ChatMed (Zhu and Wang 2023),
+BianQue (Chen et al. 2023), Sunsimiao (Xin Yan 2023), and
+DoctorGLM (Xiong et al. 2023), to better assist doctors in
+diverse tasks ranging from clinical diagnosis to disease prevention (Singhal et al. 2023a). This underscores an urgent
+need for a standardized medical benchmark, capable of offering reliable and authoritative evaluations for such LLMs.
+
+Japan
+
+The emergence of various medical large language models
+(LLMs) in the medical domain has highlighted the need for
+unified evaluation standards, as manual evaluation of LLMs
+proves to be time-consuming and labor-intensive. To address
+this issue, we introduce MedBench, a comprehensive benchmark for the Chinese medical domain, comprising 40,041
+questions sourced from authentic examination exercises and
+medical reports of diverse branches of medicine. In particular,
+this benchmark is composed of four key components: the Chinese Medical Licensing Examination, the Resident Standardization Training Examination, the Doctor In-Charge Qualification Examination, and real-world clinic cases encompassing examinations, diagnoses, and treatments. MedBench
+replicates the educational progression and clinical practice
+experiences of doctors in Mainland China, thereby establishing itself as a credible benchmark for assessing the mastery of
+knowledge and reasoning abilities in medical language learning models. We perform extensive experiments and conduct
+an in-depth analysis from diverse perspectives, which culminate in the following findings: (1) Chinese medical LLMs underperform on this benchmark, highlighting the need for significant advances in clinical knowledge and diagnostic precision. (2) Several general-domain LLMs surprisingly possess considerable medical knowledge. These findings elucidate both the capabilities and limitations of LLMs within the
+context of MedBench, with the ultimate goal of aiding the
+medical research community.
+
+Ours
+
+arXiv:2312.12806v1 [cs.CL] 20 Dec 2023
+
+2
+
+CNMLE
+(Chinese Medical
+Licensing Exam)
+Medical School
+
+Resident
+Doctor in-charge Real-world
+Standardization
+Medical
+Qualification
+Training Exam
+Diagnosis
+Exam
+Residency
+
+Doctor in-charge Real-world Case
+
+NMPQE (Medical Licensing Exam)
+Medical School
+
+USMLE
+
+foundation sciences
+Medical School
+
+Residency
+
+USMLE
+
+clinical knowledge
+
+USMLE
+
+generalist medical practice
+Residency
+
+Figure 1: Comparison of procedures in different countries.
+Assessing the potential and inherent limitations of medical LLMs from diverse perspectives continues to present
+considerable challenges (Singhal et al. 2023a; Chang et al.
+2023).
+The primary cause of this issue lies in the pronounced discrepancy between the existing benchmarks and the practical
+realities of medicine, leading to an urgent need for advances
+in evaluation standards. Widely used medical benchmarks
+such as MedQA (Jin et al. 2021) and MedMCQA (Pal, Umapathi, and Sankarasubbu 2022) typically encompass publicly available medical question-answering datasets gathered
+from textbooks, research papers, and board exams. However, in light of recent research employing these open-access
+datasets for model training (Han et al. 2023), a process potentially resulting in data contamination with regard to the
+evaluation (Nori et al. 2023), it is increasingly clear that
+the prevailing benchmarks exhibit considerable limitations.
+A recent study has made advances by introducing a human evaluation framework along with MultiMedQA (Singhal et al. 2023a), a multi-faceted benchmark that combines
+existing QA datasets with a novel set of online medical
+questions. Nonetheless, given the disparities among typologically diverse languages, we are unable to rely on this
+benchmark for assessing Chinese large language models, in
+particular considering the unique clinical standards and procedures across different countries illustrated in Figure 1.
+Hence, several Chinese benchmarks have been proposed,
+including a medical NLP-task oriented one1 and others
+1
+
+https://github.com/michael-wzhu/PromptCBLUE
+
+【few_shot_examples】
+问题：女性，58岁。9个月来巩膜及皮肤发黄，伴皮肤瘙痒来
+诊。体检：巩膜及皮肤明显黄染，肝肋下4cm，质硬无压痛，
+脾肋下5cm，考虑为原发性胆汁性肝硬化。原发性胆汁性肝硬
+化的主要病变在（
+）。
+(Question: A 58-year-old female. Has had jaundice of
+the sclera and skin for 9 months, accompanied by
+pruritus. Physical examination: obvious yellow staining
+of the sclera and skin, liver palpable 4 cm below the
+costal margin, hard texture without tenderness, spleen
+palpable 5 cm below the costal margin. Considered to
+be primary biliary cirrhosis. The main lesions of primary
+biliary cirrhosis are located in the ( ).)
+选项(Options)：
+A. 门管区胆管和胆小管(Bile ducts in portal tracts)
+B. 肝胆管(Hepatic ducts)
+C. 毛细胆管(Bile canaliculi)
+D. 肝细胞(Hepatocytes)
+E. 胆总管(Common bile duct)
+
+ChatGPT：
+A✔
+
+ChatGLM：
+A✔
+
+【few_shot_examples】
+症状: 检查中发现右甲状腺甲状腺包块，遂于2018-08-14我院甲状腺外科就诊
+(Symptoms: Examination revealed a nodule in the right lobe of the thyroid
+gland, so the patient visited the thyroid surgery department of our hospital on
+August 14, 2018.)
+检查(Examinations):
+Ground Truth：
+甲状腺彩超
+(Thyroid ultrasound)
+
+ChatGPT：
+甲状腺超声检查，甲状腺功能检查
+(Thyroid ultrasound, thyroid function
+test)
+
+HuaTuo：
+A. 门管区胆管和胆
+小管✔
+
+ChatGLM：
+根据症状和检查结果，患者可能存在以
+下疾病(Based on the symptoms and
+examination results, the patient may
+have the following conditions)：...
+
+Baichuan-13B：
+根据您的描述和提供的检查结果，您可
+能患有以下几种疾病(Based on your
+description and provided
+examination results, you may have
+the following conditions)：...
+
+ChatMed：
+答案是A✔
+
+HuaTuo：
+甲状腺彩超(Thyroid ultrasound)...
+
+ChatMed：
+甲状腺穿刺活组织病理学报告
+(Thyroid fine needle aspiration
+biopsy pathology report)
+
+Baichuan-13B：
+A✔
+
+回答(Answer):
+
+Figure 2: Examples of prompts and corresponding answers. The left side shows the prompt and responses of LLMs on an
+example question from an exam. The right side is an example of a real-world case.
+based on the Chinese National Medical Licensing Examination (CNMLE), including MLEC-QA (Li, Zhong, and Chen
+2021) and CMExam (Liu et al. 2023). While these benchmarks provide valuable insights, they are not exhaustive and
+may fall short in enabling us to comprehensively gauge the
+potential of LLMs with respect to all-round medical knowledge and their practical utility in real-world clinical diagnostic scenarios. In mainland China, a unique three-stage examination process is employed, key components of which,
+including the Resident Standardization Training and Doctor in-charge Qualification Exams, have largely been overlooked in prior work. Furthermore, the evaluation of realworld clinical practical skills has not been adequately incorporated in prior work.
+To address these gaps and align with the learning and
+growth trajectory of Chinese doctors, we introduce MedBench, a novel large-scale Chinese medical benchmark,
+which encompasses both authentic three-stage medical examinations and real-world clinical diagnosis cases. It surpasses prior benchmarks by being exclusively sourced from
+the latest validated exams and expert-annotated EHRs,
+thereby ensuring compliance with medical standards and
+practices. Furthermore, we conduct extensive experiments
+and offer detailed analyses to provide diverse perspectives
+for evaluating clinical knowledge recall and reasoning capabilities of LLMs across a range of branches of medicine. The
+main findings on this benchmark are as follows:
+• Chinese medical large language models underperform on
+this benchmark, necessitating substantial improvements
+in clinical knowledge and diagnostic accuracy, as well as
+refinement of their original in-context learning abilities.
+• Several large language models designed for generaldomain tasks possess substantial medical knowledge,
+thereby exhibiting promising potential.
+• Human evaluation reveals that ChatGPT possesses rich
+knowledge for clinical practices, while current Chinese
+medical LLMs lack high-quality conversational abilities
+and sufficient medical knowledge.
+• ChatGPT’s unsatisfactory performance in case analysis,
+
+a question type that demands profound medical knowledge understanding and clinical reasoning abilities, reveals significant room for improvement in medicine.
+In summary, this study presents a comprehensive benchmark
+that aligns with the practical realities of medicine in mainland China and provides profound empirical findings to reveal the medical capabilities and limitations of LLMs. Furthermore, we incorporate Item Response Theory (Birnbaum
+1969) to further enhance our benchmark, with the ultimate
+goal of aiding the medical research community.
+
+The Proposed Benchmark
+Overview For better evaluating medical foundation models, this paper proposes MedBench as a large benchmark
+with 40,041 exercises originating from both authentic medical examinations and real-world diagnostic and treatment
+cases. Specifically, we collect three-stage medical examinations that serve as a faithful reflection of the comprehensive
+process involved in obtaining medical licenses in mainland
+China, exemplifying essential medical knowledge. Moreover, we construct a number of real-world cases based on
+electronic health records that provide examination plans, diagnoses, and treatments based on patients’ symptoms, which
+can reveal the medical knowledge utilization and reasoning
+capabilities of LLMs in the real world.
+Construction and Statistics Regarding the three-stage
+medical examinations, we collect representative exercises
+from the Chinese Medical Licensing Exam (CNMLE), Resident Standardization Training Exam, and Doctor in-charge
+Qualification Exam2 across many recent years, covering
+27,248, 2,841, and 8,927 questions, respectively. The examination exercises, depicted on the left of Figure 2, are
+multiple-choice questions that can be categorized into three
+types:
+• A1/A2/B: Single statement questions with one correct
+answer out of five options.
+2
+
+http://www.nmec.org.cn/
+
+Figure 3: Branches of Medicine in MedBench. Part (a) represents the Resident Standardization Training Exam, and (b) reflects
+the Doctor in-charge Qualification Exam.
+• A3/A4: A series of questions accompanied by a clinical
+case with one correct answer out of five options.
+• Case Analysis: Given a clinical case, a series of questions are created with 6–12 options per question. Some
+questions may have more than one correct answer.
+Figure 3 depicts the classification of branches of medicine
+for some examinations in MedBench. Note that we use internal medicine and surgery as representative examples for
+the latter two stages, considering the vast number of subcategories within these fields.
+Furthermore, we collect over 2,000 real-world electronic
+health records, and employ experts to identify the symptoms,
+diagnoses, treatments, and examinations from the reports,
+resulting in 701 high-quality ones with an average length
+of 60–100 words per report (Figure 2). The annotators completed professional training and strictly following predefined
+annotation standards to ensure accuracy. Based on these annotated reports, a total of 1,025 question–answer pairs are
+eventually formed.
+Characteristics MedBench surpasses existing benchmarks in several aspects: (1) Authenticity and Novelty. It
+exclusively leverages expert-annotated EHRs and authentic
+up-to-date medical examinations to mitigate contamination.
+(2) Comprehensiveness and Multi-facetedness. It is meticulously designed to align with Chinese medical standards
+and practices by incorporating three-stage multi-disciplinary
+examinations and real-world clinical cases. (3) Practicality.
+Human evaluation on clinical real-world cases ensures congruence with practical realities of medicine, while difficultystratified divisions in MedBench enable rapid assessment.
+
+Evaluation
+Models and Evaluation Metrics To evaluate the medical capabilities, we conduct assessments using MedBench
+with several representative LLMs from both the general
+and medical domains, including ChatGPT, ChatGLM (Zeng
+et al. 2023; Du et al. 2022), Baichuan-13B3 , HuaTuo, and
+3
+
+https://github.com/baichuan-inc/Baichuan-13B.
+
+ChatMed. Furthermore, we evaluate other Chinese medical
+LLMs, such as BianQue, but we have observed that it lacks
+the ability to deliver accurate and reasonable responses to
+multiple-choice questions.
+For the three-stage multiple-choice examinations, we employ accuracy as the evaluation metric. When dealing with
+real-world cases, we combine expert-level human evaluation
+with the additional automatic evaluation metrics BLEU (Papineni et al. 2002) and ROUGE (Lin 2004).
+Experimental Settings We conduct extensive experiments to evaluate the five-shot performance of LLMs, ensuring their capability to respond in a multiple-choice format.
+We leverage the API for ChatGPT4 and opt for local deployment to facilitate evaluations for other LLMs. Furthermore,
+we partition the MedBench dataset based on exams, medical
+subdiscipline, and question types, and perform independent
+testing on each subset to enable a comprehensive analysis.
+
+Main Results
+Three-stage examination results. In Table 1, we present
+a comprehensive analysis of the accuracy metrics for various LLMs across the three exams. A salient observation is
+that ChatGPT consistently surpasses other models, despite
+the latter being training on extensive Chinese corpora or premium medical datasets. Nevertheless, our observations indicate that ChatGPT’s accuracy rate hovers around 50% for
+CNMLE and approximately 60% for other assessments, exposing substantial avenues for enhancement.
+As depicted in Figure 5, ChatGPT exhibits subpar performance on questions pertaining to Traditional Chinese
+Medicine (TCM) and Chinese Western Medicine (CWM),
+with accuracy metrics oscillating between 40-45%. Conversely, LLMs trained on a more expansive Chinese dataset
+demonstrate a narrower performance disparity on TCM and
+CWM questions relative to ChatGPT. This suggests that
+a contributing factor to ChatGPT’s diminished efficacy on
+MedBench may be attributed to its limited exposure to Chi4
+
+https://chat.openai.com.
+
+LLM
+GPT-4
+ChatGPT
+ChatGLM
+Baichuan-13B
+HuaTuo
+ChatMed
+
+Total
+64.88
+49.57
+27.39
+30.47
+22.31
+23.45
+
+CNMLE
+A1/A2/B A3/A4
+63.08
+69.03
+49.40
+51.85
+27.32
+28.16
+30.54
+29.63
+22.38
+21.47
+23.46
+23.33
+
+Resident Standardization Training
+Total A1/A2/B A3/A4 Cases Analysis
+75.64
+77.08
+75.13
+75.00
+60.59
+61.30
+58.72
+62.96
+29.96
+28.41
+33.59
+29.63
+34.97
+37.26
+32.70
+22.65
+23.32
+23.53
+23.85
+13.58
+24.33
+23.03
+26.54
+32.10
+
+Total
+68.45
+58.75
+27.52
+29.56
+21.93
+24.02
+
+Doctor in-Charge Qualification
+A1/A2/B A3/A4 Cases Analysis
+71.91
+68.24
+62.80
+58.04
+59.73
+65.52
+26.06
+31.43
+28.97
+31.31
+31.65
+17.89
+22.14
+21.85
+18.62
+23.46
+24.66
+30.34
+
+Table 1: Results on three-stage medical examinations of MedBench.
+nese data during its pretraining phase, consequently affecting its proficiency in Chinese medical knowledge.
+It is imperative to underscore that Baichuan-13B and HuaTuo encounter difficulties on case analysis questions, highlighting potential domains for refinement in their logical reasoning or multi-turn dialogue competencies.
+We also perform comparative evaluations with a number
+of recently-developed models, including MedLLaMA (Wu
+et al. 2023), Baize (Xu et al. 2023a), and ChatDoctor (Li
+et al. 2023). However, we have not noticed any significant enhancements in performance on our benchmark compared to these models. For example, MedLLaMA achieves
+an accuracy of 24.5% on the A1/A2/B type of questions,
+marginally outperforming ChatMed with a modest improvement of 1.5%.
+Real-world clinical case performance. Table 2 provides
+the results of the assessment on real-world cases, and Figure 2 provides the prompt-response instances. We evaluated the outcomes using the BLEU and ROUGE F1-score
+metrics. It can be easily observed that ChatGPT and GPT4 (OpenAI 2023) exhibit superior performance, underscoring their remarkable aptitude in medical and conversational
+question answering. However, it is notable that even for
+ChatGPT and GPT-4, the top-performers across multiple trials, the scores remain relatively moderate. This could be attributed, in part, to the fact that metrics such as BLEU and
+ROUGE might not holistically capture result quality. Furthermore, considerable scope remains for enhancing these
+LLMs’ capabilities in real-world clinical cases.
+Beyond automated evaluations, the judgment of a postgraduate medical scholar was solicited to appraise the outputs delivered by the various LLMs on the real-world cases.
+The objective of this evaluation endeavor was to quantitatively assess the correctness, completeness, fluency, and
+friendliness of HuaTuo, ChatMed, ChatGPT, and GPT4. Figure 4 provides the outcomes of this human evaluation. GPT-4 is found to consistently manifest superior
+performance across all delineated criteria, while ChatGPT
+marginally trails GPT-4, particularly on correctness and
+completeness. Conversely, HuaTuo’s rating in friendliness
+is somewhat diminished, predominantly attributable to sporadic generation of incongruous content. However, it is important to note that HuaTuo demonstrates pronounced levels
+of correctness and completeness, evincing profound medical
+knowledge, though its articulation warrants improvement.
+ChatMed, while laudable for its fluency and friendliness,
+registers suboptimal scores in correctness and completeness.
+
+Such disparities might be indicative of a potential attenuation of medical expertise during the fine-tuning phase.
+
+Quantitative Analysis
+Comparison on different question types. Figure 5 provides the detailed results on CNMLE, the Resident Standardization Training Exam (denoted as “Resident”) and the
+Doctor in-charge Qualification Exam (“In-charge”). Clearly,
+ChatGPT continues to exhibit a substantial performance advantage over the other LLMs. A3/A4 questions and case
+analysis questions, characterized by their multi-question
+structure, present a substantial challenge to the conversational abilities of the models. If a given LLM fares poorly
+on these question types, it indicates its inherent limitations
+in efficiently managing multi-turn dialogue or questions necessitating intricate reasoning steps.
+LLM
+
+Vanilla prompt
+
+Chain-of-Thought
+
+ChatGLM-6B
+Baichuan-13B
+
+42.69
+37.26
+
+43.37
+43.85
+
+Table 3: A comparative assessment of Baichuan-13B and
+ChatGLM-6B using A1/A2 questions from the Resident
+Standardization Training Exam under different prompts.
+Chain-of-Thought In the experimental investigation, it is
+observed that prompts tailored to the LLM have the potential to enhance the reasoning capabilities of the LLM. Figure 7 illustrates the choice distribution of Baichuan-13B under both the vanilla prompt and Chain-of-Thought prompting. Notably, under the vanilla prompt, Baichuan-13B shows
+a strong inclination towards option F, although this option is
+not part of the valid choice set (A-E). In contrast, when using Chain-of-Thought prompting, Baichuan-13B primarily
+gravitates towards valid choices. Furthermore, Table 3 details the accuracy associated with both the vanilla prompt
+and the Chain-of-Thought one. The data suggests a significant improvement in the accuracy of Baichuan-13B when
+using Chain-of-Thought prompting. Parallel experiments
+are conducted on ChatGLM-6B, and the improvement in accuracy when using Chain-of-Thought prompting is negligible for ChatGLM-6B.
+Fewer questions, higher differentiation During the assessment process, some shortcomings became apparent:
+(1) Certain LLMs manifest suboptimal inference speed on
+GPUs or high computational cost when interfacing via
+
+Correctness
+5
+4
+3
+
+GPT-4
+ChatGPT
+HuaTuo
+ChatMed
+
+2
+1
+
+Friendliness
+
+0
+
+Completeness
+
+Fluency
+
+Figure 4: Human evaluation on clinical
+cases.
+
+GPT-4
+ChatGPT
+ChatGLM
+Baichuan-13B
+HuaTuo
+ChatMed
+
+https://github.com/QwenLM/Qwen-7B.
+
+BLEU-4
+
+ROUGE-L
+
+E
+
+T
+
+D
+
+E
+
+T
+
+D
+
+E
+
+T
+
+D
+
+16.54
+11.50
+0.77
+11.07
+1.56
+4.34
+
+11.25
+8.37
+2.12
+5.29
+3.77
+4.88
+
+12.17
+7.29
+1.90
+10.14
+2.32
+5.79
+
+3.09
+3.26
+0.11
+1.50
+0.23
+0.62
+
+1.66
+1.82
+0.22
+0.52
+0.42
+0.84
+
+2.36
+1.85
+0.22
+2.59
+0.15
+0.46
+
+0.95
+15.39
+1.79
+0.71
+2.43
+1.35
+
+0.82
+11.30
+3.62
+0.0
+0.52
+0.55
+
+2.66
+10.04
+3.29
+1.11
+1.06
+0.26
+
+Table 2: Evaluation on cases (E stands for Examinations, T stands for Treatments,
+and D stands for Diagnoses)
+
+an API. Given that MedBench comprises approximately
+40,000 questions, performing inference on the entirety of
+this dataset consecutively takes considerable time for LLMs.
+(2) While categorization of questions based on the type provides a rudimentary gauge of difficulty, it is important to acknowledge that questions within the same category can exhibit disparate levels of difficulty. (3) Assigning particularly
+challenging questions to less capable LLMs is inadvisable,
+as it may culminate in uniformly diminished accuracy, making meaningful distinctions impossible.
+To ameliorate these challenges, we propose methodological strategies to classify questions of analogous types according to their inherent difficulty gradients. By adopting
+this paradigm, we can optimize the evaluation process, allowing LLMs to undertake inference on a curtailed set of
+questions. As a result, this allows for a more nuanced alignment between LLMs and questions of commensurate difficulty tiers, congruent with their individual proficiencies.
+Specifically, we introduce an advanced evaluative framework for LLMs drawing inspiration from Item Response
+Theory (IRT). Our approach integrates the three-parameter
+logistic model (IRT-3PL), given by:
+1
+P (Xij = 1|θj ) = ci + (1 − ci )
+(1)
+−a
+1 + e i (θj −bi )
+Here, θj represents the proficiency of LLM j, and P (Xij =
+1|θj ) is the probability that an LLM j with proficiency θj
+gives a correct response to question i. This equation highlights three crucial parameters for each question i: discrimination (ai ), difficulty (bi ), and the guessing factor (ci ). In
+our approach, we assume constant values for both ai and
+ci , and then group items based on the shared difficulty metric bi . For a specific difficulty subset, these three parameters
+remain unchanged. The equation captures the LLM’s probability θj , determined from the inference results when interacting with a specific subset. A total of 7,335 questions were
+divided into 10 difficulty levels. To validate question differentiation, we analyze them using BLOOMZ-7.1B (Muennighoff et al. 2022), Qwen-7B5 , ChatGLM-turbo (Zeng et al.
+2023), Qwen-max (Bai et al. 2023) across various difficulty
+levels. Part (a) of Figure 8 displays the accuracy trends of
+these LLMs across these levels, highlighting a decrease in
+accuracy with increasing difficulty. Figure 8(b) shows the
+difference in accuracy between BLOOMZ-7.1B and Qwen7B, as well as between Qwen-max and ChatGLM-turbo, for
+5
+
+BLEU-1
+
+LLM
+
+different levels of question difficulty. It is noticeable that the
+differences between the LLMs are significant when the question difficulty is appropriate.
+
+Reasoning Abilities
+In MedBench, there are several types of reasoning:
+• Multi-condition single-hop reasoning: A type of reasoning that requires the LLM to engage in single-hop
+reasoning based on a clinical scenario.
+• Statement identification: A type of reasoning that requires the LLM to judge the correctness of multiple statements, which further tests the LLM’s knowledge base.
+• Multi-hop reasoning: A type of reasoning with multiple
+questions, where the questions are related, requiring the
+LLM to perform multi-hop reasoning.
+To ascertain the extent to which LLMs make accurate decisions based on their grasp of pertinent knowledge, we extended our inquiry, which entailed requesting the LLMs to
+furnish justifications for their responses, as depicted in Figure 6. Our observations reveal that LLMs can substantiate
+their answers when they are accurate. Conversely, in cases
+where erroneous responses are given, the accompanying explanations often prove illogical, which provides compelling
+evidence that these LLMs either lack the requisite knowledge in the domain or are incapable of rationalizing towards
+the correct solutions.
+
+Related Work
+Traditionally, medical LLMs relied on classic medical QA
+benchmarks for evaluation. Some studies used USMLE for
+evaluation and achieved satisfactory results (Kung et al.
+2023; Nori et al. 2023), with zero-shot GPT-4 achieving average scores of 86.65% and 86.7% on the Self-Assessment
+and Sample Exam parts of USMLE, respectively. However,
+questions from USMLE have a very distinct Western medical perspective that is notably different from that of Chinese medicine. As two distinct medical systems, the latter
+includes traditional Chinese medicine, with obvious differences in concepts, diagnosis, and treatment methods. Therefore, the same symptoms may lead to different diagnoses
+and treatments. As a result, the USMLE cannot serve as an
+adequate benchmark for Chinese medical practice. MedQA,
+PubMedQA (Jin et al. 2019; Liévin, Hother, and Winther
+
+Figure 5: Results for three-stage medical examinations.
+
+问题: 疟疾明确诊断方法是 ( ）
+(Question: The definitive diagnostic method for malaria is ( ))
+选项 (Options):
+A. 出血倾向和贫血 (Bleeding tendency and anemia)
+B. 放射免疫测定 (Radioimmunoassay)
+C. 血常规 (Blood routine)
+D. 血/骨髓涂片 (Blood/bone marrow smea)
+E. 腹部B超 (Abdominal ultrasound)
+回答 (Answer):
+
+问题: 患者，牧民，35岁。因发热1周入院，呈波状热，血常规示白细胞6.0×109/L，可
+见少数异型淋巴细胞，SAT(＋＋＋)。诊断为(
+)
+(Question: A 35-year-old herdsman was admitted for 1 week of fever, with
+undulant fever. Blood routine test showed leukocytes 6.0×109/L, with a few
+atypical lymphocytes seen, SAT(＋＋＋). The diagnosis is ( ))
+选项: (Options:)
+A. 伤寒(Typhoid fever)
+B. 败血症(Sepsis)
+C. 疟疾(Malaria)
+D. 布鲁菌病(Brucellosis)
+E. 霍奇金病(Hodgkin's disease)
+回答 (Answer) :
+
+D
+
+A
+
+为什么选择这个选项 (Why choose this option) ?
+
+为什么选择这个选项 (Why choose this option)?
+
+因为血/骨髓涂片是疟疾确诊的“金标准”, 可以通过检查患者血液或
+骨髓中的疟原虫来确证疟疾。其他选项如放射免疫测定、病史、血
+常规和腹部B超也可以作为疟疾诊断的参考指标，但是它们不能像
+血/骨髓涂片那样提供确凿的诊断结果 (This is because
+blood/bone marrow smears are the “ gold standard ” for
+malaria diagnosis, they can confirm malaria by examining
+malaria parasites in the patient ’ s blood or bone marrow.
+Other options like radioimmunoassay, medical history, blood
+routine, and abdominal ultrasound can also serve as
+references for malaria diagnosis, but they cannot provide
+definitive diagnosis like blood/bone marrow smears) 。
+✔
+
+因为根据病史和体征，患者可能患有伤寒。伤寒是一种由沙门氏菌属细菌引起的传染病，
+常见于牧民和有良好卫生习惯的人群。伤寒的临床表现包括持续高热、乏力、腹泻、肌
+肉和关节疼痛、结膜充血等，血液检查可见白细胞计数升高，分类可见异型淋巴细胞，
+同时，患者出现波状热，也支持了伤寒的诊断。因此，选项A是最合适的答案 ( Based
+on the medical history and symptoms, the patient is likely suffering from
+typhoid fever. Typhoid fever is an infectious disease caused by Salmonella
+bacteria, commonly seen in herdsmen and people with poor hygiene habits.
+The clinical manifestations of typhoid fever include persistent high fever, fatigue,
+diarrhea, muscle and joint pain, conjunctival congestion, etc. Blood tests may
+show elevated white blood cell count and atypical lymphocytes. Also, the
+patient has undulant fever, which further supports the diagnosis of typhoid
+fever. Therefore, option A is the most appropriate answer) 。
+
+❌
+
+Figure 6: Examples of conversation demonstrating the reasoning capability of ChatGLM.
+
+Figure 7: Distribution of choices made by Baichuan-13B under different prompts, where (a) and (b) depict the results
+using vanilla and Chain-of-Thought prompt, respectively.
+
+CMExam only comprises questions from CNMLE, while
+overlooking other major medical exams in mainland China.
+Moreover, as a predominantly multiple choice dataset with
+only a small portion of fill-in-the-blank questions, CMExam
+lacks real-world medical data and scenarios. This constrains
+its ability to fully assess LLMs’ medical question answering
+capabilities. In fact, the optimal evaluation approach is to
+evaluate LLMs manually (Xu et al. 2023b). However, manual evaluation is a time-consuming and labor-intensive task,
+making it difficult to conduct on a large scale.
+
+Conclusion and Discussions
+
+Figure 8: Evaluation of a few LLMs across varying levels of
+question difficulty, with Level 9 denoting the highest level
+of difficulty.
+
+2022), and MLEC-QA are also useful benchmarks for medical QA, comprising a large number of high-quality questions, but they were proposed early on, potentially leading
+to data contamination. Although MedMCQA is a relatively
+new benchmark, its questions originate primarily from Indian medical institutions. As a result, analogous to USMLE,
+it lacks Chinese medical content and thus cannot serve to
+evaluate Chinese medical question answering sufficiently
+well. CMExam is a novel benchmark for medical QA in Chinese, comprising the latest exam questions from CNMLE,
+which has been manually annotated by medical experts with
+assistance from ChatGPT to ensure high quality. However,
+
+In this paper, we present MedBench, an exhaustive benchmark specifically designed for the domain of Chinese medical question answering. Preliminary empirical analyses underscore the suboptimal performance of Chinese medical
+LLMs when subjected to this benchmark, highlighting the
+need for improved clinical acumen and diagnostic precision. Furthermore, the adeptness of these LLMs in contextual learning requires further refinement.
+During our empirical investigations, we found that certain models manifest pronounced hallucinatory behavior. As
+our research progresses, it is imperative to ensure data veracity while delving into the systematic evaluation of such
+hallucinatory phenomena. Furthermore, the appraisal of the
+LLM’s inferential competencies, as presented in this research, points to the need for further methodological refinements. Within the realm of clinical diagnostics, a diagnosis is typically predicated upon a plethora of corroborative
+evidence. In subsequent work, we plan to compile an enriched dataset, encompassing patients’ antecedent medical
+records and comprehensive physical examination narratives,
+to strengthen the evaluative framework for medical LLMs.
+Simultaneously, our findings underscore the efficacy of psychometric methodologies in aiding the evaluation. Moving
+forward, we intend to enhance and further integrate such
+methodologies into our model assessment paradigm.
+
+References
+Bai, J.; Bai, S.; Chu, Y.; Cui, Z.; Dang, K.; Deng, X.; Fan,
+Y.; Ge, W.; Han, Y.; Huang, F.; Hui, B.; Ji, L.; Li, M.; Lin,
+J.; Lin, R.; Liu, D.; Liu, G.; Lu, C.; Lu, K.; Ma, J.; Men,
+R.; Ren, X.; Ren, X.; Tan, C.; Tan, S.; Tu, J.; Wang, P.;
+Wang, S.; Wang, W.; Wu, S.; Xu, B.; Xu, J.; Yang, A.; Yang,
+H.; Yang, J.; Yang, S.; Yao, Y.; Yu, B.; Yuan, H.; Yuan, Z.;
+Zhang, J.; Zhang, X.; Zhang, Y.; Zhang, Z.; Zhou, C.; Zhou,
+J.; Zhou, X.; and Zhu, T. 2023. Qwen Technical Report.
+arXiv:2309.16609.
+Birnbaum, A. 1969. Statistical theory for logistic mental
+test models with a prior distribution of ability. Journal of
+Mathematical Psychology, 6(2): 258–276.
+Chang, Y.; Wang, X.; Wang, J.; Wu, Y.; Yang, L.; Zhu,
+K.; Chen, H.; Yi, X.; Wang, C.; Wang, Y.; Ye, W.;
+Zhang, Y.; Chang, Y.; Yu, P. S.; Yang, Q.; and Xie, X.
+2023. A Survey on Evaluation of Large Language Models.
+arXiv:2307.03109.
+Chen, Y.; Wang, Z.; Xing, X.; huimin zheng; Xu, Z.; Fang,
+K.; Wang, J.; Li, S.; Wu, J.; Liu, Q.; and Xu, X. 2023.
+BianQue: Balancing the Questioning and Suggestion Ability of Health LLMs with Multi-turn Health Conversations
+Polished by ChatGPT. arXiv:2310.15896.
+Du, Z.; Qian, Y.; Liu, X.; Ding, M.; Qiu, J.; Yang, Z.; and
+Tang, J. 2022. GLM: General Language Model Pretraining
+with Autoregressive Blank Infilling. In Proceedings of the
+60th Annual Meeting of the Association for Computational
+Linguistics (Volume 1: Long Papers), 320–335.
+Han, T.; Adams, L. C.; Papaioannou, J.-M.; Grundmann,
+P.; Oberhauser, T.; Löser, A.; Truhn, D.; and Bressem,
+K. K. 2023. MedAlpaca – An Open-Source Collection
+of Medical Conversational AI Models and Training Data.
+arXiv:2304.08247.
+Hendrycks, D.; Burns, C.; Basart, S.; Zou, A.; Mazeika,
+M.; Song, D.; and Steinhardt, J. 2020. Measuring massive multitask language understanding. arXiv preprint
+arXiv:2009.03300.
+Jin, D.; Pan, E.; Oufattole, N.; Weng, W.-H.; Fang, H.; and
+Szolovits, P. 2021. What Disease Does This Patient Have?
+A Large-Scale Open Domain Question Answering Dataset
+from Medical Exams. Applied Sciences, 11(14).
+Jin, Q.; Dhingra, B.; Liu, Z.; Cohen, W.; and Lu, X. 2019.
+PubMedQA: A Dataset for Biomedical Research Question
+Answering. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th
+International Joint Conference on Natural Language Processing (EMNLP-IJCNLP).
+Kung, T. H.; Cheatham, M.; Medenilla, A.; Sillos, C.;
+De Leon, L.; Elepaño, C.; Madriaga, M.; Aggabao, R.; DiazCandido, G.; Maningo, J.; and Tseng, V. 2023. Performance
+of ChatGPT on USMLE: Potential for AI-assisted medical education using large language models. PLOS Digital
+Health, 2(2): 1–12.
+Li, J.; Zhong, S.; and Chen, K. 2021. MLEC-QA: A Chinese multi-choice biomedical question answering dataset. In
+Proceedings of the 2021 Conference on Empirical Methods
+in Natural Language Processing, 8862–8874.
+
+Li, Y.; Li, Z.; Zhang, K.; Dan, R.; Jiang, S.; and Zhang, Y.
+2023. ChatDoctor: A Medical Chat Model Fine-Tuned on a
+Large Language Model Meta-AI (LLaMA) Using Medical
+Domain Knowledge. Cureus.
+Lin, C.-Y. 2004. Rouge: A package for automatic evaluation
+of summaries. In Text summarization branches out, 74–81.
+Liu, J.; Zhou, P.; Hua, Y.; Chong, D.; Tian, Z.; Liu, A.;
+Wang, H.; You, C.; Guo, Z.; Zhu, L.; et al. 2023. Benchmarking Large Language Models on CMExam–A Comprehensive Chinese Medical Exam Dataset. NeurIPS 2023.
+Liévin, V.; Hother, C. E.; and Winther, O. 2022. Can
+large language models reason about medical questions?
+arXiv:2207.08143.
+Muennighoff, N.; Wang, T.; Sutawika, L.; Roberts, A.; Biderman, S.; Scao, T. L.; Bari, M. S.; Shen, S.; Yong, Z.-X.;
+Schoelkopf, H.; Tang, X.; Radev, D.; Aji, A. F.; Almubarak,
+K.; Albanie, S.; Alyafeai, Z.; Webson, A.; Raff, E.; and Raffel, C. 2022. Crosslingual Generalization through Multitask
+Finetuning. arXiv:2211.01786.
+Nori, H.; King, N.; McKinney, S. M.; Carignan, D.; and
+Horvitz, E. 2023. Capabilities of GPT-4 on Medical Challenge Problems. arXiv:2303.13375.
+OpenAI. 2023. GPT-4 Technical Report. arXiv:2303.08774.
+Pal, A.; Umapathi, L. K.; and Sankarasubbu, M. 2022.
+Medmcqa: A large-scale multi-subject multi-choice dataset
+for medical domain question answering. In Conference on
+Health, Inference, and Learning, 248–260. Proceedings of
+Machine Learning Research (PMLR).
+Papineni, K.; Roukos, S.; Ward, T.; and Zhu, W.-J. 2002.
+Bleu: a method for automatic evaluation of machine translation. In Proceedings of the 40th annual meeting of the
+Association for Computational Linguistics, 311–318.
+Singhal, K.; Azizi, S.; Tu, T.; Mahdavi, S. S.; Wei, J.; Chung,
+H. W.; Scales, N.; Tanwani, A.; Cole-Lewis, H.; Pfohl, S.;
+Payne, P.; Seneviratne, M.; Gamble, P.; Kelly, C.; Babiker,
+A.; Schärli, N.; Chowdhery, A.; Mansfield, P.; DemnerFushman, D.; Agüera y Arcas, B.; Webster, D.; Corrado,
+G. S.; Matias, Y.; Chou, K.; Gottweis, J.; Tomasev, N.; Liu,
+Y.; Rajkomar, A.; Barral, J.; Semturs, C.; Karthikesalingam,
+A.; and Natarajan, V. 2023a. Large language models encode
+clinical knowledge. Nature, 620(7972): 172–180.
+Singhal, K.; Azizi, S.; Tu, T.; Mahdavi, S. S.; Wei, J.; Chung,
+H. W.; Scales, N.; Tanwani, A.; Cole-Lewis, H.; Pfohl, S.;
+et al. 2023b. Large language models encode clinical knowledge. Nature, 1–9.
+Wang, H.; Liu, C.; Xi, N.; Qiang, Z.; Zhao, S.; Qin, B.; and
+Liu, T. 2023. HuaTuo: Tuning LLaMA Model with Chinese
+Medical Knowledge. arXiv:2304.06975.
+Wu, C.; Lin, W.; Zhang, X.; Zhang, Y.; Wang, Y.; and Xie,
+W. 2023. PMC-LLaMA: Towards Building Open-source
+Language Models for Medicine. arXiv:2304.14454.
+Xin Yan, D. X. 2023. Sunsimiao: Chinese Medicine LLM.
+https://github.com/thomas-yanxin/Sunsimiao.
+Xiong, H.; Wang, S.; Zhu, Y.; Zhao, Z.; Liu, Y.; Huang,
+L.; Wang, Q.; and Shen, D. 2023. DoctorGLM: Finetuning your Chinese Doctor is not a Herculean Task.
+arXiv:2304.01097.
+
+Xu, C.; Guo, D.; Duan, N.; and McAuley, J. 2023a. Baize:
+An open-source chat model with parameter-efficient tuning
+on self-chat data. EMNLP 2023.
+Xu, J.; Lu, L.; Yang, S.; Liang, B.; Peng, X.; Pang, J.; Ding,
+J.; Shi, X.; Yang, L.; Song, H.; Li, K.; Sun, X.; and Zhang,
+S. 2023b. MedGPTEval: A Dataset and Benchmark to Evaluate Responses of Large Language Models in Medicine.
+arXiv:2305.07340.
+Zeng, A.; Liu, X.; Du, Z.; Wang, Z.; Lai, H.; Ding, M.; Yang,
+Z.; Xu, Y.; Zheng, W.; Xia, X.; et al. 2023. Glm-130b: An
+open bilingual pre-trained model. ICLR 2023.
+Zhu, W.; and Wang, X. 2023. ChatMed: A Chinese Medical
+Large Language Model. https://github.com/michael-wzhu/
+ChatMed.
+
+

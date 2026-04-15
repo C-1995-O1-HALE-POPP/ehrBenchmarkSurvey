@@ -1,0 +1,12 @@
+{
+  "paper_key": "2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records",
+  "title": "Text-to-SQL Generation for Question Answering on Electronic Medical Records",
+  "year": 2019,
+  "paper_url": "https://arxiv.org/abs/1908.01839",
+  "pdf_url": "https://arxiv.org/pdf/1908.01839.pdf",
+  "input_url": "https://arxiv.org/pdf/1908.01839",
+  "summary_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/summaries/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records_benchmark_summary.md",
+  "pdf_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records/source.pdf",
+  "text_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records/source.txt",
+  "created_on": "2026-04-15T13:57:40"
+}

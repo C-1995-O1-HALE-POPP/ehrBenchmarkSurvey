@@ -1,0 +1,459 @@
+Holistic evaluation of large language models for medical tasks with MedHELM | Nature Medicine
+Skip to main content
+Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles and JavaScript.
+Advertisement
+View all journals
+Search
+Log in
+Content Explore content
+About the journal
+Publish with us
+Subscribe
+Sign up for alerts
+RSS feed
+nature
+nature medicine
+articles
+article
+Article
+Published: 20 January 2026
+Holistic evaluation of large language models for medical tasks with MedHELM
+Suhana Bedi ORCID: orcid.org/0000-0002-4502-4191 na1
+Hejie Cui na1
+Miguel Fuentes ORCID: orcid.org/0009-0002-1930-9529 na1
+Alyssa Unell na1
+Michael Wornow
+Juan M. Banda ORCID: orcid.org/0000-0001-8499-824X
+Nikesh Kotecha
+Timothy Keyes ORCID: orcid.org/0000-0003-0423-9679
+Yifan Mai ORCID: orcid.org/0009-0004-7270-2607
+Mert Oez
+Hao Qiu
+Shrey Jain
+Leonardo Schettini ORCID: orcid.org/0009-0005-8373-7140
+Mehr Kashyap
+Jason Alan Fries ORCID: orcid.org/0000-0001-9316-5768
+Akshay Swaminathan
+Philip Chung ORCID: orcid.org/0000-0002-1194-7510
+Fateme Nateghi Haredasht ORCID: orcid.org/0000-0002-8874-8835
+Ivan Lopez ORCID: orcid.org/0000-0003-0246-2180
+Asad Aali ORCID: orcid.org/0009-0008-2120-5722
+Gabriel Tse
+Ashwin Nayak
+Shivam Vedak ORCID: orcid.org/0009-0009-5034-0699
+Sneha S. Jain ORCID: orcid.org/0000-0002-0592-1453
+Birju Patel
+Oluseyi Fayanju
+Shreya Shah
+Ethan Goh ORCID: orcid.org/0009-0001-7491-4257
+Dong-han Yao
+Brian Soetikno
+Eduardo Reis
+Sergios Gatidis
+Vasu Divi
+Robson Capasso ORCID: orcid.org/0000-0003-2645-1793
+Rachna Saralkar
+Chia-Chun Chiang ORCID: orcid.org/0000-0001-7802-7172
+Jenelle Jindal ORCID: orcid.org/0000-0002-3959-5748
+Tho Pham
+Faraz Ghoddusi ORCID: orcid.org/0009-0005-1487-3237
+Steven Lin
+Albert S. Chiou ORCID: orcid.org/0000-0002-8436-0008
+Hyo Jung Hong
+Mohana Roy
+Michael F. Gensheimer ORCID: orcid.org/0000-0002-4897-3843
+Hinesh Patel ORCID: orcid.org/0000-0002-7779-2910
+Kevin Schulman ORCID: orcid.org/0000-0002-8926-5085
+Dev Dash
+Danton Char
+Lance Downing
+Francois Grolleau
+Kameron Black ORCID: orcid.org/0000-0002-3696-4050
+Bethel Mieso
+Aydin Zahedivash
+Wen-wai Yim
+Harshita Sharma ORCID: orcid.org/0000-0003-4683-2606
+Tony Lee
+Hannah Kirsch
+Jennifer Lee
+Nerissa Ambers ORCID: orcid.org/0009-0008-9878-1824
+Carlene Lugtu
+Aditya Sharma ORCID: orcid.org/0009-0002-5351-9271
+Bilal Mawji
+Alex Alekseyev
+Vicky Zhou
+Vikas Kakkar
+Jarrod Helzer
+Anurang Revri
+Yair Bannett ORCID: orcid.org/0000-0001-5134-3300
+Roxana Daneshjou ORCID: orcid.org/0000-0001-7988-9356
+Jonathan Chen ORCID: orcid.org/0000-0002-4387-8740
+Emily Alsentzer
+Keith Morse
+Nirmal Ravi ORCID: orcid.org/0000-0002-5146-2569
+Nima Aghaeepour ORCID: orcid.org/0000-0002-6117-8764
+Vanessa Kennedy
+Akshay Chaudhari ORCID: orcid.org/0000-0002-3667-6796
+Thomas Wang ORCID: orcid.org/0009-0000-1686-4178
+Sanmi Koyejo ORCID: orcid.org/0000-0002-4023-419X
+Matthew P. Lungren
+Eric Horvitz ORCID: orcid.org/0000-0002-8823-0614
+Percy Liang
+Michael A. Pfeffer ORCID: orcid.org/0000-0002-8958-0843
+Nigam H. Shah ORCID: orcid.org/0000-0001-9385-7158
+Show authors
+Nature Medicine volume 32 pages 943–951 ( 2026 Cite this article
+7869 Accesses
+12 Citations
+24 Altmetric
+Metrics details
+Subjects
+Health care
+Machine learning
+Abstract
+While large language models (LLMs) achieve near-perfect scores on medical licensing exams, these evaluations inadequately reflect the complexity and diversity of real-world clinical practice. Here we introduce MedHELM, an extensible evaluation framework with three contributions. First, a clinician-validated taxonomy organizing medical AI applications into five categories that mirror real clinical tasks—clinical decision support (diagnostic decisions, treatment planning), clinical note generation (visit documentation, procedure reports), patient communication (education materials, care instructions), medical research (literature analysis, clinical data analysis) and administration (scheduling, workflow coordination). These encompass 22 subcategories and 121 specific tasks reflecting daily medical practice. Second, a comprehensive benchmark suite of 37 evaluations covering all subcategories. Third, systematic comparison of nine frontier LLMs—Claude 3.5 Sonnet, Claude 3.7 Sonnet, DeepSeek R1, Gemini 1.5 Pro, Gemini 2.0 Flash, GPT-4o, GPT-4o mini, Llama 3.3 and o3-mini—using an automated LLM-jury evaluation method. Our LLM-jury uses multiple AI evaluators to assess model outputs against expert-defined criteria. Advanced reasoning models (DeepSeek R1, o3-mini) demonstrated superior performance with win rates of 66%, although Claude 3.5 Sonnet achieved comparable results at 15% lower computational cost. These results not only highlight current model capabilities but also demonstrate how MedHELM could enable evidence-based selection of medical AI systems for healthcare applications.
+Access through your institution
+Buy or subscribe
+This is a preview of subscription content, access via your institution
+Access options
+Access Nature and 54 other Nature Portfolio journals
+Get Nature+, our best-value online-access subscription
+$32.99 / 30 days
+cancel any time
+Learn more
+Subscribe to this journal
+Receive 12 print issues and online access
+$259.00 per year
+only $21.58 per issue
+Buy this article
+Purchase on SpringerLink
+Instant access to the full article PDF.
+USD 39.95
+Prices may be subject to local taxes which are calculated during checkout
+Additional access options:
+Learn about institutional subscriptions
+Read our FAQs
+Contact customer support
+Fig. 1: Overview of the MedHELM framework.
+Fig. 2: Overview of the MedHELM taxonomy.
+Fig. 3: Model performance across benchmarks.
+Fig. 4: Model performance across MedHELM categories.
+Fig. 5: Performance versus computational cost.
+Similar content being viewed by others
+Performance evaluation of large language models on Korean medical licensing examination: a three-year comparative analysis
+Article Open access 15 October 2025
+Large language models for frontline healthcare support in low-resource settings
+Article Open access 06 February 2026
+A generalist medical language model for disease diagnosis assistance
+Article 08 January 2025
+Data availability
+This study used 37 datasets with varying levels of accessibility. The minimum dataset necessary to interpret and verify the findings consists of all 37 datasets used in this study. The core model ranking trends can be partially validated using the 23 publicly accessible and gated datasets, although complete replication requires the full dataset including the 14 private datasets that cannot be shared due to institutional agreements and patient privacy protections. Sixteen datasets are publicly accessible without restrictions: MedCalc-Bench 34 , MTSamples 35 , Medec 36 , HeadQA 37 , Medbullets 38 , MedQA 16 , MedMCQA , ACI-Bench 39 , MTSamples Procedures 35 , MedicationQA 40 , MedDialog 41 , MEDIQA-QA 42 , PubMedQA 43 , EHRSQL 44 , RaceBias 45 and MedHallu 46 . Seven datasets require credentialed access due to protected health information: EHRSHOT 47 via PhysioNet, MedAlign 48 via Redivis, DischargeMe 49 via PhysioNet, MIMIC-RRS 50 via PhysioNet, MIMIC-BHC 51 via PhysioNet, N2C2-CT 52 via n2c2.org and MIMIC-IV Billing Code 53 via PhysioNet. Fourteen datasets were developed through partnership with Stanford Healthcare or created specifically for this study and cannot be shared due to institutional data use agreements and patient privacy protections: CLEAR 54 , ADHD-Behavior 55 , ADHD-MedEffects 56 , NoteExtract, PatientInstruct, MedConfInfo 57 , MentalHealth, PrivacyDetection 58 , ProxySender 58 , BMT-Status, HospiceReferral, ClinicReferral, CDI-QA and ENT-Referral. Any further distribution of datasets is subject to the terms of use and data-sharing agreements stipulated by the original creators.
+Code availability
+The MedHELM evaluation framework code is openly available at https://github.com/stanford-crfm/helm/ with comprehensive documentation at https://crfm-helm.readthedocs.io/en/latest/medhelm/ . This repository includes the complete codebase for reproducing all benchmarks, evaluation metrics and model assessments presented in this study. Additional scripts and code used for data analysis and figure generation are available at https://github.com/som-shahlab/medhelm/ , enabling full reproduction of all plots and results presented in this paper. For researchers wishing to evaluate custom models on private datasets, models can be submitted via pull requests to the GitHub repository. Evaluations are performed within our secure environment with results shared on the public leaderboard at https://crfm.stanford.edu/helm/medhelm/latest/ while maintaining dataset privacy.
+References
+Papers with Code. Question answering on MedQA (USMLE). https://paperswithcode.com/sota/question-answering-on-medqa-usmle (2024).
+Khosravi, M., Zare, Z., Mojtabaeian, S. M. & Izadi, R. Artificial intelligence and decision-making in healthcare: a thematic analysis of a systematic review of reviews. Health Serv. Res. Manag. Epidemiol. 11 , 23333928241234863 (2024).
+PubMed PubMed Central Google Scholar
+Nath, D. Artificial intelligence (AI) will transform the clinical workflow with the next-generation technology. HealthTech Magazines https://www.healthtechmagazines.com/artificial-intelligence-ai-will-transform-the-clinical-workflow-with-the-next-generation-technology/ (2024).
+Carl, N. et al. Evaluating interactions of patients with large language models for medical information. BJU Int. 135 , 1010–1017 (2025).
+Article PubMed PubMed Central Google Scholar
+Nori, H., King, N., McKinney, S. M., Carignan, D. & Horvitz, E. Capabilities of GPT-4 on medical challenge problems. Preprint at https://arxiv.org/abs/2303.13375 (2023).
+Raji, I. D., Daneshjou, R. & Alsentzer, E. It’s time to bench the medical exam benchmark. NEJM AI , AIe2401235 (2025).
+Article Google Scholar
+Pal, A., Umapathi, L. K. & Sankarasubbu, M. MedMCQA: a large-scale multi-subject multi-choice dataset for medical domain question answering. In Proc. Conference on Health, Inference, and Learning 174 , 248–260 (PMLR, 2022).
+Bedi, S. et al. Testing and evaluation of health care applications of large language models: a systematic review. JAMA 333 , 319–328 (2025).
+Hager, P. et al. Evaluation and mitigation of the limitations of large language models in clinical decision-making. Nat. Med. 30 , 2613–2622 (2024).
+Article CAS PubMed PubMed Central Google Scholar
+Arora, R. K. et al. HealthBench: evaluating large language models towards improved human health. https://cdn.openai.com/pdf/bd7a39d5-9e9f-47b3-903c-8b847ca650c7/healthbench_paper.pdf (2025).
+Liang, P. et al. Holistic evaluation of language models. In Transactions on Machine Learning https://openreview.net/pdf?id=iO4LZibEqW (2023).
+Leaderboard overview. LM Arena https://lmarena.ai/leaderboard (2025).
+Wu, J. et al. BRIDGE: benchmarking large language models for understanding real-world clinical practice text. Preprint at https://arxiv.org/abs/2504.19467 (2025).
+Fries, J. A. et al. BigBio: a framework for data-centric biomedical natural language processing. In 36th Conference on Neural Information Processing Systems (NeurIPS 2022) Track on Datasets and Benchmarks https://openreview.net/pdf?id=8lQDn9zTQlW (2022).
+Croxford, E. et al. Automating evaluation of AI text generation in healthcare with a large language model (LLM)-as-a-judge. Preprint at medRxiv https://doi.org/10.1101/2025.04.22.25326219 (2025).
+Jin, D. et al. What disease does this patient have? A large-scale open domain question answering dataset from medical exams. Appl. Sci. 11 , 6421 (2021).
+Article CAS Google Scholar
+Wornow, M. et al. Context clues: evaluating long context models for clinical prediction tasks on EHRs. In Proc. 13th International Conference on Learning Represent ations https://openreview.net/pdf?id=zg3ec1TdAP (ICLR, 2025).
+Liu, F. et al. Large language models in the clinic: a comprehensive benchmark. Preprint at https://arxiv.org/abs/2405.00716 (2024).
+Wu, C. et al. Towards evaluating and building versatile large language models for medicine. NPJ Digit. Med. , 58 (2025).
+Ouyang, Z. et al. CliMedBench: a large-scale Chinese benchmark for evaluating medical large language models in clinical scenarios. In Proc. 2024 Conference on Empircal Methods in Natural Language Processing 8428–8438 (EMNLP, 2024).
+Singhal, K. et al. Large language models encode clinical knowledge. Nature 620 , 172–180 (2023).
+Sandmann, S. et al. Benchmark evaluation of DeepSeek large language models in clinical decision-making. Nat. Med. 31 , 2546–2549 (2025).
+Cai, Y. et al. MedBench: a large-scale Chinese benchmark for evaluating medical large language models. In Proc. 38th AAAI Conference on Artificial Intell igence 38 , 17709–17717 (AAAI, 2024).
+Pal, A., Umapathi, L. K. & Sankarasubbu, M. Med-HALT: medical domain hallucination test for large language models. In Proc. Conference on Computational Natural Language Learning (CoNLL) 314–334 (CoNLL, 2023).
+Han, T., Kumar, A., Agarwal, C. & Lakkaraju, H. MedSafetyBench: evaluating and improving the medical safety of large language models. In 38th Conference on Neural Information Processing Systems (NeurIPS 2024) Track on Datasets and Benchmarks https://openreview.net/pdf?id=cFyagd2Yh4 (2024).
+Liu, F. et al. Application of large language models in medicine. Nat. Rev. Bioeng. , 85–104 (2025).
+Magar, I. & Schwartz, R. Data contamination: from memorization to exploitation. In Proc. 60th Annual Meeting of the Association of Computatonal Linguist ics (Vol. 2: Short Papers) 157–165 (ACL, 2022).
+Deng, J. et al. ImageNet: a large-scale hierarchical image database. In 2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition 248–255 (IEEE, 2009).
+Gu, J. et al. A survey on LLM-as-a-judge. Preprint at https://arxiv.org/abs/2411.15594 (2025).
+Madaan, L. et al. Quantifying variance in evaluation benchmarks. Preprint at https://arxiv.org/abs/2406.10229 (2024).
+Manakul, P., Liusie, A. & Gales, M. J. F. SelfCheckGPT: zero-resource black-box hallucination detection for generative large language models. In Proc. 2023 Conference on Empirical Methods Natural Language Processing 9004–9017 (EMNLP, 2023).
+Guha, B. Secret ballots and costly information gathering: the jury size problem revisited. MPRA Paper no. 73048 (2016).
+Van Veen, D. et al. Adapted large language models can outperform medical experts in clinical text summarization. Nat. Med. 30 , 1134–1142 (2024).
+Khandekar, N. et al. MedCalc-Bench: evaluating large language models for medical calculations. In 38th Conference on Neural Information Processing Systems (NeurIPS 2024) Track on Datasets and Benchmarks https://openreview.net/pdf?id=VXohja0vrQ (2024).
+MT Samples: collection of transcribed medical transcription sample reports and examples. MT Samples https://www.mtsamples.com/ (2023).
+Ben Abacha, A. et al. MEDEC: a benchmark for medical error detection and correction in clinical notes. in Findings of the Association for Computational Linguistics 22539–22550 (ACL, 2025).
+Vilares, D. & Gómez-Rodríguez, C. HEAD-QA: a healthcare dataset for complex reasoning. In Proc. 57th Annual Meeting of the Association of Computational Linguist ics 960–966 (ACL, 2019).
+Chen, H., Fang, Z., Singla, Y. & Dredze, M. Benchmarking large language models on answering and explaining challenging medical questions. In Proc. 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers) 3563–3599 (NAACL, 2025).
+Yim, W. -W. et al. ACI-BENCH: a novel ambient clinical intelligence dataset for benchmarking automatic visit note generation. Sci. Data 10 , 586 (2023).
+Ben Abacha, A. et al. Bridging the gap between consumers’ medication questions and trusted answers. In MEDINFO 2019: Health and Wellbeing e-Networks for All 25–29 (IOS Press, 2019).
+Zeng, G. et al. MedDialog: large-scale medical dialogue datasets. In Proc. 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP) (eds Webber, B. et al.) https://doi.org/10.18653/v1/2020.emnlp-main.743 (Association for Computational Linguistics, 2020).
+Abacha, A. B., Shivade, C. & Demner-Fushman, D. Overview of the MEDIQA 2019 shared task on textual inference, question entailment and question answering. In Proc. 18th BioNLP Workshop Shared Task 16–25 (ACL, 2019).
+Jin, Q., Dhingra, B., Liu, Z., Cohen, W. & Lu, X. PubMedQA: a dataset for biomedical research question answering. In Proc. 2019 Conference on Empirical Methods Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP) 2567–2577 (EMNLP, 2019).
+Lee, G. et al. EHRSQL: a practical text-to-SQL benchmark for electronic health records. In 36th Conference on Neural Information Processing Systems (NeurIPS 2022) Track on Datasets and Benchmarks https://openreview.net/pdf?id=B2W8Vy0rarw (NeurIPS, 2022).
+Omiye, J. A., Lester, J. C., Spichak, S., Rotemberg, V. & Daneshjou, R. Large language models propagate race-based medicine. NPJ Digit. Med. , 195 (2023).
+Pandit, S. et al. MedHallu: a comprehensive benchmark for detecting medical hallucinations in large language models. Preprint at https://arxiv.org/abs/2502.14302 (2025).
+Wornow, M., Thapa, R., Steinberg, E., Fries, J. A. & Shah, N. H. EHRSHOT: an EHR benchmark for few-shot evaluation of foundation models. In 37th Conference on Neural Information Processing Systems (NeurIPS 2023) Track on Datasets and Benchmarks https://openreview.net/pdf?id=CsXC6IcdwI (2023).
+Fleming, S. L. et al. MedAlign: a clinician-generated dataset for instruction following with electronic medical records. In Proc. Thirty-Eighth AAAI Conf. Artif. Intell 38 , 21545–21555 (AAAI, 2024).
+Xu, J. Discharge me: BioNLP ACL’24 shared task on streamlining discharge documentation (version 1.3). PhysioNet https://doi.org/10.13026/0zf5-fx50 (2024).
+Chen, Z., Varma, M., Wan, X., Langlotz, C. & Delbrouck, J.-B. Toward expanding the scope of radiology report summarization to multiple anatomies and modalities. In Proc. 61st Annual Meeting of the Association of Computational Linguistics (Vol. 2: Short Papers) 469–484 (ACL, 2023).
+Aali, A. et al. A dataset and benchmark for hospital course summarization with adapted large language models. J. Am. Med. Inform. Assoc. 32 , 470–479 (2025).
+Henry, S., Buchan, K., Filannino, M., Stubbs, A. & Uzuner, O. 2018 n2c2 shared task on adverse drug events and medication extraction in electronic health records. J. Am. Med. Inform. Assoc. 27 , 3–12 (2020).
+Edin, J. et al. Automated medical coding on MIMIC-III and MIMIC-IV: a critical review and replicability study. In Proc. 46th Int. ACM SIGIR Conf. Research and Development in Information Retrieval 2572–2582 (SIGIR, 2023).
+Lopez, I. et al. Clinical entity augmented retrieval for clinical information extraction. NPJ Digit. Med. , 45 (2025).
+Pillai, M., Posada, J., Gardner, R. M., Hernandez-Boussard, T. & Bannett, Y. Measuring quality-of-care in treatment of young children with attention deficit/hyperactivity disorder using pre-trained language models. J. Am. Med. Inform. Assoc. 31 , 949–957 (2024).
+Bannett, Y. et al. Applying large language models to assess quality of care: monitoring ADHD medication side effects. Pediatrics 155 , e2024067223 (2025).
+Rabbani, N. et al. Evaluation of a large language model to identify confidential content in adolescent encounter notes. JAMA Pediatr. 178 , 308–310 (2024).
+Tse, G. et al. Large language model responses to adolescent patient and proxy messages. JAMA Pediatr. 179 , 93–94 (2025).
+Download references
+Acknowledgements
+We thank L. Chen for help with the cover art submission. S.B. is supported by the Stanford Graduate Fellowship. A.U. is supported by the National Science Foundation Graduate Research Fellowship and the Stanford Graduate Fellowship. J.H.C. was supported in part by National Institutes of Health (NIH)/National Institute of Allergy and Infectious Diseases (1R01AI17812101), NIH-NCATS-Clinical and Translational Science Award (UM1TR004921), Stanford Bio-X Interdisciplinary Initiatives Seed Grants Program (IIP), NIH/Center for Undiagnosed Diseases at Stanford (U01 NS134358), Stanford RAISE Health Seed Grant 2024 and Josiah Macy Jr. Foundation (AI in Medical Education). M.F.G. acknowledges institutional grant funding from Xrad Therapeutics. M.O., H.Q., S.J. and L.S. acknowledge employment support from Microsoft. A.C and R.D. acknowledge grant funding from ARPA-H LLM Care. The remaining authors either declared no funding sources relevant to this work or did not provide funding information.
+Author information
+Author notes
+These authors contributed equally: Suhana Bedi, Hejie Cui, Miguel Fuentes, Alyssa Unell.
+Authors and Affiliations
+Stanford University School of Medicine, Stanford, CA, USA
+Suhana Bedi, Hejie Cui, Miguel Fuentes, Alyssa Unell, Michael Wornow, Mehr Kashyap, Jason Alan Fries, Akshay Swaminathan, Philip Chung, Fateme Nateghi Haredasht, Ivan Lopez, Asad Aali, Gabriel Tse, Ashwin Nayak, Shivam Vedak, Sneha S. Jain, Birju Patel, Oluseyi Fayanju, Shreya Shah, Ethan Goh, Dong-han Yao, Brian Soetikno, Eduardo Reis, Sergios Gatidis, Vasu Divi, Robson Capasso, Rachna Saralkar, Chia-Chun Chiang, Jenelle Jindal, Tho Pham, Faraz Ghoddusi, Steven Lin, Albert S. Chiou, Hyo Jung Hong, Mohana Roy, Michael F. Gensheimer, Hinesh Patel, Kevin Schulman, Dev Dash, Danton Char, Lance Downing, Francois Grolleau, Kameron Black, Bethel Mieso, Aydin Zahedivash, Yair Bannett, Roxana Daneshjou, Jonathan Chen, Emily Alsentzer, Keith Morse, Nima Aghaeepour, Vanessa Kennedy, Akshay Chaudhari, Thomas Wang, Matthew P. Lungren & Nigam H. Shah
+Stanford Health Care, Palo Alto, CA, USA
+Juan M. Banda, Nikesh Kotecha, Timothy Keyes, Hannah Kirsch, Jennifer Lee, Nerissa Ambers, Carlene Lugtu, Aditya Sharma, Bilal Mawji, Alex Alekseyev, Vicky Zhou, Vikas Kakkar, Jarrod Helzer, Anurang Revri, Thomas Wang, Michael A. Pfeffer & Nigam H. Shah
+Center for Research on Foundation Models (CRFM) & Department of Computer Science, Stanford University, Stanford, CA, USA
+Yifan Mai, Tony Lee, Sanmi Koyejo & Percy Liang
+Microsoft Corporation, Redmond, WA, USA
+Mert Oez, Hao Qiu, Shrey Jain, Leonardo Schettini, Wen-wai Yim, Harshita Sharma, Matthew P. Lungren & Eric Horvitz
+eHealth Africa Clinics, Kano, Nigeria
+Nirmal Ravi & Nigam H. Shah
+Stanford Institute for Human-Centered AI, Stanford, CA, USA
+Sanmi Koyejo, Eric Horvitz & Percy Liang
+Authors
+Suhana Bedi View author publications
+Search author on: PubMed Google Scholar
+Hejie Cui View author publications
+Miguel Fuentes View author publications
+Alyssa Unell View author publications
+Michael Wornow View author publications
+Juan M. Banda View author publications
+Nikesh Kotecha View author publications
+Timothy Keyes View author publications
+Yifan Mai View author publications
+Mert Oez View author publications
+Hao Qiu View author publications
+Shrey Jain View author publications
+Leonardo Schettini View author publications
+Mehr Kashyap View author publications
+Jason Alan Fries View author publications
+Akshay Swaminathan View author publications
+Philip Chung View author publications
+Fateme Nateghi Haredasht View author publications
+Ivan Lopez View author publications
+Asad Aali View author publications
+Gabriel Tse View author publications
+Ashwin Nayak View author publications
+Shivam Vedak View author publications
+Sneha S. Jain View author publications
+Birju Patel View author publications
+Oluseyi Fayanju View author publications
+Shreya Shah View author publications
+Ethan Goh View author publications
+Dong-han Yao View author publications
+Brian Soetikno View author publications
+Eduardo Reis View author publications
+Sergios Gatidis View author publications
+Vasu Divi View author publications
+Robson Capasso View author publications
+Rachna Saralkar View author publications
+Chia-Chun Chiang View author publications
+Jenelle Jindal View author publications
+Tho Pham View author publications
+Faraz Ghoddusi View author publications
+Steven Lin View author publications
+Albert S. Chiou View author publications
+Hyo Jung Hong View author publications
+Mohana Roy View author publications
+Michael F. Gensheimer View author publications
+Hinesh Patel View author publications
+Kevin Schulman View author publications
+Dev Dash View author publications
+Danton Char View author publications
+Lance Downing View author publications
+Francois Grolleau View author publications
+Kameron Black View author publications
+Bethel Mieso View author publications
+Aydin Zahedivash View author publications
+Wen-wai Yim View author publications
+Harshita Sharma View author publications
+Tony Lee View author publications
+Hannah Kirsch View author publications
+Jennifer Lee View author publications
+Nerissa Ambers View author publications
+Carlene Lugtu View author publications
+Aditya Sharma View author publications
+Bilal Mawji View author publications
+Alex Alekseyev View author publications
+Vicky Zhou View author publications
+Vikas Kakkar View author publications
+Jarrod Helzer View author publications
+Anurang Revri View author publications
+Yair Bannett View author publications
+Roxana Daneshjou View author publications
+Jonathan Chen View author publications
+Emily Alsentzer View author publications
+Keith Morse View author publications
+Nirmal Ravi View author publications
+Nima Aghaeepour View author publications
+Vanessa Kennedy View author publications
+Akshay Chaudhari View author publications
+Thomas Wang View author publications
+Sanmi Koyejo View author publications
+Matthew P. Lungren View author publications
+Eric Horvitz View author publications
+Percy Liang View author publications
+Michael A. Pfeffer View author publications
+Nigam H. Shah View author publications
+Contributions
+S.B., H.C., M.F. and A.U. conceived the study, designed the experiments and led the overall project equally, reported in alphabetical order by last name. N.H.S., K.S., M.P., P.L. and T.L. contributed to the ideation process for a clinical benchmark. S.B., H.C., M.F., A.U., N.H.S., Y.M., S.K., S.J., M.O., H.Q., L.S. and W.-w.Y. contributed to the methods contributions of MedHELM, including but not limited to generating the task categorization framework, dataset discussion/identification and metric discussion. S.B., A.N., S.V., S.J., B.P., O.F., S.S., E.G., D.-h.Y., B.S., E.R., S.G., V.D., R.C., R.S., C.-C.C., J.J., T.P., F.G., S.L., A.C., C.H., M.R., M.G., M.K., F.N., P.C., J.C. and H.P. contributed to the design, validation and refinement of the MedHELM taxonomy, including task categorization, dataset mapping and clinical expert review. P.C., M.W., A.S., J.A.F., N.H.S., H.K., J.L., V.K., N.K., T.K., J.M.B., N.A., C.L., W.-w.Y., R.D., J.C., E.A., K.M., N.R., N.A., Y.B. and G.T. contributed datasets for MedHELM. A.S., B.M., A.A., V.Z., J.H. and V.K. enabled the MedHELM experiments by providing critical support for implementing and executing code and runs within the Stanford Health Care computing infrastructure. S.B., H.C., M.F. and A.U. drafted the manuscript and integrated feedback from collaborators. All authors reviewed and approved the final version of the manuscript.
+Corresponding author
+Correspondence to Suhana Bedi
+Ethics declarations
+Competing interests
+M.O., H.Q., S.J. and L.S. are employees of Microsoft. J.A.F. reports healthcare AI consulting for Snorkel AI and holds stock options in Snorkel AI. This entity had no role in study design, data collection or analysis, decision to publish, or manuscript preparation. A.S. reports employment and owning stock options in Benchmark Health and Daybreak Health; work is unrelated to the research topics explored in MedHELM. P.C. is a Healthcare AI Data Specialist consultant working with OpenAI; this work is unrelated to the research topics explored in MedHELM. A.N. reports cofounding and owning stock in UpDoc. This entity was not involved in any way with the work presented. S.V. reports previously working as an independent contractor for OpenAI’s health and safety initiatives; this work was unrelated to the research topics explored in MedHELM. J.J. is the founder of Jindal Neurology and a per diem physician with Kaiser Permanente. D.Y. reports previously working as an independent contractor for OpenAI’s health and safety initiatives; this work was unrelated to the research topics explored in MedHELM. R.C. reports research funding from Samsung Electronics and serving as advisor to XP Health. None of these entities were involved in any way with the work presented. F.G. is Executive Director of Healthy Oregon and Chief Medical Information Officer at Empathia.ai; none of these entities were involved in any way with the work presented. S.L. serves as an advisor to Google, Codex Health, Gaia Health and Added Health. None of these entities were involved in any way with the work presented. M.F.G. reports institutional grant funding from Xrad Therapeutics. K.S. is a shareholder and advisor to UpDoc, Salud Now, Medeloop and Alethia. None of these entities were involved in any way with the work presented. J.H.C. has received research funding support from: NIH/National Institute of Allergy and Infectious Diseases (1R01AI17812101); NIH-NCATS Clinical and Translational Science Award (UM1TR004921); Stanford Bio-X Interdisciplinary Initiatives Seed Grants Program (IIP); NIH/Center for Undiagnosed Diseases at Stanford (U01 NS134358); Stanford RAISE Health Seed Grant 2024; and Josiah Macy Jr. Foundation (AI in Medical Education). J.H.C. is also cofounder of Reaction Explorer, which develops and licenses organic chemistry education software, and has received paid medical expert witness fees (Sutton Pierce, Younker Hyde MacFarlane, Sykes McAllister, Elite Experts), consulting fees from ISHI Health, and one-time honoraria or travel expenses for invited presentations from insitro, General Reinsurance Corporation, AASCIF, Cozeva and other industry conferences, academic institutions and health systems. E.A. reports consulting fees and stock from Fourier Health. N.A. reports serving on Scientific Advisory Boards for January AI, Parallel Bio and Medeloop, and cofounding Takeoff41. None of these entities were involved in any way with the work presented. A.C. reports cofounding and owning stock in Cognita Imaging; owning stock in Subtle Medical, BrainKey and LVIS Corp; and providing consulting services to Elucid Bioimaging and Patient Square Capital. None of these entities were involved in any way with the work presented. S.K. reports cofounding and owning stock options in Virtue AI; this work is unrelated to the research topics explored in MedHELM. E.H. reports serving in a senior role at Microsoft and owning stock in Microsoft, which has efforts in the healthcare domain. M.A.P. is an advisor to Akasa and Surgical Safety Technologies. None of these entities were involved in any way with the work presented. N.H.S. reports being a cofounder of Prealize Health and Atropos Health, serving on the Board of the Coalition for Healthcare AI, and serving as an advisor to Opala, Curai Health, JnJ Innovative Medicines and AbbVie pharmaceuticals. None of these entities were involved in any way with the work presented. The other authors declare no competing interests.
+Peer review
+Peer review information
+Nature Medicine thanks Fenglin Liu, Yifan Peng and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. Primary Handling Editors: Lorenzo Righetto and Saheli Sadanand, in collaboration with the Nature Medicine team.
+Additional information
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Extended data
+Extended Data Fig. 1 Aggregated performance across MedHELM subcategories.
+Each cell represents the mean performance of all models for a given subcategory, allowing comparison of relative strengths and weaknesses across clinical task types.
+Extended Data Table 1 Overview of all 37 benchmarks included in MedHELM, categorized by category, access level and curation status Full size table
+Extended Data Table 2 Model ranking comparison across general and medical evaluation frameworks Full size table
+Extended Data Table 3 Performance of smaller open-source models on public and gated MedHELM benchmarks Full size table
+Extended Data Table 4 Agreement of LLM-jury and automated metrics with clinician ratings Full size table
+Extended Data Table 5 Analysis of average correlation, first place consistency, and last place consistency across all 7 permutations of jury compositions Full size table
+Extended Data Table 6 Performance comparison across different judges Full size table
+Extended Data Table 7 Comparison of LLMs by architecture, access type, and token usage metrics across MedHELM Full size table
+Extended Data Table 8 Comprehensive comparison of medical LLM benchmarking frameworks Full size table
+Extended Data Table 9 Taxonomic coverage comparison across medical LLM benchmarking frameworks Full size table
+Supplementary information
+Supplementary Information (download PDF
+Supplementary Figs. 1 and 2 and Supplementary Tables 1–6.
+Reporting Summary (download PDF
+Rights and permissions
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.
+Reprints and permissions
+About this article
+Cite this article
+Bedi, S., Cui, H., Fuentes, M. et al. Holistic evaluation of large language models for medical tasks with MedHELM. Nat Med 32 , 943–951 (2026). https://doi.org/10.1038/s41591-025-04151-2
+Download citation
+Received 03 June 2025
+Accepted 24 November 2025
+Published 20 January 2026
+Version of record 20 January 2026
+Issue date March 2026
+DOI https://doi.org/10.1038/s41591-025-04151-2
+Share this article
+Anyone you share the following link with will be able to read this content:
+Get shareable link
+Sorry, a shareable link is not currently available for this article.
+Copy shareable link to clipboard
+Provided by the Springer Nature SharedIt content-sharing initiative
+Explore content
+Research articles
+Reviews & Analysis
+News & Comment
+Podcasts
+Current issue
+Collections
+Follow us on Facebook
+Follow us on X
+Aims & Scope
+Journal Information
+Journal Metrics
+About the Editors
+Research Cross-Journal Editorial Team
+Reviews Cross-Journal Editorial Team
+Statistical Advisory Panel
+Our publishing models
+Editorial Values Statement
+Editorial Policies
+Content Types
+Web Feeds
+Contact
+Submission Guidelines
+For Reviewers
+Language editing services
+Open access funding
+Submit manuscript
+Search articles by subject, keyword or author
+Show results from All journals This journal
+Advanced search
+Quick links
+Explore articles by subject
+Find a job
+Guide to authors
+Editorial policies
+Nature Medicine Nat Med
+ISSN 1546-170X (online)
+ISSN 1078-8956 (print)
+nature.com footer links
+About Nature Portfolio
+About us
+Press releases
+Press office
+Contact us
+Discover content
+Journals A-Z
+Articles by subject
+protocols.io
+Nature Index
+Publishing policies
+Nature portfolio policies
+Open access
+Author & Researcher services
+Reprints & permissions
+Research data
+Language editing
+Scientific editing
+Nature Masterclasses
+Research Solutions
+Libraries & institutions
+Librarian service & tools
+Librarian portal
+Open research
+Recommend to library
+Advertising & partnerships
+Advertising
+Partnerships & Services
+Media kits
+Branded content
+Professional development
+Nature Awards
+Nature Careers
+Nature Conferences
+Regional websites
+Nature Africa
+Nature China
+Nature India
+Nature Japan
+Nature Middle East
+Privacy Policy
+Use of cookies
+Your privacy choices/Manage cookies
+Legal notice
+Accessibility statement
+Terms & Conditions
+Your US state privacy rights
+© 2026 Springer Nature Limited
+Close
+Sign up for the Nature Briefing newsletter — what matters in science, free to your inbox daily.
+Email address Sign up
+I agree my information will be processed in accordance with the Nature and Springer Nature Limited Privacy Policy
+Get the most important science stories of the day, free in your inbox. Sign up for Nature Briefing

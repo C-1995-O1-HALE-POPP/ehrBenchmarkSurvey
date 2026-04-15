@@ -1,0 +1,12 @@
+{
+  "paper_key": "2023_promptcblue_a_chinese_prompt_tuning_benchmark_for_the_medical_domain",
+  "title": "PromptCBLUE: A Chinese Prompt Tuning Benchmark for the Medical Domain",
+  "year": 2023,
+  "paper_url": "https://arxiv.org/abs/2310.14151",
+  "pdf_url": "https://arxiv.org/pdf/2310.14151.pdf",
+  "input_url": "https://arxiv.org/abs/2310.14151",
+  "summary_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/summaries/2023_promptcblue_a_chinese_prompt_tuning_benchmark_for_the_medical_domain_benchmark_summary.md",
+  "pdf_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2023_promptcblue_a_chinese_prompt_tuning_benchmark_for_the_medical_domain/source.pdf",
+  "text_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2023_promptcblue_a_chinese_prompt_tuning_benchmark_for_the_medical_domain/source.txt",
+  "created_on": "2026-04-15T15:38:32"
+}

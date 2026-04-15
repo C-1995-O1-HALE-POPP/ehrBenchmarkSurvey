@@ -1,0 +1,12 @@
+{
+  "paper_key": "2025_fhir_agentbench_benchmarking_llm_agents_for_realistic_interoperable_ehr_question_answering",
+  "title": "FHIR-AgentBench: Benchmarking LLM Agents for Realistic Interoperable EHR Question Answering",
+  "year": 2025,
+  "paper_url": "https://arxiv.org/abs/2509.19319",
+  "pdf_url": "https://arxiv.org/pdf/2509.19319.pdf",
+  "input_url": "https://arxiv.org/pdf/2509.19319v1",
+  "summary_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/summaries/2025_fhir_agentbench_benchmarking_llm_agents_for_realistic_interoperable_ehr_question_answering_benchmark_summary.md",
+  "pdf_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2025_fhir_agentbench_benchmarking_llm_agents_for_realistic_interoperable_ehr_question_answering/source.pdf",
+  "text_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2025_fhir_agentbench_benchmarking_llm_agents_for_realistic_interoperable_ehr_question_answering/source.txt",
+  "created_on": "2026-04-15T13:57:19"
+}

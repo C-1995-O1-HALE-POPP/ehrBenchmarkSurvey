@@ -1,0 +1,12 @@
+{
+  "paper_key": "2023_medbench_a_large_scale_chinese_benchmark_for_evaluating_medical_large_language_models",
+  "title": "MedBench: A Large-Scale Chinese Benchmark for Evaluating Medical Large Language Models",
+  "year": 2023,
+  "paper_url": "https://arxiv.org/abs/2312.12806",
+  "pdf_url": "https://arxiv.org/pdf/2312.12806.pdf",
+  "input_url": "https://arxiv.org/abs/2312.12806",
+  "summary_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/summaries/2023_medbench_a_large_scale_chinese_benchmark_for_evaluating_medical_large_language_models_benchmark_summary.md",
+  "pdf_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2023_medbench_a_large_scale_chinese_benchmark_for_evaluating_medical_large_language_models/source.pdf",
+  "text_path": "/Users/cometp/Documents/ehrBenchmarkSurvey/papers/2023_medbench_a_large_scale_chinese_benchmark_for_evaluating_medical_large_language_models/source.txt",
+  "created_on": "2026-04-15T15:38:32"
+}
