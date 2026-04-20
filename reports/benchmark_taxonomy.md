@@ -6,13 +6,14 @@ Scope:
 - Coverage target is the current benchmark-section inventory in `summaries/*.md` plus a few umbrella benchmark families that are described in workflow notes but do not appear as standalone `##` benchmark headers.
 - Benchmark names are preserved as they appear in the summary documents.
 - When the same benchmark is reused in multiple papers, the taxonomy labels describe the benchmark itself, not a specific reuse context.
-- A few names are effectively aliases in the current corpus, such as `MIMIC-IV CDM` and `MIMIC-IV-CDM`; they are kept as separate strings for traceability but assigned the same family labels.
+- A few names are effectively aliases in the current corpus, such as `MIMIC-IV CDM` and `MIMIC-IV-CDM`, `MTS` and `mtsamples`, `MTS-Temporal` and `mtsamples-temporal`, or `HiRID-ICU-Benchmark` and `HiB`; they are kept as separate strings for traceability but assigned the same family labels.
 
 ## Label Legend
 
 `task`
 - `MCQ`: multiple-choice QA / closed-set exam QA
 - `CLS`: classification / labeling / verification
+- `REG`: regression / continuous-value prediction / forecasting
 - `SIM`: semantic similarity / NLI / relevance judgment
 - `EXT`: extraction / sequence labeling / structured slot filling
 - `COD`: normalization / coding / canonical mapping
@@ -66,6 +67,7 @@ Interpretation note:
 ## 2. Clinical Prediction, Diagnosis, and Decision Support
 
 - `EHR-Bench`, `EHRSHOT`: `task=CLS`; `interaction=ST-L`; `source=SEHR`; `role=CORE`
+- `HiRID-ICU-Benchmark`, `HiB`, `HiRID-ICU benchmark`: `task=CLS+REG`; `interaction=ST-L`; `source=SEHR`; `role=CORE`
 - `MIMIC-IV CDM`, `MIMIC-IV-CDM`, `MIMIC-III Outcome`, `Brateca`, `Mexican Clinical Records`, `GOUT-CC`: `task=CLS`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `MIMIC4ED Benchmark`: `task=CLS`; `interaction=ST-L`; `source=MIX`; `role=CORE`
 - `BrainMRI-AIS`, `MIMIC-IV DiReCT`: `task=CLS`; `interaction=ST-L`; `source=RAD`; `role=CORE`
@@ -82,7 +84,7 @@ Interpretation note:
 
 - `BC4Chem`, `BC5CDR`, `Species800`: `task=EXT`; `interaction=ST-S`; `source=LIT`; `role=CORE`
 - `ADE Corpus`, `PICO`, `PMC-Patient`: `task=EXT`; `interaction=ST-L`; `source=LIT`; `role=CORE`
-- `ADE`, `BARR2`, `CMeEE-V2`, `CMeIE`, `CHIP-CDEE`, `CLINpt`, `DiSMed`, `Ex4CDS`, `iCorpus`, `RuDReC`, `RuCCoN`, `IFMIR`, `CARDIO:DE`, `BRONCO150`, `meddocan`, `n2c2 2006`, `n2c2 2018 Track2`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
+- `ADE`, `BARR2`, `CMeEE-V2`, `CMeIE`, `CHIP-CDEE`, `CLINpt`, `DiSMed`, `Ex4CDS`, `iCorpus`, `RuDReC`, `RuCCoN`, `IFMIR`, `CARDIO:DE`, `BRONCO150`, `meddocan`, `n2c2 2006`, `n2c2 2018 Track2`, `MTS-Temporal`, `mtsamples-temporal`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `n2c2 2014 - De-identification`, `NorSynthClinical-PHI`, `GraSSCo_PHI`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `NUBES`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `MIE`, `IMCS-V2-NER`, `IMCS-V2-SR`, `CHIP-MDCFNPC`: `task=EXT`; `interaction=MT-X`; `source=DIAL`; `role=CORE`
@@ -90,7 +92,7 @@ Interpretation note:
 - `ClinicalNotes-UPMC`, `CLIP`, `NoteExtract`: `task=CLS/EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `CAS`: `task=EXT+SUM`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `NorSynthClinical`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
-- `i2b2 2009`, `i2b2 2010`, `mtsamples-temporal`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
+- `i2b2 2009`, `i2b2 2010`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 
 ## 4. Semantic Matching, NLI, and Query / Topic Understanding
 
@@ -98,7 +100,8 @@ Interpretation note:
 - `KUAKE-QIC`: `task=CLS`; `interaction=ST-S`; `source=WEB`; `role=CORE`
 - `IMCS-V2-DAC`: `task=CLS`; `interaction=MT-X`; `source=DIAL`; `role=CORE`
 - `IMCS-V2`: `task=MIX`; `interaction=MT-X`; `source=DIAL`; `role=CORE`
-- `mtsamples`: `task=CLS`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
+- `emrQA`, `EMRQA`: `task=MIX`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
+- `MTS`, `mtsamples`: `task=CLS`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `HoC`: `task=CLS`; `interaction=ST-S`; `source=LIT`; `role=CORE`
 
 ## 5. Summarization, Documentation, and Doctor-Response Generation
@@ -143,6 +146,7 @@ Interpretation note:
 
 - The repository is dominated by two macro-clusters: `clinical text structuring` (`EXT/COD/CLS`) and `EHR/agentic/executable reasoning` (`SQL/CODE/ACT`).
 - `interaction` is highly bimodal: most classic benchmarks are `ST-S` or `ST-L`, while a smaller but increasingly important set (`EHR-ChatQA`, `FHIR-AgentBench`, `MedAgentBench`, `MedAgentGym`) is genuinely `INT` or `AGT`.
+- A smaller but important third cluster is `structured ICU / longitudinal EHR prediction`, where benchmarks like `HiRID-ICU-Benchmark` are not language-centric but still belong in the repo's broader EHR benchmark map.
 - `source` is split mainly across `NOTE`, `SEHR`, `DIAL`, and `LIT`; very few benchmarks are pure `RAD`, and those are mostly diagnostic or summarization-oriented.
 - Safety-oriented benchmarks in this repo are mostly `response quality / privacy / compliance` evaluations rather than pure knowledge tests.
 - Several names that look similar actually land in different parts of the taxonomy: for example `MTSamples` is treatment-plan generation from notes, while `mtsamples` in BRIDGE is document/specialty classification; `MedCalc-Bench` is single-turn note-based calculation, while `MedCalcBench` in MedAgentGym is executable code-centric clinical computation.

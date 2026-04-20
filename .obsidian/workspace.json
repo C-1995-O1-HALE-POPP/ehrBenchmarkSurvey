@@ -185,6 +185,9 @@
   },
   "active": "dad9ec887002884e",
   "lastOpenFiles": [
+    "agent_workflows/ehr-benchmark-survey-agent/SKILL.md",
+    "scripts/__pycache__/ehr_benchmark_pipeline.cpython-312.pyc",
+    "scripts/__pycache__",
     "reports/example_search_audit_hirid_2026-04-20.md",
     "reports/example_search_audit_fhir_2026-04-20.md",
     "reports/example_search_audit_emrqa_2026-04-20.md",
@@ -208,7 +211,6 @@
     "summaries/2023_ehrsql_a_practical_text_to_sql_benchmark_for_electronic_health_records_benchmark_summary.md",
     "summaries/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records_benchmark_summary.md",
     "summaries/2025_ehr_r1_a_reasoning_enhanced_foundational_language_model_for_electronic_health_record_analysis_benchmark_summary.md",
-    "ehr_r1_benchmark_summary.md",
-    "papers/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records/source.pdf"
+    "ehr_r1_benchmark_summary.md"
   ]
 }

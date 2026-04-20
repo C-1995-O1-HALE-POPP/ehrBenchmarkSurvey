@@ -1,6 +1,6 @@
 ---
 name: ehr-benchmark-survey-agent
-description: Use when the task is to read an EHR paper, identify all benchmark or dataset evaluations, rewrite them into the survey Markdown format, and update the local benchmark registry so future papers can be processed consistently.
+description: Use when the task is to read an EHR paper, identify all benchmark or dataset evaluations, rewrite them into the survey Markdown format in `summaries/`, verify task-example fidelity, and update the local benchmark registry so future papers can be processed consistently.
 ---
 
 # EHR Benchmark Survey Agent
@@ -19,8 +19,11 @@ Produce a survey-ready Markdown summary that is structurally consistent across p
 
 ## Output files
 
-- Survey summary: usually create one paper-specific Markdown file at the repo root.
+- Survey summary: usually create one paper-specific Markdown file under `summaries/`, typically `summaries/<paper_key>_benchmark_summary.md`.
+- Cached paper assets: usually `papers/<paper_key>/source.pdf`, `papers/<paper_key>/source.txt`, and `papers/<paper_key>/metadata.json`.
+- Example-search audit report when needed: usually a Markdown report under `reports/`.
 - Registry update: edit `/Users/cometp/Documents/ehrBenchmarkSurvey/registry/ehr_benchmark_registry.yaml`.
+- Optional repo-level follow-up: update reports such as `/Users/cometp/Documents/ehrBenchmarkSurvey/reports/benchmark_taxonomy.md` if a new alias, benchmark family, or organizational pattern materially changes the current taxonomy.
 
 ## Automation entrypoint
 
@@ -33,7 +36,9 @@ Standard command flow:
 1. Bootstrap a new paper workspace:
    - `python3 scripts/ehr_benchmark_pipeline.py bootstrap "<paper_url>"`
 2. Fill the generated summary file with the benchmark analysis.
-3. Sync benchmark names into the registry:
+3. Audit example-search coverage before registry sync:
+   - `python3 scripts/ehr_benchmark_pipeline.py audit-examples "<summary_path>"`
+4. Sync benchmark names into the registry:
    - `python3 scripts/ehr_benchmark_pipeline.py sync-registry "<summary_path>"`
 
 ## Standard workflow
@@ -48,11 +53,15 @@ Standard command flow:
      - direct PDF link
    - If multiple URLs point to the same paper, keep the summary's `paper_url` aligned to the most stable canonical page rather than the transient PDF URL.
 2. Inspect the existing registry before starting analysis.
+   - Also search existing `summaries/*.md` and, when relevant, `reports/benchmark_taxonomy.md` for the benchmark family or obvious aliases.
+   - If a benchmark already appears in the registry or taxonomy, preserve the current canonical naming unless the new paper provides stronger benchmark-level evidence.
 3. Read the paper PDF, not only the abstract.
+   - Also skim the cached `papers/<paper_key>/source.txt` early. It is often the fastest way to locate benchmark names, appendix sections, figures, tables, and linked official URLs before doing a slower full read.
 4. Identify every benchmark used in evaluation, not just the headline benchmark.
 5. Separate:
    - newly proposed benchmark(s)
    - reused public benchmark(s)
+   - released variants / subsets / difficulty splits
    - in-distribution vs out-of-distribution benchmarks
 6. For each benchmark, extract:
    - benchmark-level description
@@ -82,14 +91,20 @@ Standard command flow:
    - If the underlying dataset is gated or credentialed, still inspect the public landing page, README, and released construction code. Use those public materials to document exact task construction and access limits instead of leaving the task structurally vague.
    - If the paper name and the official artifact name disagree, reconcile them explicitly in the benchmark description rather than silently choosing one.
 8. Normalize the output into the survey format using `references/output_template.md`.
+   - Keep both `Workflow Notes` and `Verifier Notes` near the top of the summary.
+   - In `Workflow Notes`, record the exact search path, normalization choices, naming discrepancies, and any gated-access limitations.
+   - In `Verifier Notes`, record what is directly supported, what is normalized, what is inferred, and what remains unavailable.
 9. Mark inferred fields explicitly when the paper does not state them.
 10. If appendix tables have line-wrap or alignment issues, use the task inventory table as the canonical list and map instructions by semantic alignment.
 11. Run the verifier stage using `references/verifier_checklist.md`.
-12. Update the registry:
+12. Run `audit-examples` before touching the registry.
+   - Treat the audit report as a trigger for re-checking search depth, not as ground truth by itself.
+   - If `audit-examples` still flags a missing-example count, grep the final summary for the actual placeholder phrase before assuming the count is real.
+13. Update the registry:
    - append new benchmark names if unseen
    - add the paper to `source_papers` for existing benchmarks if already present
    - keep a single canonical name per benchmark
-13. Run a final self-check before finishing:
+14. Run a final self-check before finishing:
    - task count in the summary matches the paper
    - benchmark count matches the paper
    - registry entries are deduplicated by canonical name
@@ -97,7 +112,7 @@ Standard command flow:
    - every task section makes it obvious what source dataset the task comes from, how the task is constructed, what the model sees, what the model must output, what counts as the gold / reference answer, and how the task is evaluated
    - every evaluation section is either quoted/paraphrased from the paper or explicitly marked unavailable
    - workflow notes and verifier notes do not contain stale statements left over from an earlier weaker search pass
-   - if `audit-examples` still flags a missing-example count, grep the final summary for the actual placeholder phrase before assuming the count is real
+   - if the paper introduces a new alias or benchmark family that changes repo-level organization, update the relevant report such as `reports/benchmark_taxonomy.md`
 
 ## Normalization rules
 
@@ -105,6 +120,7 @@ Standard command flow:
 - Prefer stable bibliographic metadata from the canonical paper source. If title/year differ across mirrors, use the publisher/PMC/PubMed version unless there is a strong reason not to.
 - Keep dataset names as they appear in the paper unless there is a widely accepted canonical form.
 - If the paper label and the released official artifact label differ, preserve the paper label in the section heading but add an explicit discrepancy note describing the official artifact name and what evidence supports the mapping.
+- If the benchmark already exists in the local registry or taxonomy under a stable canonical name, prefer preserving that canonical entry and recording the current paper's surface form as an alias or discrepancy note rather than silently splitting the benchmark into a new canonical entry.
 - Use title case for benchmark headings.
 - Preserve original task wording in `Instruction` when available.
 - `Input` and `Output` may be normalized into survey-style placeholders if the paper only provides one-line instructions.
@@ -135,6 +151,7 @@ Standard command flow:
 - Do not invent sample counts, annotation details, or language if the paper does not state them. If needed, write `inferred` or `not explicitly stated`.
 - When a benchmark is structured EHR converted to free text, say so explicitly instead of calling it a native clinical note dataset.
 - The verifier stage is mandatory: every non-trivial claim in the summary should be traceable to the paper text, appendix, figure, table, or clearly labeled as an inference.
+- Keep the final summary aligned with the current repo conventions: a top-of-file `Workflow Notes` section, a top-of-file `Verifier Notes` section, and a completed example/scoring block for every task.
 
 ## Registry rules
 

@@ -3,6 +3,25 @@
 Use this template for each benchmark extracted from a paper.
 
 ```md
+## Workflow Notes
+
+- Initialized by `scripts/ehr_benchmark_pipeline.py` or equivalent local workflow.
+- Record the exact search path used for this paper: paper body, appendix, supplement, cached source text, and every official artifact named by the paper that was inspected.
+- Record normalization choices, paper/artifact naming discrepancies, and any gated-access limitations.
+- Before syncing the registry, run:
+  - `python3 scripts/ehr_benchmark_pipeline.py audit-examples "<summary_path>"`
+  - `python3 scripts/ehr_benchmark_pipeline.py sync-registry "<summary_path>"`
+
+## Verifier Notes
+
+- Benchmark existence: [directly stated / normalized / mixed]
+- Task mapping: [directly stated / normalized / mixed]
+- Instruction fidelity: [verbatim / normalized / mixed]
+- Example fidelity: [paper example / official artifact / source benchmark / no public example after full search]
+- Scoring fidelity: [paper-local metric / rubric / unavailable]
+- Judge prompt fidelity: [full prompt available / partially described / unavailable]
+- Inference labeling: [what was inferred or marked not explicitly stated]
+
 ## [section_id] [Benchmark Name]
 
 [Benchmark Name] is a [language if known] benchmark designed for [main purpose / evaluation setting]. It is derived from [source system / institution / paper]. The benchmark covers [task families / scope]. [Add split, sample count, or construction notes if stated in the paper.]
@@ -84,6 +103,7 @@ This task is to [plain-language task description].
 
 ## Required checks
 
+- The file includes both `Workflow Notes` and `Verifier Notes` near the top.
 - Benchmark-level paragraph is specific to the paper, not generic.
 - If task instructions come from appendix tables with broken line wrapping, mention the mapping assumption in a note near the top of the output file.
 - If the paper contains multiple benchmarks, keep them all in one paper summary file unless the user asks otherwise.
@@ -96,3 +116,4 @@ This task is to [plain-language task description].
 - If no task example exists after the full search pass, say so explicitly instead of synthesizing one.
 - If the evaluation is judge-based, include the full prompt only when it is actually present in the paper or appendix.
 - If the evaluation prompt is missing, explicitly record that absence.
+- Run `audit-examples` before registry sync and reconcile any stale `No explicit task example` placeholders.
