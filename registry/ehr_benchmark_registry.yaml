@@ -1,4 +1,4 @@
-last_updated: '2026-04-15'
+last_updated: '2026-04-20'
 benchmarks:
 - canonical_name: EHR-Bench
   aliases: []
@@ -114,6 +114,37 @@ benchmarks:
     url: https://arxiv.org/abs/2509.19319
     role_in_paper: primary benchmark
   notes: ''
+- canonical_name: HiRID-ICU-Benchmark
+  aliases:
+  - HiB
+  - HiRID-ICU benchmark
+  benchmark_type: 'mixed: classification + risk prediction + regression'
+  source_system: HiRID
+  task_families:
+  - classification
+  - risk prediction
+  - regression
+  source_papers:
+  - title: 'HiRID-ICU-Benchmark -- A Comprehensive Machine Learning Benchmark on High-resolution ICU Data'
+    year: 2021
+    url: https://arxiv.org/abs/2111.08536
+    role_in_paper: primary benchmark
+  notes: Public code is released via the HiB repository; the underlying HiRID data are credentialed on PhysioNet. The paper defines 6 tasks spanning stay-level and dynamic ICU prediction.
+- canonical_name: emrQA
+  aliases:
+  - EMRQA
+  benchmark_type: 'mixed: semantic parsing + qa + classification'
+  source_system: i2b2 challenge datasets
+  task_families:
+  - semantic parsing
+  - qa
+  - classification
+  source_papers:
+  - title: 'emrQA: A Large Corpus for Question Answering on Electronic Medical Records'
+    year: 2018
+    url: https://arxiv.org/abs/1809.00732
+    role_in_paper: primary benchmark
+  notes: Paper release reports 455,837 QA pairs, 1,295,814 question-logical-form pairs, and 2,425 clinical notes. The linked public repo later documents an expanded refactored release under i2b2 / n2c2 access rules.
 - canonical_name: MIMICSQL
   aliases: []
   benchmark_type: generation

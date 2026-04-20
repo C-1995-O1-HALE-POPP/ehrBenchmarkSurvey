@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "897abb94d2b026c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "0aceee0d6ac9767f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dad9ec887002884e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "reports/deduped_benchmark_tasks_list.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "deduped_benchmark_tasks_list"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f3b58e6ba65a3643",
+    "type": "split",
+    "children": [
+      {
+        "id": "320551992a10e99e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5954ca83350de2e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "08c6858ab0d03171",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "5ab6937083bac712",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "46f4a6f023f31816",
+    "type": "split",
+    "children": [
+      {
+        "id": "1464b1d27278078c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f85a96c87155151d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "reports/deduped_benchmark_tasks_list.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "deduped_benchmark_tasks_list 的反向链接列表"
+            }
+          },
+          {
+            "id": "ce16e74f9904a8c8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "reports/deduped_benchmark_tasks_list.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "deduped_benchmark_tasks_list 的出链列表"
+            }
+          },
+          {
+            "id": "d8102fc6549e05b8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "efb41b798fafe462",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "249ed551de8a5219",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "reports/deduped_benchmark_tasks_list.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "deduped_benchmark_tasks_list 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "dad9ec887002884e",
+  "lastOpenFiles": [
+    "reports/example_search_audit_hirid_2026-04-20.md",
+    "reports/example_search_audit_fhir_2026-04-20.md",
+    "reports/example_search_audit_emrqa_2026-04-20.md",
+    "reports/example_search_audit_2026-04-20.md",
+    "reports/example_audit_fhir_agentbench_2026-04-20.md",
+    "reports/example_audit_hirid_2026-04-20.md",
+    "reports/example_audit_emrqa_2026-04-20.md",
+    "summaries/2018_emrqa_a_large_corpus_for_question_answering_on_electronic_medical_records_benchmark_summary.md",
+    "papers/2018_emrqa_a_large_corpus_for_question_answering_on_electronic_medical_records/metadata.json",
+    "papers/2018_emrqa_a_large_corpus_for_question_answering_on_electronic_medical_records/source.txt",
+    "summaries/2021_hirid_icu_benchmark_a_comprehensive_machine_learning_benchmark_on_high_resolution_icu_data_benchmark_summary.md",
+    "papers/2021_hirid_icu_benchmark_a_comprehensive_machine_learning_benchmark_on_high_resolution_icu_data/metadata.json",
+    "papers/2021_hirid_icu_benchmark_a_comprehensive_machine_learning_benchmark_on_high_resolution_icu_data/source.txt",
+    "papers/2018_emrqa_a_large_corpus_for_question_answering_on_electronic_medical_records/source.pdf",
+    "papers/2021_hirid_icu_benchmark_a_comprehensive_machine_learning_benchmark_on_high_resolution_icu_data/source.pdf",
+    "papers/2021_hirid_icu_benchmark_a_comprehensive_machine_learning_benchmark_on_high_resolution_icu_data",
+    "papers/2018_emrqa_a_large_corpus_for_question_answering_on_electronic_medical_records",
+    "reports/benchmark_taxonomy.md",
+    "reports/deduped_benchmark_tasks_list.md",
+    "reports/example_search_audit_2026-04-15.md",
+    "summaries/2023_ehrsql_a_practical_text_to_sql_benchmark_for_electronic_health_records_benchmark_summary.md",
+    "summaries/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records_benchmark_summary.md",
+    "summaries/2025_ehr_r1_a_reasoning_enhanced_foundational_language_model_for_electronic_health_record_analysis_benchmark_summary.md",
+    "ehr_r1_benchmark_summary.md",
+    "papers/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records/source.pdf"
+  ]
+}

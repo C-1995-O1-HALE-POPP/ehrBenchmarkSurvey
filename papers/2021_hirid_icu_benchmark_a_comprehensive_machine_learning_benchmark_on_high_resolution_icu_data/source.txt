@@ -1,0 +1,2396 @@
+HiRID-ICU-Benchmark — A Comprehensive
+Machine Learning Benchmark on High-resolution
+ICU Data
+
+arXiv:2111.08536v4 [cs.LG] 17 Jan 2022
+
+Hugo Yèche 1 ∗
+Matthias Hüser 1
+
+Rita Kuznetsova 1 ∗
+Xinrui Lyu 1
+
+Marc Zimmermann 1
+
+Martin Faltys 1,2
+
+Gunnar Rätsch 1
+
+{hyeche,mkuznetsova,marczim,mhueser,xlyu,mfaltys,raetsch}@inf.ethz.ch
+2
+
+1
+Department of Computer Science, ETH Zürich
+Department of Intensive Care Medicine, University Hospital, and University of Bern
+
+Abstract
+The recent success of machine learning methods applied to time series collected
+from Intensive Care Units (ICU) exposes the lack of standardized machine learning
+benchmarks for developing and comparing such methods. While raw datasets,
+such as MIMIC-IV or eICU, can be freely accessed on Physionet, the choice of
+tasks and pre-processing is often chosen ad-hoc for each publication, limiting
+comparability across publications. In this work, we aim to improve this situation
+by providing a benchmark covering a large spectrum of ICU-related tasks. Using
+the HiRID dataset, we define multiple clinically relevant tasks in collaboration
+with clinicians. In addition, we provide a reproducible end-to-end pipeline to
+construct both data and labels. Finally, we provide an in-depth analysis of current
+state-of-the-art sequence modeling methods, highlighting some limitations of deep
+learning approaches for this type of data. With this benchmark, we hope to give
+the research community the possibility of a fair comparison of their work.
+Software Repository: https://github.com/ratschlab/HIRID-ICU-Benchmark/
+
+1
+
+Introduction
+
+Severely ill patients require treatment and surveillance in Intensive Care Units (ICU). Critical health
+conditions are characterized by the presence or risk of developing life-threatening organ dysfunction.
+During a patient’s stay in the ICU, continuous monitoring of organs function parameters enables early
+recognition of physiological deterioration and rapid commencement of appropriate interventions.
+Recent research shows the great success of machine learning methods when applied to ICU time
+series [46, 20]. One of the main goals of previous works was to develop new methods for prediction
+tasks relevant to clinical decision-making. Exemplary of such tasks are alarm systems that predict
+different types of organ failure [21, 43].
+To develop and evaluate such methods only a small number of large-scale ICU datasets are freelyaccessible: The MIMIC-III [25] and IV [23] datasets, AmsterdamUMCdb [1], HiRID [13] and
+the eICU Collaborative Research Database [36]. However, these datasets are not provided in a
+pre-processed form directly suitable for machine learning nor do they have well-defined tasks, making
+it impossible to fairly compare works [24]. While some pre-processed alternatives with well-defined
+tasks exist [15, 37], they are often lacking in terms of size and diversity of tasks. We provide more
+∗
+
+Equal contribution
+
+35th Conference on Neural Information Processing Systems (NeurIPS 2021) Track on Datasets and Benchmarks.
+
+details about this in section 2. This leads to situations where works compare methods on their private
+data [43] or only on limited data and number of tasks. Also the lack of relevant clinical sub-tasks for
+benchmarking hinders the development of new methods for clinical decision support systems [17].
+Finally, as in other fields, in recent datasets such as HiRID [13] the time resolution of data has greatly
+increased. However, no benchmark on ICU time series using such high-resolution datasets currently
+exists.
+To improve this situation, in this paper we provide an in-depth benchmark based on the HiRID
+dataset [13, 21]2 , which was released on Physionet [13] alongside the publication on the circulatory
+Early Warning Score (circEWS) [21]. HiRID is a freely accessible critical care dataset containing data
+recorded at the Department of Intensive Care Medicine, the University Hospital of Bern, Switzerland
+(Inselspital). The dataset was developed in cooperation with the Swiss Federal Institute of Technology
+(ETH), Zürich, Switzerland. We define a new benchmark on HiRID composed of various clinically
+relevant tasks and provide a comprehensive pipeline, which includes all steps from preprocessing
+to model evaluation. To assess different aspects of the benchmarked machine learning methods,
+we diversify the tasks around specific challenges of ICU data such as prediction frequency, class
+imbalance, or organ dependency of the task. To profit from data acquisition advances and allow
+improvement on longer time series, we use a resampled data resolution of 5 min. HiRID has a
+higher time resolution than any other published critical care dataset and it motivates us to provide a
+comprehensive benchmark suite on this dataset. Also, we believe that this dataset will facilitate the
+construction of new predictive methods for the healthcare field, going beyond ICU time series.
+The main contributions of this paper are:
+• We developed a comprehensive, end-to-end pipeline for time-series analysis of critical care
+data based on the recently published HiRID dataset. This pipeline includes the following
+stages: data preprocessing mode, training mode, and evaluation mode.
+• We proposed and implemented a variety of tasks relevant to healthcare workers in the ICU,
+diversified in terms of type, prediction resolution, and label prevalence. The tasks cover all
+major organ systems as well as the general patient state. We included both regression and
+classification (binary and multi-class) tasks.
+• By providing a comprehensive benchmark on a set of canonical tasks, we give the research
+community around predictive modeling on ICU time series the possibility for the clear
+comparison of their methods.
+The paper is organized as follows: in Section 2 we provide an overview of existing ICU datasets and
+benchmarking papers. We provide details about the HiRID dataset and introduce the tasks defined
+in collaboration with clinicians in Section 3 and give more details on the tasks in A PPENDIX A:
+DATASET D ETAILS. Section 4 illustrates the pipeline design, with more details given in A PPENDIX
+B: H I RID-ICU-P IPELINE D ETAILS. Section 5 describes the experiment and ablation study. In
+Section 6 we discuss the observed results and relate this paper to other benchmarks and related tasks
+relevant for clinicians.
+
+2
+
+Related Work
+
+The main goal of this work is to provide a benchmark on the HiRID dataset for various clinical
+prediction tasks of interest. We describe here other ICU datasets as well as existing benchmarks for
+ICU data.
+ICU time-series datasets There are several widely-used, freely-accessible datasets consisting
+of ICU time series. MIMIC-III [25] is the oldest and most widely used ICU dataset. It consists
+of physiological measurements as well as information about laboratory tests. Physiological measurements are recorded with a maximum resolution of 1 hour. The results of laboratory tests are
+collected at irregular time intervals. Moreover, there are static features like gender, age, diagnosis,
+etc. available. The dataset consists of information recorded about 40,000 ICU stays at Beth Israel
+Deaconess Medical Center (BIDMC), Boston, MA, USA. The median of the patient stay length is 2
+days. The eICU Collaborative Research Database [36] is a large multicenter critical care database
+2
+
+https://physionet.org/content/hirid/1.1.1/
+
+2
+
+made available by Philips Healthcare in partnership with the MIT Laboratory for Computational
+Physiology. It contains data associated with over 200,000 patient stays, but the public version does
+not reach the granularity of other datasets in terms of time resolution and data elements. The first
+version of AmsterdamUMCdb [1] was released in November 2019. Its current version from March
+2020 contains data related to 23,172 ICU and high dependency unit admissions of adult patients from
+2003 - 2016 from Amsterdam University Medical Centers. The data includes clinical observations
+like vital signs, clinical scores, device data, and lab results.
+Benchmarks on ICU time-series. Among works using the openly available datasets mentioned
+above, to the best of our knowledge, only a single standardized benchmark exists, MIMIC-III
+benchmark by Harutyunyan et al. [17]. In that work four tasks were proposed, two requiring a
+single prediction per patient stay and two dynamic tasks with more frequent prediction, one per
+hour. In addition, while not proposing a benchmark, Jarrett et al. [22] developed a standardized
+pipeline for medical time series, called Clairvoyance. They also provided results on several datasets,
+including MIMIC. In this spirit, some packages address a specific family of tasks, for example,
+classification [14] and forecasting [16]. Finally, some public challenges, with curated data, were
+proposed in the past, e.g. the early prediction of sepsis (Physionet 2019 challenge [37]) or mortality
+prediction (Physionet 2012 challenge [9]). However, the provided datasets are smaller than HiRID
+and are built around a single task.
+
+3
+
+Benchmark Design
+
+3.1
+
+The HiRID Dataset
+
+HiRID [13, 21] is a freely accessible critical care dataset containing data from more than 33,000
+patient admissions to the Department of Intensive Care Medicine, the University Hospital of Bern,
+Switzerland (Inselspital) from January 2008 to June 2016. It was released on Physionet [13] alongside
+the publication of the circulatory Early Warning Score (circEWS) [21]. It contains de-identified
+demographic information and a total of 712 routinely collected physiological variables, diagnostic test
+results, and treatment parameters. HiRID has a higher time resolution than any other published ICU
+dataset, particularly for bedside monitoring, with most vital signs recorded every 2 minutes, which
+motivates us to provide a comprehensive benchmark suite on this dataset. Demographic information
+about the patient cohort are displayed in Appendix Table 1.
+3.2
+
+Prediction Tasks
+
+Our benchmark suite focuses on clinically relevant prediction tasks with a large diversity in the
+machine learning task types. From a clinical point of view, the tasks cover most major organ systems
+as well as the general patient state. The major organ systems include the cardiovascular, kidney, and
+respiratory systems. For each organ system, we provide a prediction task related to the main organ
+function. Length of stay, mortality, and patient phenotyping are chosen to assess an overall patient
+state. From a machine learning point of view, our suite contains regression and classification (binary
+and multi-class) tasks. We included tasks with different degrees of class imbalance to diversify
+the spectrum further and enable the comparison of methods on e.g. highly imbalanced tasks. We
+chose tasks performed online throughout the stay (every 5 minutes) and at fixed time-points of the
+stay, such as 24h after ICU admission, which capture a more long-term state of the patient. To
+enhance reproducibility, we include two tasks previously considered in [17], mortality, and remaining
+length-of-stay prediction. Table 1 contains the full list of task and their detailed descriptions.
+3
+APACHE II and IV [48, 30] are subsequent versions of the major illness severity score used in the ICU. They
+also introduce a patient grouping according to admission reason. We use an aggregate of these two groupings for
+this task (see A PPENDIX A: DATASET D ETAILS)
+4
+Circulatory failure is defined as Lactate > 2mmol/l and either mean arterial blood pressure < 65mmHg or
+administration of any vasoactive drug.
+5
+Respiratory failure is defined according to the Berlin definition [2] as a P/F ratio < 300 mmHg.
+
+3
+
+4
+
+Pipeline Design
+
+Figure 1 shows an overview of the major HiRID-ICU pipeline steps. The pipeline is designed using
+the preprocess-train-predict paradigm. We provide more details about it in A PPENDIX B: H I RIDICU P IPELINE D ETAILS and the README section of the software repository6 . The preprocessed
+data contains two versions, common_stage and ml_stage. The former is independent of modeling
+choices and serves as the starting point for future works with custom pre-processing choices. The
+latter is a compatible version for our pipeline with our categorical encoding, imputation, and scaling
+choices.
+
+Long-format Data
+
+Merging stage:
+drug merging
+artifact
+removal
+wide-formatting
+Wide-format Data
+(5min)
+
+Meta-data
+
+Resampling stage:
+5min gridding
+
+Feat. Extraction:
+min
+max
+mean
+density
+
+Features
+(5min)
+
+ML Preprocess:
+imputation
+scaling
+cat encoding
+
+Scaled/Imputed
+Data
+(5min)
+
+common_stage
+
+HiRID
+
+Label extraction:
+imputation
+endpoint
+labels
+
+Labels
+(5min)
+
+ML Models:
+LGBM
+LogisticReg.
+
+DL Models:
+LSTM
+GRU
+Transformer
+TCN
+
+Evaluation:
+AUPRC (Binary)
+AUROC (Binary)
+B-Accuracy (Class.)
+MAE (Regression)
+
+ml_stage
+
+Figure 1: Detailed Pipeline. (Red) Raw Long-format Data. (Green) Wide-format data. (Blue)
+Common data pre-processing. (Grey) Modeling depending stages.
+
+4.1
+
+Data Pre-processing
+
+In its public version, HiRID, as any real-world dataset, contains certain artifacts that require preprocessing. As pointed out by [4] for MIMIC-III, individual pre-processing in each work avoids a fair
+comparison of them. To this effect, we aim to provide a modular and reproducible pipeline. Patient
+6
+
+https://github.com/ratschlab/HIRID-ICU-Benchmark
+
+Table 1: Definition of prediction tasks contained in the HiRID-ICU benchmark suite
+Task name
+
+Task type
+
+Task description
+
+ICU mortality
+
+Binary classification,
+one prediction per stay
+
+Predicted at 24h after
+admission to the ICU.
+
+Patient phenotyping
+
+Multi-class classification,
+one prediction per stay
+
+Classifying the patient after 24h
+regarding the admission diagnosis,
+using the APACHE group II and IV labels3
+
+Circulatory failure 4
+
+Continuous prediction of onset of
+Binary classification,
+circulatory failure in the next 12h,
+dynamic prediction throughout stay
+given the patient is not in failure now.
+
+Respiratory failure5
+
+Continuous prediction of onset
+Binary classification,
+of respiratory failure in the next 12h,
+dynamic prediction throughout stay
+given the patient is not in failure now.
+
+Kidney function
+
+Continuous prediction of urine production
+Regression,
+in the next 2h as an average rate in ml/kg/h.
+dynamic prediction throughout stay
+The task is predicted at irregular intervals.
+
+Remaining length of stay
+
+Regression,
+Continuous prediction of the
+dynamic prediction throughout stay remaining ICU stay duration.
+
+4
+
+EHRs in HiRID are stored in a long table format where each row of the table is a record containing
+the measurement value of a specific variable at a specific time for a patient, which cannot be used as
+a ready input for machine learning models.
+Wide-format Merging To obtain a more compact format, the first pre-processing step in our
+pipeline is to transform the long table of patient EHRs into feature matrices, where each column
+represents a clinical concept, which we call the wide-format. Such a data format represents an
+irregularly sampled multivariate time series. At this step, we also remove any physiologically
+impossible measurement.
+High-Resolution Gridding After this merging step, we further compact the dataset by re-sampling
+it to a 5 minute resolution. Thus, each time step contains the last value measured in the last 5 min
+if it exists, or left empty otherwise. This gridding strategy is similar to the one used by [21]. We
+refer to the output of this step as the common_stage in Fig.1. Because it is independent of modeling
+choices, this stage provides a starting point for future approaches using different imputation and
+scaling choices.
+Processing for Machine Learning In the second part of the pipeline, we process the common
+stage of the data to be compatible with ML models’ expected input format. For this, we first use
+forward-filling imputation for each stay. Then, we apply one-hot encoding for categorical variables
+and scale the remaining ordinal or continuous variables. We standard scaled all variables with the
+exception of the time since admission and admission date, which we min-max scaled. By doing
+scaling globally, we ensure to preserve patients’ specificity (e.g.: tachycardia). We refer to the output
+of this stage as the ml_stage as it is dependent on our modeling choices.
+4.2
+
+Hand-engineered Feature Extraction
+
+In the original paper describing the HiRID dataset [21], the authors showed that boosted tree
+ensembles such as LGBM [27], when provided with hand-engineered features, outperform state-ofthe-art deep learning methods. Based on this observation, we include in our pipeline the possibility to
+extract such features from the common_stage of the data. For our models, we extracted four features
+for each non-categorical variable over the entire history: minimum past value, maximum past value,
+mean past value and density of measurement, which is the proportion of time points where a value
+is provided among all possible time points in the history7 . These features are then included in the
+ml_stage.
+4.3
+
+Label Construction and Splitting
+
+We construct prediction task labels using the provided measurements and meta-data for both continuous and stay-level tasks. As an intermediate step for label construction, we use a forward imputed
+version of the data, as in the modeling stage. Concerning the experimental design, we use a random
+split of patients. The training set contains 70% of the patients and validation and test sets each contain
+15%. The temporal splitting strategy as used by Hyland et al. [21] would be more clinically relevant
+but information about admission time was removed to preserve anonymity when the dataset was
+originally published. While longer stays exist in the dataset, for computational reasons, we limited
+labeling to the first 7 days of stays (2016 steps). This cropping affects less than 6% of all stays.
+4.4
+
+Model Training and Evaluation
+
+The final part of the pipeline contains an end-to-end machine learning suite to train and evaluate
+our models, depicted on the right hand side of Fig.1.Machine learning (ML) approaches were
+implemented using scikit-learn[35] and lightgbm[27], whereas deep learning (DL) approaches
+were implemented in pytorch [34]. All DL models were trained using Adam optimizer [29], with a
+cross-entropy objective for classification tasks and mean-squared error (MSE) for regression tasks.
+For classification we provide the possibility to balance loss weights according to class prevalence as
+in [28].
+7
+
+This is done on the regularly sampled version of the data
+
+5
+
+Table 2: Label statistics for each of the tasks, in the training, validation and test sets. As a metric,
+for binary classification tasks, the positive label prevalence is reported. For multi-class classification
+tasks, the class prevalence of the minority class is reported. Finally, for regression tasks the median
+of the label distribution is reported. In parentheses the number of samples is reported. M: Million.
+Task name
+
+Train set
+
+Validation set
+
+Test set
+
+Circ. failure
+Resp. failure
+
+4.3 % (n=14.12M)
+38.3 % (n=5.58M)
+
+4.1 % (n=3.01M)
+37.6 % (n=1.21M)
+
+4.1 % (n=2.96M)
+37.4 % (n=1.20M)
+
+Mortality
+Phenotyping
+
+8.7 % (n=10525)
+0.2 % (n=10470)
+
+7.1 % (n=2206)
+0.1 % (n=2194)
+
+8.3 % (n=2231)
+0.1 % (n=2217)
+
+Kidney function
+Rem. LOS
+
+1.17 ml/kg/h (n=341424)
+41.04h (n=15.15M)
+
+1.12 ml/kg/h (n=71549)
+41.51h (n=3.22M)
+
+1.18 ml/kg/h (n=70642)
+39.64h (n=3.17M)
+
+For the evaluation of models, we use a range of metrics relevant to each task. For classification tasks,
+we considered AUROC8 and AUPRC9 metrics in the binary case, and balanced accuracy (B-Accuracy)
+[6] in the multi-class one. For regression tasks, we used mean absolute error (MAE) as a comparison
+metric. Regardless of the task or model, we used the scikit-learn implementation for all metrics.
+More details about this stage of the pipeline can be found in A PPENDIX B: H I RID-ICU-P IPELINE
+D ETAILS.
+
+5
+
+Experiments
+
+5.1
+
+Settings
+
+For all models, we tuned specific hyper-parameters using random search. Each randomly picked set
+of parameters was run with 3 different random initializations. We then selected hyper-parameters on
+the validation set performance for either AUPRC, B-Accuracy, or MAE. All models were trained
+with early stopping on the validation loss. Further details about hyper-parameters can be found in
+A PPENDIX B: H I RID-ICU-P IPELINE D ETAILS.
+Because of the class imbalance existing in classification tasks, we considered balanced loss weights
+for all methods. However as further discussed in subsection 5.5, this technique was relevant only for
+the Patient Phenotyping task. For regression tasks, we min-max scaled the labels at training time to
+avoid exploding gradients.
+5.2
+
+Benchmarked Methods
+
+In our proposed benchmark, we considered two groups of machine learning algorithms. The first
+group consists of regular machine learning algorithms, which as shown are highly effective for
+ICU-related tasks [41, 17, 21]. It is composed of a Gradient Boosting method with LightGBM [27]
+and Logistic Regression. The second group is focused on deep learning methods. We select the
+most commonly used sequence models for this group: Recurrent neural networks (LSTM [18] and
+GRU [8]), convolutional neural networks (CNN), in particular, temporal convolutional networks
+(TCN) [3] and Transformer models [44].
+5.3
+
+Benchmarking Models on High-resolution ICU Data
+
+In this section, we compare the previously described methods on all tasks. While DL approaches are
+provided with the entire history for all time points, ML methods use only the values of the current
+step as an input. Thus one would expect the latter models to perform significantly worse due to the
+lower amount of information provided.
+8
+9
+
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.average_precision_score.html
+
+6
+
+Table 3: Benchmark of methods for stay level tasks.(Top rows) ML methods; (Bottom rows) DL
+methods. All scores are averaged over 10 runs with different random seeds such that the reported
+score is of the form mean ± std. In bold are the methods within one standard deviation of the best
+one. Classification metrics were scaled to 100 for readability purposes.
+Task
+
+ICU Mortality
+
+Patient Phenotyping
+
+Metric
+
+AUPRC (↑)
+
+AUROC (↑)
+
+B-Accuracy (↑)
+
+LR
+LGBM
+LGBM w. Feat.
+
+58.1 ± 0.0
+54.6 ± 0.8
+62.6 ± 0.0
+
+89.0 ± 0.0
+88.8 ± 0.2
+90.5 ± 0.0
+
+39.1 ± 0.0
+40.4 ± 0.8
+45.8 ± 2.0
+
+GRU
+LSTM
+TCN
+Transformer
+
+60.3 ± 1.6
+60.0 ± 0.9
+60.2 ± 1.1
+61.0 ± 0.8
+
+90.0 ± 0.4
+90.3 ± 0.2
+89.7 ± 0.4
+90.8 ± 0.2
+
+39.2 ± 2.1
+39.5 ± 1.2
+41.6 ± 2.3
+42.7 ± 1.4
+
+Table 4: Benchmark of methods for online monitoring tasks. (Top rows) ML methods; (Bottom rows)
+DL methods. All scores are averaged over 10 runs with different random seeds such that the reported
+score is of the form mean ± std. In bold are the methods within one standard deviation of the best
+one. Classification metrics were scaled to 100 for readability purposes. MAE is in units ml/kg/h for
+Kidney Function and in hours for Remaining LOS.
+Task
+
+Circulatory failure
+
+Respiratory failure
+
+Kidney func. Remaining LOS
+
+Metric
+
+AUPRC (↑) AUROC (↑) AUPRC (↑) AUROC (↑)
+
+MAE (↓)
+
+MAE (↓)
+
+LR
+LGBM
+LGBM w. Feat.
+
+30.5 ± 0.0
+38.9 ± 0.3
+38.8 ± 0.2
+
+87.6 ± 0.0
+91.2 ± 0.1
+91.2 ± 0.1
+
+53.0 ± 0.0
+58.5 ± 0.1
+60.4 ± 0.2
+
+65.4 ± 0.0
+69.3 ± 0.2
+70.8 ± 0.1
+
+N.A
+0.45 ± 0.00
+0.45 ± 0.00
+
+N.A
+56.9 ± 0.4
+57.0 ± 0.3
+
+GRU
+LSTM
+TCN
+Transformer
+
+36.8 ± 0.5
+32.6 ± 0.8
+35.8 ± 0.6
+35.2 ± 0.6
+
+90.7 ± 0.2
+89.9 ± 0.1
+90.5 ± 0.1
+90.6 ± 0.2
+
+59.2 ± 0.3
+56.9 ± 0.3
+58.9 ± 0.3
+59.4 ± 0.3
+
+70.1 ± 0.2
+68.2 ± 0.3
+70.0 ± 0.2
+70.1 ± 0.2
+
+0.49 ± 0.02
+0.50 ± 0.01
+0.50 ± 0.01
+0.48 ± 0.02
+
+60.6 ± 0.9
+60.7 ± 1.6
+59.8 ± 2.8
+59.5 ± 2.8
+
+Stay-Level Tasks When comparing methods on tasks requiring a single prediction after 24h (Table
+3), we observe the superiority of LGBM with hand-extracted features. Transformers outperformed
+other DL methods but we observe a significant performance gap with the best ML method in BAccuracy for Patient Phenotyping and AUPRC for ICU Mortality. Concerning GRU and LSTM, their
+performance is similar to TCN’s for ICU Mortality. However, on the Patient Phenotyping task, they
+do not manage to outperform even logistic regression.
+Online Failure Predictions For the continuous classification tasks, where the maximum sequence
+length extends from 288 steps to 2016, DL methods do not leverage the additional history information.
+Indeed, as shown in Table 4, for both Circulatory and Respiratory Failure, LGBM trained only on the
+current variables outperforms all DL methods. Among these methods, LSTM is the most impacted,
+as it has noticeably lower scores. Finally, for all continuous tasks, including regression discussed
+below, the improvement brought by hand-extracted features is not as significant. It suggests that
+statistical features, when extracted from the entire history, are less informative.
+Online Regression Tasks The final set of tasks we benchmark are regression tasks (Table 4). As
+for the classification case, LGBM-based methods outperform DL methods, which, among them, have
+similar performance. In addition, we do not observe any improvement brought by our selection of
+hand-extracted features. Moreover, the overall performances of the proposed methods are relatively
+low. While a MAE of 0.45 ml/kg/h for Kidney Function is only twice smaller than the median urine
+output rate, a 57h error in Remaining LOS is more than twice the median length-of-stay. We believe
+these low scores are due to the nature of the labels’ distributions, which are both heavy-tailed as
+shown in A PPENDIX A: DATASET D ETAILS.
+7
+
+5.4
+
+Behaviour of Deep Learning Approaches for Long Time-Series
+
+One notable difference between the MIMIC-III benchmark [17] and our work is the data resolution.
+The resolution of our data being twelve-time higher leads to 2016 steps (1 week) sequences for online
+tasks. Thus, we explore if the increase of sequence length explains the decrease in performance of
+DL methods for continuous tasks.
+History Length One way to verify if DL methods leverage long-term dependencies in their prediction is to check if a decrease in the considered history impacts performance. We can achieve this for
+Transformers and TCN architectures, by respectively using local attention or fixing the number of
+dilated convolutions. In the results (Figure 2), we observe that both models do not use the additional
+information provided by early steps for the Circulatory failure task. It is in line with LGBM’s lack
+of performance improvement when provided with history features on this task. For the Respiratory
+Failure task, where history features improve LGBM performance, shortening considered history
+impacts significantly both methods. TCN performance consistently decreases as history diminishes,
+whereas the Transformer model AUPRC first improves, almost closing the gap with LGBM, before
+also lowering. Thus, both DL models leverage history in the Respiratory Failure task. However, this
+also highlights known limitations of Transformers for long sequences [7] when the history exceeds
+12h.
+0.450
+
+LGBM w. Feat
+Transformer
+TCN
+
+0.425
+0.400
+
+0.62
+0.60
+
+0.375
+
+AUPRC
+
+AUPRC
+
+0.58
+
+0.350
+
+0.56
+
+0.325
+0.300
+
+0.54
+
+0.275
+
+0.52
+
+0.250
+
+LGBM w. Feat
+Transformer
+TCN
+
+0.64
+
+1
+
+3
+
+6
+
+12
+24
+48
+Considered History (Hours)
+
+96
+
+0.50
+
+168
+
+1
+
+3
+
+6
+
+12
+24
+48
+Considered History (Hours)
+
+96
+
+168
+
+Figure 2: Impact of history length on online classification performance. (Left) Comparison in
+AUPRC for the Circulatory Failure task ; (Right) Comparison in AUPRC for the Respiratory Failure
+task. Error bars represent the standard deviation over 5 runs with different random initializations.
+
+Data Resolution Another approach to decrease the length of sequences is to reduce the data
+resolution. We compare all DL methods with a 1h prediction interval to assess the impact of data
+resolution on performance. This way, we can gradually lower the data resolution from 5min to 1h
+while preserving the same prediction time-steps. We report the result of this experiment in Figure 3.
+We observe that while TCN and Transformer performance are almost identical, GRU and LSTM are
+both impacted in opposite ways. GRU is noticeably better than LSTM on both tasks with a 5min grid,
+but as resolution lowers to 1h, this gap is significantly reduced.
+Transformer
+TCN
+GRU
+LSTM
+
+AUPRC (1h Prediction Interval)
+
+0.425
+0.400
+0.375
+
+0.62
+0.60
+0.58
+
+0.350
+
+0.56
+
+0.325
+
+0.54
+
+0.300
+
+0.52
+
+0.275
+0.250
+
+Transformer
+TCN
+GRU
+LSTM
+
+0.64
+AUPRC (1h Prediction Interval)
+
+0.450
+
+5
+
+10
+30
+Data Resolution (min)
+
+0.50
+
+60
+
+5
+
+10
+30
+Data Resolution (min)
+
+60
+
+Figure 3: Impact of data resolution on online classification performance. (Left) Comparison in
+AUPRC for the Circulatory Failure task ; (Right) Comparison in AUPRC for the Respiratory Failure
+task. Error bars represent the standard deviation over 5 runs with different random initializations.
+
+8
+
+5.5
+
+On Weighting Cross-entropy by Class Prevalence
+
+All the tasks we define show a certain degree of imbalance and the class imbalance problem (CIP)
+is known to be highly challenging [26]. The most common approach to this problem is the use of
+class weights in the loss objective. For this ablation, we adopt the original idea from [28] by defining
+weights inversely proportional to each class prevalence. As shown in Table 5, for the multi-class
+task, it yields a significant improvement on the balanced accuracy. However, such a technique harms
+all binary classification tasks performances. It is particularly true for the highly imbalanced tasks,
+Circulatory Failure, and ICU Mortality.
+Table 5: Deltas in metrics of using balanced cross-entropy loss. (Blue) Improvements over using no
+weights; (Red) Deterioration over using no weights.
+Task
+∆ Metric
+
+ICU Mortality
+Phenotyping
+Circulatory Failure
+Respiratory Failure
+AUPRC (↑) AUROC (↑) B-Accuracy (↑) AUPRC (↑) AUROC (↑) AUPRC (↑) AUROC (↑)
+
+LGBM w. Feat.
+Transformer
+
+6
+
+-1.3
+-2.6
+
+0.0
+0.0
+
++4.3
++4.0
+
+-4.2
+-0.9
+
+-2.6
+0.0
+
+0.1
+-0.1
+
+0.0
+-0.1
+
+Discussion
+
+In this paper, we provided an in-depth benchmark on the HiRID dataset and evaluated the behaviour
+of various machine learning models on diverse clinically relevant tasks developed in collaboration
+with intensive care clinicians. Our primary contribution is a full and reproducible preprocessing
+and machine learning pipeline and benchmark tasks on a public intensive care dataset, a necessary
+prerequisite for reproducible and comparable research in the future. We further evaluate current stateof-the-art machine and deep learning algorithms on these tasks establishing a baseline to compare
+future methods against. We consider this our second major contribution.
+This work confirms previous results [21], that conventional machine learning models (i.e. boosted
+ensembles of decision trees) outperform current deep learning approaches on medical time series
+problems. Based on the experimental results we found that deep learning models do not lead to
+the same breakthrough performance increases as in other domains (such as NLP [10] or Computer
+Vision [11]). We believe the sparsity of the data and the imbalance of labels in both regression
+and classification tasks play an important role in this. For classification tasks, building a specific
+objective for highly imbalanced tasks such as Focal loss [33] might be a potential direction of research.
+For regression, a recent work has shown some promising leads for heavy-tailed regression tasks
+[45]. Moreover, HiRID introduces a novel high-resolution aspect in ICU data, that needs to be
+correctly taken into account. Thus, as for other sequence data, one possible explanation could be
+that when trained with extremely long sequences, models can not use the extracted features in the
+most effective way [47]. In the case of Transformers, to force the model to learn and extract useful
+patterns, various kinds of improvements could be made [42]. In particular, learnable patterns could
+be incorporated [39].
+Our work goes beyond previous ICU time-series benchmarks (e.g. [17]) by using a more diverse
+set of tasks and a data set with a higher time resolution. As discussed earlier the set of clinical
+prediction tasks is diverse regarding the assessed organ systems, prevalence, and task type. An
+important limitation of our study is that HiRID is currently not the most frequently used and known
+ICU data set.
+This work facilitates the future development of machine learning methods and standardized comparison of their performance on a diverse set of predefined tasks. It could contribute to solving
+today’s problem of machine learning on medical time series not being comparable due to each work’s
+unique datasets, preprocessing, and tasks definition. We hypothesize that methods developed and
+successfully evaluated on these tasks can also be successfully transferred to other specific medical
+time series problems.
+This work also fills the gap between proposed machine learning approaches and their applications
+to ICU tasks. As a concrete example, COVID-19 is a big challenge for ICU patient monitoring.
+Important issues in this context are the uncertainty of the patient’s prognosis as well as the prediction
+9
+
+of the disease progression. COVID-19 is known to cause respiratory failure [32], one of the tasks
+studied in our benchmark, which is also the main cause for ICU admission and death [31, 40, 38, 19].
+During the current COVID-19 pandemic, first attempts to construct a Respiratory Failure prediction
+model were already done such as [5], however, their data is available only for a limited audience,
+limiting reproducibility.
+
+7
+
+Conclusion
+
+In this paper, we proposed an in-depth benchmark on time series collected from an Intensive Care
+Unit (ICU). In collaboration with clinicians, we defined several tasks relevant for healthcare covering
+different critical aspects of ICU patient monitoring. We provide a reproducible end-to-end pipeline to
+derive both data and labels, and a training setup to evaluate the final performance. We hope that this
+benchmark facilitates the construction and evaluation of machine learning methods for ICU data, and
+encourages reproducible research in this field.
+
+References
+[1] AmsterdamUMCdb. https://amsterdammedicaldatascience.nl/.
+[2] ARDS Definition Task Force, V Marco Ranieri, Gordon D Rubenfeld, B Taylor Thompson,
+Niall D Ferguson, Ellen Caldwell, Eddy Fan, Luigi Camporota, and Arthur S Slutsky. Acute
+respiratory distress syndrome: the Berlin Definition. JAMA, 307(23):2526–2533, June 2012.
+[3] Shaojie Bai, J Zico Kolter, and Vladlen Koltun. An empirical evaluation of generic convolutional
+and recurrent networks for sequence modeling. arXiv preprint arXiv:1803.01271, 2018.
+[4] David Bellamy, Leo Celi, and Andrew L Beam. Evaluating progress on machine learning for
+longitudinal electronic healthcare data. arXiv preprint arXiv:2010.01149, 2020.
+[5] Siavash Bolourani, Max Brenner, Ping Wang, Thomas McGinn, Jamie S Hirsch, Douglas
+Barnaby, Theodoros P Zanos, Northwell COVID-19 Research Consortium, et al. A machine
+learning prediction model of respiratory failure within 48 hours of patient admission for COVID19: model development and validation. Journal of medical Internet research, 23(2):e24246,
+2021.
+[6] Kay Henning Brodersen, Cheng Soon Ong, Klaas Enno Stephan, and Joachim M Buhmann.
+The balanced accuracy and its posterior distribution. In 2010 20th international conference on
+pattern recognition, pages 3121–3124. IEEE, 2010.
+[7] Rewon Child, Scott Gray, Alec Radford, and Ilya Sutskever. Generating long sequences with
+sparse transformers. CoRR, abs/1904.10509, 2019.
+[8] Kyunghyun Cho, Bart Van Merriënboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares,
+Holger Schwenk, and Yoshua Bengio. Learning phrase representations using RNN encoderdecoder for statistical machine translation. arXiv preprint arXiv:1406.1078, 2014.
+[9] Luca Citi and Riccardo Barbieri. Physionet 2012 challenge: Predicting mortality of icu patients
+using a cascaded SVM-GLM paradigm. In 2012 Computing in Cardiology, pages 257–260.
+IEEE, 2012.
+[10] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. Bert: Pre-training of
+deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805,
+2018.
+[11] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai,
+Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, et al.
+An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint
+arXiv:2010.11929, 2020.
+[12] RK Ellis. Determination of po2 from saturation. Journal of applied physiology, 67(2):902–902,
+1989.
+[13] M. Faltys, M. Zimmermann, X. Lyu, M. Hüser, S. Hyland, G. Rätsch, and T. Merz. HiRID, a
+high time-resolution icu dataset (version 1.1.1). PhysioNet, 2021.
+[14] Johann Faouzi and Hicham Janati. pyts: A python package for time series classification. Journal
+of Machine Learning Research, 21(46):1–6, 2020.
+10
+
+[15] Ary L Goldberger, Luis AN Amaral, Leon Glass, Jeffrey M Hausdorff, Plamen Ch Ivanov,
+Roger G Mark, Joseph E Mietus, George B Moody, Chung-Kang Peng, and H Eugene Stanley.
+PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex
+physiologic signals. circulation, 101(23):e215–e220, 2000.
+[16] Ahmed Guecioueur. pysf: Supervised forecasting of sequential data in python, 2018. https:
+//github.com/alan-turing-institute/pysf.
+[17] Hrayr Harutyunyan, Hrant Khachatrian, David C Kale, Greg Ver Steeg, and Aram Galstyan.
+Multitask learning and benchmarking with clinical time series data. Scientific data, 6(1):1–18,
+2019.
+[18] Sepp Hochreiter and Jürgen Schmidhuber. Long short-term memory. Neural computation,
+9(8):1735–1780, 1997.
+[19] Jan C Holter, Soeren E Pischke, Eline de Boer, Andreas Lind, Synne Jenum, Aleksander R
+Holten, Kristian Tonby, Andreas Barratt-Due, Marina Sokolova, Camilla Schjalm, et al. Systemic complement activation is associated with respiratory failure in COVID-19 hospitalized
+patients. Proceedings of the National Academy of Sciences, 117(40):25018–25025, 2020.
+[20] Max Horn, Michael Moor, Christian Bock, Bastian Rieck, and Karsten Borgwardt. Set functions
+for time series. In International Conference on Machine Learning, pages 4353–4363. PMLR,
+2020.
+[21] Stephanie L Hyland, Martin Faltys, Matthias Hüser, Xinrui Lyu, Thomas Gumbsch, Cristóbal
+Esteban, Christian Bock, Max Horn, Michael Moor, Bastian Rieck, et al. Early prediction
+of circulatory failure in the intensive care unit using machine learning. Nature medicine,
+26(3):364–373, 2020.
+[22] Daniel Jarrett, Jinsung Yoon, Ioana Bica, Zhaozhi Qian, Ari Ercole, and Mihaela van der
+Schaar. Clairvoyance: A pipeline toolkit for medical time series. In International Conference
+on Learning Representations, 2020.
+[23] Alistair Johnson, Lucas Bulgarelli, Tom Pollard, Steven Horng, Leo Anthony Celi, and Roger
+Mark. MIMIC-IV, 2020.
+[24] Alistair EW Johnson, Tom J Pollard, and Roger G Mark. Reproducibility in critical care:
+a mortality prediction case study. In Machine Learning for Healthcare Conference, pages
+361–376. PMLR, 2017.
+[25] Alistair EW Johnson, Tom J Pollard, Lu Shen, H Lehman Li-Wei, Mengling Feng, Mohammad
+Ghassemi, Benjamin Moody, Peter Szolovits, Leo Anthony Celi, and Roger G Mark. MIMIC-III,
+a freely accessible critical care database. Scientific data, 3(1):1–9, 2016.
+[26] Justin M Johnson and Taghi M Khoshgoftaar. Survey on deep learning with class imbalance.
+Journal of Big Data, 6(1):1–54, 2019.
+[27] Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, and
+Tie-Yan Liu. LightGBM: A highly efficient gradient boosting decision tree. Advances in neural
+information processing systems, 30:3146–3154, 2017.
+[28] Gary King and Langche Zeng. Logistic regression in rare events data. Political analysis,
+9(2):137–163, 2001.
+[29] Diederik P Kingma and Jimmy Ba. Adam: A method for stochastic optimization. arXiv preprint
+arXiv:1412.6980, 2014.
+[30] W A Knaus, E A Draper, D P Wagner, and J E Zimmerman. APACHE II: a severity of disease
+classification system. Crit. Care Med., 13(10):818–829, October 1985.
+[31] Xu Li and Xiaochun Ma. Acute respiratory failure in COVID-19: is it “typical” ards? Critical
+Care, 24:1–5, 2020.
+[32] Yan-Chao Li, Wan-Zhu Bai, and Tsutomu Hashikawa. The neuroinvasive potential of SARSCoV2 may play a role in the respiratory failure of COVID-19 patients. Journal of medical
+virology, 92(6):552–555, 2020.
+[33] Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollár. Focal loss for dense
+object detection. In Proceedings of the IEEE international conference on computer vision,
+pages 2980–2988, 2017.
+11
+
+[34] Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan,
+Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, et al. PyTorch: An imperative
+style, high-performance deep learning library. arXiv preprint arXiv:1912.01703, 2019.
+[35] F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel,
+P. Prettenhofer, R. Weiss, V. Dubourg, J. Vanderplas, A. Passos, D. Cournapeau, M. Brucher,
+M. Perrot, and E. Duchesnay. Scikit-learn: Machine learning in Python. Journal of Machine
+Learning Research, 12:2825–2830, 2011.
+[36] Tom J Pollard, Alistair EW Johnson, Jesse D Raffa, Leo A Celi, Roger G Mark, and Omar
+Badawi. The eICU collaborative research database, a freely available multi-center database for
+critical care research. Scientific data, 5(1):1–13, 2018.
+[37] Matthew A Reyna, Chris Josef, Salman Seyedi, Russell Jeter, Supreeth P Shashikumar, M Brandon Westover, Ashish Sharma, Shamim Nemati, and Gari D Clifford. Early prediction of sepsis
+from clinical data: the physionet/computing in cardiology challenge 2019. In 2019 Computing
+in Cardiology (CinC), pages Page–1. IEEE, 2019.
+[38] Safiya Richardson, Jamie S Hirsch, Mangala Narasimhan, James M Crawford, Thomas McGinn,
+Karina W Davidson, Douglas P Barnaby, Lance B Becker, John D Chelico, Stuart L Cohen,
+et al. Presenting characteristics, comorbidities, and outcomes among 5700 patients hospitalized
+with COVID-19 in the New York City area. Jama, 323(20):2052–2059, 2020.
+[39] Aurko Roy, Mohammad Saffar, Ashish Vaswani, and David Grangier. Efficient content-based
+sparse attention with routing transformers. Transactions of the Association for Computational
+Linguistics, 9:53–68, 2021.
+[40] Qiurong Ruan, Kun Yang, Wenxia Wang, Lingyu Jiang, and Jianxin Song. Clinical predictors
+of mortality due to COVID-19 based on an analysis of data of 150 patients from wuhan, china.
+Intensive care medicine, 46(5):846–848, 2020.
+[41] Reza Sadeghi, Tanvi Banerjee, and William Romine. Early hospital mortality prediction using
+vital signals. Smart Health, 9:265–274, 2018.
+[42] Yi Tay, Mostafa Dehghani, Dara Bahri, and Donald Metzler. Efficient transformers: A survey.
+arXiv preprint arXiv:2009.06732, 2020.
+[43] Nenad Tomašev, Xavier Glorot, Jack W Rae, Michal Zielinski, Harry Askham, Andre Saraiva,
+Anne Mottram, Clemens Meyer, Suman Ravuri, Ivan Protsyuk, et al. A clinically applicable
+approach to continuous prediction of future acute kidney injury. Nature, 572(7767):116–119,
+2019.
+[44] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez,
+Lukasz Kaiser, and Illia Polosukhin. Attention is all you need. arXiv preprint arXiv:1706.03762,
+2017.
+[45] Yuzhe Yang, Kaiwen Zha, Ying-Cong Chen, Hao Wang, and Dina Katabi. Delving into deep
+imbalanced regression. arXiv preprint arXiv:2102.09554, 2021.
+[46] Hugo Yèche, Gideon Dredsner, Francesco Locatello, Matthias Hüser, and Gunnar Rätsch.
+Neighborhood contrastive learning applied to online patient monitoring. In International
+Conference on Machine Learning. PMLR, 2021.
+[47] Manzil Zaheer, Guru Guruganesh, Avinava Dubey, Joshua Ainslie, Chris Alberti, Santiago
+Ontanon, Philip Pham, Anirudh Ravula, Qifan Wang, Li Yang, et al. Big Bird: Transformers for
+longer sequences. arXiv preprint arXiv:2007.14062, 2020.
+[48] Jack E Zimmerman, Andrew A Kramer, Douglas S McNair, and Fern M Malila. Acute
+physiology and chronic health evaluation (APACHE) IV: hospital mortality assessment for
+today’s critically ill patients. Crit. Care Med., 34(5):1297–1310, May 2006.
+
+A
+
+Appendix A: HiRID Dataset Details
+
+Dataset description
+The HiRID ICU data is provided by the University Hospital Bern, Bern, Switzerland. The dataset
+consists of 33,905 patients whose length of stays in the ICU range from 0 to 28 days. A more detailed
+summary of the HiRID cohort statistics can be found in Table 6.
+12
+
+For all patients, a variety of clinical measurements are collected. It represents a set of 710 variables
+that can be categorized into the following types:
+• Demographics (e.g.: Sex, Age, Height)
+• Bedside vital signs (e.g.: Heart rate)
+• Settings of medical devices (e.g.: Mechanical ventilation)
+• Manual observations (e.g.: Urine output)
+• Lab measurements (e.g.: Lactate)
+• Treatments (e.g.: Vasopressor agents)
+One notable difference between these types of measurements is the resolution at which they are
+provided. Bedside vital signs are provided at regular intervals of 2 min, whereas lab measurements
+are only available every couple of hours at best. The frequency of recording discrepancy existing
+between different variables yields unique challenges for machine learning models. Further details
+about the available clinical measurements can be found in the official documentation of HiRID10 as
+well as in our software repository11
+
+Data preprocessing
+Artifact removal The HiRID data when directly exported from the data management system
+contains various types of artifacts. The most common one concerns measurement values that are out
+of the normal range defined by clinicians. Another artifact that we observed is that the time of the
+first measurement record of cumulative variables is at noon by default, which could be much earlier
+than the admission time of the patient. This, if not taken into account correctly, will affect the rate
+calculation for those cumulative variables. To solve these timestamp issues, we clip the time of the
+first record of the cumulative variables to the ICU admission time of the patient.
+Variable merging There are often various variables in the ICU EHRs that have the same or similar
+clinical meaning. As an example, there exist three variables for temperature, namely core body
+temperature, auxiliary temperature, and rectal temperature. Usually, only one or few variables from
+one medical concept are measured for a patient, therefore, merging variables with the same clinical
+concept into one meta-variable reduces the sparsity of the feature matrices. Another advantage is
+that machine learning models trained on medical concept features are more transferable to other
+hospitals than those trained on the original clinical variables because hospitals usually have their own
+variable coding scheme. We hence incorporated variable-merging in our first pre-processing step. A
+challenge that arises from merging pharmaceutical variables is the dosage normalization across drugs
+with similar active ingredients. Therefore, instead of using the drug dosage as features, which likely
+contain invalid information, we use “presence/absence” binary indicators of drugs as features for the
+machine learning models.
+Definition of pharmaceutical acting periods When a patient has been administrated a drug at a
+time point, only this time point contains a measurement. However, each drug is active for a specific
+duration after this administration time. For this reason, we ensure to propagate the measurement for
+a duration corresponding to the drug acting period. We set the value back to zero after this period
+ensuring compatibility with forward filling imputation.
+Conversion of cumulative values to rates There are a few fluid output variables whose measurement values are recorded as cumulative every 12 hours starting from noon on the ICU admission day.
+Since the cumulative signals are periodic, we converted them to hourly fluid rates which are more
+interpretable and amenable as machine learning features and for the endpoint definition.
+10
+
+URL for the official HiRID documentation https://hirid.intensivecare.ai/
+Table containing all information for each variable: https://github.com/ratschlab/HIRID-ICU-Benchmark/
+blob/master/preprocessing/resources/varref.tsv
+11
+
+13
+
+Table 6: Cohort statistics of the public HiRID dataset v1.1.1, as released on Physionet, which was
+used for the HiRID-ICU benchmark
+Sex
+
+Age group
+
+Discharge status
+
+Female
+
+12,138
+
+patients
+
+Male
+
+21,767
+
+patients
+
+[20,30)
+
+1,042
+
+patients
+
+[30,40)
+
+1,278
+
+patients
+
+[40,50)
+
+2,649
+
+patients
+
+[50,60)
+
+5,194
+
+patients
+
+[60,70)
+
+8,241
+
+patients
+
+[70,80)
+
+9,445
+
+patients
+
+[80,90)
+
+5,534
+
+patients
+
+[90,100)
+
+522
+
+patients
+
+Alive
+
+31,604
+
+patients
+
+Dead
+
+2,062
+
+patients
+
+239
+
+patients
+
+Unknown
+Cardiovascular
+
+Neurologic
+APACHE group
+(Patient phenotype)
+
+Gastrointestinal
+
+Surgical
+
+8,125
+
+patients
+
+Non-surgical
+
+4,356
+
+patients
+
+Surgical
+
+3,938
+
+patients
+
+Non-surgical
+
+6,014
+
+patients
+
+Surgical
+
+1,768
+
+patients
+
+Non-surgical
+
+1,918
+
+patients
+
+631
+
+patients
+
+2,399
+
+patients
+
+Surgical
+
+Respiratory
+
+Non-surgical
+Surgical
+
+Trauma
+
+Non-surgical
+Other medical diseases
+
+Length of stay
+
+239
+
+patients
+
+1,522
+
+patients
+
+1,428
+
+patients
+
+Other surgical
+
+568
+
+patients
+
+Metabolic/Endocrinology
+
+630
+
+patients
+
+Hematologic
+
+99
+
+patients
+
+Renal surgical
+
+81
+
+patients
+
+Unknown
+
+189
+
+patients
+
+Median
+
+0.95
+
+days
+
+Range
+
+(0,28]
+
+days
+
+Endpoint definition and statistics
+Endpoint extraction algorithms
+Our benchmark suite contains a range of clinically relevant tasks chosen to range over a spectrum
+of different properties of tasks, e.g. task type from the machine learning point-of-view (regression,
+binary classification, multi-class classification), point of the ICU stay at which the prediction is made
+(fixed time-point vs. predictions made throughout the stay), as well as the degree of class imbalance
+(highly imbalanced tasks vs. more balanced tasks). While in the main paper we describe the main idea
+of each task, the full definition and implementation details of the extraction algorithm are described
+below.
+Dependencies on previous pipeline stages. Static information about the patient is extracted from
+the static.parquet file, in which the mortality status and the APACHE-II/IV codes for the admission are stored. This file is derived from the general_table.parquet and observations tables,
+where APACHE II/IV codes are stored, during the data preprocessing pipeline stage. Respiratory/kid14
+
+ney/circulatory failure labels are generated from the merged stage of the data, via an intermediate
+imputation step, in which measurements are forward filled to statistics about the number of real
+measurements in time grid intervals were pre-computed. These simplified the implementation of the
+endpoints, whose extraction algorithms use a combination of imputed values and real measurement
+detection strategies.
+Label masking on presence of vital sign monitoring. All tasks described below were additionally
+masked with a condition on a current connection to vital sign monitors. This implied setting a valid
+label (according to the below task definitions) to invalid (NaN) if the patient had no heart rate
+measurement (vm1) in the 15 minutes surrounding the time grid point. Since the expected frequency
+of heart rate measurements is 1 sample / 2 minutes, it is likely the patient is disconnected when this
+condition is satisfied, and no reliable predictions on their state can be made.
+Patient phenotyping. To derive the APACHE diagnostic group of the patient, the two fields
+APACHE-II group and APACHE-IV group of the static HiRID data are used. To map these two
+fields to a standardized encoding, the conversion Table 7 is used. If the patient had a valid APACHE-II
+group entry and its code was mapped in the table, the target APACHE group code was used. Otherwise, we tried to fall back to the APACHE-IV group entry, where again if it was present and mapped,
+the corresponding target APACHE group code was used. If still no code could be extracted, the
+prediction task was defined as invalid for the patient. The label of the time-point 24h after ICU
+admission was set to the class category of the APACHE group, defining a multi-class classification
+problem to be solved once in the stay. If the admission was shorter than 24h, no label for the patient
+was assigned.
+Table 7: Mapping between APACHE II and IV group codes to one unique APACHE group diagnostic
+group encoding, which is used for the patient phenotyping task.
+APACHE II
+Code
+
+APACHE IV
+Code
+
+98
+99
+100
+101
+
+190
+191
+192
+193
+197
+
+102
+106
+103
+104
+105
+107
+108
+109
+110
+111
+112
+113
+114
+
+198
+206
+194
+195
+196
+199
+201
+200
+202
+203
+204
+205
+
+Original group name
+
+Target group
+
+Target group name
+
+Cardiovascular
+Respiratory
+Gastrointestinal
+Neurologic
+Urogenital
+Sepsis
+Other
+Intoxication
+Trauma not surgical
+Metabolic/Endocrinology
+Hematologic
+(Cardio)vascular surgical
+Respiratory surgical
+Gastrointestinal surgical
+Neurologic surgical
+Trauma surgical
+Renal surgical
+Gynacology surgical
+Orthopedics surgical
+Other surgical
+Unknown
+
+1
+2
+3
+4
+6
+6
+6
+6
+7
+8
+9
+11
+12
+13
+14
+15
+16
+17
+17
+17
+18
+
+Cardiovascular
+Respiratory
+Gastrointestinal
+Neurologic
+Other medical diseases
+Other medical diseases
+Other medical diseases
+Other medical diseases
+Trauma not surgical
+Metabolic/Endocrinology
+Hematologic
+(Cardio)vascular surgical
+Respiratory surgical
+Gastrointestinal surgical
+Neurologic surgical
+Trauma surgical
+Renal surgical
+Other surgical
+Other surgical
+Other surgical
+Unknown
+
+Mortality. First, the ICU mortality label was extracted from the general data table of the HiRID
+database. The label of the time-point 24 hours after ICU admission was set to 1 (positive) if the
+patient died at the end of the stay according to this field, and 0 (negative) otherwise, defining a binary
+classification problem to be solved once per stay. If the admission was shorter than 24 hours, no label
+was assigned to the patient.
+15
+
+Remaining length of stay. The continuous regression label of a time-point in the ICU stay was
+defined as the number of hours that remain until the end-of-the-stay, i.e. the first label of the ICU stay
+is equal to the ICU stay length (in hours) and the last label just before dispatch is defined as 0. To
+determine the beginning and end of the ICU stay, the first and last observed heart rate measurements
+(vm1) were used.
+Kidney function. As a basis for extracting the kidney function label, the urine output rate (vm24)
+variable and the weight variable (vm131) were used. The valid labels were anchored to real measurements, i.e. updates, of the urine output rate. Only time-points exactly 2h before an update of the urine
+output rate were assigned a prediction label. The overall urine output in the 2h after this time point
+was found by computing the integral of the urine output rate variable (vm24) over this 2h period. The
+overall urine output in the time interval was then normalized to the weight of the patient (unit kg)
+at the time of the prediction, and then standardized to a rate/hour. Hence, the unit of the regression
+output is ml/kg/h.
+Circulatory failure. As a basis for computing the circulatory failure status of a patient at every
+time-point of the ICU stay, the following variables were used: Mean arterial pressure (vm5), arterial
+lactate (vm136) and the vasopressive agents Milrinone (pm42), Dobutamine (pm41), Levosimendan
+(pm43), Theophylline (pm44), Norepinephrine (pm39), Epinephrine (pm40) and Vasopressin (pm45).
+For defining the label at time t a centralized window of size 2h was anchored at t, and the lactate/MAP
+conditions in this window were separately analyzed. The time-point was assigned a (tentative) positive
+label if, for at least 2/3 of the time-points inside the 2h, the lactate condition was satisfied, and for at
+least 2/3 of the time-points inside the 2h, the MAP condition was satisfied. The time-points at which
+they have to be satisfied do not necessarily have to coincide. The conditions defining the circulatory
+failure state are listed below:
+• Lactate condition. Elevated arterial lactate (> 2 mmol/l)
+• MAP/vasopressor condition. Low MAP (< 65 mmHg ) or any dose of any of the considered vasopressors (pm39, pm40, pm41, pm42, pm43, pm44, pm45) given to the patient, which could potentially mask a low MAP.
+Using these endpoint annotations of “circulatory failure” and “no circulatory failure”, a label at time
+point t is either (1) invalid (no prediction made), if the patient was in circulatory failure at t, (2)
+positive if the patient was not circulatory failure at t, but there was a new onset of circulatory failure
+in the next 12h, and (3) negative if the patient was not in circulatory failure at t, and there was no
+onset of circulatory failure in the next 12h.
+Respiratory failure. Estimating the respiratory failure status of a patient at a given time-point
+involves estimating (1) their instantaneous FiO2 value, (2) their instantaneous PaO2 value and
+computing the P/F ratio as P/F = PaO2 /FiO2 , and then labeling the time series according to the
+threshold P/F = 300 mmHg, to define (mild) failure and stability periods.
+We distinguished between the following cases to estimate the FiO2 value at a time-point t.
+• FiO2 from ventilator: If there was a FiO2 measurement (vm58) in the last 30 min and the
+patient was on the ventilator or the ventilation mode NIV (vm60) was active, then the last
+FiO2 measurement (vm58) was directly used as the estimate.
+• FiO2 from supplementary oxygen (oxygen mask): If there was a real measurement in
+supplementary oxygen (vm23) in the last 12h, then it was forward filled and used to estimate
+FiO2 via the conversion Table 8.
+• FiO2 from ambient air: An ambient air FiO2 assumption was made, and FiO2 was estimated
+as 21 %.
+
+16
+
+Table 8: Supplemental Oxygen to FiO2 conversion table used for determining the continuous FiO2
+estimate.
+Supp. oxygen [l]
+
+FiO2 [%]
+
+Supp. oxygen [l]
+
+FiO2 [%]
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+26
+34
+39
+45
+49
+54
+57
+58
+
+9
+10
+11
+12
+13
+14
+15
+>15
+
+63
+66
+67
+69
+70
+73
+75
+75
+
+We distinguished between the following cases tor estimating the PaO2 value at a time-point. As
+source variables peripheral oxygen saturation (vm20) and PaO2 from ABGA (vm140) were used.
+Hereby the SpO2 variable was pre-smoothed with a percentile (75 % percentile) moving window
+filter of size 30 min to remove spuriously low outlier measurements.
+• Real PaO2 measurement: If there was a real PaO2 (vm140) from an arterial blood gas
+analysis available in the last 30 minutes, then the estimate was defined directly by the
+measurement.
+• Ellis estimate from SpO2 : Otherwise the last measurement of peripheral oxygen saturation
+measured by pulse oximetry (vm20) was used to compute an estimate of PaO2 according to
+Ellis et al. [12]. If there is no real SpO2 measurement in the last 24h, a default value of 98
+% was assumed for the estimation.
+First, the resulting PaO2 estimate was smoothed with a Nadaraya-Watson kernel smoother with a
+bandwidth of 20 min. Then, each so-derived PaO2 estimate was weighted by a squared exponential
+kernel and converted to the closest plausible PaO2 measurement. The scale of the kernel function
+was chosen such that a1h distance with the measurement time resulted in a weight of 13 .
+The time series was labeled for respiratory failure by using forward-facing windows anchored at
+time-point t. A patient is considered as being in respiratory failure at t if, for at least 2/3 time-points
+of the next 2h, either of the following conditions hold:
+• The estimated P/F ratio is < 300 mmHg and the patient is not on mechanical ventilation OR
+• The estimated P/F ratio is < 300 mmHg and the patient is on mechanical ventilation, but
+the PEEP value is not densely measured (no real measurement in 30 min) OR
+• The estimated P/F ratio is < 300 mmHg and the patient is on mechanical ventilation, and
+the PEEP is densely measured and the PEEP is > 4 mmHg.
+After the definition of event periods, their edges were corrected according to estimates of the P/F ratio
+at the given time points. If before the event P/F< 300 mmHg, the event is further extended in the
+past. Likewise, if the P/F> 300 mmHg condition holds after the event, it is extended into the future.
+Finally, small events shorter than 4h, preceded and succeeded by two stability periods, of which one
+is longer than 4h are deleted. This is because these likely represent intermittent/spurious instances
+of respiratory failure. Conversely, short stability periods shorter than 4h, preceded and followed by
+periods of respiratory failure, of which one is longer than 4h, are defined as respiratory failure. Likely,
+during these periods, the patient does not recover from the failure in a clinical sense.
+Statistics on annotated failure events and labels
+Below we display statistics on the data resulting from the endpoint stage, and from the label stage,
+which was used directly as inputs for the machine learning models.
+Respiratory failure
+17
+
+Table 9: Summary statistics about annotated respiratory failure (oxygenation failure with a P/F
+ratio <300 mmHg) events in the pre-processed data-set. The label prevalence refers to the observed
+probability of developing respiratory failure in the next 12h, given that the patient is currently stable.
+Respiratory failure
+Patients with events
+Per-time prevalence of resp. failure
+Median # events per patient (if ≥ 1 event) [IQR]
+Median event duration [IQR]
+Median time to first event (if ≥ 1 event) [IQR]
+Median gap length between two events [IQR]
+
+83.08 %
+61.83 %
+1 [1-2]
+9.5 [4.1-20.6] hours
+1.58 [0-11] hours
+4.4 [2.1-11] hours
+
+Overall label prevalence (Stable->Failure 12h)
+Median label prevalence p/patient (if ≥ 1 event) [IQR]
+
+8.6 %
+0 [0-60.1] %
+
+28,157 admissions
+
+Circulatory failure
+Table 10: Summary statistics about annotated circulatory failure (elevated lactate and abnormally
+low MAP or vasopressive agents) events in the pre-processed data-set. The label prevalence refers to
+the observed probability of developing circulatory failure in the next 12h, given that the patient is
+currently stable.
+Circulatory failure
+Patients with events
+Per-time prevalence of circ. failure
+Median # events per patient (if ≥ 1 event) [IQR]
+Median event duration [IQR]
+Median time to first event (if ≥ 1 event) [IQR]
+Median gap length between two events [IQR]
+
+25.58 %
+6.70 %
+1 [1-2]
+2.9 [1.1-7.6] hours
+1.9 [0.5-7.3] hours
+3.3 [1.3-9.6] hours
+
+Overall label prevalence (Stable->Failure 12h)
+Median label prevalence p/patient (if ≥ 1 event) [IQR]
+
+1.4 %
+3.8 [0-19.1] %
+
+Mortality prediction / Patient phenotyping
+
+18
+
+8,669 admissions
+
+Table 11: Summary statistics about the mortality prediction and patient phenotyping tasks defined at
+24h after ICU admission. The last column shows the number of admissions assigned this label.
+Percentage of ICU stays with length >24h
+
+44.1 %
+
+14,962 admissions
+
+Mortality prediction
+Overall label prevalence (Mortality at 24 hours)
+
+8.38 %
+
+Patient phenotyping
+Prevalence ’Neurologic’ (4)
+Prevalence ’(Cardio)vascular’ (1)
+Prevalence ’(Cardio)vascular surgical (11)
+Prevalence ’Respiratory’ (2)
+Prevalence ’Neurologic surgical’ (14)
+Prevalence ’Trauma not surgical’ (7)
+Prevalence ’Gastrointestinal’ (3)
+Prevalence ’Other medical disease’ (6)
+Prevalence ’Gastrointestinal surgical’ (13)
+Prevalence ’Metabolic/Endocrinology’ (8)
+Prevalence ’Respiratory surgical’ (12)
+Prevalence ’Other surgical’ (17)
+Prevalence ’Trauma surgical’ (15)
+Prevalence ’Hematologic’ (9)
+Prevalence ’Renal surgical’ (16)
+
+23.6 %
+15.9 %
+12.4 %
+11.0 %
+7.4 %
+6.7 %
+6.3 %
+5.2 %
+4.8 %
+2.3 %
+1.7 %
+1.2 %
+1.0 %
+0.4 %
+0.2 %
+
+3,511 admissions
+2,367 admissions
+1,848 admissions
+1,635 admissions
+1,106 admissions
+990 admissions
+930 admissions
+778 admissions
+713 admissions
+344 admissions
+246 admissions
+181 admissions
+148 admissions
+57 admissions
+27 admissions
+
+Kidney function / Remaining-length-of-stay regression
+
+100000
+
+Count
+
+80000
+60000
+40000
+20000
+0
+
+0
+
+5
+
+10
+15
+Urine rate in next 2h [ml/kg/h]
+
+20
+
+Figure 4: Marginal distribution of the urine regression labels. The vertical red line denotes the mean,
+and the vertical green line the median of the distribution.
+
+19
+
+1e6
+5
+
+Count
+
+4
+3
+2
+1
+0
+
+0
+
+100
+
+200
+
+300
+400
+Remaining LOS [h]
+
+500
+
+600
+
+700
+
+Figure 5: Marginal distribution of the remaining length-of-stay regression labels. The vertical red
+line denotes the mean, and the vertical green line the median of the distribution.
+
+B
+
+Appendix B: HiRID-ICU Pipeline Details
+
+In this section we provide a description of the full pipeline of the HiRID-ICU Benchmark and go
+through the main steps in detail. We also address the ML Reproducibility checklist questions12 .
+0. Data loading. Request access and then download the data from https://physionet.org/content/
+hirid/1.1.1/ (see how to request access to the data in the README section of the Software
+Repository13 .) The data is available under the PhysioNet Credentialed Health Data License
+1.5.0.
+1. Data preprocessing. The preprocessing step is described in detail in the A PPENDIX A:
+DATASET D ETAILS. It is composed of several stages: merge stage, resample stage, feature
+extraction stage.
+2. Task implementation. In this stage we construct the state annotations and machine learning
+labels for our predefined set of tasks.
+3. Model training and evaluation. We select and train both ML and DL models on the training
+and validation sets. We evaluate model performance on the test set.
+The script run.py in the icu_benchmarks folder unites three stages of the pipeline which can be
+used individually: Preprocessing (Section B.1), Task implementation (Section B.2), and Evaluation
+(Section B.3). Each stage has an associated help function. Below we describe each stage in detail.
+
+Preprocessing
+The method preprocess unites all necessary steps to generate the input for the Deep Learning (DL)
+and Machine Learning (ML) models:
+1. run_merge_step — Converts ICU data from table format to a matrix format that can be
+input to the machine learning model (see details in A PPENDIX A: DATASET D ETAILS).
+2. run_resample_step — Re-samples data to a regularly sampled 5min resolution.
+12
+13
+
+ML Reproducibility checklist
+https://github.com/ratschlab/HIRID-ICU-Benchmark/
+
+20
+
+3. run_feature_extraction_step — Hand-engineered feature extraction for classical
+machine learning models.
+4. run_build_dl — Data splitting and preprocessing specific to ML.
+Running these steps requires the following arguments:
+1. hirid-data-root — Path to the unpacked parquet files containing the HiRID data, downloaded from Physionet.
+2. work-dir — Path to the working directory of the user.
+3. var-ref-path — Path to the file containing meta-data about variables necessary for our
+pre-processing pipeline.
+4. split-path — Path to the exact split of the data for model training and evaluation.
+5. nr-workers — Number of workers to use during training. It depends on the user hardware
+capacity.
+To run the whole preprocessing, the command below is used:
+1
+
+icu - benchmarks preprocess -- hirid - data - root [ path to unpacked parquet
+files ] \
+3
+-- work - dir [ output directory ] \
+4
+-- var - ref - path ./ preprocessing / resources /
+varref . tsv \
+5
+-- split - path ./ preprocessing / resources / split
+. tsv \
+6
+--nr - workers 8
+2
+
+Task Implementation
+The second stage of the pipeline, consisting of extracting task labels, is constructed around the
+following three steps:
+1. imputation_for_endpoints — Imputes data for endpoint generation.
+2. generate_endpoints — Generates the endpoints i.e. verify if conditions for events are
+matched at each timestep.
+3. generate_labels — Extract final labels from endpoints.
+As mentioned in the paper, we construct a set of 6 tasks, relevant for healthcare workers:
+1. Mortality_At24Hours — Mortality prediction at 24h after admission in the ICU (further
+Mortality).
+2. Phenotyping_APACHEGroup — Patient APACHE group classification 24h after admission
+in the ICU (further Patient Phenotyping).
+3. Dynamic_CircFailure_12Hours — Continuous prediction of occurrence of circulatory
+failure in the next 12 hours (further Circulatory Failure).
+4. Dynamic_RespFailure_12Hour — Continuous prediction of occurrence of respiratory
+failure in the next 12 hours (further Respiratory Failure).
+5. Remaining_LOS_Reg — Continuous prediction of the remaining stay duration (further
+Remaining LOS).
+6. Dynamic_UrineOutput_2Hours_Reg — Continuous prediction of patient urine production in the next 2h (further Kidney Function).
+
+Model Training and Evaluation
+In the final part of the pipeline, we provide the user with a choice of model to train:
+21
+
+1. from the list of DL models: Transformer, LSTM, GRU and Temporal CNN. All these models
+use the class DLWrapper defining methods mechanics for deep learning models’ training
+and evaluation.
+2. from the list of the ML Models: Gradient Boosting method and Logistic Regression. In the
+same manner as DL models, these models have a MLWrapper class.
+All models are trained on the training set. The validation set is used for early stopping and model
+selection through a random search. After the training procedure, the model performance is evaluated
+on the test set.
+To run the training, the following command is used (as an example, we provide here the command
+for GRU model training for the Dynamic_CircFailure_12Hours task):
+icu - benchmarks train -c configs / hirid / Classification / GRU . gin \
+-l [ path to logdir ] \
+3
+-t D y n a m i c _ C i r c F a i l u r e _ 1 2 H o u r s \
+4
+- sd 1111
+1
+2
+
+• Argument -l specifies the path to the directory where the trained model and meta-data will
+be stored.
+• Argument -t specifies the selected task.
+• Argument -sd specifies the random seed.
+• Argument -c specifies path to gin-config configuration file. This file should include the
+path to the data after preprocessing, the task, the model with all hyper-parameters.
+An example of the configuration file for the GRU model is provided below14 .
+import
+import
+3 import
+4 import
+5 import
+1
+2
+
+gin . torch . e xt ern al _co nf igu rab le s
+icu_benchmarks . models . wrappers
+icu_benchmarks . models . encoders
+icu_benchmarks . models . utils
+icu_benchmarks . data . loader
+
+6
+7
+
+EMB = 231
+LR = 3e -4
+10 HIDDEN = 64
+11 NUM_CLASSES = 2
+12 DEPTH = 1
+13 BS = 64
+14 EPOCHS = 1000
+15 TASK = ’ D y n a m i c _ C i r c F a i l u r e _ 1 2 H o u r s ’
+16 RES = 1
+17 RES_LAB = 1
+18 MAXLEN = 2016
+19 LOSS_WEIGHT = None
+8
+9
+
+20
+
+# Train params
+train_common . model = @DLWrapper ()
+23 train_common . dataset_fn = @I C U V a r i a b l e Le n g t h D a t a s et
+24 train_common . data_path = [ path to data ] # TODO add by user
+25 train_common . weight = train_common . do_test = True
+21
+22
+
+26
+
+DLWrapper . encoder = @GRU ()
+DLWrapper . loss = @cross_entropy
+29 DLWrapper . optimizer_fn = @Adam
+30 DLWrapper . train . epochs = DLWrapper . train . batch_size = DLWrapper . train .
+patience = 10
+31 DLWrapper . train . min_delta = 1e -4
+27
+28
+
+32
+14
+
+See examples of configuration files for all the tasks and models in the config folder of the software
+repository
+
+22
+
+33
+34
+35
+
+I C U V a r i a b l e L e n g t h L o a d e r T a b l e s . splits = [ ’ train ’ , ’ test ’ , ’ val ’]
+I C U V a r i a b l e L e n g t h L o a d e r T a b l e s . task = I C U V a r i a b l e L e n g t h L o a d e r T a b l e s .
+data_resampling = I C U V a r i a b l e L e n g t h L o a d e r T a b l e s . label_resampling =
+I C UV a r ia b l eL e n gt h D at a s et . maxlen =
+
+36
+37
+38
+
+# Optimizer params
+Adam . lr = Adam . weight_decay = 1e -6
+
+39
+40
+41
+
+# Encoder params
+GRU . input_dim = GRU . hidden_dim = GRU . layer_dim = GRU . num_classes =
+
+We define all macros at the top of the file and use them to configure some classes and functions.
+Among them, we have two custom function for data loading:
+• ICUVariableLengthLoaderTables — Main Loader class allowing to sample patient
+from the data.
+• ICUVariableLengthDataset — pytorch dataset wrapper to ship data to the GPU.
+
+Technical Specifics for Reproducibility
+Libraries A full list of libraries and the version we used is provided in the environment.yml file.
+The most important ones are the following: pytorch 1.8.1, scikit-learn 0.24.1, ignite 0.4.4, CUDA
+10.2.89, cudNN 7.6.5.
+Infrastructure We follow all guidelines provided by pytorch documentation to ensure reproducibility of our results. However, reproducibility across devices is not ensured. Thus we provide
+here the characteristics of our infrastructure. We trained deep learning methods on a single NVIDIA
+RTX2080Ti with a Xeon E5-2630v4 core. For other methods we trained models on either Xeon
+E5-2697v4 cores or Xeon Gold 6140 cores.
+Method For the main experiment, 10 different random initializations were used for each model;
+For the ablation study, 5 were used. For all models, we tuned specific hyper-parameters using random
+search with 100 iterations for stay-level tasks and 50 iterations for the dynamic ones. Each random
+set of parameters was run with 3 different random initializations. Early stopping with 10 step patience
+on the loss was used as a stopping criterion. We then chose hyper-parameters on AUPRC, balanced
+accuracy, and MAE for respectively, binary, multi-class, and regression tasks.
+Complexity of training Among the deep learning methods, transformer memory complexity, with
+regard to the sequence length, is quadratic. This has forced us to reduce both batch size and the
+number of parameters of this model for the dynamic tasks. Also, to ensure reproducibility, using
+deterministic algorithms particularly slows down TCN training. With our hardware, training deep
+learning methods takes less than 1h for stay-level tasks and less than 6h for dynamic ones on a single
+GPU. To reduce RAM consumption we provide the possibility to load data only at inference time
+with parameter on_RAM in our loader. In that case, training is slightly slower but requires only around
+8GB of RAM.
+On the other hand, ML methods are faster to train but more RAM-consuming. Training any model
+takes less than 4h on 4 CPUs. However, peak memory can exceed 100GB when using hand-engineered
+features.
+
+Hyperparameters Search
+In this section we detail the range of hyperparameters we searched over and the one we used for our
+experiments.
+23
+
+Common Hyperparameters
+For the training of DL methods, we used certain parameters across multiple tasks and architecture as
+reported in Table 12. For the ML methods, we fixed certain parameters as in the original HiRID paper.
+For LGBM, we set the bagging frequency to 1, the number of leaves to 2depth , and the minimum
+number of children per leaf to 1000. In the rest of the section, we report the hyperparameters we
+searched over in our experiments.
+Models
+LSTM
+GRU
+TCN
+Transformer
+
+Optimizer
+
+Weight Decay
+
+Batch Size Online
+
+Batch Size Stay Level
+
+Adam
+Adam
+Adam
+Adam
+
+1e-6
+1e-6
+1e-6
+1e-6
+
+64
+64
+64
+8
+
+64
+64
+64
+16
+
+Table 12: Fixed Hyperparameters for DL Methods
+
+24
+
+Deep Learning model Hyperparameters
+In this section, we detail the range of hyperparameters considered for LSTM, GRU, TCN and
+transformer models.
+LSTM The range of hyperparameters considered for the LSTM Model can be found in Table 13.
+Task
+
+Learning Rate
+
+Drop-out
+
+Depth Hidden Dimension Loss Weighting
+
+Mortality
+(1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Phenotyping (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Circ. Failure (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Resp. Failure (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Urine Output (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256)
+Rem. LOS
+(1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256)
+
+N.A
+N.A
+
+Table 13: Hyperparameter search range for LSTM. In bold are the parameters we selected using
+random search.
+
+GRU
+Task
+
+The range of hyperparameters considered for the GRU Model can be found in Table 14.
+Learning Rate
+
+Drop-out
+
+Depth Hidden Dimension Loss Weighting
+
+Mortality
+(1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Phenotyping (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Circ. Failure (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Resp.Failure (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256) (None, Balanced)
+Urine Output (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256)
+Rem. LOS (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (1, 2, 3) (32, 64, 128, 256)
+
+N.A
+N.A
+
+Table 14: Hyperparameter search range for GRU. In bold are the parameters we selected using
+random search.
+
+25
+
+TCN The range of hyperparameters considered for the TCN Model can be found in Table 15. Note
+that we do not consider any depth factor as it is fully determined by the kernel size and the sequence
+length.
+Task
+
+Learning Rate
+
+Drop-out
+
+Kernel
+
+Hidden Dimension Loss Weighting
+
+Mortality
+(1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (2, 4, 8, 16, 32) (32, 64, 128, 256) (None, Balanced)
+Phenotyping (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (2, 4, 8, 16, 32) (32, 64, 128, 256) (None,Balanced)
+Circ. Failure (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (2, 4, 8, 16, 32) (32, 64, 128, 256) (None, Balanced)
+Resp. Failure (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (2, 4, 8, 16, 32) (32, 64, 128, 256) (None, Balanced)
+Urine Output (1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (2, 4, 8, 16, 32) (32, 64, 128, 256)
+Rem. LOS
+(1e-5, 3e-5, 1e-4, 3e-4) (0.0, 0.1, 0.2, 0.3, 0.4) (2, 4, 8, 16, 32) (32, 64, 128, 256)
+
+N.A
+N.A
+
+Table 15: Hyperparameter search range for TCN. In bold are the parameters we selected using
+random search.
+
+Transformer The range of hyperparameters considered for Transformer Model can be found in
+Table 16 and Table 17. We considered smaller parameters for online tasks due to GPU memory
+limitations.
+Task
+
+Learning Rate
+
+Attention Drop-out
+
+Nb. Heads
+
+Depth
+
+Mortality
+Phenotyping
+
+(1e-5, 3e-5, 1e-4, 3e-4)
+(1e-5, 3e-5, 1e-4, 3e-4)
+
+(0.0, 0.1, 0.2, 0.3, 0.4)
+(0.0, 0.1, 0.2, 0.3, 0.4)
+
+(1, 2, 4, 8)
+(1, 2, 4, 8)
+
+(1, 2, 3)
+(1, 2, 3)
+
+Circ. Failure
+Resp. Failure
+
+(1e-5, 3e-5, 1e-4, 3e-4)
+(1e-5, 3e-5, 1e-4, 3e-4)
+
+(0.0, 0.1, 0.2, 0.3, 0.4)
+(0.0, 0.1, 0.2, 0.3, 0.4)
+
+(1, 2, 4)
+(1, 2, 4)
+
+(1, 2, 3)
+(1, 2, 3)
+
+Urine Output
+Rem. LOS
+
+(1e-5, 3e-5, 1e-4, 3e-4)
+(1e-5, 3e-5, 1e-4, 3e-4)
+
+(0.0, 0.1, 0.2, 0.3, 0.4)
+(0.0, 0.1, 0.2, 0.3, 0.4)
+
+(1, 2, 4, 8)
+(1, 2, 4, 8)
+
+1
+1
+
+Table 16: Hyperparameter search range for the Transformer. In bold are the parameters we selected
+using random search.
+
+Task
+
+Attention Drop-out
+
+Hidden Dimension
+
+Loss Weighting
+
+Mortality
+Phenotyping
+
+(0.0, 0.1, 0.2, 0.3, 0.4)
+(0.0, 0.1, 0.2, 0.3, 0.4)
+
+(32, 64, 128, 256)
+(32, 64, 128, 256)
+
+(None, Balanced)
+(None, Balanced)
+
+Circ. Failure
+Resp. Failure
+
+(0.0, 0.1, 0.2, 0.3, 0.4)
+(0.0, 0.1, 0.2, 0.3, 0.4)
+
+(32, 64, 128)
+(32, 64, 128)
+
+(None, Balanced)
+(None, Balanced)
+
+Urine Output
+Rem. LOS
+
+(0.0, 0.1, 0.2, 0.3, 0.4)
+(0.0, 0.1, 0.2, 0.3, 0.4)
+
+(32, 64, 128)
+(32, 64, 128)
+
+N.A
+N.A
+
+Table 17: Hyperparameter search range for Transformer. In bold are the parameters we selected
+using random search.
+
+26
+
+Machine Learning Models Hyperparameters
+Gradient Boosting The range of hyperparameters considered for the gradient boosting method,
+LightGBM framework15 can be found in Table 18 and 19 :
+Depth
+
+Colsample_bytree16
+
+Subsample17
+
+Mortality
+Phenotyping
+
+(3, 4, 5, 6, 7)
+(3, 4, 5, 6, 7)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+Circulatory Failure
+Respiratory Failure
+
+(3, 4, 5, 6, 7)
+(3, 4, 5, 6, 7)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+Urine Output
+Remaining Length-of-Stay
+
+(3,4, 5, 6, 7)
+(3, 4, 5, 6, 7)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+Task
+
+Table 18: Hyperparameter search range for LGBM. In bold are the parameters we selected using
+random search.
+
+Depth
+
+Colsample_bytree18
+
+Subsample19
+
+Mortality
+Phenotyping
+
+(3, 4, 5, 6, 7)
+(3, 4, 5, 6, 7)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+Circulatory Failure
+Respiratory Failure
+
+(3, 4, 5, 6, 7)
+(3, 4, 5, 6, 7)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+Urine Output
+Remaining Length-of-Stay
+
+(3, 4, 5, 6, 7)
+(3, 4, 5, 6, 7)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+(0.33, 0.66, 1.00)
+(0.33, 0.66, 1.00)
+
+Task
+
+Table 19: Hyper-parameters range for LGBM w. features. In bold are the parameters we selected
+using random search.
+
+Logistic Regression The search range of hyperparameters considered for Logistic Regression20
+can be found in Table 20:
+Task
+
+C
+
+Penalty
+
+Mortality
+Phenotyping
+
+(0.001, 0.01, 0.1, 1, 10)
+(0.001, 0.01, 0.1, 1, 10)
+
+(’l1’, ’l2’)
+(’l1’, ’l2’)
+
+Circulatory Failure
+Respiratory Failure
+
+(0.001, 0.01, 0.1, 1, 10)
+(0.001, 0.01, 0.1, 1, 10)
+
+(’l1’, ’l2’)
+(’l1’, ’l2’)
+
+Table 20: Hyperparameter search range for Logistic Regression. In bold are the parameters we
+selected using random search.
+
+15
+
+https://lightgbm.readthedocs.io/en/latest/
+Subsample ratio of columns when constructing each tree.
+17
+Subsample ratio of the training instance
+18
+Subsample ratio of columns when constructing each tree.
+19
+Subsample ratio of the training instance
+20
+scikit-learn framework
+16
+
+27
+
+
