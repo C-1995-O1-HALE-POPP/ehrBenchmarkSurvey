@@ -1,0 +1,1002 @@
+[
+  {
+    "child": "froelich syndrome",
+    "parent": "hypothalamic disease",
+    "label": 1
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "androgenic alopecia",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "pleomorphic lipoma",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "intracranial structure hemangioma",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "pontocerebellar hypoplasia type 1",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "jansen's metaphyseal chondrodysplasia",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "autosomal recessive intellectual developmental disorder 5",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "vertebral artery insufficiency",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "erythrokeratodermia variabilis et progressiva 6",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "thyroid gland medullary carcinoma",
+    "label": 0
+  },
+  {
+    "child": "froelich syndrome",
+    "parent": "cerebrotendinous xanthomatosis",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "testicular germ cell cancer",
+    "label": 1
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "testicular malignant germ cell cancer",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "childhood testicular germ cell tumor",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "testicular germ cell tumor non-seminomatous",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "autosomal dominant intellectual developmental disorder 46",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "noonan syndrome 7",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "hemosiderosis",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "selective igg deficiency disease",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "clear cell sarcoma",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "familial hypobetalipoproteinemia 1",
+    "label": 0
+  },
+  {
+    "child": "testicular pure germ cell tumor",
+    "parent": "rafiq syndrome",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "immunodeficiency-centromeric instability-facial anomalies syndrome",
+    "label": 1
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "immunodeficiency-centromeric instability-facial anomalies syndrome 1",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "immunodeficiency-centromeric instability-facial anomalies syndrome 2",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "immunodeficiency-centromeric instability-facial anomalies syndrome 3",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "ewing sarcoma",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "bronchiectasis",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "fallopian tube benign neoplasm",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "spermatogenic failure 60",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "seminal vesicle chronic gonorrhea",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "intracranial structure hemangioma",
+    "label": 0
+  },
+  {
+    "child": "immunodeficiency-centromeric instability-facial anomalies syndrome 4",
+    "parent": "choroid plexus carcinoma",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "cervical cancer",
+    "label": 1
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "cervical carcinosarcoma",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "cervical alveolar soft part sarcoma",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "cervix melanoma",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "cervix endometrial stromal tumor",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "cervix carcinoma",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "cervical adenosquamous carcinoma",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "muscular dystrophy",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "periapical granuloma",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "combined oxidative phosphorylation deficiency 46",
+    "label": 0
+  },
+  {
+    "child": "epithelioid trophoblastic tumor",
+    "parent": "syndromic x-linked intellectual disorder lujan-fryns-type",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "syndrome",
+    "label": 1
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "doors syndrome",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "ladd syndrome",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "ollier disease",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "trichorhinophalangeal syndrome type iii",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "beckwith-wiedemann syndrome",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "trichodontoosseous syndrome",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "kinsship syndrome",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "proliferative vasculopathy and hydranencephaly-hydrocephaly syndrome",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "shwachman-diamond syndrome",
+    "label": 0
+  },
+  {
+    "child": "wissler-fanconi syndrome",
+    "parent": "van der woude syndrome",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism",
+    "label": 1
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 11 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 21 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 1 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 13 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 12 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 4 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 24 without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 16 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 20 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "hypogonadotropic hypogonadism 10 with or without anosmia",
+    "parent": "hypogonadotropic hypogonadism 6 with or without anosmia",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "mononeuropathy",
+    "label": 1
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "peroneal neuropathy",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "femoral neuropathy",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "tibial neuropathy",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "radial neuropathy",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "ulnar neuropathy",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "ovarian mesodermal adenosarcoma",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "pneumonic plague",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "partial arterial retinal occlusion",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "prostate adenocarcinoma",
+    "label": 0
+  },
+  {
+    "child": "mononeuritis",
+    "parent": "bacterial esophagitis",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "tooth disease",
+    "label": 1
+  },
+  {
+    "child": "periodontosis",
+    "parent": "teeth hard tissue disease",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "dental abscess",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "anodontia",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "primary failure of tooth eruption",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "dentinogenesis imperfecta",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "tooth agenesis",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "dental fluorosis",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "solitary median maxillary central incisor",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "dental pulp disease",
+    "label": 0
+  },
+  {
+    "child": "periodontosis",
+    "parent": "combined oxidative phosphorylation deficiency 8",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "autoimmune disease",
+    "label": 1
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "mikulicz disease",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "autoimmune disease of urogenital tract",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "lupus erythematosus",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "antisynthetase syndrome",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "autoimmune disease of exocrine system",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "autoimmune disease of cardiovascular system",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "granulomatosis with polyangiitis",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "vitiligo",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "cinca syndrome",
+    "label": 0
+  },
+  {
+    "child": "familial mediterranean fever",
+    "parent": "autoimmune disease of eyes, ear, nose and throat",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "histidine metabolism disease",
+    "label": 1
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "histidinemia",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "n1 diffuse large b-cell lymphoma",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "armfield syndrome",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "cecum carcinoma",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "tonne-kalscheuer syndrome",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "necrotizing fasciitis",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "antidepressant type abuse",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "bestiality",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "arthrogryposis multiplex congenita",
+    "label": 0
+  },
+  {
+    "child": "urocanase deficiency",
+    "parent": "schistosomiasis",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "bacterial meningitis",
+    "label": 1
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "meningococcal meningitis",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "streptococcal meningitis",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "anaerobic meningitis",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "listeria meningitis",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "haemophilus meningitis",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "prolymphocytic leukemia",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "childhood lymphoma",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "mixed fibrolamellar hepatocellular carcinoma",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "camptodactyly-arthropathy-coxa vara-pericarditis syndrome",
+    "label": 0
+  },
+  {
+    "child": "syphilitic meningitis",
+    "parent": "otospondylomegaepiphyseal dysplasia, autosomal dominant",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "central nervous system disease",
+    "label": 1
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "epidural abscess",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "meningitis",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "quadriplegia",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "high pressure neurological syndrome",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "restless legs syndrome",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "spinal cord disease",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "neurodegenerative disease",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "meningoencephalitis",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "brain disease",
+    "label": 0
+  },
+  {
+    "child": "encephalomyelitis",
+    "parent": "intracranial abscess",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "hyper ige syndrome",
+    "label": 1
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "hyper ige recurrent infection syndrome 3",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "hyper ige recurrent infection syndrome 1",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "hyper ige recurrent infection syndrome 2",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "photoallergic dermatitis",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "autosomal recessive hypercholesterolemia",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "pregerminal center chronic lymphocytic leukemia/small lymphocytic lymphoma",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "fatal infantile cardioencephalomyopathy due to cytochrome c oxidase deficiency 1",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "subacute sclerosing panencephalitis",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "plasmodium ovale malaria",
+    "label": 0
+  },
+  {
+    "child": "hyper ige recurrent infection syndrome 4",
+    "parent": "spermatogenic failure 11",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis",
+    "label": 1
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 16",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 14",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 11",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 4",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 10",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 1",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 12",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 2",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 9",
+    "label": 0
+  },
+  {
+    "child": "leber congenital amaurosis 17",
+    "parent": "leber congenital amaurosis 8",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "adenoma",
+    "label": 1
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "mixed cell adenoma",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "intracystic papillary adenoma",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "lipoadenoma",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "villous adenoma",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "papillary adenoma",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "clear cell adenoma",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "water-clear cell adenoma",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "endocervicitis",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "tuberculosis",
+    "label": 0
+  },
+  {
+    "child": "cystadenoma",
+    "parent": "gestational diabetes",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "anemia",
+    "label": 1
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "pancytopenia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "aplastic anemia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "hypochromic anemia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "neonatal anemia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "deficiency anemia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "microcytic anemia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "x-linked dyserythropoietic anemia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "normocytic anemia",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "viral gastritis",
+    "label": 0
+  },
+  {
+    "child": "macrocytic anemia",
+    "parent": "vipoma",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "angle-closure glaucoma",
+    "label": 1
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "stromal predominant kidney wilms' tumor",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "eccrine adenocarcinoma",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "lichen disease",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "verrucous carcinoma",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "acute pulmonary heart disease",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "anus rhabdomyosarcoma",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "malignant cystic nephroma",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "japanese spotted fever",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "tyrosinemia type i",
+    "label": 0
+  },
+  {
+    "child": "primary angle-closure glaucoma",
+    "parent": "secondary corneal edema",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "thrombophilia",
+    "label": 1
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "x-linked thrombophilia due to factor ix defect",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "antithrombin iii deficiency",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "protein c deficiency",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "thrombophilia due to decreased release of plat",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "thrombophilia due to activated protein c resistance",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "protein s deficiency",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "thrombophilia due to hrg deficiency",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "thrombophilia due to thrombin defect",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "heparin cofactor ii deficiency",
+    "label": 0
+  },
+  {
+    "child": "thrombophilia due to thrombomodulin defect",
+    "parent": "prothrombin deficiency",
+    "label": 0
+  },
+  {
+    "child": "short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies",
+    "parent": "syndrome",
+    "label": 1
+  },
+  {
+    "child": "short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies",
+    "parent": "doors syndrome",
+    "label": 0
+  }
+]

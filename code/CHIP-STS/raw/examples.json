@@ -1,0 +1,702 @@
+[
+  {
+    "id": "1",
+    "text1": "艾滋病窗口期会出现腹泻症状吗",
+    "text2": "头疼腹泻四肢无力是不是艾滋病",
+    "label": "0",
+    "category": "aids"
+  },
+  {
+    "id": "2",
+    "text1": "由于糖尿病引起末梢神经炎，怎么根治？",
+    "text2": "糖尿病末梢神经炎的治疗方法",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "3",
+    "text1": "H型高血压，是通所说的高血脂？",
+    "text2": "高血压引起脑出血怎么抢救治疗",
+    "label": "0",
+    "category": "hypertension"
+  },
+  {
+    "id": "4",
+    "text1": "糖尿病跟尿毒症有什么区别？",
+    "text2": "糖尿病人，尿酸只有4.6是什么原因造成的？",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "5",
+    "text1": "你好，我60岁，患高血压，80135，爱喝酸奶可以吗？",
+    "text2": "高血压糖尿病人可以喝牛奶吗？",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "6",
+    "text1": "糖尿病能否吃减肥药",
+    "text2": "糖尿病可以吃减肥药吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "7",
+    "text1": "怎样阻断乙肝的传播途径",
+    "text2": "如何有效的阻断乙肝母婴传播",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "8",
+    "text1": "糖耐量高一定是糖尿病",
+    "text2": "糖耐量检查高是糖尿病吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "9",
+    "text1": "糖尿病有什么明显症状的",
+    "text2": "请问糖尿病是什么症状",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "10",
+    "text1": "乙肝大三阳，脾稍大，现腹胀腹泻怎么办",
+    "text2": "右腹部疼痛，是乙肝吗",
+    "label": "0",
+    "category": "hepatitis"
+  },
+  {
+    "id": "11",
+    "text1": "壮阳药对糖尿病影响",
+    "text2": "糖尿病人可以服用伟哥吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "12",
+    "text1": "1型糖尿病能愈吗",
+    "text2": "请问二型糖尿病能治疗好吗",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "13",
+    "text1": "乙肝表面抗原阳性是已感染乙肝了吗",
+    "text2": "乙肝表面抗原转阴是什么",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "14",
+    "text1": "糖尿病九年了，应该吃什么中药好",
+    "text2": "糖尿病是否能根治？如何治？请求医师帮助！",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "15",
+    "text1": "这样算是孕期糖尿病吗？",
+    "text2": "如何诊断妊娠合并糖尿病？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "16",
+    "text1": "糖尿病大量出汗怎么回事？",
+    "text2": "男人得糖尿病可以做爱吗?",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "17",
+    "text1": "糖尿病人做胰岛修复术能治好吗？",
+    "text2": "1型糖尿病胰岛可以移植吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "18",
+    "text1": "糖尿病人影响寿命吗",
+    "text2": "糖尿病会影响生小孩吗？",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "19",
+    "text1": "糖尿病治疗费大概多少",
+    "text2": "糖尿病治好需要多少钱",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "20",
+    "text1": "糖尿病的人常常很乏力该怎么办",
+    "text2": "糖尿病人无力怎么办",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "21",
+    "text1": "糖尿病者平时如何测血糖",
+    "text2": "糖尿病可以吃冰糖吗",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "22",
+    "text1": "脑梗塞糖尿病吃什么",
+    "text2": "糖尿病心理方面怎么样",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "23",
+    "text1": "糖尿病是否会遗传？",
+    "text2": "高血压和糖尿病会不会遗传",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "24",
+    "text1": "糖尿病的症状有哪些吗?",
+    "text2": "糖尿病的症状是什么样??",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "25",
+    "text1": "乳腺癌转移到肺部有什么症状",
+    "text2": "乳腺癌复发转移的症状？",
+    "label": "0",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "26",
+    "text1": "糖尿病人腹胀怎么回事",
+    "text2": "糖尿病喝醉后长期腹部疼怎么回事",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "27",
+    "text1": "箭叶秋葵糖尿病人能吃吗",
+    "text2": "妊娠期糖尿病多久可以复查血糖",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "28",
+    "text1": "治疗乙肝的最新方法",
+    "text2": "乙肝治疗的注意事项有哪些",
+    "label": "0",
+    "category": "hepatitis"
+  },
+  {
+    "id": "29",
+    "text1": "糖尿病人每天吃红枣可以吗",
+    "text2": "糖尿病人能吃红枣吗吗？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "30",
+    "text1": "什么是乙肝病毒携带者，什么又是乙肝病人",
+    "text2": "甲型乙肝病毒携带者是怎么回事",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "31",
+    "text1": "\"男性得了二型糖尿病,可以生育吗?会遗传吗?\"",
+    "text2": "请问二型糖尿病遗传吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "32",
+    "text1": "高血压性脑出血的症状是？",
+    "text2": "您好，患高血压性脑出血三个月了，现在可以吃猪血吗",
+    "label": "0",
+    "category": "hypertension"
+  },
+  {
+    "id": "33",
+    "text1": "用了艾滋病人用过的自慰器成人玩具会被传染吗",
+    "text2": "成人玩具会感染艾滋病吗",
+    "label": "1",
+    "category": "aids"
+  },
+  {
+    "id": "34",
+    "text1": "乳腺癌转移到肺部有什么症状",
+    "text2": "乳腺癌转移骨癌的症状有哪些呢？",
+    "label": "0",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "35",
+    "text1": "糖尿病能喝蜂王浆么",
+    "text2": "糖尿病能否常吃花粉、蜂蜜？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "36",
+    "text1": "乙肝表面抗体阳性e抗体阳性是病吗",
+    "text2": "乙型肝炎表面抗体是阳性正常吗",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "37",
+    "text1": "两个都没有艾滋病的人肛交没戴安全套会感染艾滋病吗",
+    "text2": "没有带套性交会不会感染艾滋病",
+    "label": "0",
+    "category": "aids"
+  },
+  {
+    "id": "38",
+    "text1": "高血压性心脏病是什么意思",
+    "text2": "我失眠又有高血压地西泮片和降压灵能一起",
+    "label": "0",
+    "category": "hypertension"
+  },
+  {
+    "id": "39",
+    "text1": "有乙肝大三阳可以办食品健康证吗",
+    "text2": "肝功能正常，有乙肝小三阳可以办健康证吗",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "40",
+    "text1": "老年人高血压危象的定义",
+    "text2": "老年人高血压危象",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "41",
+    "text1": "我想问问糖尿病治疗仪治糖尿病管用吗",
+    "text2": "糖尿病治疗仪有用吗？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "42",
+    "text1": "吃糖多能得糖尿病吗？",
+    "text2": "多吃甜食是否易得糖尿病",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "43",
+    "text1": "乳腺癌肝转移会传染吗",
+    "text2": "乳腺癌会不会传染呢",
+    "label": "0",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "44",
+    "text1": "糖尿病可以吃什么主食",
+    "text2": "糖尿病可以吃什么食物",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "45",
+    "text1": "老公有血脂稠，高血压，一直在吃药，老婆可以怀孕吗，对胎儿有影响吗",
+    "text2": "二十三岁刚刚查出高血压，未结婚，已经服药，近两年结婚，会影响生育吗",
+    "label": "0",
+    "category": "hypertension"
+  },
+  {
+    "id": "46",
+    "text1": "高血压糖尿病喝啥茶比较好",
+    "text2": "高血压喝茶好么喝什么茶？",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "47",
+    "text1": "糖尿病前期什么症状",
+    "text2": "糖尿病初期有什么症状呢？怎么治疗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "48",
+    "text1": "糖尿病酮中毒有什么症状",
+    "text2": "糖尿病酮症酸中毒有什么症状？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "49",
+    "text1": "艾滋病检测呈阳性一定是艾滋病吗",
+    "text2": "HIV呈阳性就一定是艾滋病吗",
+    "label": "1",
+    "category": "aids"
+  },
+  {
+    "id": "50",
+    "text1": "糖尿病腿疼痛难忍怎么办？",
+    "text2": "得了糖尿病该怎么办",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "51",
+    "text1": "口交传染艾滋病的可能性大吗",
+    "text2": "无套口交戴套性交会感染艾滋病吗",
+    "label": "0",
+    "category": "aids"
+  },
+  {
+    "id": "52",
+    "text1": "高血压病人出现尿频尿急吃什么药",
+    "text2": "高血压尿频怎么办",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "53",
+    "text1": "糖尿病人怎样吃鸡蛋才健康",
+    "text2": "糖尿病可以吃鹅蛋吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "54",
+    "text1": "乳腺癌脑转移先放疗还是先化疗",
+    "text2": "乳腺癌肝脑转移放疗期间是否可以打赫赛汀",
+    "label": "0",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "55",
+    "text1": "乳腺癌骨转移能治好吗",
+    "text2": "乳腺癌皮肤转移能治好吗?",
+    "label": "0",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "56",
+    "text1": "糖尿病肾病生活方式禁忌",
+    "text2": "糖尿病肾病患者生活方式应注意哪些问题?",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "57",
+    "text1": "带套不带套性交做爱感染艾滋病的几率分别多大",
+    "text2": "GAY无套做爱，感染艾滋病的几率",
+    "label": "0",
+    "category": "aids"
+  },
+  {
+    "id": "58",
+    "text1": "1型糖尿病，有中药治疗方法吗？",
+    "text2": "父亲的糖尿病怎么治疗？",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "59",
+    "text1": "糖尿病手脚发麻怎么吃药",
+    "text2": "我糖尿病一年现在手脚麻木怎麽办？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "60",
+    "text1": "乳腺癌脑转移有什么中医的治疗方法",
+    "text2": "寻求乳腺癌脑转移中医的治疗方法",
+    "label": "1",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "61",
+    "text1": "高血压有哪些特效药",
+    "text2": "请问医生，血脂高血糖高血压高所谓的三高人员能喝豆浆吗？",
+    "label": "0",
+    "category": "hypertension"
+  },
+  {
+    "id": "62",
+    "text1": "糖尿病肾病怎么调理",
+    "text2": "怎么治疗糖尿病肾病好",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "63",
+    "text1": "高血压的患者在晚饭后一个小时去慢跑，对身体有好处吗",
+    "text2": "高血压患者可以跑步吗？",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "64",
+    "text1": "糖尿病如何怀孕",
+    "text2": "得糖尿病的人可以怀孕吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "65",
+    "text1": "检查自己有没有高血压应该挂什么科",
+    "text2": "请问高血压和唐尿病应该看什么科",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "66",
+    "text1": "糖尿病人能打葡萄糖吗",
+    "text2": "老公二型糖尿病5年，我能否生育",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "67",
+    "text1": "乳房疼痛是乳腺癌吗",
+    "text2": "近期乳房疼痛，是不是乳腺癌？",
+    "label": "1",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "68",
+    "text1": "妊娠高血压综合征护理",
+    "text2": "高血压患者已怀孕3个月要注意什么",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "69",
+    "text1": "艾滋病可以通过口交传染吗",
+    "text2": "与好友（男性）口交二次，能传染艾滋病吗",
+    "label": "1",
+    "category": "aids"
+  },
+  {
+    "id": "70",
+    "text1": "乳腺癌晚期有什么症状",
+    "text2": "初期乳腺癌有什么症状？",
+    "label": "0",
+    "category": "breast_cancer"
+  },
+  {
+    "id": "71",
+    "text1": "运动可以控制糖尿病吗",
+    "text2": "运动对糖尿病人有什么益处？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "72",
+    "text1": "糖尿病如何补钙？",
+    "text2": "糖尿病腹泻怎么治愈",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "73",
+    "text1": "医生好，我有高血压肾阴虚胃火旺有时耳鸣，脾虚脸色黄，请问医生能推荐一方中药吗、不胜感谢",
+    "text2": "高血压怎么办呢？怎么办？",
+    "label": "0",
+    "category": "hypertension"
+  },
+  {
+    "id": "74",
+    "text1": "糖尿病人能吃的营养品",
+    "text2": "妊娠糖尿病吃韭菜行吗",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "75",
+    "text1": "阴道炎复发和糖尿病有直接关系吗？",
+    "text2": "轻微糖尿病会有并发症吗",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "76",
+    "text1": "糖尿病吃药还是打针",
+    "text2": "请问糖尿病病人现在打针的，调整好以后可不可以吃药",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "77",
+    "text1": "糖尿病人能吃桂圆吗",
+    "text2": "糖尿病人每天都能吃一个梨吗?",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "78",
+    "text1": "\"甲减,糖尿病经常失眠怎么办?\"",
+    "text2": "糖尿病综合症有严重的失眠怎么办",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "79",
+    "text1": "请问患高血压的人可以喝咖啡吗？",
+    "text2": "我有高血压请问能不能喝咖啡",
+    "label": "1",
+    "category": "hypertension"
+  },
+  {
+    "id": "80",
+    "text1": "糖尿病人能否喝酸奶，若能能喝多少",
+    "text2": "糖尿病人能喝酸奶吗，饮食注意什么？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "81",
+    "text1": "乙肝病毒携带者能抽烟吗",
+    "text2": "乙肝患者能抽烟吗",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "82",
+    "text1": "糖尿病和吃糖有关系吗",
+    "text2": "有谁知道重组甘精胰岛素的价格？",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "83",
+    "text1": "糖耐量试验抽血时间怎么算?",
+    "text2": "糖耐量试验的方法流程是什么？",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "84",
+    "text1": "糖尿病注射胰岛素过敏该换什么药吃",
+    "text2": "糖尿病肾病用什么降糖药",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "85",
+    "text1": "糖尿病患者早上能喝牛奶吗",
+    "text2": "糖尿病人严重便秘怎莫解决",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "86",
+    "text1": "尿蛋白3+是糖尿病肾病吗？",
+    "text2": "糖尿病肾病尿蛋白好治疗吗",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "87",
+    "text1": "糖尿病肾病有哪些症状",
+    "text2": "糖尿病肾病什么情况下透析",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "88",
+    "text1": "我这个情况可以打乙肝疫苗吗",
+    "text2": "癫痫可以打乙肝疫苗吗",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "89",
+    "text1": "无套口交会感染hiv吗",
+    "text2": "泡澡会感染hiv吗",
+    "label": "0",
+    "category": "aids"
+  },
+  {
+    "id": "90",
+    "text1": "婴儿黄疸偏高，乙肝疫苗一直不能种怎么办",
+    "text2": "乙肝黄疸素高怎么办",
+    "label": "1",
+    "category": "hepatitis"
+  },
+  {
+    "id": "91",
+    "text1": "请问糖尿病患者可以吃山药吗",
+    "text2": "糖尿病的初始症状是什么",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "92",
+    "text1": "什么偏方能治糖尿病",
+    "text2": "血糖是12.20尿糖是＋2请问是糖尿病吗？",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "93",
+    "text1": "性生活能传染乙肝吗",
+    "text2": "如何看乙肝五项指标化验单",
+    "label": "0",
+    "category": "hepatitis"
+  },
+  {
+    "id": "94",
+    "text1": "妊娠期糖尿病治疗饮食",
+    "text2": "妊娠期糖尿病如何饮食",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "95",
+    "text1": "二型糖尿病平时要注意什么呢",
+    "text2": "糖尿病人会牙齿松动吗，有什么方法治疗？",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "96",
+    "text1": "你好，35岁的孕妇是否一定要检查糖尿病",
+    "text2": "孕妇必须做糖尿病筛查吗",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "97",
+    "text1": "糖尿病发现新药吗？",
+    "text2": "糖尿病并发泌尿系感染能喝牛奶吗",
+    "label": "0",
+    "category": "diabetes"
+  },
+  {
+    "id": "98",
+    "text1": "糖尿病神经病变怎么治",
+    "text2": "求糖尿病周围神经病变的治疗方法",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "99",
+    "text1": "糖尿病找什么科室",
+    "text2": "谢谢！请问查糖尿病应挂什么科",
+    "label": "1",
+    "category": "diabetes"
+  },
+  {
+    "id": "100",
+    "text1": "这样能传播艾滋吗",
+    "text2": "精斑会不会传播艾滋",
+    "label": "0",
+    "category": "aids"
+  }
+]

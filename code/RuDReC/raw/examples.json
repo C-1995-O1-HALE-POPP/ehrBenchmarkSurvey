@@ -1,0 +1,2982 @@
+[
+  {
+    "file_name": "172744.tsv",
+    "text": "нам прописали, так мой ребенок сыпью покрылся, глаза опухли, сверху и снизу на веках высыпала сыпь, ( 8 месяцев сыну)А от виферона такого не было... У кого ещё такие побочки, отзовитесь!1 Чем спасались?\n",
+    "entities": [
+      {
+        "start": 122,
+        "entity_type": "Drugform",
+        "end": 130,
+        "entity_id": "*[0]_se",
+        "entity_text": "виферона",
+        "concept_id": "C0021735",
+        "concept_name": NaN
+      },
+      {
+        "start": 31,
+        "entity_type": "ADR",
+        "end": 45,
+        "entity_id": "*[1]",
+        "entity_text": "сыпью покрылся",
+        "concept_id": "C0015230",
+        "concept_name": NaN
+      },
+      {
+        "start": 47,
+        "entity_type": "ADR",
+        "end": 59,
+        "entity_id": "*[2]",
+        "entity_text": "глаза опухли",
+        "concept_id": "C4760994",
+        "concept_name": NaN
+      },
+      {
+        "start": 76,
+        "entity_type": "ADR",
+        "end": 98,
+        "entity_id": "*[3]",
+        "entity_text": "на веках высыпала сыпь",
+        "concept_id": "C0015230",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "172744.tsv",
+    "text": "Общее впечатление : не подошел\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "Пила этот препарат для повышения иммунитета 5 лет назад.\n",
+    "entities": [
+      {
+        "start": 23,
+        "entity_type": "DI",
+        "end": 43,
+        "entity_id": "*[1]",
+        "entity_text": "повышения иммунитета",
+        "concept_id": "C0020971",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "Так как начала работать в аптеке, начала часто болеть.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "В месяц по нескольку раз причем со всеми вытекающими симптомами : кашель, боль горле, насморк.\n",
+    "entities": [
+      {
+        "start": 66,
+        "entity_type": "DI",
+        "end": 72,
+        "entity_id": "*[0]_se",
+        "entity_text": "кашель",
+        "concept_id": "C0010200",
+        "concept_name": NaN
+      },
+      {
+        "start": 86,
+        "entity_type": "DI",
+        "end": 93,
+        "entity_id": "*[1]_se",
+        "entity_text": "насморк",
+        "concept_id": "C1260880",
+        "concept_name": NaN
+      },
+      {
+        "start": 74,
+        "entity_type": "DI",
+        "end": 84,
+        "entity_id": "*[2]",
+        "entity_text": "боль горле",
+        "concept_id": "C0242429",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "Принимала Иммунал строго по инструкции 4 раза в день 3 недели.\n",
+    "entities": [
+      {
+        "start": 10,
+        "entity_type": "Drugname",
+        "end": 17,
+        "entity_id": "*[2]_se",
+        "entity_text": "Иммунал",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "Начала его принимать совершенно здоровой, через 1,5 недели после приема заболела.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "Вот и вывод препарат по идее должен был уже начать действовать так как минимальный курс его приема составляет 1 неделю, а заболела я на 11 день после начала приема.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "Пропив 5 упаковок это примерно 500-600 рублей пять лет назад, я как болела, так и продолжала болеть.\n",
+    "entities": [],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "592814.tsv",
+    "text": "Время использования: 3 недели\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "Доброй ночи дорогие друзья и просто читатели.\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "Хочу с Вами поделиться отзывом о средстве, которое как по мне не помогает в лечении простуды.\n",
+    "entities": [
+      {
+        "start": 84,
+        "entity_type": "DI",
+        "end": 92,
+        "entity_id": "*[0]_se",
+        "entity_text": "простуды",
+        "concept_id": "C0009443",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "Этим средством является \"Амизон\", которое хорошо прорекламировано, однако такого эффекта как говорят нет.\n",
+    "entities": [
+      {
+        "start": 25,
+        "entity_type": "Drugname",
+        "end": 31,
+        "entity_id": "*[1]_se",
+        "entity_text": "Амизон",
+        "concept_id": "C0915256",
+        "concept_name": "Amizon"
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "Как только мой муж видит признаки простуды он постоянно покупает себе \"Амизон\".\n",
+    "entities": [
+      {
+        "start": 34,
+        "entity_type": "DI",
+        "end": 42,
+        "entity_id": "*[2]_se",
+        "entity_text": "простуды",
+        "concept_id": "C0009443",
+        "concept_name": NaN
+      },
+      {
+        "start": 71,
+        "entity_type": "Drugname",
+        "end": 77,
+        "entity_id": "*[3]_se",
+        "entity_text": "Амизон",
+        "concept_id": "C0915256",
+        "concept_name": "Amizon"
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "В одной упаковочке идет одна пластинка с 10 таблетками, покрытыми оболочкой.\n",
+    "entities": [
+      {
+        "start": 44,
+        "entity_type": "Drugform",
+        "end": 54,
+        "entity_id": "*[4]_se",
+        "entity_text": "таблетками",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "Способ применения при лечении взрослым и детям старше 12 лет, мой муж пьет по 2 таблетки, 2 раза в день.\n",
+    "entities": [
+      {
+        "start": 80,
+        "entity_type": "Drugform",
+        "end": 88,
+        "entity_id": "*[5]_se",
+        "entity_text": "таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "Побочные эффектами есть аллергические реакции, диарея, вздутие живота, рвота, задышка, правда при использовании данного препарата никаких реакций на него не было.\n",
+    "entities": [
+      {
+        "start": 24,
+        "entity_type": "ADR",
+        "end": 45,
+        "entity_id": "*[1]",
+        "entity_text": "аллергические реакции",
+        "concept_id": "C1527304",
+        "concept_name": "Аллергическая реакция"
+      },
+      {
+        "start": 55,
+        "entity_type": "ADR",
+        "end": 69,
+        "entity_id": "*[2]",
+        "entity_text": "вздутие живота",
+        "concept_id": "C0000731",
+        "concept_name": NaN
+      },
+      {
+        "start": 47,
+        "entity_type": "ADR",
+        "end": 53,
+        "entity_id": "*[6]_se",
+        "entity_text": "диарея",
+        "concept_id": "C0011991",
+        "concept_name": NaN
+      },
+      {
+        "start": 71,
+        "entity_type": "ADR",
+        "end": 76,
+        "entity_id": "*[7]_se",
+        "entity_text": "рвота",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 78,
+        "entity_type": "ADR",
+        "end": 85,
+        "entity_id": "*[8]_se",
+        "entity_text": "задышка",
+        "concept_id": "C0013404",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "Может конечно кому то это средство и помогает, как по мне то не очень.\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "2535409.tsv",
+    "text": "По цене они стоят около 25-30 грн.\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "2660532.tsv",
+    "text": "Нам не помог, результата не заметила, ребенок как был вредный и капризный, такой и остался.\n",
+    "entities": [
+      {
+        "start": 54,
+        "entity_type": "DI",
+        "end": 61,
+        "entity_id": "*[0]_se",
+        "entity_text": "вредный",
+        "concept_id": "C1509146",
+        "concept_name": NaN
+      },
+      {
+        "start": 64,
+        "entity_type": "DI",
+        "end": 73,
+        "entity_id": "*[1]_se",
+        "entity_text": "капризный",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2660532.tsv",
+    "text": "Потом врач прописал нам успокаивающий сироп зайчонок, в составе только трав и натуральные соки.\n",
+    "entities": [
+      {
+        "start": 24,
+        "entity_type": "Drugclass",
+        "end": 37,
+        "entity_id": "*[2]_se",
+        "entity_text": "успокаивающий",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 38,
+        "entity_type": "Drugform",
+        "end": 43,
+        "entity_id": "*[3]_se",
+        "entity_text": "сироп",
+        "concept_id": "C0991550",
+        "concept_name": NaN
+      },
+      {
+        "start": 44,
+        "entity_type": "Drugname",
+        "end": 52,
+        "entity_id": "*[4]_se",
+        "entity_text": "зайчонок",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2660532.tsv",
+    "text": "Безопасно для ребенка.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2660532.tsv",
+    "text": "Курс приема всего 2 недели, сейчас ребенок послушный, больше стали с ним разговаривать, появилась усидчивость, больше стишков стал запоминать, и в садике стали хвалить.\n",
+    "entities": [
+      {
+        "start": 43,
+        "entity_type": "DI",
+        "end": 52,
+        "entity_id": "*[5]_se",
+        "entity_text": "послушный",
+        "concept_id": "None",
+        "concept_name": NaN
+      },
+      {
+        "start": 98,
+        "entity_type": "DI",
+        "end": 109,
+        "entity_id": "*[6]_se",
+        "entity_text": "усидчивость",
+        "concept_id": "C0815094",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2660532.tsv",
+    "text": "Строп можно деткам с 3 лет.\n",
+    "entities": [
+      {
+        "start": 0,
+        "entity_type": "Drugform",
+        "end": 5,
+        "entity_id": "*[7]_se",
+        "entity_text": "Строп",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2660532.tsv",
+    "text": "Всем подругам советую, если есть проблемы в воспитании детей.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "На дворе осень, период простуды, в аптеке брала детям гематогенку и перед кассой стояли бутылочки сиропа шиповника, а я как-то забыла, что в детстве их пили для повышения иммунитета, ведь в нём большое содержание витамина С и других полезных компонентов.\n",
+    "entities": [
+      {
+        "start": 23,
+        "entity_type": "DI",
+        "end": 31,
+        "entity_id": "*[0]_se",
+        "entity_text": "простуды",
+        "concept_id": "C0009443",
+        "concept_name": NaN
+      },
+      {
+        "start": 161,
+        "entity_type": "DI",
+        "end": 181,
+        "entity_id": "*[1]",
+        "entity_text": "повышения иммунитета",
+        "concept_id": "C0020971",
+        "concept_name": NaN
+      },
+      {
+        "start": 98,
+        "entity_type": "Drugform",
+        "end": 104,
+        "entity_id": "*[1]_se",
+        "entity_text": "сиропа",
+        "concept_id": "C0991550",
+        "concept_name": NaN
+      },
+      {
+        "start": 105,
+        "entity_type": "Drugname",
+        "end": 114,
+        "entity_id": "*[2]_se",
+        "entity_text": "шиповника",
+        "concept_id": "C0524901",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "Точную цену не помню, около 100 рублей я отдала за него.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "Начну с упаковки при отделении верхней этикетки на нижней расписана энергетическая и витаминная ценность по возрастам которая содержится в 100 мл продукта, кстати, это БАД.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "По вкусу как и много лет назад очень концентрированный сироп, чересчур сладкий, так что сразу нужно приготовить чай для запивания.\n",
+    "entities": [
+      {
+        "start": 55,
+        "entity_type": "Drugform",
+        "end": 60,
+        "entity_id": "*[3]_se",
+        "entity_text": "сироп",
+        "concept_id": "C0991550",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "Пахнет лекарствами.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "Пейте сироп шиповника, он полезен для здоровья.\n",
+    "entities": [
+      {
+        "start": 6,
+        "entity_type": "Drugform",
+        "end": 11,
+        "entity_id": "*[4]_se",
+        "entity_text": "сироп",
+        "concept_id": "C0991550",
+        "concept_name": NaN
+      },
+      {
+        "start": 12,
+        "entity_type": "Drugname",
+        "end": 21,
+        "entity_id": "*[5]_se",
+        "entity_text": "шиповника",
+        "concept_id": "C0524901",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "В каких дозировках его пить написано на упаковке.\n",
+    "entities": [],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "2546667.tsv",
+    "text": "Время использования: 2 недели\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Ох уж эти стрессы!\n",
+    "entities": [
+      {
+        "start": 10,
+        "entity_type": "DI",
+        "end": 17,
+        "entity_id": "*[0]_se",
+        "entity_text": "стрессы",
+        "concept_id": "C0038435",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Опаснее всего они протекают у детей, особенно если они попали в серьезную стрессовую ситуацию... Так случилось у нас!\n",
+    "entities": [
+      {
+        "start": 74,
+        "entity_type": "DI",
+        "end": 93,
+        "entity_id": "*[1]",
+        "entity_text": "стрессовую ситуацию",
+        "concept_id": "C0038435",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Переезд и в связи с этим смена школы.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Сынишка очень тяжело переживал не только смену жительства, но и испытывал страх перед новым классом, переживал о том, как его примет коллектив.\n",
+    "entities": [
+      {
+        "start": 74,
+        "entity_type": "DI",
+        "end": 79,
+        "entity_id": "*[1]_se",
+        "entity_text": "страх",
+        "concept_id": "C0015726",
+        "concept_name": NaN
+      },
+      {
+        "start": 101,
+        "entity_type": "DI",
+        "end": 110,
+        "entity_id": "*[2]_se",
+        "entity_text": "переживал",
+        "concept_id": "C0233481",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Мы всячески пытались его поддержать, но его неуверенность в себе поражала и то как он накручивал себя.\n",
+    "entities": [
+      {
+        "start": 44,
+        "entity_type": "DI",
+        "end": 64,
+        "entity_id": "*[2]",
+        "entity_text": "неуверенность в себе",
+        "concept_id": "C0087130",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Нам пришлось обратиться к психологу и он провел несколько консультаций, так же мы были на приеме невропатолога и он прописал нам \"Тенотен\".\n",
+    "entities": [
+      {
+        "start": 130,
+        "entity_type": "Drugname",
+        "end": 137,
+        "entity_id": "*[3]_se",
+        "entity_text": "Тенотен",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Мы как и было положено стали его принимать, но у ребенка сильно изменилось поведение.\n",
+    "entities": [
+      {
+        "start": 64,
+        "entity_type": "ADR",
+        "end": 84,
+        "entity_id": "*[3]",
+        "entity_text": "изменилось поведение",
+        "concept_id": "C0233514",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Сынишка то был вялым сильно, то, наоборот вспышки агрессии.\n",
+    "entities": [
+      {
+        "start": 11,
+        "entity_type": "ADR",
+        "end": 27,
+        "entity_id": "*[4]",
+        "entity_text": "был вялым сильно",
+        "concept_id": "C0085632",
+        "concept_name": NaN
+      },
+      {
+        "start": 42,
+        "entity_type": "ADR",
+        "end": 58,
+        "entity_id": "*[5]",
+        "entity_text": "вспышки агрессии",
+        "concept_id": "C0001807",
+        "concept_name": "Aggressive behavior"
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Повторная консультация и мы отменили препарат.\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "О причинах такого эффекта врач так и не смог нас просветить.\n",
+    "entities": [],
+    "sentence_id": 9
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Не спорю наслышана о широте его применения, но нам он не подошел абсолютно!\n",
+    "entities": [],
+    "sentence_id": 10
+  },
+  {
+    "file_name": "811512.tsv",
+    "text": "Время использования: 2 недели\n",
+    "entities": [],
+    "sentence_id": 11
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Моя дочь очень часто болеет.\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "В этом году мы начали болеть в ноябре, и вот уже весна, а мы все никак не придем в норму.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Нам 2 года 8 месяцев.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Я посоветовалась с нашим педиатром, и она нам порекомендовала Биоарон С. Сказала, что он натуральный, там алоэ.\n",
+    "entities": [
+      {
+        "start": 62,
+        "entity_type": "Drugname",
+        "end": 71,
+        "entity_id": "*[1]",
+        "entity_text": "Биоарон С",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Пили мы его 2 недели 1 раз в день, так сказала врач.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Дочь сначала сопротивлялась, а потом привыкла, в общем пила она его неплохо.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "В составе действительно нет ничего страшного.\n",
+    "entities": [],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "В инструкции пишут, что это иммуностимулирующее средство, повышает сопротивляемость организма к бактериальным и вирусным инфекциям.\n",
+    "entities": [
+      {
+        "start": 28,
+        "entity_type": "Drugclass",
+        "end": 47,
+        "entity_id": "*[0]_se",
+        "entity_text": "иммуностимулирующее",
+        "concept_id": "C0001551",
+        "concept_name": NaN
+      },
+      {
+        "start": 96,
+        "entity_type": "DI",
+        "end": 109,
+        "entity_id": "*[1]_se",
+        "entity_text": "бактериальным",
+        "concept_id": "?",
+        "concept_name": NaN
+      },
+      {
+        "start": 112,
+        "entity_type": "DI",
+        "end": 130,
+        "entity_id": "*[2]",
+        "entity_text": "вирусным инфекциям",
+        "concept_id": "C0042769",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Мы пропили курс 2 недели и через неделю после прекращения приема заболели снова.\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Вывод: нам этот сироп не помог к сожалению.\n",
+    "entities": [
+      {
+        "start": 16,
+        "entity_type": "Drugform",
+        "end": 21,
+        "entity_id": "*[2]_se",
+        "entity_text": "сироп",
+        "concept_id": "C0991550",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 9
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Хотя я читала много отзывов, в которых мамы пишут, что им здорово помогает это средство.\n",
+    "entities": [],
+    "sentence_id": 10
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Не буду говорить, что это плохой сироп.\n",
+    "entities": [
+      {
+        "start": 33,
+        "entity_type": "Drugform",
+        "end": 38,
+        "entity_id": "*[3]_se",
+        "entity_text": "сироп",
+        "concept_id": "C0991550",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 11
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Возможно просто нам он не подошел.\n",
+    "entities": [],
+    "sentence_id": 12
+  },
+  {
+    "file_name": "950111.tsv",
+    "text": "Общее впечатление : Не помог( RATING 3 NOTE\n",
+    "entities": [],
+    "sentence_id": 13
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Всем приветик!\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Хотелось бы тоже написать про Таблетки гомеопатические Анаферон детский, так как когда ребеночек был еще маленький, нам постоянно назначали сразу этот Анаферон.\n",
+    "entities": [
+      {
+        "start": 30,
+        "entity_type": "Drugform",
+        "end": 38,
+        "entity_id": "*[0]_se",
+        "entity_text": "Таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      },
+      {
+        "start": 55,
+        "entity_type": "Drugname",
+        "end": 71,
+        "entity_id": "*[1]",
+        "entity_text": "Анаферон детский",
+        "concept_id": "C2932403",
+        "concept_name": "anaferon"
+      },
+      {
+        "start": 39,
+        "entity_type": "Drugclass",
+        "end": 54,
+        "entity_id": "*[1]_se",
+        "entity_text": "гомеопатические",
+        "concept_id": "C0684199",
+        "concept_name": NaN
+      },
+      {
+        "start": 151,
+        "entity_type": "Drugname",
+        "end": 159,
+        "entity_id": "*[2]_se",
+        "entity_text": "Анаферон",
+        "concept_id": "C2932403",
+        "concept_name": "anaferon"
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Но в последствии мы, убедившись в неэффективности этого препарата, просто перестали его покупать.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Препарат Анаферон нужно давать как можно раньше, когда ребенок только начал болеть.\n",
+    "entities": [
+      {
+        "start": 9,
+        "entity_type": "Drugname",
+        "end": 17,
+        "entity_id": "*[3]_se",
+        "entity_text": "Анаферон",
+        "concept_id": "C2932403",
+        "concept_name": "anaferon"
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Но сколько раз мы ни покупали его, я не замечала эффекта, хотя мы всё делали по инструкции.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Упакованы таблетки в блистер.\n",
+    "entities": [
+      {
+        "start": 10,
+        "entity_type": "Drugform",
+        "end": 18,
+        "entity_id": "*[4]_se",
+        "entity_text": "таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Благодаря их небольшому размеру удобно принимать эти таблетки, хотя маленький ребенок все равно таблетку не съест, ему ее надо толочь.\n",
+    "entities": [
+      {
+        "start": 53,
+        "entity_type": "Drugform",
+        "end": 61,
+        "entity_id": "*[5]_se",
+        "entity_text": "таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      },
+      {
+        "start": 96,
+        "entity_type": "Drugform",
+        "end": 104,
+        "entity_id": "*[6]_se",
+        "entity_text": "таблетку",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "В общем, мы понадеемся на этот препарат, а он подводит.\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Поэтому я и вам тоже не советую его.\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "2533836.tsv",
+    "text": "Какой-то он неэффективный оказался, хотя у моей дочки и не было от него побочных эффектов.\n",
+    "entities": [],
+    "sentence_id": 9
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "Пару дней назад почувствовала боли в горле и ужасную головную боль.\n",
+    "entities": [
+      {
+        "start": 30,
+        "entity_type": "DI",
+        "end": 42,
+        "entity_id": "*[1]",
+        "entity_text": "боли в горле",
+        "concept_id": "C0242429",
+        "concept_name": NaN
+      },
+      {
+        "start": 53,
+        "entity_type": "DI",
+        "end": 66,
+        "entity_id": "*[2]",
+        "entity_text": "головную боль",
+        "concept_id": "C0018681",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "В аптеке фармацевт посоветовала мне средство от простуды и гриппа Reckitt Benckiser \"Лемсип\".\n",
+    "entities": [
+      {
+        "start": 48,
+        "entity_type": "DI",
+        "end": 56,
+        "entity_id": "*[0]_se",
+        "entity_text": "простуды",
+        "concept_id": "C0009443",
+        "concept_name": NaN
+      },
+      {
+        "start": 59,
+        "entity_type": "DI",
+        "end": 65,
+        "entity_id": "*[1]_se",
+        "entity_text": "гриппа",
+        "concept_id": "C0021400",
+        "concept_name": NaN
+      },
+      {
+        "start": 85,
+        "entity_type": "Drugname",
+        "end": 91,
+        "entity_id": "*[2]_se",
+        "entity_text": "Лемсип",
+        "concept_id": "C0717371",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "Принимаю его уже несколько дней, но ни каких сдвигов не обнаружила.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "После принятия этого средства в течении полу часа проходит и головная боль и боль в горле, но через пару часов все возобновляется, плюс к этому под вечер прибавился еще и озноб.\n",
+    "entities": [
+      {
+        "start": 61,
+        "entity_type": "DI",
+        "end": 74,
+        "entity_id": "*[3]",
+        "entity_text": "головная боль",
+        "concept_id": "C0018681",
+        "concept_name": NaN
+      },
+      {
+        "start": 171,
+        "entity_type": "ADR",
+        "end": 176,
+        "entity_id": "*[3]_se",
+        "entity_text": "озноб",
+        "concept_id": "C0085593",
+        "concept_name": NaN
+      },
+      {
+        "start": 77,
+        "entity_type": "DI",
+        "end": 89,
+        "entity_id": "*[4]",
+        "entity_text": "боль в горле",
+        "concept_id": "C0242429",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "На вкус приятный, правда чувствуеся что туда добавлена лимонная кислота, хотя вкус должен быть черной смородины.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "Однозначно присутствуют красители.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "В составе вычитала только одно средство от простуды - парацетамол, так же там аскорбиновая кислота, лимонная кислота и всякие ароматизаторы.\n",
+    "entities": [
+      {
+        "start": 43,
+        "entity_type": "DI",
+        "end": 51,
+        "entity_id": "*[4]_se",
+        "entity_text": "простуды",
+        "concept_id": "C0009443",
+        "concept_name": NaN
+      },
+      {
+        "start": 78,
+        "entity_type": "Drugname",
+        "end": 98,
+        "entity_id": "*[5]",
+        "entity_text": "аскорбиновая кислота",
+        "concept_id": "C0201898",
+        "concept_name": "Аскорбиновая кислота"
+      },
+      {
+        "start": 54,
+        "entity_type": "Drugname",
+        "end": 65,
+        "entity_id": "*[5]_se",
+        "entity_text": "парацетамол",
+        "concept_id": "C0373527",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "Не советую ни кому его принимать, лучше пользоваться проверенными средствами.\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "811884.tsv",
+    "text": "Общее впечатление : не помог RATING 3 NOTE\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "Капли Тонзилгон-Н применяются при ЛОР-заболеваниях верхних дыхательных путей, обладает противовоспалительным, антибактериальным и иммуномодулирующим свойствами, активно применяется при лечении ОРВИ у детей.\n",
+    "entities": [
+      {
+        "start": 0,
+        "entity_type": "Drugform",
+        "end": 5,
+        "entity_id": "*[0]_se",
+        "entity_text": "Капли",
+        "concept_id": "C0991568",
+        "concept_name": NaN
+      },
+      {
+        "start": 34,
+        "entity_type": "DI",
+        "end": 76,
+        "entity_id": "*[1]",
+        "entity_text": "ЛОР-заболеваниях верхних дыхательных путей",
+        "concept_id": "C0155839",
+        "concept_name": NaN
+      },
+      {
+        "start": 6,
+        "entity_type": "Drugname",
+        "end": 17,
+        "entity_id": "*[1]_se",
+        "entity_text": "Тонзилгон-Н",
+        "concept_id": "None",
+        "concept_name": NaN
+      },
+      {
+        "start": 87,
+        "entity_type": "Drugclass",
+        "end": 108,
+        "entity_id": "*[2]_se",
+        "entity_text": "противовоспалительным",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 110,
+        "entity_type": "Drugclass",
+        "end": 127,
+        "entity_id": "*[3]_se",
+        "entity_text": "антибактериальным",
+        "concept_id": "C0279516",
+        "concept_name": "АНТИБАКТЕРИАЛЬНЫЕ СРЕДСТВА"
+      },
+      {
+        "start": 130,
+        "entity_type": "Drugclass",
+        "end": 148,
+        "entity_id": "*[4]_se",
+        "entity_text": "иммуномодулирующим",
+        "concept_id": "C0001551",
+        "concept_name": NaN
+      },
+      {
+        "start": 193,
+        "entity_type": "DI",
+        "end": 197,
+        "entity_id": "*[5]_se",
+        "entity_text": "ОРВИ",
+        "concept_id": "C0035243",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "Нам его назначили когда у дочки началась ангина, горло было красное, на миндалинах белый налет... надо было что-то делать.\n",
+    "entities": [
+      {
+        "start": 49,
+        "entity_type": "DI",
+        "end": 67,
+        "entity_id": "*[2]",
+        "entity_text": "горло было красное",
+        "concept_id": "C0455899",
+        "concept_name": NaN
+      },
+      {
+        "start": 69,
+        "entity_type": "DI",
+        "end": 94,
+        "entity_id": "*[3]",
+        "entity_text": "на миндалинах белый налет",
+        "concept_id": "None",
+        "concept_name": NaN
+      },
+      {
+        "start": 41,
+        "entity_type": "DI",
+        "end": 47,
+        "entity_id": "*[6]_se",
+        "entity_text": "ангина",
+        "concept_id": "C0040425",
+        "concept_name": "Tonsillitis"
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "Курс лечения продлился около 16 дней (как назначил ЛОР), капали в ложечку и давали ребенку попить.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "Меня очень смущал спирт в составе, муж сказал: \"Водка!\n",
+    "entities": [],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "\", даже посмеивались что ребенок \"под шафэ\", но конечно же препарат активно детям назначают и беспокоиться о каплях спирта не стоит.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "Через 14 дней горло почти зажило!\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "Не могу сказать что питаю к Тонзилгону нежные чувства, но препарат однозначно достойный!\n",
+    "entities": [
+      {
+        "start": 28,
+        "entity_type": "Drugname",
+        "end": 38,
+        "entity_id": "*[7]_se",
+        "entity_text": "Тонзилгону",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "894083.tsv",
+    "text": "Время использования: 16 дней\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Гриппеферон прочно занял место в нашем доме.\n",
+    "entities": [
+      {
+        "start": 0,
+        "entity_type": "Drugname",
+        "end": 11,
+        "entity_id": "*[0]_se",
+        "entity_text": "Гриппеферон",
+        "concept_id": "C2937361",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Мне очень понравилось это средство.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Когда я и муж болели гриппом, то это средство закапывали малышу в целях профилактики.\n",
+    "entities": [
+      {
+        "start": 21,
+        "entity_type": "DI",
+        "end": 28,
+        "entity_id": "*[1]_se",
+        "entity_text": "гриппом",
+        "concept_id": "C0021400",
+        "concept_name": NaN
+      },
+      {
+        "start": 72,
+        "entity_type": "DI",
+        "end": 84,
+        "entity_id": "*[2]_se",
+        "entity_text": "профилактики",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Или у ребенка иммунитет такой хороший, или все же это гриппферон помог, и сын не заразился от нас, хотя я с ним постоянно контактировала.\n",
+    "entities": [
+      {
+        "start": 54,
+        "entity_type": "Drugname",
+        "end": 64,
+        "entity_id": "*[3]_se",
+        "entity_text": "гриппферон",
+        "concept_id": "C2937361",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Флакон 10 мл, пластмассовый, дозатор не очень удобный, большой ( не очень удобно маленькому ребенку закапывать, особенно когда он вертится).\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Капли хранить при температуре от 2 до 8 градусов, следовательно в холодильнике.\n",
+    "entities": [
+      {
+        "start": 0,
+        "entity_type": "Drugform",
+        "end": 5,
+        "entity_id": "*[4]_se",
+        "entity_text": "Капли",
+        "concept_id": "C0991568",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Закрытый флакон годен в течении 2-х лет, а вот открытый хранится в течении 30-ти дней, а это не очень целесообразно, так как стоит он недешево.\n",
+    "entities": [],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "591905.tsv",
+    "text": "Время использования: Переодически.\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Много раз слышала об это средстве, что хорошо действует против вирусов и микробов.\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Еще понравилось, что нет возростных, ограничений, подходит беременным.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Раньше покупала Интэрферон, но очень не удобно разводить, потом с пепеткой бегать, а тут удобный дозатор, да и срок годности дольше.\n",
+    "entities": [
+      {
+        "start": 16,
+        "entity_type": "Drugname",
+        "end": 26,
+        "entity_id": "*[0]_se",
+        "entity_text": "Интэрферон",
+        "concept_id": "C0021747",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Купила спрэй дочке, брызгала, как написано в инструкции.\n",
+    "entities": [
+      {
+        "start": 7,
+        "entity_type": "Drugform",
+        "end": 12,
+        "entity_id": "*[1]_se",
+        "entity_text": "спрэй",
+        "concept_id": "C1154182",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Помогло.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Но использовала в начале развития болезни.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Начала сопеть носиком, сразу начали использывать, брызгала три дня.\n",
+    "entities": [
+      {
+        "start": 7,
+        "entity_type": "DI",
+        "end": 21,
+        "entity_id": "*[1]",
+        "entity_text": "сопеть носиком",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Единственный недостаток, что после открытия годен десять дней, ну и цена немного кусается).\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Надеюсь, что Вам понравится.\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Будьте здоровы, ине болейте!\n",
+    "entities": [],
+    "sentence_id": 9
+  },
+  {
+    "file_name": "613806.tsv",
+    "text": "Общее впечатление : Хорошая вещь.\n",
+    "entities": [],
+    "sentence_id": 10
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Как-то совсем расшаталась у меня нервная система, да и ВСД обострилась, беспокоила бессонница и врач мне выписал в качестве снотворного таблетки \"Беллатаминал\".\n",
+    "entities": [
+      {
+        "start": 55,
+        "entity_type": "DI",
+        "end": 58,
+        "entity_id": "*[0]_se",
+        "entity_text": "ВСД",
+        "concept_id": "C0013363",
+        "concept_name": NaN
+      },
+      {
+        "start": 14,
+        "entity_type": "DI",
+        "end": 48,
+        "entity_id": "*[1]",
+        "entity_text": "расшаталась у меня нервная система",
+        "concept_id": "C0027765",
+        "concept_name": NaN
+      },
+      {
+        "start": 83,
+        "entity_type": "DI",
+        "end": 93,
+        "entity_id": "*[1]_se",
+        "entity_text": "бессонница",
+        "concept_id": "C0021603",
+        "concept_name": NaN
+      },
+      {
+        "start": 124,
+        "entity_type": "Drugclass",
+        "end": 135,
+        "entity_id": "*[2]_se",
+        "entity_text": "снотворного",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 136,
+        "entity_type": "Drugform",
+        "end": 144,
+        "entity_id": "*[3]_se",
+        "entity_text": "таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      },
+      {
+        "start": 146,
+        "entity_type": "Drugname",
+        "end": 158,
+        "entity_id": "*[4]_se",
+        "entity_text": "Беллатаминал",
+        "concept_id": "C0718858",
+        "concept_name": "Belladonna Alkaloids / Ergotamine / Phenobarbital"
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Это седативный препарат.\n",
+    "entities": [
+      {
+        "start": 4,
+        "entity_type": "Drugclass",
+        "end": 14,
+        "entity_id": "*[5]_se",
+        "entity_text": "седативный",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Активными компонентами Беллатаминала являются алкалоиды красавки, феноборбитал, эрготамин.\n",
+    "entities": [
+      {
+        "start": 46,
+        "entity_type": "Drugname",
+        "end": 64,
+        "entity_id": "*[2]",
+        "entity_text": "алкалоиды красавки",
+        "concept_id": "None",
+        "concept_name": NaN
+      },
+      {
+        "start": 23,
+        "entity_type": "Drugname",
+        "end": 36,
+        "entity_id": "*[6]_se",
+        "entity_text": "Беллатаминала",
+        "concept_id": "C0718858",
+        "concept_name": "Belladonna Alkaloids / Ergotamine / Phenobarbit"
+      },
+      {
+        "start": 66,
+        "entity_type": "Drugname",
+        "end": 78,
+        "entity_id": "*[7]_se",
+        "entity_text": "феноборбитал",
+        "concept_id": "C0031412",
+        "concept_name": NaN
+      },
+      {
+        "start": 80,
+        "entity_type": "Drugname",
+        "end": 89,
+        "entity_id": "*[8]_se",
+        "entity_text": "эрготамин",
+        "concept_id": "C0014710",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "У препарата много противопоказаний и есть побочные эффекты.\n",
+    "entities": [],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Стоят таблетки недорого, два года назад покупала рублей за 100 30 таблеток.\n",
+    "entities": [
+      {
+        "start": 66,
+        "entity_type": "Drugform",
+        "end": 74,
+        "entity_id": "*[10]_se",
+        "entity_text": "таблеток",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      },
+      {
+        "start": 6,
+        "entity_type": "Drugform",
+        "end": 14,
+        "entity_id": "*[9]_se",
+        "entity_text": "таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Мне нужно было применять по 1 таблетки перед сном.\n",
+    "entities": [
+      {
+        "start": 30,
+        "entity_type": "Drugform",
+        "end": 38,
+        "entity_id": "*[11]_se",
+        "entity_text": "таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Мне таблетки не подошли, они затуманивают рассудок, вызывают заторможенность, но с моей бессонницей они не справились.\n",
+    "entities": [
+      {
+        "start": 4,
+        "entity_type": "Drugform",
+        "end": 12,
+        "entity_id": "*[12]_se",
+        "entity_text": "таблетки",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      },
+      {
+        "start": 61,
+        "entity_type": "ADR",
+        "end": 76,
+        "entity_id": "*[13]_se",
+        "entity_text": "заторможенность",
+        "concept_id": "C0541992",
+        "concept_name": NaN
+      },
+      {
+        "start": 88,
+        "entity_type": "DI",
+        "end": 99,
+        "entity_id": "*[14]_se",
+        "entity_text": "бессонницей",
+        "concept_id": "C0917801",
+        "concept_name": NaN
+      },
+      {
+        "start": 29,
+        "entity_type": "ADR",
+        "end": 50,
+        "entity_id": "*[3]",
+        "entity_text": "затуманивают рассудок",
+        "concept_id": "C0683369",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Есть более современные и эффективные средства в лечении бессонницы.\n",
+    "entities": [
+      {
+        "start": 56,
+        "entity_type": "DI",
+        "end": 66,
+        "entity_id": "*[15]_se",
+        "entity_text": "бессонницы",
+        "concept_id": "C0917801",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "2459114.tsv",
+    "text": "Время использования: 1 месяц\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Я большой противник всех ... феронов, т. к. они подавляют иммунитет.\n",
+    "entities": [
+      {
+        "start": 48,
+        "entity_type": "Finding",
+        "end": 67,
+        "entity_id": "*[1]",
+        "entity_text": "подавляют иммунитет",
+        "concept_id": "C4048329",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Применять их, я считаю, нужно в крайнем случае.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Но тут звонит мне сестра, мать троих маленьких детей.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "И рассказывает, что просто невозможно стало: то старший ребенок из школы простуду принесет, вся семья болеет.\n",
+    "entities": [
+      {
+        "start": 73,
+        "entity_type": "DI",
+        "end": 81,
+        "entity_id": "*[0]_se",
+        "entity_text": "простуду",
+        "concept_id": "C0009443",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "То муж на работе грипп подхватит, и снова все болеют.\n",
+    "entities": [
+      {
+        "start": 17,
+        "entity_type": "DI",
+        "end": 22,
+        "entity_id": "*[1]_se",
+        "entity_text": "грипп",
+        "concept_id": "C0021400",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Среднего даже с садика сняли, невозможно просто.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "И вот их педиатр посоветовала использовать мазь Виферон.\n",
+    "entities": [
+      {
+        "start": 43,
+        "entity_type": "Drugform",
+        "end": 47,
+        "entity_id": "*[2]_se",
+        "entity_text": "мазь",
+        "concept_id": "C0028912",
+        "concept_name": NaN
+      },
+      {
+        "start": 48,
+        "entity_type": "Drugname",
+        "end": 55,
+        "entity_id": "*[3]_se",
+        "entity_text": "Виферон",
+        "concept_id": "C0021735",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Мазать носики всех членам семьи в простудный и гриппозный период.\n",
+    "entities": [
+      {
+        "start": 34,
+        "entity_type": "DI",
+        "end": 44,
+        "entity_id": "*[4]_se",
+        "entity_text": "простудный",
+        "concept_id": "C0009443",
+        "concept_name": NaN
+      },
+      {
+        "start": 47,
+        "entity_type": "DI",
+        "end": 57,
+        "entity_id": "*[5]_se",
+        "entity_text": "гриппозный",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Уже месяц всей семьей мажутся, и пока никто из них не болел.\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Я тоже задумалась об этой мази, но у нас пока необходимости нет.\n",
+    "entities": [
+      {
+        "start": 26,
+        "entity_type": "Drugform",
+        "end": 30,
+        "entity_id": "*[6]_se",
+        "entity_text": "мази",
+        "concept_id": "C0028912",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 9
+  },
+  {
+    "file_name": "884467.tsv",
+    "text": "Общее впечатление : Похоже, и правда помогает от вирусов RATING 3 NOTE\n",
+    "entities": [],
+    "sentence_id": 10
+  },
+  {
+    "file_name": "2707053.tsv",
+    "text": "Не смотря на то, что мне ближе к сердцу является нурофен, но вот Обезболивающее и жаропонижающее средство \"Синтез\" Парацетамол детский - суспензию я все же использую и также наравне с нурофеном даю его ребенку.\n",
+    "entities": [
+      {
+        "start": 49,
+        "entity_type": "Drugname",
+        "end": 56,
+        "entity_id": "*[0]_se",
+        "entity_text": "нурофен",
+        "concept_id": "C0020740",
+        "concept_name": NaN
+      },
+      {
+        "start": 115,
+        "entity_type": "Drugname",
+        "end": 134,
+        "entity_id": "*[1]",
+        "entity_text": "Парацетамол детский",
+        "concept_id": "C0373527",
+        "concept_name": NaN
+      },
+      {
+        "start": 65,
+        "entity_type": "Drugclass",
+        "end": 79,
+        "entity_id": "*[1]_se",
+        "entity_text": "Обезболивающее",
+        "concept_id": "C0002771",
+        "concept_name": NaN
+      },
+      {
+        "start": 82,
+        "entity_type": "Drugclass",
+        "end": 96,
+        "entity_id": "*[2]_se",
+        "entity_text": "жаропонижающее",
+        "concept_id": "C0003419|C3178748",
+        "concept_name": NaN
+      },
+      {
+        "start": 137,
+        "entity_type": "Drugform",
+        "end": 146,
+        "entity_id": "*[3]_se",
+        "entity_text": "суспензию",
+        "concept_id": "C0038960",
+        "concept_name": NaN
+      },
+      {
+        "start": 184,
+        "entity_type": "Drugname",
+        "end": 193,
+        "entity_id": "*[4]_se",
+        "entity_text": "нурофеном",
+        "concept_id": "C0020740",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2707053.tsv",
+    "text": "А чередую я его с нурофеном, когда между приёмами нурофена у ребенка быстро набегает температура, а пить нурофен бывает ещё рано.\n",
+    "entities": [
+      {
+        "start": 18,
+        "entity_type": "Drugname",
+        "end": 27,
+        "entity_id": "*[5]_se",
+        "entity_text": "нурофеном",
+        "concept_id": "C0020740",
+        "concept_name": NaN
+      },
+      {
+        "start": 50,
+        "entity_type": "Drugname",
+        "end": 58,
+        "entity_id": "*[6]_se",
+        "entity_text": "нурофена",
+        "concept_id": "C0020740",
+        "concept_name": NaN
+      },
+      {
+        "start": 85,
+        "entity_type": "DI",
+        "end": 96,
+        "entity_id": "*[7]_se",
+        "entity_text": "температура",
+        "concept_id": "C0005904",
+        "concept_name": NaN
+      },
+      {
+        "start": 105,
+        "entity_type": "Drugname",
+        "end": 112,
+        "entity_id": "*[8]_se",
+        "entity_text": "нурофен",
+        "concept_id": "C0020740",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2707053.tsv",
+    "text": "И это я делаю, чтобы не нарушить дозировку нурофена, ведь это будет чрезмерно опасно.\n",
+    "entities": [
+      {
+        "start": 43,
+        "entity_type": "Drugname",
+        "end": 51,
+        "entity_id": "*[9]_se",
+        "entity_text": "нурофена",
+        "concept_id": "C0020740",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2707053.tsv",
+    "text": "И именно такую схему лечения нам порекомендовал наш лечащий врач педиатр.\n",
+    "entities": [],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2707053.tsv",
+    "text": "И поэтому у нас дома в нашей аптечка всегда имеются два этих лекарственных препаратов: нурофен и Обезболивающее и жаропонижающее средство \"Синтез\" Парацетамол детский в виде суспензии.\n",
+    "entities": [
+      {
+        "start": 87,
+        "entity_type": "Drugname",
+        "end": 94,
+        "entity_id": "*[10]_se",
+        "entity_text": "нурофен",
+        "concept_id": "C0020740",
+        "concept_name": NaN
+      },
+      {
+        "start": 97,
+        "entity_type": "Drugclass",
+        "end": 111,
+        "entity_id": "*[11]_se",
+        "entity_text": "Обезболивающее",
+        "concept_id": "C0002771",
+        "concept_name": NaN
+      },
+      {
+        "start": 114,
+        "entity_type": "Drugclass",
+        "end": 128,
+        "entity_id": "*[12]_se",
+        "entity_text": "жаропонижающее",
+        "concept_id": "C0003419|C3178748",
+        "concept_name": NaN
+      },
+      {
+        "start": 174,
+        "entity_type": "Drugform",
+        "end": 183,
+        "entity_id": "*[13]_se",
+        "entity_text": "суспензии",
+        "concept_id": "C0038960",
+        "concept_name": NaN
+      },
+      {
+        "start": 147,
+        "entity_type": "Drugname",
+        "end": 166,
+        "entity_id": "*[2]",
+        "entity_text": "Парацетамол детский",
+        "concept_id": "C0373527",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Этот препарат начали усердно выписывать врачи, когда я еще сама была ребенком.\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "До сих пор рекомендуют его как профилактическое средство и противовирусное.\n",
+    "entities": [
+      {
+        "start": 31,
+        "entity_type": "DI",
+        "end": 47,
+        "entity_id": "*[0]_se",
+        "entity_text": "профилактическое",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 59,
+        "entity_type": "Drugclass",
+        "end": 74,
+        "entity_id": "*[1]_se",
+        "entity_text": "противовирусное",
+        "concept_id": "C2363964",
+        "concept_name": "Противовирусное лечение"
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Сама его пила и помню мерзкий сладковатый вкус.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Не сказала б, что как-то на ход болезни влияло, просто раньше не было доступной информации о лекарствах, а такие противовирусные новинки давали надежду родителям, что ребенок за 2 дня встанет на ноги.\n",
+    "entities": [
+      {
+        "start": 113,
+        "entity_type": "Drugclass",
+        "end": 128,
+        "entity_id": "*[2]_se",
+        "entity_text": "противовирусные",
+        "concept_id": "C2363964",
+        "concept_name": "Противовирусное лечение"
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Родив первого решила изучать каждую пилюльку, прописанную врачом.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Ведь сейчас найти информацию и исследования препаратов не проблема, спасибо мед.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "форумам.\n",
+    "entities": [],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Оказалось, что анаферон - пустышка.\n",
+    "entities": [
+      {
+        "start": 15,
+        "entity_type": "Drugname",
+        "end": 23,
+        "entity_id": "*[3]_se",
+        "entity_text": "анаферон",
+        "concept_id": "C2932403",
+        "concept_name": "anaferon"
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Ни противовирусного, ни какого-то другого действия не имеет.\n",
+    "entities": [
+      {
+        "start": 3,
+        "entity_type": "Drugclass",
+        "end": 19,
+        "entity_id": "*[4]_se",
+        "entity_text": "противовирусного",
+        "concept_id": "C2363964",
+        "concept_name": "Противовирусное лечение"
+      }
+    ],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Ни в одной развитой стране не применяется.\n",
+    "entities": [],
+    "sentence_id": 9
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Но может иметь побочки.\n",
+    "entities": [],
+    "sentence_id": 10
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Детям я это не даю.\n",
+    "entities": [],
+    "sentence_id": 11
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Стоит недешево, а эффекта - ноль.\n",
+    "entities": [],
+    "sentence_id": 12
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Длится у нас ОРВИ столько же времени, сколько и у тех, кто пьет анаферон.\n",
+    "entities": [
+      {
+        "start": 13,
+        "entity_type": "DI",
+        "end": 17,
+        "entity_id": "*[5]_se",
+        "entity_text": "ОРВИ",
+        "concept_id": "C0035243",
+        "concept_name": NaN
+      },
+      {
+        "start": 64,
+        "entity_type": "Drugname",
+        "end": 72,
+        "entity_id": "*[6]_se",
+        "entity_text": "анаферон",
+        "concept_id": "C2932403",
+        "concept_name": "anaferon"
+      }
+    ],
+    "sentence_id": 13
+  },
+  {
+    "file_name": "815444.tsv",
+    "text": "Общее впечатление : Неэффективен RATING 1 NOTE\n",
+    "entities": [],
+    "sentence_id": 14
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "Добрый вечер и приятного времяпровождения.\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "В силу своего возраста в моей семье часто приходится брать успокоительные капельки -боярышника, пустырника, валерианы и тому подобное.\n",
+    "entities": [
+      {
+        "start": 59,
+        "entity_type": "Drugclass",
+        "end": 73,
+        "entity_id": "*[0]_se",
+        "entity_text": "успокоительные",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 74,
+        "entity_type": "Drugform",
+        "end": 82,
+        "entity_id": "*[1]_se",
+        "entity_text": "капельки",
+        "concept_id": "C0991568",
+        "concept_name": NaN
+      },
+      {
+        "start": 84,
+        "entity_type": "Drugname",
+        "end": 94,
+        "entity_id": "*[2]_se",
+        "entity_text": "боярышника",
+        "concept_id": "C0010283",
+        "concept_name": NaN
+      },
+      {
+        "start": 96,
+        "entity_type": "Drugname",
+        "end": 106,
+        "entity_id": "*[3]_se",
+        "entity_text": "пустырника",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 108,
+        "entity_type": "Drugname",
+        "end": 117,
+        "entity_id": "*[4]_se",
+        "entity_text": "валерианы",
+        "concept_id": "C0042281",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "как-то в один поход в аптеку мне предложили заменить этот \"набор\" на одно - седативное средство от Фармамед Валемидин.\n",
+    "entities": [
+      {
+        "start": 76,
+        "entity_type": "Drugclass",
+        "end": 86,
+        "entity_id": "*[5]_se",
+        "entity_text": "седативное",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 108,
+        "entity_type": "Drugname",
+        "end": 117,
+        "entity_id": "*[6]_se",
+        "entity_text": "Валемидин",
+        "concept_id": "None",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "Посмотрев на состав и прочитав аннатацию к лекарству, я взяла его.\n",
+    "entities": [],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "Но, увы!\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "мама пропив его несколько дней, перешла на свои традиционные капельки, сказав, что он ей не нравится.\n",
+    "entities": [
+      {
+        "start": 61,
+        "entity_type": "Drugform",
+        "end": 69,
+        "entity_id": "*[7]_se",
+        "entity_text": "капельки",
+        "concept_id": "C0991568",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "Возможно, это был каприз, а, возможно, и нет.\n",
+    "entities": [],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "Получив его \"по наследству\" и имея свои проблемы со сном и нервами, пропив остаток, сказала бы, что он мне помог снять нервное напряжение, немного успокоится.\n",
+    "entities": [
+      {
+        "start": 147,
+        "entity_type": "ADR",
+        "end": 157,
+        "entity_id": "*[10]_se",
+        "entity_text": "успокоится",
+        "concept_id": "C3887611",
+        "concept_name": NaN
+      },
+      {
+        "start": 119,
+        "entity_type": "DI",
+        "end": 137,
+        "entity_id": "*[1]",
+        "entity_text": "нервное напряжение",
+        "concept_id": "C0027769",
+        "concept_name": NaN
+      },
+      {
+        "start": 52,
+        "entity_type": "DI",
+        "end": 56,
+        "entity_id": "*[8]_se",
+        "entity_text": "сном",
+        "concept_id": NaN,
+        "concept_name": NaN
+      },
+      {
+        "start": 59,
+        "entity_type": "DI",
+        "end": 66,
+        "entity_id": "*[9]_se",
+        "entity_text": "нервами",
+        "concept_id": "C0027769",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "2439706.tsv",
+    "text": "К тому же, теперь нашла рецепт и уже приготовила сама настойку состав, который практически повторяет состав данного лекарства, только без димедрола.\n",
+    "entities": [
+      {
+        "start": 54,
+        "entity_type": "Drugform",
+        "end": 62,
+        "entity_id": "*[11]_se",
+        "entity_text": "настойку",
+        "concept_id": "C0991583",
+        "concept_name": NaN
+      },
+      {
+        "start": 138,
+        "entity_type": "Drugname",
+        "end": 147,
+        "entity_id": "*[12]_se",
+        "entity_text": "димедрола",
+        "concept_id": "C0012522",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "Имею 2-х малышей.\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "Дочери 3 года и 7 месяцев сыну.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "\"Генферон лайт\" из холодильника не выводится, хотя его положительного действия я тоже не вижу.\n",
+    "entities": [
+      {
+        "start": 1,
+        "entity_type": "Drugname",
+        "end": 14,
+        "entity_id": "*[1]",
+        "entity_text": "Генферон лайт",
+        "concept_id": "C0021735",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "За последние 3 месяца дети болели 3 раза.\n",
+    "entities": [],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "Как только заболевает дочь, я начинаю ставить \"Генферон\" и сыну тоже, что бы повысить его иммунитет, но он все равно заражается от дочери через несколько дней.\n",
+    "entities": [
+      {
+        "start": 47,
+        "entity_type": "Drugname",
+        "end": 55,
+        "entity_id": "*[0]_se",
+        "entity_text": "Генферон",
+        "concept_id": "C0021735",
+        "concept_name": NaN
+      },
+      {
+        "start": 77,
+        "entity_type": "DI",
+        "end": 99,
+        "entity_id": "*[2]",
+        "entity_text": "повысить его иммунитет",
+        "concept_id": "C0020971",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "Конечно, я могла бы и не использовать эти свечи, но врачи их упорно назначают всем и от всех болезней.\n",
+    "entities": [
+      {
+        "start": 42,
+        "entity_type": "Drugform",
+        "end": 47,
+        "entity_id": "*[1]_se",
+        "entity_text": "свечи",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "Каждый раз кроме этих свечей приходится брать еще кучу лекарств и создается впечатление, что этот препарат идет просто в \"довесок\".\n",
+    "entities": [
+      {
+        "start": 22,
+        "entity_type": "Drugform",
+        "end": 28,
+        "entity_id": "*[2]_se",
+        "entity_text": "свечей",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "Дети болеют тяжело и подолгу и своего предназначения эти свечи явно не выполняют.\n",
+    "entities": [
+      {
+        "start": 57,
+        "entity_type": "Drugform",
+        "end": 62,
+        "entity_id": "*[3]_se",
+        "entity_text": "свечи",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "824781.tsv",
+    "text": "Время использования: 3 месяца\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Приболел я тут пять дней назад 23.11.15 жене подруга посоветовала купить этот дол... ый эргоферон за 387р... Начала пичкать меня.\n",
+    "entities": [
+      {
+        "start": 88,
+        "entity_type": "Drugname",
+        "end": 97,
+        "entity_id": "*[0]_se",
+        "entity_text": "эргоферон",
+        "concept_id": "C4508358",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "За первый день выпил 7 таблеток.\n",
+    "entities": [
+      {
+        "start": 23,
+        "entity_type": "Drugform",
+        "end": 31,
+        "entity_id": "*[1]_se",
+        "entity_text": "таблеток",
+        "concept_id": "C0039225",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Эффекта ноль.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Горло болит, температура выше 38.\n",
+    "entities": [
+      {
+        "start": 0,
+        "entity_type": "DI",
+        "end": 11,
+        "entity_id": "*[1]",
+        "entity_text": "Горло болит",
+        "concept_id": "C0242429",
+        "concept_name": NaN
+      },
+      {
+        "start": 13,
+        "entity_type": "DI",
+        "end": 32,
+        "entity_id": "*[2]",
+        "entity_text": "температура выше 38",
+        "concept_id": "C0015967",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Кашель насморк.\n",
+    "entities": [
+      {
+        "start": 0,
+        "entity_type": "DI",
+        "end": 6,
+        "entity_id": "*[2]_se",
+        "entity_text": "Кашель",
+        "concept_id": "C0010200",
+        "concept_name": NaN
+      },
+      {
+        "start": 7,
+        "entity_type": "DI",
+        "end": 14,
+        "entity_id": "*[3]_se",
+        "entity_text": "насморк",
+        "concept_id": "C1260880",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Думаю ладно пропью еще пару деньков.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "В итоге пил 5 дней сейчас померил температуру 38.8... Это ппц ребята.\n",
+    "entities": [
+      {
+        "start": 34,
+        "entity_type": "DI",
+        "end": 50,
+        "entity_id": "*[3]",
+        "entity_text": "температуру 38.8",
+        "concept_id": "C0015967",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "На подругу жены повысил голос типа что за хрень, жена обиделась.\n",
+    "entities": [],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "В итоге.\n",
+    "entities": [],
+    "sentence_id": 8
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Лежу в зале, с температурой, головной болью, болью в горле и кашлем.\n",
+    "entities": [
+      {
+        "start": 29,
+        "entity_type": "DI",
+        "end": 43,
+        "entity_id": "*[4]",
+        "entity_text": "головной болью",
+        "concept_id": "C0018681",
+        "concept_name": NaN
+      },
+      {
+        "start": 15,
+        "entity_type": "DI",
+        "end": 27,
+        "entity_id": "*[4]_se",
+        "entity_text": "температурой",
+        "concept_id": "C0005904",
+        "concept_name": NaN
+      },
+      {
+        "start": 45,
+        "entity_type": "DI",
+        "end": 58,
+        "entity_id": "*[5]",
+        "entity_text": "болью в горле",
+        "concept_id": "C0242429",
+        "concept_name": NaN
+      },
+      {
+        "start": 61,
+        "entity_type": "DI",
+        "end": 67,
+        "entity_id": "*[5]_se",
+        "entity_text": "кашлем",
+        "concept_id": "C0010200",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 9
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Плюс с женой поругались.\n",
+    "entities": [],
+    "sentence_id": 10
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Делайте выводы госпоба.\n",
+    "entities": [],
+    "sentence_id": 11
+  },
+  {
+    "file_name": "2659756.tsv",
+    "text": "Почти пачку выпил эффекта не какого((((\n",
+    "entities": [],
+    "sentence_id": 12
+  },
+  {
+    "file_name": "2523468.tsv",
+    "text": "Вылезла простуда на губах, заказала мужу, чтоб купил мазь Ацикловир, ну вообщем он забыл название, и купил, то, что собственно ему предложили в аптеке, прорекламировав так, что мол жена оценит некий матирующий эффект от данного средства.\n",
+    "entities": [
+      {
+        "start": 53,
+        "entity_type": "Drugform",
+        "end": 57,
+        "entity_id": "*[0]_se",
+        "entity_text": "мазь",
+        "concept_id": "C0028912",
+        "concept_name": NaN
+      },
+      {
+        "start": 8,
+        "entity_type": "DI",
+        "end": 25,
+        "entity_id": "*[1]",
+        "entity_text": "простуда на губах",
+        "concept_id": "C0848641",
+        "concept_name": NaN
+      },
+      {
+        "start": 58,
+        "entity_type": "Drugname",
+        "end": 67,
+        "entity_id": "*[1]_se",
+        "entity_text": "Ацикловир",
+        "concept_id": "C0001367",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2523468.tsv",
+    "text": "Сразу же отмечу, что цена этой чудо- мази около 300 рублей, в отличии от привычного мне ацикловира, который стоит чуть ли не в 10 раз дешевле.\n",
+    "entities": [
+      {
+        "start": 37,
+        "entity_type": "Drugform",
+        "end": 41,
+        "entity_id": "*[2]_se",
+        "entity_text": "мази",
+        "concept_id": "C0028912",
+        "concept_name": NaN
+      },
+      {
+        "start": 88,
+        "entity_type": "Drugname",
+        "end": 98,
+        "entity_id": "*[3]_se",
+        "entity_text": "ацикловира",
+        "concept_id": "C0001367",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2523468.tsv",
+    "text": "Так вот матирующего эффекта я не заметила, и сам герпес у меня прошел примерно за неделю.\n",
+    "entities": [
+      {
+        "start": 49,
+        "entity_type": "DI",
+        "end": 55,
+        "entity_id": "*[4]_se",
+        "entity_text": "герпес",
+        "concept_id": "C0019372",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2523468.tsv",
+    "text": "На основании всего вышеперечисленного сделала вывод что переплачивать не имеет смысла.\n",
+    "entities": [],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "В моей аптечке всегда лежит Анаферон.\n",
+    "entities": [
+      {
+        "start": 28,
+        "entity_type": "Drugname",
+        "end": 36,
+        "entity_id": "*[0]_se",
+        "entity_text": "Анаферон",
+        "concept_id": "C2932403",
+        "concept_name": "anaferon"
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "Ребенок может заболеть в любой момент, и приходится готовиться к этой неприятности заранее.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "Первоначально я была не очень хорошего мнения об этом препарате.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "Ничуть он не помогал.\n",
+    "entities": [],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "Но потом педиатр уточнила, что принимать его нужно строго по схеме.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "Именно в первый день болезни он дает наилучший лечебный эффект.\n",
+    "entities": [],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "Но я не могу отнести это лекарство к полностью безопасным.\n",
+    "entities": [],
+    "sentence_id": 6
+  },
+  {
+    "file_name": "934850.tsv",
+    "text": "Общее впечатление : Помогает при вирусных заболеваниях RATING 4 NOTE\n",
+    "entities": [
+      {
+        "start": 33,
+        "entity_type": "DI",
+        "end": 54,
+        "entity_id": "*[1]",
+        "entity_text": "вирусных заболеваниях",
+        "concept_id": "C0042769",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 7
+  },
+  {
+    "file_name": "895731.tsv",
+    "text": "Пробовал на себе.\n",
+    "entities": [],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "895731.tsv",
+    "text": "Супруга купила.\n",
+    "entities": [],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "895731.tsv",
+    "text": "Стопроцентный фуфломицин, гуглите действующее вещество - тилорон - токсично и исследований, доказывающих его эффективность, до сих пор нет.\n",
+    "entities": [
+      {
+        "start": 14,
+        "entity_type": "Drugname",
+        "end": 24,
+        "entity_id": "*[0]_se",
+        "entity_text": "фуфломицин",
+        "concept_id": "None",
+        "concept_name": NaN
+      },
+      {
+        "start": 57,
+        "entity_type": "Drugname",
+        "end": 64,
+        "entity_id": "*[1]_se",
+        "entity_text": "тилорон",
+        "concept_id": "C0040221",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "895731.tsv",
+    "text": "Побочные эффекты получил - дикая головная боль и аллергия.\n",
+    "entities": [
+      {
+        "start": 33,
+        "entity_type": "ADR",
+        "end": 46,
+        "entity_id": "*[1]",
+        "entity_text": "головная боль",
+        "concept_id": "C0018681",
+        "concept_name": NaN
+      },
+      {
+        "start": 49,
+        "entity_type": "ADR",
+        "end": 57,
+        "entity_id": "*[2]_se",
+        "entity_text": "аллергия",
+        "concept_id": "C0020517",
+        "concept_name": "Аллергия"
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "895731.tsv",
+    "text": "Вывод - классический российский лохотрон.\n",
+    "entities": [],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "895731.tsv",
+    "text": "Общее впечатление : Амиксин дорогое, неэффективное средство с эффективным побочным действием\n",
+    "entities": [
+      {
+        "start": 20,
+        "entity_type": "Drugname",
+        "end": 27,
+        "entity_id": "*[3]_se",
+        "entity_text": "Амиксин",
+        "concept_id": "C0040221",
+        "concept_name": "АМИКСИН"
+      }
+    ],
+    "sentence_id": 5
+  },
+  {
+    "file_name": "2309597.tsv",
+    "text": "в первый день болезни ребенка решила применить эти свечи (знакомые рекомендовали, им помогло).\n",
+    "entities": [
+      {
+        "start": 51,
+        "entity_type": "Drugform",
+        "end": 56,
+        "entity_id": "*[0]_se",
+        "entity_text": "свечи",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 0
+  },
+  {
+    "file_name": "2309597.tsv",
+    "text": "А у нас вызвал повышение температуры до 40!!!\n",
+    "entities": [
+      {
+        "start": 15,
+        "entity_type": "ADR",
+        "end": 42,
+        "entity_id": "*[1]",
+        "entity_text": "повышение температуры до 40",
+        "concept_id": "C0015967",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 1
+  },
+  {
+    "file_name": "2309597.tsv",
+    "text": "Пришлось делать укол.\n",
+    "entities": [],
+    "sentence_id": 2
+  },
+  {
+    "file_name": "2309597.tsv",
+    "text": "Температура спала, весь день была не выше 38.\n",
+    "entities": [
+      {
+        "start": 0,
+        "entity_type": "ADR",
+        "end": 11,
+        "entity_id": "*[1]_se",
+        "entity_text": "Температура",
+        "concept_id": "C0005904",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 3
+  },
+  {
+    "file_name": "2309597.tsv",
+    "text": "На ночь поставила опять так как не думала что это реакция на свечи.\n",
+    "entities": [
+      {
+        "start": 61,
+        "entity_type": "Drugform",
+        "end": 66,
+        "entity_id": "*[2]_se",
+        "entity_text": "свечи",
+        "concept_id": NaN,
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 4
+  },
+  {
+    "file_name": "2309597.tsv",
+    "text": "И температура стала расти к утру достигла 40,6!!!\n",
+    "entities": [
+      {
+        "start": 2,
+        "entity_type": "ADR",
+        "end": 13,
+        "entity_id": "*[3]_se",
+        "entity_text": "температура",
+        "concept_id": "C0005904",
+        "concept_name": NaN
+      }
+    ],
+    "sentence_id": 5
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "text": "An episode of subacute encephalopathy after the infusion of a moderate dose of methotrexate (1500 mg/m2) (MTX) is reported in a young adult with metastastic gastric cancer.",
+    "drug": "methotrexate",
+    "dosage": "1500 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "She continued to receive regular insulin 4 times per day over the following 3 years with only occasional hives.",
+    "drug": "insulin",
+    "dosage": "4 times per day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 5-month-old infant became lethargic and poorly responsive after receiving 1 drop of brimonidine in each eye.",
+    "drug": "brimonidine",
+    "dosage": "1 drop",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "The presented patient was treated with 200 mg TCA and developed Cushing's syndrome 6 weeks later (cortisol and ACTH concentrations were below limits of detection, TCA concentrations were > 3 micrograms/l).",
+    "drug": "TCA",
+    "dosage": "200 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Central nervous system manifestations of an ibuprofen overdose reversed by naloxone.",
+    "drug": "ibuprofen",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Ibuprofen overdose is usually characterized by GI upset, dizziness, and mild sedation.",
+    "drug": "Ibuprofen",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "In this case, it was suspected that a combination of cigarette smoking, pulmonary fibrosis, and low-dose methotrexate therapy might have promoted the development of lung cancer.",
+    "drug": "methotrexate",
+    "dosage": "low",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A case of normotensive scleroderma renal crisis after high-dose methylprednisolone treatment.",
+    "drug": "methylprednisolone",
+    "dosage": "high",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 60 year-old woman with chronic renal failure developed acute proximal muscle weakness after receiving a regular dosage of colchicine.",
+    "drug": "colchicine",
+    "dosage": "regular",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "The intramuscular challenge test with 25 UI of Miacalcic was positive with an immediate anaphylactic reaction.",
+    "drug": "Miacalcic",
+    "dosage": "25 UI",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "On the fifth day after administration of a high dose of ARA-C (2 g/m2 intravenously every 12 hours), she developed bullous lesions on the hands and soles that disseminated, evolving to necrosis, sepsis, and death on the 22nd day.",
+    "drug": "ARA-C",
+    "dosage": "2 g/m2 intravenously every 12 hours",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "On the fifth day after administration of a high dose of ARA-C (2 g/m2 intravenously every 12 hours), she developed bullous lesions on the hands and soles that disseminated, evolving to necrosis, sepsis, and death on the 22nd day.",
+    "drug": "ARA-C",
+    "dosage": "high",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Toxic epidermal necrolysis after the use of high-dose cytosine arabinoside.",
+    "drug": "cytosine arabinoside",
+    "dosage": "high",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report a fatal case of toxic epidermal necrolysis (TEN) resulting from a high dose of cytosine arabinoside (ARA-C).",
+    "drug": "ARA-C",
+    "dosage": "high",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report a fatal case of toxic epidermal necrolysis (TEN) resulting from a high dose of cytosine arabinoside (ARA-C).",
+    "drug": "cytosine arabinoside",
+    "dosage": "high",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "The day after clozapine was stopped, while he was still receiving clomipramine 150 mg/d, he began behaving oddly, started sweating profusely, shivering, and became tremulous, agitated, and confused.",
+    "drug": "clomipramine",
+    "dosage": "150 mg/d",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "The day after clozapine was stopped, while he was still receiving clomipramine 150 mg/d, he began behaving oddly, started sweating profusely, shivering, and became tremulous, agitated, and confused.",
+    "drug": "clozapine",
+    "dosage": "150 mg/d",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We describe a patient who presented with bloody diarrhoea after 15 mg meloxicam daily for 10 days for osteoarthritis.",
+    "drug": "meloxicam",
+    "dosage": "15 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Pheripheral edema was observed in five female patients after taking proton pump inhibitors omeprazole, lansoprazole, or pantoprazole for 7-15 days for peptic acid diseases in recommended standard doses.",
+    "drug": "lansoprazole",
+    "dosage": "standard",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Pheripheral edema was observed in five female patients after taking proton pump inhibitors omeprazole, lansoprazole, or pantoprazole for 7-15 days for peptic acid diseases in recommended standard doses.",
+    "drug": "omeprazole",
+    "dosage": "standard",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Pheripheral edema was observed in five female patients after taking proton pump inhibitors omeprazole, lansoprazole, or pantoprazole for 7-15 days for peptic acid diseases in recommended standard doses.",
+    "drug": "pantoprazole",
+    "dosage": "standard",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We observed ventricular fibrillation in 2 patients who presented to the emergency department with pre-excited atrial fibrillation and were given 12 mg of adenosine.",
+    "drug": "adenosine",
+    "dosage": "12 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "After the dose of methylprednisolone was reduced from 40 mg to 20 mg i.v. q6h and shifted to other anti-asthma treatment by procaterol metered dose inhaler via spacer, the psychotic reaction disappeared a few hours later.",
+    "drug": "methylprednisolone",
+    "dosage": "40 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Continuous EEG monitoring is helpful in managing seizures that occur as a complication of CBZ OD, after the course of recovery or worsening, and in providing assistance with prognosis.",
+    "drug": "CBZ",
+    "dosage": "OD",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Massive CBZ OD may produce a reversible encephalopathy that includes cortical hyperexcitability, a profound burst-suppression EEG pattern, and cranial nerve areflexia.",
+    "drug": "CBZ",
+    "dosage": "OD",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We describe a case of advanced ovarian carcinoma who developed difficulty walking because of marked pain in the lower extremities and loss of proprioception 25 days after treatment with weekly taxol (80 mg/m(2)x3).",
+    "drug": "taxol",
+    "dosage": "80 mg/m(2)x3",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Myasthenia gravis during low-dose IFN-alpha therapy for chronic hepatitis C.",
+    "drug": "IFN-alpha",
+    "dosage": "low",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A patient with rheumatoid arthritis developed an acute intrahepatic cholestasis after 100 mg of sodium aurothiomalate.",
+    "drug": "sodium aurothiomalate",
+    "dosage": "100 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "CONCLUSIONS: LTG overdose may result in a severe but reversible encephalopathy, a previously undescribed phenomenon.",
+    "drug": "LTG",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "METHODS: A 55-year-old woman became stuporous after overdose with lamotrigine (LTG) and valproic acid (VPA) tablets.",
+    "drug": "lamotrigine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "METHODS: A 55-year-old woman became stuporous after overdose with lamotrigine (LTG) and valproic acid (VPA) tablets.",
+    "drug": "LTG",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "METHODS: A 55-year-old woman became stuporous after overdose with lamotrigine (LTG) and valproic acid (VPA) tablets.",
+    "drug": "valproic acid",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "METHODS: A 55-year-old woman became stuporous after overdose with lamotrigine (LTG) and valproic acid (VPA) tablets.",
+    "drug": "VPA",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 53 year old Greenlandic male was admitted twice over a period of 4 years with a new complete right bundle branch block after ingestion of 10 g and 4 g of carbamazepine respectively.",
+    "drug": "carbamazepine",
+    "dosage": "10 g",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 53 year old Greenlandic male was admitted twice over a period of 4 years with a new complete right bundle branch block after ingestion of 10 g and 4 g of carbamazepine respectively.",
+    "drug": "carbamazepine",
+    "dosage": "4 g",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report a 31-year-old women with recurrent Hodgkin's lymphoma and unrecognized HMSN-1 who developed severe motor neuropathy 3 weeks after the first cycle of treatment including 2 mg of vincristine.",
+    "drug": "vincristine",
+    "dosage": "2 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 33-year-old man with a history of recreational benztropine abuse presented to the emergency department with confusion, abdominal pain, and distention.",
+    "drug": "benztropine",
+    "dosage": "abuse",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "CONCLUSIONS: Clinicians should be aware of a risk of serotonin syndrome with serious extrapyramidal reactions in patients receiving sertraline or venlafaxine when metoclopramide is coadministered even in a single, conventional dose.",
+    "drug": "metoclopramide",
+    "dosage": "conventional",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "CONCLUSIONS: Clinicians should be aware of a risk of serotonin syndrome with serious extrapyramidal reactions in patients receiving sertraline or venlafaxine when metoclopramide is coadministered even in a single, conventional dose.",
+    "drug": "sertraline",
+    "dosage": "conventional",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "CONCLUSIONS: Clinicians should be aware of a risk of serotonin syndrome with serious extrapyramidal reactions in patients receiving sertraline or venlafaxine when metoclopramide is coadministered even in a single, conventional dose.",
+    "drug": "venlafaxine",
+    "dosage": "conventional",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "He was started on oral lansoprazole 60 mg twice daily and, on hospital day 2, his platelet count decreased to 102 x 10(3)/mm(3); on hospital day 3, the platelet count was 36 x 10(3)/mm(3).",
+    "drug": "lansoprazole",
+    "dosage": "60 mg twice daily",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We describe a patient who developed HUS after treatment with mitomycin C (total dose 144 mg/m2) due to a carcinoma of the ascending colon.",
+    "drug": "mitomycin C",
+    "dosage": "144 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 53-year-old man developed lower leg edema 4 weeks after rosiglitazone was increased from 4 mg once/day to 4 mg twice/day.",
+    "drug": "rosiglitazone",
+    "dosage": "4 mg twice/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We present a neonate with a seizure disorder who acutely developed pupillary mydriasis secondary to lidocaine overdose.",
+    "drug": "lidocaine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "CONCLUSIONS: Peripheral administration of low-dose vasopressin for septic shock should be discouraged because of the risk of ischemic skin complications.",
+    "drug": "vasopressin",
+    "dosage": "low",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "The first case concerns a 70-year-old man who developed severe aplastic anemia 7 weeks after treatment with 500 mg of ticlopidine daily.",
+    "drug": "ticlopidine",
+    "dosage": "500 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Mean time between initiation of gemcitabine therapy and onset of HUS was 7.4 +/- 3.5 months, or 21.9 +/- 10.9 doses of gemcitabine.",
+    "drug": "gemcitabine",
+    "dosage": "21.9 +/- 10.9",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Mean time between initiation of gemcitabine therapy and onset of HUS was 7.4 +/- 3.5 months, or 21.9 +/- 10.9 doses of gemcitabine.",
+    "drug": "gemcitabine",
+    "dosage": "21.9 +/- 10.9",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "CASE REPORT: Soon after initiation of amiodarone HCl (200 mg/day), a 76-year-old man came to us with symptoms of visual \"shining,\" glare, color vision anomalies, and gradually decreased vision.",
+    "drug": "amiodarone HCl",
+    "dosage": "200 mg/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Successful desensitization to high-dose methotrexate after systemic anaphylaxis.",
+    "drug": "methotrexate",
+    "dosage": "high",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "While 40 mg/day of prednisolone improved hepatic dysfunction dramatically, her diabetic milieu deteriorated seriously.",
+    "drug": "prednisolone",
+    "dosage": "40 mg/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "This report describes an individual with mental retardation who experienced behavioral exacerbation associated with clonazepam prescribed at 2 mg/day (0.02 mg/kg/day) to treat aggression, self-injurious behavior, property destruction, and screaming, which was measured with a 15-minute partial interval recording measurement method.",
+    "drug": "clonazepam",
+    "dosage": "0.02 mg/kg/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "This entity is probably related to a combination of high doses of corticosteroids, vecuronium administration and metabolic abnormalities associated with respiratory failure.",
+    "drug": "vecuronium",
+    "dosage": "high doses",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We describe the development of cutaneous scleroderma in 3 patients coincident with the use of bleomycin in low cumulative doses of less than 100 U.",
+    "drug": "bleomycin",
+    "dosage": "100 U",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We consider asterixis to be an easily overlooked sign of neurotoxicity, which may occur even at low or moderate dosage levels, if certain drugs as lithium or clozapine are used in combination with CBZ.",
+    "drug": "CBZ",
+    "dosage": "low or moderate dosage",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We consider asterixis to be an easily overlooked sign of neurotoxicity, which may occur even at low or moderate dosage levels, if certain drugs as lithium or clozapine are used in combination with CBZ.",
+    "drug": "clozapine",
+    "dosage": "low or moderate dosage",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We consider asterixis to be an easily overlooked sign of neurotoxicity, which may occur even at low or moderate dosage levels, if certain drugs as lithium or clozapine are used in combination with CBZ.",
+    "drug": "lithium",
+    "dosage": "low or moderate dosage",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 74-year-old patient with idiopathic Parkinson's disease was evaluated for unintended sleep episodes that occurred after long-term treatment with 400 mg/day of L-dopa.",
+    "drug": "L-dopa",
+    "dosage": "400 mg/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We present a case of a 20-year-old woman who ingested 900 mg of glyburide causing refractory hypoglycemia resistant to treatment with intravenous dextrose, glucagon, and diazoxide.",
+    "drug": "glyburide",
+    "dosage": "900 mg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We describe the infectious toxicities experienced by the first two patients in our institution treated with dexamethasone (10 mg/m(2)/day for 4 weeks with gradual tapering) during induction according to the dexamethasone arm of BFM 2000 and review the relevant literature that suggests an increased risk of infectious complications with dexamethasone.",
+    "drug": "dexamethasone",
+    "dosage": "10 mg/m(2)/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We describe the infectious toxicities experienced by the first two patients in our institution treated with dexamethasone (10 mg/m(2)/day for 4 weeks with gradual tapering) during induction according to the dexamethasone arm of BFM 2000 and review the relevant literature that suggests an increased risk of infectious complications with dexamethasone.",
+    "drug": "dexamethasone",
+    "dosage": "10 mg/m(2)/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "After initiation of topical vitamin D3 ointment (20 micro g/g of tacalcitol) 10 g/day for the skin lesions, both the serum level of calcium and urinary excretion of calcium increased gradually.",
+    "drug": "vitamin D3",
+    "dosage": "20 micro g/g",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "DATA SYNTHESIS: A 49-year-old man developed symptoms of severe psychosis concomitant with ciprofloxacin (250 mg bid) treatment.",
+    "drug": "ciprofloxacin",
+    "dosage": "250 mg bid",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "However here we reported two patients, presenting with PD during high dose colchicine treatment for familiar mediterranean fever (FMF).",
+    "drug": "colchicine",
+    "dosage": "high",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report a case of unintentional overdose of oral pilocarpine tablets that resulted in bradycardia, mild hypotension, and muscarinic symptoms in a patient with Sjogren's syndrome.",
+    "drug": "pilocarpine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report here a 26-year-old female with diffuse large B-cell lymphoma who died of severe pulmonary fibrosis 81 days after the administration of high-dose BCNU (600 mg/m2).",
+    "drug": "BCNU",
+    "dosage": "600 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report here a 26-year-old female with diffuse large B-cell lymphoma who died of severe pulmonary fibrosis 81 days after the administration of high-dose BCNU (600 mg/m2).",
+    "drug": "BCNU",
+    "dosage": "high-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "In this paper we report a case of nimodipine overdosage resulting in prolonged hypotension and hypoxemia, which was successfully treated with calcium gluconate.",
+    "drug": "nimodipine",
+    "dosage": "overdosage",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Tiagabine overdose causes an unusual array of neurological symptoms, many similar to reported adverse effects during therapeutic use.",
+    "drug": "Tiagabine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Neurologic symptoms resolved after stopping CAP for 4 weeks in Patient A, with no recurrence after reinitiating CAP alone at 2000 mg/m2.",
+    "drug": "CAP",
+    "dosage": "2000 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Neurologic symptoms resolved after stopping CAP for 4 weeks in Patient A, with no recurrence after reinitiating CAP alone at 2000 mg/m2.",
+    "drug": "CAP",
+    "dosage": "2000 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Patient A reported right leg weakness (foot drop) during week 4 of CAP-XRT (1600 mg/m2).",
+    "drug": "CAP-XRT",
+    "dosage": "1600 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Patient B developed perioral and upper extremity paresthesias during the fourth cycle of CAP alone (2500 mg/m2).",
+    "drug": "CAP",
+    "dosage": "2500 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "In all cases, drugs in addition to quetiapine were detected, but in cases #1 and #2, the cause of death was considered to be a quetiapine overdose and the other drugs were not considered to be contributory.",
+    "drug": "quetiapine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We present three cases from the Provincial Toxicology Center of British Columbia, Canada in which suicidal overdose deaths were associated with quetiapine.",
+    "drug": "quetiapine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Paradoxical cerebral cortical hyperexcitability following flupirtine overdose.",
+    "drug": "flupirtine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "The patient was found to have no motile sperm with a normal sperm count, while taking a dose of 400 mg/day of carbamazepine.",
+    "drug": "carbamazepine",
+    "dosage": "400 mg/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 64-year-old man with schizophrenia developed myoclonic jerks when given higher doses of quetiapine.",
+    "drug": "quetiapine",
+    "dosage": "higher doses",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 74-year-old hypercholestrerolaemic woman taking cerivastatin (0.15 mg/day) for 22 days complained of general muscle weakness and muscle pain.",
+    "drug": "cerivastatin",
+    "dosage": "0.15 mg/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Carboplatin hypersensitivity induced by low-dose paclitaxel/carboplatin in multiple platinum-treated patients with recurrent ovarian cancer.",
+    "drug": "Carboplatin",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Carboplatin hypersensitivity induced by low-dose paclitaxel/carboplatin in multiple platinum-treated patients with recurrent ovarian cancer.",
+    "drug": "carboplatin",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Carboplatin hypersensitivity induced by low-dose paclitaxel/carboplatin in multiple platinum-treated patients with recurrent ovarian cancer.",
+    "drug": "paclitaxel",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Our report suggested that CBDCA hypersensitivity was correlated with the total dose of previously administered platinum agents and that CBDCA should be excluded in patients who have received multiple platinum-based chemotherapy, even in platinum-sensitive cases, because CBDCA hypersensitivity can occur even with low-dose CBDCA administration.",
+    "drug": "CBDCA",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Our report suggested that CBDCA hypersensitivity was correlated with the total dose of previously administered platinum agents and that CBDCA should be excluded in patients who have received multiple platinum-based chemotherapy, even in platinum-sensitive cases, because CBDCA hypersensitivity can occur even with low-dose CBDCA administration.",
+    "drug": "CBDCA",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Our report suggested that CBDCA hypersensitivity was correlated with the total dose of previously administered platinum agents and that CBDCA should be excluded in patients who have received multiple platinum-based chemotherapy, even in platinum-sensitive cases, because CBDCA hypersensitivity can occur even with low-dose CBDCA administration.",
+    "drug": "CBDCA",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report five cases of carboplatin (CBDCA) hypersensitivity after weekly low-dose paclitaxel (60 mg/m2)/CBDCA (area under the concentration curve = 2) therapy in patients with recurrent ovarian cancer receiving multiple platinum-based chemotherapy.",
+    "drug": "carboplatin",
+    "dosage": "60 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report five cases of carboplatin (CBDCA) hypersensitivity after weekly low-dose paclitaxel (60 mg/m2)/CBDCA (area under the concentration curve = 2) therapy in patients with recurrent ovarian cancer receiving multiple platinum-based chemotherapy.",
+    "drug": "CBDCA",
+    "dosage": "60 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report five cases of carboplatin (CBDCA) hypersensitivity after weekly low-dose paclitaxel (60 mg/m2)/CBDCA (area under the concentration curve = 2) therapy in patients with recurrent ovarian cancer receiving multiple platinum-based chemotherapy.",
+    "drug": "paclitaxel",
+    "dosage": "60 mg/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report five cases of carboplatin (CBDCA) hypersensitivity after weekly low-dose paclitaxel (60 mg/m2)/CBDCA (area under the concentration curve = 2) therapy in patients with recurrent ovarian cancer receiving multiple platinum-based chemotherapy.",
+    "drug": "carboplatin",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report five cases of carboplatin (CBDCA) hypersensitivity after weekly low-dose paclitaxel (60 mg/m2)/CBDCA (area under the concentration curve = 2) therapy in patients with recurrent ovarian cancer receiving multiple platinum-based chemotherapy.",
+    "drug": "CBDCA",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report five cases of carboplatin (CBDCA) hypersensitivity after weekly low-dose paclitaxel (60 mg/m2)/CBDCA (area under the concentration curve = 2) therapy in patients with recurrent ovarian cancer receiving multiple platinum-based chemotherapy.",
+    "drug": "paclitaxel",
+    "dosage": "low-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "We report an unusual case of massive fluoxetine ingestion resulting in neurological and cardiovascular toxicity resulting in death.",
+    "drug": "fluoxetine",
+    "dosage": "massive",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "The case reported here is of a child given a large dose of intravenous iron sucrose (16 mg/kg) over 3 hours, who subsequently developed features of systemic iron toxicity.",
+    "drug": "iron sucrose",
+    "dosage": "16 mg/kg",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Fatal radiation myelopathy after high-dose busulfan and melphalan chemotherapy and radiotherapy for Ewing's sarcoma: a review of the literature and implications for practice.",
+    "drug": "busulfan",
+    "dosage": "high-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Fatal radiation myelopathy after high-dose busulfan and melphalan chemotherapy and radiotherapy for Ewing's sarcoma: a review of the literature and implications for practice.",
+    "drug": "melphalan",
+    "dosage": "high-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Inadvertent and accidental epinephrine overdose might result in potentially lethal complications.",
+    "drug": "epinephrine",
+    "dosage": "overdose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "Prominent positive U waves appearing with high-dose intravenous phenylephrine.",
+    "drug": "phenylephrine",
+    "dosage": "high-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 56-year-old white woman with a diagnosis of reactive depression developed severe UI after a 30 days' treatment with venlafaxine 75 mg/day.",
+    "drug": "venlafaxine",
+    "dosage": "75 mg/day",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 17-year-old boy with acute lymphoblastic leukemia developed acute renal failure within 48 h of an intravenous high-dose methotrexate (5 g/m2) infusion.",
+    "drug": "methotrexate",
+    "dosage": "5 g/m2",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  },
+  {
+    "text": "A 17-year-old boy with acute lymphoblastic leukemia developed acute renal failure within 48 h of an intravenous high-dose methotrexate (5 g/m2) infusion.",
+    "drug": "methotrexate",
+    "dosage": "high-dose",
+    "indexes": [
+      "drug",
+      "dosage"
+    ]
+  }
+]

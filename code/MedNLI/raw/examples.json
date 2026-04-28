@@ -1,0 +1,1802 @@
+[
+  {
+    "gold_label": "entailment",
+    "sentence1": "Labs were notable for Cr 1.7 (baseline 0.5 per old records) and lactate 2.4.",
+    "sentence2": " Patient has elevated Cr",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Labs were notable for Cr 1.7 (baseline 0.5 per old records) and lactate 2.4.",
+    "sentence2": " Patient has normal Cr",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Labs were notable for Cr 1.7 (baseline 0.5 per old records) and lactate 2.4.",
+    "sentence2": " Patient has elevated BUN",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Nystagmus and twiching of R arm was noted.",
+    "sentence2": " The patient had abnormal neuro exam.",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Nystagmus and twiching of R arm was noted.",
+    "sentence2": " The patient has a normal neuro exam.",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Nystagmus and twiching of R arm was noted.",
+    "sentence2": " The patient has an acute stroke.",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "The patient was seen by his primary care physician after he had complained of a one-week history of dyspnea on exertion and jaw tightness.",
+    "sentence2": " The patient has symptoms of a CHF exacerbation. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "The patient was seen by his primary care physician after he had complained of a one-week history of dyspnea on exertion and jaw tightness.",
+    "sentence2": " The patient has no symptoms. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "The patient was seen by his primary care physician after he had complained of a one-week history of dyspnea on exertion and jaw tightness.",
+    "sentence2": " The patient has has coronary artery disease. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "At [**Hospital 1456**] Hospital the patient was experiencing 10 out of 10 chest pain and received nitropaste two inches, three sublingual nitroglycerins, morphine 4 mg intravenously, Lopressor 5 mg intravenously.",
+    "sentence2": " The patient is being treated with medications used to treat acute coronary syndrome. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "At [**Hospital 1456**] Hospital the patient was experiencing 10 out of 10 chest pain and received nitropaste two inches, three sublingual nitroglycerins, morphine 4 mg intravenously, Lopressor 5 mg intravenously.",
+    "sentence2": " The patient is asymptomatic. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "At [**Hospital 1456**] Hospital the patient was experiencing 10 out of 10 chest pain and received nitropaste two inches, three sublingual nitroglycerins, morphine 4 mg intravenously, Lopressor 5 mg intravenously.",
+    "sentence2": " The patient is having a myocardial infarction. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "History of nephrolithiasis with hematuria 5.",
+    "sentence2": " patient has a history of kidney stones",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "History of nephrolithiasis with hematuria 5.",
+    "sentence2": " patient has no history of kidney stones",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "History of nephrolithiasis with hematuria 5.",
+    "sentence2": " patient has flank pain",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Per patient, he took a combined 100+ pills of Lisinopril, Nifedipine, and Atenolol late yesterday evening.",
+    "sentence2": " The patient overdosed on medication. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Per patient, he took a combined 100+ pills of Lisinopril, Nifedipine, and Atenolol late yesterday evening.",
+    "sentence2": " The patient did not take extra medication. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Per patient, he took a combined 100+ pills of Lisinopril, Nifedipine, and Atenolol late yesterday evening.",
+    "sentence2": " The patient is depressed. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Temporary pacing wire was placed on [**11-7**] for persistent complete heart block, but per report the patient was not pacer dependent.",
+    "sentence2": " The patient has a heart condition",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Temporary pacing wire was placed on [**11-7**] for persistent complete heart block, but per report the patient was not pacer dependent.",
+    "sentence2": " The patient has normal cardiac function",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Temporary pacing wire was placed on [**11-7**] for persistent complete heart block, but per report the patient was not pacer dependent.",
+    "sentence2": " The patient has a history of hypertension",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "On [**8-19**], he did finally have his cardiac catheterization which showed no flow limiting coronary artery disease but he did have an ascending aortic aneurysm of approximately six cm.",
+    "sentence2": " Cardiac catheterization revealed no blockage",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "On [**8-19**], he did finally have his cardiac catheterization which showed no flow limiting coronary artery disease but he did have an ascending aortic aneurysm of approximately six cm.",
+    "sentence2": " Cardiac catheterization revealed flow limiting blockage",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "On [**8-19**], he did finally have his cardiac catheterization which showed no flow limiting coronary artery disease but he did have an ascending aortic aneurysm of approximately six cm.",
+    "sentence2": " The patient has a history of hypertension and smoking",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "At [**Hospital **] rehab, he was being treated with vanco/flagyl for suspected aspiration pneumonia.",
+    "sentence2": " The patient has suspected aspiration pneumonia",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "At [**Hospital **] rehab, he was being treated with vanco/flagyl for suspected aspiration pneumonia.",
+    "sentence2": " the patient is not on antibiotics",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "At [**Hospital **] rehab, he was being treated with vanco/flagyl for suspected aspiration pneumonia.",
+    "sentence2": " the patient had a stroke",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "AROM at delivery yielded clear amniotic fluid.",
+    "sentence2": " Patient has delivered a baby",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "AROM at delivery yielded clear amniotic fluid.",
+    "sentence2": " Patient has not been pregnant",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "AROM at delivery yielded clear amniotic fluid.",
+    "sentence2": " Patient has no PMH",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Left dominant, mild left main, 50% left anterior descending and minimal luminal irregularities.",
+    "sentence2": " There is 50% blockage in the left anterior descending coronary artery",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Left dominant, mild left main, 50% left anterior descending and minimal luminal irregularities.",
+    "sentence2": " There is no blockage in the coronary arteries ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Left dominant, mild left main, 50% left anterior descending and minimal luminal irregularities.",
+    "sentence2": " The patient has a history of high cholesterol and high blood pressure",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "The patient began having symptoms of abdominal pain, nausea and vomiting similar to [** Location **]us episodes of diverticulitis three weeks ago and about a week later presented to the [**Hospital3 **] when she noted stool draining from her vagina and a CT scan at the outside hospital documented the enterovaginal fistula.",
+    "sentence2": " She has a history of digestive disease",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "The patient began having symptoms of abdominal pain, nausea and vomiting similar to [** Location **]us episodes of diverticulitis three weeks ago and about a week later presented to the [**Hospital3 **] when she noted stool draining from her vagina and a CT scan at the outside hospital documented the enterovaginal fistula.",
+    "sentence2": " She has no gastrointestinal dysfunction",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "The patient began having symptoms of abdominal pain, nausea and vomiting similar to [** Location **]us episodes of diverticulitis three weeks ago and about a week later presented to the [**Hospital3 **] when she noted stool draining from her vagina and a CT scan at the outside hospital documented the enterovaginal fistula.",
+    "sentence2": " She has a history of obesity",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "She was started on Dilantin.",
+    "sentence2": " The patient has pain. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "She was started on Dilantin.",
+    "sentence2": " The patient has no pain issues. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "She was started on Dilantin.",
+    "sentence2": " The patient is hospitalized",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "[**Known patient firstname **] [**Known patient lastname 6979**] is a 54-year-old woman with history of CNS lymphoma who presents with increasing seizures and hypotension.",
+    "sentence2": " the patient has CNS lymphoma",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "[**Known patient firstname **] [**Known patient lastname 6979**] is a 54-year-old woman with history of CNS lymphoma who presents with increasing seizures and hypotension.",
+    "sentence2": " the patient has no neurologic symptoms",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "[**Known patient firstname **] [**Known patient lastname 6979**] is a 54-year-old woman with history of CNS lymphoma who presents with increasing seizures and hypotension.",
+    "sentence2": " the patient has HIV",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "At that time, he characterized his pain as chest tightening and burning, with associated radiation to his neck, jaw and arms.",
+    "sentence2": " He has chest pain ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "At that time, he characterized his pain as chest tightening and burning, with associated radiation to his neck, jaw and arms.",
+    "sentence2": " He denies pain ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "At that time, he characterized his pain as chest tightening and burning, with associated radiation to his neck, jaw and arms.",
+    "sentence2": " He has a history of coronary artery disease and hypertension",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Metastatic Renal Cell Carcinoma - diagnosed in [**4-/3406**] - s/p left radical nephrectomy [**5-13**] with pathology consistent with clear cell carcinoma - s/p right upper lobe wedge resection for pulmonary metastasis [**9-14**] - right frontal lobe brain metastasis s/p resection [**4-15**] with sterotactic radiosurgery to resection site [**5-16**] - s/p high dose IL-2 [**11-15**] - s/p right bilobectomy (right upper and right middle lobe) [**1-16**] - s/p right chest wall resection [**11-17**] - s/p right lower lobe wedge resection [**4-18**] - T8 s/p cyberknife [**11-18**] - s/p sunitinib [**8-18**] complicated by hand foot syndrome, mucositis - RAD001 trial [**1-18**] to present - s/p T8 and T9 vetebrectomy and recontruction [**3413-8-18**] Hypertension Peptic Ulcer Disease (h. pylori positive) Hyperglycemia",
+    "sentence2": " History of metastatic cancer",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Metastatic Renal Cell Carcinoma - diagnosed in [**4-/3406**] - s/p left radical nephrectomy [**5-13**] with pathology consistent with clear cell carcinoma - s/p right upper lobe wedge resection for pulmonary metastasis [**9-14**] - right frontal lobe brain metastasis s/p resection [**4-15**] with sterotactic radiosurgery to resection site [**5-16**] - s/p high dose IL-2 [**11-15**] - s/p right bilobectomy (right upper and right middle lobe) [**1-16**] - s/p right chest wall resection [**11-17**] - s/p right lower lobe wedge resection [**4-18**] - T8 s/p cyberknife [**11-18**] - s/p sunitinib [**8-18**] complicated by hand foot syndrome, mucositis - RAD001 trial [**1-18**] to present - s/p T8 and T9 vetebrectomy and recontruction [**3413-8-18**] Hypertension Peptic Ulcer Disease (h. pylori positive) Hyperglycemia",
+    "sentence2": " No surgical history ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Metastatic Renal Cell Carcinoma - diagnosed in [**4-/3406**] - s/p left radical nephrectomy [**5-13**] with pathology consistent with clear cell carcinoma - s/p right upper lobe wedge resection for pulmonary metastasis [**9-14**] - right frontal lobe brain metastasis s/p resection [**4-15**] with sterotactic radiosurgery to resection site [**5-16**] - s/p high dose IL-2 [**11-15**] - s/p right bilobectomy (right upper and right middle lobe) [**1-16**] - s/p right chest wall resection [**11-17**] - s/p right lower lobe wedge resection [**4-18**] - T8 s/p cyberknife [**11-18**] - s/p sunitinib [**8-18**] complicated by hand foot syndrome, mucositis - RAD001 trial [**1-18**] to present - s/p T8 and T9 vetebrectomy and recontruction [**3413-8-18**] Hypertension Peptic Ulcer Disease (h. pylori positive) Hyperglycemia",
+    "sentence2": " History of hematuria and flank pain",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "She had an MRI as part of her metastatic workup which revealed multiple brain metastases, the largest of which was 1.5cm.",
+    "sentence2": " Patient has cancer",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "She had an MRI as part of her metastatic workup which revealed multiple brain metastases, the largest of which was 1.5cm.",
+    "sentence2": " Patient has no malignancy",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "She had an MRI as part of her metastatic workup which revealed multiple brain metastases, the largest of which was 1.5cm.",
+    "sentence2": " Patient has disease through her body",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He was able to keep the milk down and at no time vomited or aspirated.",
+    "sentence2": " the patient is an infant",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He was able to keep the milk down and at no time vomited or aspirated.",
+    "sentence2": " the patient is aspirating",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He was able to keep the milk down and at no time vomited or aspirated.",
+    "sentence2": " the patient is premature",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "CXR showed low lung volumes, no focal consolidation or pleural effusion, minimal left basilar atelectasis.",
+    "sentence2": " Patient has essentially normal chest X-ray",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "CXR showed low lung volumes, no focal consolidation or pleural effusion, minimal left basilar atelectasis.",
+    "sentence2": " Patient has well expanded lungs",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "CXR showed low lung volumes, no focal consolidation or pleural effusion, minimal left basilar atelectasis.",
+    "sentence2": " Patient has early aspiration",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "The patient denied any cough, dysuria, headache, photophobia, stiff neck, or diarrhea.",
+    "sentence2": " The patient does not have pain with urination",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "The patient denied any cough, dysuria, headache, photophobia, stiff neck, or diarrhea.",
+    "sentence2": " The patient complains of painful urination",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "The patient denied any cough, dysuria, headache, photophobia, stiff neck, or diarrhea.",
+    "sentence2": " No history of meningitis",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "She is currently in stable condition and off of pressors and IABP.",
+    "sentence2": " She was treated for a cardiac condition",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "She is currently in stable condition and off of pressors and IABP.",
+    "sentence2": " She has no history of cardiac disease",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "She is currently in stable condition and off of pressors and IABP.",
+    "sentence2": " She has a history of myocardial infarction",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He was given depakote for seizure prevention as well as ativan.",
+    "sentence2": " the patient has a history of seizures",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He was given depakote for seizure prevention as well as ativan.",
+    "sentence2": " the patient has no history of seizures",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He was given depakote for seizure prevention as well as ativan.",
+    "sentence2": " the patient has a brain tumor",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "75 y/o M w/ atrial fibrillation, HTN, dyslipidemia, and DVT (while on coumadin so now on lovenox) who persented with a 1 day history of worsening SOB and cough productive of clear sputum.",
+    "sentence2": " the patient has shortness of breath",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "75 y/o M w/ atrial fibrillation, HTN, dyslipidemia, and DVT (while on coumadin so now on lovenox) who persented with a 1 day history of worsening SOB and cough productive of clear sputum.",
+    "sentence2": " the patient denies difficulty breathing",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "75 y/o M w/ atrial fibrillation, HTN, dyslipidemia, and DVT (while on coumadin so now on lovenox) who persented with a 1 day history of worsening SOB and cough productive of clear sputum.",
+    "sentence2": " the patient has pneumonia",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "History of TIA [**5-/3025**] with left hemi[** Location **] that resolved.",
+    "sentence2": " Patient has a focal neurological deficit",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "History of TIA [**5-/3025**] with left hemi[** Location **] that resolved.",
+    "sentence2": " Patient has no symptoms",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "History of TIA [**5-/3025**] with left hemi[** Location **] that resolved.",
+    "sentence2": " Patient has abnormal brain MRI",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Her abdominal exam was benign.",
+    "sentence2": " The patient does not have an abdominal exam concerning for an infection. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Her abdominal exam was benign.",
+    "sentence2": " The patient has peritoneal signs. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Her abdominal exam was benign.",
+    "sentence2": " The patient does not have an acute intraabdominal process. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "GASTROINTESTINAL:  [**Known patient lastname 635**] was started on Reglan and Zantac on [**10-16**] to maximize medical therapy that may be contributing to his apneic and bradycardic episodes.",
+    "sentence2": " He has had slow heart rate and suspension of breathing",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "GASTROINTESTINAL:  [**Known patient lastname 635**] was started on Reglan and Zantac on [**10-16**] to maximize medical therapy that may be contributing to his apneic and bradycardic episodes.",
+    "sentence2": " His breathing and heart rate have been normal",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "GASTROINTESTINAL:  [**Known patient lastname 635**] was started on Reglan and Zantac on [**10-16**] to maximize medical therapy that may be contributing to his apneic and bradycardic episodes.",
+    "sentence2": " He has a history of obesity",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He took some oxycodone without relief.",
+    "sentence2": " He had pain",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He took some oxycodone without relief.",
+    "sentence2": " He has no pain",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He took some oxycodone without relief.",
+    "sentence2": " He has abdominal pain",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "VRE septic thrombophlebitis in IJ ([**1-19**]) s/p linezolid) 6.",
+    "sentence2": " the patient had an infection in the ij",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "VRE septic thrombophlebitis in IJ ([**1-19**]) s/p linezolid) 6.",
+    "sentence2": " the patient has no history of infection",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "VRE septic thrombophlebitis in IJ ([**1-19**]) s/p linezolid) 6.",
+    "sentence2": " the patient had a central line",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "She was seen by ID at [**Hospital1 294**] on [**6-17**] who felt this was less likely an infectious process.",
+    "sentence2": " The patient was evaluated by infectious disease specialists  ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "She was seen by ID at [**Hospital1 294**] on [**6-17**] who felt this was less likely an infectious process.",
+    "sentence2": " The patient was suspected to have tuberculosis ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "She was seen by ID at [**Hospital1 294**] on [**6-17**] who felt this was less likely an infectious process.",
+    "sentence2": " The patient has a fever and elevated white count  ",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Pacemaker for sick sinus syndrome.",
+    "sentence2": " Pacemakers are used for symptomatic arrhythmias. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Pacemaker for sick sinus syndrome.",
+    "sentence2": " Pacemakers are used for pulmonary edema. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Pacemaker for sick sinus syndrome.",
+    "sentence2": " Patients with a pacemakers have atrial fibrillation. ",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "EMS found her at home where she admitted to ingesting 60mg Cymbalta, 12mg Cyproheptadine, and 22mg Klonopin with an entire bottle of wine (750cc).",
+    "sentence2": " She intentionally overdosed on prescription medication ",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "EMS found her at home where she admitted to ingesting 60mg Cymbalta, 12mg Cyproheptadine, and 22mg Klonopin with an entire bottle of wine (750cc).",
+    "sentence2": " She ingested no medication",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "EMS found her at home where she admitted to ingesting 60mg Cymbalta, 12mg Cyproheptadine, and 22mg Klonopin with an entire bottle of wine (750cc).",
+    "sentence2": " She has a history of depression",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He underwent partial vertebrectomy, fusion, debridement, and vertebral spacer placement at L3-L4 on [**3313-12-1**]. .",
+    "sentence2": " Patient has had spinal intervention",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He underwent partial vertebrectomy, fusion, debridement, and vertebral spacer placement at L3-L4 on [**3313-12-1**]. .",
+    "sentence2": " Patient has no PSH",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He underwent partial vertebrectomy, fusion, debridement, and vertebral spacer placement at L3-L4 on [**3313-12-1**]. .",
+    "sentence2": " Patient has back pain",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "-Colon CA: T3N2, dx 2 yrs ago, s/p resection ([**5-17**] LN+), mets to liver and brain, last CEA 7.4 -Chemo: last [**11-12**] -HTN -GERD",
+    "sentence2": " The patient has cancer",
+    "split": "train"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "-Colon CA: T3N2, dx 2 yrs ago, s/p resection ([**5-17**] LN+), mets to liver and brain, last CEA 7.4 -Chemo: last [**11-12**] -HTN -GERD",
+    "sentence2": " The patient has no history of cancer",
+    "split": "train"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "-Colon CA: T3N2, dx 2 yrs ago, s/p resection ([**5-17**] LN+), mets to liver and brain, last CEA 7.4 -Chemo: last [**11-12**] -HTN -GERD",
+    "sentence2": " History of melena",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Came to ED complaining of vomiting and weakness.",
+    "sentence2": " Patient has upper GI pain",
+    "split": "train"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "No history of blood clots or DVTs, has never had chest pain prior to one week ago.",
+    "sentence2": " Patient has angina",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "No history of blood clots or DVTs, has never had chest pain prior to one week ago.",
+    "sentence2": " Patient has had multiple PEs",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "No history of blood clots or DVTs, has never had chest pain prior to one week ago.",
+    "sentence2": " Patient has CAD",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Over the past week PTA he has been more somnolent and difficult to arrouse. .",
+    "sentence2": " He has been less alert over the past week ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Over the past week PTA he has been more somnolent and difficult to arrouse. .",
+    "sentence2": " Over the past week he has been alert and oriented",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Over the past week PTA he has been more somnolent and difficult to arrouse. .",
+    "sentence2": " He is disorientated and complains of weakness ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "COPD/Asthma: Spirometry ([**4-/3393**]) FVC 2.48 (67%), FEV1 1.96 (68%), FEV1/FVC 101%, DLCO ([**3-/3392**]) 51%, Lung vol ([**3-/3392**]): TLC 64%, FRC 48%, RV 49%, ERV 47%, multiple admissions, intubation x 1 [**3391**] 3.",
+    "sentence2": " the patient has a history of obstructive lung disease",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "COPD/Asthma: Spirometry ([**4-/3393**]) FVC 2.48 (67%), FEV1 1.96 (68%), FEV1/FVC 101%, DLCO ([**3-/3392**]) 51%, Lung vol ([**3-/3392**]): TLC 64%, FRC 48%, RV 49%, ERV 47%, multiple admissions, intubation x 1 [**3391**] 3.",
+    "sentence2": " the patient has normal lungs",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "COPD/Asthma: Spirometry ([**4-/3393**]) FVC 2.48 (67%), FEV1 1.96 (68%), FEV1/FVC 101%, DLCO ([**3-/3392**]) 51%, Lung vol ([**3-/3392**]): TLC 64%, FRC 48%, RV 49%, ERV 47%, multiple admissions, intubation x 1 [**3391**] 3.",
+    "sentence2": " the patient is a smoker",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "During hospitalization, patient became progressively more dyspnic requiring BiPAP and then a NRB.",
+    "sentence2": " The patient is in respiratory failure. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "During hospitalization, patient became progressively more dyspnic requiring BiPAP and then a NRB.",
+    "sentence2": " The patient is on room air. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "During hospitalization, patient became progressively more dyspnic requiring BiPAP and then a NRB.",
+    "sentence2": " The patient has pulmonary edema. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "She was treated with Magnesium Sulfate, Labetalol, Hydralazine and bedrest as well as betamethasone.",
+    "sentence2": " The patient is pregnant. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "She was treated with Magnesium Sulfate, Labetalol, Hydralazine and bedrest as well as betamethasone.",
+    "sentence2": " The patient is not pregnant. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "She was treated with Magnesium Sulfate, Labetalol, Hydralazine and bedrest as well as betamethasone.",
+    "sentence2": " The patient has preeclampsia. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "[**Known patient lastname 26444**] is a 54y/o gentleman with HTN, HLD, DM2, CKD (baseline Cr 2.0-2.2), CAD s/p CABG [**2947**] (LIMA-LAD, SVG-PDA, and radial-OM1-OM2) with systolic and diastolic heart failure (EF has been as low as 20% in the past) who is admitted from clinic due to concern for CHF exacerbation.",
+    "sentence2": " the patient has heart failure",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "[**Known patient lastname 26444**] is a 54y/o gentleman with HTN, HLD, DM2, CKD (baseline Cr 2.0-2.2), CAD s/p CABG [**2947**] (LIMA-LAD, SVG-PDA, and radial-OM1-OM2) with systolic and diastolic heart failure (EF has been as low as 20% in the past) who is admitted from clinic due to concern for CHF exacerbation.",
+    "sentence2": " the patient has a normal heart",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "[**Known patient lastname 26444**] is a 54y/o gentleman with HTN, HLD, DM2, CKD (baseline Cr 2.0-2.2), CAD s/p CABG [**2947**] (LIMA-LAD, SVG-PDA, and radial-OM1-OM2) with systolic and diastolic heart failure (EF has been as low as 20% in the past) who is admitted from clinic due to concern for CHF exacerbation.",
+    "sentence2": " the patient is hypotensive",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Her a[** Location **]e and PO intake have been normal.",
+    "sentence2": " Patient has been eating by mouth",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Her a[** Location **]e and PO intake have been normal.",
+    "sentence2": " She has been NPO since midnigh",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Her a[** Location **]e and PO intake have been normal.",
+    "sentence2": " Patient has history of dysphagia",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "On [**2781-9-17**], a lumbar puncture was performed which was negative for malignant cells.",
+    "sentence2": " Patient has had a procedure",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "On [**2781-9-17**], a lumbar puncture was performed which was negative for malignant cells.",
+    "sentence2": " Patient has metastases to the spine",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "On [**2781-9-17**], a lumbar puncture was performed which was negative for malignant cells.",
+    "sentence2": " Patient has cancer",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "The patient denied any headache, visual changes, chest pain, pleuritic pain, back pain, abdominal pain, diarrhea, blood per rectum, melena, dysuria, rash, or joint pain.",
+    "sentence2": " the patient denies chest pain",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "The patient denied any headache, visual changes, chest pain, pleuritic pain, back pain, abdominal pain, diarrhea, blood per rectum, melena, dysuria, rash, or joint pain.",
+    "sentence2": " the patient has chest pain",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "The patient denied any headache, visual changes, chest pain, pleuritic pain, back pain, abdominal pain, diarrhea, blood per rectum, melena, dysuria, rash, or joint pain.",
+    "sentence2": " the patient has no medical history",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Denied headache, sinus tenderness, rhinorrhea or congestion.",
+    "sentence2": " Patient has negative ROS",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Denied headache, sinus tenderness, rhinorrhea or congestion.",
+    "sentence2": " Patient has headaches",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Denied headache, sinus tenderness, rhinorrhea or congestion.",
+    "sentence2": " Patient has negative exam",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Head CT showed small right temporal intraparenchymal hemorrhage, 2x2 cm., which was unchanged on repeat head CT.",
+    "sentence2": " the patient has intracranial hemorrhage",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Head CT showed small right temporal intraparenchymal hemorrhage, 2x2 cm., which was unchanged on repeat head CT.",
+    "sentence2": " the patient had a normal head ct",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Head CT showed small right temporal intraparenchymal hemorrhage, 2x2 cm., which was unchanged on repeat head CT.",
+    "sentence2": " the patient had hypertensive hemorrhage",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Ruled in for NSTEMI with troponin 0.11.",
+    "sentence2": " The patient has myocardial ischemia. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Ruled in for NSTEMI with troponin 0.11.",
+    "sentence2": " The patient has normal myocardial perfusion. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Ruled in for NSTEMI with troponin 0.11.",
+    "sentence2": " The patient has chest pain. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "26 yo male with HIV (CD4 11 [**5-14**]) non compliant with HAART, with recent [**Hospital1 68**] admission with purigo nodularis and treated with sarna and benadryl, now c/o 3-days of increased right arm pain and swelling.",
+    "sentence2": " The patient has a chronic illness. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "26 yo male with HIV (CD4 11 [**5-14**]) non compliant with HAART, with recent [**Hospital1 68**] admission with purigo nodularis and treated with sarna and benadryl, now c/o 3-days of increased right arm pain and swelling.",
+    "sentence2": " The patient does not have an infection. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "26 yo male with HIV (CD4 11 [**5-14**]) non compliant with HAART, with recent [**Hospital1 68**] admission with purigo nodularis and treated with sarna and benadryl, now c/o 3-days of increased right arm pain and swelling.",
+    "sentence2": " The patient has an AIDS related infection. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Her CXR was clear and it did not appear she had an infection.",
+    "sentence2": " Chest x-ray showed no consolidation ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Her CXR was clear and it did not appear she had an infection.",
+    "sentence2": " Chest x-ray showed infiltrates",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Her CXR was clear and it did not appear she had an infection.",
+    "sentence2": " The patient denies cough or shortness of breath",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Type II Diabetes Mellitus 3.",
+    "sentence2": " The patient has type II diabetes.",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Type II Diabetes Mellitus 3.",
+    "sentence2": " The patient has normal blood glucose.",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Type II Diabetes Mellitus 3.",
+    "sentence2": " The patient does not require insulin.",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He had several episodes of hyperglycemia requiring large doses of insulin.",
+    "sentence2": " He had high blood sugar levels",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He had several episodes of hyperglycemia requiring large doses of insulin.",
+    "sentence2": " Blood sugars were within normal limits",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He had several episodes of hyperglycemia requiring large doses of insulin.",
+    "sentence2": " He has diabetic neuropathy",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "HTN 10.sinusitis diagnosed during last admission 11. h/o R PTX last hospitalization requiring CT placement (d/c'd) 12. ?hypoxic brain injury with paresis and cognitive deficit 13.",
+    "sentence2": " The patient has brain damage. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "HTN 10.sinusitis diagnosed during last admission 11. h/o R PTX last hospitalization requiring CT placement (d/c'd) 12. ?hypoxic brain injury with paresis and cognitive deficit 13.",
+    "sentence2": " The patient has normal neural anatomy. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "HTN 10.sinusitis diagnosed during last admission 11. h/o R PTX last hospitalization requiring CT placement (d/c'd) 12. ?hypoxic brain injury with paresis and cognitive deficit 13.",
+    "sentence2": " The patient has multiple medical conditions. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Ventricular drain was also removed on [**2810-12-14**].",
+    "sentence2": " History of elevated intracranial pressure",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Ventricular drain was also removed on [**2810-12-14**].",
+    "sentence2": " No history of neurological symptoms",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Ventricular drain was also removed on [**2810-12-14**].",
+    "sentence2": " History of seizures",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Of note, on [**1-25**] pt underwent paracentesis which revealed 145 WBC.  per OMR, on [**1-31**] Dr. [**Name (NI) **] documented that there was 1 positive ascitic fluid culture (coag negative staph) with plan to monitor for possible evidence of infection and treat with antibiotics if indicated.",
+    "sentence2": " the patient has ascites",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Of note, on [**1-25**] pt underwent paracentesis which revealed 145 WBC.  per OMR, on [**1-31**] Dr. [**Name (NI) **] documented that there was 1 positive ascitic fluid culture (coag negative staph) with plan to monitor for possible evidence of infection and treat with antibiotics if indicated.",
+    "sentence2": " the patient has no ascites",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Of note, on [**1-25**] pt underwent paracentesis which revealed 145 WBC.  per OMR, on [**1-31**] Dr. [**Name (NI) **] documented that there was 1 positive ascitic fluid culture (coag negative staph) with plan to monitor for possible evidence of infection and treat with antibiotics if indicated.",
+    "sentence2": " the patient has SBP",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He states that he ate several handfuls of store-bought mixed nuts and reports that within 1 hour he noted swelling of his tongue.",
+    "sentence2": " He had a reaction after eating nuts",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He states that he ate several handfuls of store-bought mixed nuts and reports that within 1 hour he noted swelling of his tongue.",
+    "sentence2": " He denies allergic reactions to food or drugs",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He states that he ate several handfuls of store-bought mixed nuts and reports that within 1 hour he noted swelling of his tongue.",
+    "sentence2": " He has several allergies to food and drugs",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "In the catheterization laboratory, she was found to have mitral regurgitation and a right-dominant coronary system.",
+    "sentence2": " The patient has a heart valve abnormality",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "In the catheterization laboratory, she was found to have mitral regurgitation and a right-dominant coronary system.",
+    "sentence2": " Her heart valves were functioning normally",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "In the catheterization laboratory, she was found to have mitral regurgitation and a right-dominant coronary system.",
+    "sentence2": " She has shortness of breath",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  A 34-year-old male status post high speed motor vehicle crash unrestrained driver.",
+    "sentence2": " Patient has recent trauma",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  A 34-year-old male status post high speed motor vehicle crash unrestrained driver.",
+    "sentence2": " Patient has not been in an accident",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  A 34-year-old male status post high speed motor vehicle crash unrestrained driver.",
+    "sentence2": " Patient has pain",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "History of [**Male First Name (un) **] mounted spotted fever.",
+    "sentence2": " Patient has an infection",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "History of [**Male First Name (un) **] mounted spotted fever.",
+    "sentence2": " Patient has no complaints",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "History of [**Male First Name (un) **] mounted spotted fever.",
+    "sentence2": " Patient is febrile",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "CHF, EF 55% 6.",
+    "sentence2": " Congestive heart failure",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "CHF, EF 55% 6.",
+    "sentence2": " No history of heart disease",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "CHF, EF 55% 6.",
+    "sentence2": " complains of shortness of breath ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Started Rituxan for 4 weeks in 5/[**3492**].",
+    "sentence2": " Treated with Rituximab",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Started Rituxan for 4 weeks in 5/[**3492**].",
+    "sentence2": " No history of treatment with monoclonal antibody",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Started Rituxan for 4 weeks in 5/[**3492**].",
+    "sentence2": " History of cancer",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Received GI cocktail for h/o GERD, ?esophageal spasm.",
+    "sentence2": " History of gastroesophageal reflux disease",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Received GI cocktail for h/o GERD, ?esophageal spasm.",
+    "sentence2": " No history of gastroesophageal reflux disease",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Received GI cocktail for h/o GERD, ?esophageal spasm.",
+    "sentence2": " Received a proton pump inhibitor ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Mongolian spots on back.",
+    "sentence2": " Patient has skin findings on exam",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Mongolian spots on back.",
+    "sentence2": " Patient has no exam findings",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Mongolian spots on back.",
+    "sentence2": " Patient has NF-1",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "She spoke with her oncology team, and was given a prescription for oxycodone 20 mg, which she took [**Hospital1 **].",
+    "sentence2": " The patient has pain issues. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "She spoke with her oncology team, and was given a prescription for oxycodone 20 mg, which she took [**Hospital1 **].",
+    "sentence2": " The patient does not have pain. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "She spoke with her oncology team, and was given a prescription for oxycodone 20 mg, which she took [**Hospital1 **].",
+    "sentence2": " The patient has cancer.",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Chest x-ray was consistent with mild congestive heart failure.",
+    "sentence2": " Patient has pulmonary edema",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Chest x-ray was consistent with mild congestive heart failure.",
+    "sentence2": " Patient has normal EF",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Chest x-ray was consistent with mild congestive heart failure.",
+    "sentence2": " Patient has DOE",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  The patient is a 64-year-old woman with a history of right parietal occipital hemorrhage in [**3113-9-29**].",
+    "sentence2": " the patient has intracranial hemorrhage",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  The patient is a 64-year-old woman with a history of right parietal occipital hemorrhage in [**3113-9-29**].",
+    "sentence2": " the patient has a normal brain",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  The patient is a 64-year-old woman with a history of right parietal occipital hemorrhage in [**3113-9-29**].",
+    "sentence2": " the patient had hypertensive hemorrhage",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "The infant emerged with spontaneous cry.",
+    "sentence2": " The infant was just born. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "The infant emerged with spontaneous cry.",
+    "sentence2": " The infant was still born. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "The infant emerged with spontaneous cry.",
+    "sentence2": " The patient was born by vaginal delivery. ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He was transferred to [**First Name4 (NamePattern1) 1212**] [**Last Name (NamePattern1) **] [**First Name (Titles) **] [**Last Name (Titles) **] for cardiac catheterization, which showed severe three vessel disease and aortic stenosis.",
+    "sentence2": " Patient requires a CABG",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He was transferred to [**First Name4 (NamePattern1) 1212**] [**Last Name (NamePattern1) **] [**First Name (Titles) **] [**Last Name (Titles) **] for cardiac catheterization, which showed severe three vessel disease and aortic stenosis.",
+    "sentence2": " Patient has normal coronaries",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He was transferred to [**First Name4 (NamePattern1) 1212**] [**Last Name (NamePattern1) **] [**First Name (Titles) **] [**Last Name (Titles) **] for cardiac catheterization, which showed severe three vessel disease and aortic stenosis.",
+    "sentence2": " Patient has PAD",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Head CT negative for acute bleed or mass.",
+    "sentence2": " Head CT showed no hemorrhage ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Head CT negative for acute bleed or mass.",
+    "sentence2": " Head CT showed hemorrhage ",
+    "split": "validation"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Head CT negative for acute bleed or mass.",
+    "sentence2": " Head CT was normal, patient complains of headache",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "On the day prior to admission, he was very short of breath with positive orthopnea, diaphoresis, and tachycardia.",
+    "sentence2": " He has recent dyspnea",
+    "split": "validation"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "In the ED, initial VS revealed T 98.9, HR 73, BP 121/90, RR 15, O2 sat 98% on RA.",
+    "sentence2": " The patient is hemodynamically stable ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "In the ED, initial VS revealed T 98.9, HR 73, BP 121/90, RR 15, O2 sat 98% on RA.",
+    "sentence2": " The patient is hemodynamically unstable.",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "In the ED, initial VS revealed T 98.9, HR 73, BP 121/90, RR 15, O2 sat 98% on RA.",
+    "sentence2": " The patient is in pain.",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "63 year old woman with known history of hypercholesterolemia and peptic ulcer disease s/p gastric bypass some years ago was involved in a low-speed MVC.",
+    "sentence2": " the patient was in a MVC",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "63 year old woman with known history of hypercholesterolemia and peptic ulcer disease s/p gastric bypass some years ago was involved in a low-speed MVC.",
+    "sentence2": " the patient has no medical history",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "63 year old woman with known history of hypercholesterolemia and peptic ulcer disease s/p gastric bypass some years ago was involved in a low-speed MVC.",
+    "sentence2": " the patient has no significant injuries",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  The patient is a 54 year old male with endstage renal disease secondary to type 1 diabetes who presents for kidney transplant from wife.",
+    "sentence2": " patient is on insulin",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  The patient is a 54 year old male with endstage renal disease secondary to type 1 diabetes who presents for kidney transplant from wife.",
+    "sentence2": " patient has normal renal function",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  The patient is a 54 year old male with endstage renal disease secondary to type 1 diabetes who presents for kidney transplant from wife.",
+    "sentence2": " patient has diabetic neuropathy",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "HISTORY:  [**Known patient lastname **] is a 33-6/7 weeks male, twin #2, born at 0307 p.m. on [**2749-6-23**] via C-section for preeclampsia to a 34- year-old, G1, para 0, now 2, mother with an [**Name (NI) 2016**] of [**2749-8-5**].",
+    "sentence2": " the patient is a premature twin",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "HISTORY:  [**Known patient lastname **] is a 33-6/7 weeks male, twin #2, born at 0307 p.m. on [**2749-6-23**] via C-section for preeclampsia to a 34- year-old, G1, para 0, now 2, mother with an [**Name (NI) 2016**] of [**2749-8-5**].",
+    "sentence2": " the patient is full term",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "HISTORY:  [**Known patient lastname **] is a 33-6/7 weeks male, twin #2, born at 0307 p.m. on [**2749-6-23**] via C-section for preeclampsia to a 34- year-old, G1, para 0, now 2, mother with an [**Name (NI) 2016**] of [**2749-8-5**].",
+    "sentence2": " the patient has low birth weight",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He denied headache or nausea or vomiting.",
+    "sentence2": " He has no head pain ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He denied headache or nausea or vomiting.",
+    "sentence2": " He has Hematemesis",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He denied headache or nausea or vomiting.",
+    "sentence2": " He is afebrile ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "PAST MEDICAL HISTORY:  Significant for diabetes type 2 treated with insulin, gastroesophageal reflux disease, Schatzki's ring, cerebrovascular accident in [**2948**] with residual left hemiparesis treated with Coumadin, TAH/BSO, peripheral vascular disease, status post appendectomy, coronary artery disease with coronary artery bypass graft in [**9-/2953**] with a left internal mammary artery to the left anterior descending, right saphenous vein graft to the obtuse marginal number one and radial to the posterior descending artery.",
+    "sentence2": " The patient has multiple medical problems.",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "PAST MEDICAL HISTORY:  Significant for diabetes type 2 treated with insulin, gastroesophageal reflux disease, Schatzki's ring, cerebrovascular accident in [**2948**] with residual left hemiparesis treated with Coumadin, TAH/BSO, peripheral vascular disease, status post appendectomy, coronary artery disease with coronary artery bypass graft in [**9-/2953**] with a left internal mammary artery to the left anterior descending, right saphenous vein graft to the obtuse marginal number one and radial to the posterior descending artery.",
+    "sentence2": " The patient has no medical history.",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "PAST MEDICAL HISTORY:  Significant for diabetes type 2 treated with insulin, gastroesophageal reflux disease, Schatzki's ring, cerebrovascular accident in [**2948**] with residual left hemiparesis treated with Coumadin, TAH/BSO, peripheral vascular disease, status post appendectomy, coronary artery disease with coronary artery bypass graft in [**9-/2953**] with a left internal mammary artery to the left anterior descending, right saphenous vein graft to the obtuse marginal number one and radial to the posterior descending artery.",
+    "sentence2": " The patient is obese.",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Per report ECG with initial qtc of 410 now 475., QRS 82 initially, now 86 rate= 95.",
+    "sentence2": " Patient has abnormal EKG findings",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Per report ECG with initial qtc of 410 now 475., QRS 82 initially, now 86 rate= 95.",
+    "sentence2": " Patient has normal EKG",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Per report ECG with initial qtc of 410 now 475., QRS 82 initially, now 86 rate= 95.",
+    "sentence2": " Patient has angina",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "On arrival to the ED T97 BP 184/94 HR 92 RR 24 88% on RA -> 98% on NRB.",
+    "sentence2": " The patient was hypertensive in the ED",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "On arrival to the ED T97 BP 184/94 HR 92 RR 24 88% on RA -> 98% on NRB.",
+    "sentence2": " The patient’s vitals were within normal limits in the ED",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "On arrival to the ED T97 BP 184/94 HR 92 RR 24 88% on RA -> 98% on NRB.",
+    "sentence2": " The patient has a history of COPD",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "sinusitis asthma (not active) HSV-1 [**2572**]",
+    "sentence2": " The patient has a herpes viral infection. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "sinusitis asthma (not active) HSV-1 [**2572**]",
+    "sentence2": " The patient has no history of a viral infection. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "sinusitis asthma (not active) HSV-1 [**2572**]",
+    "sentence2": " The patient gets oral herpes sores on the mouth. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "PAST MEDICAL HISTORY:  Type 2 diabetes mellitus.",
+    "sentence2": " the patient has type 2 diabetes",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "PAST MEDICAL HISTORY:  Type 2 diabetes mellitus.",
+    "sentence2": " the patient has type 1 diabetes",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "PAST MEDICAL HISTORY:  Type 2 diabetes mellitus.",
+    "sentence2": " the patient is on insulin",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He was initially reluctant to undergo surgery but has had increasing amounts of chest pain episodes.",
+    "sentence2": " His chest pain has been getting worse",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He was initially reluctant to undergo surgery but has had increasing amounts of chest pain episodes.",
+    "sentence2": " He denies chest pain",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He was initially reluctant to undergo surgery but has had increasing amounts of chest pain episodes.",
+    "sentence2": " He has coronary artery disease",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "This is a 68 year old female with extensive past medical history of chronic multifactorial lung disease on 2L home O2, congenital heart disease with large ASD s/p repair, obstructive/restrictive lung disease, chronic pulmonary emboli, severe pulmonary hypertension on sildenifil, presenting with progressive dyspnea.",
+    "sentence2": " Patient has poor PFTs",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "This is a 68 year old female with extensive past medical history of chronic multifactorial lung disease on 2L home O2, congenital heart disease with large ASD s/p repair, obstructive/restrictive lung disease, chronic pulmonary emboli, severe pulmonary hypertension on sildenifil, presenting with progressive dyspnea.",
+    "sentence2": " Patient has no dyspnea",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "This is a 68 year old female with extensive past medical history of chronic multifactorial lung disease on 2L home O2, congenital heart disease with large ASD s/p repair, obstructive/restrictive lung disease, chronic pulmonary emboli, severe pulmonary hypertension on sildenifil, presenting with progressive dyspnea.",
+    "sentence2": " Patient has low FEV1",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  This is an 86 year old female with a past medical history of diabetes, hypertension, hypercholesterolemia, and a history of syncope who was admitted on [**2777-5-24**] with slurred speech, right hand difficulty grasping, and mental confusion for the past two days.",
+    "sentence2": " History of high blood pressure and high cholesterol",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  This is an 86 year old female with a past medical history of diabetes, hypertension, hypercholesterolemia, and a history of syncope who was admitted on [**2777-5-24**] with slurred speech, right hand difficulty grasping, and mental confusion for the past two days.",
+    "sentence2": " She has normal neurological function",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "HISTORY OF PRESENT ILLNESS:  This is an 86 year old female with a past medical history of diabetes, hypertension, hypercholesterolemia, and a history of syncope who was admitted on [**2777-5-24**] with slurred speech, right hand difficulty grasping, and mental confusion for the past two days.",
+    "sentence2": " She has a history of ischemic strokes",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "She has cough with sputum, occasional blood streaks but no gross blood.",
+    "sentence2": " The patient has a pulmonary condition. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "She has cough with sputum, occasional blood streaks but no gross blood.",
+    "sentence2": " The patient has normal lungs. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "She has cough with sputum, occasional blood streaks but no gross blood.",
+    "sentence2": " The patient has tuberculosis. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He could think of what he wanted to say but was having trouble getting the words out.",
+    "sentence2": " The patient is having trouble speaking. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He could think of what he wanted to say but was having trouble getting the words out.",
+    "sentence2": " The is speaking normally. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He could think of what he wanted to say but was having trouble getting the words out.",
+    "sentence2": " The patient is dysphasic. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "84-year-old female with CAD s/p CABG in [**8-27**] (LIMA-LAD, SVG-OM1), CHF, ESRD on HD, DMII, PAF who is transferred from outside hospital for cardiac catheterization. .",
+    "sentence2": " Patient has multiple medical conditions",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "84-year-old female with CAD s/p CABG in [**8-27**] (LIMA-LAD, SVG-OM1), CHF, ESRD on HD, DMII, PAF who is transferred from outside hospital for cardiac catheterization. .",
+    "sentence2": " She has normal renal function",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "84-year-old female with CAD s/p CABG in [**8-27**] (LIMA-LAD, SVG-OM1), CHF, ESRD on HD, DMII, PAF who is transferred from outside hospital for cardiac catheterization. .",
+    "sentence2": " She has a history of smoking ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "-biliary Atresia s/p liver [**Month/Year (2) **] at age 4 (25 years ago) -asthma, well-controlled -right hip avascular necrosis, per ortho may need THR -postinfectious glomerulonephritis s/p renal biopsy [**2629-8-4**] showed IgG dominent exudative proliferative GN, c/w postinfectious GN -nephrotic syndrome (4.1g proteinuria), hypoalbuminemia -small bowel resection",
+    "sentence2": " patient has multiple medical problems",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "-biliary Atresia s/p liver [**Month/Year (2) **] at age 4 (25 years ago) -asthma, well-controlled -right hip avascular necrosis, per ortho may need THR -postinfectious glomerulonephritis s/p renal biopsy [**2629-8-4**] showed IgG dominent exudative proliferative GN, c/w postinfectious GN -nephrotic syndrome (4.1g proteinuria), hypoalbuminemia -small bowel resection",
+    "sentence2": " patient is a healthy child",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "-biliary Atresia s/p liver [**Month/Year (2) **] at age 4 (25 years ago) -asthma, well-controlled -right hip avascular necrosis, per ortho may need THR -postinfectious glomerulonephritis s/p renal biopsy [**2629-8-4**] showed IgG dominent exudative proliferative GN, c/w postinfectious GN -nephrotic syndrome (4.1g proteinuria), hypoalbuminemia -small bowel resection",
+    "sentence2": " patient has a congenital syndrome",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Liver failure- hx of encephalopathy, no bx seen in records DM type 2- non insulin dependent CHF Elevated PSA Pancreatitis Postive PPD Alcoholic cardiomyopathy",
+    "sentence2": " The patient has multiple co-morbidities. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Liver failure- hx of encephalopathy, no bx seen in records DM type 2- non insulin dependent CHF Elevated PSA Pancreatitis Postive PPD Alcoholic cardiomyopathy",
+    "sentence2": " The patient has normal liver function. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Liver failure- hx of encephalopathy, no bx seen in records DM type 2- non insulin dependent CHF Elevated PSA Pancreatitis Postive PPD Alcoholic cardiomyopathy",
+    "sentence2": " The patient is an alcoholic. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Yesterday he was seen for HD and labs were drawn and he was found to have a Hgb of 7.2 per report.",
+    "sentence2": " He is anemic. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Yesterday he was seen for HD and labs were drawn and he was found to have a Hgb of 7.2 per report.",
+    "sentence2": " His hgb is within normal limits. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Yesterday he was seen for HD and labs were drawn and he was found to have a Hgb of 7.2 per report.",
+    "sentence2": " He is fatigued. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Patient was also noted to have recent weight loss.",
+    "sentence2": " patient has weight loss",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Patient was also noted to have recent weight loss.",
+    "sentence2": " patient has weight gain",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Patient was also noted to have recent weight loss.",
+    "sentence2": " patient has cancer",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He denies any fever, diarrhea, chest pain, cough, URI symptoms, or dysuria.",
+    "sentence2": " The patient does not have infectious symptoms. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He denies any fever, diarrhea, chest pain, cough, URI symptoms, or dysuria.",
+    "sentence2": " The patient has an upper respiratory tract infection. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He denies any fever, diarrhea, chest pain, cough, URI symptoms, or dysuria.",
+    "sentence2": " The patient does not have pneumonia. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "The patient continues to complain of right leg weakness and word-finding difficulties which she says are new over two-three days.",
+    "sentence2": " The patient has acute neurologic findings.",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "The patient continues to complain of right leg weakness and word-finding difficulties which she says are new over two-three days.",
+    "sentence2": " The patient has a normal neurologic exam.",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "The patient continues to complain of right leg weakness and word-finding difficulties which she says are new over two-three days.",
+    "sentence2": " The patient has a CVA.",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Patient was in his USOH until one week prior to admission when he started feeling fatigued and light headed and presented to his PCP.",
+    "sentence2": " Patient has new onset weakness",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Patient was in his USOH until one week prior to admission when he started feeling fatigued and light headed and presented to his PCP.",
+    "sentence2": " Patient has chronic symptoms",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Patient was in his USOH until one week prior to admission when he started feeling fatigued and light headed and presented to his PCP.",
+    "sentence2": " Patient has CHF",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Denies fever, chills, chest pain, diarrhea.",
+    "sentence2": " The patient does not feel febrile. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Denies fever, chills, chest pain, diarrhea.",
+    "sentence2": " The patient is febrile. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Denies fever, chills, chest pain, diarrhea.",
+    "sentence2": " The patient does not have symptoms of an infection. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "htn hypercholesterolemia possible TIA in past new onset Afib (1wk PTA)",
+    "sentence2": " The patient has multiple chronic conditions. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "htn hypercholesterolemia possible TIA in past new onset Afib (1wk PTA)",
+    "sentence2": " The patient has a regular heart rate. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "htn hypercholesterolemia possible TIA in past new onset Afib (1wk PTA)",
+    "sentence2": " The patient is at risk for embolic strokes. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Prenatal screens: [**Month/Day (4) **] type O-, antibody negative, Rubella immune, RPR nonreactive, hepatitis B surface antigen negative, group beta strep status unknown.",
+    "sentence2": " the patient has a negative prenatal screen",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Prenatal screens: [**Month/Day (4) **] type O-, antibody negative, Rubella immune, RPR nonreactive, hepatitis B surface antigen negative, group beta strep status unknown.",
+    "sentence2": " the mother has syphillis",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Prenatal screens: [**Month/Day (4) **] type O-, antibody negative, Rubella immune, RPR nonreactive, hepatitis B surface antigen negative, group beta strep status unknown.",
+    "sentence2": " the pregnancy is full term",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "During that study, the patient developed acute pulmonary edema which required treatment with Morphine and Lasix.",
+    "sentence2": " She was treated with a diuretic ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "During that study, the patient developed acute pulmonary edema which required treatment with Morphine and Lasix.",
+    "sentence2": " The patient developed no respiratory symptoms",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "During that study, the patient developed acute pulmonary edema which required treatment with Morphine and Lasix.",
+    "sentence2": " She developed shortness of breath",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "On field, pupils were sluggish 2-3 mm but responsive, HR 100, RR 4, no audible BP, pt pale, cool and diaphoretic.",
+    "sentence2": " the patient has a low respiratory rate",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "On field, pupils were sluggish 2-3 mm but responsive, HR 100, RR 4, no audible BP, pt pale, cool and diaphoretic.",
+    "sentence2": " the patient has a normal physical exam",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "On field, pupils were sluggish 2-3 mm but responsive, HR 100, RR 4, no audible BP, pt pale, cool and diaphoretic.",
+    "sentence2": " the patient had a drug overdose",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "Because neonatology was not present at delivery,  resuscitation was initiated by the labor and delivery nurses.",
+    "sentence2": " The patient needed help with basic life support needs. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "Because neonatology was not present at delivery,  resuscitation was initiated by the labor and delivery nurses.",
+    "sentence2": " The patient did not need any additional help after birth. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "Because neonatology was not present at delivery,  resuscitation was initiated by the labor and delivery nurses.",
+    "sentence2": " The patient was born prematurely. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "He was also given lasix 80mg IV x1 with diuresis of 1800cc.",
+    "sentence2": " He was treated with a diuretic medication",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "He was also given lasix 80mg IV x1 with diuresis of 1800cc.",
+    "sentence2": " He was volume depleted",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "He was also given lasix 80mg IV x1 with diuresis of 1800cc.",
+    "sentence2": " He has congestive heart failure",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "DM2 insulin dependent, HTN, Depression, CABG [**3234**] [**Hospital1 251**], s/p recent flap to R 5th MTP ulcer and recent hx MRSA ft ulcer with osteo.",
+    "sentence2": " The patient has elevated blood sugars. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "DM2 insulin dependent, HTN, Depression, CABG [**3234**] [**Hospital1 251**], s/p recent flap to R 5th MTP ulcer and recent hx MRSA ft ulcer with osteo.",
+    "sentence2": " The patient has no history of bone infection. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "DM2 insulin dependent, HTN, Depression, CABG [**3234**] [**Hospital1 251**], s/p recent flap to R 5th MTP ulcer and recent hx MRSA ft ulcer with osteo.",
+    "sentence2": " The patient has diabetic neuropathy. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "History of CVA.",
+    "sentence2": " patient has history of stroke",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "History of CVA.",
+    "sentence2": " patient has normal brain mri",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "History of CVA.",
+    "sentence2": " patient is hemiplegic",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "It is difficult for her to move her right leg.",
+    "sentence2": " The patient has a problem with her right leg. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "contradiction",
+    "sentence1": "It is difficult for her to move her right leg.",
+    "sentence2": " The patient had 5/5 strength in both legs. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "neutral",
+    "sentence1": "It is difficult for her to move her right leg.",
+    "sentence2": " The patient has had a left middle cerebral artery infarction. ",
+    "split": "test"
+  },
+  {
+    "gold_label": "entailment",
+    "sentence1": "The patient also reports continued fever and an unusual amount of fatigue.",
+    "sentence2": " The patient has been feeling ill",
+    "split": "test"
+  }
+]

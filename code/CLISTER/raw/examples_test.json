@@ -1,0 +1,402 @@
+[
+  {
+    "id": "0",
+    "document_1_id": "filepdf-181_422_43",
+    "document_2_id": "filepdf-819_2356_45",
+    "text_1": "L\u2019examen clinique \u00e9tait sans particularit\u00e9.",
+    "text_2": "La formule sanguine \u00e9tait sans particularit\u00e9.",
+    "label": 2.0
+  },
+  {
+    "id": "1",
+    "document_1_id": "filepdf-215_718_34",
+    "document_2_id": "filepdf-76-1_1454_23",
+    "text_1": "Le bilan biologique \u00e9tait correct.",
+    "text_2": "Le geste \u00e9tait complet.",
+    "label": 0.0
+  },
+  {
+    "id": "2",
+    "document_1_id": "filepdf-147_546_32",
+    "document_2_id": "filepdf-263-1_1818_53",
+    "text_1": "La s\u00e9rologie VIH \u00e9tait n\u00e9gative.",
+    "text_2": "La cytologie urinaire py\u00e9lique droite \u00e9tait n\u00e9gative.",
+    "label": 1.0
+  },
+  {
+    "id": "3",
+    "document_1_id": "filepdf-689_991_63",
+    "document_2_id": "filepdf-833_1028_49",
+    "text_1": "La patiente est en r\u00e9mission compl\u00e8te avec un recul de 12 mois.",
+    "text_2": "L\u2019\u00e9volution \u00e9tait bonne avec un recul de 27 mois.",
+    "label": 4.0
+  },
+  {
+    "id": "4",
+    "document_1_id": "filehtml-30_6210_72",
+    "document_2_id": "filepdf-752_2309_82",
+    "text_1": "La figure 1 montre l\u2019\u00e9volution des dosages plasmatiques de voriconazole.",
+    "text_2": "La figure 1 pr\u00e9sente la chronologie des \u00e9v\u00e9nements et de la prise des m\u00e9dicaments.",
+    "label": 2.0
+  },
+  {
+    "id": "5",
+    "document_1_id": "filepdf-728_4718_37",
+    "document_2_id": "filepdf-728_4791_49",
+    "text_1": "Isoprot\u00e9r\u00e9nol Perfusion IV 3 mcg/ min",
+    "text_2": "Nitroglyc\u00e9rine (TridilMD) Perfusion 5-8 mcg / min",
+    "label": 2.0
+  },
+  {
+    "id": "6",
+    "document_1_id": "filepdf-395_625_57",
+    "document_2_id": "filepdf-700_378_91",
+    "text_1": "Il n\u2019y avait ni ast\u00e9rixis ni de trouble de la conscience.",
+    "text_2": "Il n\u2019y avait pas d\u2019hypertension art\u00e9rielle ni de diab\u00e8te ni d\u2019intoxication \u00e9thylotabagique.",
+    "label": 0.0
+  },
+  {
+    "id": "7",
+    "document_1_id": "filepdf-30-1_2205_36",
+    "document_2_id": "filepdf-31-2_2341_30",
+    "text_1": "La biopsie m\u00e9dullaire \u00e9tait normale.",
+    "text_2": "La d\u00e9bitm\u00e9trie \u00e9tait correcte.",
+    "label": 1.0
+  },
+  {
+    "id": "8",
+    "document_1_id": "filepdf-732_5017_124",
+    "document_2_id": "filepdf-78-1_952_88",
+    "text_1": "Au jour 11, une tomographie d\u2019\u00e9mission par positrons d\u00e9montre la pr\u00e9sence de graisse brune au niveau de la surr\u00e9nale droite.",
+    "text_2": "La radiographie pulmonaire a montr\u00e9 la pr\u00e9sence de gaz au niveau de la paroi thoracique.",
+    "label": 1.0
+  },
+  {
+    "id": "9",
+    "document_1_id": "filepdf-227_905_31",
+    "document_2_id": "filepdf-236-3_1023_24",
+    "text_1": "La vessie n\u2019est pas visualis\u00e9e.",
+    "text_2": "La vessie \u00e9tait normale.",
+    "label": 1.0
+  },
+  {
+    "id": "10",
+    "document_1_id": "filepdf-42_1073_50",
+    "document_2_id": "filepdf-73-2_377_48",
+    "text_1": "Une orchidectomie par voie inguinale est r\u00e9alis\u00e9e.",
+    "text_2": "e. Une n\u00e9phrostomie percutan\u00e9e gauche est r\u00e9alis",
+    "label": 1.0
+  },
+  {
+    "id": "11",
+    "document_1_id": "filepdf-179_89_69",
+    "document_2_id": "filepdf-269-2_400_45",
+    "text_1": "Le reste de l\u2019examen clinique et le bilan biologique \u00e9taient normaux.",
+    "text_2": "Le reste de l'examen est sans particularit\u00e9s.",
+    "label": 4.0
+  },
+  {
+    "id": "12",
+    "document_1_id": "filepdf-124_1878_56",
+    "document_2_id": "filepdf-247_618_48",
+    "text_1": "Les marqueurs tumoraux (CA 15.3 et ACE) \u00e9taient normaux.",
+    "text_2": "Les marqueurs tumoraux s\u00e9riques \u00e9taient normaux.",
+    "label": 5.0
+  },
+  {
+    "id": "13",
+    "document_1_id": "filepdf-776-3_0_180",
+    "document_2_id": "filepdf-776-8_7_157",
+    "text_1": "M. Ou., Ko., Omar, \u00e2g\u00e9 de 52 ans, originaire et demeurant \u00e0 Tamanrasset, dans l\u2019extr\u00eame sud alg\u00e9rien est examin\u00e9 en janvier 1993 pour coxopathie bilat\u00e9rale \u00e9voluant depuis six ans.",
+    "text_2": "Omar ag\u00e9 de 54 ans agronome, originaire et demeurant \u00e0 Gharda\u00efa est examin\u00e9 en 2002 pour polyarthropathie avec atteinte rachidienne \u00e9voluant depuis huit ans.",
+    "label": 2.0
+  },
+  {
+    "id": "14",
+    "document_1_id": "filepdf-21_1022_189",
+    "document_2_id": "filepdf-269-2_447_206",
+    "text_1": "La tomodensitom\u00e9trie (TDM) avait objectiv\u00e9 la pr\u00e9sence d\u2019une masse surr\u00e9nalienne gauche de 7 cm x 3,5 cm de taille, de densit\u00e9 tissulaire, prenant faiblement le contraste de fa\u00e7on homog\u00e8ne.",
+    "text_2": "La tomodensitom\u00e9trie avait montr\u00e9 la pr\u00e9sence d'une volumineuse masse arrondie r\u00e9trop\u00e9riton\u00e9ale, de 200 mm de grand axe, de densit\u00e9 h\u00e9t\u00e9rog\u00e8ne, bien limit\u00e9e par une capsule continue et r\u00e9guli\u00e8re (Figure 6).",
+    "label": 3.0
+  },
+  {
+    "id": "15",
+    "document_1_id": "filepdf-123_762_61",
+    "document_2_id": "filepdf-229_1063_60",
+    "text_1": "Une orchidectomie gauche, par voie inguinale, a \u00e9t\u00e9 r\u00e9alis\u00e9e.",
+    "text_2": "Une orchidectomie droite par voie inguinale \u00e9tait pratiqu\u00e9e.",
+    "label": 3.0
+  },
+  {
+    "id": "16",
+    "document_1_id": "filepdf-249-3_119_58",
+    "document_2_id": "filepdf-86-2_99_66",
+    "text_1": "L'examen clinique a mis en \u00e9vidence un bourgeon ombilical.",
+    "text_2": "L\u2019examen clinique mettait en \u00e9vidence un gros rein droit palpable.",
+    "label": 3.0
+  },
+  {
+    "id": "17",
+    "document_1_id": "filepdf-43-1_1743_135",
+    "document_2_id": "filepdf-793-1_1855_144",
+    "text_1": "Au bilan d\u2019extension la radiographie pulmonaire \u00e9tait normale et \u00e0 l\u2019\u00e9chographie h\u00e9patique il n\u2019y avait pas de localisation secondaire.",
+    "text_2": "Le bilan d\u2019extension qui comprenait un clich\u00e9 de radiographie pulmonaire, une \u00e9chographie h\u00e9patique et une scintigraphie osseuse, \u00e9tait n\u00e9gatif.",
+    "label": 3.0
+  },
+  {
+    "id": "18",
+    "document_1_id": "filepdf-834_1241_43",
+    "document_2_id": "filepdf-834_2494_43",
+    "text_1": "La TDM c\u00e9r\u00e9brale n\u2019a pas r\u00e9v\u00e9l\u00e9 d\u2019anomalie.",
+    "text_2": "La scintigraphie n\u2019a pas montr\u00e9 d\u2019anomalie.",
+    "label": 2.0
+  },
+  {
+    "id": "19",
+    "document_1_id": "filepdf-161_639_106",
+    "document_2_id": "filepdf-43-2_313_62",
+    "text_1": "Le patient a subi une r\u00e9section du diverticule par voie p\u00e9rin\u00e9ale avec ur\u00e9throrraphie sur sonde ur\u00e9thrale.",
+    "text_2": "Le patient a subi une r\u00e9section transurethrale de sa prostate.",
+    "label": 2.0
+  },
+  {
+    "id": "20",
+    "document_1_id": "filepdf-105_432_118",
+    "document_2_id": "filepdf-86-4_218_113",
+    "text_1": "L\u2019\u00e9chographie abdominale (Figure 1 a et b) objectiv\u00e9ait une tumeur se continuant avec le p\u00f4le sup\u00e9rieur du rein droit.",
+    "text_2": "L\u2019\u00e9chographie r\u00e9nale retrouvait une masse r\u00e9nale iso\u00e9chog\u00e8ne de 5 cm de diam\u00e8tre du p\u00f4le sup\u00e9rieur du rein droit.",
+    "label": 3.0
+  },
+  {
+    "id": "21",
+    "document_1_id": "filepdf-27-2_898_63",
+    "document_2_id": "filepdf-70_761_51",
+    "text_1": "Une orchidectomie partielle emportant la l\u00e9sion a \u00e9t\u00e9 r\u00e9alis\u00e9e.",
+    "text_2": "Une n\u00e9phrectomie polaire inf\u00e9rieure a \u00e9t\u00e9 r\u00e9alis\u00e9e.",
+    "label": 1.0
+  },
+  {
+    "id": "22",
+    "document_1_id": "filepdf-821_879_36",
+    "document_2_id": "filepdf-89-1_411_36",
+    "text_1": "Le facteur rhumato\u00efde \u00e9tait n\u00e9gatif.",
+    "text_2": ". Le bilan d' extension \u00e9tait n\u00e9gati",
+    "label": 1.0
+  },
+  {
+    "id": "23",
+    "document_1_id": "filepdf-31-2_2372_43",
+    "document_2_id": "filepdf-698_115_62",
+    "text_1": "Il n'y avait pas de r\u00e9sidu post-mictionnel.",
+    "text_2": "Il n\u2019avait pas de facteurs de risque cardiovasculaire notable.",
+    "label": 0.0
+  },
+  {
+    "id": "24",
+    "document_1_id": "filepdf-513_492_66",
+    "document_2_id": "filepdf-812_488_82",
+    "text_1": "Le reste de l'examen clinique et le bilan biologique sont normaux.",
+    "text_2": "Le reste de l\u2019examen gyn\u00e9cologique et l\u2019examen somatique \u00e9tait sans particularit\u00e9.",
+    "label": 3.0
+  },
+  {
+    "id": "25",
+    "document_1_id": "filepdf-147_848_45",
+    "document_2_id": "filepdf-18_4305_45",
+    "text_1": "Il n\u2019y avait pas de signe d\u2019ost\u00e9ite pubienne.",
+    "text_2": "Il n\u2019y avait pas de foyer tumoral (Figure 5).",
+    "label": 0.0
+  },
+  {
+    "id": "26",
+    "document_1_id": "filepdf-411_2376_31",
+    "document_2_id": "filepdf-74_1254_34",
+    "text_1": "L\u2019ECG de contr\u00f4le \u00e9tait normal.",
+    "text_2": "L\u2019ur\u00e9throcystogramme \u00e9tait normal.",
+    "label": 1.0
+  },
+  {
+    "id": "27",
+    "document_1_id": "filepdf-128_1427_47",
+    "document_2_id": "filepdf-13-2_756_52",
+    "text_1": "L\u2019\u00e9volution a \u00e9t\u00e9 bonne avec un recul de 4 ans.",
+    "text_2": "L\u2019\u00e9volution a \u00e9t\u00e9 favorable avec un recul de 6 mois.",
+    "label": 4.0
+  },
+  {
+    "id": "28",
+    "document_1_id": "filepdf-252_0_155",
+    "document_2_id": "filepdf-294_0_155",
+    "text_1": "Une fillette \u00e2g\u00e9e de 12 ans sans ant\u00e9c\u00e9dents pathologiques notables a \u00e9t\u00e9 hospitalis\u00e9e pour fi\u00e8vre et douleurs lombaires droites \u00e9voluant depuis 24 heures.",
+    "text_2": "Un homme \u00e2g\u00e9 de 78 ans, sans ant\u00e9c\u00e9dents notables, a \u00e9t\u00e9 hospitalis\u00e9 suite \u00e0 des br\u00fblures mictionnelles associ\u00e9es \u00e0 une pollakiurie \u00e9voluant depuis 2 mois.",
+    "label": 2.0
+  },
+  {
+    "id": "29",
+    "document_1_id": "filepdf-19-2_1349_110",
+    "document_2_id": "filepdf-249-3_613_92",
+    "text_1": "Apr\u00e8s un recul de 3 ans, l'\u00e9volution est jug\u00e9e cliniquement satisfaisante avec mictions et \u00e9rections normales.",
+    "text_2": "Apr\u00e8s un recul de 2 ans l'\u00e9volution \u00e9tait favorable sans r\u00e9cidive de l'\u00e9coulement ombilical.",
+    "label": 3.0
+  },
+  {
+    "id": "30",
+    "document_1_id": "filepdf-689_991_63",
+    "document_2_id": "filepdf-86-5_845_53",
+    "text_1": "La patiente est en r\u00e9mission compl\u00e8te avec un recul de 12 mois.",
+    "text_2": "L\u2019\u00e9volution \u00e9tait favorable avec un recul de 12 mois.",
+    "label": 4.0
+  },
+  {
+    "id": "31",
+    "document_1_id": "filepdf-804_149_106",
+    "document_2_id": "filepdf-865-3_165_113",
+    "text_1": "L'examen clinique a retrouv\u00e9 une tumeur de la l\u00e8vre post\u00e9rieure du col avec un vagin et param\u00e8tres libres.",
+    "text_2": "L\u2019examen clinique avait trouv\u00e9 une d\u00e9fense \u00e0 la palpation de l\u2019hypochondre droit avec un signe de Murphy positif.",
+    "label": 1.0
+  },
+  {
+    "id": "32",
+    "document_1_id": "filepdf-216_283_88",
+    "document_2_id": "filepdf-85_650_74",
+    "text_1": "Au toucher rectal, la prostate \u00e9tait tr\u00e8s augment\u00e9e de volume, irr\u00e9guli\u00e8re et r\u00e9nitente.",
+    "text_2": "Au toucher rectal, la prostate \u00e9tait dure, augment\u00e9e de volume, nodulaire.",
+    "label": 4.0
+  },
+  {
+    "id": "33",
+    "document_1_id": "filepdf-259-1_2494_134",
+    "document_2_id": "filepdf-66-2_560_105",
+    "text_1": "Les suites op\u00e9ratoires ont \u00e9t\u00e9 simples, les douleurs ont rapidement diminu\u00e9, l'apyrexie a \u00e9t\u00e9 obtenue et les \u00e9coulements ont disparu..",
+    "text_2": "Les suites op\u00e9ratoires ont \u00e9t\u00e9 marqu\u00e9es au 3\u00e8me jour par l\u2019apparition d\u2019urines dans les drains de redons.",
+    "label": 1.0
+  },
+  {
+    "id": "34",
+    "document_1_id": "filepdf-283_2032_29",
+    "document_2_id": "filepdf-31-1_2357_32",
+    "text_1": "Le toucher rectal est normal.",
+    "text_2": "Le toucher vaginal \u00e9tait normal.",
+    "label": 3.0
+  },
+  {
+    "id": "35",
+    "document_1_id": "filepdf-3_2676_69",
+    "document_2_id": "filepdf-65-3_1466_67",
+    "text_1": "L'\u00e9volution postop\u00e9ratoire a \u00e9t\u00e9 favorable, avec un recul de 28 mois.",
+    "text_2": "s. L'\u00e9volution \u00e0 long terme \u00e9tait favorable avec un recul de deux a",
+    "label": 4.0
+  },
+  {
+    "id": "36",
+    "document_1_id": "filehtml-32_2981_234",
+    "document_2_id": "filehtml-32_4224_136",
+    "text_1": "Au jour sept de son hospitalisation, la patiente pr\u00e9sente un dosage s\u00e9rique de ph\u00e9nyto\u00efne corrig\u00e9 pour l\u2019albumine de 60 \u03bcmol/L (non corrig\u00e9 : 41 \u03bcmol/L; albumine : 29 g/L), et n\u2019a pas eu de convulsions depuis l\u2019ajout de pentobarbital.",
+    "text_2": "Or, au jour 16, le dosage s\u00e9rique de ph\u00e9nyto\u00efne corrig\u00e9 pour l\u2019albumine descend \u00e0 12 \u03bcmol/L (non corrig\u00e9 : 9 \u03bcmol/L; albumine : 33 g/L).",
+    "label": 3.0
+  },
+  {
+    "id": "37",
+    "document_1_id": "filepdf-118_2149_96",
+    "document_2_id": "filepdf-3_2676_69",
+    "text_1": "L'\u00e9volution a \u00e9t\u00e9 marqu\u00e9e par la normalisation des chiffres tensionnels, avec un recul de 4 ans.",
+    "text_2": "L'\u00e9volution postop\u00e9ratoire a \u00e9t\u00e9 favorable, avec un recul de 28 mois.",
+    "label": 3.0
+  },
+  {
+    "id": "38",
+    "document_1_id": "filepdf-710_5873_31",
+    "document_2_id": "filepdf-729_3195_44",
+    "text_1": "900 \u00e0 1200 mg une fois par jour",
+    "text_2": "Ciprofloxacine 500 mg PO 2 fois par jour X X",
+    "label": 1.0
+  },
+  {
+    "id": "39",
+    "document_1_id": "filepdf-111_306_91",
+    "document_2_id": "filepdf-270_460_110",
+    "text_1": "L\u2019\u00e9chographie r\u00e9nale r\u00e9v\u00e8la une importante dilatation des cavit\u00e9s py\u00e9localicielles droites.",
+    "text_2": "L'\u00e9chographie r\u00e9nale a conclu \u00e0 une importante dilatation ur\u00e9t\u00e9ro-py\u00e9lo-calicielle avec un rein droit d\u00e9truit.",
+    "label": 4.0
+  },
+  {
+    "id": "40",
+    "document_1_id": "filepdf-35_479_54",
+    "document_2_id": "filepdf-781_681_57",
+    "text_1": "Le reste de l'examen somatique est sans particularit\u00e9.",
+    "text_2": "Le reste de l\u2019examen clinique \u00e9tait par ailleurs normale.",
+    "label": 4.0
+  },
+  {
+    "id": "41",
+    "document_1_id": "filepdf-147_1163_48",
+    "document_2_id": "filepdf-821_1764_51",
+    "text_1": "La recherche de bacilles de Koch \u00e9tait n\u00e9gative.",
+    "text_2": "La s\u00e9rologie de la maladie c\u0153liaque \u00e9tait n\u00e9gative.",
+    "label": 1.0
+  },
+  {
+    "id": "42",
+    "document_1_id": "filepdf-108_1978_70",
+    "document_2_id": "filepdf-833_1028_49",
+    "text_1": "L\u2019\u00e9volution post-op\u00e9ratoires a \u00e9t\u00e9 favorable avec un recul de 15 mois.",
+    "text_2": "L\u2019\u00e9volution \u00e9tait bonne avec un recul de 27 mois.",
+    "label": 4.0
+  },
+  {
+    "id": "43",
+    "document_1_id": "filehtml-23_3931_39",
+    "document_2_id": "filehtml-23_4159_34",
+    "text_1": "Acide folinique 15 mg une fois par jour",
+    "text_2": "Ritonavir 100 mg une fois par jour",
+    "label": 2.0
+  },
+  {
+    "id": "44",
+    "document_1_id": "filepdf-208_150_44",
+    "document_2_id": "filepdf-269-2_400_45",
+    "text_1": "L'examen clinique \u00e9tait sans particularit\u00e9s.",
+    "text_2": "Le reste de l'examen est sans particularit\u00e9s.",
+    "label": 4.0
+  },
+  {
+    "id": "45",
+    "document_1_id": "filepdf-1_423_73",
+    "document_2_id": "filepdf-272_1743_54",
+    "text_1": "L'examen cytobact\u00e9riologique des urines met en \u00e9vidence un acin\u00e9tobacter.",
+    "text_2": "L'examen cytobact\u00e9riologique des urines \u00e9tait n\u00e9gatif.",
+    "label": 3.0
+  },
+  {
+    "id": "46",
+    "document_1_id": "filepdf-107_2830_39",
+    "document_2_id": "filepdf-28_1082_28",
+    "text_1": "Les suites op\u00e9ratoires \u00e9taient simples.",
+    "text_2": "Les urines \u00e9taient st\u00e9riles.",
+    "label": 0.0
+  },
+  {
+    "id": "47",
+    "document_1_id": "filehtml-23_4159_34",
+    "document_2_id": "filepdf-770_2575_48",
+    "text_1": "Ritonavir 100 mg une fois par jour",
+    "text_2": "Metformine 500 mg, 1 comprim\u00e9 deux fois par jour",
+    "label": 1.0
+  },
+  {
+    "id": "48",
+    "document_1_id": "filehtml-23_2201_77",
+    "document_2_id": "filepdf-710_4652_59",
+    "text_1": "Le tableau II r\u00e9sume les choix de traitement \u00e0 l'infection Toxoplasma gondii.",
+    "text_2": "Choix de traitement de l\u2019infection \u00e0 Toxoplasma gondii1,2,4",
+    "label": 4.0
+  },
+  {
+    "id": "49",
+    "document_1_id": "filepdf-138_1294_64",
+    "document_2_id": "filepdf-143_787_54",
+    "text_1": "Les recherches de BK bronchiques et urinaires \u00e9taient n\u00e9gatives.",
+    "text_2": "Les s\u00e9rologies de l\u2019h\u00e9patite B et C \u00e9taient n\u00e9gatives.",
+    "label": 1.0
+  }
+]

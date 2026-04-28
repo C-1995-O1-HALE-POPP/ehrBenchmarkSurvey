@@ -1,0 +1,802 @@
+[
+  {
+    "text": "Methanoregula",
+    "label": "B"
+  },
+  {
+    "text": "formicica",
+    "label": "I"
+  },
+  {
+    "text": "sp",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "nov",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "a",
+    "label": "O"
+  },
+  {
+    "text": "methane",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "producing",
+    "label": "O"
+  },
+  {
+    "text": "archaeon",
+    "label": "O"
+  },
+  {
+    "text": "isolated",
+    "label": "O"
+  },
+  {
+    "text": "from",
+    "label": "O"
+  },
+  {
+    "text": "methanogenic",
+    "label": "O"
+  },
+  {
+    "text": "sludge",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "A",
+    "label": "O"
+  },
+  {
+    "text": "novel",
+    "label": "O"
+  },
+  {
+    "text": "methane",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "producing",
+    "label": "O"
+  },
+  {
+    "text": "archaeon",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "strain",
+    "label": "O"
+  },
+  {
+    "text": "SMSP",
+    "label": "B"
+  },
+  {
+    "text": "(",
+    "label": "I"
+  },
+  {
+    "text": "T",
+    "label": "I"
+  },
+  {
+    "text": ")",
+    "label": "I"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "was",
+    "label": "O"
+  },
+  {
+    "text": "isolated",
+    "label": "O"
+  },
+  {
+    "text": "from",
+    "label": "O"
+  },
+  {
+    "text": "an",
+    "label": "O"
+  },
+  {
+    "text": "anaerobic",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "propionate",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "degrading",
+    "label": "O"
+  },
+  {
+    "text": "enrichment",
+    "label": "O"
+  },
+  {
+    "text": "culture",
+    "label": "O"
+  },
+  {
+    "text": "that",
+    "label": "O"
+  },
+  {
+    "text": "was",
+    "label": "O"
+  },
+  {
+    "text": "originally",
+    "label": "O"
+  },
+  {
+    "text": "obtained",
+    "label": "O"
+  },
+  {
+    "text": "from",
+    "label": "O"
+  },
+  {
+    "text": "granular",
+    "label": "O"
+  },
+  {
+    "text": "sludge",
+    "label": "O"
+  },
+  {
+    "text": "in",
+    "label": "O"
+  },
+  {
+    "text": "a",
+    "label": "O"
+  },
+  {
+    "text": "mesophilic",
+    "label": "O"
+  },
+  {
+    "text": "upflow",
+    "label": "O"
+  },
+  {
+    "text": "anaerobic",
+    "label": "O"
+  },
+  {
+    "text": "sludge",
+    "label": "O"
+  },
+  {
+    "text": "blanket",
+    "label": "O"
+  },
+  {
+    "text": "(",
+    "label": "O"
+  },
+  {
+    "text": "UASB",
+    "label": "O"
+  },
+  {
+    "text": ")",
+    "label": "O"
+  },
+  {
+    "text": "reactor",
+    "label": "O"
+  },
+  {
+    "text": "used",
+    "label": "O"
+  },
+  {
+    "text": "to",
+    "label": "O"
+  },
+  {
+    "text": "treat",
+    "label": "O"
+  },
+  {
+    "text": "a",
+    "label": "O"
+  },
+  {
+    "text": "beer",
+    "label": "O"
+  },
+  {
+    "text": "brewery",
+    "label": "O"
+  },
+  {
+    "text": "effluent",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "Cells",
+    "label": "O"
+  },
+  {
+    "text": "were",
+    "label": "O"
+  },
+  {
+    "text": "non",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "motile",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "blunt",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "ended",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "straight",
+    "label": "O"
+  },
+  {
+    "text": "rods",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "1",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "0",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "2",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "6",
+    "label": "O"
+  },
+  {
+    "text": "mum",
+    "label": "O"
+  },
+  {
+    "text": "long",
+    "label": "O"
+  },
+  {
+    "text": "by",
+    "label": "O"
+  },
+  {
+    "text": "0",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "5",
+    "label": "O"
+  },
+  {
+    "text": "mum",
+    "label": "O"
+  },
+  {
+    "text": "wide",
+    "label": "O"
+  },
+  {
+    "text": ";",
+    "label": "O"
+  },
+  {
+    "text": "cells",
+    "label": "O"
+  },
+  {
+    "text": "were",
+    "label": "O"
+  },
+  {
+    "text": "sometimes",
+    "label": "O"
+  },
+  {
+    "text": "up",
+    "label": "O"
+  },
+  {
+    "text": "to",
+    "label": "O"
+  },
+  {
+    "text": "7",
+    "label": "O"
+  },
+  {
+    "text": "mum",
+    "label": "O"
+  },
+  {
+    "text": "long",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "Asymmetrical",
+    "label": "O"
+  },
+  {
+    "text": "cell",
+    "label": "O"
+  },
+  {
+    "text": "division",
+    "label": "O"
+  },
+  {
+    "text": "was",
+    "label": "O"
+  },
+  {
+    "text": "observed",
+    "label": "O"
+  },
+  {
+    "text": "in",
+    "label": "O"
+  },
+  {
+    "text": "rod",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "shaped",
+    "label": "O"
+  },
+  {
+    "text": "cells",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "Coccoid",
+    "label": "O"
+  },
+  {
+    "text": "cells",
+    "label": "O"
+  },
+  {
+    "text": "(",
+    "label": "O"
+  },
+  {
+    "text": "0",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "5",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "1",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "0",
+    "label": "O"
+  },
+  {
+    "text": "mum",
+    "label": "O"
+  },
+  {
+    "text": "in",
+    "label": "O"
+  },
+  {
+    "text": "diameter",
+    "label": "O"
+  },
+  {
+    "text": ")",
+    "label": "O"
+  },
+  {
+    "text": "were",
+    "label": "O"
+  },
+  {
+    "text": "also",
+    "label": "O"
+  },
+  {
+    "text": "observed",
+    "label": "O"
+  },
+  {
+    "text": "in",
+    "label": "O"
+  },
+  {
+    "text": "mid",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "to",
+    "label": "O"
+  },
+  {
+    "text": "late",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "exponential",
+    "label": "O"
+  },
+  {
+    "text": "phase",
+    "label": "O"
+  },
+  {
+    "text": "cultures",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "Growth",
+    "label": "O"
+  },
+  {
+    "text": "was",
+    "label": "O"
+  },
+  {
+    "text": "observed",
+    "label": "O"
+  },
+  {
+    "text": "between",
+    "label": "O"
+  },
+  {
+    "text": "10",
+    "label": "O"
+  },
+  {
+    "text": "and",
+    "label": "O"
+  },
+  {
+    "text": "40",
+    "label": "O"
+  },
+  {
+    "text": "^",
+    "label": "O"
+  },
+  {
+    "text": "0C",
+    "label": "O"
+  },
+  {
+    "text": "(",
+    "label": "O"
+  },
+  {
+    "text": "optimum",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "30",
+    "label": "O"
+  },
+  {
+    "text": "-",
+    "label": "O"
+  },
+  {
+    "text": "33",
+    "label": "O"
+  },
+  {
+    "text": "^",
+    "label": "O"
+  },
+  {
+    "text": "0C",
+    "label": "O"
+  },
+  {
+    "text": ")",
+    "label": "O"
+  },
+  {
+    "text": "and",
+    "label": "O"
+  },
+  {
+    "text": "pH",
+    "label": "O"
+  },
+  {
+    "text": "7",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "0",
+    "label": "O"
+  },
+  {
+    "text": "and",
+    "label": "O"
+  },
+  {
+    "text": "7",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "6",
+    "label": "O"
+  },
+  {
+    "text": "(",
+    "label": "O"
+  },
+  {
+    "text": "optimum",
+    "label": "O"
+  },
+  {
+    "text": ",",
+    "label": "O"
+  },
+  {
+    "text": "pH",
+    "label": "O"
+  },
+  {
+    "text": "7",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "4",
+    "label": "O"
+  },
+  {
+    "text": ")",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "The",
+    "label": "O"
+  },
+  {
+    "text": "G",
+    "label": "O"
+  },
+  {
+    "text": "+",
+    "label": "O"
+  },
+  {
+    "text": "C",
+    "label": "O"
+  },
+  {
+    "text": "content",
+    "label": "O"
+  },
+  {
+    "text": "of",
+    "label": "O"
+  },
+  {
+    "text": "the",
+    "label": "O"
+  },
+  {
+    "text": "genomic",
+    "label": "O"
+  },
+  {
+    "text": "DNA",
+    "label": "O"
+  },
+  {
+    "text": "was",
+    "label": "O"
+  },
+  {
+    "text": "56",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "2",
+    "label": "O"
+  },
+  {
+    "text": "mol",
+    "label": "O"
+  },
+  {
+    "text": "%",
+    "label": "O"
+  },
+  {
+    "text": ".",
+    "label": "O"
+  },
+  {
+    "text": "The",
+    "label": "O"
+  },
+  {
+    "text": "strain",
+    "label": "O"
+  },
+  {
+    "text": "utilized",
+    "label": "O"
+  },
+  {
+    "text": "formate",
+    "label": "O"
+  },
+  {
+    "text": "and",
+    "label": "O"
+  }
+]

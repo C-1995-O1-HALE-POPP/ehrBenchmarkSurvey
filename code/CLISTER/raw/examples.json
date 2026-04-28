@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0",
+    "document_1_id": "filepdf-250-1_838_187",
+    "document_2_id": "filepdf-250-2_454_161",
+    "text_1": "L'UIV a objectiv\u00e9 un retard de s\u00e9cr\u00e9tion avec importante dilatation py\u00e9lo-calicielle et de l'uret\u00e8re lombaire en amont d'un \u00e9norme calcul de l'uret\u00e8re iliaque et pelvien droit (Figure 2).",
+    "text_2": "L'UIV a montr\u00e9 une importante dilatation ur\u00e9t\u00e9ro-py\u00e9lo-calicielle en amont d'un \u00e9norme calcul de l'uret\u00e8re gauche, le cot\u00e9 droit \u00e9tait sans anomalies (Figure 6).",
+    "label": 3.0
+  },
+  {
+    "id": "1",
+    "document_1_id": "filepdf-728_3188_35",
+    "document_2_id": "filepdf-728_3396_34",
+    "text_1": "1 Diminution m\u00e9thadone \u00e0 80 mg TID.",
+    "text_2": "7 Diminution m\u00e9thadone \u00e0 20 mg TID",
+    "label": 3.0
+  },
+  {
+    "id": "2",
+    "document_1_id": "filepdf-18_1284_92",
+    "document_2_id": "filepdf-293_145_79",
+    "text_1": "L\u2019examen clinique \u00e0 l\u2019entr\u00e9e trouvait au toucher rectal une grosse v\u00e9sicule s\u00e9minale droite.",
+    "text_2": "L'examen clinique trouvait au toucher rectal un plancher v\u00e9sical fix\u00e9 \u00e0 gauche.",
+    "label": 3.0
+  },
+  {
+    "id": "3",
+    "document_1_id": "filepdf-254_1202_34",
+    "document_2_id": "filepdf-33_461_34",
+    "text_1": "Le reste de l'examen \u00e9tait normal.",
+    "text_2": "Le reste de l\u2019ur\u00e8tre \u00e9tait normal.",
+    "label": 3.0
+  },
+  {
+    "id": "4",
+    "document_1_id": "filepdf-15-3_374_117",
+    "document_2_id": "filepdf-15-3_1593_109",
+    "text_1": "L\u2019examen montre une masse du flanc droit allant jusqu\u2019\u00e0 l\u2019ombilic, de 10 cm de diam\u00e8tre, donnant le contact lombaire.",
+    "text_2": "Le scanner montre une masse r\u00e9trop\u00e9riton\u00e9ale droite de 17 cm de diam\u00e8tre refoulant et \u00e9crasant le rein droit.",
+    "label": 3.0
+  }
+]

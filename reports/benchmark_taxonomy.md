@@ -86,6 +86,9 @@ Interpretation note:
 - `ADE Corpus`, `PICO`, `PMC-Patient`: `task=EXT`; `interaction=ST-L`; `source=LIT`; `role=CORE`
 - `ADE`, `BARR2`, `CMeEE-V2`, `CMeIE`, `CHIP-CDEE`, `CLINpt`, `DiSMed`, `Ex4CDS`, `iCorpus`, `RuDReC`, `RuCCoN`, `IFMIR`, `CARDIO:DE`, `BRONCO150`, `meddocan`, `n2c2 2006`, `n2c2 2018 Track2`, `MTS-Temporal`, `mtsamples-temporal`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `n2c2 2014 - De-identification`, `NorSynthClinical-PHI`, `GraSSCo_PHI`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
+- `RadQA`: `task=EXT`; `interaction=ST-L`; `source=RAD`; `role=CORE`
+- `NCBI-disease`, `BC5CDR-disease`: `task=EXT`; `interaction=ST-S`; `source=LIT`; `role=CORE`
+- `Clinical Stigmatizing Language`: `task=CLS`; `interaction=ST-S`; `source=NOTE`; `role=CORE`
 - `NUBES`: `task=EXT`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `MIE`, `IMCS-V2-NER`, `IMCS-V2-SR`, `CHIP-MDCFNPC`: `task=EXT`; `interaction=MT-X`; `source=DIAL`; `role=CORE`
 - `CHIP-CDN`, `CARES`, `Cantemist`, `CLEF eHealth 2020 - CodiEsp`, `MIMIC-IV Billing Code`, `C-EMRS`: `task=COD`; `interaction=ST-L`; `source=NOTE`; `role=CORE`

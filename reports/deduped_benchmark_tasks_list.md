@@ -767,3 +767,17 @@ Rule of inclusion:
 ## n2c2 2018 Track2
 
 - n2c2 2018-ADE&medication
+
+## RadQA
+
+- Extractive Question Answering
+
+## NCBI-disease
+
+- Disease Named Entity Recognition
+
+## Clinical Stigmatizing Language
+
+- Credibility & Obstinacy Classification
+- Compliance Classification
+- Descriptors Classification

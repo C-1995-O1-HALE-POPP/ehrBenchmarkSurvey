@@ -1,0 +1,6002 @@
+[
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 1,
+    "qtext": "The excitatory postsynaptic potentials:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are all or nothing."
+      },
+      {
+        "aid": 2,
+        "atext": "They are hyperpolarizing."
+      },
+      {
+        "aid": 3,
+        "atext": "They can be added."
+      },
+      {
+        "aid": 4,
+        "atext": "They spread long distances."
+      },
+      {
+        "aid": 5,
+        "atext": "They present a refractory period."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 2,
+    "qtext": "Motor plate is the union between the motor neuron and the:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Smooth muscle."
+      },
+      {
+        "aid": 2,
+        "atext": "Skeletal muscle"
+      },
+      {
+        "aid": 3,
+        "atext": "Cardiac muscle"
+      },
+      {
+        "aid": 4,
+        "atext": "Muscle spindle"
+      },
+      {
+        "aid": 5,
+        "atext": "Tendon."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 3,
+    "qtext": "DO NOT generate action potentials:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Smooth muscle fibers."
+      },
+      {
+        "aid": 2,
+        "atext": "Bipolar neurons of the retina."
+      },
+      {
+        "aid": 3,
+        "atext": "Skeletal striated muscle fibers."
+      },
+      {
+        "aid": 4,
+        "atext": "Cardiac muscle fibers."
+      },
+      {
+        "aid": 5,
+        "atext": "Ganglion neurons of the retina."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 4,
+    "qtext": "In the initiation of voluntary movements the first area that is activated is:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Premotor cortex."
+      },
+      {
+        "aid": 2,
+        "atext": "Primary motor cortex."
+      },
+      {
+        "aid": 3,
+        "atext": "Brain stem"
+      },
+      {
+        "aid": 4,
+        "atext": "Cerebellum."
+      },
+      {
+        "aid": 5,
+        "atext": "Basal ganglia"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 5,
+    "qtext": "The corpuscles of Pacini:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are innervated by unmyelinated fibers."
+      },
+      {
+        "aid": 2,
+        "atext": "They are mechanoreceptors of slow adaptation."
+      },
+      {
+        "aid": 3,
+        "atext": "They have small receptor fields."
+      },
+      {
+        "aid": 4,
+        "atext": "They are located in deep areas of the dermis."
+      },
+      {
+        "aid": 5,
+        "atext": "They are thermoreceptors."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 6,
+    "qtext": "The color of the eyes depends on the pigment present in:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Pupil."
+      },
+      {
+        "aid": 2,
+        "atext": "Cornea."
+      },
+      {
+        "aid": 3,
+        "atext": "Iris."
+      },
+      {
+        "aid": 4,
+        "atext": "Choroid"
+      },
+      {
+        "aid": 5,
+        "atext": "Retina."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 7,
+    "qtext": "The cones:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are preferably in the peripheral retina."
+      },
+      {
+        "aid": 2,
+        "atext": "They have membranous discs stacked in their outer segment."
+      },
+      {
+        "aid": 3,
+        "atext": "They have less sensitivity than the canes."
+      },
+      {
+        "aid": 4,
+        "atext": "Sinaptan with ganglionic neurons."
+      },
+      {
+        "aid": 5,
+        "atext": "Sinaptan only on center bipolar \"on\"."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 8,
+    "qtext": "In the layer closest to the pigment epithelium of the retina are the cells:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Ganglionares"
+      },
+      {
+        "aid": 2,
+        "atext": "Cones and canes."
+      },
+      {
+        "aid": 3,
+        "atext": "Amacrinas."
+      },
+      {
+        "aid": 4,
+        "atext": "Bipolar"
+      },
+      {
+        "aid": 5,
+        "atext": "Horizontal"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 9,
+    "qtext": "The intrafusal fibers:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They contract in their central region."
+      },
+      {
+        "aid": 2,
+        "atext": "They generate most of the muscle tension."
+      },
+      {
+        "aid": 3,
+        "atext": "They are arranged in series with extrafusal fibers."
+      },
+      {
+        "aid": 4,
+        "atext": "They are innervated by alpha motor neurons."
+      },
+      {
+        "aid": 5,
+        "atext": "They receive sensory innervation of \"Ia\" fibers."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 10,
+    "qtext": "The Purkinje cells of the cerebellum receive direct input from:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Spinal neurons"
+      },
+      {
+        "aid": 2,
+        "atext": "Neurons of deep cerebellar nuclei."
+      },
+      {
+        "aid": 3,
+        "atext": "Climbing fibers"
+      },
+      {
+        "aid": 4,
+        "atext": "Mossy fibers."
+      },
+      {
+        "aid": 5,
+        "atext": "Pyramidal neurons of cerebral cortex."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 11,
+    "qtext": "They release noradrenaline the:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Sympathetic preganglionic fibers."
+      },
+      {
+        "aid": 2,
+        "atext": "Sympathetic Postganglionic Fibers"
+      },
+      {
+        "aid": 3,
+        "atext": "Preganglionic parasympathetic fibers"
+      },
+      {
+        "aid": 4,
+        "atext": "Postganglionic parasympathetic fibers"
+      },
+      {
+        "aid": 5,
+        "atext": "Only the chromaffin cells."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 12,
+    "qtext": "Circadian rhythms are established in:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Pineal gland."
+      },
+      {
+        "aid": 2,
+        "atext": "Suprachiasmatic nucleus."
+      },
+      {
+        "aid": 3,
+        "atext": "Retina."
+      },
+      {
+        "aid": 4,
+        "atext": "Spinal cord."
+      },
+      {
+        "aid": 5,
+        "atext": "Centromedianic thalamic nucleus."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 13,
+    "qtext": "A motor neuron and all the muscle fibers that it innervates constitute:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Motor plate."
+      },
+      {
+        "aid": 2,
+        "atext": "Motor unit"
+      },
+      {
+        "aid": 3,
+        "atext": "Neuromuscular junction"
+      },
+      {
+        "aid": 4,
+        "atext": "Motor synapse"
+      },
+      {
+        "aid": 5,
+        "atext": "Motor filament"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 14,
+    "qtext": "In the ear of mammals:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The sterocilies of the hair cells contact the basilar membrane."
+      },
+      {
+        "aid": 2,
+        "atext": "The tympanic ramp contains endolymph."
+      },
+      {
+        "aid": 3,
+        "atext": "The basilar membrane is wider and more flexible at the level of the helicotrema."
+      },
+      {
+        "aid": 4,
+        "atext": "The sensory cells are those of Deiter."
+      },
+      {
+        "aid": 5,
+        "atext": "The oval membrane has a larger surface than the tympanic membrane."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 15,
+    "qtext": "Calcitriol or active Vitamin D induces:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Hypocalcemia"
+      },
+      {
+        "aid": 2,
+        "atext": "Synthesis of calbindin in enterocytes."
+      },
+      {
+        "aid": 3,
+        "atext": "Calcium secretion in urine."
+      },
+      {
+        "aid": 4,
+        "atext": "PTH secretion."
+      },
+      {
+        "aid": 5,
+        "atext": "Decrease in intestinal absorption of phosphate."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 16,
+    "qtext": "Increase the activity of Na + / K + -ATPase:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Insulin."
+      },
+      {
+        "aid": 2,
+        "atext": "Aldosterone"
+      },
+      {
+        "aid": 3,
+        "atext": "ACTH."
+      },
+      {
+        "aid": 4,
+        "atext": "Atrial natriuretic peptide."
+      },
+      {
+        "aid": 5,
+        "atext": "ADH."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 17,
+    "qtext": "The glucocorticoids:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Increase ACTH levels."
+      },
+      {
+        "aid": 2,
+        "atext": "They stimulate the secretion of CRH."
+      },
+      {
+        "aid": 3,
+        "atext": "They are anti-inflammatory."
+      },
+      {
+        "aid": 4,
+        "atext": "They are hypoglycemic."
+      },
+      {
+        "aid": 5,
+        "atext": "Increase immune responses."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 18,
+    "qtext": "Placental lactogen has equivalent effects to:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "GH"
+      },
+      {
+        "aid": 2,
+        "atext": "Insulin."
+      },
+      {
+        "aid": 3,
+        "atext": "Oxytocin"
+      },
+      {
+        "aid": 4,
+        "atext": "Estrogens"
+      },
+      {
+        "aid": 5,
+        "atext": "FSH."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 19,
+    "qtext": "Lacks hypothalamic control:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Glucagon."
+      },
+      {
+        "aid": 2,
+        "atext": "ACTH."
+      },
+      {
+        "aid": 3,
+        "atext": "Prolactin"
+      },
+      {
+        "aid": 4,
+        "atext": "GH"
+      },
+      {
+        "aid": 5,
+        "atext": "LH"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 20,
+    "qtext": "The kidneys secrete the hormone:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Calcitriol."
+      },
+      {
+        "aid": 2,
+        "atext": "Renina"
+      },
+      {
+        "aid": 3,
+        "atext": "Angiotensin II."
+      },
+      {
+        "aid": 4,
+        "atext": "Aldosterone"
+      },
+      {
+        "aid": 5,
+        "atext": "Calcitonin"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 21,
+    "qtext": "The neurohypophysis:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is a continuation of the hypothalamus."
+      },
+      {
+        "aid": 2,
+        "atext": "It presents dual hypothalamic control."
+      },
+      {
+        "aid": 3,
+        "atext": "It receives hypothalamic hormones via blood."
+      },
+      {
+        "aid": 4,
+        "atext": "It is irrigated by the portal system hypothalamus pituitary gland."
+      },
+      {
+        "aid": 5,
+        "atext": "It produces prolactin."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 22,
+    "qtext": "GH secretion:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It stops after puberty."
+      },
+      {
+        "aid": 2,
+        "atext": "Increase during the fast."
+      },
+      {
+        "aid": 3,
+        "atext": "It decreases during sleep."
+      },
+      {
+        "aid": 4,
+        "atext": "It is stimulated by somatostatin."
+      },
+      {
+        "aid": 5,
+        "atext": "It is inhibited by exercise."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 23,
+    "qtext": "Thyroid hormones inhibit:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The basal metabolism."
+      },
+      {
+        "aid": 2,
+        "atext": "The production of body heat."
+      },
+      {
+        "aid": 3,
+        "atext": "Growth."
+      },
+      {
+        "aid": 4,
+        "atext": "The development and maturation of the central nervous system."
+      },
+      {
+        "aid": 5,
+        "atext": "The secretion of TSH."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 24,
+    "qtext": "Prolactin stimulates the:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Milk secretion"
+      },
+      {
+        "aid": 2,
+        "atext": "Milky ejection."
+      },
+      {
+        "aid": 3,
+        "atext": "Deposit of fat in the breasts."
+      },
+      {
+        "aid": 4,
+        "atext": "Formation of the mammary ducts."
+      },
+      {
+        "aid": 5,
+        "atext": "Formation of mammary secretory cells."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 25,
+    "qtext": "The second heart sound coincides with:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "End of ventricular diastole."
+      },
+      {
+        "aid": 2,
+        "atext": "End of atrial diastole."
+      },
+      {
+        "aid": 3,
+        "atext": "Opening of the aortic valve."
+      },
+      {
+        "aid": 4,
+        "atext": "Atrial systole"
+      },
+      {
+        "aid": 5,
+        "atext": "Closing of the semilunar valves."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 26,
+    "qtext": "The activation of arterial baroreceptors causes:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Stimulation of the bulbar pressure center."
+      },
+      {
+        "aid": 2,
+        "atext": "Activation of the parasympathetic."
+      },
+      {
+        "aid": 3,
+        "atext": "Increased blood pressure."
+      },
+      {
+        "aid": 4,
+        "atext": "Tachycardia."
+      },
+      {
+        "aid": 5,
+        "atext": "Positive inotropic effect."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 27,
+    "qtext": "The blood flow velocity is maximum in:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Great arteries"
+      },
+      {
+        "aid": 2,
+        "atext": "Distribution arteries."
+      },
+      {
+        "aid": 3,
+        "atext": "Arterioles"
+      },
+      {
+        "aid": 4,
+        "atext": "Capillaries"
+      },
+      {
+        "aid": 5,
+        "atext": "Venules"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 28,
+    "qtext": "They are essential for blood coagulation:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Red blood cells."
+      },
+      {
+        "aid": 2,
+        "atext": "White blood cells"
+      },
+      {
+        "aid": 3,
+        "atext": "Platelets."
+      },
+      {
+        "aid": 4,
+        "atext": "The lymph."
+      },
+      {
+        "aid": 5,
+        "atext": "Serum glucose"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 29,
+    "qtext": "Fibrinogen is activated by:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Platelet stopper"
+      },
+      {
+        "aid": 2,
+        "atext": "Plasmina."
+      },
+      {
+        "aid": 3,
+        "atext": "Thrombin"
+      },
+      {
+        "aid": 4,
+        "atext": "Thromboplastin."
+      },
+      {
+        "aid": 5,
+        "atext": "Factor von Willebrand."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 30,
+    "qtext": "Ventricular filling is greater during:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Isovolumetric ventricular relaxation."
+      },
+      {
+        "aid": 2,
+        "atext": "First third of the ventricular diastole."
+      },
+      {
+        "aid": 3,
+        "atext": "Atrial systole"
+      },
+      {
+        "aid": 4,
+        "atext": "Intermediate phase of ventricular diastole."
+      },
+      {
+        "aid": 5,
+        "atext": "It is uniform."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 31,
+    "qtext": "The main vessels that regulate blood flow are:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Arteries"
+      },
+      {
+        "aid": 2,
+        "atext": "Arterioles"
+      },
+      {
+        "aid": 3,
+        "atext": "Capillaries"
+      },
+      {
+        "aid": 4,
+        "atext": "Venules"
+      },
+      {
+        "aid": 5,
+        "atext": "Veins."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 32,
+    "qtext": "After ventricular systole, the volume of blood in the ventricle is:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Zero."
+      },
+      {
+        "aid": 2,
+        "atext": "The telesistolic."
+      },
+      {
+        "aid": 3,
+        "atext": "The systolic."
+      },
+      {
+        "aid": 4,
+        "atext": "The end-diastolic."
+      },
+      {
+        "aid": 5,
+        "atext": "Greater in the right ventricle than in the left."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 33,
+    "qtext": "The QT interval of the electrocardiogram indicates the duration of:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Atrial contraction"
+      },
+      {
+        "aid": 2,
+        "atext": "Ventricular contraction."
+      },
+      {
+        "aid": 3,
+        "atext": "Ventricular relaxation"
+      },
+      {
+        "aid": 4,
+        "atext": "Atrial relaxation"
+      },
+      {
+        "aid": 5,
+        "atext": "Delay in the atrioventricular node."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 34,
+    "qtext": "Activates the renin-angiotensin aldosterone system an increase in:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Blood pressure."
+      },
+      {
+        "aid": 2,
+        "atext": "Parasympathetic activity"
+      },
+      {
+        "aid": 3,
+        "atext": "Concentration of Ca2 + in plasma."
+      },
+      {
+        "aid": 4,
+        "atext": "Na + concentration in plasma."
+      },
+      {
+        "aid": 5,
+        "atext": "Sympathetic activity"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 35,
+    "qtext": "During ventricular systole:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "All ventricular blood is expelled."
+      },
+      {
+        "aid": 2,
+        "atext": "Intraventricular pressure is equal in both ventricles."
+      },
+      {
+        "aid": 3,
+        "atext": "The ventricular volume begins to decrease from the beginning of the contraction."
+      },
+      {
+        "aid": 4,
+        "atext": "The atrio-ventricular valves are open."
+      },
+      {
+        "aid": 5,
+        "atext": "The atria are relaxed."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 36,
+    "qtext": "The lymphatic flow from the feet:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It increases when standing up."
+      },
+      {
+        "aid": 2,
+        "atext": "Increase by external compression."
+      },
+      {
+        "aid": 3,
+        "atext": "Increases when decreasing capillary permeability."
+      },
+      {
+        "aid": 4,
+        "atext": "It decreases during inspiration."
+      },
+      {
+        "aid": 5,
+        "atext": "Decrease by exercise."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 38,
+    "qtext": "The reabsorption of glucose in the nephron:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It has no maximum rate."
+      },
+      {
+        "aid": 2,
+        "atext": "It is less than 50% of the filtered."
+      },
+      {
+        "aid": 3,
+        "atext": "It is done in the proximal tubule."
+      },
+      {
+        "aid": 4,
+        "atext": "It is mediated by insulin."
+      },
+      {
+        "aid": 5,
+        "atext": "It is by simple diffusion."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 39,
+    "qtext": "Urine is hypoosmolar with respect to plasma in:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Bowman's capsule."
+      },
+      {
+        "aid": 2,
+        "atext": "Proximal tubule"
+      },
+      {
+        "aid": 3,
+        "atext": "Medulla area of ​​the loop of Henle."
+      },
+      {
+        "aid": 4,
+        "atext": "Initial zone of the distal tubule."
+      },
+      {
+        "aid": 5,
+        "atext": "Collecting tubule in the presence of ADH."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 40,
+    "qtext": "In the digestive system, the vagus:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Stimulates the contraction of the cardia."
+      },
+      {
+        "aid": 2,
+        "atext": "The gastro-colic reflex mediates."
+      },
+      {
+        "aid": 3,
+        "atext": "Decreases the secretion of gastric acid."
+      },
+      {
+        "aid": 4,
+        "atext": "Inhibits the secretion of pancreatic bicarbonate."
+      },
+      {
+        "aid": 5,
+        "atext": "It is not choralgogo."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 42,
+    "qtext": "Inhibits gastrin secretion:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Parasympathetic stimulation."
+      },
+      {
+        "aid": 2,
+        "atext": "Sight, aroma and taste of the food."
+      },
+      {
+        "aid": 3,
+        "atext": "Stomach distension"
+      },
+      {
+        "aid": 4,
+        "atext": "Presence of proteins in the stomach."
+      },
+      {
+        "aid": 5,
+        "atext": "Somatostatin."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 43,
+    "qtext": "Alveolar pressure exceeds atmospheric pressure:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "In the initial phase of inspiration."
+      },
+      {
+        "aid": 2,
+        "atext": "In the middle phase of inspiration."
+      },
+      {
+        "aid": 3,
+        "atext": "In the middle phase of an expiration."
+      },
+      {
+        "aid": 4,
+        "atext": "At the end of expiration."
+      },
+      {
+        "aid": 5,
+        "atext": "At the end of the inspiration."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 44,
+    "qtext": "The anatomical dead space:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is always greater than the physiological one."
+      },
+      {
+        "aid": 2,
+        "atext": "Secret surfactants."
+      },
+      {
+        "aid": 3,
+        "atext": "Includes medium-sized bronchioles."
+      },
+      {
+        "aid": 4,
+        "atext": "It allows gaseous exchange."
+      },
+      {
+        "aid": 5,
+        "atext": "Includes the volume of inspiratory reserve."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 45,
+    "qtext": "If the arterial pO2 decreases to 60 mm of Hg:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Decreases ventilation."
+      },
+      {
+        "aid": 2,
+        "atext": "Central chemoreceptors are activated."
+      },
+      {
+        "aid": 3,
+        "atext": "The central chemoreceptors are depressed."
+      },
+      {
+        "aid": 4,
+        "atext": "The arterial chemoreceptors are activated."
+      },
+      {
+        "aid": 5,
+        "atext": "It produces loss of consciousness."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 46,
+    "qtext": "The pyramidal neurons are in:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Cerebellum."
+      },
+      {
+        "aid": 2,
+        "atext": "Brain."
+      },
+      {
+        "aid": 3,
+        "atext": "Spinal cord."
+      },
+      {
+        "aid": 4,
+        "atext": "Spinal ganglia."
+      },
+      {
+        "aid": 5,
+        "atext": "Hypophysis."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 47,
+    "qtext": "The lipid inclusion of unilocular adipocytes is surrounded by:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Actin filaments."
+      },
+      {
+        "aid": 2,
+        "atext": "Myosin filaments."
+      },
+      {
+        "aid": 3,
+        "atext": "Filaments of vimentin."
+      },
+      {
+        "aid": 4,
+        "atext": "Microtubules"
+      },
+      {
+        "aid": 5,
+        "atext": "Membrane from the smooth endoplasmic reticulum."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 48,
+    "qtext": "The presence of phosphatidylserine on the cell surface indicates:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Cellular senescence"
+      },
+      {
+        "aid": 2,
+        "atext": "Apoptosis"
+      },
+      {
+        "aid": 3,
+        "atext": "Necrosis."
+      },
+      {
+        "aid": 4,
+        "atext": "Mitosis."
+      },
+      {
+        "aid": 5,
+        "atext": "Hormone stimulation"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 49,
+    "qtext": "The hydrolases of the lysosomes act in medium:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Acid."
+      },
+      {
+        "aid": 2,
+        "atext": "Basic."
+      },
+      {
+        "aid": 3,
+        "atext": "Neutral."
+      },
+      {
+        "aid": 4,
+        "atext": "It depends on the material to digest."
+      },
+      {
+        "aid": 5,
+        "atext": "At any pH."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 50,
+    "qtext": "Heterochromatin lacks:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Histone H1."
+      },
+      {
+        "aid": 2,
+        "atext": "Nucleosomes"
+      },
+      {
+        "aid": 3,
+        "atext": "Exons"
+      },
+      {
+        "aid": 4,
+        "atext": "Transcriptional activity"
+      },
+      {
+        "aid": 5,
+        "atext": "Origins of replication."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 51,
+    "qtext": "The epithelium of the epidermis is:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Stratified keratinized plane."
+      },
+      {
+        "aid": 2,
+        "atext": "Stratified non-keratinized plane."
+      },
+      {
+        "aid": 3,
+        "atext": "Simple keratinized cylindrical."
+      },
+      {
+        "aid": 4,
+        "atext": "Keratinized stratified cylindrical."
+      },
+      {
+        "aid": 5,
+        "atext": "Cubic stratified."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 52,
+    "qtext": "The cell is destroyed to release the secretion:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Merocrine"
+      },
+      {
+        "aid": 2,
+        "atext": "Apocrine"
+      },
+      {
+        "aid": 3,
+        "atext": "Endocrine"
+      },
+      {
+        "aid": 4,
+        "atext": "Holocrine"
+      },
+      {
+        "aid": 5,
+        "atext": "Paracrine"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 53,
+    "qtext": "Among the following, the first precursor cell of neutrophil granulocytes is:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Monoblast."
+      },
+      {
+        "aid": 2,
+        "atext": "Myeloblast."
+      },
+      {
+        "aid": 3,
+        "atext": "Metamielocito."
+      },
+      {
+        "aid": 4,
+        "atext": "Cell in band (or in staff)"
+      },
+      {
+        "aid": 5,
+        "atext": "Promyelocyte"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 54,
+    "qtext": "The system in T:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is present in all muscle cells without exception."
+      },
+      {
+        "aid": 2,
+        "atext": "It is part of the sarcoplasmic reticulum."
+      },
+      {
+        "aid": 3,
+        "atext": "It has an ATPase activated by Ca2 +."
+      },
+      {
+        "aid": 4,
+        "atext": "It is a tubular invagination of the plasma membrane."
+      },
+      {
+        "aid": 5,
+        "atext": "Releases Ca2 + to the cytosol during recruitment."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 55,
+    "qtext": "In eukaryotic cells the lipids of the membrane are synthesized mainly in:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Rough endoplasmic reticulum."
+      },
+      {
+        "aid": 2,
+        "atext": "Golgi apparatus."
+      },
+      {
+        "aid": 3,
+        "atext": "Smooth endoplasmic reticulum."
+      },
+      {
+        "aid": 4,
+        "atext": "Mitochondria"
+      },
+      {
+        "aid": 5,
+        "atext": "Ribosomes"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 56,
+    "qtext": "Fibrous cartilage is typical of:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Windpipe."
+      },
+      {
+        "aid": 2,
+        "atext": "Bronchi"
+      },
+      {
+        "aid": 3,
+        "atext": "Auricular pavilion"
+      },
+      {
+        "aid": 4,
+        "atext": "Intervertebral discs."
+      },
+      {
+        "aid": 5,
+        "atext": "External auditive conduct."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 57,
+    "qtext": "Presents centroacinosas cells the gland:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Parotid."
+      },
+      {
+        "aid": 2,
+        "atext": "Submaxillary"
+      },
+      {
+        "aid": 3,
+        "atext": "Sublingual"
+      },
+      {
+        "aid": 4,
+        "atext": "Pancreas."
+      },
+      {
+        "aid": 5,
+        "atext": "Liver."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 58,
+    "qtext": "The continuous capillaries are typical of:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Central Nervous System."
+      },
+      {
+        "aid": 2,
+        "atext": "Liver."
+      },
+      {
+        "aid": 3,
+        "atext": "Glands"
+      },
+      {
+        "aid": 4,
+        "atext": "Kidney."
+      },
+      {
+        "aid": 5,
+        "atext": "Digestive tube."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 59,
+    "qtext": "The Müller cells of the retina are:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Modified neurons."
+      },
+      {
+        "aid": 2,
+        "atext": "Glandular"
+      },
+      {
+        "aid": 3,
+        "atext": "Neurogliales of support."
+      },
+      {
+        "aid": 4,
+        "atext": "Of the microglia."
+      },
+      {
+        "aid": 5,
+        "atext": "Of the pigmentary layer."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 61,
+    "qtext": "The ribosomal subunits are formed in the:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Nucleoplasm."
+      },
+      {
+        "aid": 2,
+        "atext": "Nucleolus"
+      },
+      {
+        "aid": 3,
+        "atext": "Nuclear sheet."
+      },
+      {
+        "aid": 4,
+        "atext": "Nuclear pore."
+      },
+      {
+        "aid": 5,
+        "atext": "Cytoplasm."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 62,
+    "qtext": "The nuclear lamina is formed by:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Actina."
+      },
+      {
+        "aid": 2,
+        "atext": "Tubulina."
+      },
+      {
+        "aid": 3,
+        "atext": "Intermediate filaments"
+      },
+      {
+        "aid": 4,
+        "atext": "Fibronectin"
+      },
+      {
+        "aid": 5,
+        "atext": "Laminin"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 63,
+    "qtext": "Importin intervenes in the transport of proteins from the cytoplasm to:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Nucleus."
+      },
+      {
+        "aid": 2,
+        "atext": "Endoplasmic reticulum."
+      },
+      {
+        "aid": 3,
+        "atext": "Mitochondria."
+      },
+      {
+        "aid": 4,
+        "atext": "Peroxisome"
+      },
+      {
+        "aid": 5,
+        "atext": "Lysosome"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 64,
+    "qtext": "They are formed by maturation of late endosomes:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Lysosomes"
+      },
+      {
+        "aid": 2,
+        "atext": "Phagosomes"
+      },
+      {
+        "aid": 3,
+        "atext": "Multivesicular bodies."
+      },
+      {
+        "aid": 4,
+        "atext": "Secretion granules"
+      },
+      {
+        "aid": 5,
+        "atext": "Proteosomes"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 65,
+    "qtext": "The cell displacement by creep depends on:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Cilia."
+      },
+      {
+        "aid": 2,
+        "atext": "Stereocilios."
+      },
+      {
+        "aid": 3,
+        "atext": "Flagella."
+      },
+      {
+        "aid": 4,
+        "atext": "Actin filaments."
+      },
+      {
+        "aid": 5,
+        "atext": "Microvilli."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 66,
+    "qtext": "They have their own ribosomes:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Lysosomes"
+      },
+      {
+        "aid": 2,
+        "atext": "Peroxisomes"
+      },
+      {
+        "aid": 3,
+        "atext": "Endosomes"
+      },
+      {
+        "aid": 4,
+        "atext": "Secretion granules"
+      },
+      {
+        "aid": 5,
+        "atext": "Mitochondria"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 67,
+    "qtext": "Kinesin and dynein are:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Adhesion proteins."
+      },
+      {
+        "aid": 2,
+        "atext": "Microtubular motors."
+      },
+      {
+        "aid": 3,
+        "atext": "Degradative enzymes"
+      },
+      {
+        "aid": 4,
+        "atext": "Components of the vesicular cover."
+      },
+      {
+        "aid": 5,
+        "atext": "Transcriptional factors."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 68,
+    "qtext": "They produce myelin in the central nervous system:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Astrocytes"
+      },
+      {
+        "aid": 2,
+        "atext": "Ependymal cells."
+      },
+      {
+        "aid": 3,
+        "atext": "Satellite cells."
+      },
+      {
+        "aid": 4,
+        "atext": "Schwann cells."
+      },
+      {
+        "aid": 5,
+        "atext": "Oligodendrocytes"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 69,
+    "qtext": "It does NOT occur during apoptosis:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Rupture of the plasma membrane."
+      },
+      {
+        "aid": 2,
+        "atext": "Condensation of chromatin."
+      },
+      {
+        "aid": 3,
+        "atext": "Collapse of the cytoskeleton."
+      },
+      {
+        "aid": 4,
+        "atext": "Fragmentation of DNA"
+      },
+      {
+        "aid": 5,
+        "atext": "Formation of apoptotic bodies."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 70,
+    "qtext": "The desmosomes:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Communicate the cytoplasms of contiguous cells."
+      },
+      {
+        "aid": 2,
+        "atext": "They seal the intercellular space."
+      },
+      {
+        "aid": 3,
+        "atext": "They surround the entire cell perimeter."
+      },
+      {
+        "aid": 4,
+        "atext": "They connect the cell to the basal lamina."
+      },
+      {
+        "aid": 5,
+        "atext": "They are point intercellular adhesive bonds."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 71,
+    "qtext": "The tissue is avascular:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Cartilaginous."
+      },
+      {
+        "aid": 2,
+        "atext": "Adipose."
+      },
+      {
+        "aid": 3,
+        "atext": "Osseous."
+      },
+      {
+        "aid": 4,
+        "atext": "Muscular."
+      },
+      {
+        "aid": 5,
+        "atext": "Nervous."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 72,
+    "qtext": "The goblet cells belong to the tissue:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Epithelial."
+      },
+      {
+        "aid": 2,
+        "atext": "Conjunctive."
+      },
+      {
+        "aid": 3,
+        "atext": "Cartilaginous."
+      },
+      {
+        "aid": 4,
+        "atext": "Osseous."
+      },
+      {
+        "aid": 5,
+        "atext": "Adipose."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 73,
+    "qtext": "Mast cells or mast cells belong to the tissue:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Epithelial."
+      },
+      {
+        "aid": 2,
+        "atext": "Conjunctive."
+      },
+      {
+        "aid": 3,
+        "atext": "Adipose"
+      },
+      {
+        "aid": 4,
+        "atext": "Lymphoid"
+      },
+      {
+        "aid": 5,
+        "atext": "Nervous."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 74,
+    "qtext": "They produce bone resorption:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Fibroblasts."
+      },
+      {
+        "aid": 2,
+        "atext": "Osteoblasts"
+      },
+      {
+        "aid": 3,
+        "atext": "Osteoclasts."
+      },
+      {
+        "aid": 4,
+        "atext": "Osteocytes"
+      },
+      {
+        "aid": 5,
+        "atext": "Osteona."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 75,
+    "qtext": "They are fragments of the cytoplasm of a precursor cell:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Lymphocytes"
+      },
+      {
+        "aid": 2,
+        "atext": "Megakaryocytes"
+      },
+      {
+        "aid": 3,
+        "atext": "Monocytes"
+      },
+      {
+        "aid": 4,
+        "atext": "Platelets."
+      },
+      {
+        "aid": 5,
+        "atext": "Erythrocytes"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 76,
+    "qtext": "If a statistical test offers a value p <0.05:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The null hypothesis is accepted."
+      },
+      {
+        "aid": 2,
+        "atext": "The alternative hypothesis is rejected."
+      },
+      {
+        "aid": 3,
+        "atext": "the null hypothesis is rejected."
+      },
+      {
+        "aid": 4,
+        "atext": "The null hypothesis can not be rejected."
+      },
+      {
+        "aid": 5,
+        "atext": "There is no evidence in favor of the alternative hypothesis."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 77,
+    "qtext": "A confidence interval to estimate the population mean will be more precise when:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The lower the confidence level."
+      },
+      {
+        "aid": 2,
+        "atext": "The greater the dispersion of the sample."
+      },
+      {
+        "aid": 3,
+        "atext": "The smaller the sample size."
+      },
+      {
+        "aid": 4,
+        "atext": "The greater the typical sampling error."
+      },
+      {
+        "aid": 5,
+        "atext": "The higher the confidence level."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 79,
+    "qtext": "If a sample of size 100 has a standard deviation of 10, its typical error is:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "10"
+      },
+      {
+        "aid": 2,
+        "atext": "100"
+      },
+      {
+        "aid": 3,
+        "atext": "0.1"
+      },
+      {
+        "aid": 4,
+        "atext": "one."
+      },
+      {
+        "aid": 5,
+        "atext": "There is not enough data to calculate it."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 80,
+    "qtext": "How many degrees of freedom does a Student's t-test applied to two samples related to a total of 25 individuals?",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "26"
+      },
+      {
+        "aid": 2,
+        "atext": "24"
+      },
+      {
+        "aid": 3,
+        "atext": "2. 3."
+      },
+      {
+        "aid": 4,
+        "atext": "48"
+      },
+      {
+        "aid": 5,
+        "atext": "47"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 81,
+    "qtext": "The most common ectopic pregnancy occurs in:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The fallopian tube."
+      },
+      {
+        "aid": 2,
+        "atext": "The oviductal tube."
+      },
+      {
+        "aid": 3,
+        "atext": "The cervix"
+      },
+      {
+        "aid": 4,
+        "atext": "The ovary"
+      },
+      {
+        "aid": 5,
+        "atext": "The abdomen."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 82,
+    "qtext": "The blastocyst is detached from the zona pellucida in:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The ovary"
+      },
+      {
+        "aid": 2,
+        "atext": "The fallopian tube."
+      },
+      {
+        "aid": 3,
+        "atext": "Oviductal tube."
+      },
+      {
+        "aid": 4,
+        "atext": "The uterus."
+      },
+      {
+        "aid": 5,
+        "atext": "The vagina"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 83,
+    "qtext": "The term that includes the changes of the endometrium during pregnancy is:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Hatching."
+      },
+      {
+        "aid": 2,
+        "atext": "Apposition."
+      },
+      {
+        "aid": 3,
+        "atext": "Accession."
+      },
+      {
+        "aid": 4,
+        "atext": "Invasion."
+      },
+      {
+        "aid": 5,
+        "atext": "Decidualization."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 84,
+    "qtext": "After gastrulation, the epiblast is transformed into:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Endoderm"
+      },
+      {
+        "aid": 2,
+        "atext": "Mesoderm"
+      },
+      {
+        "aid": 3,
+        "atext": "Ectoderm"
+      },
+      {
+        "aid": 4,
+        "atext": "Celoma"
+      },
+      {
+        "aid": 5,
+        "atext": "Chorionic villi."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 85,
+    "qtext": "In the formation of the skin they intervene:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Only the ectoderm."
+      },
+      {
+        "aid": 2,
+        "atext": "The ectoderm, mesoderm and cells of the neural crest."
+      },
+      {
+        "aid": 3,
+        "atext": "The ectoderm and mesoderm."
+      },
+      {
+        "aid": 4,
+        "atext": "The ectoderm and cells of the neural crest."
+      },
+      {
+        "aid": 5,
+        "atext": "Only the mesoderm."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 86,
+    "qtext": "In the human genome, the coding sequences are called:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Exons"
+      },
+      {
+        "aid": 2,
+        "atext": "Promoters"
+      },
+      {
+        "aid": 3,
+        "atext": "Intensifiers"
+      },
+      {
+        "aid": 4,
+        "atext": "Introns"
+      },
+      {
+        "aid": 5,
+        "atext": "Adapters"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 87,
+    "qtext": "The amount of DNA in a genome is called value:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "TO."
+      },
+      {
+        "aid": 2,
+        "atext": "D."
+      },
+      {
+        "aid": 3,
+        "atext": "An."
+      },
+      {
+        "aid": 4,
+        "atext": "C."
+      },
+      {
+        "aid": 5,
+        "atext": "Cn."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 88,
+    "qtext": "The most frequent mechanism that induces the activation of the ABL protooncogene in chronic myeloid leukemia is:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Point mutation"
+      },
+      {
+        "aid": 2,
+        "atext": "Gene amplification."
+      },
+      {
+        "aid": 3,
+        "atext": "Methylation of the promoter."
+      },
+      {
+        "aid": 4,
+        "atext": "Deletion"
+      },
+      {
+        "aid": 5,
+        "atext": "Translocation"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 89,
+    "qtext": "It has a recessive inheritance linked to the X chromosome the:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Acatalasemia"
+      },
+      {
+        "aid": 2,
+        "atext": "Hemophilia A."
+      },
+      {
+        "aid": 3,
+        "atext": "Rett syndrome."
+      },
+      {
+        "aid": 4,
+        "atext": "Cystic fibrosis,"
+      },
+      {
+        "aid": 5,
+        "atext": "Hypophosphatemia"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 90,
+    "qtext": "In eukaryotes, the RNA polymerase that transcribes small ribosomal RNAs is:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "II."
+      },
+      {
+        "aid": 2,
+        "atext": "I."
+      },
+      {
+        "aid": 3,
+        "atext": "IV."
+      },
+      {
+        "aid": 4,
+        "atext": "III."
+      },
+      {
+        "aid": 5,
+        "atext": "V."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 91,
+    "qtext": "To silence messenger RNA (mRNA) siRNAs and miRNAs are usually linked to your:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "TATA box."
+      },
+      {
+        "aid": 2,
+        "atext": "5'-UTR."
+      },
+      {
+        "aid": 3,
+        "atext": "5 'cap."
+      },
+      {
+        "aid": 4,
+        "atext": "3'-UTR."
+      },
+      {
+        "aid": 5,
+        "atext": "Poly (A) 3 tail."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 92,
+    "qtext": "Generates blunt DNA fragments the restriction enzyme:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Bam HI."
+      },
+      {
+        "aid": 2,
+        "atext": "Hae III."
+      },
+      {
+        "aid": 3,
+        "atext": "Hind III."
+      },
+      {
+        "aid": 4,
+        "atext": "Eco RI."
+      },
+      {
+        "aid": 5,
+        "atext": "Eco RII."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 93,
+    "qtext": "In eukaryotes, group II introns are in genes:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Of rRNA."
+      },
+      {
+        "aid": 2,
+        "atext": "From tRNA."
+      },
+      {
+        "aid": 3,
+        "atext": "They encode proteins in the nucleus."
+      },
+      {
+        "aid": 4,
+        "atext": "They encode proteins in mitochondria."
+      },
+      {
+        "aid": 5,
+        "atext": "None is correct."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 94,
+    "qtext": "In eukaryotes, RNA polymerase I transcribes:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Small rRNA"
+      },
+      {
+        "aid": 2,
+        "atext": "Pre-mRNA."
+      },
+      {
+        "aid": 3,
+        "atext": "ARNsno."
+      },
+      {
+        "aid": 4,
+        "atext": "ARNt."
+      },
+      {
+        "aid": 5,
+        "atext": "Large rRNA."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 95,
+    "qtext": "What enzyme does a retrovirus use to synthesize DNA copy of its genome?",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "DNA polymerase I."
+      },
+      {
+        "aid": 2,
+        "atext": "cDNA polymerase I."
+      },
+      {
+        "aid": 3,
+        "atext": "RNA polymerase I."
+      },
+      {
+        "aid": 4,
+        "atext": "cDNA polymerase II."
+      },
+      {
+        "aid": 5,
+        "atext": "Reverse transcriptase"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 96,
+    "qtext": "How many palindromic sequences exist on the human Y chromosome that allow Y-Y recombination ?:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "8"
+      },
+      {
+        "aid": 2,
+        "atext": "6"
+      },
+      {
+        "aid": 3,
+        "atext": "Four."
+      },
+      {
+        "aid": 4,
+        "atext": "10"
+      },
+      {
+        "aid": 5,
+        "atext": "12"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 97,
+    "qtext": "It is an oncogen:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "NF1"
+      },
+      {
+        "aid": 2,
+        "atext": "P53"
+      },
+      {
+        "aid": 3,
+        "atext": "RB"
+      },
+      {
+        "aid": 4,
+        "atext": "cMYC."
+      },
+      {
+        "aid": 5,
+        "atext": "WT1."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 98,
+    "qtext": "It is a stop codon for translation:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "AUG."
+      },
+      {
+        "aid": 2,
+        "atext": "UAU"
+      },
+      {
+        "aid": 3,
+        "atext": "UGA"
+      },
+      {
+        "aid": 4,
+        "atext": "UAC."
+      },
+      {
+        "aid": 5,
+        "atext": "UGU"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 99,
+    "qtext": "In the replication of eukaryotic DNA the functions that correspond to the gamma (γ) DNA polymerase are:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Translational synthesis of nuclear DNA."
+      },
+      {
+        "aid": 2,
+        "atext": "Replication and repair of mitochondrial DNA."
+      },
+      {
+        "aid": 3,
+        "atext": "Initiation of nuclear DNA synthesis."
+      },
+      {
+        "aid": 4,
+        "atext": "Repair of nuclear DNA."
+      },
+      {
+        "aid": 5,
+        "atext": "Synthesis of the leading and delayed nuclear DNA chain."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 100,
+    "qtext": "If the guanine percentage of a double-stranded DNA molecule is 30%, that of adenine is:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "10%"
+      },
+      {
+        "aid": 2,
+        "atext": "70%"
+      },
+      {
+        "aid": 3,
+        "atext": "80%"
+      },
+      {
+        "aid": 4,
+        "atext": "twenty%."
+      },
+      {
+        "aid": 5,
+        "atext": "30%"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 101,
+    "qtext": "Among the 5 types of histones of chromatin, the one with the lowest molecular weight is:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "H2A."
+      },
+      {
+        "aid": 2,
+        "atext": "H2B."
+      },
+      {
+        "aid": 3,
+        "atext": "H1"
+      },
+      {
+        "aid": 4,
+        "atext": "H4"
+      },
+      {
+        "aid": 5,
+        "atext": "H3"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 102,
+    "qtext": "The three-dimensional structure of B-DNA:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is shorter and wider than the A-DNA."
+      },
+      {
+        "aid": 2,
+        "atext": "It has around 20pb for each 360º turn of the propeller."
+      },
+      {
+        "aid": 3,
+        "atext": "It is the most stable structure under physiological conditions."
+      },
+      {
+        "aid": 4,
+        "atext": "It appears when the DNA is placed in a saline solution."
+      },
+      {
+        "aid": 5,
+        "atext": "It is a left-handed helix."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 103,
+    "qtext": "Williams-Beuren syndrome is characterized by a microdeletion of the long arm of the chromosome:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Four."
+      },
+      {
+        "aid": 2,
+        "atext": "22"
+      },
+      {
+        "aid": 3,
+        "atext": "fifteen."
+      },
+      {
+        "aid": 4,
+        "atext": "17"
+      },
+      {
+        "aid": 5,
+        "atext": "7"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 104,
+    "qtext": "The genetic phenomenon that explains that the expression of a gene is influenced by the sex of the parent is:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Character limited by sex."
+      },
+      {
+        "aid": 2,
+        "atext": "Characteristic linked to sex."
+      },
+      {
+        "aid": 3,
+        "atext": "Cytoplasmic inheritance."
+      },
+      {
+        "aid": 4,
+        "atext": "Genomic imprint"
+      },
+      {
+        "aid": 5,
+        "atext": "Maternal genetic effect."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 105,
+    "qtext": "In a pedigree of an autosomal dominant trait it is observed that:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The trait appears more frequently in males."
+      },
+      {
+        "aid": 2,
+        "atext": "The unaffected people do not transmit the trait."
+      },
+      {
+        "aid": 3,
+        "atext": "The trait tends to skip generations."
+      },
+      {
+        "aid": 4,
+        "atext": "The affected people have both affected parents."
+      },
+      {
+        "aid": 5,
+        "atext": "The trait tends to appear in the progeny of related parents."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 106,
+    "qtext": "In mitosis, the nuclear membrane disintegrates and spindle microtubules bind to the kinetochores in:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Cytokinesis"
+      },
+      {
+        "aid": 2,
+        "atext": "Prometaphase."
+      },
+      {
+        "aid": 3,
+        "atext": "Metaphase"
+      },
+      {
+        "aid": 4,
+        "atext": "Interface."
+      },
+      {
+        "aid": 5,
+        "atext": "Prophase."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 107,
+    "qtext": "Has a dominant inheritance linked to the X chromosome the:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Duchenne muscular dystrophy."
+      },
+      {
+        "aid": 2,
+        "atext": "Fabry disease."
+      },
+      {
+        "aid": 3,
+        "atext": "Huntington's Korea."
+      },
+      {
+        "aid": 4,
+        "atext": "Cystic fibrosis."
+      },
+      {
+        "aid": 5,
+        "atext": "Rett syndrome."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 108,
+    "qtext": "Has an autosomal dominant inheritance:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Alcaptonuria."
+      },
+      {
+        "aid": 2,
+        "atext": "Huntington's Korea."
+      },
+      {
+        "aid": 3,
+        "atext": "Rett syndrome."
+      },
+      {
+        "aid": 4,
+        "atext": "Colour blindness."
+      },
+      {
+        "aid": 5,
+        "atext": "Duchenne muscular dystrophy."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 109,
+    "qtext": "The number of Barr corpuscles of the cells of a man with karyotype 48, XXXY is:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "two."
+      },
+      {
+        "aid": 2,
+        "atext": "one."
+      },
+      {
+        "aid": 3,
+        "atext": "0"
+      },
+      {
+        "aid": 4,
+        "atext": "3."
+      },
+      {
+        "aid": 5,
+        "atext": "Four."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 110,
+    "qtext": "The type of epistasia that explains the 15: 1 dihybrid phenotypic ratio is:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Double dominant."
+      },
+      {
+        "aid": 2,
+        "atext": "Simple recessive"
+      },
+      {
+        "aid": 3,
+        "atext": "Recessive dominant double."
+      },
+      {
+        "aid": 4,
+        "atext": "Double recessive"
+      },
+      {
+        "aid": 5,
+        "atext": "Simple dominant."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 111,
+    "qtext": "To calculate the number of different genotypes in any allelic series the formula is applied:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "(n-1) / 2."
+      },
+      {
+        "aid": 2,
+        "atext": "n x (n + 1) / 2."
+      },
+      {
+        "aid": 3,
+        "atext": "n x (n-1) / 2."
+      },
+      {
+        "aid": 4,
+        "atext": "(n-1) x (n + 1) / 2."
+      },
+      {
+        "aid": 5,
+        "atext": "(2n-1) / 2."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 112,
+    "qtext": "The change corresponds to a change mutation:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "T → C."
+      },
+      {
+        "aid": 2,
+        "atext": "A → T."
+      },
+      {
+        "aid": 3,
+        "atext": "G → A."
+      },
+      {
+        "aid": 4,
+        "atext": "C → T."
+      },
+      {
+        "aid": 5,
+        "atext": "A → G."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 113,
+    "qtext": "The order of the stages of the cell cycle is:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "S, G1, Mitosis, G2."
+      },
+      {
+        "aid": 2,
+        "atext": "G2, G1, S, Mitosis."
+      },
+      {
+        "aid": 3,
+        "atext": "G1, Mitosis, G2, S."
+      },
+      {
+        "aid": 4,
+        "atext": "S, G0, Mitosis, G1."
+      },
+      {
+        "aid": 5,
+        "atext": "G1, S, G2, Mitosis."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 114,
+    "qtext": "How many chromosomes would a male with nulisomy have for chromosomes 17 and 18?",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "43"
+      },
+      {
+        "aid": 2,
+        "atext": "Four. Five."
+      },
+      {
+        "aid": 3,
+        "atext": "44"
+      },
+      {
+        "aid": 4,
+        "atext": "42"
+      },
+      {
+        "aid": 5,
+        "atext": "40"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 115,
+    "qtext": "It is NOT associated with defects in DNA repair the:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Fanconi anemia."
+      },
+      {
+        "aid": 2,
+        "atext": "Li-Fraumeni syndrome."
+      },
+      {
+        "aid": 3,
+        "atext": "Bloom syndrome."
+      },
+      {
+        "aid": 4,
+        "atext": "Xeroderma pigmentosa."
+      },
+      {
+        "aid": 5,
+        "atext": "Sickle-cell anemia"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 116,
+    "qtext": "The denaturing of proteins:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Alters the native conformation without affecting the biological activity."
+      },
+      {
+        "aid": 2,
+        "atext": "It is always irreversible."
+      },
+      {
+        "aid": 3,
+        "atext": "It can only be achieved by treatment with strong acids."
+      },
+      {
+        "aid": 4,
+        "atext": "It does not affect the primary structure."
+      },
+      {
+        "aid": 5,
+        "atext": "It produces the hydrolysis of the protein."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 117,
+    "qtext": "In relation to the structure of proteins:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "All globular proteins have the same domains."
+      },
+      {
+        "aid": 2,
+        "atext": "The tertiary structure is present only in oligomeric proteins."
+      },
+      {
+        "aid": 3,
+        "atext": "Hemoglobin is the only protein that has a quaternary structure."
+      },
+      {
+        "aid": 4,
+        "atext": "The protein domains are regions of compact folding that exert a certain function."
+      },
+      {
+        "aid": 5,
+        "atext": "The tertiary and quaternary structures are maintained only by the peptide bonds."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 118,
+    "qtext": "Regarding enzymatic cofactors:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "All enzymes are required to be active."
+      },
+      {
+        "aid": 2,
+        "atext": "Its binding to the enzyme is always covalent."
+      },
+      {
+        "aid": 3,
+        "atext": "There are no two enzymes that use the same cofactor."
+      },
+      {
+        "aid": 4,
+        "atext": "They can be metal ions."
+      },
+      {
+        "aid": 5,
+        "atext": "They only have structural function."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 119,
+    "qtext": "In relation to enzymatic inhibition:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "An irreversible inhibitor causes the denaturation of the enzyme."
+      },
+      {
+        "aid": 2,
+        "atext": "The competing inhibitors bind to the substrate of the reaction."
+      },
+      {
+        "aid": 3,
+        "atext": "A non-competitive inhibitor does not need to bind to the enzyme to exert its activity."
+      },
+      {
+        "aid": 4,
+        "atext": "All inhibitors modify Vmax."
+      },
+      {
+        "aid": 5,
+        "atext": "A competitive inhibitor increases the value of Km."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 120,
+    "qtext": "Sulfur contains the side chain of:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Lysine"
+      },
+      {
+        "aid": 2,
+        "atext": "Tryptophan"
+      },
+      {
+        "aid": 3,
+        "atext": "Cysteine"
+      },
+      {
+        "aid": 4,
+        "atext": "Serina"
+      },
+      {
+        "aid": 5,
+        "atext": "To the girl."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 121,
+    "qtext": "It contains an imidazole group the side chain of:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Arginine"
+      },
+      {
+        "aid": 2,
+        "atext": "Tyrosine"
+      },
+      {
+        "aid": 3,
+        "atext": "Glutamine"
+      },
+      {
+        "aid": 4,
+        "atext": "Histidine"
+      },
+      {
+        "aid": 5,
+        "atext": "Lysine"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 122,
+    "qtext": "The pentose phosphate pathway produces:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "NADH and acetyl-CoA."
+      },
+      {
+        "aid": 2,
+        "atext": "NADPH and ribose-5-phosphate."
+      },
+      {
+        "aid": 3,
+        "atext": "NADH and ribose-5-phosphate."
+      },
+      {
+        "aid": 4,
+        "atext": "Urea."
+      },
+      {
+        "aid": 5,
+        "atext": "Ribulose-1,5-bisphosphate."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 123,
+    "qtext": "The oxygen we consume in the respiratory chain is transformed into:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Acetyl-CoA."
+      },
+      {
+        "aid": 2,
+        "atext": "Carbon dioxide."
+      },
+      {
+        "aid": 3,
+        "atext": "Carbon monoxide."
+      },
+      {
+        "aid": 4,
+        "atext": "Water."
+      },
+      {
+        "aid": 5,
+        "atext": "Carbonic acid."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 124,
+    "qtext": "When an enzyme catalyzes a reaction:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is not modified and can be reused."
+      },
+      {
+        "aid": 2,
+        "atext": "It does not change, but it loses its activity."
+      },
+      {
+        "aid": 3,
+        "atext": "It always requires the participation of cofactors."
+      },
+      {
+        "aid": 4,
+        "atext": "It denatures to facilitate bonding with the substrate."
+      },
+      {
+        "aid": 5,
+        "atext": "It always requires energy."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 125,
+    "qtext": "The maximum speed of an enzymatic reaction:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It depends on the substrate concentration."
+      },
+      {
+        "aid": 2,
+        "atext": "It depends on the enzyme concentration."
+      },
+      {
+        "aid": 3,
+        "atext": "It doubles when duplicating the substrate concentration."
+      },
+      {
+        "aid": 4,
+        "atext": "It is Km / 2."
+      },
+      {
+        "aid": 5,
+        "atext": "It is the same for all enzymes."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 126,
+    "qtext": "The ketone bodies:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are used by the liver to synthesize fatty acids."
+      },
+      {
+        "aid": 2,
+        "atext": "They only form in conditions of good nutrition."
+      },
+      {
+        "aid": 3,
+        "atext": "Its formation is especially active in skeletal muscle."
+      },
+      {
+        "aid": 4,
+        "atext": "It is formed from acetyl-CoA."
+      },
+      {
+        "aid": 5,
+        "atext": "They never give acetone."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 127,
+    "qtext": "In general, allosteric enzymes:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They link the effectors in the active center."
+      },
+      {
+        "aid": 2,
+        "atext": "They form covalent bonds with their negative effectors."
+      },
+      {
+        "aid": 3,
+        "atext": "They originate hyperbolic curves of speed before the concentration of substrate."
+      },
+      {
+        "aid": 4,
+        "atext": "They change their conformation when they link effectors."
+      },
+      {
+        "aid": 5,
+        "atext": "They are irreversibly modified when they are inhibited."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 128,
+    "qtext": "It is completely oxidized in the citric acid cycle:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "-ketoglutarate."
+      },
+      {
+        "aid": 2,
+        "atext": "Succinate"
+      },
+      {
+        "aid": 3,
+        "atext": "Citrate."
+      },
+      {
+        "aid": 4,
+        "atext": "Acetyl-CoA."
+      },
+      {
+        "aid": 5,
+        "atext": "Oxalacetate."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 129,
+    "qtext": "Animals can NOT synthesize glucose from:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Glycerol."
+      },
+      {
+        "aid": 2,
+        "atext": "To the girl."
+      },
+      {
+        "aid": 3,
+        "atext": "Palmitate"
+      },
+      {
+        "aid": 4,
+        "atext": "Oxalacetate."
+      },
+      {
+        "aid": 5,
+        "atext": "Lactate"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 130,
+    "qtext": "Pyruvate carboxylase:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It requires biotin."
+      },
+      {
+        "aid": 2,
+        "atext": "Use a methyl group activated as a carbon source."
+      },
+      {
+        "aid": 3,
+        "atext": "It catalyzes the production of acetyl-CoA and carbon dioxide."
+      },
+      {
+        "aid": 4,
+        "atext": "It is activated in the muscle during the Cori cycle."
+      },
+      {
+        "aid": 5,
+        "atext": "It is an intermediate of the citric acid cycle."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 131,
+    "qtext": "The Cori cycle:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It involves the synthesis and degradation of glycogen."
+      },
+      {
+        "aid": 2,
+        "atext": "It does not imply the conversion of lactate into pyruvate."
+      },
+      {
+        "aid": 3,
+        "atext": "It only takes place in the liver."
+      },
+      {
+        "aid": 4,
+        "atext": "Oxidizes tricarboxylic acids."
+      },
+      {
+        "aid": 5,
+        "atext": "It involves glycolysis and gluconeogenesis."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 132,
+    "qtext": "It is activated when cyclic AMP joins the:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Adenylate cyclase."
+      },
+      {
+        "aid": 2,
+        "atext": "Protein kinase A."
+      },
+      {
+        "aid": 3,
+        "atext": "Glycogen phosphorylase kinase."
+      },
+      {
+        "aid": 4,
+        "atext": "Pyruvate kinase."
+      },
+      {
+        "aid": 5,
+        "atext": "Phosphofruct kinase 1."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 133,
+    "qtext": "The enantiomers of a molecule are:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Very different in all its chemical and physical properties."
+      },
+      {
+        "aid": 2,
+        "atext": "Superimposed mirror images."
+      },
+      {
+        "aid": 3,
+        "atext": "Distinguishable by their optical activity."
+      },
+      {
+        "aid": 4,
+        "atext": "The result of the cyclization of a molecule in different positions."
+      },
+      {
+        "aid": 5,
+        "atext": "Interconvertible without rupture of covalent bonds."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 134,
+    "qtext": "The forces that stabilize the alpha helix are:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Intra-chain hydrogen bridges parallel to the axis of the helix."
+      },
+      {
+        "aid": 2,
+        "atext": "Disulfide bridges between methionines."
+      },
+      {
+        "aid": 3,
+        "atext": "Hydrogen bridges between chains perpendicular to the axis of the helix."
+      },
+      {
+        "aid": 4,
+        "atext": "Van der Waals forces among the radicals."
+      },
+      {
+        "aid": 5,
+        "atext": "Links between lysine radicals."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 136,
+    "qtext": "The phosphate groups of the nucleotides:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are stabilized by binding to divalent anions."
+      },
+      {
+        "aid": 2,
+        "atext": "They form low-energy hydrolysis bonds."
+      },
+      {
+        "aid": 3,
+        "atext": "They are called X, Y and Z as they move away from ribose."
+      },
+      {
+        "aid": 4,
+        "atext": "They are attached to the C3' of the ribose."
+      },
+      {
+        "aid": 5,
+        "atext": "They present negative charge."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 137,
+    "qtext": "On the link between the nitrogenous base and the ribose of the nucleotides:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The anomeric carbon of ribose is in alpha configuration."
+      },
+      {
+        "aid": 2,
+        "atext": "It is an N-glycosidic bond."
+      },
+      {
+        "aid": 3,
+        "atext": "It involves the C5' of the ribose."
+      },
+      {
+        "aid": 4,
+        "atext": "It involves phosphate groups."
+      },
+      {
+        "aid": 5,
+        "atext": "It is of a different nature for each nitrogenous base."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 138,
+    "qtext": "The phosphodiester bond:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is formed by attack from a nitrogenous base to a phosphate."
+      },
+      {
+        "aid": 2,
+        "atext": "It is formed using NMP as a substrate."
+      },
+      {
+        "aid": 3,
+        "atext": "In its training PPi is consumed."
+      },
+      {
+        "aid": 4,
+        "atext": "It involves an alpha phosphate of one nucleotide and an OH group of the ribose of another."
+      },
+      {
+        "aid": 5,
+        "atext": "It does not need enzymatic catalysis."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 139,
+    "qtext": "The tRNA-aminoacyl-transferases:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They link the amino acid to the ribosome."
+      },
+      {
+        "aid": 2,
+        "atext": "They bind the amino acid to the anticodon of the tRNA."
+      },
+      {
+        "aid": 3,
+        "atext": "They are RNA polymerases."
+      },
+      {
+        "aid": 4,
+        "atext": "They guarantee the fidelity of the translation."
+      },
+      {
+        "aid": 5,
+        "atext": "They are not important in the translation."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 140,
+    "qtext": "In the translation of prokaryotes, the first tRNA:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is introduced in site A."
+      },
+      {
+        "aid": 2,
+        "atext": "Join a methylated amino acid."
+      },
+      {
+        "aid": 3,
+        "atext": "It is accompanied by the IF2 factor."
+      },
+      {
+        "aid": 4,
+        "atext": "It is paired with a UGA start codon."
+      },
+      {
+        "aid": 5,
+        "atext": "Always join serina."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 141,
+    "qtext": "On the synthesis of proteins it is correct to affirm that:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Start at the carboxyl end."
+      },
+      {
+        "aid": 2,
+        "atext": "The mRNA is translated from the 5'-end to the 3'-end."
+      },
+      {
+        "aid": 3,
+        "atext": "In eukaryotes it takes place in the nucleus."
+      },
+      {
+        "aid": 4,
+        "atext": "The first subunit of the ribosome to bind to the mRNA is the largest."
+      },
+      {
+        "aid": 5,
+        "atext": "It does not consume energy."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 142,
+    "qtext": "In the Michaelis-Menten kinetics, when the values ​​of [s] are much lower (<1/100) than the value of Km:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "We are in saturation kinetics."
+      },
+      {
+        "aid": 2,
+        "atext": "The kinetics is of order 1."
+      },
+      {
+        "aid": 3,
+        "atext": "The Vo is the Vmax."
+      },
+      {
+        "aid": 4,
+        "atext": "The speed is independent of the [s]."
+      },
+      {
+        "aid": 5,
+        "atext": "That situation never occurs."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 143,
+    "qtext": "Enzymatic regulation by phosphorylation:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is reversible."
+      },
+      {
+        "aid": 2,
+        "atext": "It requires enzymes that directly introduce the Pi."
+      },
+      {
+        "aid": 3,
+        "atext": "Introduce the Pi into acidic and basic amino acids."
+      },
+      {
+        "aid": 4,
+        "atext": "Always activate enzymes."
+      },
+      {
+        "aid": 5,
+        "atext": "It is carried out by phosphatases."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 145,
+    "qtext": "Glycogenesis:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is a very active pathway in all tissues."
+      },
+      {
+        "aid": 2,
+        "atext": "It is activated by insulin."
+      },
+      {
+        "aid": 3,
+        "atext": "All their reactions occur in the mitochondria."
+      },
+      {
+        "aid": 4,
+        "atext": "One of its substrates is ribose."
+      },
+      {
+        "aid": 5,
+        "atext": "It is produced in the liver."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 146,
+    "qtext": "In the urea cycle, the argininsuccinate:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It generates fumarate and arginine by argininesuccinase."
+      },
+      {
+        "aid": 2,
+        "atext": "It has five amino groups in its structure."
+      },
+      {
+        "aid": 3,
+        "atext": "Its synthesis produces energy in the form of ATP."
+      },
+      {
+        "aid": 4,
+        "atext": "It is synthesized in the mitochondria."
+      },
+      {
+        "aid": 5,
+        "atext": "It is a keto acid."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 148,
+    "qtext": "Acetyl-CoA carboxylase:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is a mitochondrial enzyme."
+      },
+      {
+        "aid": 2,
+        "atext": "Its product is Succinyl-CoA."
+      },
+      {
+        "aid": 3,
+        "atext": "It requires biotin as a cofactor."
+      },
+      {
+        "aid": 4,
+        "atext": "Free ATP"
+      },
+      {
+        "aid": 5,
+        "atext": "Eat NADH."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 149,
+    "qtext": "Acetyl-CoA:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It is synthesized from pyruvate in the eukaryotic cytoplasm."
+      },
+      {
+        "aid": 2,
+        "atext": "It has a phosphate bond rich in energy."
+      },
+      {
+        "aid": 3,
+        "atext": "Presents a guanine nucleotide in coenzyme A."
+      },
+      {
+        "aid": 4,
+        "atext": "Activates pyruvate carboxylase and inhibits pyruvate dehydrogenase."
+      },
+      {
+        "aid": 5,
+        "atext": "It easily crosses the mitochondrial inner membrane."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 150,
+    "qtext": "In the regulation of glycogen metabolism by adrenaline:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Adenylate cyclase is inhibited."
+      },
+      {
+        "aid": 2,
+        "atext": "Protein kinase A is inhibited through cAMP."
+      },
+      {
+        "aid": 3,
+        "atext": "Glycogen synthetase is inhibited by phosphorylation."
+      },
+      {
+        "aid": 4,
+        "atext": "Glycogen phosphorylase is inhibited by phosphorylation."
+      },
+      {
+        "aid": 5,
+        "atext": "The main enzyme that carries it out is protein kinase C."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 151,
+    "qtext": "Diphyllobothrium latum competes with its definitive host for the vitamin:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "TO."
+      },
+      {
+        "aid": 2,
+        "atext": "B 12"
+      },
+      {
+        "aid": 3,
+        "atext": "C."
+      },
+      {
+        "aid": 4,
+        "atext": "D."
+      },
+      {
+        "aid": 5,
+        "atext": "AND."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 152,
+    "qtext": "Miltefosine and meglumine antimonate are used against:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Plasmodium falciparum."
+      },
+      {
+        "aid": 2,
+        "atext": "Entamoeba histolytica."
+      },
+      {
+        "aid": 3,
+        "atext": "Fasciola hepatica."
+      },
+      {
+        "aid": 4,
+        "atext": "Leishmania"
+      },
+      {
+        "aid": 5,
+        "atext": "Trichinella spiralis."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 153,
+    "qtext": "Praziquantel is indicated against:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Dicrocoelium dendriticum."
+      },
+      {
+        "aid": 2,
+        "atext": "Plasmodium."
+      },
+      {
+        "aid": 3,
+        "atext": "Taenia saginata."
+      },
+      {
+        "aid": 4,
+        "atext": "Toxoplasma gondii."
+      },
+      {
+        "aid": 5,
+        "atext": "Entamoeba histolytica."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 154,
+    "qtext": "The eggs are operculated:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Hymenolepis nana."
+      },
+      {
+        "aid": 2,
+        "atext": "Trichinella spiralis."
+      },
+      {
+        "aid": 3,
+        "atext": "Enterobius vermicularis."
+      },
+      {
+        "aid": 4,
+        "atext": "Fasciola hepatica."
+      },
+      {
+        "aid": 5,
+        "atext": "Ascaris lumbricoides."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 155,
+    "qtext": "Miracidium is a larval phase that is part of the biological cycle of a:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Pediculus"
+      },
+      {
+        "aid": 2,
+        "atext": "Ascaris"
+      },
+      {
+        "aid": 3,
+        "atext": "Oxiuro."
+      },
+      {
+        "aid": 4,
+        "atext": "Fluke."
+      },
+      {
+        "aid": 5,
+        "atext": "Phlebotomist"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 156,
+    "qtext": "The transmission of hepatitis E virus is via:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Fecal-oral"
+      },
+      {
+        "aid": 2,
+        "atext": "Body secretions."
+      },
+      {
+        "aid": 3,
+        "atext": "Bloodline"
+      },
+      {
+        "aid": 4,
+        "atext": "Placenta."
+      },
+      {
+        "aid": 5,
+        "atext": "Aerial"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 157,
+    "qtext": "The genetic material of parvoviruses is:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Double-stranded DNA"
+      },
+      {
+        "aid": 2,
+        "atext": "Single chain DNA"
+      },
+      {
+        "aid": 3,
+        "atext": "Single-stranded positive RNA"
+      },
+      {
+        "aid": 4,
+        "atext": "Single negative chain RNA."
+      },
+      {
+        "aid": 5,
+        "atext": "Double-stranded RNA"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 158,
+    "qtext": "They have helical symmetry in their capsid the:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Rabies virus."
+      },
+      {
+        "aid": 2,
+        "atext": "Common cold virus."
+      },
+      {
+        "aid": 3,
+        "atext": "Papilomavirus."
+      },
+      {
+        "aid": 4,
+        "atext": "Herpesvirus."
+      },
+      {
+        "aid": 5,
+        "atext": "Adenovirus."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 159,
+    "qtext": "The genome of the hepatitis B virus is DNA from:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Simple string (+)."
+      },
+      {
+        "aid": 2,
+        "atext": "Simple string (-)."
+      },
+      {
+        "aid": 3,
+        "atext": "Double circular chain."
+      },
+      {
+        "aid": 4,
+        "atext": "Double linear chain."
+      },
+      {
+        "aid": 5,
+        "atext": "Incomplete circular double chain (with notches)."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 160,
+    "qtext": "The retrovirus envelope comes from (the):",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Plasma membrane."
+      },
+      {
+        "aid": 2,
+        "atext": "Nuclear membrane."
+      },
+      {
+        "aid": 3,
+        "atext": "Endoplasmic reticulum."
+      },
+      {
+        "aid": 4,
+        "atext": "Golgi apparatus."
+      },
+      {
+        "aid": 5,
+        "atext": "Mitochondria."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 161,
+    "qtext": "The Baltimore system of virus classification is based on:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The type of genetic material (DNA or RNA) they possess."
+      },
+      {
+        "aid": 2,
+        "atext": "The morphology of their virions."
+      },
+      {
+        "aid": 3,
+        "atext": "The replication of the genome and the synthesis process of its mRNA."
+      },
+      {
+        "aid": 4,
+        "atext": "The symmetry of the capsid."
+      },
+      {
+        "aid": 5,
+        "atext": "The presence or absence of wrapping."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 162,
+    "qtext": "They cause diarrhea in children:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Togavirus."
+      },
+      {
+        "aid": 2,
+        "atext": "Coronavirus."
+      },
+      {
+        "aid": 3,
+        "atext": "Arenavirus."
+      },
+      {
+        "aid": 4,
+        "atext": "Parvovirus."
+      },
+      {
+        "aid": 5,
+        "atext": "Astrovirus"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 163,
+    "qtext": "The bodies of Negri are masses of viral particles visible under an optical microscope in cells infected by the virus:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Smallpox"
+      },
+      {
+        "aid": 2,
+        "atext": "Anger."
+      },
+      {
+        "aid": 3,
+        "atext": "The polyoma."
+      },
+      {
+        "aid": 4,
+        "atext": "Yellow fever"
+      },
+      {
+        "aid": 5,
+        "atext": "Herpes"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 164,
+    "qtext": "The antiviral tamiflu that is used against the bird flu virus acts:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Inhibiting viral neuraminidase."
+      },
+      {
+        "aid": 2,
+        "atext": "Inactivating the viral protease responsible for the processing of capsomere precursors."
+      },
+      {
+        "aid": 3,
+        "atext": "Preventing the decapsidation of viral particles."
+      },
+      {
+        "aid": 4,
+        "atext": "Blocking the interaction of viral particles with their cellular receptor."
+      },
+      {
+        "aid": 5,
+        "atext": "Altering the activity of the viral DNA polymerase."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 165,
+    "qtext": "The genetic material of the influenza virus is replicated in the:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Lysosome"
+      },
+      {
+        "aid": 2,
+        "atext": "Cellular cytoplasm."
+      },
+      {
+        "aid": 3,
+        "atext": "Nucleus of the cell."
+      },
+      {
+        "aid": 4,
+        "atext": "Endosome"
+      },
+      {
+        "aid": 5,
+        "atext": "Golgi apparatus."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 166,
+    "qtext": "Immediately after the herpes virus decapsidation takes place:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Synthesis of an own RNA polymerase."
+      },
+      {
+        "aid": 2,
+        "atext": "Circularization of its genome."
+      },
+      {
+        "aid": 3,
+        "atext": "Lysis of the endosome."
+      },
+      {
+        "aid": 4,
+        "atext": "Transcription of the viral DNA polymerase."
+      },
+      {
+        "aid": 5,
+        "atext": "Synthesis of a protein that inhibits the replication of the host cell."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 167,
+    "qtext": "The common cold virus has a genome:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Single chain DNA"
+      },
+      {
+        "aid": 2,
+        "atext": "Double-stranded DNA"
+      },
+      {
+        "aid": 3,
+        "atext": "Fragmented."
+      },
+      {
+        "aid": 4,
+        "atext": "Simple chain RNA"
+      },
+      {
+        "aid": 5,
+        "atext": "Double-stranded RNA"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 168,
+    "qtext": "The most important causative agents of cervical cancer are:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Papilomavirus."
+      },
+      {
+        "aid": 2,
+        "atext": "Polyomavirus"
+      },
+      {
+        "aid": 3,
+        "atext": "Retrovirus."
+      },
+      {
+        "aid": 4,
+        "atext": "Cytomegalovirus."
+      },
+      {
+        "aid": 5,
+        "atext": "Parvovirus."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 169,
+    "qtext": "They use a reverse transcriptase during their replication:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Papovavirus."
+      },
+      {
+        "aid": 2,
+        "atext": "Polyomavirus"
+      },
+      {
+        "aid": 3,
+        "atext": "Hepadnavirus."
+      },
+      {
+        "aid": 4,
+        "atext": "Parvovirus."
+      },
+      {
+        "aid": 5,
+        "atext": "Herpesvirus."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 170,
+    "qtext": "The virus (virusoid) of hepatitis D (agent δ) needs to co-infect with the hepatitis virus:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "TO."
+      },
+      {
+        "aid": 2,
+        "atext": "B."
+      },
+      {
+        "aid": 3,
+        "atext": "C."
+      },
+      {
+        "aid": 4,
+        "atext": "AND."
+      },
+      {
+        "aid": 5,
+        "atext": "G."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 171,
+    "qtext": "Most Gram-positive bacteria do not grow in MacConkey's medium because it contains:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Bile salts and crystal violet."
+      },
+      {
+        "aid": 2,
+        "atext": "Lactose and casein hydrolyzate."
+      },
+      {
+        "aid": 3,
+        "atext": "Neutral red"
+      },
+      {
+        "aid": 4,
+        "atext": "Mannitol"
+      },
+      {
+        "aid": 5,
+        "atext": "Basic fuchsin"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 172,
+    "qtext": "The immersion oil used for microscopic observation:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Protects the sample from the oxidizing effect of air."
+      },
+      {
+        "aid": 2,
+        "atext": "Lubricate the objective lens."
+      },
+      {
+        "aid": 3,
+        "atext": "Reduces refraction and increases resolution."
+      },
+      {
+        "aid": 4,
+        "atext": "It acts as a lens that increases magnification."
+      },
+      {
+        "aid": 5,
+        "atext": "Avoid dehydration of the preparation."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 173,
+    "qtext": "To observe the bacterial capsules in a clear field microscope, a stain is made:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Resistant acid"
+      },
+      {
+        "aid": 2,
+        "atext": "From Leifson."
+      },
+      {
+        "aid": 3,
+        "atext": "Simple."
+      },
+      {
+        "aid": 4,
+        "atext": "Negative."
+      },
+      {
+        "aid": 5,
+        "atext": "Differential."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 174,
+    "qtext": "The microbiocidal action of iodine and chlorine and many of its derivatives is due to:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are oxidizing agents."
+      },
+      {
+        "aid": 2,
+        "atext": "They bind specifically to the active centers of the enzymes."
+      },
+      {
+        "aid": 3,
+        "atext": "They bind specifically to ribosomal proteins."
+      },
+      {
+        "aid": 4,
+        "atext": "They induce pores in the membranes."
+      },
+      {
+        "aid": 5,
+        "atext": "They cause the dissolution of membrane phospholipids."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 175,
+    "qtext": "The bacteria contain endotoxins:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Of all types except microplasmas."
+      },
+      {
+        "aid": 2,
+        "atext": "Gram positive."
+      },
+      {
+        "aid": 3,
+        "atext": "Gram negative"
+      },
+      {
+        "aid": 4,
+        "atext": "Intracellular"
+      },
+      {
+        "aid": 5,
+        "atext": "Endospore formers"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 176,
+    "qtext": "The O antigen used in the classification of Gram negative bacteria corresponds to:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The flagellar proteins."
+      },
+      {
+        "aid": 2,
+        "atext": "Components of the capsule."
+      },
+      {
+        "aid": 3,
+        "atext": "The peptidoglycan."
+      },
+      {
+        "aid": 4,
+        "atext": "The polysaccharide of lipopolysaccharides."
+      },
+      {
+        "aid": 5,
+        "atext": "Plasma membrane proteins."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 177,
+    "qtext": "The alcohol-resistance acid is used to identify:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Fermenting bacteria."
+      },
+      {
+        "aid": 2,
+        "atext": "Yeasts used in the production of alcoholic beverages."
+      },
+      {
+        "aid": 3,
+        "atext": "Bacteria that possess mycolic acids."
+      },
+      {
+        "aid": 4,
+        "atext": "Sporulated organisms."
+      },
+      {
+        "aid": 5,
+        "atext": "Oxidizing organisms from sulfides to sulfuric acid."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 178,
+    "qtext": "The Archaea differ from the bacteria in that:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Their membranes have a single phospholipid layer."
+      },
+      {
+        "aid": 2,
+        "atext": "They have several chromosomes."
+      },
+      {
+        "aid": 3,
+        "atext": "Their membranes have glycerol ethers."
+      },
+      {
+        "aid": 4,
+        "atext": "They are not susceptible to viral infection."
+      },
+      {
+        "aid": 5,
+        "atext": "They do not have a cell wall."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 179,
+    "qtext": "Very commonly the autoinducer molecules responsible for the quorum perception of many Gram-negative bacteria are:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "N-acyl homoserine lactones."
+      },
+      {
+        "aid": 2,
+        "atext": "Diaminopimelic acid."
+      },
+      {
+        "aid": 3,
+        "atext": "Proteins"
+      },
+      {
+        "aid": 4,
+        "atext": "Hills"
+      },
+      {
+        "aid": 5,
+        "atext": "Fatty acids."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 180,
+    "qtext": "The most commonly used data to study the phylogenetic relationship between bacteria is:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The cytosine-guanine composition of their DNA."
+      },
+      {
+        "aid": 2,
+        "atext": "The degree of DNA-DNA hybridization."
+      },
+      {
+        "aid": 3,
+        "atext": "The amino acid sequence of ribosomal proteins."
+      },
+      {
+        "aid": 4,
+        "atext": "The nucleotide sequence of 16S ribosomal RNA."
+      },
+      {
+        "aid": 5,
+        "atext": "The composition of the cell wall."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 181,
+    "qtext": "It usually protects the DNA of a restriction enzyme:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Methylation of a nitrogenous base."
+      },
+      {
+        "aid": 2,
+        "atext": "Glycosylation of a nitrogenous base."
+      },
+      {
+        "aid": 3,
+        "atext": "Acetylation of deoxyribose."
+      },
+      {
+        "aid": 4,
+        "atext": "Phosphorylation of deoxyribose."
+      },
+      {
+        "aid": 5,
+        "atext": "Loss of one of the hydroxyl groups of phosphate."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 182,
+    "qtext": "An essential characteristic of plasmids is:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Be able to integrate into the genome of the host cell."
+      },
+      {
+        "aid": 2,
+        "atext": "Direct the process of bacterial conjugation."
+      },
+      {
+        "aid": 3,
+        "atext": "Carry genes for antibiotic resistance."
+      },
+      {
+        "aid": 4,
+        "atext": "Replicate autonomously."
+      },
+      {
+        "aid": 5,
+        "atext": "Being circular DNA molecules."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 183,
+    "qtext": "The fermentation of glucose used by Escherichia coli is:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Lactic"
+      },
+      {
+        "aid": 2,
+        "atext": "Propionic"
+      },
+      {
+        "aid": 3,
+        "atext": "Alcoholic"
+      },
+      {
+        "aid": 4,
+        "atext": "Butyric"
+      },
+      {
+        "aid": 5,
+        "atext": "Acid-mixed."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 184,
+    "qtext": "The target of the aminoglycoside antibacterials is the:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "DNA polymerase"
+      },
+      {
+        "aid": 2,
+        "atext": "Transpeptidation of peptidoglycan."
+      },
+      {
+        "aid": 3,
+        "atext": "30S subunit of the ribosome."
+      },
+      {
+        "aid": 4,
+        "atext": "RNA polymerase"
+      },
+      {
+        "aid": 5,
+        "atext": "DNA gyrase."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 185,
+    "qtext": "In the synthesis of DNA, the quinolones act:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Joining the double helix and thus blocking the progress of the replication fork."
+      },
+      {
+        "aid": 2,
+        "atext": "Interlacing in the double helix and thus causing errors in the transcription."
+      },
+      {
+        "aid": 3,
+        "atext": "On DNA gyrase."
+      },
+      {
+        "aid": 4,
+        "atext": "As nucleotide analogs that are incorporated into DNA."
+      },
+      {
+        "aid": 5,
+        "atext": "About DNA polymerases."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 186,
+    "qtext": "Isoniazid is effective against:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Brucella."
+      },
+      {
+        "aid": 2,
+        "atext": "Mycoplasma."
+      },
+      {
+        "aid": 3,
+        "atext": "Staphylococcus aureus."
+      },
+      {
+        "aid": 4,
+        "atext": "Mycobacterium tuberculosis."
+      },
+      {
+        "aid": 5,
+        "atext": "Bacillus anthracis."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 187,
+    "qtext": "A difference between the genus Vibrio and the enterobacteria is to be:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Strict anaerobe."
+      },
+      {
+        "aid": 2,
+        "atext": "Halophile."
+      },
+      {
+        "aid": 3,
+        "atext": "Negative oxidase of peritric flogging."
+      },
+      {
+        "aid": 4,
+        "atext": "Very demanding nutritionally."
+      },
+      {
+        "aid": 5,
+        "atext": "Do not ferment glucose."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 189,
+    "qtext": "Cause of syphilis:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Trichomonas vaginalis."
+      },
+      {
+        "aid": 2,
+        "atext": "Neisseria gonorrhoeae."
+      },
+      {
+        "aid": 3,
+        "atext": "Treponema pallidum."
+      },
+      {
+        "aid": 4,
+        "atext": "Mycoplasma genitalium."
+      },
+      {
+        "aid": 5,
+        "atext": "Mobiluncus curtisii."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 190,
+    "qtext": "They incorporate sterols to their plasma membrane:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Mycobacterium tuberculosis."
+      },
+      {
+        "aid": 2,
+        "atext": "Micrococcus luteus."
+      },
+      {
+        "aid": 3,
+        "atext": "Mycoplasma pneumoniae"
+      },
+      {
+        "aid": 4,
+        "atext": "Chlamydia trachomatis."
+      },
+      {
+        "aid": 5,
+        "atext": "Rickettsia prowazekii."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 191,
+    "qtext": "The vaginal microbiota of a healthy fertile woman is dominated by bacteria of the genus:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Peptostreptococcus"
+      },
+      {
+        "aid": 2,
+        "atext": "Bifidobacterium"
+      },
+      {
+        "aid": 3,
+        "atext": "Eubacterium."
+      },
+      {
+        "aid": 4,
+        "atext": "Lactobacillus"
+      },
+      {
+        "aid": 5,
+        "atext": "Vagococcus"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 192,
+    "qtext": "Lyme disease is caused by:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Borrelia burgdorferi."
+      },
+      {
+        "aid": 2,
+        "atext": "Treponema saccharophilum."
+      },
+      {
+        "aid": 3,
+        "atext": "Spirillum commune."
+      },
+      {
+        "aid": 4,
+        "atext": "Leptospira interrogans."
+      },
+      {
+        "aid": 5,
+        "atext": "Limulus polyphemus."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 193,
+    "qtext": "The cholera toxin:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Inhibits protein synthesis."
+      },
+      {
+        "aid": 2,
+        "atext": "It is hemolytic and dermonecrotic."
+      },
+      {
+        "aid": 3,
+        "atext": "Alters the flow of electrolytes in the intestine."
+      },
+      {
+        "aid": 4,
+        "atext": "It is formed by a single polypeptide that is cleaved by the effect of proteases."
+      },
+      {
+        "aid": 5,
+        "atext": "It produces food poisoning."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 194,
+    "qtext": "Botulinum toxin:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "It occurs in infected and poorly aerated wounds."
+      },
+      {
+        "aid": 2,
+        "atext": "Blocks protein synthesis."
+      },
+      {
+        "aid": 3,
+        "atext": "It blocks the secretion of acetylcholine in the myoneural plaque."
+      },
+      {
+        "aid": 4,
+        "atext": "It interferes with nerve impulse transmission at the level of axons."
+      },
+      {
+        "aid": 5,
+        "atext": "It causes necrosis of the nerve endings."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 195,
+    "qtext": "An important test to distinguish Staphylococcus aureus from saprophytic staphylococci, such as Staphylococcus epidermidis is:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Oxidase"
+      },
+      {
+        "aid": 2,
+        "atext": "Catalase"
+      },
+      {
+        "aid": 3,
+        "atext": "Indole."
+      },
+      {
+        "aid": 4,
+        "atext": "Urea"
+      },
+      {
+        "aid": 5,
+        "atext": "Coagulase"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 196,
+    "qtext": "Pseudomonas aeruginosa is typically:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Sensitive to most antibiotics used in human medicine."
+      },
+      {
+        "aid": 2,
+        "atext": "Pathogen obligated."
+      },
+      {
+        "aid": 3,
+        "atext": "Opportunistic pathogen."
+      },
+      {
+        "aid": 4,
+        "atext": "Commensal bacteria of the digestive tract."
+      },
+      {
+        "aid": 5,
+        "atext": "Intracellular pathogen."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 197,
+    "qtext": "Infections caused by Clostridium tetani, Bordetella pertussis, Corynebacterium diphtheriae and Vibrio cholerae have in common:",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The type of transmission."
+      },
+      {
+        "aid": 2,
+        "atext": "The reservoir."
+      },
+      {
+        "aid": 3,
+        "atext": "The production of exotoxins."
+      },
+      {
+        "aid": 4,
+        "atext": "The affected organs."
+      },
+      {
+        "aid": 5,
+        "atext": "The route of infection."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 198,
+    "qtext": "The main virulence factor of Streptococcus pneumoniae is one (one):",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Fímbria."
+      },
+      {
+        "aid": 2,
+        "atext": "Capsule."
+      },
+      {
+        "aid": 3,
+        "atext": "Scourge"
+      },
+      {
+        "aid": 4,
+        "atext": "Endotoxin"
+      },
+      {
+        "aid": 5,
+        "atext": "Adhesin"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 199,
+    "qtext": "Legionella pneumophila is transmitted by:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Air conditioning systems."
+      },
+      {
+        "aid": 2,
+        "atext": "Contact between individuals."
+      },
+      {
+        "aid": 3,
+        "atext": "Mosquito bite."
+      },
+      {
+        "aid": 4,
+        "atext": "Contaminated food."
+      },
+      {
+        "aid": 5,
+        "atext": "Fecal-oral route."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 200,
+    "qtext": "It contains a Gram negative species that causes meningitis the genus:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Trichomonas."
+      },
+      {
+        "aid": 2,
+        "atext": "Pasteurella"
+      },
+      {
+        "aid": 3,
+        "atext": "Burkholderia."
+      },
+      {
+        "aid": 4,
+        "atext": "Francisella."
+      },
+      {
+        "aid": 5,
+        "atext": "Neisseria."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 201,
+    "qtext": "In mammals, Toll-like receptors (TLRs) are receptors:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Signaling."
+      },
+      {
+        "aid": 2,
+        "atext": "Antigenic"
+      },
+      {
+        "aid": 3,
+        "atext": "Of histocompatibility alleles."
+      },
+      {
+        "aid": 4,
+        "atext": "Of phagocytosis."
+      },
+      {
+        "aid": 5,
+        "atext": "Of chemokines."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 202,
+    "qtext": "The innate immune response to viruses is mainly mediated by lymphocytes:",
+    "ra": 4,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "B1"
+      },
+      {
+        "aid": 2,
+        "atext": "Th1."
+      },
+      {
+        "aid": 3,
+        "atext": "Cytolytic T"
+      },
+      {
+        "aid": 4,
+        "atext": "NK"
+      },
+      {
+        "aid": 5,
+        "atext": "Tγδ."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 203,
+    "qtext": "The main function of chemokines is:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Regulate lymphocyte traffic."
+      },
+      {
+        "aid": 2,
+        "atext": "Stimulate cell proliferation in response to chemical agents."
+      },
+      {
+        "aid": 3,
+        "atext": "Amplify the production of antiviral cytokines."
+      },
+      {
+        "aid": 4,
+        "atext": "Regulate the selection in the thymus."
+      },
+      {
+        "aid": 5,
+        "atext": "Antagonize some cytokines."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 204,
+    "qtext": "Interactions between selectins and vascular targeins:",
+    "ra": 2,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are very strong."
+      },
+      {
+        "aid": 2,
+        "atext": "They mediate the first phase of the leukocyte / endothelium adhesion."
+      },
+      {
+        "aid": 3,
+        "atext": "They are permanent."
+      },
+      {
+        "aid": 4,
+        "atext": "They mediate firm adhesion to the endothelium."
+      },
+      {
+        "aid": 5,
+        "atext": "They are very intense in the spleen."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 205,
+    "qtext": "In the processing and presentation of peptides of extracellular origin intervene (n):",
+    "ra": 3,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "The TAP proteins."
+      },
+      {
+        "aid": 2,
+        "atext": "The tapasina."
+      },
+      {
+        "aid": 3,
+        "atext": "The HLA-DM molecule."
+      },
+      {
+        "aid": 4,
+        "atext": "The proteosome."
+      },
+      {
+        "aid": 5,
+        "atext": "The HLA-B molecules."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 206,
+    "qtext": "The main autocrine growth factor for most T lymphocytes after antigen recognition is:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Interleukin 2"
+      },
+      {
+        "aid": 2,
+        "atext": "Interleukin 4"
+      },
+      {
+        "aid": 3,
+        "atext": "Interleukin 10"
+      },
+      {
+        "aid": 4,
+        "atext": "TGF-beta."
+      },
+      {
+        "aid": 5,
+        "atext": "All the previous ones"
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 207,
+    "qtext": "Tα CD4 + lymphocytes:",
+    "ra": 1,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "They are functionally cooperative with B lymphocytes and other T lymphocytes."
+      },
+      {
+        "aid": 2,
+        "atext": "They recognize native antigens in soluble form."
+      },
+      {
+        "aid": 3,
+        "atext": "They recognize peptides in the MHC class I context."
+      },
+      {
+        "aid": 4,
+        "atext": "They are less abundant than CD8 + in human blood."
+      },
+      {
+        "aid": 5,
+        "atext": "They release perforins."
+      }
+    ]
+  },
+  {
+    "name": "Cuaderno_2013_1_B",
+    "year": "2013",
+    "category": "biology",
+    "qid": 208,
+    "qtext": "It is more characteristic of Th1 than Th2 lymphocytes:",
+    "ra": 5,
+    "answers": [
+      {
+        "aid": 1,
+        "atext": "Interleukin 5"
+      },
+      {
+        "aid": 2,
+        "atext": "The TGF-beta."
+      },
+      {
+        "aid": 3,
+        "atext": "Interleukin 10"
+      },
+      {
+        "aid": 4,
+        "atext": "Interleukin 17"
+      },
+      {
+        "aid": 5,
+        "atext": "The IFN-γ."
+      }
+    ]
+  }
+]

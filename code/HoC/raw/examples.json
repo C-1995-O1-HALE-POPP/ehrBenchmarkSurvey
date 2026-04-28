@@ -1,0 +1,349 @@
+{
+  "label_names": [
+    "evading growth suppressors",
+    "tumor promoting inflammation",
+    "enabling replicative immortality",
+    "cellular energetics",
+    "resisting cell death",
+    "activating invasion and metastasis",
+    "genomic instability and mutation",
+    "none",
+    "inducing angiogenesis",
+    "sustaining proliferative signaling",
+    "avoiding immune destruction"
+  ],
+  "total_train_sentences": 12119,
+  "label_distribution": {
+    "none": 9027,
+    "sustaining proliferative signaling": 674,
+    "resisting cell death": 602,
+    "genomic instability and mutation": 523,
+    "activating invasion and metastasis": 448,
+    "tumor promoting inflammation": 375,
+    "evading growth suppressors": 268,
+    "inducing angiogenesis": 238,
+    "enabling replicative immortality": 219,
+    "avoiding immune destruction": 185,
+    "cellular energetics": 136
+  },
+  "examples": [
+    {
+      "document_id": "22239943_0",
+      "pmid": "22239943",
+      "text": "Hypoxic events frequently occur in the aquatic environment in association with micro pollutants , including heavy metals .",
+      "labels": [
+        "none"
+      ],
+      "bigbio_labels": [
+        "none"
+      ]
+    },
+    {
+      "document_id": "22239943_1",
+      "pmid": "22239943",
+      "text": "Only a few studies are however available on the uptake and biological responses of heavy metals under hypoxic conditions .",
+      "labels": [
+        "none"
+      ],
+      "bigbio_labels": [
+        "none"
+      ]
+    },
+    {
+      "document_id": "22239943_2",
+      "pmid": "22239943",
+      "text": "To elucidate the phenomenon , mirror carp Cyprinus carpio L .",
+      "labels": [
+        "none"
+      ],
+      "bigbio_labels": [
+        "none"
+      ]
+    },
+    {
+      "document_id": "12659514_6",
+      "pmid": "12659514",
+      "text": "It is demonstrated that the mei-41 gene is a homologue of the human atm gene which is responsible for a cell cycle checkpoint .",
+      "labels": [
+        "evading growth suppressors"
+      ],
+      "bigbio_labels": [
+        "evading growth suppressors"
+      ]
+    },
+    {
+      "document_id": "21195136_4",
+      "pmid": "21195136",
+      "text": "The established cell lines stably express either SV40 LTAg alone , or SV40 LTAg and hTERT , and demonstrate high proliferative rate , contact inhibition at confluence , and stable expression of protein markers characteristic of native arachnoid cells over more than 160 passages .",
+      "labels": [
+        "evading growth suppressors"
+      ],
+      "bigbio_labels": [
+        "evading growth suppressors"
+      ]
+    },
+    {
+      "document_id": "22753494_5",
+      "pmid": "22753494",
+      "text": "This mechanism of action of miRNAs is implicated in tumor-immune system communication and is important in tumor growth and spread , thus representing a possible target for cancer treatment .",
+      "labels": [
+        "tumor promoting inflammation"
+      ],
+      "bigbio_labels": [
+        "tumor promoting inflammation"
+      ]
+    },
+    {
+      "document_id": "23054118_14",
+      "pmid": "23054118",
+      "text": "Elevated blood NLR appears to represent systemic inflammation in patients with high-risk GIST .",
+      "labels": [
+        "tumor promoting inflammation"
+      ],
+      "bigbio_labels": [
+        "tumor promoting inflammation"
+      ]
+    },
+    {
+      "document_id": "22945332_6",
+      "pmid": "22945332",
+      "text": "These polyploid senescent cells represent important transition states through which escape preferentially occurs .",
+      "labels": [
+        "enabling replicative immortality"
+      ],
+      "bigbio_labels": [
+        "enabling replicative immortality"
+      ]
+    },
+    {
+      "document_id": "21195136_3",
+      "pmid": "21195136",
+      "text": "We established and partially characterized two immortalized cell lines generated from primary rat arachnoid cells , using retroviral gene transfer of SV40 large T antigen ( SV40 LTAg ) either with or without human telomerase ( hTERT ) .",
+      "labels": [
+        "enabling replicative immortality"
+      ],
+      "bigbio_labels": [
+        "enabling replicative immortality"
+      ]
+    },
+    {
+      "document_id": "21921941_5",
+      "pmid": "21921941",
+      "text": "Our data revealed that 3BP induced depletion of energetic capabilities of glioma cells. 3BP induced H2O2 production as a novel mechanism of its action .",
+      "labels": [
+        "cellular energetics"
+      ],
+      "bigbio_labels": [
+        "cellular energetics"
+      ]
+    },
+    {
+      "document_id": "24142698_6",
+      "pmid": "24142698",
+      "text": "These findings demonstrate that PIM2-dependent phosphorylation of PKM2 is critical for regulating the Warburg effect in cancer , highlighting PIM2 as a potential therapeutic target .",
+      "labels": [
+        "cellular energetics"
+      ],
+      "bigbio_labels": [
+        "cellular energetics"
+      ]
+    },
+    {
+      "document_id": "20839428_14",
+      "pmid": "20839428",
+      "text": "Biopsy of a skin lesion showed lymphoproliferative infiltration of the dermis with a follicular and angiocentric growth pattern and regional epidermal necrosis .",
+      "labels": [
+        "resisting cell death"
+      ],
+      "bigbio_labels": [
+        "resisting cell death"
+      ]
+    },
+    {
+      "document_id": "23250485_2",
+      "pmid": "23250485",
+      "text": "In this study , we have determined that androgens regulate overall cell metabolism and cell growth , in part , by increasing autophagy in prostate cancer cells .",
+      "labels": [
+        "resisting cell death"
+      ],
+      "bigbio_labels": [
+        "resisting cell death"
+      ]
+    },
+    {
+      "document_id": "22784709_8",
+      "pmid": "22784709",
+      "text": "Combination of KX-01 with paclitaxel resulted in significant regression of MDA-MB-231 tumors and reduced metastasis to mouse lung and liver .",
+      "labels": [
+        "activating invasion and metastasis"
+      ],
+      "bigbio_labels": [
+        "activating invasion and metastasis"
+      ]
+    },
+    {
+      "document_id": "22784709_9",
+      "pmid": "22784709",
+      "text": "KX-01 is a potently active Src/pretubulin inhibitor that inhibits breast tumor growth and metastasis .",
+      "labels": [
+        "activating invasion and metastasis"
+      ],
+      "bigbio_labels": [
+        "activating invasion and metastasis"
+      ]
+    },
+    {
+      "document_id": "21116101_3",
+      "pmid": "21116101",
+      "text": "Colony formation assay and micronucleus assay showed significant radioprotective effects in CHO , but not in xrs5 , which is defective in the repair function of DNA double-strand breaks .",
+      "labels": [
+        "genomic instability and mutation"
+      ],
+      "bigbio_labels": [
+        "genomic instability and mutation"
+      ]
+    },
+    {
+      "document_id": "21116101_4",
+      "pmid": "21116101",
+      "text": "The levels of phosphorylated H2AX and the formation of 53BP1 foci 15 minutes after irradiation , which might reflect initial DNA double-strand breaks , in DMSO-treated CHO cells were similar to those in non-treated cells , suggesting that the radioprotective effects were not attributable to the suppression of general indirect action in the lower concentration of DMSO .",
+      "labels": [
+        "genomic instability and mutation"
+      ],
+      "bigbio_labels": [
+        "genomic instability and mutation"
+      ]
+    },
+    {
+      "document_id": "22797777_7",
+      "pmid": "22797777",
+      "text": "These findings illustrate that although the miR-17-92 cluster regulates vascular integrity and angiogenesis , none of the members has a significant impact on the endothelial differentiation of pluripotent stem cells .",
+      "labels": [
+        "inducing angiogenesis"
+      ],
+      "bigbio_labels": [
+        "inducing angiogenesis"
+      ]
+    },
+    {
+      "document_id": "1281554_2",
+      "pmid": "1281554",
+      "text": "Human recombinant IL-8 was potently angiogenic when implanted in the rat cornea and induced proliferation and chemotaxis of human umbilical vein endothelial cells .",
+      "labels": [
+        "inducing angiogenesis"
+      ],
+      "bigbio_labels": [
+        "inducing angiogenesis"
+      ]
+    },
+    {
+      "document_id": "21058195_4",
+      "pmid": "21058195",
+      "text": "All UA doses decreased tumor cell proliferation , as assessed by Ki67 immunostaining ; nevertheless , UA at 0.10% was most effective in inhibiting tumor take and decreasing tumor final tumor size .",
+      "labels": [
+        "sustaining proliferative signaling"
+      ],
+      "bigbio_labels": [
+        "sustaining proliferative signaling"
+      ]
+    },
+    {
+      "document_id": "22460537_7",
+      "pmid": "22460537",
+      "text": "However , HNSCC cell proliferation was not affected by inhibition of FGFR .",
+      "labels": [
+        "sustaining proliferative signaling"
+      ],
+      "bigbio_labels": [
+        "sustaining proliferative signaling"
+      ]
+    },
+    {
+      "document_id": "20839428_12",
+      "pmid": "20839428",
+      "text": "There was no evidence of immunosuppression .",
+      "labels": [
+        "avoiding immune destruction"
+      ],
+      "bigbio_labels": [
+        "avoiding immune destruction"
+      ]
+    },
+    {
+      "document_id": "1433375_3",
+      "pmid": "1433375",
+      "text": "Immunosuppression of immunoglobulin M ( IgM ) antibody response by NDMA to sheep red blood cells ( SRBC ) was time-related , dose-related , and could be reversed within 30 d by removal of the chemical from the drinking water .",
+      "labels": [
+        "avoiding immune destruction"
+      ],
+      "bigbio_labels": [
+        "avoiding immune destruction"
+      ]
+    },
+    {
+      "document_id": "11896073_6",
+      "pmid": "11896073",
+      "text": "RESULTS In the limited number of cases in which paired comparisons were possible , the expression of TS and Ki67 was significantly higher in metastases than in the matched primary tumour samples ( p = 0.014 and 0.016 , respectively ) , whereas Rb expression was lower in metastases than in primary tumours ( p = 0.024 ) .",
+      "labels": [
+        "activating invasion and metastasis",
+        "sustaining proliferative signaling"
+      ],
+      "bigbio_labels": [
+        "activating invasion and metastasis",
+        "sustaining proliferative signaling"
+      ]
+    },
+    {
+      "document_id": "11896073_7",
+      "pmid": "11896073",
+      "text": "Fas receptor expression was high in normal mucosa but absent in primary tumours and metastases , whereas the opposite was seen for p53 .",
+      "labels": [
+        "resisting cell death",
+        "activating invasion and metastasis"
+      ],
+      "bigbio_labels": [
+        "resisting cell death",
+        "activating invasion and metastasis"
+      ]
+    },
+    {
+      "document_id": "11896073_9",
+      "pmid": "11896073",
+      "text": "Apoptosis was more abundant in primary tumours than in metastases .",
+      "labels": [
+        "resisting cell death",
+        "activating invasion and metastasis"
+      ],
+      "bigbio_labels": [
+        "resisting cell death",
+        "activating invasion and metastasis"
+      ]
+    },
+    {
+      "document_id": "11896073_10",
+      "pmid": "11896073",
+      "text": "CONCLUSIONS These results demonstrate that proliferation and apoptosis are disturbed during colorectal cancer progression , and this is accompanied by loss of Rb and Fas expression , the accumulation of p53 and TS , and changes in the expression patterns of bax , mcl-1 , and bcl-xl .",
+      "labels": [
+        "resisting cell death",
+        "sustaining proliferative signaling"
+      ],
+      "bigbio_labels": [
+        "resisting cell death",
+        "sustaining proliferative signaling"
+      ]
+    },
+    {
+      "document_id": "23250485_5",
+      "pmid": "23250485",
+      "text": "Further , autophagy and subsequent cell growth is potentiated , in part , by androgen-mediated increases in reactive oxygen species .",
+      "labels": [
+        "resisting cell death",
+        "tumor promoting inflammation"
+      ],
+      "bigbio_labels": [
+        "resisting cell death",
+        "tumor promoting inflammation"
+      ]
+    }
+  ]
+}

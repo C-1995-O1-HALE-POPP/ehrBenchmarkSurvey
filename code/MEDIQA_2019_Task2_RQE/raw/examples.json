@@ -1,0 +1,1202 @@
+[
+  {
+    "pid": "1",
+    "value": "true",
+    "chq": "How should I treat polymenorrhea in a 14-year-old girl?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "2",
+    "value": "true",
+    "chq": "Have there been any studies with low molecular weight heparin in pregnancy because I have an obstetric patient who had a deep vein thrombosis with her last pregnancy and I'm wondering if I can use it?",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "3",
+    "value": "false",
+    "chq": "Have there been any studies with low molecular weight heparin in pregnancy because I have an obstetric patient who had a deep vein thrombosis with her last pregnancy and I'm wondering if I can use it?",
+    "faq": "What are the side effects of Florinef?  Could it cause headaches?"
+  },
+  {
+    "pid": "4",
+    "value": "true",
+    "chq": "Let's give these immunizations.  That's right isn't it?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "5",
+    "value": "false",
+    "chq": "Let's give these immunizations.  That's right isn't it?",
+    "faq": "Is there more support we can provide patients with macular degeneration?"
+  },
+  {
+    "pid": "6",
+    "value": "true",
+    "chq": "Since these boys' father has Marfan's Syndrome, do these boys need further evaluation?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "7",
+    "value": "false",
+    "chq": "Since these boys' father has Marfan's Syndrome, do these boys need further evaluation?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "8",
+    "value": "true",
+    "chq": "Why did they cut out the expanding granuloma which was due to Coccidiomycosis immitis, rather than just treat it medically?",
+    "faq": "Why did they cut out the Coccidiomycosis granuloma rather than treat it medically?"
+  },
+  {
+    "pid": "9",
+    "value": "true",
+    "chq": "Why did she get Coccidiomycosis?  She's in her 60's, goes to Florida every winter.",
+    "faq": "Why did she get Coccidiomycosis?"
+  },
+  {
+    "pid": "10",
+    "value": "true",
+    "chq": "How do you inject the bicipital tendon?",
+    "faq": "How do you inject the bicipital tendon?"
+  },
+  {
+    "pid": "11",
+    "value": "false",
+    "chq": "How do you inject the bicipital tendon?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "12",
+    "value": "true",
+    "chq": "I wonder if this patient could have a rotator cuff thing?",
+    "faq": "I wonder if this patient could have a rotator cuff thing?"
+  },
+  {
+    "pid": "13",
+    "value": "false",
+    "chq": "I wonder if this patient could have a rotator cuff thing?",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "14",
+    "value": "true",
+    "chq": "How do you use Redux?  What are the indications?",
+    "faq": "How do you use Redux?  What are the indications?"
+  },
+  {
+    "pid": "15",
+    "value": "false",
+    "chq": "How do you use Redux?  What are the indications?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "16",
+    "value": "true",
+    "chq": "What is the cause and treatment of this old man's stomatitis?",
+    "faq": "What is the cause and treatment of this old man's stomatitis?"
+  },
+  {
+    "pid": "17",
+    "value": "true",
+    "chq": "What antibiotic should I use for this diabetic patient's infected foot ulcer?",
+    "faq": "What antibiotic should I use for this diabetic patient's infected foot ulcer?"
+  },
+  {
+    "pid": "18",
+    "value": "false",
+    "chq": "What antibiotic should I use for this diabetic patient's infected foot ulcer?",
+    "faq": "At what ages should you do a Denver Developmental Screening Test?"
+  },
+  {
+    "pid": "19",
+    "value": "true",
+    "chq": "Should we switch now to just Ancef?  Are you satisfied with the rate of improvement? (Orthopedist did not get culture, foot still red)",
+    "faq": "Should we switch to Ancef for this diabetic foot ulcer? Improvement adequate?"
+  },
+  {
+    "pid": "20",
+    "value": "false",
+    "chq": "Should we switch now to just Ancef?  Are you satisfied with the rate of improvement? (Orthopedist did not get culture, foot still red)",
+    "faq": "What are the causes of tinnitus?"
+  },
+  {
+    "pid": "21",
+    "value": "true",
+    "chq": "Is melatonin good for anything?  I don't know anything about melatonin.  I need to know the dose.",
+    "faq": "Is melatonin good for anything?  What is the dose?"
+  },
+  {
+    "pid": "22",
+    "value": "false",
+    "chq": "Is melatonin good for anything?  I don't know anything about melatonin.  I need to know the dose.",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "23",
+    "value": "true",
+    "chq": "At what ages should you do a Denver Developmental Screening Test?",
+    "faq": "At what ages should you do a Denver Developmental Screening Test?"
+  },
+  {
+    "pid": "24",
+    "value": "false",
+    "chq": "At what ages should you do a Denver Developmental Screening Test?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "25",
+    "value": "true",
+    "chq": "What is the maximum dose of digoxin? (patient seen in emergency room had digoxin level less than 0.03)",
+    "faq": "What is the maximum dose of digoxin? (patient seen in emergency room, had digoxin level less than 0.03)"
+  },
+  {
+    "pid": "26",
+    "value": "false",
+    "chq": "What is the maximum dose of digoxin? (patient seen in emergency room had digoxin level less than 0.03)",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "27",
+    "value": "true",
+    "chq": "What size pills does digoxin come in?",
+    "faq": "What size pills does digoxin come in?"
+  },
+  {
+    "pid": "28",
+    "value": "false",
+    "chq": "What size pills does digoxin come in?",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "29",
+    "value": "true",
+    "chq": "What are the indications for getting a digoxin level?",
+    "faq": "What are the indications for getting a digoxin level?"
+  },
+  {
+    "pid": "30",
+    "value": "false",
+    "chq": "What are the indications for getting a digoxin level?",
+    "faq": "Why did she get Coccidiomycosis?"
+  },
+  {
+    "pid": "31",
+    "value": "true",
+    "chq": "Why wasn't this patient very sick?  (patient with large empyema and Haemophilus influenza in sputum, no growth from empyema fluid.)",
+    "faq": "Why wasn't this patient very sick? (large empyema and Haemophilus influenza in sputum)"
+  },
+  {
+    "pid": "32",
+    "value": "false",
+    "chq": "Why wasn't this patient very sick?  (patient with large empyema and Haemophilus influenza in sputum, no growth from empyema fluid.)",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "33",
+    "value": "true",
+    "chq": "Is Serzone okay to give to someone with a partial gastrectomy, will it be absorbed?",
+    "faq": "Is Serzone okay to give to with a partial gastrectomy; that is, will it be absorbed?"
+  },
+  {
+    "pid": "34",
+    "value": "true",
+    "chq": "What is the dose of Sporanox?",
+    "faq": "What is the dose of Sporanox?"
+  },
+  {
+    "pid": "35",
+    "value": "false",
+    "chq": "What is the dose of Sporanox?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "36",
+    "value": "true",
+    "chq": "Should we do a CT (computerized tomography) with contrast tomorrow (Saturday) or wait until Monday to do an MRI (magnetic resonance imaging) (when the machine on truck comes)?",
+    "faq": "Should we do a head CT (computerized tomography) with contrast tomorrow (Saturday) or MRI (magnetic resonance imaging) Monday?"
+  },
+  {
+    "pid": "37",
+    "value": "false",
+    "chq": "Should we do a CT (computerized tomography) with contrast tomorrow (Saturday) or wait until Monday to do an MRI (magnetic resonance imaging) (when the machine on truck comes)?",
+    "faq": "How do you use Redux?  What are the indications?"
+  },
+  {
+    "pid": "38",
+    "value": "true",
+    "chq": "What is the dose of Famvir?",
+    "faq": "What is the dose of Famvir?"
+  },
+  {
+    "pid": "39",
+    "value": "false",
+    "chq": "What is the dose of Famvir?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "40",
+    "value": "true",
+    "chq": "What is the other drug besides Famvir and acyclovir for Herpes Zoster?",
+    "faq": "What is the other drug besides Famvir and acyclovir for Herpes Zoster?"
+  },
+  {
+    "pid": "41",
+    "value": "false",
+    "chq": "What is the other drug besides Famvir and acyclovir for Herpes Zoster?",
+    "faq": "Should we switch to Ancef for this diabetic foot ulcer? Improvement adequate?"
+  },
+  {
+    "pid": "42",
+    "value": "true",
+    "chq": "Obstetric patient at 39 weeks had little sore possible herpes.  How long after the lesion heals is it safe to let her deliver vaginally?",
+    "faq": "Obstetric patient, 39 weeks had a little sore, ? herpes.  How long after she heals is it safe to do a vaginal delivery?"
+  },
+  {
+    "pid": "43",
+    "value": "false",
+    "chq": "Obstetric patient at 39 weeks had little sore possible herpes.  How long after the lesion heals is it safe to let her deliver vaginally?",
+    "faq": "I wonder if this patient could have a rotator cuff thing?"
+  },
+  {
+    "pid": "44",
+    "value": "true",
+    "chq": "There was this maneuver mentioned at a continuing medical education course for vertigo, but I couldn't remember how to do it or the name of it.",
+    "faq": "Maneuver mentioned at continuing medical education course for vertigo, couldn't remember how to do it or name of it."
+  },
+  {
+    "pid": "45",
+    "value": "false",
+    "chq": "There was this maneuver mentioned at a continuing medical education course for vertigo, but I couldn't remember how to do it or the name of it.",
+    "faq": "At what ages should you do a Denver Developmental Screening Test?"
+  },
+  {
+    "pid": "46",
+    "value": "true",
+    "chq": "Does this patient with a plate in her hip, but no murmur, need subacute bacterial endocarditis prophylaxis before the dentist cleans her teeth?",
+    "faq": "Patient, plate in hip, no murmur, needs subacute bacterial endocarditis prophylaxis before sees dentist?"
+  },
+  {
+    "pid": "47",
+    "value": "false",
+    "chq": "Does this patient with a plate in her hip, but no murmur, need subacute bacterial endocarditis prophylaxis before the dentist cleans her teeth?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "48",
+    "value": "true",
+    "chq": "Can you use Prozac along with lithium?",
+    "faq": "Can you use Prozac along with lithium?"
+  },
+  {
+    "pid": "49",
+    "value": "false",
+    "chq": "Can you use Prozac along with lithium?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "50",
+    "value": "true",
+    "chq": "What is in Ortho Novum 1/35?",
+    "faq": "What is in Ortho Novum 1/35?"
+  },
+  {
+    "pid": "51",
+    "value": "false",
+    "chq": "What is in Ortho Novum 1/35?",
+    "faq": "Should we do a head CT (computerized tomography) with contrast tomorrow (Saturday) or MRI (magnetic resonance imaging) Monday?"
+  },
+  {
+    "pid": "52",
+    "value": "true",
+    "chq": "How should you adjust the birth control pill if someone has spotting on it?",
+    "faq": "How should you adjust the birth control pill if someone has spotting on it?"
+  },
+  {
+    "pid": "53",
+    "value": "false",
+    "chq": "How should you adjust the birth control pill if someone has spotting on it?",
+    "faq": "On nonstress test after every acceleration brief sharp not deep deceleration. Important?"
+  },
+  {
+    "pid": "54",
+    "value": "true",
+    "chq": "What are the causes of tinnitus?",
+    "faq": "What are the causes of tinnitus?"
+  },
+  {
+    "pid": "55",
+    "value": "false",
+    "chq": "What are the causes of tinnitus?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "56",
+    "value": "true",
+    "chq": "Could Procardia or Mevacor cause tinnitus?",
+    "faq": "Could Procardia or Mevacor cause tinnitus?"
+  },
+  {
+    "pid": "57",
+    "value": "false",
+    "chq": "Could Procardia or Mevacor cause tinnitus?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "58",
+    "value": "true",
+    "chq": "I'm always uncomfortable with how quickly to move in terms of workup (patient had been having TIA (transient ischemic attack) symptoms for several weeks)",
+    "faq": "Patient with transient ischemic attacks; I'm always uncomfortable with how quickly to pursue a workup."
+  },
+  {
+    "pid": "59",
+    "value": "true",
+    "chq": "In this patient with TIAs (transient ischemic attacks) and no cardiac murmur, should I do an echocardiogram anyway?",
+    "faq": "In this patient with transient ischemic attacks and no murmur, should I do an echocardiogram anyway?"
+  },
+  {
+    "pid": "60",
+    "value": "false",
+    "chq": "In this patient with TIAs (transient ischemic attacks) and no cardiac murmur, should I do an echocardiogram anyway?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "61",
+    "value": "true",
+    "chq": "This patient had a nonstress test one week ago and at the end of every acceleration there was a brief sharp spike not very deep deceleration.  Is this important?",
+    "faq": "On nonstress test after every acceleration brief sharp not deep deceleration. Important?"
+  },
+  {
+    "pid": "62",
+    "value": "false",
+    "chq": "This patient had a nonstress test one week ago and at the end of every acceleration there was a brief sharp spike not very deep deceleration.  Is this important?",
+    "faq": "Why wasn't this patient very sick? (large empyema and Haemophilus influenza in sputum)"
+  },
+  {
+    "pid": "63",
+    "value": "true",
+    "chq": "How should I workup this baby with a single umbilical artery?  Thirty percent of such babies have anomalies but where should I look if not obvious on physical exam?",
+    "faq": "How should I workup this baby with a single umbilical artery?"
+  },
+  {
+    "pid": "64",
+    "value": "true",
+    "chq": "Do I need to wait until the baby is a certain age before I do the renal ultrasound for single umbilical artery?",
+    "faq": "Should I wait until baby certain age before I do renal ultrasound for single umbilical artery?"
+  },
+  {
+    "pid": "65",
+    "value": "true",
+    "chq": "This isn't a question but when I looked at her rash, I asked myself is it shingles or possibly staphylococcal impetigo?  It isn't worth the cost of a test to find out.",
+    "faq": "Is this rash shingles or staphylococcal impetigo?"
+  },
+  {
+    "pid": "66",
+    "value": "false",
+    "chq": "This isn't a question but when I looked at her rash, I asked myself is it shingles or possibly staphylococcal impetigo?  It isn't worth the cost of a test to find out.",
+    "faq": "Is melatonin good for anything?  What is the dose?"
+  },
+  {
+    "pid": "67",
+    "value": "true",
+    "chq": "The patient has been symptomatic with shingles for 4 days -- Can I still give Zovirax?",
+    "faq": "Has had shingles for 4 days -- Can I still give Zovirax?"
+  },
+  {
+    "pid": "68",
+    "value": "false",
+    "chq": "The patient has been symptomatic with shingles for 4 days -- Can I still give Zovirax?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "69",
+    "value": "true",
+    "chq": "What is a good steroid eye drop?",
+    "faq": "What is a good steroid eye drop?"
+  },
+  {
+    "pid": "70",
+    "value": "false",
+    "chq": "What is a good steroid eye drop?",
+    "faq": "What is the dose of Sporanox?"
+  },
+  {
+    "pid": "71",
+    "value": "true",
+    "chq": "What should I do with this patient whose biopsy report shows carcinoma in situ of the vulva?",
+    "faq": "What to do with this patient, biopsy shows carcinoma in situ of the vulva?"
+  },
+  {
+    "pid": "72",
+    "value": "false",
+    "chq": "What should I do with this patient whose biopsy report shows carcinoma in situ of the vulva?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "73",
+    "value": "true",
+    "chq": "What is the dose of Neurontin?",
+    "faq": "What is the dose of Neurontin?"
+  },
+  {
+    "pid": "74",
+    "value": "false",
+    "chq": "What is the dose of Neurontin?",
+    "faq": "I wonder if this patient could have a rotator cuff thing?"
+  },
+  {
+    "pid": "75",
+    "value": "true",
+    "chq": "Had shortness of breath which is unusual for her.  Doctor wishes she had access to a list of things that might cause shortness of breath in a normally healthy 28-year-old.  Concerned about pulmonary embolism.",
+    "faq": "Why is this otherwise healthy 28-year-old woman short of breath?"
+  },
+  {
+    "pid": "76",
+    "value": "false",
+    "chq": "Had shortness of breath which is unusual for her.  Doctor wishes she had access to a list of things that might cause shortness of breath in a normally healthy 28-year-old.  Concerned about pulmonary embolism.",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "77",
+    "value": "true",
+    "chq": "Doctor would like a better way to introduce the subject of sexually transmitted disease -- open rather than closed question -- to get the information she needs.  Now she asks \"Are you careful about protecting yourself against sexually transmitted diseases?\"  Her question is whether there is a better way to ask this.",
+    "faq": "Is there a better way to introduce the subject of sexually transmitted disease?"
+  },
+  {
+    "pid": "78",
+    "value": "false",
+    "chq": "Doctor would like a better way to introduce the subject of sexually transmitted disease -- open rather than closed question -- to get the information she needs.  Now she asks \"Are you careful about protecting yourself against sexually transmitted diseases?\"  Her question is whether there is a better way to ask this.",
+    "faq": "I wonder if this patient could have a rotator cuff thing?"
+  },
+  {
+    "pid": "79",
+    "value": "true",
+    "chq": "Are there better materials on natural family planning than what I have?",
+    "faq": "Are there better patient education materials on natural family planning than what I have?"
+  },
+  {
+    "pid": "80",
+    "value": "false",
+    "chq": "Are there better materials on natural family planning than what I have?",
+    "faq": "Diabetic on insulin. Will new medications (Glucophage, acarbose) allow him to get off?"
+  },
+  {
+    "pid": "81",
+    "value": "true",
+    "chq": "Can testes not being in the scrotum come from just being tense?",
+    "faq": "Can testes not being in the scrotum come from just being tense?"
+  },
+  {
+    "pid": "82",
+    "value": "true",
+    "chq": "Patient with hypertension and abdominal bruit.  Should I order an intravenous pyelogram?",
+    "faq": "Patient with hypertension and abdominal bruit.  Should I order an intravenous pyelogram?"
+  },
+  {
+    "pid": "83",
+    "value": "false",
+    "chq": "Patient with hypertension and abdominal bruit.  Should I order an intravenous pyelogram?",
+    "faq": "What is the cause and treatment of this old man's stomatitis?"
+  },
+  {
+    "pid": "84",
+    "value": "true",
+    "chq": "Patient is reluctant to take medications so I have been treating with smaller doses than I would with some other patients.  How do I control her hypertension and still get her cooperation?",
+    "faq": "Patient reluctant to take medication. How to control hypertension and still get her cooperation?"
+  },
+  {
+    "pid": "85",
+    "value": "false",
+    "chq": "Patient is reluctant to take medications so I have been treating with smaller doses than I would with some other patients.  How do I control her hypertension and still get her cooperation?",
+    "faq": "Why wasn't this patient very sick? (large empyema and Haemophilus influenza in sputum)"
+  },
+  {
+    "pid": "86",
+    "value": "true",
+    "chq": "He has had several ear infections and doesn't get over them completely -- (about 1 month duration).  Is there a particular organism I should be after?  Should I use another antibiotic than I use for an older child?",
+    "faq": "Several ear infections, doesn't get over them completely.  Which antibiotic now?"
+  },
+  {
+    "pid": "87",
+    "value": "false",
+    "chq": "He has had several ear infections and doesn't get over them completely -- (about 1 month duration).  Is there a particular organism I should be after?  Should I use another antibiotic than I use for an older child?",
+    "faq": "I wonder if this patient could have a rotator cuff thing?"
+  },
+  {
+    "pid": "88",
+    "value": "true",
+    "chq": "At age 4 has had two simple bladder infections with no upper symptoms.  Question is should I just treat or do more evaluation of the cause?",
+    "faq": "Age 4 years, has had 2 bladder infections, just treat or workup for cause?"
+  },
+  {
+    "pid": "89",
+    "value": "false",
+    "chq": "At age 4 has had two simple bladder infections with no upper symptoms.  Question is should I just treat or do more evaluation of the cause?",
+    "faq": "Maneuver mentioned at continuing medical education course for vertigo, couldn't remember how to do it or name of it."
+  },
+  {
+    "pid": "90",
+    "value": "true",
+    "chq": "Doctor X thinks he is probably just a normal 18 month old but would like to know if there are a certain number of respiratory infections that are considered normal for that age.",
+    "faq": "Probably a normal 18 month old but how many respiratory infections are normal?"
+  },
+  {
+    "pid": "91",
+    "value": "false",
+    "chq": "Doctor X thinks he is probably just a normal 18 month old but would like to know if there are a certain number of respiratory infections that are considered normal for that age.",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "92",
+    "value": "true",
+    "chq": "Can Staphylococcus or Haemophilus influenza septicemia give the same clinical picture as streptococcal septicemia (fever, rash, joint pain, vomiting).",
+    "faq": "Can Staphylococcus or Haemophilus influenza sepsis give same clinical picture as streptococcal septicemia?"
+  },
+  {
+    "pid": "93",
+    "value": "false",
+    "chq": "Can Staphylococcus or Haemophilus influenza septicemia give the same clinical picture as streptococcal septicemia (fever, rash, joint pain, vomiting).",
+    "faq": "Why did they cut out the Coccidiomycosis granuloma rather than treat it medically?"
+  },
+  {
+    "pid": "94",
+    "value": "true",
+    "chq": "What is the cause of this woman's long term head shaking (tremor)?",
+    "faq": "What is the cause of this woman's long term head shaking (tremor)?"
+  },
+  {
+    "pid": "95",
+    "value": "false",
+    "chq": "What is the cause of this woman's long term head shaking (tremor)?",
+    "faq": "What is the cause of this woman's long term head shaking (tremor)?"
+  },
+  {
+    "pid": "96",
+    "value": "true",
+    "chq": "What do you do with a lead level of 10 in an 11 month old which is borderline high?  What is the management besides getting them out of the spot?",
+    "faq": "What do you do with a lead level of 10 in an 11 month old?"
+  },
+  {
+    "pid": "97",
+    "value": "false",
+    "chq": "What do you do with a lead level of 10 in an 11 month old which is borderline high?  What is the management besides getting them out of the spot?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "98",
+    "value": "true",
+    "chq": "I don't know what antibiotics he can't take because he's on a nevirapine study (nonnucleoside protease inhibitor) (Viramune).",
+    "faq": "What antibiotics can he take because he's on a nevirapine study?"
+  },
+  {
+    "pid": "99",
+    "value": "false",
+    "chq": "I don't know what antibiotics he can't take because he's on a nevirapine study (nonnucleoside protease inhibitor) (Viramune).",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "100",
+    "value": "true",
+    "chq": "What is Endolimax nana and should you treat it?",
+    "faq": "Patient with diarrhea.  What is Endolimax nana (on stool sample) and should you treat it?"
+  },
+  {
+    "pid": "101",
+    "value": "false",
+    "chq": "What is Endolimax nana and should you treat it?",
+    "faq": "What are the indications for getting a digoxin level?"
+  },
+  {
+    "pid": "102",
+    "value": "true",
+    "chq": "50-year-old man with Paget's disease.  Should I treat medically?",
+    "faq": "50-year-old man with Paget's disease.  Should I treat medically?"
+  },
+  {
+    "pid": "103",
+    "value": "true",
+    "chq": "A diabetic on insulin.  Will these new medications (Glucophage, acarbose) allow me to get off insulin?  Physician did not know answer.",
+    "faq": "Diabetic on insulin. Will new medications (Glucophage, acarbose) allow him to get off?"
+  },
+  {
+    "pid": "104",
+    "value": "false",
+    "chq": "A diabetic on insulin.  Will these new medications (Glucophage, acarbose) allow me to get off insulin?  Physician did not know answer.",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "105",
+    "value": "true",
+    "chq": "A hospital nurse who never had chicken pox, negative titers, and frequently had to miss work, two years ago.  I don't know if there are any recommendations about giving chicken pox vaccine to susceptible health care workers.",
+    "faq": "Hospital nurse never had chicken pox, negative titers, should I give vaccine?"
+  },
+  {
+    "pid": "106",
+    "value": "false",
+    "chq": "A hospital nurse who never had chicken pox, negative titers, and frequently had to miss work, two years ago.  I don't know if there are any recommendations about giving chicken pox vaccine to susceptible health care workers.",
+    "faq": "What is the cause and treatment of this old man's stomatitis?"
+  },
+  {
+    "pid": "107",
+    "value": "true",
+    "chq": "What do we do with mammogram, cholesterol, and pap smear screening in women over 70?  What is a good source that is both scientific and yet has common sense about what is cost effective and what Medicare will pay for?",
+    "faq": "What do we do with mammogram, cholesterol, and Papanicolaou smears in women over 70?"
+  },
+  {
+    "pid": "108",
+    "value": "false",
+    "chq": "What do we do with mammogram, cholesterol, and pap smear screening in women over 70?  What is a good source that is both scientific and yet has common sense about what is cost effective and what Medicare will pay for?",
+    "faq": "Patient, plate in hip, no murmur, needs subacute bacterial endocarditis prophylaxis before sees dentist?"
+  },
+  {
+    "pid": "109",
+    "value": "true",
+    "chq": "How old should a child be before they can switch from whole milk to 2% milk?",
+    "faq": "How old should a child be before they can switch from whole milk to 2% milk?"
+  },
+  {
+    "pid": "110",
+    "value": "false",
+    "chq": "How old should a child be before they can switch from whole milk to 2% milk?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "111",
+    "value": "true",
+    "chq": "Is it ever recommended these days in a young man with recurrent peptic ulcer disease to have a vagotomy?  Will his health maintenance organization pay for it?",
+    "faq": "Young man with recurrent peptic ulcer disease; do vagotomy?  Will health maintenance organization pay?"
+  },
+  {
+    "pid": "112",
+    "value": "false",
+    "chq": "Is it ever recommended these days in a young man with recurrent peptic ulcer disease to have a vagotomy?  Will his health maintenance organization pay for it?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "113",
+    "value": "true",
+    "chq": "Is there any support group in this town for this patient who is going blind from macular degeneration?",
+    "faq": "Is there a support group here for this patient going blind from macular degeneration?"
+  },
+  {
+    "pid": "114",
+    "value": "true",
+    "chq": "It's just the age old question, \"How do you convince someone they are depressed when they don't want to accept it?\"",
+    "faq": "How to convince someone they are depressed when they don't want to accept it?"
+  },
+  {
+    "pid": "115",
+    "value": "false",
+    "chq": "It's just the age old question, \"How do you convince someone they are depressed when they don't want to accept it?\"",
+    "faq": "I wonder if this patient could have a rotator cuff thing?"
+  },
+  {
+    "pid": "116",
+    "value": "true",
+    "chq": "Is it possible for someone to get recurrent pelvic inflammatory disease without a new exposure?  She had it one year ago from an intrauterine device.",
+    "faq": "Is it possible for someone to get recurrent pelvic inflammatory disease without a new exposure?"
+  },
+  {
+    "pid": "117",
+    "value": "false",
+    "chq": "Is it possible for someone to get recurrent pelvic inflammatory disease without a new exposure?  She had it one year ago from an intrauterine device.",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "118",
+    "value": "true",
+    "chq": "Could this patient with pelvic inflammatory disease and generalized abdominal pain have Fitz-Hugh-Curtis syndrome?",
+    "faq": "Patient with pelvic inflammatory disease and generalized abdominal pain, is it Fitz-Hugh-Curtis syndrome?"
+  },
+  {
+    "pid": "119",
+    "value": "false",
+    "chq": "Could this patient with pelvic inflammatory disease and generalized abdominal pain have Fitz-Hugh-Curtis syndrome?",
+    "faq": "Is melatonin good for anything?  What is the dose?"
+  },
+  {
+    "pid": "120",
+    "value": "true",
+    "chq": "What organisms can cause pelvic inflammatory disease if you don't think it's sexually transmitted?",
+    "faq": "What organisms can cause pelvic inflammatory disease if you don't think it's sexually transmitted?"
+  },
+  {
+    "pid": "121",
+    "value": "false",
+    "chq": "What organisms can cause pelvic inflammatory disease if you don't think it's sexually transmitted?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "122",
+    "value": "true",
+    "chq": "What should you do with someone who is not getting better from epicondylitis after physical therapy and nonsteroidal anti-inflammatory drugs have not worked?",
+    "faq": "Patient not getting better from epicondylitis after physical therapy and nonsteroidal anti-inflammatory drugs; what to do?"
+  },
+  {
+    "pid": "123",
+    "value": "false",
+    "chq": "What should you do with someone who is not getting better from epicondylitis after physical therapy and nonsteroidal anti-inflammatory drugs have not worked?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "124",
+    "value": "true",
+    "chq": "Two months ago I saw a patient and all her aunts (5 or 6 of them) had ovarian cancer.  The question is, is there a study going on someplace I should refer her to?",
+    "faq": "Patient, all her aunts (5 or 6) had ovarian cancer.  Is there a study to refer her to?"
+  },
+  {
+    "pid": "125",
+    "value": "false",
+    "chq": "Two months ago I saw a patient and all her aunts (5 or 6 of them) had ovarian cancer.  The question is, is there a study going on someplace I should refer her to?",
+    "faq": "What is the maximum dose of digoxin? (patient seen in emergency room, had digoxin level less than 0.03)"
+  },
+  {
+    "pid": "126",
+    "value": "true",
+    "chq": "Is there a review or an answer to whether patients with osteoporosis should get bone densitometry, because now we have Fosamax?",
+    "faq": "Should patients with osteoporosis get bone densitometry, because now we have Fosamax?"
+  },
+  {
+    "pid": "127",
+    "value": "false",
+    "chq": "Is there a review or an answer to whether patients with osteoporosis should get bone densitometry, because now we have Fosamax?",
+    "faq": "Is melatonin good for anything?  What is the dose?"
+  },
+  {
+    "pid": "128",
+    "value": "true",
+    "chq": "What are the various strengths of Synthroid and what is appropriate for this patient?",
+    "faq": "What are the strengths of Synthroid and what is appropriate for this patient?"
+  },
+  {
+    "pid": "129",
+    "value": "false",
+    "chq": "What are the various strengths of Synthroid and what is appropriate for this patient?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "130",
+    "value": "true",
+    "chq": "What are the long-term options for treatment of hemorrhagic gastritis beyond H-2 blockers and antacids?",
+    "faq": "What are long-term options for hemorrhagic gastritis beyond H2 blockers?"
+  },
+  {
+    "pid": "131",
+    "value": "false",
+    "chq": "What are the long-term options for treatment of hemorrhagic gastritis beyond H-2 blockers and antacids?",
+    "faq": "Why did she get Coccidiomycosis?"
+  },
+  {
+    "pid": "132",
+    "value": "true",
+    "chq": "What are the side effects of Florinef?  Could it cause headaches?",
+    "faq": "What are the side effects of Florinef?  Could it cause headaches?"
+  },
+  {
+    "pid": "133",
+    "value": "false",
+    "chq": "What are the side effects of Florinef?  Could it cause headaches?",
+    "faq": "What are the indications for getting a digoxin level?"
+  },
+  {
+    "pid": "134",
+    "value": "true",
+    "chq": "In this patient with back pain, how do you make a diagnosis of arachnoiditis and how do you treat it?",
+    "faq": "Patient with back pain, how to diagnose arachnoiditis and how to treat it?"
+  },
+  {
+    "pid": "135",
+    "value": "false",
+    "chq": "In this patient with back pain, how do you make a diagnosis of arachnoiditis and how do you treat it?",
+    "faq": "Why did they cut out the Coccidiomycosis granuloma rather than treat it medically?"
+  },
+  {
+    "pid": "136",
+    "value": "true",
+    "chq": "Is Aeromonas caviae pathogenic?",
+    "faq": "Is Aeromonas caviae pathogenic?"
+  },
+  {
+    "pid": "137",
+    "value": "true",
+    "chq": "What is the bulletin for patients with Crohn's disease and how do you get a patient on the mailing list for this?",
+    "faq": "What is the bulletin for patients with Crohn's and how to get them on mailing list?"
+  },
+  {
+    "pid": "138",
+    "value": "true",
+    "chq": "Is there more support we can provide to patients with macular degeneration?",
+    "faq": "Is there more support we can provide patients with macular degeneration?"
+  },
+  {
+    "pid": "139",
+    "value": "true",
+    "chq": "Will the fumes created by taking off a basal cell carcinoma with cautery affect the physician taking it off?",
+    "faq": "Will fumes created by taking off a basal cell carcinoma with cautery affect the physician?"
+  },
+  {
+    "pid": "140",
+    "value": "false",
+    "chq": "Will the fumes created by taking off a basal cell carcinoma with cautery affect the physician taking it off?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "141",
+    "value": "true",
+    "chq": "This patient complains that normal sounds sound too loud.  What should I do about that?",
+    "faq": "Patient complains that normal sounds sound too loud.  What should I do about that?"
+  },
+  {
+    "pid": "142",
+    "value": "true",
+    "chq": "This patient has a history of irregular heart beat, bigeminy and trigeminy.  He's having a few brief runs occasionally now.  On Quinidine in the past.  Should I treat these?",
+    "faq": "Patient with bigeminy and trigeminy.  Should I treat these?"
+  },
+  {
+    "pid": "143",
+    "value": "false",
+    "chq": "This patient has a history of irregular heart beat, bigeminy and trigeminy.  He's having a few brief runs occasionally now.  On Quinidine in the past.  Should I treat these?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "144",
+    "value": "true",
+    "chq": "In a patient with a history of rheumatic fever, do you need to use subacute bacterial endocarditis prophylaxis for pilonidal cyst excision?",
+    "faq": "Patient with history of rheumatic fever, need subacute bacterial endocarditis prophylaxis for pilonidal cyst excision?"
+  },
+  {
+    "pid": "145",
+    "value": "false",
+    "chq": "In a patient with a history of rheumatic fever, do you need to use subacute bacterial endocarditis prophylaxis for pilonidal cyst excision?",
+    "faq": "Why did they cut out the Coccidiomycosis granuloma rather than treat it medically?"
+  },
+  {
+    "pid": "146",
+    "value": "true",
+    "chq": "After starting treatment for a step throat, how long does the patient need to stay out of work or school?",
+    "faq": "After starting treatment for streptococcal sore throat, how long to stay out of work or school?"
+  },
+  {
+    "pid": "147",
+    "value": "false",
+    "chq": "After starting treatment for a step throat, how long does the patient need to stay out of work or school?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "148",
+    "value": "true",
+    "chq": "How long should you keep a patient with conjunctivitis out of school?",
+    "faq": "How long should you keep a patient with conjunctivitis out of school?"
+  },
+  {
+    "pid": "149",
+    "value": "false",
+    "chq": "How long should you keep a patient with conjunctivitis out of school?",
+    "faq": "Boys' father has Marfan's Syndrome. Do these boys need further evaluation?"
+  },
+  {
+    "pid": "150",
+    "value": "true",
+    "chq": "How long should you wait after giving the digoxin dose before you get a digoxin level?",
+    "faq": "How long after giving the digoxin dose before you get a digoxin level?"
+  },
+  {
+    "pid": "151",
+    "value": "false",
+    "chq": "How long should you wait after giving the digoxin dose before you get a digoxin level?",
+    "faq": "What is the cause and treatment of this old man's stomatitis?"
+  },
+  {
+    "pid": "152",
+    "value": "true",
+    "chq": "Doctor X's question asked of Doctor Y.  This hospitalized patient with bilateral pleural effusions of unknown etiology now has confusion and a pCO2 of 50.  Is that pCO2 high enough to cause confusion?  (pO2 = 74)",
+    "faq": "Patient with pleural effusions, confusion, pCO2 50. Could that pCO2 explain confusion?"
+  },
+  {
+    "pid": "153",
+    "value": "false",
+    "chq": "Doctor X's question asked of Doctor Y.  This hospitalized patient with bilateral pleural effusions of unknown etiology now has confusion and a pCO2 of 50.  Is that pCO2 high enough to cause confusion?  (pO2 = 74)",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "154",
+    "value": "true",
+    "chq": "How long should you leave a patient on Coumadin AND heparin?  Can I stop the heparin as soon as the protime is therapeutic?",
+    "faq": "How long to leave patient on Coumadin AND heparin?  Stop heparin when protime okay?"
+  },
+  {
+    "pid": "155",
+    "value": "false",
+    "chq": "How long should you leave a patient on Coumadin AND heparin?  Can I stop the heparin as soon as the protime is therapeutic?",
+    "faq": "What are the indications for getting a digoxin level?"
+  },
+  {
+    "pid": "156",
+    "value": "true",
+    "chq": "How soon should you ambulate a patient with a deep vein thrombosis?",
+    "faq": "How soon should you ambulate a patient with a deep vein thrombosis?"
+  },
+  {
+    "pid": "157",
+    "value": "false",
+    "chq": "How soon should you ambulate a patient with a deep vein thrombosis?",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "158",
+    "value": "true",
+    "chq": "How old is it still safe to give a woman birth control pills?",
+    "faq": "How old is it still safe to give a woman birth control pills?"
+  },
+  {
+    "pid": "159",
+    "value": "true",
+    "chq": "What is good treatment for aphthous ulcers in the mouth?",
+    "faq": "What is good treatment for aphthous ulcers in the mouth?"
+  },
+  {
+    "pid": "160",
+    "value": "true",
+    "chq": "What should you do for asymptomatic carotid bruits or bruits in general?  Folic acid?,  Vitamin B1?  Aspirin?",
+    "faq": "What to do for asymptomatic carotid bruits or carotid bruits in general?"
+  },
+  {
+    "pid": "161",
+    "value": "false",
+    "chq": "What should you do for asymptomatic carotid bruits or bruits in general?  Folic acid?,  Vitamin B1?  Aspirin?",
+    "faq": "Should we do a head CT (computerized tomography) with contrast tomorrow (Saturday) or MRI (magnetic resonance imaging) Monday?"
+  },
+  {
+    "pid": "162",
+    "value": "true",
+    "chq": "What are the criteria for obsessive compulsive disorder in a male teenager (he's been doing a lot of handwashing and so on)?",
+    "faq": "What are criteria for obsessive compulsive disorder in male teenager, doing lots of handwashing and so on?"
+  },
+  {
+    "pid": "163",
+    "value": "true",
+    "chq": "Is obsessive compulsive disorder hereditary (mother has the diagnosis)?",
+    "faq": "Is obsessive compulsive disorder hereditary (mother has the diagnosis)?"
+  },
+  {
+    "pid": "164",
+    "value": "true",
+    "chq": "Obstetric patient had an ultrasound and the estimated fetal weight on the ultrasound was in grams.  I would have liked to know what is was in pounds so I could tell the mother.",
+    "faq": "Estimated fetal weight on ultrasound in grams; what is it in pounds so I can tell mother?"
+  },
+  {
+    "pid": "165",
+    "value": "false",
+    "chq": "Obstetric patient had an ultrasound and the estimated fetal weight on the ultrasound was in grams.  I would have liked to know what is was in pounds so I could tell the mother.",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "166",
+    "value": "true",
+    "chq": "What is the diagnosis for this rash that looks like impetigo, comes every April and May?",
+    "faq": "What is this rash, looks like impetigo, comes every April and May?"
+  },
+  {
+    "pid": "167",
+    "value": "false",
+    "chq": "What is the diagnosis for this rash that looks like impetigo, comes every April and May?",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "168",
+    "value": "true",
+    "chq": "This woman has Herpes zoster on her chest.  Which dermatome is it?",
+    "faq": "This woman has Herpes zoster on her chest.  Which dermatome is it?"
+  },
+  {
+    "pid": "169",
+    "value": "false",
+    "chq": "This woman has Herpes zoster on her chest.  Which dermatome is it?",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "170",
+    "value": "true",
+    "chq": "This woman takes Premarin 0.625 milligrams for osteoporosis prophylaxis but she got sore breasts.  Is there a smaller size Premarin like 0.3 milligrams?",
+    "faq": "Patient got sore breasts from Premarin 0.625 milligrams.  Is there a smaller pill?"
+  },
+  {
+    "pid": "171",
+    "value": "false",
+    "chq": "This woman takes Premarin 0.625 milligrams for osteoporosis prophylaxis but she got sore breasts.  Is there a smaller size Premarin like 0.3 milligrams?",
+    "faq": "What is the other drug besides Famvir and acyclovir for Herpes Zoster?"
+  },
+  {
+    "pid": "172",
+    "value": "true",
+    "chq": "A woman with bad acne, status post bilateral tubal ligation is on Accutane.  Dermatologist put her on oral contraceptive too.  Why?",
+    "faq": "Patient status post bilateral tubal ligation on Accutane for acne.  Dermatologist put her on oral contraceptives too.  Why?"
+  },
+  {
+    "pid": "173",
+    "value": "false",
+    "chq": "A woman with bad acne, status post bilateral tubal ligation is on Accutane.  Dermatologist put her on oral contraceptive too.  Why?",
+    "faq": "What antibiotic should I use for this diabetic patient's infected foot ulcer?"
+  },
+  {
+    "pid": "174",
+    "value": "true",
+    "chq": "An old man went for eye surgery to have a cataract removed.  I did a physical exam for this.  I could not see the disk and could not test the ophthalmic nerve.  Which cranial nerve number is the ophthalmic nerve so I can dictate that I could not test it.",
+    "faq": "Did pre-cataract physical exam. Which cranial nerve number is the ophthalmic nerve?"
+  },
+  {
+    "pid": "175",
+    "value": "false",
+    "chq": "An old man went for eye surgery to have a cataract removed.  I did a physical exam for this.  I could not see the disk and could not test the ophthalmic nerve.  Which cranial nerve number is the ophthalmic nerve so I can dictate that I could not test it.",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "176",
+    "value": "true",
+    "chq": "His nurse's daughter had a tumor on her knee (distal femur).  It was increasing in size but looked like a benign osteochondroma.  Is it an osteochondroma even though increasing in size?",
+    "faq": "Patient with enlarging tumor distal femur, looks like osteochondroma.  Is it?"
+  },
+  {
+    "pid": "177",
+    "value": "true",
+    "chq": "The local pharmacist had a malignant melanoma.  When the pathology report came back I needed to look up the classification system for depth of involvement.",
+    "faq": "Patient with malignant melanoma; on pathology report, how to interpret Clark levels?"
+  },
+  {
+    "pid": "178",
+    "value": "false",
+    "chq": "The local pharmacist had a malignant melanoma.  When the pathology report came back I needed to look up the classification system for depth of involvement.",
+    "faq": "How should I treat polymenorrhea in a 14-year-old girl?"
+  },
+  {
+    "pid": "179",
+    "value": "true",
+    "chq": "A man had a tumor on his tongue.  I did not know what it was so I referred him to an otolaryngologist.  The question was \"What is this tumor on the tongue?\"",
+    "faq": "What is this tumor on his tongue?"
+  },
+  {
+    "pid": "180",
+    "value": "false",
+    "chq": "A man had a tumor on his tongue.  I did not know what it was so I referred him to an otolaryngologist.  The question was \"What is this tumor on the tongue?\"",
+    "faq": "72-year-old woman, chronic lymphocytic leukemia. How should I treat her?"
+  },
+  {
+    "pid": "181",
+    "value": "true",
+    "chq": "What are the Supplemental Security Income (SSI) criteria for disability?",
+    "faq": "What are the Supplemental Security Income (SSI) criteria for disability?"
+  },
+  {
+    "pid": "182",
+    "value": "true",
+    "chq": "Should a gestational diabetic have any antenatal fetal well-being testing done?",
+    "faq": "Should a gestational diabetic have any antenatal fetal well-being testing done?"
+  },
+  {
+    "pid": "183",
+    "value": "false",
+    "chq": "Should a gestational diabetic have any antenatal fetal well-being testing done?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "184",
+    "value": "true",
+    "chq": "What is the optimal treatment for depression during pregnancy?  (this patient was on Paxil)",
+    "faq": "What is optimal treatment for depression in pregnancy? (now on Paxil)"
+  },
+  {
+    "pid": "185",
+    "value": "false",
+    "chq": "What is the optimal treatment for depression during pregnancy?  (this patient was on Paxil)",
+    "faq": "After starting treatment for streptococcal sore throat, how long to stay out of work or school?"
+  },
+  {
+    "pid": "186",
+    "value": "true",
+    "chq": "Is it really safe to use Paxil during the first trimester of pregnancy.  I think it is but I want to confirm that it is.",
+    "faq": "Is it safe to use Paxil during the first trimester of pregnancy?"
+  },
+  {
+    "pid": "187",
+    "value": "false",
+    "chq": "Is it really safe to use Paxil during the first trimester of pregnancy.  I think it is but I want to confirm that it is.",
+    "faq": "How should I workup this baby with a single umbilical artery?"
+  },
+  {
+    "pid": "188",
+    "value": "true",
+    "chq": "What is the common serum marker for ovarian cancer?  I want to say carcinoembryonic antigen (CEA) but that's for colon cancer.  I just don't remember.",
+    "faq": "What is the serum marker for ovarian cancer?"
+  },
+  {
+    "pid": "189",
+    "value": "false",
+    "chq": "What is the common serum marker for ovarian cancer?  I want to say carcinoembryonic antigen (CEA) but that's for colon cancer.  I just don't remember.",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "190",
+    "value": "true",
+    "chq": "Why does he have eye pain and blurred vision (referred to ophthalmologist)?",
+    "faq": "Why does he have eye pain and blurred vision?"
+  },
+  {
+    "pid": "191",
+    "value": "false",
+    "chq": "Why does he have eye pain and blurred vision (referred to ophthalmologist)?",
+    "faq": "What is causing his fatigue?  I think it's viral but not sure."
+  },
+  {
+    "pid": "192",
+    "value": "true",
+    "chq": "What is the dose of Imodium?",
+    "faq": "What is the dose of Imodium?"
+  },
+  {
+    "pid": "193",
+    "value": "true",
+    "chq": "What drugs are folic acid antagonists?",
+    "faq": "What drugs are folic acid antagonists?"
+  },
+  {
+    "pid": "194",
+    "value": "true",
+    "chq": "Would Vitamin B12 help this patient feel better (on chemotherapy for breast cancer)?",
+    "faq": "Would vitamin B12 help this patient feel better (on chemotherapy for breast cancer)?"
+  },
+  {
+    "pid": "195",
+    "value": "false",
+    "chq": "Would Vitamin B12 help this patient feel better (on chemotherapy for breast cancer)?",
+    "faq": "Let's give these immunizations.  That's right isn't it?"
+  },
+  {
+    "pid": "196",
+    "value": "true",
+    "chq": "What is the dose of oral Lamisil?",
+    "faq": "What is the dose of oral Lamisil?"
+  },
+  {
+    "pid": "197",
+    "value": "true",
+    "chq": "Which dose of Premarin is green?",
+    "faq": "Which dose of Premarin is green?"
+  },
+  {
+    "pid": "198",
+    "value": "false",
+    "chq": "Which dose of Premarin is green?",
+    "faq": "Can I use low molecular weight heparin in pregnancy (patient with deep vein thrombosis last pregnancy)?"
+  },
+  {
+    "pid": "199",
+    "value": "true",
+    "chq": "How should I treat this patient with seizures?",
+    "faq": "How should I treat this patient with seizures?"
+  },
+  {
+    "pid": "200",
+    "value": "false",
+    "chq": "How should I treat this patient with seizures?",
+    "faq": "What is the dose of Famvir?"
+  }
+]

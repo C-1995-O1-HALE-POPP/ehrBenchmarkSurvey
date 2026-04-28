@@ -1,0 +1,802 @@
+[
+  {
+    "ID": 0,
+    "ZH": "還是在打麻將？",
+    "HAN": "猶是佇拍麻雀？",
+    "TL": "iáu-sī-tī phah-muâ-tshiok？",
+    "EN": "Are you still playing mahjong?",
+    "POJ": "iáu-sī-tī phah-môa-chhiok？"
+  },
+  {
+    "ID": 1,
+    "ZH": "他有房屋貸款壓力，還有小孩要養，未來該怎麼辦？",
+    "HAN": "伊有厝宅貸款壓力，猶有囡仔欲飼，未來欲按怎？",
+    "TL": "i-ū tshù-the̍h tài-khuán ap-li̍k，iáu-ū gín-á beh-tshī，bī-lâi beh-án-tsuánn？",
+    "EN": "He has pressure from a housing loan and also has children to support. What should he do in the future?",
+    "POJ": "i-ū chhù-the̍h tài-khoán ap-le̍k，iáu-ū gín-á beh-chhī，bī-lâi beh-án-chóaⁿ？"
+  },
+  {
+    "ID": 2,
+    "ZH": "農民再度進入鴨寮巡視，幾隻已經奄奄一息的小鴨，雖然小鴨還會呼吸，可是放到地面上，鴨子雙腳癱軟站都站不住。",
+    "HAN": "做田人閣再進入鴨寮巡視，幾隻已經香香仔的鴨咪仔，雖然鴨咪仔猶會喘氣，毋過囥踮塗跤頂，鴨咪仔雙跤蝹落來徛攏徛袂在。",
+    "TL": "tsoh-tshân-lâng koh-tsài tsìn-ji̍p ah-liâu sûn-sī，kuí-tsiah í-king hiunn-hiunn-á ê ah-bî-á，sui-jiân ah-bî-á iáu-ē tshuán-khuì，m̄-koh khǹg-tiàm thôo-kha-tíng，ah-bî-á siang-kha un-lo̍h-lâi khiā-lóng-khiā-bē-tsāi。",
+    "EN": "Farmers entered the duck pen again to inspect. Several small ducks were already gasping for breath. Although they were still breathing, when placed on the ground, their legs were too weak to stand.",
+    "POJ": "choh-chhân-lâng koh-chài chìn-ji̍p ah-liâu sûn-sī，kúi-chiah í-keng hiuⁿ-hiuⁿ-á ê ah-bî-á，sui-jiân ah-bî-á iáu-ē chhoán-khùi，m̄-koh khǹg-tiàm thô͘-kha-téng，ah-bî-á siang-kha un-lo̍h-lâi khiā-lóng-khiā-bē-chāi。"
+  },
+  {
+    "ID": 3,
+    "ZH": "什麼最受歡迎呢？",
+    "HAN": "啥物最受歡迎呢？",
+    "TL": "siánn-mih tsuè-siū-huan-gîng-ne？",
+    "EN": "What is the most popular?",
+    "POJ": "siáⁿ-mih chòe-siū-hoan-gêng-ne？"
+  },
+  {
+    "ID": 4,
+    "ZH": "果農點起蚊香掛在樹上，您猜得到要做什麼嗎？",
+    "HAN": "果農點起蠓仔香掛佇樹頂，你臆會著欲做啥物？",
+    "TL": "kué-lông tiám-khì báng-á-hiunn kuà-tī tshiū-tíng，lí ioh-ē-tio̍h beh-tsoh-siánn-mih？",
+    "EN": "The fruit farmer lit a mosquito coil and hung it on the tree. Can you guess what he is going to do?",
+    "POJ": "kóe-lông tiám-khì báng-á-hiuⁿ kòa-tī chhiū-téng，lí ioh-ē-tio̍h beh-choh-siáⁿ-mih？"
+  },
+  {
+    "ID": 5,
+    "ZH": "台灣事先並未提出這樣的需求，甚至剛開始也不知道要拿來做啥。",
+    "HAN": "臺灣事先並無提出按呢的需求，甚至拄開始抑毋知影欲提來做啥。",
+    "TL": "tâi-uân sū-sian pīng-bô thê-tshut án-ne-ê su-kiû，sīm-tsì tú-khai-sí ia̍h-m̄-tsai-iánn beh the̍h-lâi tsò-siánn。",
+    "EN": "Taiwan did not previously make such a request, and even at the beginning did not know what it was for.",
+    "POJ": "tâi-oân sū-sian pēng-bô thê-chhut án-ne-ê su-kiû，sīm-chì tú-khai-sí ia̍h-m̄-chai-iáⁿ beh the̍h-lâi chò-siáⁿ。"
+  },
+  {
+    "ID": 6,
+    "ZH": "他說，不管他的解釋他們是否聽得進去，但這些都是事實。",
+    "HAN": "伊講，不管伊的解釋𪜶是毋是聽入耳，但遮的攏是事實。",
+    "TL": "i-kóng，put-kuán i-ê kái-sik in sī-m̄-sī thiann-ji̍p-ní，tān tsia-ê lóng-sī sū-si̍t。",
+    "EN": "He said that whether they can understand his explanation or not, these are all facts.",
+    "POJ": "i-kóng，put-koán i-ê kái-sek in sī-m̄-sī thiaⁿ-ji̍p-ní，tān chia-ê lóng-sī sū-si̍t。"
+  },
+  {
+    "ID": 7,
+    "ZH": "遊民躲在走廊下避寒，能夠遮風保暖的全用上了。",
+    "HAN": "遊民覕佇亭仔跤避寒，會通閘風保暖的攏運用矣。",
+    "TL": "iû-bîn bih-tī tîng-á-kha phiah-kuânn，ē-thang tsa̍h-hong pó-luán-ê lóng-ūn-iōng-0ah。",
+    "EN": "The homeless people hide under the corridor to keep warm, using everything that can block the wind and keep them warm.",
+    "POJ": "iû-bîn bih-tī têng-á-kha phiah-kôaⁿ，ē-thang cha̍h-hong pó-loán-ê lóng-ūn-iōng-0ah。"
+  },
+  {
+    "ID": 8,
+    "ZH": "對蔡崇名來說，孩子的膚色雖然不一樣，但是都是他的寶貝。",
+    "HAN": "對蔡崇名來講，囡仔的肉色雖然無仝款，毋過攏是伊的寶貝。",
+    "TL": "tuì tshuà-tsông-bîng lâi-kóng，gín-á-ê bah-sik sui-jiân bô-kāng-khuán，m̄-koh lóng-sī i-ê pó-puè。",
+    "EN": "For Cai Chongming, although the skin color of the children is different, they are all his treasures.",
+    "POJ": "tùi chhòa-chông-bêng lâi-kóng，gín-á-ê bah-sek sui-jiân bô-kāng-khoán，m̄-koh lóng-sī i-ê pó-pòe。"
+  },
+  {
+    "ID": 9,
+    "ZH": "讓歌迷們回味，她還特地帶來她的版畫跟歌迷朋友分享。",
+    "HAN": "予歌迷𪜶餾這擺，伊猶專工紮來伊的版畫佮歌迷朋友分享。",
+    "TL": "hōo kua-bê-in liū-tsit-pái，i iáu tsuan-kang-tsah-lâi i-ê pán-uē kap kua-bê pîng-iú hun-hióng。",
+    "EN": "To let fans savor the moment, she also brought her prints to share with her fan friends.",
+    "POJ": "hō͘ koa-bê-in liū-chit-pái，i iáu choan-kang-chah-lâi i-ê pán-ōe kap koa-bê pêng-iú hun-hióng。"
+  },
+  {
+    "ID": 10,
+    "ZH": "為什麼有必要羈押他？",
+    "HAN": "為啥物有必要拘押伊？",
+    "TL": "uī-siánn-mi̍h ū-pit-iàu khu-ah i？",
+    "EN": "Why is it necessary to detain him?",
+    "POJ": "ūi-siáⁿ-mi̍h ū-pit-iàu khu-ah i？"
+  },
+  {
+    "ID": 11,
+    "ZH": "學生現在貸款人數到底有多少？",
+    "HAN": "學生這久貸款人數到底有偌濟？",
+    "TL": "ha̍k-sing tsit-kú tài-khuán jîn-sòo tàu-té ū-juā-tsē？",
+    "EN": "How many students are currently loan borrowers?",
+    "POJ": "ha̍k-seng chit-kú tài-khoán jîn-sò͘ tàu-té ū-jōa-chē？"
+  },
+  {
+    "ID": 12,
+    "ZH": "這是不一樣的環島，這些用划的大學生，進行畢業前環島獨木舟。",
+    "HAN": "這是無仝款的環島，遮的用划的大學生，進行畢業前環島獨木舟。",
+    "TL": "tsit-sī bô-kāng-khuán-ê khuân-tó，tsia-ê iōng-kò-ê tāi-ha̍k-sing，tsìn-hîng pit-giap-tsîng khuân-tó tok-bok-tsiu",
+    "EN": "This is a different round-island trip. These college students who use paddles are kayaking around the island before graduation.",
+    "POJ": "chit-sī bô-kāng-khoán-ê khoân-tó，chia-ê iōng-kò-ê tāi-ha̍k-seng，chìn-hêng pit-giap-chêng khoân-tó tok-bok-chiu"
+  },
+  {
+    "ID": 13,
+    "ZH": "台灣的軍方表示，這些物資是美國決定要給的。",
+    "HAN": "臺灣的軍方表示，遮的物資是美國決定欲予的。",
+    "TL": "tâi-uân-ê kun-hong piáu-sī，tsia-ê bu̍t-tsu sī bí-kok kuat-tīng beh-hōo-ê。",
+    "EN": "The military in Taiwan stated that these supplies are what the United States has decided to give.",
+    "POJ": "tâi-oân-ê kun-hong piáu-sī，chia-ê bu̍t-chu sī bí-kok koat-tēng beh-hō͘-ê。"
+  },
+  {
+    "ID": 14,
+    "ZH": "雖然三民路路面已經填平，經過的車輛還是很小心，整條路的車輛都堵在一塊，路旁邊明顯的下陷還有很多裂痕。",
+    "HAN": "雖然三民路路面已經坉平，經過的車輛猶是足細膩，規條路的車輛攏窒做伙，路邊仔明顯的落塌猶有足濟必巡。",
+    "TL": "sui-jiân sam-bîn-lōo lōo-bīn í-king thūn-pînn，king-kuè-ê tshia-lióng iáu-sī tsiok-sè-jī，kui-tiâu-lōo ê tshia-lióng lóng-that-tsò-hué，lōo-pinn-á bîng-hián-ê lo̍h-lap iáu-ū tsiok-tsuē pit-sûn。",
+    "EN": "Although the surface of Sanmin Road has been leveled, the passing vehicles are still very careful. The vehicles on the entire road are stuck together, and there are many obvious depressions and cracks along the road.",
+    "POJ": "sui-jiân sam-bîn-lō͘ lō͘-bīn í-keng thūn-pîⁿ，keng-kòe-ê chhia-lióng iáu-sī chiok-sè-jī，kui-tiâu-lō͘ ê chhia-lióng lóng-that-chò-hóe，lō͘-piⁿ-á bêng-hián-ê lo̍h-lap iáu-ū chiok-chōe pit-sûn。"
+  },
+  {
+    "ID": 15,
+    "ZH": "另外，學運團體將在下午，豎立用竹子搭建，將近兩層樓高的高塔，懸掛野草莓國旗。",
+    "HAN": "另外，學運團體欲佇下晡，𫞼起用竹仔搭起，欲倚兩層樓仔懸的懸塔，吊掛野刺波國旗。",
+    "TL": "līng-guā，ha̍k-ūn-thuân-thé beh-tī ē-poo，tshāi-khí iōng tik-á tah-khí，bueh-uá nn̄g-tsàn-lâu-á-kuân ê kuân-thah，tiàu-kuà iá-tshì-phō kok-kî。",
+    "EN": "In addition, the student movement group will erect a tower made of bamboo in the afternoon, which is nearly two stories high, and hang the flag of the Wild Strawberry Movement.",
+    "POJ": "lēng-gōa，ha̍k-ūn-thoân-thé beh-tī ē-po͘，chhāi-khí iōng tek-á tah-khí，boeh-óa nn̄g-chàn-lâu-á-koân ê koân-thah，tiàu-kòa iá-chhì-phō kok-kî。"
+  },
+  {
+    "ID": 16,
+    "ZH": "丟雞蛋的民眾立刻被安全人員拖走，但是他還邊走邊抗議。",
+    "HAN": "掔雞卵的民眾隨被安全人員拖走，毋過伊猶緊行緊抗議，",
+    "TL": "khian ke-nn̄g-ê bîn-tsiòng suî-pī an-tsuân-jîn-uân thua-tsáu，m̄-koh i iáu kín-kiânn-kín-khòng-gī，",
+    "EN": "The person who threw the eggs was immediately dragged away by security personnel, but he continued to protest while walking.",
+    "POJ": "khian ke-nn̄g-ê bîn-chiòng sûi-pī an-choân-jîn-oân thoa-cháu，m̄-koh i iáu kín-kiâⁿ-kín-khòng-gī，"
+  },
+  {
+    "ID": 17,
+    "ZH": "將一顆一顆的西瓜摔在地上，農民的心又痛又無奈，辛苦種植兩個多月的心血，因為連日的大雨，全部就這樣泡湯。",
+    "HAN": "共一粒一粒的西瓜摔佇塗跤，做田人的心閣疼閣無奈，辛苦種兩個外月的心血，因為連日的大雨，全部都按呢烏有。",
+    "TL": "kā tsi̍t-lia̍p tsi̍t-lia̍p-ê si-kue siak-tī-thôo-kha，tsò-tshân-lâng-ê sim-koh-thiànn koh-bô-nāi，sin-khóo-tsìng nn̄g-kòo-guā-gue̍h-ê sim-hiat，in-uī liân-ji̍t-ê tuā-hōo，tsuân-pōo to-án-ne oo-iú。",
+    "EN": "The farmer's heart was both pained and helpless as he threw the watermelon, one by one, onto the ground. After more than two months of hard work in planting, all of his efforts were ruined due to the continuous heavy rain.",
+    "POJ": "kā chi̍t-lia̍p chi̍t-lia̍p-ê si-koe siak-tī-thô͘-kha，chò-chhân-lâng-ê sim-koh-thiàⁿ koh-bô-nāi，sin-khó͘-chèng nn̄g-kò͘-gōa-goe̍h-ê sim-hiat，in-ūi liân-ji̍t-ê tōa-hō͘，choân-pō͘ to-án-ne o͘-iú。"
+  },
+  {
+    "ID": 18,
+    "ZH": "工人慘遭火車撞死妻兒認屍跪地痛哭。在台中縣的潭子鄉，三十日下午發生火車撞死人的意外。",
+    "HAN": "工人慘遭火車撞死某囝認屍跪地悽慘哭。佇臺中縣的潭子鄉，三十號下晡發生火車撞死人的意外。",
+    "TL": "kang-lâng tshám-tso hué-tshia lòng-sí bóo-kiánn jīm-si kuī-tuē tshi-tshám-khàu. tī tâi-tiong-kuān ê thâm-tsú-hiong，sann-tsa̍p-hō ē-poo huat-sing hué-tshia lòng-sí-lâng-ê ì-guā。",
+    "EN": "A worker was tragically hit and killed by a train, and his wife and child recognized his body and knelt on the ground crying in sorrow. The accident occurred in Tanzi Township, Taichung County on the afternoon of the 30th.",
+    "POJ": "kang-lâng chhám-cho hóe-chhia lòng-sí bó͘-kiáⁿ jīm-si kūi-tōe chhi-chhám-khàu. tī tâi-tiong-koān ê thâm-chú-hiong，saⁿ-cha̍p-hō ē-po͘ hoat-seng hóe-chhia lòng-sí-lâng-ê ì-gōa。"
+  },
+  {
+    "ID": 19,
+    "ZH": "退黨的李慶安都這樣挺了，更別說李明星。",
+    "HAN": "脫黨的李慶安攏按呢挺矣，閣莫講李明星。",
+    "TL": "thuat-tóng ê lí-khìng-an lóng án-ni-thánn-0ah，koh-mài-kóng lí-bîng-tshenn。",
+    "EN": "Li Qing'an, who quit the party, has endured this, not to mention Li Mingxing.",
+    "POJ": "thoat-tóng ê lí-khèng-an lóng án-ni-tháⁿ-0ah，koh-mài-kóng lí-bêng-chheⁿ。"
+  },
+  {
+    "ID": 20,
+    "ZH": "聽到這種砲聲，鳥兒不嚇跑才怪，不過看看旁邊這隻麻雀，大剌剌的就停在稻田旁，恐怕這些人鳥大戰，每年都要重演了。",
+    "HAN": "聽著這種砲聲，鳥仔無驚走才怪，不過看覓邊仔這隻粟鳥仔，大肆機的都停佇田邊，恐驚遮的人鳥大戰，每年攏愛重搬矣。",
+    "TL": "thiann-tio̍h tsit-tsióng phàu-siann，tsiáu-á bô-kiann-tsáu tsiah-kuài，put-kò khuànn-māi pinn-á tsit-tsiah tshik-tsiáu-á，tuā-sù-ki-ê to-thîng-tī tshân-pinn，khióng-kiann tsiah-ê lâng-tsiáu-tāi-tsiàn，muí-nî lóng-ài-tîng-puann-0ah。",
+    "EN": "Upon hearing such gunfire, it would be strange if the birds did not run away. However, looking at the sparrow next to it, it boldly stopped by the paddy field. It seems that the battle between man and bird will be repeated every year.",
+    "POJ": "thiaⁿ-tio̍h chit-chióng phàu-siaⁿ，chiáu-á bô-kiaⁿ-cháu chiah-koài，put-kò khòaⁿ-māi piⁿ-á chit-chiah chhek-chiáu-á，tōa-sù-ki-ê to-thêng-tī chhân-piⁿ，khióng-kiaⁿ chiah-ê lâng-chiáu-tāi-chiàn，múi-nî lóng-ài-têng-poaⁿ-0ah。"
+  },
+  {
+    "ID": 21,
+    "ZH": "他說，只要他的作品在日本展出，翁倩玉都會前來欣賞，因為翁倩玉她在日本擁有高知名度，所以有時候都還戴著墨鏡，怕別人認出她，這樣她才能夠仔細欣賞作品。",
+    "HAN": "伊講，只要伊的作品佇日本展出，翁倩玉攏會前來欣賞，因為翁倩玉伊佇日本擁有懸知名度，所以有時陣攏猶掛著烏目鏡，驚別人認出伊，按呢伊才會使詳細欣賞作品。",
+    "TL": "i kóng，tsí-iàu i-ê tsok-phín tī ji̍t-pún tián-tshut，ong-tshiàn-gio̍k lóng-ē tsiân-lâi him-sióng，in-uī ong-tshiàn-gio̍k i tī ji̍t-pún ióng-iú kuâinn-ti-bîng-tōo，sóo-í ū-sî-tsūn lóng-ia̍h kuà-tio̍h oo-ba̍k-kiànn，kiann pa̍t-lâng jīn-tshut i，án-ne i tsiah-ē-sái siông-suè him-sióng tsok-phín。",
+    "EN": "He said that as long as his works are exhibited in Japan, Wong Sin-yuk will come to appreciate them because Wong Sin-yuk has a high reputation in Japan, so sometimes she still wears sunglasses, afraid of being recognized, so that she can carefully appreciate the works.",
+    "POJ": "i kóng，chí-iàu i-ê chok-phín tī ji̍t-pún tián-chhut，ong-chhiàn-gio̍k lóng-ē chiân-lâi him-sióng，in-ūi ong-chhiàn-gio̍k i tī ji̍t-pún ióng-iú koâiⁿ-ti-bêng-tō͘，só͘-í ū-sî-chūn lóng-ia̍h kòa-tio̍h o͘-ba̍k-kiàⁿ，kiaⁿ pa̍t-lâng jīn-chhut i，án-ne i chiah-ē-sái siông-sòe him-sióng chok-phín。"
+  },
+  {
+    "ID": 22,
+    "ZH": "馬英九政見又要跳票了！",
+    "HAN": "馬英九政見閣欲跳票矣！",
+    "TL": "má-ing-kiú tsìng-kiàn koh-bueh thiàu-phiò-0ah！",
+    "EN": "Ma Ying-jeou's campaign promises are going to be postponed again!",
+    "POJ": "má-eng-kiú chèng-kiàn koh-boeh thiàu-phiò-0ah！"
+  },
+  {
+    "ID": 23,
+    "ZH": "不一樣的環島大學生獨木舟用划的。夏天想到的就是海邊玩水了！",
+    "HAN": "無仝款的環島大學生獨木舟用划的。熱天想著的就是海邊耍水矣！",
+    "TL": "bô-kāng-khuán ê khuân-tó tāi-ha̍k-sing tok-bok-tsiu iōng-kò-ê。 jua̍h-thinn siūnn-tio̍h-ê tsiū-sī hái-pinn sńg-tsuí-0ah！",
+    "EN": "The different around-the-island university students use paddles for kayaking. In the summer, the first thing that comes to mind is playing in the water at the beach!",
+    "POJ": "bô-kāng-khoán ê khoân-tó tāi-ha̍k-seng tok-bok-chiu iōng-kò-ê。jua̍h-thiⁿ siūⁿ-tio̍h-ê chiū-sī hái-piⁿ sńg-chúi-0ah！"
+  },
+  {
+    "ID": 24,
+    "ZH": "誰也沒想到，才短短三個月，文英病情急轉直下。",
+    "HAN": "啥猶無想著，才短短三個月，文英病情急轉直下。",
+    "TL": "siánn-iah bô-siūnn-tio̍h，tsiah té-té sann-kò-gue̍h，bûn-ing pēnn-tsîng kip-tsuán-tit-hā。",
+    "EN": "No one expected that within just three short months, Wen Ying's condition would take a sudden turn for the worse.",
+    "POJ": "siáⁿ-iah bô-siūⁿ-tio̍h，chiah té-té saⁿ-kò-goe̍h，bûn-eng pēⁿ-chêng kip-choán-tit-hā。"
+  },
+  {
+    "ID": 25,
+    "ZH": "大家整晚不敢睡，就怕棚子被吹走，果然凌晨狂風不斷吹襲，把法會祭壇棚子吹光光；大家冒風雨搶救，還是來不及。",
+    "HAN": "逐家規暝毋敢睏，都驚棚仔被吹走，果然透早狂風不斷吹襲，共法會祭壇棚仔吹了了；逐家冒風雨搶救，猶是袂得赴。",
+    "TL": "ta̍k-ke kui-mê m̄-kánn khùn，to kiann pînn-á pī tshue-tsáu，kó-jiân thàu-tsá kông-hong put-tuān tshue-si̍p，kā huat-huē tsè-tuânn pînn-á tshue-liáu-liáu；ta̍k-ke mōo-hong-hōo tshiúnn-kiù，iáu-sī bē-tit-hù。",
+    "EN": "Everyone was afraid to sleep all night, fearing that the shed would be blown away. Sure enough, the strong wind continued to blow in the early morning, and blew away the shed where the ceremony was held. Everyone braved the wind and rain to try to save it, but it was too late.",
+    "POJ": "ta̍k-ke kui-mê m̄-káⁿ khùn，to kiaⁿ pîⁿ-á pī chhoe-cháu，kó-jiân thàu-chá kông-hong put-toān chhoe-si̍p，kā hoat-hōe chè-tôaⁿ pîⁿ-á chhoe-liáu-liáu；ta̍k-ke mō͘-hong-hō͘ chhiúⁿ-kiù，iáu-sī bē-tit-hù。"
+  },
+  {
+    "ID": 26,
+    "ZH": "大人為了錢弄成這樣，實在令人遺憾。",
+    "HAN": "大人為著錢舞甲按呢，實在予人遺憾，",
+    "TL": "tuā-lâng uī-tio̍h-tsînn bú-kah-án-ne，si̍t-tsāi hōo-lâng-uî-hām，",
+    "EN": "It's really regrettable that adults would do something like this for money.",
+    "POJ": "tōa-lâng ūi-tio̍h-chîⁿ bú-kah-án-ne，si̍t-chāi hō͘-lâng-ûi-hām，"
+  },
+  {
+    "ID": 27,
+    "ZH": "母雞帶小雞蘇貞昌帶領包「粽」",
+    "HAN": "雞母𤆬雞仔囝蘇貞昌𤆬領包「著」",
+    "TL": "ke-bó tshuā ke-á-kiánn soo-tsing-tshiong tshuā-niá pau「tio̍h」",
+    "EN": "Mother hen with her chicks, Su Tseng-chang leads a bundle of \"zongzi\".",
+    "POJ": "ke-bó chhōa ke-á-kiáⁿ so͘-cheng-chhiong chhōa-niá pau「tio̍h」"
+  },
+  {
+    "ID": 28,
+    "ZH": "準備離婚的夫婦倆共同舉槌，對準結婚戒指狠狠敲下，在觀眾的掌聲中，結婚戒子當場扭曲變形。",
+    "HAN": "準備離婚的尪仔姐仔共同攑槌，對準結婚手指殘殘摃落，佇觀眾的噗仔聲中，結婚手指當場歪斜走形。",
+    "TL": "tsún-pī lī-hun-ê ang-á-tsiá-á kiōng-tông gia̍h-thuî，tuì-tsún kiat-hun-tshiú-tsí tshân-tshân kòng-lo̍h，tī-kuan-tsiòng-ê pho̍k-á-siann-tiong，kiat-hun-tshiú-tsí tong-tiûnn uai-tshua̍h tsáu-hîng。",
+    "EN": "The couple who were preparing for divorce both lifted their hammers and struck hard at their wedding rings. Amidst the applause of the audience, the wedding rings twisted and deformed on the spot.",
+    "POJ": "chún-pī lī-hun-ê ang-á-chiá-á kiōng-tông gia̍h-thûi，tùi-chún kiat-hun-chhiú-chí chhân-chhân kòng-lo̍h，tī-koan-chiòng-ê pho̍k-á-siaⁿ-tiong，kiat-hun-chhiú-chí tong-tiûⁿ oai-chhoa̍h cháu-hêng。"
+  },
+  {
+    "ID": 29,
+    "ZH": "最高的罰款呆帳，已經累積到九百多萬，但是還是找不到負責人繳罰款，讓高雄市環保局，真的很頭痛。",
+    "HAN": "上懸的罰款歹數，已經累積到九百外萬，毋過抑是揣袂著負責人納罰款，予高雄市環保局，真的真頭疼。",
+    "TL": "siōng-kuân-ê hua̍t-khuán pháinn-siàu，í-king luí-tsik-kàu káu-pah-guā-bān，m̄-kò iah-sī tshuē-bē-tio̍h hū-tsik-jîn la̍p-hua̍t-khuán，hōo ko-hiông-tshī khuân-pó-kio̍k，tsin-ê tsin-thâu-thiànn。",
+    "EN": "The highest amount of unpaid fines has accumulated to over nine million, but the responsible person cannot be found to pay the fines, causing a real headache for the Kaohsiung Environmental Protection Bureau.",
+    "POJ": "siōng-koân-ê hoa̍t-khoán pháiⁿ-siàu，í-keng lúi-chek-kàu káu-pah-gōa-bān，m̄-kò iah-sī chhōe-bē-tio̍h hū-chek-jîn la̍p-hoa̍t-khoán，hō͘ ko-hiông-chhī khoân-pó-kio̍k，chin-ê chin-thâu-thiàⁿ。"
+  },
+  {
+    "ID": 30,
+    "ZH": "不僅嚇的被害人連班都不敢上，躲回南部老家！",
+    "HAN": "毋但驚甲被害人連頭路攏毋敢上，覕轉南部祖厝！",
+    "TL": "m̄-nā kiann-ka̍h pī-hāi-jîn liân-thâu-lōo lóng-m̄-kánn-siāng，bih-tńg lâm-pōo tsóo-tshù！",
+    "EN": "Not only did the victim get scared and not dare to go to class, they even hid back in their hometown in the south!",
+    "POJ": "m̄-nā kiaⁿ-ka̍h pī-hāi-jîn liân-thâu-lō͘ lóng-m̄-káⁿ-siāng，bih-tńg lâm-pō͘ chó͘-chhù！"
+  },
+  {
+    "ID": 31,
+    "ZH": "轉個彎看見民眾大排長龍，這一攤有炒麵、炒米粉和油飯任君選擇，渴了這裡有充滿懷念滋味的豆漿，嘴饞的還能吃看看，人氣同樣強強滾的鮮肉包。",
+    "HAN": "轉一个斡看著民眾徛擺長躼躼，這擔有炒麵、炒米粉佮油飯在你選擇，喙焦矣遮有充滿懷念滋味的豆奶，貪食的猶會用食看覓，仝款沖沖滾的鮮肉包。",
+    "TL": "tńg-tsi̍t-ê-uat khuànn-tio̍h bîn-tsiòng khiā-pái-tn̂g-lò-lò，tsit-tànn ū tshá-mī、tshá-bí-hu kap iû-pn̄g tsāi-lí-suán-ti̍k，tshuì-ta-0ah tsia-ū tshiong-buán huâi-liām-tsu-bī ê tāu-ling，tham-tsia̍h-ê iáu-ē-īng tsia̍h-khuànn-māi，kāng-khuán tshiâng-tshiâng-kún ê sian-bah-pau。",
+    "EN": "Turning a corner, I saw a long line of people. At this stall, there are fried noodles, fried rice noodles, and oil rice for you to choose from. If you're thirsty, there's soy milk here that's full of nostalgic flavor. If you're feeling peckish, you can also try the popular fresh meat buns.",
+    "POJ": "tńg-chi̍t-ê-oat khòaⁿ-tio̍h bîn-chiòng khiā-pái-tn̂g-lò-lò，chit-tàⁿ ū chhá-mī、chhá-bí-hu kap iû-pn̄g chāi-lí-soán-te̍k，chhùi-ta-0ah chia-ū chhiong-boán hoâi-liām-chu-bī ê tāu-leng，tham-chia̍h-ê iáu-ē-ēng chia̍h-khòaⁿ-māi，kāng-khoán chhiâng-chhiâng-kún ê sian-bah-pau。"
+  },
+  {
+    "ID": 32,
+    "ZH": "辛苦撐起按摩店生意，才半年時間就被竊賊搬光物品，同棟大樓住戶也曾被竊賊盜取。",
+    "HAN": "辛苦牚起掠龍店生理，才半年時間都被賊仔搬空物件，仝棟大樓住戶原仔也捌被賊仔偷提。",
+    "TL": "sin-khóo thènn-khí lia̍h-lîng-tiàm sing-lí，tsiah puànn-nî sî-kan to pī tsha̍t-á puann-khang mi̍h-kiānn，kâng-tòng tuā-lâu tsū-hōo uân-ā-bat-pī tsha̍t-á thau-the̍h。",
+    "EN": "It's hard work to keep a massage parlor business running, but in just half a year, thieves have stolen all the goods and even the residents in the same building have been robbed by thieves.",
+    "POJ": "sin-khó͘ thèⁿ-khí lia̍h-lêng-tiàm seng-lí，chiah pòaⁿ-nî sî-kan to pī chha̍t-á poaⁿ-khang mi̍h-kiāⁿ，kâng-tòng tōa-lâu chū-hō͘ oân-ā-bat-pī chha̍t-á thau-the̍h。"
+  },
+  {
+    "ID": 33,
+    "ZH": "不過，他們要的禮物很不一樣，就是希望吳敦義當聖誕老人，跟學生們好好講講ECFA是什麼！",
+    "HAN": "不過，𪜶欲愛的禮物真無仝款，就是希望吳敦義做聖誕老人，佮學生𪜶好好仔講ECFA是啥物！",
+    "TL": "put-kò，in-bé ài-ê lé-bu̍t tsin-bô-kāng-khuán，tio̍h-sī hi-bōng ngôo-tun-gī tsò sìng-tàn-lāu-lâng，kap ha̍k-sing-in hó-hó-á-kóng ECFA sī-siánn-mih！",
+    "EN": "However, the gifts they want are very different. They just hope that Wu Dunyi can be Santa Claus and talk to the students about what ECFA is!",
+    "POJ": "put-kò，in-bé ài-ê lé-bu̍t chin-bô-kāng-khoán，tio̍h-sī hi-bōng ngô͘-tun-gī chò sèng-tàn-lāu-lâng，kap ha̍k-seng-in hó-hó-á-kóng ECFA sī-siáⁿ-mih！"
+  },
+  {
+    "ID": 34,
+    "ZH": "前總統金大中表示，「如果我遭到的，像前總統盧武鉉那樣的恥辱、挫折和絕望，恐怕也會做同樣的抉擇。」",
+    "HAN": "前總統金大中表示，「若準我拄著的，像前總統盧武鉉按呢的恥辱、挫折佮絕望，恐驚嘛會做仝款的抉擇。」",
+    "TL": "tsîng-tsóng-thóng kim-tāi-tiong piáu-sī，「nā-tsún guá tú-tio̍h-ê，tshiūnn tsîng-tsóng-thóng lô-bú-hiān àn-ne-ê thí-jiok、tshò-tsiat kap tsuat-bōng，khióng-kiann mā-ē tsuè-kâng-khuán ê kuat-tik。」",
+    "EN": "Former President Kim Dae-jung said, \"If I were to experience the shame, frustration, and despair that former President Roh Moo-hyun went through, I'm afraid I would make the same choice.\"",
+    "POJ": "chêng-chóng-thóng kim-tāi-tiong piáu-sī，「nā-chún góa tú-tio̍h-ê，chhiūⁿ chêng-chóng-thóng lô-bú-hiān àn-ne-ê thí-jiok、chhò-chiat kap choat-bōng，khióng-kiaⁿ mā-ē chòe-kâng-khoán ê koat-tek。」"
+  },
+  {
+    "ID": 35,
+    "ZH": "未來一個月的集訓，戲劇小生唐美雲將要再突破，一定要讓喜愛歌仔戲的觀眾，有一個不一樣的震撼感受。",
+    "HAN": "未來一個月的集訓，戲劇小生唐美雲咧欲閣突破，一定欲予喜愛歌仔戲的觀眾，有一个無仝款的震撼感受。",
+    "TL": "bī-lâi tsi̍t-kòo-gue̍h ê tsi̍p-hùn，hì-kio̍k sió-sing tông-bí-hûn tih-beh koh-tu̍t-phuà，it-tīng beh-hōo hí-ài kua-á-hì ê kuan-tsiòng，ū-tsi̍t-ê bô-kāng-khuán-ê tsìn-hām-kám-siū。",
+    "EN": "In the upcoming month-long training, the young actor Tang Meiyun will make another breakthrough. We must ensure that the audience who loves Taiwanese opera will have a different and stunning experience.",
+    "POJ": "bī-lâi chi̍t-kò͘-goe̍h ê chi̍p-hùn，hì-kio̍k sió-seng tông-bí-hûn tih-beh koh-tu̍t-phòa，it-tēng beh-hō͘ hí-ài koa-á-hì ê koan-chiòng，ū-chi̍t-ê bô-kāng-khoán-ê chìn-hām-kám-siū。"
+  },
+  {
+    "ID": 36,
+    "ZH": "此外，他的女婿趙建銘也曾因為內線交易案遭到羈押。",
+    "HAN": "此外，伊的囝婿趙建銘嘛捌因為內線交易案拄著拘押。",
+    "TL": "tshú-guā，i-ê kiánn-sài tiō-kiàn-bîng mā-bat in-uī lāi-suànn kau-i̍k-àn tú-tio̍h khu-ah。",
+    "EN": "In addition, his son-in-law Zhao Jianming was also detained due to insider trading.",
+    "POJ": "chhú-gōa，i-ê kiáⁿ-sài tiō-kiàn-bêng mā-bat in-ūi lāi-sòaⁿ kau-e̍k-àn tú-tio̍h khu-ah。"
+  },
+  {
+    "ID": 37,
+    "ZH": "黃小姐在大太陽底下，兩手滿滿的，拿著用塑膠繩捆起來，厚厚兩大疊的小廣告，都是她要拿來賣錢，賺外快的違規小廣告。",
+    "HAN": "黃小姐佇大日頭下跤，兩手滿滿的，提著用塑膠索仔捆起來，厚厚兩大疊的小廣告，攏是伊欲提來賣錢，趁外路的違規小廣告。",
+    "TL": "n̂g-sió-tsiá tī tuā-ji̍t-thâu ē-kha，nn̄g-tshiú buán-buán-ê，the̍h-tio̍h īng sok-ka-soh-á khún-khí-lâi，kāu-kāu nn̄g-tuā-tha̍h ê sió-kóng-kò，lóng-sī i beh the̍h-lâi bē-tsînn，thàn-guā-lōo-ê uî-kui sió-kóng-kò。",
+    "EN": "Miss Huang is under the hot sun, her hands full, holding two thick stacks of small advertisements tied with plastic ropes. These are the illegal advertisements she intends to sell and make extra money.",
+    "POJ": "n̂g-sió-chiá tī tōa-ji̍t-thâu ē-kha，nn̄g-chhiú boán-boán-ê，the̍h-tio̍h ēng sok-ka-soh-á khún-khí-lâi，kāu-kāu nn̄g-tōa-tha̍h ê sió-kóng-kò，lóng-sī i beh the̍h-lâi bē-chîⁿ，thàn-gōa-lō͘-ê ûi-kui sió-kóng-kò。"
+  },
+  {
+    "ID": 38,
+    "ZH": "但是這不是僅僅仿古的模型，未來還要下水，跟隨當年鄭成功的腳步，航行一圈。",
+    "HAN": "毋過這毋是干焦仿古的模型，未來猶欲落水，跟隨當年鄭成功的跤步，航行一輾。",
+    "TL": "m̄-koh tsit-m̄-sī kan-na hóng-kó-ê bô-hîng，bī-lâi iáu-beh loh-tsuí，kun-suî tong-nî tēnn-sîng-kong ê kha-pōo，hâng-hîng tsit-liàn。",
+    "EN": "However, this is not just an antique model. In the future, it will also be launched and follow in the footsteps of Zheng Chenggong to sail around.",
+    "POJ": "m̄-koh chit-m̄-sī kan-na hóng-kó-ê bô-hêng，bī-lâi iáu-beh loh-chúi，kun-sûi tong-nî tēⁿ-sêng-kong ê kha-pō͘，hâng-hêng chit-liàn。"
+  },
+  {
+    "ID": 39,
+    "ZH": "雖然意識好像還清楚，但是因為化療的關係，文英的臉腫得，他都快要認不出來。",
+    "HAN": "雖然意識親像猶清楚，但是因為化療的關係，文英的面腫甲，伊攏咧欲認袂出來。",
+    "TL": "sui-jiân ì-sik tshan-tshiūnn iáu tshing-tshó，tān-sī in-uī huà-liâu ê kuan-hē，bûn-ing ê bīn tsíng-kah，i lóng tih-beh jīn-bē-tshut-lâi。",
+    "EN": "Although he seems to be conscious, due to the effects of chemotherapy, Wenying's face is so swollen that he is almost unrecognizable.",
+    "POJ": "sui-jiân ì-sek chhan-chhiūⁿ iáu chheng-chhó，tān-sī in-ūi hòa-liâu ê koan-hē，bûn-eng ê bīn chéng-kah，i lóng tih-beh jīn-bē-chhut-lâi。"
+  },
+  {
+    "ID": 40,
+    "ZH": "小朋友需要什麼清楚了嗎？",
+    "HAN": "小朋友需要啥物清楚矣未？",
+    "TL": "sió-pîng-iú su-iàu siánn-mih tshing-tshó-0ah-0buē？",
+    "EN": "Do you know what the children need clearly?",
+    "POJ": "sió-pêng-iú su-iàu siáⁿ-mih chheng-chhó-0ah-0buē？"
+  },
+  {
+    "ID": 41,
+    "ZH": "創新的農村人文發展，不但凝聚桐林村村民的向心力，也讓當地的農業變得很蓬勃。",
+    "HAN": "創新的農村人文發展，毋但凝聚桐林村村民的向心力，也予當地的農業變甲真興。",
+    "TL": "tshòng-sin-ê lông-tshuan jîn-bûn-huat-tián，m̄-nā gîng-tsū tâng-nâ-tshuan tshuan-bîn-ê hiàng-sim-li̍k，ia̍h-hōo tong-tē-ê lông-gia̍p pìnn-kah tsin-hing。",
+    "EN": "Innovative rural cultural development not only consolidates the centripetal force of the villagers in Tonglin Village, but also makes local agriculture very prosperous.",
+    "POJ": "chhòng-sin-ê lông-chhoan jîn-bûn-hoat-tián，m̄-nā gêng-chū tâng-nâ-chhoan chhoan-bîn-ê hiàng-sim-le̍k，ia̍h-hō͘ tong-tē-ê lông-gia̍p pìⁿ-kah chin-heng。"
+  },
+  {
+    "ID": 42,
+    "ZH": "這些是體型比較小的野生土蜂，採的蜜都是山區才有的花種，多元的花香，使得蜂蜜帶有濃郁的香氣，色澤比人工養殖的深一些。",
+    "HAN": "遮的是體型較細的野生塗蜂，採的蜜攏是山區才有的花種，多元的花芳，予得蜂蜜帶有芳貢貢的芳氣，色水比人工養殖的深一寡。",
+    "TL": "tsia-ê-sī thé-hîng khah-sè ê iá-sing thôo-phang，tshái-ê-bi̍t lóng-sī suann-khu tsiah-ū-ê hue-tsíng，to-guân-ê hue-phang，hōo-tit phang-bi̍t tuà-ū phang-kòng-kòng-ê phang-khì，sik-tsuí pí jîn-kang-iáng-si̍t ê tshim-tsi̍t-kuá。",
+    "EN": "These are relatively small wild soil wasps that collect honey from flowers found only in mountainous areas. The diverse floral scents give the honey a rich aroma, and its color is slightly darker than that of honey produced through artificial cultivation.",
+    "POJ": "chia-ê-sī thé-hêng khah-sè ê iá-seng thô͘-phang，chhái-ê-bi̍t lóng-sī soaⁿ-khu chiah-ū-ê hoe-chéng，to-goân-ê hoe-phang，hō͘-tit phang-bi̍t tòa-ū phang-kòng-kòng-ê phang-khì，sek-chúi pí jîn-kang-iáng-si̍t ê chhim-chi̍t-kóa。"
+  },
+  {
+    "ID": 43,
+    "ZH": "這樣的烏龍，讓買到便當的民眾好失望，拍照PO上網，還說找不到人賠錢，喜歡吃台鐵便當的民眾說根本是詐騙。",
+    "HAN": "按呢的烏龍，予買著便當的民眾真失望，翕相PO上網，猶講揣袂著人賠錢，佮意食臺鐵便當的民眾講根本是詐騙。",
+    "TL": "án-ne-ê oo-liông，hōo bé-tio̍h piān-tong ê bîn-tsiòng tsin-sit-bāng，hip-siàng po tsiūnn-bāng，iáu-kóng tshuē-bē-tio̍h-lâng pê-tsînn，kah-ì-tsia̍h tâi-thih-piān-tong ê bîn-tsiòng-kóng kin-pún-sī tsà-phiàn。",
+    "EN": "Such a mistake makes the people who bought the lunch box very disappointed. They take pictures and post them online, saying they cannot find anyone to compensate them. People who like to eat the Taiwan Railway lunch box say it is a scam.",
+    "POJ": "án-ne-ê o͘-liông，hō͘ bé-tio̍h piān-tong ê bîn-chiòng chin-sit-bāng，hip-siàng po chiūⁿ-bāng，iáu-kóng chhōe-bē-tio̍h-lâng pê-chîⁿ，kah-ì-chia̍h tâi-thih-piān-tong ê bîn-chiòng-kóng kin-pún-sī chà-phiàn。"
+  },
+  {
+    "ID": 44,
+    "ZH": "全班同學都在看熱鬧，還把過程拍下來po上網，看到這樣的畫面，讓人懷疑台灣的教育到底出了什麼問題。",
+    "HAN": "全班同學攏佇看鬧熱，猶共過程翕落來po上網，看著按呢的畫面，予人懷疑臺灣的教育到底出了啥物問題。",
+    "TL": "tsuân-pan tông-ha̍k lóng-tī khuànn-nāu-jia̍t，iáu kā kuè-tîng hip-lo̍h-lâi po tsiūnn-bāng，khuànn-tio̍h án-ne-ê uē-bīn，hōo-lâng huâi-gî tâi-uân-ê kàu-io̍k tàu-té tshut-liáu siánn-mih būn-tê。",
+    "EN": "All classmates are watching the excitement, and even recording the process and posting it online. Seeing such a scene makes people wonder what problems Taiwan's education has encountered.",
+    "POJ": "choân-pan tông-ha̍k lóng-tī khòaⁿ-nāu-jia̍t，iáu kā kòe-têng hip-lo̍h-lâi po chiūⁿ-bāng，khòaⁿ-tio̍h án-ne-ê ōe-bīn，hō͘-lâng hoâi-gî tâi-oân-ê kàu-io̍k tàu-té chhut-liáu siáⁿ-mih būn-tê。"
+  },
+  {
+    "ID": 45,
+    "ZH": "雖然神父說的是實話，但是仍然遭到家長痛批，認為他的大嘴巴毀掉了，孩子們的夢和聖誕節。",
+    "HAN": "雖然神父講的是實話，毋過猶原遇著家長大聲詈，認為伊的放送頭毀掉矣，囡仔𪜶的夢佮聖誕節。",
+    "TL": "sui-jiân sîn-hū-kóng ê sī si̍t-uē，m̄-koh iu-guân gū-tio̍h ka-tiúnn tuā-siann-lé jīn-uî i-ê hòng-sàng-thâu huí-tiāu-0ah，gín-á-in ê bāng kah siànn-tàn-tsat。",
+    "EN": "Although what the priest said was true, he still received harsh criticism from parents who believed that his big mouth ruined the children's dreams and Christmas.",
+    "POJ": "sui-jiân sîn-hū-kóng ê sī si̍t-ōe，m̄-koh iu-goân gū-tio̍h ka-tiúⁿ tōa-siaⁿ-lé jīn-ûi i-ê hòng-sàng-thâu húi-tiāu-0ah，gín-á-in ê bāng kah siàⁿ-tàn-chat。"
+  },
+  {
+    "ID": 46,
+    "ZH": "由於採訪當天，選在Freddy自己的頂樓拍攝，Freddy表示他家裏很正常，一點也不陰森，很多人都認為，鬼王要住在地獄裡，但是他家裡真的沒有骷髏頭！",
+    "HAN": "由於採訪當工，選佇Freddy家己的樓尾厝翕，Freddy表示伊厝內真正常，一疕仔也袂暗毿，真濟人攏認為，鬼王愛蹛佇地獄內，毋過伊厝內真的無骷髏頭！",
+    "TL": "iû-û tshái-hóng tng-kang，suán-tī Freddy ka-kī-ê lâu-bué-tshù hip，Freddy piáu-sī i tshù-lāi tsin-tsìng-siông，tsi̍t-phí-á iā bē-àm-sàm，tsin-tsē-lâng lóng-jīn-uî，kuí-ông ài tuà-tī tuē-ga̍k-lāi，m̄-kò i tshù-lāi tsin-ê bô khoo-lôo-thâu！",
+    "EN": "Due to the interview being held on Freddy's own rooftop, Freddy stated that his home is very normal and not at all gloomy. Many people believe that the Ghost King should live in hell, but there really are no skulls in his home!",
+    "POJ": "iû-û chhái-hóng tng-kang，soán-tī Freddy ka-kī-ê lâu-bóe-chhù hip，Freddy piáu-sī i chhù-lāi chin-chèng-siông，chi̍t-phí-á iā bē-àm-sàm，chin-chē-lâng lóng-jīn-ûi，kúi-ông ài tòa-tī tōe-ga̍k-lāi，m̄-kò i chhù-lāi chin-ê bô kho͘-lô͘-thâu！"
+  },
+  {
+    "ID": 47,
+    "ZH": "「戲如人生」對江淑娜，說得太貼切了，劇中很多情節，猶如她過往人生的倒帶，拍戲過程中，不是讓她想起小時候，跟二姊江蕙相依為命，到處走唱的情形，要不然就是，媽媽半夜推著賣餅推車，回家的畫面浮現眼前，江淑娜說，根本不需要太多催情劇情，已經使她的淚水止不住。",
+    "HAN": "「戲那人生」對江淑娜，講著太倚意矣，劇內真濟情節，若像伊過往人生的倒絞帶，拍戲過程中，毋是予伊想起細漢時，佮二姊江蕙相依為命，一四界走唱的情形，毋是按呢就是，媽媽半暝捒著賣餅推車，轉去厝的畫面浮現眼前，江淑娜講，根本無需要傷濟催情劇情，已經予伊的目屎擋袂牢。",
+    "TL": "「hì-ná-jîn-sing」tuì kang-siok-na，kóng-tio̍h thài-uá-ì-0ah，kio̍k-lāi tsin-tsē tsîng-tsiat，ná-tshiūnn i kuè-óng jîn-sing-ê tò-ká-tuà，phah-hì kuè-tîng-tiong，m̄-sī hōo i siūnn-khí sè-hàn-sî，kap jī-tsí kang-huī siang-i-uî-miā，tsi̍t-sì-kè tsáu-tshiò-ê tsîng-hîng，m̄-sī-án-ni tio̍h-sī，ma-ma puànn-mê sak-tio̍h bē-piánn thui-tshia，tńg-khì-tshù-ê uē-bīn phû-hiān gán-tsîng，kang-siok-na kóng，kin-pún bô-su-iàu siunn-tsē tshui-tsîng kio̍k-tsîng，í-king hōo-i-ê ba̍k-sái tòng-bē-tiâu。",
+    "EN": "\"Life is like a drama.\" This phrase is too fitting for Jiang Shuna. Many scenes in the play are like rewinding her past life. During the filming process, it either reminds her of her childhood, when she and her second sister Jiang Hui depended on each other and traveled around singing, or the scene of her mother pushing a cart selling cakes and returning home in the middle of the night. Jiang Shuna said that there is no need for too many emotional plots, as they already make her tears unstoppable.",
+    "POJ": "「hì-ná-jîn-seng」tùi kang-siok-na，kóng-tio̍h thài-óa-ì-0ah，kio̍k-lāi chin-chē chêng-chiat，ná-chhiūⁿ i kòe-óng jîn-seng-ê tò-ká-tòa，phah-hì kòe-têng-tiong，m̄-sī hō͘ i siūⁿ-khí sè-hàn-sî，kap jī-chí kang-hūi siang-i-ûi-miā，chi̍t-sì-kè cháu-chhiò-ê chêng-hêng，m̄-sī-án-ni tio̍h-sī，ma-ma pòaⁿ-mê sak-tio̍h bē-piáⁿ thui-chhia，tńg-khì-chhù-ê ōe-bīn phû-hiān gán-chêng，kang-siok-na kóng，kin-pún bô-su-iàu siuⁿ-chē chhui-chêng kio̍k-chêng，í-keng hō͘-i-ê ba̍k-sái tòng-bē-tiâu。"
+  },
+  {
+    "ID": 48,
+    "ZH": "她悲苦的唱腔，還曾經讓德國的文化局官員，聽到最後當場落淚。",
+    "HAN": "伊苦慼的唱調，猶捌予德國的文化局官員，聽到上尾當場滴目屎。",
+    "TL": "i khóo-tshueh-ê tshiùnn-tiāu，iáu-bat hōo tik-kok-ê bûn-huà-kio̍k kuann-uân，thiann-kàu siāng-bué tong-tiûnn tih-ba̍k-sái。",
+    "EN": "Her sorrowful singing once made German cultural officials burst into tears on the spot.",
+    "POJ": "i khó͘-chhoeh-ê chhiùⁿ-tiāu，iáu-bat hō͘ tek-kok-ê bûn-hòa-kio̍k koaⁿ-oân，thiaⁿ-kàu siāng-bóe tong-tiûⁿ tih-ba̍k-sái。"
+  },
+  {
+    "ID": 49,
+    "ZH": "十隻黑面琵鷺提早落腳七股。平常十月，才會來台灣渡冬的黑面琵鷺，今年八月，卻已悄悄在台南縣七股現身！",
+    "HAN": "十隻抐桮提早歇跤七股。平常十月，才會來臺灣渡冬的抐桮，今年八月，卻已恬恬仔佇臺南縣七股現身！",
+    "TL": "tsa̍p-tsiah lā-pue the̍h-tsá hioh-kha tshit-kóo. pîng-siâng tsap-gue̍h，tsiah-ē-lâi tâi-uân tōo-tang ê lā-pue，kin-nî peh-gue̍h，khiok-í tiām-tiām-á tī tâi-lâm-kuān tshit-kóo hiān-sin！",
+    "EN": "Ten Black-faced Spoonbills arrived early in Qigu. Normally, Black-faced Spoonbills only come to Taiwan to spend the winter in October. However, this year in August, they quietly appeared in Qigu, Tainan County!",
+    "POJ": "cha̍p-chiah lā-poe the̍h-chá hioh-kha chhit-kó͘. pêng-siâng chap-goe̍h，chiah-ē-lâi tâi-oân tō͘-tang ê lā-poe，kin-nî peh-goe̍h，khiok-í tiām-tiām-á tī tâi-lâm-koān chhit-kó͘ hiān-sin！"
+  },
+  {
+    "ID": 50,
+    "ZH": "除了優美的歌聲，翁倩玉還特地帶來不一樣的表演，她今年入選日展的版畫作品，也讓歌迷見識到，翁倩玉在歌唱以外的藝術成就。",
+    "HAN": "除了優美的歌聲，翁倩玉猶專工紮來伊的無仝款的表演，伊今年入選日展的版畫作品，原仔予歌迷見識著，翁倩玉佇歌唱以外的藝術成就。",
+    "TL": "tû-liáu iu-bí-ê kua-siann，ong-tshiàn-gio̍k iáu-tsuan-kang tsah-lâi i-ê bô-kāng-khuán-ê piáu-ián，i kin-nî jip-suán jip-tián ê pán-uē tsok-phín，uan-ná-hōo kua-bê kiàn-sik-tio̍h，ong-tshiàn-gio̍k tī kua-tshiùnn í-guā-ê gē-sut sîng-tsiū。",
+    "EN": "In addition to her beautiful singing voice, Weng Qianyu also brought a different performance. Her printmaking work was selected for the Japan Exhibition this year, which also allows fans to appreciate Weng Qianyu's artistic achievements beyond singing.",
+    "POJ": "tû-liáu iu-bí-ê koa-siaⁿ，ong-chhiàn-gio̍k iáu-choan-kang chah-lâi i-ê bô-kāng-khoán-ê piáu-ián，i kin-nî jip-soán jip-tián ê pán-ōe chok-phín，oan-ná-hō͘ koa-bê kiàn-sek-tio̍h，ong-chhiàn-gio̍k tī koa-chhiùⁿ í-gōa-ê gē-sut sêng-chiū。"
+  },
+  {
+    "ID": 51,
+    "ZH": "勇於出面指證的住戶，都遭到恐嚇或是暴力相向，多數人都嚇得禁口不語。",
+    "HAN": "勇於出面指證的住戶，攏拄著恐喝抑是暴力相向，多數人攏驚甲畏驚恬去。",
+    "TL": "ióng-î tshut-bīn tsí-tsìng-ê tsū-hōo，lóng-tú-tio̍h khióng-hat ah-sī po̍k-li̍k sann-ǹg，to-sòo-lâng lóng kiann-ka̍h uì-kiann-tiām-khì。",
+    "EN": "The residents who are brave enough to come forward and testify have been threatened or faced violence, causing most people to be scared and remain silent.",
+    "POJ": "ióng-î chhut-bīn chí-chèng-ê chū-hō͘，lóng-tú-tio̍h khióng-hat ah-sī po̍k-le̍k saⁿ-ǹg，to-sò͘-lâng lóng kiaⁿ-ka̍h ùi-kiaⁿ-tiām-khì。"
+  },
+  {
+    "ID": 52,
+    "ZH": "「烏頭翁」的長相與生態習性，與「白頭翁」極為類似，不同地方在他們的頭頂，「烏頭翁」整個頭頂是黑色的，「白頭翁」有白色毛塊。",
+    "HAN": "「烏頭鵠仔」的看頭和生態癖性，和「白頭鵠仔」真親像，無仝所在佇𪜶的頭頂，「烏頭鵠仔」規个頭頂是烏色的，「白頭鵠仔」有白色毛草。",
+    "TL": "「oo-thâu-khok-á」ê khuánn-thâu hâm senn-thài phiah-sìng，hâm「pe̍h-thâu-khok-á」tsin-tshin-tshiūnn，bô-kâng sóo-tsāi tī in-ê thâu-tíng，「oo-thâu-khok-á」kui-ê thâu-tíng sī oo-sik-ê，「pe̍h-thâu-khok-á」ū pe̍h-sik mn̂g-tsháu。",
+    "EN": "The appearance and ecological habits of \"Aconitum\" are very similar to those of \"Ptilonorhynchus\", and the difference is in their heads. The entire top of the head of \"Aconitum\" is black, while \"Ptilonorhynchus\" has white hair clusters.",
+    "POJ": "「o͘-thâu-khok-á」ê khóaⁿ-thâu hâm seⁿ-thài phiah-sèng，hâm「pe̍h-thâu-khok-á」chin-chhin-chhiūⁿ，bô-kâng só͘-chāi tī in-ê thâu-téng，「o͘-thâu-khok-á」kui-ê thâu-téng sī o͘-sek-ê，「pe̍h-thâu-khok-á」ū pe̍h-sek mn̂g-chháu。"
+  },
+  {
+    "ID": 53,
+    "ZH": "今天也是關聖帝君誕辰，神恩遶境活動也展開。",
+    "HAN": "今仔日嘛是關聖帝君生，神恩踅境活動嘛展開。",
+    "TL": "kin-á-ji̍t mā-sī kuan-sìng-tè-kun senn，sîn-un se̍h-kíng ua̍h-tāng mā tián-khui。",
+    "EN": "Today is also the birthday of Guan Sheng Di Jun, and the activity of circling the territory to receive blessings from the gods has also begun.",
+    "POJ": "kin-á-ji̍t mā-sī koan-sèng-tè-kun seⁿ，sîn-un se̍h-kéng oa̍h-tāng mā tián-khui。"
+  },
+  {
+    "ID": 54,
+    "ZH": "民眾站在琳琅滿目的禮盒前，挑選著適合的商品，不過這些不是拿來送禮是要自己用。",
+    "HAN": "民眾徛佇琳瑯滿目的禮盒前，挑選著適合的商品，不過遮的毋是提來送禮是欲家己用。",
+    "TL": "bîn-tsiòng khiā-tī lîm-lông-muá-bo̍k ê lé-a̍p tsîng，thiau-suán-tio̍h sik-ha̍p-ê siong-phín，put-kò tsia-ê m̄-sī the̍h-lâi sàng-lé sī beh-ka-kī-iōng。",
+    "EN": "People stand in front of a dazzling array of gift boxes, selecting suitable products. However, these are not for giving as gifts, but for personal use.",
+    "POJ": "bîn-chiòng khiā-tī lîm-lông-móa-bo̍k ê lé-a̍p chêng，thiau-soán-tio̍h sek-ha̍p-ê siong-phín，put-kò chia-ê m̄-sī the̍h-lâi sàng-lé sī beh-ka-kī-iōng。"
+  },
+  {
+    "ID": 55,
+    "ZH": "國光客運危險駕駛按手機沒抬頭。一邊開車還一邊打行動電話，危險駕駛真的很不像話！",
+    "HAN": "國光客運危險駕駛揤手機無攑頭。一邊開車猶一邊敲行動電話，危險駕駛真的毋是款！",
+    "TL": "kok-kong-kheh-ūn huî-hiám kà-sú ji̍h-tshiú-ki bô-gia̍h-thâu. tsi̍t-pinn khui-tshia iáu-tsi̍t-pinn khà-hîng-tōng-tiān-uē，huî-hiám kà-sú tsin-ê m̄-sī-khuán！",
+    "EN": "Guoguang Bus driver dangerously uses mobile phone without lifting his head. He drives while making phone calls, which is really unacceptable for safe driving!",
+    "POJ": "kok-kong-kheh-ūn hûi-hiám kà-sú ji̍h-chhiú-ki bô-gia̍h-thâu. chi̍t-piⁿ khui-chhia iáu-chi̍t-piⁿ khà-hêng-tōng-tiān-ōe，hûi-hiám kà-sú chin-ê m̄-sī-khoán！"
+  },
+  {
+    "ID": 56,
+    "ZH": "太陽正西下，大里的內新黃昏市場，才正要熱鬧起來，熱鬧喧譁的買賣聲，拉近攤商和顧客的距離，用的、吃的都一樣，老闆俐落的刀法吸引注意，油亮的烤鴨有賣相效果，一盤才一百五十，還要滿足你的胃口，而除了熟食，這裡的海鮮不只比價錢，還得比新鮮。",
+    "HAN": "日頭當落山，大里的內新黃昏市仔，才拄欲鬧熱起來，鬧熱嘩嘩滾的買賣聲，搝近擔仔販佮人客的距離，用的、食的攏仝款，頭家巧利的刀法吸引注意，油金的熁鴨好賣款效果，一盤才一百五十，猶愛滿足你的喙路，猶除了熟菜飯，遮的海鮮毋但比價數，猶著比新鮮。",
+    "TL": "ji̍t-thâu tng-lo̍h-suann，tāi-lí ê lāi-sin hông-hun-tshī-á，tsiah-tú-beh lāu-jia̍t-khí-lâi，lāu-jia̍t huā-huā-kún-ê bé-bē-siann，giú-kīn tànn-á-huàn kap lâng-kheh ê kū-lī，iōng-ê、tsia̍h-ê lóng-kāng-khuán，thâu-ke khiáu-lāi-ê to-huat khip-ín-tsù-ì，iû-kim-ê hannh-ah hó-bē-khuán hāu-kó，tsi̍t-puânn tsiah tsi̍t-pah-gōo-tsa̍p，iàu-ài buán-tsiok lí-ê tshuì-lōo，iah-tû-liáu si̍k-tshài-pn̄g，tsia-ê hái-sian m̄-nā pí-kè-siàu，iàu-tio̍h pí-sin-sian。",
+    "EN": "The sun is setting in the west, and the Neixin Night Market in Dali is just starting to get lively. The bustling sounds of buying and selling bring vendors and customers closer together. The food and drink are all the same, and the sharp knife skills of the boss attract attention. The shiny roasted duck has a good sales effect, with a plate costing only 150 yuan, satisfying your appetite. In addition to cooked food, the seafood here not only needs to be compared in price, but also in freshness.",
+    "POJ": "ji̍t-thâu tng-lo̍h-soaⁿ，tāi-lí ê lāi-sin hông-hun-chhī-á，chiah-tú-beh lāu-jia̍t-khí-lâi，lāu-jia̍t hōa-hōa-kún-ê bé-bē-siaⁿ，giú-kīn tàⁿ-á-hoàn kap lâng-kheh ê kū-lī，iōng-ê、chia̍h-ê lóng-kāng-khoán，thâu-ke khiáu-lāi-ê to-hoat khip-ín-chù-ì，iû-kim-ê haⁿh-ah hó-bē-khoán hāu-kó，chi̍t-pôaⁿ chiah chi̍t-pah-gō͘-cha̍p，iàu-ài boán-chiok lí-ê chhùi-lō͘，iah-tû-liáu se̍k-chhài-pn̄g，chia-ê hái-sian m̄-nā pí-kè-siàu，iàu-tio̍h pí-sin-sian。"
+  },
+  {
+    "ID": 57,
+    "ZH": "民進黨台北市長參選人蘇貞昌，今天母雞帶小雞，跟黨內的議員參選人，一一拍攝競選定裝照，為了搶到與人氣王蘇貞昌最近的位置，參選人各出奇招，有的幫忙拿道具，還有人得半蹲，蘇貞昌也應景地，為每位參選人準備，應景的粽子跟包子，希望大家「包中」。",
+    "HAN": "民進黨臺北市長參選人蘇貞昌，今仔日雞母𤆬雞仔囝，佮黨內的議員參選人，一一翕競選定裝相，為了搶著和人氣王蘇貞昌上近的位置，參選人各出奇招，有的幫忙提家私，猶有人得徛馬勢，蘇貞昌嘛合景的，為逐位參選人準備，合景的粽佮包仔，希望大家「包牢」。",
+    "TL": "bîn-tsìn-tóng tâi-pak-tshī-tiúnn tsham-suán-jîn soo-tsing-tshiong，kin-á-ji̍t ke-bó tshuā ke-á-kiánn，kap tóng-lāi-ê gī-uân-tsham-suán-jîn，it-it-hip kīng-suán tīng-tsong-siòng，uī-liáu tshiúnn-tio̍h hâm jîn-khì-ông soo-tsing-tshiong siāng-kīn-ê uī-tì，tsham-suán-jîn kok-tshut-kî-tsiau，ū-ê pang-bâng the̍h-ke-si，iáu-ū-lâng tit-khiā-bé-sì，soo-tsing-tshiong m̄-kah-kíng-ê，uī-ta̍k-uī tsham-suán-jîn tsún-pī，kah-kíng-ê tsàng kap pau-á，hi-bāng ta-ke「pau-tiâu」。",
+    "EN": "Democratic Progressive Party candidate for Taipei City Mayor, Su Tseng-chang, brought a mother hen with her chicks today to take campaign photos with fellow party members who are running for office. In order to secure a spot next to the popular Su Tseng-chang, each candidate came up with unique tactics, some helped with props, while others crouched down. Su Tseng-chang also prepared zongzi and baozi for each candidate, hoping everyone will be \"included\" in the campaign.",
+    "POJ": "bîn-chìn-tóng tâi-pak-chhī-tiúⁿ chham-soán-jîn so͘-cheng-chhiong，kin-á-ji̍t ke-bó chhōa ke-á-kiáⁿ，kap tóng-lāi-ê gī-oân-chham-soán-jîn，it-it-hip kēng-soán tēng-chong-siòng，ūi-liáu chhiúⁿ-tio̍h hâm jîn-khì-ông so͘-cheng-chhiong siāng-kīn-ê ūi-tì，chham-soán-jîn kok-chhut-kî-chiau，ū-ê pang-bâng the̍h-ke-si，iáu-ū-lâng tit-khiā-bé-sì，so͘-cheng-chhiong m̄-kah-kéng-ê，ūi-ta̍k-ūi chham-soán-jîn chún-pī，kah-kéng-ê chàng kap pau-á，hi-bāng ta-ke「pau-tiâu」。"
+  },
+  {
+    "ID": 58,
+    "ZH": "這裡在下午兩點以後，到處都有大批遊客和當地人湧進，尋找美味的新鮮海產。",
+    "HAN": "這搭佇下晡兩點以後，滿四界大批遊客佮在地人湧入，走揣美味的新鮮海產。",
+    "TL": "tsit-tah-tī ē-poo nn̄g-tiám í-āu，muá-sì-kè tuā-phue iû-kheh kap tsāi-tuē-lâng ióng-ji̍p，tsáu-tshuē bí-bī-ê sin-sian-hái-sán。",
+    "EN": "After 2 pm in the afternoon, there are large groups of tourists and locals everywhere, searching for delicious fresh seafood.",
+    "POJ": "chit-tah-tī ē-po͘ nn̄g-tiám í-āu，móa-sì-kè tōa-phoe iû-kheh kap chāi-tōe-lâng ióng-ji̍p，cháu-chhōe bí-bī-ê sin-sian-hái-sán。"
+  },
+  {
+    "ID": 59,
+    "ZH": "老家在屏東的藝人戴愛玲，家裡也是淹了整整一層樓；她的心裡雖然著急，但是她仍然透過歌聲溫暖人心。",
+    "HAN": "祖厝佇屏東的藝人戴愛玲，厝內嘛是淹了貼貼一層樓；伊的心內雖然著急，但是伊猶原透過歌聲溫暖人心。",
+    "TL": "tsóo-tshù tī pîn-tong ê gē-jîn tè-ài-lîng，tshù-lāi mā-sī im-liáu tah-tah tsi̍t-tsân-lâu；i-ê sim-lāi sui-jiân tio̍h-kip，tān-sī i iu-guân thàu-kuè kua-siann un-luán jîn-sim。",
+    "EN": "The artist Dai Ailing from Pingtung, whose hometown was also flooded with a whole floor; although she was worried in her heart, she still warmed people's hearts through her singing.",
+    "POJ": "chó͘-chhù tī pîn-tong ê gē-jîn tè-ài-lêng，chhù-lāi mā-sī im-liáu tah-tah chi̍t-chân-lâu；i-ê sim-lāi sui-jiân tio̍h-kip，tān-sī i iu-goân thàu-kòe koa-siaⁿ un-loán jîn-sim。"
+  },
+  {
+    "ID": 60,
+    "ZH": "這些學生們，再依照感應器發送的訊號，走十里路把太空相片取回。",
+    "HAN": "遮的學生𪜶，閣按照感應器發送的訊號，行十里路共太空相片取回。",
+    "TL": "tsia-ê ha̍k-sing-in，koh àn-tsiàu kám-ìng-khì huat-sàng-ê sìn-hō，kiânn tsa̍p-lí-lōo kā thài-khong siòng-phìnn tshú-huê。",
+    "EN": "These students, following the signals sent by the sensors, walked ten miles to retrieve the space photos.",
+    "POJ": "chia-ê ha̍k-seng-in，koh àn-chiàu kám-èng-khì hoat-sàng-ê sìn-hō，kiâⁿ cha̍p-lí-lō͘ kā thài-khong siòng-phìⁿ chhú-hôe。"
+  },
+  {
+    "ID": 61,
+    "ZH": "機車四貼孩童站坐墊出遊像玩命。台中縣市都有父母，騎著機車載小孩出門，都出現驚險鏡頭，竟然讓孩子蹲在機車踏板上，還有一個孩子站在父母中間的坐墊上。",
+    "HAN": "機車四倚孩童徛椅墊出遊像耍命。臺中縣市攏有爸母，騎著機車載囡仔出門，攏出現驚險鏡頭，竟然予囡仔跍佇機車踏板上，猶有一个囡仔徛佇爸母中央的椅墊上。",
+    "TL": "ki-tshia sì-uá hâi-tông khiā-í-tiām tshut-iû tshiūnn sńg-miā. tâi-tiong-kuān-tshī lóng-ū pē-bú，khiâ-tio̍h ki-tshia tsài-gín-á tshut-mn̂g，lóng-tshut-hiān kiann-hiám kiànn-thâu，kìng-jiân-hōo gín-á khû-tī ki-tshia ta̍h-pán-siāng，iáu-ū tsi̍t-ê gín-á khiā-tī pē-bú tiong-ng-ê í-tiām-siāng。",
+    "EN": "Motorcycles with four stickers and child standing/sitting pads for outings look like playing with one's life. Parents in Taichung County and City all ride motorcycles to take their children out, and there have been dangerous scenes where children squat on the motorcycle footrests or stand on the seat cushion between their parents.",
+    "POJ": "ki-chhia sì-óa hâi-tông khiā-í-tiām chhut-iû chhiūⁿ sńg-miā. tâi-tiong-koān-chhī lóng-ū pē-bú，khiâ-tio̍h ki-chhia chài-gín-á chhut-mn̂g，lóng-chhut-hiān kiaⁿ-hiám kiàⁿ-thâu，kèng-jiân-hō͘ gín-á khû-tī ki-chhia ta̍h-pán-siāng，iáu-ū chi̍t-ê gín-á khiā-tī pē-bú tiong-ng-ê í-tiām-siāng。"
+  },
+  {
+    "ID": 62,
+    "ZH": "但是吳敦義可別忘了，立法委員也是人民選出來的，政府官員最後還是要向全民負責。",
+    "HAN": "毋過吳敦義毋當袂記矣，立法委員嘛是人民選出來的，政府官員最後猶是愛向全民負責。",
+    "TL": "m̄-koh ngôo-tun-gī m̄-tàng bē-kì-0ah，li̍p-huat-uí-uân mā-sī lîn-bîn suán-tshut-lâi-ê，tsìng-hú kuann-uân tsuè-āu iáu-sī ài-hiòng tsuân-bîn hū-tsik。",
+    "EN": "However, Wu Dunyi should not forget that legislators are also elected by the people, and government officials ultimately have to be accountable to the whole nation.",
+    "POJ": "m̄-koh ngô͘-tun-gī m̄-tàng bē-kì-0ah，li̍p-hoat-úi-oân mā-sī lîn-bîn soán-chhut-lâi-ê，chèng-hú koaⁿ-oân chòe-āu iáu-sī ài-hiòng choân-bîn hū-chek。"
+  },
+  {
+    "ID": 63,
+    "ZH": "還是新生代警察們都太新潮？",
+    "HAN": "猶是新生代警察𪜶攏傷新潮？",
+    "TL": "iáu-sī sin-sing-tāi kíng-tshat-in lóng siunn-sin-tiâu？",
+    "EN": "Are all the new generation police officers too trendy?",
+    "POJ": "iáu-sī sin-seng-tāi kéng-chhat-in lóng siuⁿ-sin-tiâu？"
+  },
+  {
+    "ID": 64,
+    "ZH": "很多網友對這樣的說法，紛紛感到好奇，認為有什麼不可的？",
+    "HAN": "真濟網友對按呢的講法，紛紛感覺好奇，認為有啥物不可的？",
+    "TL": "tsin-tsuē bāng-iú tuì án-ne-ê kóng-huat，hun-hun kám-kak hònn-kî，jīn-uî ū-siánn-mi̍h put-khó-ê？",
+    "EN": "Many netizens are curious about this statement and think, what's wrong with it?",
+    "POJ": "chin-chōe bāng-iú tùi án-ne-ê kóng-hoat，hun-hun kám-kak hòⁿ-kî，jīn-ûi ū-siáⁿ-mi̍h put-khó-ê？"
+  },
+  {
+    "ID": 65,
+    "ZH": "今天凌晨，蘇治芬在妹妹蘇治宇、縣議員劉建國的攙扶下，神情疲憊地走出合議庭，守候在現場的支持者歡呼不已，她說，聽到當庭釋放時，她的心中沒有喜悅，因為還有很多人還在受苦，她感謝友人及鄉親的支持，但是很多人沒有像她這麼幸運被釋放了。",
+    "HAN": "今仔日透早，蘇治芬佇小妹蘇治宇、縣議員劉建國的扶插下，神情𤺪𤺪的行出合議庭，當等佇現場的支持者歡喜無煞，伊講，聽著當庭釋放時，伊的內心無喜樂，因為猶有足濟人猶佇受苦，伊感謝朋友佮鄉親的支持，毋過誠濟人無親像伊遮爾好運被釋放矣。",
+    "TL": "kin-á-ji̍t thàu-tsá，soo-tī-hun tī sió-muē soo-tī-ú、kuān-gī-uân lâu-kiàn-kok ê hû-tshah-hā，sîn-tsîng siān-siān-ê kiânn-tshut ha̍p-gī-tîng，tng-tán-tī hiān-tiûnn ê tsi-tshî-tsiá huann-hí bô-suah，i-kóng，thiann-tio̍h tong-tîng sik-hòng-sî，i-ê-lāi-sim bô-hí-lo̍k，in-uī iah-ū tsiok-tsuē-lâng iah-tī-siū-khóo，i kám-siā pîng-iú kah hiong-tshin ê tsi-tshî，m̄-koh tsiânn-tsē-lâng bô-tshan-tshiūnn-i tsiah-ní hó-ūn pī-sik-hòng-ah。",
+    "EN": "Early this morning, Su Zhifen, supported by her sister Su Zhiyu and county councilor Liu Jianguo, walked out of the council chamber looking exhausted. Her supporters who were waiting at the scene cheered loudly. She said that she did not feel happy when she heard that she was released on the spot, because many people are still suffering. She thanked her friends and fellow villagers for their support, but many people were not as lucky as her to be released.",
+    "POJ": "kin-á-ji̍t thàu-chá，so͘-tī-hun tī sió-mōe so͘-tī-ú、koān-gī-oân lâu-kiàn-kok ê hû-chhah-hā，sîn-chêng siān-siān-ê kiâⁿ-chhut ha̍p-gī-têng，tng-tán-tī hiān-tiûⁿ ê chi-chhî-chiá hoaⁿ-hí bô-soah，i-kóng，thiaⁿ-tio̍h tong-têng sek-hòng-sî，i-ê-lāi-sim bô-hí-lo̍k，in-ūi iah-ū chiok-chōe-lâng iah-tī-siū-khó͘，i kám-siā pêng-iú kah hiong-chhin ê chi-chhî，m̄-koh chiâⁿ-chē-lâng bô-chhan-chhiūⁿ-i chiah-ní hó-ūn pī-sek-hòng-ah。"
+  },
+  {
+    "ID": 66,
+    "ZH": "他說，晚上入睡前，就講小時候的故事給女兒聽，有時自己寫錯字，還會被糾正，他現在最快樂的事，是接送女兒上下學，兩人牽手到圖書館看看書、聽講座。",
+    "HAN": "伊講，暗時睏去前，都講細漢時的故事予查某囝聽，有時仔家己寫毋著字，猶會被糾正，伊這馬上快樂的代誌，是接送查某囝上下課，兩人牽手到圖書館看冊、聽講座。",
+    "TL": "i kóng，àm-sî khùn-khì-tsîng，to kóng sè-hàn-sî ê kòo-sū hōo tsa-bóo-kiánn thiann，ū-sî-á ka-kī siá-m̄-tio̍h-jī，iáu-ē pī-kiù-tsìng，i tsit-má siōng-khuài-lo̍k-ê tāi-tsì，sī tsiap-sàng tsa-bóo-kiánn siong-hā-khò，nn̄g-lâng khan-tshiú kàu tôo-su-kuán khuànn-tsheh、thiann káng-tsō。",
+    "EN": "He said that before going to sleep at night, he tells his daughter stories from when she was young. Sometimes he writes the wrong characters and is corrected. The happiest thing for him now is to pick up and drop off his daughter from school. The two of them hold hands and go to the library to read books and attend lectures.",
+    "POJ": "i kóng，àm-sî khùn-khì-chêng，to kóng sè-hàn-sî ê kò͘-sū hō͘ cha-bó͘-kiáⁿ thiaⁿ，ū-sî-á ka-kī siá-m̄-tio̍h-jī，iáu-ē pī-kiù-chèng，i chit-má siōng-khoài-lo̍k-ê tāi-chì，sī chiap-sàng cha-bó͘-kiáⁿ siong-hā-khò，nn̄g-lâng khan-chhiú kàu tô͘-su-koán khòaⁿ-chheh、thiaⁿ káng-chō。"
+  },
+  {
+    "ID": 67,
+    "ZH": "另外，也公佈了一張照片，是歹徒用來敲破玻璃的榔頭．警方表示，做案用的榔頭，看起來像是新買的，如果有民眾或是五金行業者，知道榔頭的來源，請立刻向警方通報。",
+    "HAN": "另外，抑公佈了一張相片，是歹徒用來敲破玻璃的摃槌仔．警方表示，做案用的摃槌仔，看起來親像新買的，如果有民眾抑是五金行業者，知影摃槌仔的來源，請立刻向警方通報。",
+    "TL": "līng-guā，ia̍h kong-pòo-liáu tsi̍t-tiunn siòng-phìnn，sī phái-tôo iōng-lâi khà-phuà po-lê ê kòng-thuî-á。kíng-hong piáu-sī，tsuè-àn-iōng-ê kòng-thuî-á，khuànn-khí-lâi tshin-tshiūnn sin-bé-ê，jû-kó ū bîn-tsiòng ah-sī ngóo-kim-hâng gia̍p-tsiá，tsai-iánn kòng-thuî-á ê lâi-guân，tshiánn li̍p-khik hiàng kíng-hong thong-pò。",
+    "EN": "In addition, a photo was also released, which is the hammer used by the culprit to break the glass. The police said that the hammer used in the crime looks like a newly purchased one. If any members of the public or hardware industry know the source of the hammer, please report it to the police immediately.",
+    "POJ": "lēng-gōa，ia̍h kong-pò͘-liáu chi̍t-tiuⁿ siòng-phìⁿ，sī phái-tô͘ iōng-lâi khà-phòa po-lê ê kòng-thûi-á。kéng-hong piáu-sī，chòe-àn-iōng-ê kòng-thûi-á，khòaⁿ-khí-lâi chhin-chhiūⁿ sin-bé-ê，jû-kó ū bîn-chiòng ah-sī ngó͘-kim-hâng gia̍p-chiá，chai-iáⁿ kòng-thûi-á ê lâi-goân，chhiáⁿ li̍p-khek hiàng kéng-hong thong-pò。"
+  },
+  {
+    "ID": 68,
+    "ZH": "但是上午的告別式，並未見到這些政治人物前來。",
+    "HAN": "但是早起的告別式，並無看著遮的政治人物前來。",
+    "TL": "tān-sī tsá-khí ê kò-pia̍t-sik，pīng-bô khuànn-tio̍h tsia-ê tsìng-tī-jîn-bu̍t tsiân-lâi。",
+    "EN": "However, during the morning farewell ceremony, these political figures did not appear.",
+    "POJ": "tān-sī chá-khí ê kò-pia̍t-sek，pēng-bô khòaⁿ-tio̍h chia-ê chèng-tī-jîn-bu̍t chiân-lâi。"
+  },
+  {
+    "ID": 69,
+    "ZH": "發揮人飢己飢的大愛精神，募集大量救災的物資。",
+    "HAN": "發揮人飢自飢的大愛精神，募集大量救災的物資。",
+    "TL": "huat-hui jîn-ki-tsū-ki ê tuā-ài tsing-sîn，bō-tsip tāi-liōng kiù-tsai-ê bu̍t-tsu。",
+    "EN": "Exert the spirit of great love that cares for others as much as oneself, and collect a large amount of relief supplies.",
+    "POJ": "hoat-hui jîn-ki-chū-ki ê tōa-ài cheng-sîn，bō-chip tāi-liōng kiù-chai-ê bu̍t-chu。"
+  },
+  {
+    "ID": 70,
+    "ZH": "由民眾自己出錢製作，提供參加遶境的大仙尪。",
+    "HAN": "由民眾家己出錢製作，提供參加踅境的大身尪仔。",
+    "TL": "iû bîn-tsiòng ka-kī tshut-tsînn tsè-tsok，thê-kiong tsham-ka se̍h-kíng ê tuā-sian-ang-á。",
+    "EN": "Providing the Da Xian Wa for the pilgrimage is made by the people themselves with their own money.",
+    "POJ": "iû bîn-chiòng ka-kī chhut-chîⁿ chè-chok，thê-kiong chham-ka se̍h-kéng ê tōa-sian-ang-á。"
+  },
+  {
+    "ID": 71,
+    "ZH": "三千元的老人年金，就是希望讓需要的老人，能夠多疼自己一點。",
+    "HAN": "三千箍的老人年金，就是希望予需要的序大人，會用較疼家己一寡仔。",
+    "TL": "sann-tshing-khoo ê lāu-lâng-nî-kim，tsiū-sī hi-bōng hōo-su-iàu-ê sī-tuā-lâng，ē-īng khah-thàng ka-kī tsi̍t-kuá-á。",
+    "EN": "The 3,000 yuan pension for the elderly is meant to allow those in need to take better care of themselves.",
+    "POJ": "saⁿ-chheng-kho͘ ê lāu-lâng-nî-kim，chiū-sī hi-bōng hō͘-su-iàu-ê sī-tōa-lâng，ē-ēng khah-thàng ka-kī chi̍t-kóa-á。"
+  },
+  {
+    "ID": 72,
+    "ZH": "這一塊影帶，紀錄了嘉義人的過去和現在，也是給了嘉義人未來的希望。",
+    "HAN": "這塊影帶，紀錄了嘉義人的過去佮現在，抑是予了嘉義人未來的希望。",
+    "TL": "tsit-tè iánn-tuà，kì-lio̍k-liáu ka-gī-lâng ê kuè-khì kap hiān-tsāi，ia̍h-sī hōo-liáu ka-gī-lâng bī-lâi-ê hi-bōng。",
+    "EN": "This tape records the past and present of the people of Chiayi, and also gives hope for their future.",
+    "POJ": "chit-tè iáⁿ-tòa，kì-lio̍k-liáu ka-gī-lâng ê kòe-khì kap hiān-chāi，ia̍h-sī hō͘-liáu ka-gī-lâng bī-lâi-ê hi-bōng。"
+  },
+  {
+    "ID": 73,
+    "ZH": "脾氣暴躁愛罵人，女朋友、家人都被罵跑了，連女朋友留下唯一的女兒，也常被罵哭。",
+    "HAN": "脾氣暴躁愛罵人，女朋友、厝內人攏被罵走矣，連女朋友留落來唯一查某囝，抑定被罵哭。",
+    "TL": "phî-khì po̍k-sò ài-mē-lâng，lú-pîng-iú、tshù-lāi-lâng lóng-pī mē-tsáu-0ah，liân lú-pîng-iú lâu-lo̍h-lâi uî-it tsa-bóo-kiánn，ia̍h tiānn-pī mē-khàu。",
+    "EN": "Has a bad temper and loves to curse at people. Both girlfriend and family have been cursed away. Even the only daughter left by the girlfriend is often cursed until she cries.",
+    "POJ": "phî-khì po̍k-sò ài-mē-lâng，lú-pêng-iú、chhù-lāi-lâng lóng-pī mē-cháu-0ah，liân lú-pêng-iú lâu-lo̍h-lâi ûi-it cha-bó͘-kiáⁿ，ia̍h tiāⁿ-pī mē-khàu。"
+  },
+  {
+    "ID": 74,
+    "ZH": "靜態的活動結束之後，還有動態的健康操教學，這些阿公、阿媽，可說是跳得非常認真，不過，最特別的還是，這個教老人家，如何玩布袋戲的教學，另外還提供了美味的餐點，有吃又有玩，讓所有的老人家，真的很滿足。",
+    "HAN": "靜態的活動結束之後，猶有動態的健康操教學，遮的阿公、阿媽，會使講是跳甲非常認真，不過，上特別的猶是，這个教序大人，按怎耍布袋戲的教學，另外猶提供了美味的餐點，有食閣有耍，予所有的序大人，真的真滿足。",
+    "TL": "tsīng-thài-ê ua̍h-tāng kiat-sok tsi-āu，iáu-ū tōng-thài-ê kiān-khong-tshau kàu-ha̍k，tsia-ê a-kong、a-má，ē-sái-kóng-sī thiàu-kah hui-siông jīn-tsin，put-kò，siōng-ti̍k-pia̍t ê iáu-sī，tsit-ê kà sī-tuā-lâng，àn-tsuánn-sńg pòo-tē-hì ê kàu-ha̍k，līng-guā iáu thê-kiong-liáu bí-bī-ê tshan-tiám，ū-tsia̍h koh-ū-sńg，hōo sóo-ū-ê sī-tuā-lâng，tsin-ê tsin-buán-tsiok。",
+    "EN": "After the static activities ended, there were dynamic health exercise classes. The grandpas and grandmas were very serious about jumping, but the most special thing was the teaching of how to play glove puppetry for the elderly. In addition, delicious meals were provided, so there was both eating and playing, which made all the elderly very satisfied.",
+    "POJ": "chēng-thài-ê oa̍h-tāng kiat-sok chi-āu，iáu-ū tōng-thài-ê kiān-khong-chhau kàu-ha̍k，chia-ê a-kong、a-má，ē-sái-kóng-sī thiàu-kah hui-siông jīn-chin，put-kò，siōng-te̍k-pia̍t ê iáu-sī，chit-ê kà sī-tōa-lâng，àn-chóaⁿ-sńg pò͘-tē-hì ê kàu-ha̍k，lēng-gōa iáu thê-kiong-liáu bí-bī-ê chhan-tiám，ū-chia̍h koh-ū-sńg，hō͘ só͘-ū-ê sī-tōa-lâng，chin-ê chin-boán-chiok。"
+  },
+  {
+    "ID": 75,
+    "ZH": "找工作找到火氣大，失業三個月以上，才能夠來應徵的立即上工區大排長龍，另一邊同樣一群人排得老遠的，不是什麼大公司，只是一般的餐飲和清潔業，一萬八的低起薪現在一堆人搶著做。",
+    "HAN": "揣工課揣到風火著，失業三個月以上，才會使來應徵的隨上班區排隊躼躼長，另一爿仝款一篷人排甲躼躼長的，毋是啥物大公司，只是一般的餐飲佮清潔業，一萬八的低起薪這馬一堆人相爭做。",
+    "TL": "tshē-khang-khuè tshē-kàu hong-hué-to̍h，sit-gia̍p sann-kòo-gue̍h-í-siāng，tsiah-ē-sái lâi-ìng-ting-ê suî-siāng-pan-khu pâi-tuī-lò-lò-tn̂g，līng-tsi̍t-pîng kâng-khuán tsi̍t-phâng-lâng pâi-kah-lò-lò-tn̂g-ê，m̄-sī-siánn-mi̍h tuā-kong-si，tsí-sī it-puann-ê tshan-ím kah tshing-kiat-gia̍p，tsi̍t-bān-peh-ê kē-khí-sin tsit-má tsi̍t-tui-lâng sio-tsenn-tsò。",
+    "EN": "Looking for a job is frustrating. After being unemployed for more than three months, you can finally join the long line of applicants at the job fair. On the other side, there is another group of people waiting in line for ordinary jobs in the food and cleaning industries. Despite the low starting salary of 18,000 yuan, many people are still competing for these jobs.",
+    "POJ": "chhē-khang-khòe chhē-kàu hong-hóe-to̍h，sit-gia̍p saⁿ-kò͘-goe̍h-í-siāng，chiah-ē-sái lâi-èng-teng-ê sûi-siāng-pan-khu pâi-tūi-lò-lò-tn̂g，lēng-chi̍t-pêng kâng-khoán chi̍t-phâng-lâng pâi-kah-lò-lò-tn̂g-ê，m̄-sī-siáⁿ-mi̍h tōa-kong-si，chí-sī it-poaⁿ-ê chhan-ím kah chheng-kiat-gia̍p，chi̍t-bān-peh-ê kē-khí-sin chit-má chi̍t-tui-lâng sio-cheⁿ-chò。"
+  },
+  {
+    "ID": 76,
+    "ZH": "警方三次舉牌，抗議民眾才不滿的離開。",
+    "HAN": "警方三擺攑排，抗議民眾才不滿的離開。",
+    "TL": "kíng-hong sann-pái-gia̍h-pâi，khòng-gī bîn-tsiòng tsiah put-buán-ê lī-khui。",
+    "EN": "The police held up signs three times, and the protesting crowd left only when they were dissatisfied.",
+    "POJ": "kéng-hong saⁿ-pái-gia̍h-pâi，khòng-gī bîn-chiòng chiah put-boán-ê lī-khui。"
+  },
+  {
+    "ID": 77,
+    "ZH": "站在左營的舊部落，就好像走進時光隧道，傳統的三合院古厝，錯落在巷弄之間，就像是在走迷宮一樣，趣味的就是，發現古厝的生活蹤影，偶而還會發現古代人的學問，人家說「巷仔內」是內行的，走進巷內就發現了，內行人用原子筆一筆一畫，畫出佛像的畫家陳步雲，就住在「巷仔內」，住在左營舊部落的名人不少，還有一位是歌舞秀場天王豬哥亮，他小時候就在這裡長大的巷弄文化，呈現歷史的軌跡和人文風情。",
+    "HAN": "徛佇左營的舊部落，都若像行入時光磅空，傳統的三合院古厝，散插佇巷弄之間，都像是佇行迷宮仝款，趣味的就是，發現古厝的生活影跡，有時仔猶會發現古早人的學問，人講「巷仔內」是內行的，行入巷仔內都發現矣，內行的用原子筆一筆一劃，畫出佛像的畫家陳步雲，都蹛佇「巷仔內」，蹛佇左營舊部落的名人袂少，猶有一位是歌舞場天王豬哥亮，伊細漢時都佇這跡大漢的巷弄文化，呈現歷史的軌跡和人文風情。",
+    "TL": "khiā-tī tsó-iânn-ê kū-pōo-lo̍k，to-ná-tshiūnn kiânn-ji̍p sî-kong pōng-khang，thuân-thóng-ê sann-ha̍p-īnn kóo-tshù，suánn-tshap-tī hāng-lōng-tsi-kan，to-tshiūnn-sī tī kiânn-bê-kiong kāng-khuán，tshù-bī-ê tio̍h-sī，huat-hiān kóo-tshù-ê sing-ua̍h iánn-tsiah，ū-sî-á iàu-ē huat-hiān kóo-tsá-lâng ê ha̍k-būn，lâng-kóng「hāng-á-lāi」sī lāi-hâng-ê，kiânn-ji̍p hāng-á-lāi to-huat-hiān-0ah，lāi-hâng-ê īng guân-tsú-pit tsi̍t-pit-tsi̍t-ue̍h，uē-tshut hu̍t-siōng-ê uē-ka tân-pōo-hûn，to-tuà-tī「hāng-á-lāi」，tuà-tī tsó-iânn kū-pōo-lo̍k-ê miâ-lâng bē-tsió，iàu-ū tsi̍t-uī sī kua-bú-tiûnn thian-ông ti-ko-liāng，i sè-hàn-sî to-tī tsit-liah tuā-hàn-ê hāng-lōng-bûn-huà，thîng-hiān li̍k-sú-ê kuí-jiah hâm jîn-bûn-hong-tsîng。",
+    "EN": "Standing in the old tribe of Zuoying is like walking into a time tunnel. Traditional courtyard houses are scattered among the alleys, like walking through a maze. The fun part is discovering the traces of life in the old houses and occasionally discovering the knowledge of ancient people. They say that those who know the place well are familiar with the alleys. Walking into the alleys, you will find that the painter of the Buddha statue, Chen Buyun, who uses a ballpoint pen to draw stroke by stroke, lives in the alleys. There are many celebrities who live in the old tribe of Zuoying, including the king of song and dance, Zhu Geliang, who grew up here. The alley culture presents the historical trajectory and humanistic charm.",
+    "POJ": "khiā-tī chó-iâⁿ-ê kū-pō͘-lo̍k，to-ná-chhiūⁿ kiâⁿ-ji̍p sî-kong pōng-khang，thoân-thóng-ê saⁿ-ha̍p-īⁿ kó͘-chhù，sóaⁿ-chhap-tī hāng-lōng-chi-kan，to-chhiūⁿ-sī tī kiâⁿ-bê-kiong kāng-khoán，chhù-bī-ê tio̍h-sī，hoat-hiān kó͘-chhù-ê seng-oa̍h iáⁿ-chiah，ū-sî-á iàu-ē hoat-hiān kó͘-chá-lâng ê ha̍k-būn，lâng-kóng「hāng-á-lāi」sī lāi-hâng-ê，kiâⁿ-ji̍p hāng-á-lāi to-hoat-hiān-0ah，lāi-hâng-ê ēng goân-chú-pit chi̍t-pit-chi̍t-oe̍h，ōe-chhut hu̍t-siōng-ê ōe-ka tân-pō͘-hûn，to-tòa-tī「hāng-á-lāi」，tòa-tī chó-iâⁿ kū-pō͘-lo̍k-ê miâ-lâng bē-chió，iàu-ū chi̍t-ūi sī koa-bú-tiûⁿ thian-ông ti-ko-liāng，i sè-hàn-sî to-tī chit-liah tōa-hàn-ê hāng-lōng-bûn-hòa，thêng-hiān le̍k-sú-ê kúi-jiah hâm jîn-bûn-hong-chêng。"
+  },
+  {
+    "ID": 78,
+    "ZH": "其實這些出沒在住宅區的熊，都是為了要覓食，加上氣候變化異常，山區與住宅區之間的緩衝地帶消失，逼得這些熊只好闖入住宅區。",
+    "HAN": "其實遮的出沒佇住宅區的熊，攏是為著欲揣食，加上氣候變化各樣，山區和住宅區之間的抽退地帶消失，逼甲遮的熊只好傱入住宅區。",
+    "TL": "kî-si̍t tsia-ê tshut-bu̍t-tī tsū-the̍h-khu ê hîm，lóng-sī uī-tio̍h-beh tshuē-tsia̍h，ka-siāng khì-hāu-piàn-huà koh-iūnn，suann-khu hâm tsū-the̍h-khu tsi-kan-ê thiu-thè-tuē-tài siau-sit，pik-kah tsia-ê hîm tsí-hó tsông-ji̍p tsū-the̍h-khu。",
+    "EN": "Actually, these bears that appear in residential areas are all looking for food. Coupled with abnormal climate change, the buffer zone between mountainous areas and residential areas has disappeared, forcing these bears to enter residential areas.",
+    "POJ": "kî-si̍t chia-ê chhut-bu̍t-tī chū-the̍h-khu ê hîm，lóng-sī ūi-tio̍h-beh chhōe-chia̍h，ka-siāng khì-hāu-piàn-hòa koh-iūⁿ，soaⁿ-khu hâm chū-the̍h-khu chi-kan-ê thiu-thè-tōe-tài siau-sit，pek-kah chia-ê hîm chí-hó chông-ji̍p chū-the̍h-khu。"
+  },
+  {
+    "ID": 79,
+    "ZH": "沒有聖誕老人神父太誠實遭砲轟。聖誕節將近了，對於諸多孩童來說，最興奮的事情就是，等待聖誕老人帶來的禮物。",
+    "HAN": "無聖誕老人神父傷條直被砲轟。聖誕節欲倚矣，對著濟濟囡仔來講，上歡喜的代誌就是，等候聖誕老人紮來的禮物。",
+    "TL": "bô sìng-tàn-lāu-lâng sîn-hū siunn-tiâu-ti̍t pī-phàu-hong。siànn-tàn-tsat beh-uá-0ah，tuì-tio̍h tsuē-tsuē gín-á lâi-kóng，siōng-huann-hí ê tāi-tsì tio̍h-sī，tán-hāu sìng-tàn-lāu-lâng tsah-lâi-ê lé-mi̍h。",
+    "EN": "Father Christmas is being criticized for being too honest. With Christmas approaching, for many children, the most exciting thing is waiting for Father Christmas to bring gifts.",
+    "POJ": "bô sèng-tàn-lāu-lâng sîn-hū siuⁿ-tiâu-ti̍t pī-phàu-hong。siànn-tàn-chat beh-óa-0ah，tùi-tio̍h chōe-chōe gín-á lâi-kóng，siōng-hoaⁿ-hí ê tāi-chì tio̍h-sī，tán-hāu sèng-tàn-lāu-lâng chah-lâi-ê lé-mi̍h。"
+  },
+  {
+    "ID": 80,
+    "ZH": "擠身在求職的人潮中，剛被裁員的人還真不少，只是希望能有一份餬口的工作。",
+    "HAN": "擠佇求職的人潮中，拄被裁員的人原仔袂少，干焦希望會有一份顧腹肚的工課。",
+    "TL": "tsik-tī kiû-tsit-ê jîn-tiâu-tiong，tú-pī tshâi-guân-ê-lâng uan-ná-bē-tsió，kan-na hi-bāng ē-ū-tsi̍t-hūn kòo-pak-tóo-ê khang-khuè。",
+    "EN": "Squeezed in the crowd of job seekers, there are quite a few who have just been laid off, hoping to find a job to make ends meet.",
+    "POJ": "chek-tī kiû-chit-ê jîn-tiâu-tiong，tú-pī chhâi-goân-ê-lâng oan-ná-bē-chió，kan-na hi-bāng ē-ū-chi̍t-hūn kò͘-pak-tó͘-ê khang-khòe。"
+  },
+  {
+    "ID": 81,
+    "ZH": "屏東縣的林邊鄉由於當地的排水溝，全被淤泥淹滿，至今污水和淤泥的深度，仍超過腳踝。",
+    "HAN": "屏東縣的林邊鄉由於當地的排水溝，總被塗糜淹滿，到今垃圾水佮塗糜的深度，猶超過跤目。",
+    "TL": "pîn-tang-kuān ê nâ-pinn-hiong iû-î tong-tē ê pâi-tsuí-kau，tsóng-pī thôo-bê im-buán，kàu-tann lah-sap-tsuí kap thôo-bê ê tshim-tōo，iàu-tshiau-kuè kha-ba̍k。",
+    "EN": "The drainage ditches in Linbian Township, Pingtung County are all filled with silt, and to this day the depth of sewage and silt still exceeds the ankles.",
+    "POJ": "pîn-tang-koān ê nâ-piⁿ-hiong iû-î tong-tē ê pâi-chúi-kau，chóng-pī thô͘-bê im-boán，kàu-taⁿ lah-sap-chúi kap thô͘-bê ê chhim-tō͘，iàu-chhiau-kòe kha-ba̍k。"
+  },
+  {
+    "ID": 82,
+    "ZH": "他說：「無論我從經濟和金融的方面，都無法嚴肅看待中國的這份報告的真實性，中國的整體金融體系是建立在欺騙之上，中國的銀行並不發佈真實的呆帳資料，而是把呆帳資料藏在其他類別裡。」",
+    "HAN": "伊講：「無論我對經濟佮金融的方面，攏無法嚴肅看待中國的這份報告的真實性，中國的規个金融體系是建立佇欺騙之上，中國的銀行並毋發佈真實的歹數資料，抑是共歹數資料藏佇其他類別內。」",
+    "TL": "i-kóng：「bô-lūn-guá tuì-king-tsè kap kim-iông-ê hong-bīn，lóng-bô-huat giâm-siok khuànn-thāi tiong-kok-ê tsit-hūn pò-kò-ê tsin-si̍t-sìng，tiong-kok-ê kui-ê kim-iông-thé-hē sī kiàn-li̍p-tī khi-phiàn-tsi-siāng，tiong-kok-ê gîn-hâng pīng-m̄-huat-pòo tsin-si̍t-ê pháinn-siàu tsu-liāu，iah-sī-kā pháinn-siàu-tsu-liāu tshàng-tī kî-thann luī-pia̍t-lāi。」",
+    "EN": "He said, \"I cannot take the authenticity of this report on China seriously from both an economic and financial perspective. China's overall financial system is built on deception. Chinese banks do not disclose true non-performing loan data, but instead hide it in other categories.\"",
+    "POJ": "i-kóng：「bô-lūn-góa tùi-keng-chè kap kim-iông-ê hong-bīn，lóng-bô-hoat giâm-siok khòaⁿ-thāi tiong-kok-ê chit-hūn pò-kò-ê chin-si̍t-sèng，tiong-kok-ê kui-ê kim-iông-thé-hē sī kiàn-li̍p-tī khi-phiàn-chi-siāng，tiong-kok-ê gîn-hâng pēng-m̄-hoat-pò͘ chin-si̍t-ê pháiⁿ-siàu chu-liāu，iah-sī-kā pháiⁿ-siàu-chu-liāu chhàng-tī kî-thaⁿ lūi-pia̍t-lāi。」"
+  },
+  {
+    "ID": 83,
+    "ZH": "學生嗆老師拍桌叫囂動手推。現代的老師真難為！",
+    "HAN": "學生唱老師頓桌仔喝咻動手捒。現代的老師真歹做！",
+    "TL": "ha̍k-sing tshiùnn lāu-su tǹg-toh-á huah-hiu tāng-tshiú-sak. hiān-tāi-ê lāu-su tsin-pháinn-tsò！",
+    "EN": "A student verbally abused and pushed a teacher who slammed the table and shouted. Modern teachers have a tough time!",
+    "POJ": "ha̍k-seng chhiùⁿ lāu-su tǹg-toh-á hoah-hiu tāng-chhiú-sak. hiān-tāi-ê lāu-su chin-pháiⁿ-chò！"
+  },
+  {
+    "ID": 84,
+    "ZH": "讓他們完全不用繳電費，既省荷包，還能夠愛護地球。",
+    "HAN": "予𪜶完全免繳電費，佮省荷包仔，猶會使愛護地球。",
+    "TL": "hōo in uân-tsuân bián-kiáu tiān-huì，kah-síng hô-pau-á，iah ē-sái ài-hō tē-kiû。",
+    "EN": "Let them not have to pay electricity bills at all, which saves money and also allows them to love the earth.",
+    "POJ": "hō͘ in oân-choân bián-kiáu tiān-hùi，kah-séng hô-pau-á，iah ē-sái ài-hō tē-kiû。"
+  },
+  {
+    "ID": 85,
+    "ZH": "既然不是執勤的情況下，兩人卻開著勤務車，還穿著制服，跨區跑到人來人往的大賣場旁邊休憩，岸巡大隊表示還是要針對損害軍紀形象的部分做出處分。",
+    "HAN": "既然毋是執勤的情況下，兩人煞開著勤務車，猶穿著制服，跨區走到人來人去的大賣場邊仔歇睏，岸巡大隊表示，猶是欲針對損害軍紀形象的部分做出處分。",
+    "TL": "kì-jiân m̄-sī tsip-khîn-ê tsîng-hóng-hā，nn̄g-lâng suah khui-tio̍h khîn-bū-tshia，iáu-tshīng-tio̍h tsè-ho̍k，khuà-khu tsáu-kàu lâng-lâi-lâng-khì ê tuā-bē-tiûnn pinn-á hioh-khùn，huānn-sûn-tuā-tuī piáu-sī，iáu-sī beh-tsiam-tuì sún-hāi kun-kì hîng-siōng-ê pōo-hūn tsò-tshut tshú-hun。",
+    "EN": "Since it was not a duty situation, the two of them drove a duty vehicle, still wearing uniforms, and went to rest next to a busy shopping center. The Coast Guard team stated that they still need to take disciplinary action against the part that damages military discipline and image.",
+    "POJ": "kì-jiân m̄-sī chip-khîn-ê chêng-hóng-hā，nn̄g-lâng soah khui-tio̍h khîn-bū-chhia，iáu-chhēng-tio̍h chè-ho̍k，khòa-khu cháu-kàu lâng-lâi-lâng-khì ê tōa-bē-tiûⁿ piⁿ-á hioh-khùn，hōaⁿ-sûn-tōa-tūi piáu-sī，iáu-sī beh-chiam-tùi sún-hāi kun-kì hêng-siōng-ê pō͘-hūn chò-chhut chhú-hun。"
+  },
+  {
+    "ID": 86,
+    "ZH": "老翁騎車掉錢男女路人偷撿。台北市一名葉姓老翁二十二日下午，到銀行領低收入戶補助，又跟朋友借了三萬元準備過年，葉姓老翁踩著腳踏車要回家，沒察覺夾克口袋的錢已經掉在馬路上，看到掉錢的一男一女路人，趕緊跑過去撿起地上的鈔票，這時老翁困在車陣等紅燈，撿到錢的男女可以歸還卻沒這麼做，等到綠燈老翁騎走了，口袋的錢又掉出來，見錢眼開的這對男女繼續偷偷撿。",
+    "HAN": "老公仔騎車落錢男女過路人偷抾。臺北市一名姓葉老公仔二十二號下晡，到銀行領低收入戶補助，閣佮朋友借了三萬箍準備過年，姓葉老公仔踏著跤踏車欲轉去，無察覺航空衣橐袋仔的錢已經落佇車路頂，看著落錢的一男一女過路人，趕緊走過去抾起塗跤的紙票，這陣老公仔牢佇車陣等紅燈，抾著錢的男女會當歸還煞無按呢做，等到青燈老公仔騎走矣，橐袋仔的錢閣落出來，見錢痟的這對男女繼續偷偷仔抾。",
+    "TL": "lāu-kong-á khiâ-tshia lak-tsînn lâm-lí kuè-lōo-lâng thau-khioh. tâi-pak-tshī tsi̍t-miâ sènn-ia̍p lāu-kong-á jī-tsa̍p-jī-hō ē-poo，kàu gîn-hâng niá kē-siu-ji̍p-hōo póo-tsōo，koh kap pîng-iú tsioh-liáu sann-bān-khoo tsún-pī kuè-nî，sènn-ia̍p lāu-kong-á ta̍h-tio̍h kha-ta̍h-tshia beh-tńg-khì，bô-tshat-kak hâng-khong-i lak-tē-á ê tsînn í-king lak-tī tshia-lōo-tíng，khuànn-tio̍h lak-tsînn ê tsi̍t-lâm-tsi̍t-lí kuè-lōo-lâng，kuánn-kín tsáu-kuè-khì khioh-khí thôo-kha-ê tsuá-phiò，tsit-tsūn lāu-kong-á tiâu-tī tshia-tīn tán-âng-ting，khioh-tio̍h-tsînn ê lâm-lí ē-tàng kui-huân suah-bô án-ni-tsò，tán-kàu tshenn-ting lāu-kong-á khiâ-tsáu-0ah，lak-tē-á ê tsînn koh-lak-tshut-lâi，kìnn-tsînn-siáu ê tsit-tuì lâm-lí kè-sio̍k thau-thau-á-khioh。",
+    "EN": "An old man riding a bike dropped money, and passersby picked it up. On the afternoon of the 22nd, a man surnamed Yeh in Taipei went to the bank to collect subsidies for low-income households. He also borrowed 30,000 yuan from a friend to prepare for the Lunar New Year. Yeh rode his bike home and didn't realize that the money in his jacket pocket had fallen onto the road. When a man and a woman passerby saw the money on the ground, they quickly ran over to pick up the cash. At this time, the old man was stuck in traffic waiting for the red light. The man and woman who picked up the money could have returned it, but they didn't. When the light turned green and the old man rode away, the money fell out of his pocket again. The pair of men and women who were greedy for money continued to secretly pick it up.",
+    "POJ": "lāu-kong-á khiâ-chhia lak-chîⁿ lâm-lí kòe-lō͘-lâng thau-khioh. tâi-pak-chhī chi̍t-miâ sèⁿ-ia̍p lāu-kong-á jī-cha̍p-jī-hō ē-po͘，kàu gîn-hâng niá kē-siu-ji̍p-hō͘ pó͘-chō͘，koh kap pêng-iú chioh-liáu saⁿ-bān-kho͘ chún-pī kòe-nî，sèⁿ-ia̍p lāu-kong-á ta̍h-tio̍h kha-ta̍h-chhia beh-tńg-khì，bô-chhat-kak hâng-khong-i lak-tē-á ê chîⁿ í-keng lak-tī chhia-lō͘-téng，khòaⁿ-tio̍h lak-chîⁿ ê chi̍t-lâm-chi̍t-lí kòe-lō͘-lâng，kóaⁿ-kín cháu-kòe-khì khioh-khí thô͘-kha-ê chóa-phiò，chit-chūn lāu-kong-á tiâu-tī chhia-tīn tán-âng-teng，khioh-tio̍h-chîⁿ ê lâm-lí ē-tàng kui-hoân soah-bô án-ni-chò，tán-kàu chheⁿ-teng lāu-kong-á khiâ-cháu-0ah，lak-tē-á ê chîⁿ koh-lak-chhut-lâi，kìⁿ-chîⁿ-siáu ê chit-tùi lâm-lí kè-sio̍k thau-thau-á-khioh。"
+  },
+  {
+    "ID": 87,
+    "ZH": "其實前一天也一樣，一群人搶票搶到跌倒，甚至把垃圾桶都推倒了。",
+    "HAN": "其實頂一工原仔仝款，一陣人搶票搶甲跋倒，甚至共糞埽桶攏捙倒矣。",
+    "TL": "kî-si̍t tíng-tsi̍t-kang uan-ná-kāng-khuán，tsi̍t-tīn-lâng tshiúnn-phiò tshiúnn-kah-pua̍h-tó，sīm-tsì-kā pùn-sò-tháng lóng-tshia-tó-0ah。",
+    "EN": "Actually, the day before was the same. A group of people fought over tickets and even knocked over trash cans.",
+    "POJ": "kî-si̍t téng-chi̍t-kang oan-ná-kāng-khoán，chi̍t-tīn-lâng chhiúⁿ-phiò chhiúⁿ-kah-poa̍h-tó，sīm-chì-kā pùn-sò-tháng lóng-chhia-tó-0ah。"
+  },
+  {
+    "ID": 88,
+    "ZH": "曲來足在一場警民兩敗俱傷的示威遊行中，只是單方面提供警察被打的畫面，不禁讓人疑惑黨國在台灣又成一家？",
+    "HAN": "曲來足佇一場警民兩敗俱傷的示威遊行中，只是單方面提供警察被拍的畫面，莫怪予人憢疑黨國佇臺灣又閣做仝一家？",
+    "TL": "khiok-lâi-tsiok tī-tsi̍t-tiûnn kíng-bîn lióng-pāi-kū-siong ê sī-ui iû-hîng-tiong，tsí-sī tan-hong-bīn thê-kiong kíng-tshat pī-phah-ê uē-bīn，bo̍k-kuài hōo-lâng giâu-gî tóng-kok tī tâi-uân iū-koh-tsò-kāng-tsi̍t-ke？",
+    "EN": "In the midst of a protest where both the police and the civilians were defeated, Qu Lai's footage only showed the police being beaten, which makes one wonder if the ruling party and the government are once again colluding in Taiwan.",
+    "POJ": "khiok-lâi-chiok tī-chi̍t-tiûⁿ kéng-bîn lióng-pāi-kū-siong ê sī-ui iû-hêng-tiong，chí-sī tan-hong-bīn thê-kiong kéng-chhat pī-phah-ê ōe-bīn，bo̍k-koài hō͘-lâng giâu-gî tóng-kok tī tâi-oân iū-koh-chò-kāng-chi̍t-ke？"
+  },
+  {
+    "ID": 89,
+    "ZH": "怎麼會有這麼偏差的價值觀，台中市一名二十歲女大學生，從事性交易被逮捕，她不但不認為是什麼羞愧事，還反過來跟警察嗆聲，她說賣淫的投資報酬率高，又不用看老闆的臉色，時間自由比打工更好賺錢，她賣淫有什麼不對？",
+    "HAN": "按怎會有遮爾偏差的價值觀，臺中市一名二十歲女大學生，從事性交易被逮捕，伊毋但毋認為是啥物見笑代，猶反過來共警察唱聲，伊講賣身的投資報酬率懸，閣毋免看頭家的面色，時間自由比做散工較好趁錢，伊賣身有啥物毋著？",
+    "TL": "án-tsuánn-ē-ū tsiah-ní phian-tsha-ê kè-ta̍t-kuan，tâi-tiong-tshī tsi̍t-miâ jī-tsa̍p-huè lú-tāi-ha̍k-sing，tsiông-sū sìng-kau-i̍k pī-tāi-póo，i m̄-nā m̄-jīn-uî-sī sím-mih kiàn-siàu-tāi，iáu-huán-kuè-lâi kā kíng-tshat tshiùnn-siann，i-kóng buē-sin-ê tâu-tsu pò-siû-lu̍t-kuân，koh-m̄-bián-khuànn thâu-ke-ê bīn-sik，sî-kan tsū-iû pí tsò-suànn-kang khah-hó thàn-tsînn，i buē-sin ū-sím-mih m̄-tio̍h？",
+    "EN": "How can there be such a deviation in values? A 20-year-old female college student in Taichung City was arrested for engaging in prostitution. Not only did she not think it was shameful, she even challenged the police. She said that the return on investment for prostitution is high, and she doesn't have to face her boss's attitude. It's easier to make money than working a regular job. What's wrong with her engaging in prostitution?",
+    "POJ": "án-chóaⁿ-ē-ū chiah-ní phian-chha-ê kè-ta̍t-koan，tâi-tiong-chhī chi̍t-miâ jī-cha̍p-hòe lú-tāi-ha̍k-seng，chiông-sū sèng-kau-e̍k pī-tāi-pó͘，i m̄-nā m̄-jīn-ûi-sī sím-mih kiàn-siàu-tāi，iáu-hoán-kòe-lâi kā kéng-chhat chhiùⁿ-siaⁿ，i-kóng bōe-sin-ê tâu-chu pò-siû-lu̍t-koân，koh-m̄-bián-khòaⁿ thâu-ke-ê bīn-sek，sî-kan chū-iû pí chò-sòaⁿ-kang khah-hó thàn-chîⁿ，i bōe-sin ū-sím-mih m̄-tio̍h？"
+  },
+  {
+    "ID": 90,
+    "ZH": "聖誕老人有可能在未來，比預期的時間更早，就得另覓新家了。",
+    "HAN": "聖誕老人有可能佇未來，比預期的時間較早，著愛另揣新厝矣。",
+    "TL": "sìng-tàn-lāu-lâng ū-khó-lîng tī-bī-lâi，pí ī-kî-ê sî-kan khah-tsá，tio̍h-ài līng-tshē sin-tshù 0ah。",
+    "EN": "Santa Claus may have to find a new home earlier than expected in the future.",
+    "POJ": "sèng-tàn-lāu-lâng ū-khó-lêng tī-bī-lâi，pí ī-kî-ê sî-kan khah-chá，tio̍h-ài lēng-chhē sin-chhù 0ah。"
+  },
+  {
+    "ID": 91,
+    "ZH": "他說，美國人民了解，台灣的處境很獨特，也了解台灣人民的需求和利益。",
+    "HAN": "伊講，美國人民了解，臺灣的處境真特別，嘛了解臺灣人民的需求佮利益。",
+    "TL": "i-kóng，bí-kok jîn-bîn liáu-kái，tâi-uân-ê tshú-kíng tsin-ti̍k-pia̍t，mā-liáu-kái tâi-uân-jîn-bîn ê su-kiû kah lī-ik。",
+    "EN": "He said, the American people understand that Taiwan's situation is very unique, and they also understand the needs and interests of the Taiwanese people.",
+    "POJ": "i-kóng，bí-kok jîn-bîn liáu-kái，tâi-oân-ê chhú-kéng chin-te̍k-pia̍t，mā-liáu-kái tâi-oân-jîn-bîn ê su-kiû kah lī-ek。"
+  },
+  {
+    "ID": 92,
+    "ZH": "但是社會罵名誰都不想揹，中國國民黨立委小貓兩三隻演戲，不想進入議場，就連要求交付協商，也是悄悄遞紙條，不敢大聲張揚。",
+    "HAN": "毋過社會臭名啥攏無欲擔，中國國民黨貓仔兩三隻演戲，無愛進入議場，都和要求交付協商，嘛是恬恬仔楔紙條，毋敢大聲外揚。",
+    "TL": "m̄-kò siā-huē tshàu-miâ siánn lóng bô-beh-tam，tiong-kok-kok-bîn-tóng niau-á nn̄g-sann-tsiah ián-hì，bô-ài tsìn-ji̍p gī-tiûnn，to-hâm iau-kiû kau-hù hia̍p-siong，mā-sī tiām-tiām-á seh-tsuá-tiâu，m̄-kánn tuā-siann guā-iông。",
+    "EN": "But no one wants to bear the social stigma. The Kuomintang legislators in China, a few cats, are acting and do not want to enter the conference hall. Even when they request negotiations, they pass notes quietly and dare not speak loudly.",
+    "POJ": "m̄-kò siā-hōe chhàu-miâ siáⁿ lóng bô-beh-tam，tiong-kok-kok-bîn-tóng niau-á nn̄g-saⁿ-chiah ián-hì，bô-ài chìn-ji̍p gī-tiûⁿ，to-hâm iau-kiû kau-hù hia̍p-siong，mā-sī tiām-tiām-á seh-chóa-tiâu，m̄-káⁿ tōa-siaⁿ gōa-iông。"
+  },
+  {
+    "ID": 93,
+    "ZH": "林邊淤泥積水未退恐怕爆發傳染病。八八水災過去兩個星期了，但還有災民生活在泥濘裡。",
+    "HAN": "林邊塗糜積水未退恐驚爆發傳染病。八八水災過去兩禮拜矣，但猶有災民佇塗糜漿內。",
+    "TL": "nâ-pinn thôo-bê tsik-tsuí buē-thè khióng-kiann po̍k-huat thuân-jiám-pēnn. pat-pat tsuí-tsai kuè-khì nn̄g-lé-pài 0ah，tān-iáu-ū tsai-bîn tī thôo-muâi-tsiunn lāi。",
+    "EN": "The accumulated mud and water near the forest may cause an outbreak of infectious diseases if it does not recede. The 88 flood has passed for two weeks, but there are still victims living in the mud.",
+    "POJ": "nâ-piⁿ thô͘-bê chek-chúi bōe-thè khióng-kiaⁿ po̍k-hoat thoân-jiám-pēⁿ. pat-pat chúi-chai kòe-khì nn̄g-lé-pài 0ah，tān-iáu-ū chai-bîn tī thô͘-moâi-chiuⁿ lāi。"
+  },
+  {
+    "ID": 94,
+    "ZH": "氣象局預估冷氣團氣溫會下探九度，這麼冷的天氣，走在街頭都受不了，還是有遊民睡在走廊下，各地社會局啟動街友避寒機制，住宿券的提供，讓遊民有一個棲身處所可以度過寒冬。",
+    "HAN": "氣象局預估冷氣團氣溫會下探九度，遮爾寒的天氣，行佇街頭攏擋袂牢，猶是有遊民睏佇亭仔跤，各地社會局啟動街友避寒機制，蹛歇券的提供，予遊民有一个棲身所在會用度過寒冬。",
+    "TL": "khì-siōng-kio̍k ī-kóo líng-khì-thuân khì-un ē-hā-thàm káu-tōo，tsiah-ní-kuânn ê thinn-khì，kiânn-tī-ke-thâu lóng-tòng-bē-tiâu，iah-sī-ū iû-bîn khùn-tī tîng-á-kha，kok-tuē siā-huē-kio̍k khé-tōng ke-iú phiah-kuânn ki-tsè，tuà-hioh-kǹg ê thê-kiong，hōo iû-bîn ū-tsi̍t-ê tshe-sin sóo-tsāi ē-īng tōo-kuè kuânn-tang。",
+    "EN": "The Meteorological Bureau predicts that the temperature of the cold air mass will drop to nine degrees. It's so cold that it's unbearable to walk on the streets, yet there are still homeless people sleeping in the corridors. Social bureaus across the country have activated mechanisms to help homeless people avoid the cold, providing accommodation vouchers to give them a place to stay and spend the winter.",
+    "POJ": "khì-siōng-kio̍k ī-kó͘ léng-khì-thoân khì-un ē-hā-thàm káu-tō͘，chiah-ní-kôaⁿ ê thiⁿ-khì，kiâⁿ-tī-ke-thâu lóng-tòng-bē-tiâu，iah-sī-ū iû-bîn khùn-tī têng-á-kha，kok-tōe siā-hōe-kio̍k khé-tōng ke-iú phiah-kôaⁿ ki-chè，tòa-hioh-kǹg ê thê-kiong，hō͘ iû-bîn ū-chi̍t-ê chhe-sin só͘-chāi ē-ēng tō͘-kòe kôaⁿ-tang。"
+  },
+  {
+    "ID": 95,
+    "ZH": "上門來的人，幾乎每個人，都有一段悲慘的遭遇，像這位有眼疾的郭先生，因為工廠倒閉，失業一年了，還寫信給總統府，仍然找不到工作。",
+    "HAN": "上門來的人，強欲每个人，攏有一段悲慘的遭遇，像這位有目疾的郭先生，因為工廠倒擔，失業規年矣，抑寫批予總統府，猶原揣無著頭路。",
+    "TL": "tsiūnn-mn̂g lâi-ê-lâng，kiông-beh muí-ê-lâng，lóng-ū tsi̍t-tuānn pi-tshám-ê tso-gū，tshiūnn tsit-uī ū ba̍k-tsi̍t ê kueh-sin-senn，in-uī kang-tshiúnn tó-tànn，sit-gia̍p kui-nî-0ah，ia̍h siá-phe hōo tsóng-thóng-hú，iu-guân tshuē-bô-tio̍h thâu-lōo。",
+    "EN": "Almost every person who comes to the door has a tragic experience, like Mr. Guo who has an eye disease. He has been unemployed for a year because the factory closed down. He even wrote a letter to the Presidential Office but still cannot find a job.",
+    "POJ": "chiūⁿ-mn̂g lâi-ê-lâng，kiông-beh múi-ê-lâng，lóng-ū chi̍t-tōaⁿ pi-chhám-ê cho-gū，chhiūⁿ chit-ūi ū ba̍k-chi̍t ê koeh-sin-seⁿ，in-ūi kang-chhiúⁿ tó-tàⁿ，sit-gia̍p kui-nî-0ah，ia̍h siá-phe hō͘ chóng-thóng-hú，iu-goân chhōe-bô-tio̍h thâu-lō͘。"
+  },
+  {
+    "ID": 96,
+    "ZH": "警方數度向抗議群眾舉牌，但是學生們並不打算退場。",
+    "HAN": "警方幾擺向抗議群眾攑牌仔，毋過學生並無按算退讓。",
+    "TL": "kíng-hong kuí-pái hiòng khòng-gī kûn-tsiòng giâ-pâi-á，m̄-koh ha̍k-sing pīng-bô-àn-sǹg thè-niū。",
+    "EN": "The police have repeatedly held up signs to the protesting crowd, but the students do not intend to leave.",
+    "POJ": "kéng-hong kúi-pái hiòng khòng-gī kûn-chiòng giâ-pâi-á，m̄-koh ha̍k-seng pēng-bô-àn-sǹg thè-niū。"
+  },
+  {
+    "ID": 97,
+    "ZH": "這些生活工藝品給人品味時尚，也讓我們成為文化大國民。",
+    "HAN": "遮的生活工藝品予人品味時尚，嘛予咱成做文化大國民。",
+    "TL": "tsia-ê sing-uah kang-gē-phín hōo-lâng phín-bī sî-siōng，mā-hōo lán tsiânn-tsò bûn-huà tuā-kok-bîn。",
+    "EN": "These handicrafts give people a sense of fashion in their daily lives, and also make us become cultural citizens.",
+    "POJ": "chia-ê seng-oah kang-gē-phín hō͘-lâng phín-bī sî-siōng，mā-hō͘ lán chiâⁿ-chò bûn-hòa tōa-kok-bîn。"
+  },
+  {
+    "ID": 98,
+    "ZH": "警車當作私家用報案個資街頭曝光。台北縣一名陳姓員警，下班之後，居然騎著警用機車回家，還把查案的資料，大剌剌地放在機車的置物箱上，整個報案人的個人資料，就這樣暴露在街頭，讓大家一覽無疑，這種將警車當作私家車使用，又把報案民眾的個人資料亂丟，如此的荒唐行為，縣警察局得知後，立刻對陳姓員警作出行政處分。",
+    "HAN": "警車當做自家用報案個資街頭曝光。臺北縣一名姓陳員警，下班了後，閣騎著警用oo-tóo-bái轉去，猶共查案的資料，大肆機的囥佇oo-tóo-bái的車斗頂，規个報案人的個人資料，都按呢暴露佇街頭，予逐家看現現，這款將警車當做自家用使用，閣共報案民眾的個人資料亂擲，按呢的離經行為，縣警察局知影後，立刻對姓陳員警作出行政處分。",
+    "TL": "kíng-tshia tòng-tsuè tsū-ka-iōng pò-àn kò-tsu kue-thâu pho̍k-kng. tâi-pak-kuān tsi̍t-miâ sènn-tân uân-kíng，hā-pan-liáu-āu，koh khiâ-tio̍h kíng-iōng 1oo7-1too1-1bai2 tńg-khì，iáu-kā tshâ-àn-ê tsu-liāu，tuā-sù-ki ê khǹg-tī 1oo7-1too1-1bai2-ê tshia-táu-tíng，kui-ê pò-àn-jîn ê kò-jîn tsu-liāu，to-án-ne po̍k-lōo-tī kue-thâu，hōo-ta̍k-ke khuànn-hiān-hiān，tsit-khuán tsiong kíng-tshia tòng-tsuè tsū-ka-iōng sú-iōng，koh-kā pò-àn bîn-tsiòng-ê kò-jîn tsu-liāu luān-tàn，án-ni-ê lī-king hîng-uî，kuān-kíng-tshat-kio̍k tsai-iánn-āu，li̍p-khik tuì sènn-tân uân-kíng tsò-tshut hîng-tsìng tshú-hun。",
+    "EN": "A police car was used for personal use and personal information was exposed on the street. A police officer surnamed Chen in Taipei County rode a police motorcycle home after work and casually placed the case information in the motorcycle's storage box. The personal information of the reporting person was thus exposed on the street for everyone to see. This absurd behavior of using a police car as a private car and randomly throwing the personal information of the reporting person was immediately subject to administrative punishment by the county police station after being notified.",
+    "POJ": "kéng-chhia tòng-chòe chū-ka-iōng pò-àn kò-chu koe-thâu pho̍k-kng. tâi-pak-koān chi̍t-miâ sèⁿ-tân oân-kéng，hā-pan-liáu-āu，koh khiâ-tio̍h kéng-iōng 1oo7-1too1-1bai2 tńg-khì，iáu-kā chhâ-àn-ê chu-liāu，tōa-sù-ki ê khǹg-tī 1oo7-1too1-1bai2-ê chhia-táu-téng，kui-ê pò-àn-jîn ê kò-jîn chu-liāu，to-án-ne po̍k-lō͘-tī koe-thâu，hō͘-ta̍k-ke khòaⁿ-hiān-hiān，chit-khoán chiong kéng-chhia tòng-chòe chū-ka-iōng sú-iōng，koh-kā pò-àn bîn-chiòng-ê kò-jîn chu-liāu loān-tàn，án-ni-ê lī-keng hêng-ûi，koān-kéng-chhat-kio̍k chai-iáⁿ-āu，li̍p-khek tùi sèⁿ-tân oân-kéng chò-chhut hêng-chèng chhú-hun。"
+  },
+  {
+    "ID": 99,
+    "ZH": "被竊賊打破的玻璃已經換新，按摩店門前仍留下碎玻璃，雙眼失明行動不便的蔡先生與林先生，還得靠著鄰居清點損失。",
+    "HAN": "被賊仔拍破的玻璃已經換新，掠龍店門口猶留落碎玻璃，雙眼青盲行動不便的蔡先生和林先生，猶著倚靠厝邊清點損失。",
+    "TL": "pī tsha̍t-á phah-phuà-ê po-lê í-king uānn-sin，lia̍h-lîng tiàm-mn̂g-kháu iáu-lâu-lo̍h tshuì-po-lê，siang-gán tshenn-mê hîng-tōng-put-piān ê tshuà-sian-senn hâm lîm-sian-senn，iáu-tio̍h uá-khò tshù-pinn tshing-tiám sún-sit。",
+    "EN": "The broken glass that was smashed by the thief has been replaced. However, there are still broken pieces of glass in front of the massage parlor. Mr. Cai and Mr. Lin, who are visually impaired and have limited mobility, still have to rely on their neighbors to assess the losses.",
+    "POJ": "pī chha̍t-á phah-phòa-ê po-lê í-keng ōaⁿ-sin，lia̍h-lêng tiàm-mn̂g-kháu iáu-lâu-lo̍h chhùi-po-lê，siang-gán chheⁿ-mê hêng-tōng-put-piān ê chhòa-sian-seⁿ hâm lîm-sian-seⁿ，iáu-tio̍h óa-khò chhù-piⁿ chheng-tiám sún-sit。"
+  }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "token": "DPP6",
+    "label": "O"
+  },
+  {
+    "token": "as",
+    "label": "O"
+  },
+  {
+    "token": "a",
+    "label": "O"
+  },
+  {
+    "token": "candidate",
+    "label": "O"
+  },
+  {
+    "token": "gene",
+    "label": "O"
+  },
+  {
+    "token": "for",
+    "label": "O"
+  },
+  {
+    "token": "neuroleptic",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "induced",
+    "label": "O"
+  },
+  {
+    "token": "tardive",
+    "label": "O"
+  },
+  {
+    "token": "dyskinesia",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "We",
+    "label": "O"
+  },
+  {
+    "token": "implemented",
+    "label": "O"
+  },
+  {
+    "token": "a",
+    "label": "O"
+  },
+  {
+    "token": "two",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "step",
+    "label": "O"
+  },
+  {
+    "token": "approach",
+    "label": "O"
+  },
+  {
+    "token": "to",
+    "label": "O"
+  },
+  {
+    "token": "detect",
+    "label": "O"
+  },
+  {
+    "token": "potential",
+    "label": "O"
+  },
+  {
+    "token": "predictor",
+    "label": "O"
+  },
+  {
+    "token": "gene",
+    "label": "O"
+  },
+  {
+    "token": "variants",
+    "label": "O"
+  },
+  {
+    "token": "for",
+    "label": "O"
+  },
+  {
+    "token": "neuroleptic",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "induced",
+    "label": "O"
+  },
+  {
+    "token": "tardive",
+    "label": "O"
+  },
+  {
+    "token": "dyskinesia",
+    "label": "O"
+  },
+  {
+    "token": "(",
+    "label": "O"
+  },
+  {
+    "token": "TD",
+    "label": "O"
+  },
+  {
+    "token": ")",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "schizophrenic",
+    "label": "O"
+  },
+  {
+    "token": "subjects",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "First",
+    "label": "O"
+  },
+  {
+    "token": ",",
+    "label": "O"
+  },
+  {
+    "token": "we",
+    "label": "O"
+  },
+  {
+    "token": "screened",
+    "label": "O"
+  },
+  {
+    "token": "associations",
+    "label": "O"
+  },
+  {
+    "token": "by",
+    "label": "O"
+  },
+  {
+    "token": "using",
+    "label": "O"
+  },
+  {
+    "token": "a",
+    "label": "O"
+  },
+  {
+    "token": "genome",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "wide",
+    "label": "O"
+  },
+  {
+    "token": "(",
+    "label": "O"
+  },
+  {
+    "token": "Illumina",
+    "label": "O"
+  },
+  {
+    "token": "HumanHapCNV370",
+    "label": "O"
+  },
+  {
+    "token": ")",
+    "label": "O"
+  },
+  {
+    "token": "SNP",
+    "label": "O"
+  },
+  {
+    "token": "array",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "61",
+    "label": "O"
+  },
+  {
+    "token": "Japanese",
+    "label": "O"
+  },
+  {
+    "token": "schizophrenia",
+    "label": "O"
+  },
+  {
+    "token": "patients",
+    "label": "O"
+  },
+  {
+    "token": "with",
+    "label": "O"
+  },
+  {
+    "token": "treatment",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "resistant",
+    "label": "O"
+  },
+  {
+    "token": "TD",
+    "label": "O"
+  },
+  {
+    "token": "and",
+    "label": "O"
+  },
+  {
+    "token": "61",
+    "label": "O"
+  },
+  {
+    "token": "Japanese",
+    "label": "O"
+  },
+  {
+    "token": "schizophrenia",
+    "label": "O"
+  },
+  {
+    "token": "patients",
+    "label": "O"
+  },
+  {
+    "token": "without",
+    "label": "O"
+  },
+  {
+    "token": "TD",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "Next",
+    "label": "O"
+  },
+  {
+    "token": ",",
+    "label": "O"
+  },
+  {
+    "token": "we",
+    "label": "O"
+  },
+  {
+    "token": "performed",
+    "label": "O"
+  },
+  {
+    "token": "a",
+    "label": "O"
+  },
+  {
+    "token": "replication",
+    "label": "O"
+  },
+  {
+    "token": "analysis",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "36",
+    "label": "O"
+  },
+  {
+    "token": "treatment",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "resistant",
+    "label": "O"
+  },
+  {
+    "token": "TD",
+    "label": "O"
+  },
+  {
+    "token": "and",
+    "label": "O"
+  },
+  {
+    "token": "138",
+    "label": "O"
+  },
+  {
+    "token": "non",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "TD",
+    "label": "O"
+  },
+  {
+    "token": "subjects",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "An",
+    "label": "O"
+  },
+  {
+    "token": "association",
+    "label": "O"
+  },
+  {
+    "token": "of",
+    "label": "O"
+  },
+  {
+    "token": "an",
+    "label": "O"
+  },
+  {
+    "token": "SNP",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "DPP6",
+    "label": "O"
+  },
+  {
+    "token": "(",
+    "label": "O"
+  },
+  {
+    "token": "dipeptidyl",
+    "label": "O"
+  },
+  {
+    "token": "peptidase",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "like",
+    "label": "O"
+  },
+  {
+    "token": "protein",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "6",
+    "label": "O"
+  },
+  {
+    "token": ")",
+    "label": "O"
+  },
+  {
+    "token": "gene",
+    "label": "O"
+  },
+  {
+    "token": ",",
+    "label": "O"
+  },
+  {
+    "token": "rs6977820",
+    "label": "O"
+  },
+  {
+    "token": ",",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "most",
+    "label": "O"
+  },
+  {
+    "token": "promising",
+    "label": "O"
+  },
+  {
+    "token": "association",
+    "label": "O"
+  },
+  {
+    "token": "identified",
+    "label": "O"
+  },
+  {
+    "token": "by",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "screen",
+    "label": "O"
+  },
+  {
+    "token": ",",
+    "label": "O"
+  },
+  {
+    "token": "was",
+    "label": "O"
+  },
+  {
+    "token": "significant",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "replication",
+    "label": "O"
+  },
+  {
+    "token": "sample",
+    "label": "O"
+  },
+  {
+    "token": "(",
+    "label": "O"
+  },
+  {
+    "token": "allelic",
+    "label": "O"
+  },
+  {
+    "token": "P",
+    "label": "O"
+  },
+  {
+    "token": "=",
+    "label": "O"
+  },
+  {
+    "token": "0",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "008",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "replication",
+    "label": "O"
+  },
+  {
+    "token": "sample",
+    "label": "O"
+  },
+  {
+    "token": ",",
+    "label": "O"
+  },
+  {
+    "token": "allelic",
+    "label": "O"
+  },
+  {
+    "token": "P",
+    "label": "O"
+  },
+  {
+    "token": "=",
+    "label": "O"
+  },
+  {
+    "token": "4",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "6",
+    "label": "O"
+  },
+  {
+    "token": "x",
+    "label": "O"
+  },
+  {
+    "token": "10",
+    "label": "O"
+  },
+  {
+    "token": "(",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "6",
+    "label": "O"
+  },
+  {
+    "token": ")",
+    "label": "O"
+  },
+  {
+    "token": ",",
+    "label": "O"
+  },
+  {
+    "token": "odds",
+    "label": "O"
+  },
+  {
+    "token": "ratio",
+    "label": "O"
+  },
+  {
+    "token": "2",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "32",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "combined",
+    "label": "O"
+  },
+  {
+    "token": "sample",
+    "label": "O"
+  },
+  {
+    "token": ")",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "The",
+    "label": "O"
+  },
+  {
+    "token": "SNP",
+    "label": "O"
+  },
+  {
+    "token": "is",
+    "label": "O"
+  },
+  {
+    "token": "located",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "intron",
+    "label": "O"
+  },
+  {
+    "token": "-",
+    "label": "O"
+  },
+  {
+    "token": "1",
+    "label": "O"
+  },
+  {
+    "token": "of",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "DPP6",
+    "label": "O"
+  },
+  {
+    "token": "gene",
+    "label": "O"
+  },
+  {
+    "token": "and",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "risk",
+    "label": "O"
+  },
+  {
+    "token": "allele",
+    "label": "O"
+  },
+  {
+    "token": "was",
+    "label": "O"
+  },
+  {
+    "token": "associated",
+    "label": "O"
+  },
+  {
+    "token": "with",
+    "label": "O"
+  },
+  {
+    "token": "decreased",
+    "label": "O"
+  },
+  {
+    "token": "DPP6",
+    "label": "O"
+  },
+  {
+    "token": "gene",
+    "label": "O"
+  },
+  {
+    "token": "expression",
+    "label": "O"
+  },
+  {
+    "token": "in",
+    "label": "O"
+  },
+  {
+    "token": "the",
+    "label": "O"
+  },
+  {
+    "token": "human",
+    "label": "O"
+  },
+  {
+    "token": "postmortem",
+    "label": "O"
+  },
+  {
+    "token": "prefrontal",
+    "label": "O"
+  },
+  {
+    "token": "cortex",
+    "label": "O"
+  },
+  {
+    "token": ".",
+    "label": "O"
+  },
+  {
+    "token": "Chronic",
+    "label": "O"
+  },
+  {
+    "token": "administration",
+    "label": "O"
+  },
+  {
+    "token": "of",
+    "label": "O"
+  },
+  {
+    "token": "haloperidol",
+    "label": "B-Chemical"
+  },
+  {
+    "token": "increased",
+    "label": "O"
+  }
+]

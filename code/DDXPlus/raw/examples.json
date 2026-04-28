@@ -1,0 +1,1202 @@
+[
+  {
+    "AGE": "18",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.19171203430383882], ['Pneumonia', 0.17579340398940366], ['URTI', 0.1607809719801254], ['Bronchiectasis', 0.12429044460990353], ['Tuberculosis', 0.11367177304035844], ['Influenza', 0.11057936110639896], ['HIV (initial infection)', 0.07333003867293564], ['Chagas', 0.04984197229703562]]",
+    "SEX": "M",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_48', 'E_50', 'E_53', 'E_54_@_V_161', 'E_54_@_V_183', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_167', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_3', 'E_77', 'E_79', 'E_91', 'E_97', 'E_201', 'E_204_@_V_10', 'E_222']",
+    "INITIAL_EVIDENCE": "E_91"
+  },
+  {
+    "AGE": "21",
+    "DIFFERENTIAL_DIAGNOSIS": "[['HIV (initial infection)', 0.5189500564407601], ['Chagas', 0.3217819010436332], ['Scombroid food poisoning', 0.13496758062695968], ['Sarcoidosis', 0.024300461888647054]]",
+    "SEX": "M",
+    "PATHOLOGY": "HIV (initial infection)",
+    "EVIDENCES": "['E_9', 'E_27', 'E_50', 'E_51', 'E_53', 'E_54_@_V_198', 'E_55_@_V_62', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_2', 'E_91', 'E_115', 'E_129', 'E_130_@_V_138', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_90', 'E_133_@_V_91', 'E_133_@_V_95', 'E_133_@_V_110', 'E_133_@_V_111', 'E_134_@_6', 'E_135_@_V_12', 'E_136_@_0', 'E_148', 'E_162', 'E_189', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_50"
+  },
+  {
+    "AGE": "19",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.11278064619119596], ['Pneumonia', 0.10048134562119852], ['Unstable angina', 0.08462979865697953], ['Possible NSTEMI / STEMI', 0.08343170881871906], ['Bronchiectasis', 0.07764173703530038], ['Boerhaave', 0.07708363099826726], ['Spontaneous rib fracture', 0.07682349455456361], ['Pericarditis', 0.07504681799224715], ['URTI', 0.06705952510476514], ['Stable angina', 0.06667817325012103], ['GERD', 0.06455232704351052], ['Scombroid food poisoning', 0.058790058668404095], ['Chagas', 0.02923384001251551], ['Sarcoidosis', 0.016406922262218876], ['Panic attack', 0.009359973789993502]]",
+    "SEX": "F",
+    "PATHOLOGY": "Pneumonia",
+    "EVIDENCES": "['E_53', 'E_54_@_V_179', 'E_54_@_V_192', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_56', 'E_55_@_V_170', 'E_55_@_V_171', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_2', 'E_59_@_6', 'E_77', 'E_78', 'E_79', 'E_94', 'E_106', 'E_118', 'E_123', 'E_124', 'E_129', 'E_130_@_V_156', 'E_131_@_V_12', 'E_132_@_4', 'E_133_@_V_54', 'E_133_@_V_85', 'E_134_@_0', 'E_135_@_V_10', 'E_136_@_0', 'E_144', 'E_175', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_77"
+  },
+  {
+    "AGE": "34",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.23859396799565236], ['Cluster headache', 0.18566159722723558], ['Bronchitis', 0.1773471504190298], ['Chronic rhinosinusitis', 0.14960995823729417], ['Acute rhinosinusitis', 0.10748772366243657], ['Chagas', 0.07064980122917579], ['Anemia', 0.07064980122917579]]",
+    "SEX": "F",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_48', 'E_53', 'E_54_@_V_183', 'E_55_@_V_89', 'E_55_@_V_109', 'E_55_@_V_124', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_5', 'E_59_@_4', 'E_97', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "36",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.23677812769175735], ['Influenza', 0.1842006792554458], ['Bronchitis', 0.1651209569301098], ['Cluster headache', 0.1430457852409739], ['Chronic rhinosinusitis', 0.139295948156182], ['Chagas', 0.06577925136276556], ['Anemia', 0.06577925136276556]]",
+    "SEX": "M",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_49', 'E_50', 'E_53', 'E_54_@_V_183', 'E_55_@_V_62', 'E_55_@_V_124', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_2', 'E_97', 'E_144', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "37",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute rhinosinusitis', 0.2575738638873495], ['Chronic rhinosinusitis', 0.24065362710751836], ['Bronchitis', 0.22014945581311246], ['Cluster headache', 0.1264615647167846], ['Chagas', 0.07758074423761752], ['Anemia', 0.07758074423761752]]",
+    "SEX": "F",
+    "PATHOLOGY": "Chronic rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_54_@_V_192', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_122', 'E_55_@_V_125', 'E_56_@_6', 'E_57_@_V_89', 'E_57_@_V_122', 'E_57_@_V_166', 'E_57_@_V_167', 'E_58_@_3', 'E_59_@_1', 'E_79', 'E_103', 'E_116', 'E_118', 'E_120', 'E_121', 'E_124', 'E_125', 'E_182', 'E_201', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "43",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.24726070382402293], ['Acute laryngitis', 0.1697366852414916], ['Tuberculosis', 0.1623219537468869], ['Viral pharyngitis', 0.1524594715234838], ['Possible NSTEMI / STEMI', 0.1387357700993358], ['Unstable angina', 0.12948541556477897]]",
+    "SEX": "M",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_137', 'E_55_@_V_148', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_9', 'E_59_@_3', 'E_79', 'E_91', 'E_201', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "39",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.35566843677250953], ['Anaphylaxis', 0.21268182257212317], ['Chagas', 0.20576235465053702], ['Cluster headache', 0.17268629616141862], ['Scombroid food poisoning', 0.053201089843411604]]",
+    "SEX": "M",
+    "PATHOLOGY": "Anemia",
+    "EVIDENCES": "['E_7', 'E_24', 'E_53', 'E_54_@_V_180', 'E_54_@_V_182', 'E_55_@_V_89', 'E_55_@_V_167', 'E_56_@_1', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_4', 'E_82', 'E_88', 'E_113', 'E_140', 'E_146', 'E_154', 'E_204_@_V_3', 'E_208']",
+    "INITIAL_EVIDENCE": "E_88"
+  },
+  {
+    "AGE": "30",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.33250589804545644], ['Chronic rhinosinusitis', 0.19361300190467037], ['Cluster headache', 0.1500104200497174], ['Chagas', 0.11717519327262141], ['Anemia', 0.11717519327262141], ['Acute rhinosinusitis', 0.08952029345491302]]",
+    "SEX": "M",
+    "PATHOLOGY": "Chronic rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_192', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_122', 'E_55_@_V_125', 'E_56_@_2', 'E_57_@_V_89', 'E_57_@_V_166', 'E_58_@_8', 'E_59_@_0', 'E_79', 'E_103', 'E_116', 'E_118', 'E_120', 'E_124', 'E_125', 'E_201', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "49",
+    "DIFFERENTIAL_DIAGNOSIS": "[['PSVT', 0.14665916736864038], ['Anemia', 0.10832398159492748], ['Atrial fibrillation', 0.1016649187688128], ['Acute pulmonary edema', 0.09943515327857443], ['Guillain-Barré syndrome', 0.09901442900316357], ['Myocarditis', 0.09174193177025147], ['Scombroid food poisoning', 0.06972698871013558], ['Acute dystonic reactions', 0.06972698871013558], ['Myasthenia gravis', 0.06972698871013558], ['Anaphylaxis', 0.06972698871013558], ['SLE', 0.03228026734110455], ['Possible NSTEMI / STEMI', 0.02098609801699159], ['Chagas', 0.02098609801699159]]",
+    "SEX": "M",
+    "PATHOLOGY": "Atrial fibrillation",
+    "EVIDENCES": "['E_19', 'E_22', 'E_31', 'E_66', 'E_69', 'E_70', 'E_76', 'E_104', 'E_105', 'E_139', 'E_155', 'E_204_@_V_10', 'E_218']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "8",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Allergic sinusitis', 1.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_86', 'E_87', 'E_124', 'E_169', 'E_170', 'E_181', 'E_204_@_V_10', 'E_207']",
+    "INITIAL_EVIDENCE": "E_169"
+  },
+  {
+    "AGE": "3",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Croup', 0.5227139129295039], ['Larygospasm', 0.4772860870704961]]",
+    "SEX": "F",
+    "PATHOLOGY": "Larygospasm",
+    "EVIDENCES": "['E_116', 'E_125', 'E_194', 'E_204_@_V_4', 'E_222']",
+    "INITIAL_EVIDENCE": "E_194"
+  },
+  {
+    "AGE": "52",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Cluster headache', 0.6850030416248103], ['Anemia', 0.31499695837518965]]",
+    "SEX": "M",
+    "PATHOLOGY": "Cluster headache",
+    "EVIDENCES": "['E_25', 'E_53', 'E_54_@_V_112', 'E_54_@_V_179', 'E_54_@_V_180', 'E_54_@_V_191', 'E_54_@_V_192', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_125', 'E_55_@_V_126', 'E_55_@_V_166', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_9', 'E_78', 'E_181', 'E_184', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "49",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.08818818095621143], ['Acute pulmonary edema', 0.06480055328583555], ['Unstable angina', 0.06431233285165629], ['GERD', 0.059995773287611145], ['Boerhaave', 0.05916276723695629], ['HIV (initial infection)', 0.05523966958700062], ['Possible NSTEMI / STEMI', 0.05359391235381764], ['Pancreatic neoplasm', 0.05356852841971642], ['Inguinal hernia', 0.05276906742884841], ['Pulmonary embolism', 0.05202542404334409], ['Larygospasm', 0.05033008956183302], ['Stable angina', 0.04656082126706621], ['Panic attack', 0.043818741597861054], ['Guillain-Barré syndrome', 0.0430927302501226], ['Chagas', 0.04272325388687959], ['Atrial fibrillation', 0.04116134994036393], ['Pericarditis', 0.037617760163406386], ['Acute dystonic reactions', 0.030346347960489815], ['Myasthenia gravis', 0.030346347960489815], ['Anemia', 0.030346347960489815]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_12', 'E_42', 'E_51', 'E_53', 'E_54_@_V_182', 'E_54_@_V_192', 'E_55_@_V_87', 'E_55_@_V_88', 'E_55_@_V_103', 'E_55_@_V_104', 'E_55_@_V_197', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_2', 'E_66', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_26', 'E_133_@_V_31', 'E_133_@_V_32', 'E_133_@_V_33', 'E_133_@_V_34', 'E_134_@_3', 'E_135_@_V_12', 'E_136_@_10', 'E_148', 'E_151', 'E_152_@_V_89', 'E_152_@_V_108', 'E_152_@_V_109', 'E_159', 'E_194', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_159"
+  },
+  {
+    "AGE": "47",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.2201122776524523], ['Tuberculosis', 0.211725829483846], ['Viral pharyngitis', 0.14993116024533035], ['Possible NSTEMI / STEMI', 0.12350303091495483], ['Unstable angina', 0.11526833541257887], ['Influenza', 0.11117624354091138], ['Stable angina', 0.04237060047366119], ['Pneumonia', 0.02591252227626513]]",
+    "SEX": "M",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_45', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_137', 'E_55_@_V_148', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_1', 'E_91', 'E_201', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "55",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Spontaneous pneumothorax', 0.15542606232407724], ['Pulmonary embolism', 0.1451588324177532], ['Possible NSTEMI / STEMI', 0.1359373594173874], ['Pericarditis', 0.10560360289952994], ['Guillain-Barré syndrome', 0.10048128515191246], ['Atrial fibrillation', 0.09597779756792263], ['GERD', 0.08991450217414462], ['Acute dystonic reactions', 0.07075996403658966], ['Scombroid food poisoning', 0.04475971479184778], ['PSVT', 0.037797477395074976], ['Myocarditis', 0.01818340182376012]]",
+    "SEX": "F",
+    "PATHOLOGY": "Spontaneous pneumothorax",
+    "EVIDENCES": "['E_21', 'E_53', 'E_54_@_V_71', 'E_55_@_V_101', 'E_55_@_V_159', 'E_55_@_V_160', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_1', 'E_59_@_8', 'E_66', 'E_79', 'E_123', 'E_204_@_V_10', 'E_220']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "57",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Cluster headache', 1.0]]",
+    "SEX": "F",
+    "PATHOLOGY": "Cluster headache",
+    "EVIDENCES": "['E_25', 'E_53', 'E_54_@_V_179', 'E_54_@_V_180', 'E_54_@_V_191', 'E_54_@_V_192', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_125', 'E_55_@_V_126', 'E_55_@_V_166', 'E_56_@_9', 'E_57_@_V_123', 'E_58_@_5', 'E_59_@_9', 'E_78', 'E_127', 'E_176', 'E_181', 'E_184', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "35",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute pulmonary edema', 0.08794825073711252], ['Unstable angina', 0.07856881776475869], ['Possible NSTEMI / STEMI', 0.07536780271700519], ['Panic attack', 0.07308319272080879], ['Myocarditis', 0.07062749686008715], ['Stable angina', 0.06941149533017307], ['Anaphylaxis', 0.06673512676048438], ['Pericarditis', 0.06294909460690166], ['SLE', 0.06272203828527817], ['Pulmonary embolism', 0.06061702554980189], ['Atrial fibrillation', 0.05565276373389076], ['Guillain-Barré syndrome', 0.0479801417271824], ['Chagas', 0.0412002795508475], ['Acute dystonic reactions', 0.033788113855759964], ['Myasthenia gravis', 0.033788113855759964], ['Pulmonary neoplasm', 0.030517659413588732], ['Sarcoidosis', 0.027669676578877304], ['Scombroid food poisoning', 0.021372909951682124]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute pulmonary edema",
+    "EVIDENCES": "['E_5', 'E_50', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_54_@_V_180', 'E_54_@_V_183', 'E_55_@_V_34', 'E_55_@_V_35', 'E_55_@_V_159', 'E_55_@_V_170', 'E_55_@_V_171', 'E_56_@_9', 'E_57_@_V_31', 'E_57_@_V_177', 'E_57_@_V_178', 'E_57_@_V_194', 'E_57_@_V_195', 'E_58_@_1', 'E_59_@_5', 'E_66', 'E_104', 'E_105', 'E_106', 'E_151', 'E_152_@_V_34', 'E_152_@_V_120', 'E_152_@_V_172', 'E_152_@_V_173', 'E_175', 'E_204_@_V_10', 'E_217', 'E_218']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "69",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.4447411434831765], ['Tuberculosis', 0.3505173579455742], ['Pneumonia', 0.16929723286670764], ['Chagas', 0.035444265704541573]]",
+    "SEX": "M",
+    "PATHOLOGY": "Tuberculosis",
+    "EVIDENCES": "['E_2', 'E_44', 'E_61', 'E_69', 'E_78', 'E_91', 'E_162', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "30",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.4184266113110543], ['Tuberculosis', 0.38938088207625726], ['Pneumonia', 0.19219250661268847]]",
+    "SEX": "F",
+    "PATHOLOGY": "Tuberculosis",
+    "EVIDENCES": "['E_44', 'E_45', 'E_78', 'E_91', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_45"
+  },
+  {
+    "AGE": "27",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Myasthenia gravis', 0.16203855614673643], ['Guillain-Barré syndrome', 0.15926213763415473], ['Pulmonary embolism', 0.14542104315509222], ['Myocarditis', 0.13993485404646544], ['Acute pulmonary edema', 0.1362164916809105], ['Anaphylaxis', 0.08768109921481954], ['Chagas', 0.07339035635397669], ['Scombroid food poisoning', 0.05546329830611062], ['SLE', 0.04059216346173375]]",
+    "SEX": "F",
+    "PATHOLOGY": "Myasthenia gravis",
+    "EVIDENCES": "['E_28', 'E_52', 'E_66', 'E_84', 'E_90', 'E_172', 'E_176', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_52"
+  },
+  {
+    "AGE": "54",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Spontaneous pneumothorax', 0.07308334963412176], ['Possible NSTEMI / STEMI', 0.07097840126915654], ['Panic attack', 0.06966250266039109], ['Unstable angina', 0.06796556943763965], ['Anemia', 0.06579407699537654], ['Anaphylaxis', 0.06556502975667425], ['Pericarditis', 0.06245139005183778], ['Boerhaave', 0.06187383758418889], ['Pulmonary embolism', 0.06007606988217537], ['Guillain-Barré syndrome', 0.05889121452065229], ['Acute pulmonary edema', 0.05871335068343722], ['Stable angina', 0.05627350275984168], ['GERD', 0.0460280296758343], ['Inguinal hernia', 0.04453715504011756], ['Acute dystonic reactions', 0.036222652028135974], ['Scombroid food poisoning', 0.030318887014838928], ['Sarcoidosis', 0.02966336240982202], ['Pancreatic neoplasm', 0.025132259802237555], ['SLE', 0.016769358793520726]]",
+    "SEX": "F",
+    "PATHOLOGY": "Panic attack",
+    "EVIDENCES": "['E_16', 'E_53', 'E_54_@_V_182', 'E_54_@_V_192', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_85', 'E_55_@_V_87', 'E_55_@_V_88', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_6', 'E_66', 'E_78', 'E_81', 'E_82', 'E_99', 'E_138', 'E_157', 'E_177', 'E_185', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_177"
+  },
+  {
+    "AGE": "72",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Panic attack', 0.18759810637817528], ['PSVT', 0.15890494741554054], ['Guillain-Barré syndrome', 0.12475478051066304], ['Anemia', 0.09071385642617717], ['Anaphylaxis', 0.09017037980692309], ['Possible NSTEMI / STEMI', 0.08770829233102216], ['Inguinal hernia', 0.07854495229180618], ['Unstable angina', 0.04968694316615193], ['Scombroid food poisoning', 0.04820713211074076], ['Atrial fibrillation', 0.04600862878220021], ['Stable angina', 0.03770198078059933]]",
+    "SEX": "M",
+    "PATHOLOGY": "Panic attack",
+    "EVIDENCES": "['E_16', 'E_53', 'E_54_@_V_192', 'E_55_@_V_55', 'E_55_@_V_87', 'E_55_@_V_103', 'E_55_@_V_104', 'E_55_@_V_153', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_9', 'E_75', 'E_78', 'E_80', 'E_82', 'E_111', 'E_138', 'E_155', 'E_157', 'E_171', 'E_177', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_177"
+  },
+  {
+    "AGE": "71",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Scombroid food poisoning', 0.41019829366712757], ['Anemia', 0.23816170086607485], ['Anaphylaxis', 0.23048313559636188], ['HIV (initial infection)', 0.12115686987043565]]",
+    "SEX": "F",
+    "PATHOLOGY": "Scombroid food poisoning",
+    "EVIDENCES": "['E_51', 'E_82', 'E_92', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_4', 'E_133_@_V_31', 'E_133_@_V_33', 'E_133_@_V_35', 'E_133_@_V_38', 'E_133_@_V_39', 'E_134_@_1', 'E_135_@_V_12', 'E_136_@_10', 'E_148', 'E_187', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_82"
+  },
+  {
+    "AGE": "11",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.44281211224236344], ['Tuberculosis', 0.3901412625123098], ['Pulmonary embolism', 0.16704662524532685]]",
+    "SEX": "M",
+    "PATHOLOGY": "Tuberculosis",
+    "EVIDENCES": "['E_45', 'E_78', 'E_162', 'E_201', 'E_204_@_V_10', 'E_208']",
+    "INITIAL_EVIDENCE": "E_45"
+  },
+  {
+    "AGE": "44",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Epiglottitis', 0.1482156957608971], ['HIV (initial infection)', 0.1177548264828801], ['Myasthenia gravis', 0.11707050293065654], ['Larygospasm', 0.09238342363540983], ['Acute pulmonary edema', 0.08653593444289753], ['Atrial fibrillation', 0.07555373856973324], ['Chagas', 0.06936773473284719], ['Guillain-Barré syndrome', 0.055702255724724016], ['Acute dystonic reactions', 0.055702255724724016], ['Myocarditis', 0.055702255724724016], ['Pulmonary embolism', 0.0352348550970431], ['Scombroid food poisoning', 0.0352348550970431], ['PSVT', 0.029754180634140037], ['SLE', 0.02578748544228028]]",
+    "SEX": "F",
+    "PATHOLOGY": "Epiglottitis",
+    "EVIDENCES": "['E_33', 'E_53', 'E_54_@_V_179', 'E_54_@_V_192', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_26', 'E_55_@_V_137', 'E_55_@_V_148', 'E_56_@_10', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_9', 'E_62', 'E_65', 'E_66', 'E_69', 'E_91', 'E_190', 'E_194', 'E_204_@_V_10', 'E_209']",
+    "INITIAL_EVIDENCE": "E_190"
+  },
+  {
+    "AGE": "35",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pneumonia', 0.1849562833919259], ['Bronchitis', 0.1770609856484427], ['URTI', 0.153627070005551], ['Influenza', 0.14890868964548357], ['Bronchiectasis', 0.1171539255732253], ['Tuberculosis', 0.10714495776681451], ['Chronic rhinosinusitis', 0.0641679461625118], ['Chagas', 0.04698014180604515]]",
+    "SEX": "F",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_41', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_183', 'E_55_@_V_62', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_124', 'E_56_@_2', 'E_57_@_V_123', 'E_58_@_1', 'E_59_@_4', 'E_77', 'E_91', 'E_144', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "16",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Inguinal hernia', 0.30626581971404], ['Bronchitis', 0.2435473324411304], ['Anaphylaxis', 0.17696428343234333], ['Whooping cough', 0.1661936300205011], ['Scombroid food poisoning', 0.10702893439198521]]",
+    "SEX": "M",
+    "PATHOLOGY": "Inguinal hernia",
+    "EVIDENCES": "['E_53', 'E_54_@_V_183', 'E_55_@_V_87', 'E_55_@_V_99', 'E_55_@_V_100', 'E_55_@_V_168', 'E_55_@_V_169', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_1', 'E_129', 'E_130_@_V_138', 'E_131_@_V_10', 'E_132_@_3', 'E_133_@_V_88', 'E_134_@_6', 'E_135_@_V_12', 'E_136_@_0', 'E_150', 'E_160', 'E_203', 'E_204_@_V_10', 'E_221']",
+    "INITIAL_EVIDENCE": "E_203"
+  },
+  {
+    "AGE": "15",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Boerhaave', 0.46118452083032196], ['Anaphylaxis', 0.19613513322856577], ['Pericarditis', 0.12778117687508891], ['Chagas', 0.11954976297141395], ['Scombroid food poisoning', 0.0953494060946095]]",
+    "SEX": "F",
+    "PATHOLOGY": "Boerhaave",
+    "EVIDENCES": "['E_53', 'E_54_@_V_71', 'E_54_@_V_112', 'E_54_@_V_179', 'E_54_@_V_191', 'E_54_@_V_193', 'E_55_@_V_29', 'E_55_@_V_84', 'E_55_@_V_101', 'E_55_@_V_187', 'E_55_@_V_197', 'E_56_@_10', 'E_57_@_V_39', 'E_57_@_V_127', 'E_57_@_V_128', 'E_58_@_2', 'E_59_@_9', 'E_78', 'E_148', 'E_204_@_V_10', 'E_211']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "59",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pancreatic neoplasm', 0.18770680726116548], ['Anaphylaxis', 0.14731681427413218], ['GERD', 0.1413366223114156], ['Possible NSTEMI / STEMI', 0.12655103558894884], ['Unstable angina', 0.11939754136658756], ['Stable angina', 0.09701726045079748], ['Scombroid food poisoning', 0.09563779573990928], ['Chagas', 0.08503612300704354]]",
+    "SEX": "M",
+    "PATHOLOGY": "Pancreatic neoplasm",
+    "EVIDENCES": "['E_6', 'E_51', 'E_53', 'E_54_@_V_161', 'E_54_@_V_182', 'E_55_@_V_85', 'E_55_@_V_104', 'E_55_@_V_197', 'E_56_@_1', 'E_57_@_V_123', 'E_58_@_5', 'E_59_@_4', 'E_69', 'E_79', 'E_89', 'E_129', 'E_130_@_V_107', 'E_131_@_V_10', 'E_132_@_3', 'E_133_@_V_197', 'E_134_@_3', 'E_135_@_V_12', 'E_136_@_3', 'E_162', 'E_188', 'E_204_@_V_10', 'E_223']",
+    "INITIAL_EVIDENCE": "E_162"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pneumonia', 0.06696095923289996], ['Bronchitis', 0.066243454189183], ['Bronchiectasis', 0.06055869793404621], ['Panic attack', 0.05229191006882784], ['Possible NSTEMI / STEMI', 0.0507705209709404], ['GERD', 0.050305488201555865], ['Tuberculosis', 0.049304833790945454], ['Unstable angina', 0.04861545634636686], ['Epiglottitis', 0.04827154395002867], ['Influenza', 0.04800006790184745], ['URTI', 0.04432744572805996], ['Stable angina', 0.04025217532221779], ['Acute laryngitis', 0.038374947398669174], ['Bronchospasm / acute asthma exacerbation', 0.03570474866466547], ['Atrial fibrillation', 0.03514380876264425], ['Boerhaave', 0.034842112365645626], ['Viral pharyngitis', 0.034468825591937646], ['Myocarditis', 0.03419414842556832], ['Pericarditis', 0.029028516075568805], ['Guillain-Barré syndrome', 0.02590989486285746], ['Acute dystonic reactions', 0.02590989486285746], ['Myasthenia gravis', 0.02590989486285746], ['Sarcoidosis', 0.02121806544480331], ['Chagas', 0.01955243693750554], ['PSVT', 0.013840152107499906]]",
+    "SEX": "F",
+    "PATHOLOGY": "Bronchitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_56', 'E_55_@_V_148', 'E_55_@_V_170', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_4', 'E_66', 'E_77', 'E_79', 'E_91', 'E_97', 'E_123', 'E_201', 'E_204_@_V_10', 'E_209']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "3",
+    "DIFFERENTIAL_DIAGNOSIS": "[['SLE', 0.1752414142229442], ['Scombroid food poisoning', 0.11227904816066471], ['Guillain-Barré syndrome', 0.1066721088072446], ['Croup', 0.1066721088072446], ['Atrial fibrillation', 0.10189115365877939], ['Myocarditis', 0.10062459963354352], ['Pneumonia', 0.09690657570383823], ['Acute dystonic reactions', 0.0751196063176959], ['Anaphylaxis', 0.06554014886977504], ['Bronchitis', 0.05905323581826985]]",
+    "SEX": "M",
+    "PATHOLOGY": "SLE",
+    "EVIDENCES": "['E_3', 'E_53', 'E_54_@_V_161', 'E_55_@_V_35', 'E_55_@_V_75', 'E_55_@_V_80', 'E_55_@_V_81', 'E_55_@_V_195', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_2', 'E_66', 'E_79', 'E_102', 'E_129', 'E_130_@_V_157', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_108', 'E_133_@_V_109', 'E_133_@_V_122', 'E_135_@_V_12', 'E_136_@_3', 'E_204_@_V_10', 'E_206']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "27",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.6840881043322263], ['Allergic sinusitis', 0.3159118956677738]]",
+    "SEX": "F",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_87', 'E_124', 'E_169', 'E_170', 'E_201', 'E_204_@_V_10', 'E_207', 'E_226']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "35",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute laryngitis', 0.4710075384573836], ['Possible NSTEMI / STEMI', 0.2889730788505302], ['Unstable angina', 0.14088041597271153], ['Stable angina', 0.09913896671937465]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute laryngitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_137', 'E_55_@_V_148', 'E_55_@_V_163', 'E_56_@_1', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_0', 'E_79', 'E_116', 'E_204_@_V_10', 'E_212']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "39",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Unstable angina', 0.2120830192206448], ['Possible NSTEMI / STEMI', 0.15097315613542164], ['GERD', 0.12263522047142038], ['Boerhaave', 0.1165058169107573], ['Stable angina', 0.11432368855043323], ['Spontaneous pneumothorax', 0.07194888895617985], ['Anaphylaxis', 0.07147580866636895], ['Atrial fibrillation', 0.05874087712480339], ['Pericarditis', 0.04656617506076217], ['Scombroid food poisoning', 0.03474734890320832]]",
+    "SEX": "M",
+    "PATHOLOGY": "Unstable angina",
+    "EVIDENCES": "['E_13', 'E_14', 'E_53', 'E_54_@_V_154', 'E_54_@_V_183', 'E_54_@_V_198', 'E_55_@_V_29', 'E_55_@_V_56', 'E_55_@_V_127', 'E_55_@_V_160', 'E_55_@_V_197', 'E_56_@_10', 'E_57_@_V_33', 'E_57_@_V_39', 'E_57_@_V_163', 'E_57_@_V_174', 'E_57_@_V_195', 'E_58_@_8', 'E_59_@_6', 'E_69', 'E_70', 'E_79', 'E_104', 'E_105', 'E_148', 'E_204_@_V_10', 'E_218', 'E_225']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "8",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.2212898792910738], ['URTI', 0.20906358622595428], ['Tuberculosis', 0.2016568000614939], ['Bronchitis', 0.20089072556207094], ['Pneumonia', 0.1670990088594071]]",
+    "SEX": "F",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_45', 'E_48', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_137', 'E_55_@_V_163', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_8', 'E_59_@_2', 'E_91', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "80",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.12384021145226938], ['Pulmonary embolism', 0.08952057385281495], ['Acute pulmonary edema', 0.08385429122858892], ['Guillain-Barré syndrome', 0.07664770665937667], ['Bronchospasm / acute asthma exacerbation', 0.07438098360656421], ['Atrial fibrillation', 0.07321242023006863], ['Myocarditis', 0.07230235608602933], ['Bronchiectasis', 0.05784447457726954], ['Acute dystonic reactions', 0.053976110660855135], ['Myasthenia gravis', 0.053976110660855135], ['Anemia', 0.053976110660855135], ['Anaphylaxis', 0.053976110660855135], ['Pneumonia', 0.04452907232251666], ['Scombroid food poisoning', 0.03414296985091472], ['PSVT', 0.028832134814579323], ['SLE', 0.024988362675587277]]",
+    "SEX": "F",
+    "PATHOLOGY": "Bronchiectasis",
+    "EVIDENCES": "['E_20', 'E_47', 'E_66', 'E_118', 'E_124', 'E_201', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "75",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.3483775349406297], ['Influenza', 0.2569668242240443], ['HIV (initial infection)', 0.2438403402886069], ['Chagas', 0.15081530054671902]]",
+    "SEX": "M",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_48', 'E_53', 'E_54_@_V_161', 'E_54_@_V_183', 'E_55_@_V_62', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_124', 'E_55_@_V_167', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_5', 'E_79', 'E_91', 'E_97', 'E_144', 'E_181', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_97"
+  },
+  {
+    "AGE": "80",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Possible NSTEMI / STEMI', 0.07993346139074935], ['Acute pulmonary edema', 0.06630041405165502], ['Spontaneous pneumothorax', 0.0630780146291992], ['Unstable angina', 0.060578514321934875], ['Panic attack', 0.05489729715295292], ['Boerhaave', 0.053479449284595776], ['Pericarditis', 0.052054010846226274], ['Pulmonary neoplasm', 0.04856735893790394], ['Anemia', 0.046436532047841095], ['GERD', 0.044944246111057774], ['Pulmonary embolism', 0.044575798486415213], ['Anaphylaxis', 0.044202700346716924], ['Guillain-Barré syndrome', 0.04244569519977281], ['Stable angina', 0.042081766504452126], ['Atrial fibrillation', 0.04054331446253405], ['Pancreatic neoplasm', 0.039646164157609194], ['Chagas', 0.03872315613712886], ['SLE', 0.03414768159592354], ['Acute dystonic reactions', 0.02989069916157223], ['Myasthenia gravis', 0.02989069916157223], ['Scombroid food poisoning', 0.0276164686338039], ['PSVT', 0.01596655737838281]]",
+    "SEX": "M",
+    "PATHOLOGY": "Possible NSTEMI / STEMI",
+    "EVIDENCES": "['E_2', 'E_53', 'E_54_@_V_154', 'E_54_@_V_192', 'E_54_@_V_193', 'E_54_@_V_196', 'E_55_@_V_29', 'E_55_@_V_56', 'E_55_@_V_101', 'E_55_@_V_160', 'E_55_@_V_197', 'E_56_@_6', 'E_57_@_V_30', 'E_57_@_V_33', 'E_57_@_V_39', 'E_57_@_V_163', 'E_57_@_V_194', 'E_58_@_8', 'E_59_@_9', 'E_66', 'E_69', 'E_79', 'E_89', 'E_104', 'E_108', 'E_148', 'E_161', 'E_191', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_148"
+  },
+  {
+    "AGE": "54",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Panic attack', 0.0820914260968682], ['Possible NSTEMI / STEMI', 0.06776725185003181], ['PSVT', 0.06538981814885418], ['Guillain-Barré syndrome', 0.06493440919910075], ['Unstable angina', 0.05791137690169967], ['Spontaneous pneumothorax', 0.05682890569474904], ['Acute pulmonary edema', 0.05491274309494562], ['Anaphylaxis', 0.0547433488967286], ['Atrial fibrillation', 0.05331818519938638], ['Pericarditis', 0.053095197492341165], ['Anemia', 0.05116083780453343], ['Boerhaave', 0.050394361353190184], ['Pulmonary embolism', 0.04200433861196175], ['Scombroid food poisoning', 0.03816821434346428], ['GERD', 0.035790950618139805], ['Stable angina', 0.03182426438089593], ['Acute dystonic reactions', 0.028166383812812584], ['Myasthenia gravis', 0.028166383812812584], ['HIV (initial infection)', 0.02597071204480449], ['Sarcoidosis', 0.02306594365770406], ['Chagas', 0.021255255807582193], ['SLE', 0.013039691177393198]]",
+    "SEX": "F",
+    "PATHOLOGY": "Panic attack",
+    "EVIDENCES": "['E_50', 'E_53', 'E_54_@_V_192', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_84', 'E_55_@_V_85', 'E_55_@_V_103', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_8', 'E_59_@_10', 'E_66', 'E_78', 'E_81', 'E_82', 'E_99', 'E_111', 'E_124', 'E_138', 'E_148', 'E_155', 'E_157', 'E_177', 'E_185', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_148"
+  },
+  {
+    "AGE": "30",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Scombroid food poisoning', 0.16003109593863368], ['Anaphylaxis', 0.12373148602227432], ['Anemia', 0.12136327643316883], ['Pulmonary embolism', 0.11081588205335217], ['Acute pulmonary edema', 0.10380169436506083], ['Guillain-Barré syndrome', 0.09488079505377675], ['Myocarditis', 0.08059110172819565], ['Acute dystonic reactions', 0.06681604077434009], ['Myasthenia gravis', 0.06681604077434009], ['SLE', 0.030932637401510508], ['Possible NSTEMI / STEMI', 0.020109974727673587], ['Chagas', 0.020109974727673587]]",
+    "SEX": "M",
+    "PATHOLOGY": "Scombroid food poisoning",
+    "EVIDENCES": "['E_66', 'E_82', 'E_92', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_3', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_32', 'E_133_@_V_33', 'E_133_@_V_34', 'E_134_@_3', 'E_135_@_V_12', 'E_136_@_9', 'E_187', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_92"
+  },
+  {
+    "AGE": "49",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.32967211308248145], ['Cluster headache', 0.2277786672787875], ['Myocarditis', 0.22484186135719403], ['Chagas', 0.1262756445312007], ['Pulmonary neoplasm', 0.052915204414564786], ['Anaphylaxis', 0.03851650933577164]]",
+    "SEX": "M",
+    "PATHOLOGY": "Chagas",
+    "EVIDENCES": "['E_51', 'E_53', 'E_54_@_V_184', 'E_54_@_V_198', 'E_55_@_V_84', 'E_55_@_V_85', 'E_55_@_V_124', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_4', 'E_66', 'E_152_@_V_123', 'E_174', 'E_175', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "109",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.2603485862680125], ['Possible NSTEMI / STEMI', 0.15639973281166208], ['Unstable angina', 0.14597161483904442], ['Epiglottitis', 0.14246703278415254], ['URTI', 0.08877546025518274], ['Acute laryngitis', 0.08082119787086624], ['Influenza', 0.07155979246167607], ['Stable angina', 0.05365658270940351]]",
+    "SEX": "M",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_45', 'E_48', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_137', 'E_55_@_V_148', 'E_55_@_V_163', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_3', 'E_91', 'E_181', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "7",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.18901058345397598], ['Myocarditis', 0.11849655910785781], ['Guillain-Barré syndrome', 0.11266388736598647], ['Chagas', 0.1033217124828004], ['HIV (initial infection)', 0.09766511075812347], ['SLE', 0.09063841539231736], ['Acute dystonic reactions', 0.07933907897562213], ['Myasthenia gravis', 0.07933907897562213], ['Anaphylaxis', 0.07933907897562213], ['Scombroid food poisoning', 0.05018649451207221]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anemia",
+    "EVIDENCES": "['E_24', 'E_53', 'E_54_@_V_161', 'E_55_@_V_25', 'E_55_@_V_89', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_0', 'E_66', 'E_76', 'E_88', 'E_89', 'E_140', 'E_167', 'E_204_@_V_10', 'E_208']",
+    "INITIAL_EVIDENCE": "E_88"
+  },
+  {
+    "AGE": "57",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute laryngitis', 0.4388719165514125], ['Possible NSTEMI / STEMI', 0.2692571956751588], ['Unstable angina', 0.13126851082893726], ['Stable angina', 0.0923749723232834], ['Viral pharyngitis', 0.06822740462120788]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute laryngitis",
+    "EVIDENCES": "['E_48', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_21', 'E_55_@_V_137', 'E_55_@_V_148', 'E_55_@_V_174', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_2', 'E_59_@_5', 'E_79', 'E_91', 'E_116', 'E_204_@_V_10', 'E_212']",
+    "INITIAL_EVIDENCE": "E_212"
+  },
+  {
+    "AGE": "49",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Allergic sinusitis', 0.34773403514099593], ['Bronchitis', 0.25111465870017935], ['URTI', 0.20109384771167343], ['Influenza', 0.2000574584471513]]",
+    "SEX": "F",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_86', 'E_87', 'E_124', 'E_169', 'E_170', 'E_181', 'E_201', 'E_204_@_V_10', 'E_207', 'E_226']",
+    "INITIAL_EVIDENCE": "E_169"
+  },
+  {
+    "AGE": "17",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Localized edema', 0.7685651823254633], ['Chagas', 0.23143481767453664]]",
+    "SEX": "F",
+    "PATHOLOGY": "Localized edema",
+    "EVIDENCES": "['E_10', 'E_44', 'E_53', 'E_54_@_V_154', 'E_54_@_V_180', 'E_54_@_V_183', 'E_55_@_V_43', 'E_55_@_V_44', 'E_55_@_V_73', 'E_55_@_V_149', 'E_55_@_V_150', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_8', 'E_59_@_8', 'E_106', 'E_109', 'E_137', 'E_151', 'E_152_@_V_34', 'E_152_@_V_35', 'E_152_@_V_51', 'E_152_@_V_52', 'E_152_@_V_72', 'E_197', 'E_204_@_V_4']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "15",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Sarcoidosis', 0.39772321390974447], ['Myocarditis', 0.3292794969924578], ['Acute dystonic reactions', 0.2729972890977977], ['Pulmonary embolism', 0.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Sarcoidosis",
+    "EVIDENCES": "['E_9', 'E_43', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_54_@_V_192', 'E_55_@_V_63', 'E_55_@_V_65', 'E_55_@_V_67', 'E_55_@_V_68', 'E_55_@_V_69', 'E_56_@_1', 'E_57_@_V_123', 'E_58_@_1', 'E_59_@_4', 'E_66', 'E_70', 'E_74', 'E_130_@_V_11', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_123', 'E_134_@_0', 'E_135_@_V_10', 'E_136_@_0', 'E_198', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_9"
+  },
+  {
+    "AGE": "57",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Possible NSTEMI / STEMI', 0.15886540485210338], ['SLE', 0.1581982719311908], ['Pulmonary embolism', 0.14432858453463562], ['Guillain-Barré syndrome', 0.10778274549808557], ['Atrial fibrillation', 0.10295201253736443], ['Acute dystonic reactions', 0.07590172820420253], ['Anaphylaxis', 0.06622253243631242], ['Pancreatic neoplasm', 0.06533340069038986], ['Stable angina', 0.04092032610808816], ['PSVT', 0.040544026485965674], ['Unstable angina', 0.030292692355506592], ['Myocarditis', 0.00865827436615506]]",
+    "SEX": "M",
+    "PATHOLOGY": "SLE",
+    "EVIDENCES": "['E_53', 'E_54_@_V_192', 'E_55_@_V_26', 'E_55_@_V_34', 'E_55_@_V_74', 'E_55_@_V_80', 'E_55_@_V_194', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_5', 'E_59_@_1', 'E_66', 'E_79', 'E_129', 'E_130_@_V_157', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_108', 'E_133_@_V_109', 'E_133_@_V_122', 'E_135_@_V_12', 'E_136_@_0', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Allergic sinusitis', 1.0]]",
+    "SEX": "F",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_86', 'E_87', 'E_124', 'E_170', 'E_181', 'E_204_@_V_10', 'E_207']",
+    "INITIAL_EVIDENCE": "E_170"
+  },
+  {
+    "AGE": "70",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Spontaneous rib fracture', 0.16384591700770842], ['Bronchitis', 0.14941628623398215], ['Whooping cough', 0.10593145137561552], ['Possible NSTEMI / STEMI', 0.10568516369430501], ['Pulmonary embolism', 0.10179945302709213], ['Unstable angina', 0.09932911716329884], ['Boerhaave', 0.09374530058465791], ['GERD', 0.06515657179180076], ['Spontaneous pneumothorax', 0.059285539932161756], ['Stable angina', 0.055308799567337405], ['Pericarditis', 0.0004963996220398078]]",
+    "SEX": "F",
+    "PATHOLOGY": "Spontaneous rib fracture",
+    "EVIDENCES": "['E_53', 'E_54_@_V_179', 'E_54_@_V_192', 'E_55_@_V_29', 'E_55_@_V_56', 'E_55_@_V_159', 'E_55_@_V_170', 'E_56_@_8', 'E_57_@_V_171', 'E_58_@_8', 'E_59_@_10', 'E_78', 'E_153', 'E_203', 'E_204_@_V_10', 'E_216', 'E_220']",
+    "INITIAL_EVIDENCE": "E_220"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.09578369627439588], ['Possible NSTEMI / STEMI', 0.08601031257738928], ['Pulmonary embolism', 0.08056956383655839], ['Unstable angina', 0.07829592706028045], ['GERD', 0.07290735857318906], ['Scombroid food poisoning', 0.07026936073267799], ['Boerhaave', 0.06072338405527414], ['Stable angina', 0.055819059569321254], ['Guillain-Barré syndrome', 0.05577155164163689], ['Atrial fibrillation', 0.053271917107920154], ['Acute pulmonary edema', 0.04891024963962252], ['Chagas', 0.04547717558335321], ['SLE', 0.044868370717118494], ['Acute dystonic reactions', 0.0392749055952129], ['Myasthenia gravis', 0.0392749055952129], ['Anemia', 0.0392749055952129], ['Panic attack', 0.03349735584562382]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_12', 'E_53', 'E_54_@_V_179', 'E_54_@_V_182', 'E_54_@_V_192', 'E_55_@_V_84', 'E_55_@_V_104', 'E_55_@_V_153', 'E_55_@_V_187', 'E_55_@_V_197', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_0', 'E_59_@_2', 'E_66', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_3', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_32', 'E_133_@_V_33', 'E_133_@_V_34', 'E_134_@_2', 'E_135_@_V_12', 'E_136_@_8', 'E_148', 'E_151', 'E_152_@_V_89', 'E_152_@_V_109', 'E_152_@_V_122', 'E_159', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_159"
+  },
+  {
+    "AGE": "50",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Scombroid food poisoning', 0.14073555650142153], ['Pulmonary embolism', 0.09468918072370922], ['Anaphylaxis', 0.09468918072370922], ['Atrial fibrillation', 0.094037673572203], ['PSVT', 0.09082740471142446], ['Acute pulmonary edema', 0.0886957466297869], ['Myocarditis', 0.08317670168456483], ['Guillain-Barré syndrome', 0.0810730789087692], ['Acute dystonic reactions', 0.05709250373586525], ['Myasthenia gravis', 0.05709250373586525], ['Anemia', 0.05709250373586525], ['SLE', 0.026431103907673077], ['Possible NSTEMI / STEMI', 0.017183430714571544], ['Chagas', 0.017183430714571544]]",
+    "SEX": "M",
+    "PATHOLOGY": "Scombroid food poisoning",
+    "EVIDENCES": "['E_66', 'E_92', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_4', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_34', 'E_133_@_V_35', 'E_133_@_V_38', 'E_134_@_0', 'E_135_@_V_12', 'E_136_@_10', 'E_155', 'E_187', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_155"
+  },
+  {
+    "AGE": "65",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Spontaneous pneumothorax', 0.11704370656619739], ['Pulmonary embolism', 0.10585179142150707], ['Possible NSTEMI / STEMI', 0.10110865162150533], ['Unstable angina', 0.08479154702927473], ['Panic attack', 0.0819830344808796], ['Pericarditis', 0.08027057835148659], ['Stable angina', 0.08016154047328636], ['Guillain-Barré syndrome', 0.07327231736788477], ['Atrial fibrillation', 0.069988313077757], ['GERD', 0.06556687575521018], ['Myocarditis', 0.055723125641828235], ['Acute dystonic reactions', 0.05159912648400704], ['Scombroid food poisoning', 0.0326393917291757]]",
+    "SEX": "F",
+    "PATHOLOGY": "Spontaneous pneumothorax",
+    "EVIDENCES": "['E_21', 'E_53', 'E_54_@_V_71', 'E_54_@_V_179', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_159', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_1', 'E_59_@_5', 'E_66', 'E_79', 'E_123', 'E_165', 'E_204_@_V_10', 'E_220']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "51",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute COPD exacerbation / infection', 0.08295358172907888], ['Pneumonia', 0.07835434650033321], ['Bronchitis', 0.07747627822896128], ['Pulmonary neoplasm', 0.07109180570657167], ['Bronchiectasis', 0.06766476960906502], ['Panic attack', 0.05842794128563873], ['Possible NSTEMI / STEMI', 0.056728029525540895], ['GERD', 0.056208428935129603], ['Tuberculosis', 0.05509035585129301], ['Unstable angina', 0.05432008555895781], ['Stable angina', 0.04497544138759159], ['Atrial fibrillation', 0.03926764947455136], ['Boerhaave', 0.038930551454098045], ['Myocarditis', 0.03820655420488269], ['Pericarditis', 0.032434776825710485], ['Guillain-Barré syndrome', 0.02895021072612432], ['Acute dystonic reactions', 0.02895021072612432], ['Myasthenia gravis', 0.02895021072612432], ['Sarcoidosis', 0.023707833207317324], ['Chagas', 0.021846756713840874], ['PSVT', 0.01546418162306459]]",
+    "SEX": "F",
+    "PATHOLOGY": "Bronchitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_160', 'E_55_@_V_170', 'E_55_@_V_171', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_1', 'E_59_@_1', 'E_66', 'E_77', 'E_91', 'E_123', 'E_201', 'E_204_@_V_10', 'E_214']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "43",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.22702125813983617], ['Bronchitis', 0.1912654070852552], ['Acute laryngitis', 0.15085918490950553], ['URTI', 0.15016052286161333], ['Possible NSTEMI / STEMI', 0.12330607944417536], ['Unstable angina', 0.11508451588988682], ['Stable angina', 0.04230303166972759]]",
+    "SEX": "F",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_48', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_137', 'E_55_@_V_148', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_0', 'E_79', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.1566943616703176], ['Pneumonia', 0.15163510641062114], ['Bronchitis', 0.14365218956111], ['Influenza', 0.13108011064480468], ['Bronchiectasis', 0.09604782084139515], ['Tuberculosis', 0.08784203907203768], ['Ebola', 0.07398710102711936], ['HIV (initial infection)', 0.06793729359613154], ['Chronic rhinosinusitis', 0.0526076387677254], ['Chagas', 0.03851633840873725]]",
+    "SEX": "F",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_41', 'E_48', 'E_49', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_55_@_V_62', 'E_55_@_V_89', 'E_55_@_V_109', 'E_55_@_V_124', 'E_55_@_V_167', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_1', 'E_59_@_5', 'E_77', 'E_79', 'E_91', 'E_97', 'E_144', 'E_181', 'E_204_@_V_4', 'E_222']",
+    "INITIAL_EVIDENCE": "E_144"
+  },
+  {
+    "AGE": "55",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute pulmonary edema', 0.07415155565511523], ['Unstable angina', 0.06436001895645241], ['Pericarditis', 0.06261403080747711], ['Myocarditis', 0.06176013849577023], ['Pulmonary embolism', 0.06170083419578047], ['Stable angina', 0.05868427991997855], ['Anaphylaxis', 0.05429306819039359], ['Possible NSTEMI / STEMI', 0.05386415031384454], ['Spontaneous pneumothorax', 0.0508211071959973], ['GERD', 0.05075860834519191], ['Panic attack', 0.04732066778182149], ['Boerhaave', 0.0469548711796275], ['Atrial fibrillation', 0.045276894539101095], ['Pulmonary neoplasm', 0.04111738440923412], ['Guillain-Barré syndrome', 0.039034751757168244], ['Chagas', 0.03351892317738074], ['SLE', 0.031403567968580064], ['Acute dystonic reactions', 0.027488677382445467], ['Myasthenia gravis', 0.027488677382445467], ['Anemia', 0.027488677382445467], ['Sarcoidosis', 0.022510958025071984], ['Scombroid food poisoning', 0.017388156938677207]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute pulmonary edema",
+    "EVIDENCES": "['E_5', 'E_53', 'E_54_@_V_154', 'E_54_@_V_180', 'E_54_@_V_183', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_101', 'E_55_@_V_170', 'E_55_@_V_171', 'E_56_@_5', 'E_57_@_V_31', 'E_57_@_V_118', 'E_57_@_V_127', 'E_57_@_V_194', 'E_57_@_V_195', 'E_58_@_5', 'E_59_@_0', 'E_66', 'E_104', 'E_106', 'E_151', 'E_152_@_V_34', 'E_152_@_V_119', 'E_175', 'E_204_@_V_10', 'E_217', 'E_218']",
+    "INITIAL_EVIDENCE": "E_175"
+  },
+  {
+    "AGE": "20",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Localized edema', 0.4677873667082327], ['Pulmonary embolism', 0.3253029298008516], ['Chagas', 0.12926248339862748], ['Anaphylaxis', 0.07482285803921773], ['SLE', 0.0028243620530706125]]",
+    "SEX": "F",
+    "PATHOLOGY": "Localized edema",
+    "EVIDENCES": "['E_44', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_54_@_V_180', 'E_54_@_V_183', 'E_55_@_V_34', 'E_55_@_V_35', 'E_55_@_V_52', 'E_55_@_V_72', 'E_55_@_V_73', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_4', 'E_96', 'E_106', 'E_126', 'E_137', 'E_151', 'E_152_@_V_34', 'E_152_@_V_35', 'E_152_@_V_52', 'E_152_@_V_72', 'E_152_@_V_73', 'E_158', 'E_197', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "62",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.17874347823022357], ['Panic attack', 0.11063047304275213], ['Guillain-Barré syndrome', 0.10267965085304218], ['Myocarditis', 0.10232875237027644], ['Acute pulmonary edema', 0.10126601331603254], ['Cluster headache', 0.08994433173655184], ['HIV (initial infection)', 0.0890100608777268], ['Pulmonary neoplasm', 0.08078108760705867], ['Acute dystonic reactions', 0.0723080759831679], ['Myasthenia gravis', 0.0723080759831679]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anemia",
+    "EVIDENCES": "['E_7', 'E_24', 'E_26', 'E_53', 'E_54_@_V_161', 'E_54_@_V_180', 'E_55_@_V_89', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_3', 'E_66', 'E_82', 'E_88', 'E_89', 'E_113', 'E_140', 'E_146', 'E_179', 'E_204_@_V_10', 'E_208']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "61",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.28003897806789063], ['Acute laryngitis', 0.1915378321395781], ['Viral pharyngitis', 0.17204151608832965], ['Possible NSTEMI / STEMI', 0.1565551289471391], ['Unstable angina', 0.1461166497724649], ['Stable angina', 0.053709894984597634]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute laryngitis",
+    "EVIDENCES": "['E_48', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_33', 'E_55_@_V_163', 'E_55_@_V_174', 'E_56_@_2', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_5', 'E_79', 'E_116', 'E_201', 'E_204_@_V_4']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "43",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pneumonia', 0.13929538259223628], ['Bronchitis', 0.13339871375805015], ['URTI', 0.11511509094916382], ['Tuberculosis', 0.11155964007687037], ['Bronchiectasis', 0.10695885387899014], ['Influenza', 0.09595684234561871], ['Pulmonary neoplasm', 0.08518821348635924], ['Possible NSTEMI / STEMI', 0.08491235849772409], ['Unstable angina', 0.07665756854452421], ['Stable angina', 0.05095733587046295]]",
+    "SEX": "M",
+    "PATHOLOGY": "Pneumonia",
+    "EVIDENCES": "['E_45', 'E_53', 'E_54_@_V_179', 'E_55_@_V_55', 'E_55_@_V_171', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_0', 'E_59_@_2', 'E_77', 'E_79', 'E_91', 'E_94', 'E_95', 'E_106', 'E_118', 'E_123', 'E_124', 'E_129', 'E_130_@_V_156', 'E_131_@_V_12', 'E_132_@_6', 'E_133_@_V_39', 'E_133_@_V_42', 'E_134_@_2', 'E_135_@_V_10', 'E_136_@_2', 'E_144', 'E_161', 'E_175', 'E_181', 'E_201', 'E_204_@_V_10', 'E_208']",
+    "INITIAL_EVIDENCE": "E_77"
+  },
+  {
+    "AGE": "30",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.11812635037170953], ['Localized edema', 0.07792948606412972], ['GERD', 0.07393400762439392], ['HIV (initial infection)', 0.072463833388669], ['Unstable angina', 0.07041047095865809], ['Boerhaave', 0.06963899539184608], ['Larygospasm', 0.06699029677661947], ['Pancreatic neoplasm', 0.06570861547643854], ['Inguinal hernia', 0.06149091934873373], ['Anemia', 0.057357235274218], ['Panic attack', 0.055711875685169866], ['PSVT', 0.051884634396974084], ['Chagas', 0.051884634396974084], ['Possible NSTEMI / STEMI', 0.04664561738639255], ['Epiglottitis', 0.04039156046925451], ['Stable angina', 0.01943146698981873]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_12', 'E_42', 'E_51', 'E_53', 'E_54_@_V_182', 'E_55_@_V_88', 'E_55_@_V_103', 'E_55_@_V_104', 'E_55_@_V_197', 'E_56_@_9', 'E_57_@_V_123', 'E_58_@_0', 'E_59_@_3', 'E_82', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_3', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_32', 'E_133_@_V_33', 'E_134_@_3', 'E_135_@_V_12', 'E_136_@_10', 'E_148', 'E_151', 'E_152_@_V_108', 'E_152_@_V_109', 'E_194', 'E_204_@_V_10', 'E_214', 'E_226']",
+    "INITIAL_EVIDENCE": "E_42"
+  },
+  {
+    "AGE": "59",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.18051454614035572], ['Pneumonia', 0.13678821677917993], ['URTI', 0.1302633999820925], ['Bronchiectasis', 0.1211698782329387], ['Cluster headache', 0.11968896488650325], ['Chronic rhinosinusitis', 0.11655140918421047], ['Influenza', 0.08494623447844642], ['Chagas', 0.055038675158136506], ['Anemia', 0.055038675158136506]]",
+    "SEX": "M",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_49', 'E_50', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_55_@_V_124', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_0', 'E_77', 'E_79', 'E_181', 'E_201', 'E_204_@_V_10', 'E_222']",
+    "INITIAL_EVIDENCE": "E_50"
+  },
+  {
+    "AGE": "37",
+    "DIFFERENTIAL_DIAGNOSIS": "[['GERD', 0.26925617747914243], ['Pericarditis', 0.1983645778728806], ['Unstable angina', 0.1511855427327945], ['Anemia', 0.10911427084075846], ['Possible NSTEMI / STEMI', 0.10463046989144997], ['Stable angina', 0.08418368268329775], ['Pancreatic neoplasm', 0.08326527849967624]]",
+    "SEX": "M",
+    "PATHOLOGY": "GERD",
+    "EVIDENCES": "['E_53', 'E_54_@_V_179', 'E_54_@_V_180', 'E_54_@_V_181', 'E_54_@_V_196', 'E_55_@_V_29', 'E_55_@_V_104', 'E_55_@_V_187', 'E_55_@_V_197', 'E_56_@_6', 'E_57_@_V_29', 'E_58_@_8', 'E_59_@_2', 'E_78', 'E_98', 'E_140', 'E_173', 'E_204_@_V_10', 'E_215', 'E_217']",
+    "INITIAL_EVIDENCE": "E_217"
+  },
+  {
+    "AGE": "20",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.17985052915443722], ['Acute laryngitis', 0.11944228074376186], ['Tuberculosis', 0.11422459642550054], ['Viral pharyngitis', 0.10728445046423066], ['Possible NSTEMI / STEMI', 0.09762719695998964], ['Unstable angina', 0.09111780011555437], ['Epiglottitis', 0.08893018434163623], ['Pneumonia', 0.06846273919474044], ['Influenza', 0.05648936545756997], ['Chagas', 0.043077566110688664], ['Stable angina', 0.03349329103189049]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute laryngitis",
+    "EVIDENCES": "['E_49', 'E_53', 'E_54_@_V_161', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_137', 'E_55_@_V_163', 'E_56_@_1', 'E_57_@_V_123', 'E_58_@_2', 'E_59_@_0', 'E_91', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "29",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Scombroid food poisoning', 0.4224779772377464], ['Anemia', 0.2546994639513382], ['Pancreatic neoplasm', 0.2393196761403128], ['Anaphylaxis', 0.08350288267060264]]",
+    "SEX": "M",
+    "PATHOLOGY": "Scombroid food poisoning",
+    "EVIDENCES": "['E_51', 'E_82', 'E_92', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_32', 'E_133_@_V_33', 'E_134_@_0', 'E_135_@_V_12', 'E_136_@_6', 'E_187', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_92"
+  },
+  {
+    "AGE": "30",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Myasthenia gravis', 0.17824568936099527], ['Pulmonary embolism', 0.1118537733050331], ['Myocarditis', 0.10763395105956608], ['Acute dystonic reactions', 0.10477389138677733], ['Acute pulmonary edema', 0.10477389138677733], ['Atrial fibrillation', 0.0914771331670749], ['Anemia', 0.06744183360210694], ['Anaphylaxis', 0.06744183360210694], ['Chagas', 0.05644979642759391], ['Scombroid food poisoning', 0.042660807960679836], ['PSVT', 0.036025049132867006], ['SLE', 0.03122234960842133]]",
+    "SEX": "F",
+    "PATHOLOGY": "Myasthenia gravis",
+    "EVIDENCES": "['E_28', 'E_38', 'E_52', 'E_63', 'E_66', 'E_90', 'E_172', 'E_176', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "18",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchospasm / acute asthma exacerbation', 0.13749808568824323], ['Pulmonary embolism', 0.09930751233062751], ['Acute pulmonary edema', 0.09302175691870046], ['Anaphylaxis', 0.09302175691870046], ['Guillain-Barré syndrome', 0.0850273043010774], ['Atrial fibrillation', 0.08121645127863535], ['Myocarditis', 0.08020689333774864], ['Acute dystonic reactions', 0.05987711030343931], ['Myasthenia gravis', 0.05987711030343931], ['Anemia', 0.05987711030343931], ['Scombroid food poisoning', 0.05532136701250618], ['PSVT', 0.031984240721297796], ['SLE', 0.027720243824710968], ['Possible NSTEMI / STEMI', 0.018021528378717094], ['Chagas', 0.018021528378717094]]",
+    "SEX": "M",
+    "PATHOLOGY": "Bronchospasm / acute asthma exacerbation",
+    "EVIDENCES": "['E_66', 'E_87', 'E_101', 'E_116', 'E_119', 'E_124', 'E_204_@_V_10', 'E_207', 'E_214']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "12",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Myasthenia gravis', 0.2013577047365712], ['Guillain-Barré syndrome', 0.15780502279335415], ['Pulmonary embolism', 0.11032233969564217], ['Myocarditis', 0.10616029268136686], ['Acute dystonic reactions', 0.10333939120037042], ['Atrial fibrillation', 0.0902246840803485], ['Anemia', 0.06651846117035572], ['Anaphylaxis', 0.06651846117035572], ['Chagas', 0.05567692026134478], ['Scombroid food poisoning', 0.04207672221029042]]",
+    "SEX": "M",
+    "PATHOLOGY": "Myasthenia gravis",
+    "EVIDENCES": "['E_28', 'E_38', 'E_52', 'E_63', 'E_65', 'E_66', 'E_84', 'E_90', 'E_172', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_90"
+  },
+  {
+    "AGE": "43",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute COPD exacerbation / infection', 0.1244213435480098], ['Bronchitis', 0.11632363163469966], ['Bronchiectasis', 0.10722603647824498], ['Pneumonia', 0.10440123403202255], ['Pulmonary neoplasm', 0.09557986268881986], ['Guillain-Barré syndrome', 0.061660785224130904], ['Atrial fibrillation', 0.05889720014203215], ['Myocarditis', 0.058165080784891215], ['Pulmonary embolism', 0.052245886770235596], ['Acute dystonic reactions', 0.043422165016410906], ['Myasthenia gravis', 0.043422165016410906], ['Anemia', 0.043422165016410906], ['Tuberculosis', 0.041479860265274254], ['PSVT', 0.023194589242644673], ['Possible NSTEMI / STEMI', 0.01306899706988093], ['Chagas', 0.01306899706988093]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute COPD exacerbation / infection",
+    "EVIDENCES": "['E_66', 'E_72', 'E_77', 'E_123', 'E_125', 'E_198', 'E_199', 'E_204_@_V_10', 'E_214']",
+    "INITIAL_EVIDENCE": "E_77"
+  },
+  {
+    "AGE": "46",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchospasm / acute asthma exacerbation', 0.09889657381739657], ['Bronchitis', 0.0857301002122807], ['Pulmonary neoplasm', 0.07986229104471873], ['Acute COPD exacerbation / infection', 0.07492867699108588], ['Pneumonia', 0.06308989750274147], ['Pulmonary embolism', 0.06017389251840222], ['Tuberculosis', 0.0578302852327805], ['Acute pulmonary edema', 0.056365133627181756], ['Anaphylaxis', 0.056365133627181756], ['Guillain-Barré syndrome', 0.05152101538006757], ['Atrial fibrillation', 0.04921188634446758], ['Myocarditis', 0.04860015990403715], ['Bronchiectasis', 0.03888186867209874], ['Acute dystonic reactions', 0.03628163383768959], ['Myasthenia gravis', 0.03628163383768959], ['Anemia', 0.03628163383768959], ['Scombroid food poisoning', 0.033521149754498075], ['PSVT', 0.019380369302157058], ['SLE', 0.016796664555835627]]",
+    "SEX": "F",
+    "PATHOLOGY": "Bronchospasm / acute asthma exacerbation",
+    "EVIDENCES": "['E_46', 'E_66', 'E_101', 'E_116', 'E_119', 'E_124', 'E_201', 'E_204_@_V_10', 'E_207', 'E_214', 'E_222', 'E_226']",
+    "INITIAL_EVIDENCE": "E_214"
+  },
+  {
+    "AGE": "16",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.2730680111961229], ['Bronchitis', 0.22515306292840062], ['Acute laryngitis', 0.17758782453596977], ['URTI', 0.176765376282352], ['Tuberculosis', 0.14742572505715465]]",
+    "SEX": "F",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_45', 'E_48', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_148', 'E_55_@_V_163', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_2', 'E_79', 'E_181', 'E_201', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_45"
+  },
+  {
+    "AGE": "26",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Guillain-Barré syndrome', 0.1701186156245057], ['Panic attack', 0.12557160248933974], ['Myasthenia gravis', 0.12027562482143216], ['Pulmonary embolism', 0.09883938552055062], ['Acute pulmonary edema', 0.0925832606024387], ['Atrial fibrillation', 0.08083360412668723], ['Acute dystonic reactions', 0.0595948549132363], ['Anemia', 0.0595948549132363], ['Anaphylaxis', 0.0595948549132363], ['Scombroid food poisoning', 0.037697146194120165], ['PSVT', 0.031833469845759764], ['SLE', 0.02758957305256422], ['Possible NSTEMI / STEMI', 0.017936576491446452], ['Chagas', 0.017936576491446452]]",
+    "SEX": "M",
+    "PATHOLOGY": "Guillain-Barré syndrome",
+    "EVIDENCES": "['E_0', 'E_66', 'E_83', 'E_84', 'E_93', 'E_157', 'E_176', 'E_177', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_83"
+  },
+  {
+    "AGE": "108",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.20764018364374562], ['Pancreatic neoplasm', 0.1452494370726446], ['Localized edema', 0.13948655219823447], ['GERD', 0.12355919380160217], ['Larygospasm', 0.11990641796890054], ['Inguinal hernia', 0.11956392136235208], ['Epiglottitis', 0.07229714697626027], ['Chagas', 0.07229714697626027]]",
+    "SEX": "M",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_42', 'E_51', 'E_53', 'E_54_@_V_182', 'E_54_@_V_192', 'E_55_@_V_87', 'E_55_@_V_103', 'E_55_@_V_104', 'E_55_@_V_153', 'E_55_@_V_187', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_2', 'E_59_@_3', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_32', 'E_133_@_V_33', 'E_133_@_V_34', 'E_134_@_1', 'E_135_@_V_12', 'E_136_@_10', 'E_151', 'E_152_@_V_89', 'E_152_@_V_108', 'E_152_@_V_109', 'E_152_@_V_122', 'E_194', 'E_204_@_V_10', 'E_214']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "26",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Epiglottitis', 0.1425007357166615], ['HIV (initial infection)', 0.1010578705681432], ['Myasthenia gravis', 0.10047058015268498], ['Acute laryngitis', 0.09432559571301041], ['Larygospasm', 0.07928398645932802], ['Acute pulmonary edema', 0.07426563754221219], ['Atrial fibrillation', 0.06484065376657402], ['Chagas', 0.05953178963120072], ['Guillain-Barré syndrome', 0.04780399680858238], ['Acute dystonic reactions', 0.04780399680858238], ['Myocarditis', 0.04780399680858238], ['Pulmonary embolism', 0.03023875566070276], ['Scombroid food poisoning', 0.03023875566070276], ['PSVT', 0.025535209258053103], ['SLE', 0.022130968589068555], ['Anaphylaxis', 0.017503532831765], ['Viral pharyngitis', 0.014663938024145876]]",
+    "SEX": "M",
+    "PATHOLOGY": "Epiglottitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_179', 'E_54_@_V_192', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_26', 'E_55_@_V_137', 'E_55_@_V_148', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_4', 'E_62', 'E_65', 'E_66', 'E_69', 'E_78', 'E_91', 'E_104', 'E_190', 'E_194', 'E_204_@_V_10', 'E_209', 'E_212']",
+    "INITIAL_EVIDENCE": "E_65"
+  },
+  {
+    "AGE": "48",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Possible NSTEMI / STEMI', 0.4810411203362705], ['Anemia', 0.25987210114376136], ['Pericarditis', 0.14837237025707475], ['Scombroid food poisoning', 0.11071440826289333]]",
+    "SEX": "F",
+    "PATHOLOGY": "Possible NSTEMI / STEMI",
+    "EVIDENCES": "['E_2', 'E_53', 'E_54_@_V_154', 'E_54_@_V_183', 'E_54_@_V_193', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_101', 'E_55_@_V_160', 'E_55_@_V_197', 'E_56_@_9', 'E_57_@_V_30', 'E_57_@_V_31', 'E_57_@_V_163', 'E_57_@_V_194', 'E_57_@_V_195', 'E_58_@_2', 'E_59_@_5', 'E_69', 'E_71', 'E_79', 'E_89', 'E_105', 'E_108', 'E_148', 'E_161', 'E_191', 'E_204_@_V_10', 'E_225']",
+    "INITIAL_EVIDENCE": "E_148"
+  },
+  {
+    "AGE": "27",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.3558818203468808], ['Atrial fibrillation', 0.24081012645291197], ['Cluster headache', 0.15166005135163976], ['HIV (initial infection)', 0.1500847262178585], ['PSVT', 0.10156327563070888]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anemia",
+    "EVIDENCES": "['E_24', 'E_26', 'E_53', 'E_54_@_V_161', 'E_55_@_V_25', 'E_55_@_V_167', 'E_56_@_1', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_4', 'E_76', 'E_82', 'E_88', 'E_89', 'E_140', 'E_145', 'E_154', 'E_167', 'E_179', 'E_204_@_V_1', 'E_208']",
+    "INITIAL_EVIDENCE": "E_82"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.14293828790858673], ['Influenza', 0.1415279677883283], ['HIV (initial infection)', 0.11405407851980554], ['Bronchitis', 0.10238952945518504], ['Chagas', 0.0862127983742493], ['Chronic rhinosinusitis', 0.0801561581567793], ['Tuberculosis', 0.07837642027836388], ['Pneumonia', 0.06951738540176503], ['Acute rhinosinusitis', 0.0693213165567821], ['Scombroid food poisoning', 0.055921311869365116], ['Anemia', 0.05277847213492825], ['Anaphylaxis', 0.006806273555861788]]",
+    "SEX": "F",
+    "PATHOLOGY": "Influenza",
+    "EVIDENCES": "['E_53', 'E_54_@_V_161', 'E_54_@_V_183', 'E_55_@_V_25', 'E_55_@_V_53', 'E_55_@_V_54', 'E_55_@_V_89', 'E_55_@_V_124', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_5', 'E_59_@_0', 'E_79', 'E_88', 'E_91', 'E_97', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_53', 'E_133_@_V_54', 'E_133_@_V_89', 'E_134_@_2', 'E_135_@_V_12', 'E_136_@_2', 'E_144', 'E_161', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "33",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pulmonary embolism', 0.2511467687510298], ['Anaphylaxis', 0.1907130910467891], ['Localized edema', 0.18629497672813364], ['Possible NSTEMI / STEMI', 0.1325728422576669], ['Unstable angina', 0.12120633737044166], ['Chagas', 0.06107868403665849], ['Stable angina', 0.056987299809280585]]",
+    "SEX": "M",
+    "PATHOLOGY": "Pulmonary embolism",
+    "EVIDENCES": "['E_34', 'E_53', 'E_54_@_V_179', 'E_55_@_V_55', 'E_55_@_V_56', 'E_55_@_V_127', 'E_55_@_V_128', 'E_55_@_V_170', 'E_56_@_3', 'E_57_@_V_55', 'E_57_@_V_56', 'E_57_@_V_127', 'E_57_@_V_159', 'E_57_@_V_171', 'E_58_@_6', 'E_59_@_0', 'E_109', 'E_110', 'E_151', 'E_152_@_V_23', 'E_152_@_V_120', 'E_159', 'E_196', 'E_204_@_V_4', 'E_220']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "60",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.07759863339218245], ['Pneumonia', 0.07289059062949316], ['Bronchiectasis', 0.06836742440036554], ['Possible NSTEMI / STEMI', 0.06131877033355648], ['Panic attack', 0.05903467759948971], ['Acute COPD exacerbation / infection', 0.05803543735521759], ['GERD', 0.0567921170512782], ['Unstable angina', 0.05488416445263282], ['Pericarditis', 0.05471240050232219], ['Stable angina', 0.04544248220609182], ['Spontaneous pneumothorax', 0.04167835578912877], ['Guillain-Barré syndrome', 0.04153707574143766], ['Bronchospasm / acute asthma exacerbation', 0.04030868873244402], ['Atrial fibrillation', 0.0396754185722046], ['Boerhaave', 0.03933482000722009], ['Myocarditis', 0.03860330451566107], ['Spontaneous rib fracture', 0.03579543631459151], ['Acute dystonic reactions', 0.02925083990720921], ['Pulmonary neoplasm', 0.02841888257310199], ['Sarcoidosis', 0.02395402369448989], ['PSVT', 0.015624767129728786], ['Pulmonary embolism', 0.009225012361308405], ['URTI', 0.007516676738843884]]",
+    "SEX": "M",
+    "PATHOLOGY": "Bronchitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_29', 'E_55_@_V_56', 'E_55_@_V_171', 'E_56_@_2', 'E_57_@_V_123', 'E_58_@_2', 'E_59_@_5', 'E_66', 'E_77', 'E_97', 'E_123', 'E_201', 'E_204_@_V_10', 'E_219']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "45",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.07810891691098253], ['Panic attack', 0.0653843132258591], ['Possible NSTEMI / STEMI', 0.06394482685580338], ['Bronchospasm / acute asthma exacerbation', 0.062245938722339716], ['Pulmonary embolism', 0.058816843384661616], ['Acute pulmonary edema', 0.05772897723184611], ['Unstable angina', 0.05728914389133936], ['Boerhaave', 0.054854630881203875], ['GERD', 0.05060163244600661], ['Anemia', 0.04923588593624969], ['Pericarditis', 0.04832114300279115], ['Inguinal hernia', 0.047228889334396396], ['PSVT', 0.040908538284287636], ['Stable angina', 0.039172735238385964], ['Guillain-Barré syndrome', 0.03849220406785009], ['Atrial fibrillation', 0.03676701551320642], ['Acute COPD exacerbation / infection', 0.034330789395039155], ['Chagas', 0.03138726952106193], ['SLE', 0.030967086821122276], ['Acute dystonic reactions', 0.027106609667783513], ['Myasthenia gravis', 0.027106609667783513]]",
+    "SEX": "M",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_12', 'E_42', 'E_53', 'E_54_@_V_179', 'E_54_@_V_182', 'E_54_@_V_192', 'E_55_@_V_88', 'E_55_@_V_103', 'E_55_@_V_197', 'E_56_@_9', 'E_57_@_V_123', 'E_58_@_1', 'E_59_@_3', 'E_66', 'E_82', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_5', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_32', 'E_133_@_V_34', 'E_134_@_2', 'E_135_@_V_12', 'E_136_@_8', 'E_148', 'E_151', 'E_152_@_V_89', 'E_152_@_V_108', 'E_152_@_V_122', 'E_204_@_V_10', 'E_214']",
+    "INITIAL_EVIDENCE": "E_151"
+  },
+  {
+    "AGE": "45",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pancreatic neoplasm', 0.24023281608000202], ['Possible NSTEMI / STEMI', 0.16974948691964722], ['Scombroid food poisoning', 0.1409279615909745], ['Unstable angina', 0.12470094379597577], ['Stable angina', 0.10702890935972274], ['Pericarditis', 0.08699504642176925], ['Anaphylaxis', 0.07607386053668344], ['GERD', 0.05429097529522484]]",
+    "SEX": "F",
+    "PATHOLOGY": "Pancreatic neoplasm",
+    "EVIDENCES": "['E_53', 'E_54_@_V_161', 'E_55_@_V_104', 'E_55_@_V_197', 'E_56_@_2', 'E_57_@_V_123', 'E_58_@_0', 'E_59_@_3', 'E_69', 'E_70', 'E_129', 'E_130_@_V_107', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_197', 'E_134_@_1', 'E_135_@_V_12', 'E_136_@_4', 'E_162', 'E_188', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_162"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Unstable angina', 0.08975076244466819], ['Stable angina', 0.08421396419714419], ['Possible NSTEMI / STEMI', 0.07563065235581846], ['Myocarditis', 0.06516172356451086], ['Atrial fibrillation', 0.06357328669784415], ['Panic attack', 0.06132442951676828], ['Anemia', 0.059961927121105936], ['GERD', 0.058034988638855235], ['Acute pulmonary edema', 0.057991982555948854], ['Guillain-Barré syndrome', 0.05480869414519037], ['Pancreatic neoplasm', 0.05119375416322648], ['Anaphylaxis', 0.04812083298839952], ['SLE', 0.04409374914345465], ['Acute dystonic reactions', 0.03859685135140111], ['Myasthenia gravis', 0.03859685135140111], ['Chagas', 0.03230612640793664], ['Sarcoidosis', 0.03160763570335292], ['Scombroid food poisoning', 0.024414710802548353], ['PSVT', 0.02061707685042464], ['Pulmonary embolism', 0.0]]",
+    "SEX": "F",
+    "PATHOLOGY": "Stable angina",
+    "EVIDENCES": "['E_53', 'E_54_@_V_154', 'E_54_@_V_183', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_56', 'E_55_@_V_101', 'E_55_@_V_197', 'E_56_@_6', 'E_57_@_V_30', 'E_57_@_V_31', 'E_57_@_V_33', 'E_57_@_V_39', 'E_57_@_V_163', 'E_58_@_8', 'E_59_@_8', 'E_66', 'E_69', 'E_71', 'E_78', 'E_79', 'E_89', 'E_104', 'E_204_@_V_10', 'E_218', 'E_225']",
+    "INITIAL_EVIDENCE": "E_218"
+  },
+  {
+    "AGE": "56",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Localized edema', 0.4677873667082327], ['Pulmonary embolism', 0.3253029298008516], ['Chagas', 0.12926248339862748], ['Anaphylaxis', 0.07482285803921773], ['SLE', 0.0028243620530706125]]",
+    "SEX": "F",
+    "PATHOLOGY": "Localized edema",
+    "EVIDENCES": "['E_22', 'E_53', 'E_54_@_V_161', 'E_54_@_V_180', 'E_54_@_V_183', 'E_54_@_V_192', 'E_55_@_V_35', 'E_55_@_V_51', 'E_55_@_V_73', 'E_55_@_V_149', 'E_55_@_V_150', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_5', 'E_59_@_4', 'E_96', 'E_126', 'E_137', 'E_151', 'E_152_@_V_43', 'E_152_@_V_52', 'E_152_@_V_73', 'E_152_@_V_149', 'E_152_@_V_150', 'E_158', 'E_186', 'E_197', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_96"
+  },
+  {
+    "AGE": "14",
+    "DIFFERENTIAL_DIAGNOSIS": "[['GERD', 0.3049538629522387], ['Bronchitis', 0.2412505718344934], ['Boerhaave', 0.19477860850497394], ['Spontaneous rib fracture', 0.1605235714918421], ['Tuberculosis', 0.0984933852164518]]",
+    "SEX": "F",
+    "PATHOLOGY": "GERD",
+    "EVIDENCES": "['E_53', 'E_54_@_V_112', 'E_54_@_V_180', 'E_54_@_V_181', 'E_54_@_V_193', 'E_55_@_V_29', 'E_55_@_V_103', 'E_55_@_V_104', 'E_55_@_V_197', 'E_56_@_5', 'E_57_@_V_29', 'E_57_@_V_101', 'E_58_@_4', 'E_59_@_1', 'E_70', 'E_78', 'E_79', 'E_98', 'E_124', 'E_167', 'E_173', 'E_201', 'E_204_@_V_10', 'E_210', 'E_215', 'E_217']",
+    "INITIAL_EVIDENCE": "E_215"
+  },
+  {
+    "AGE": "26",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pericarditis', 0.18527858159069144], ['Possible NSTEMI / STEMI', 0.14248877197467452], ['Pulmonary embolism', 0.13724990852529245], ['PSVT', 0.12036472164378148], ['Unstable angina', 0.09355570830000998], ['Spontaneous pneumothorax', 0.07993102802228487], ['Stable angina', 0.07456943485973887], ['Pancreatic neoplasm', 0.07375591757512305], ['Scombroid food poisoning', 0.05162852273553063], ['Panic attack', 0.04117740477287261]]",
+    "SEX": "F",
+    "PATHOLOGY": "Pericarditis",
+    "EVIDENCES": "['E_3', 'E_53', 'E_54_@_V_192', 'E_55_@_V_29', 'E_55_@_V_160', 'E_55_@_V_197', 'E_56_@_9', 'E_57_@_V_39', 'E_57_@_V_171', 'E_58_@_5', 'E_59_@_3', 'E_155', 'E_204_@_V_10', 'E_220']",
+    "INITIAL_EVIDENCE": "E_155"
+  },
+  {
+    "AGE": "84",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.2512456205562798], ['Viral pharyngitis', 0.1754495621255365], ['Chronic rhinosinusitis', 0.1662925056002087], ['Cluster headache', 0.12884263128407983], ['Chagas', 0.10064074360608785], ['Anemia', 0.10064074360608785], ['Acute rhinosinusitis', 0.07688819322171954]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_32', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_122', 'E_55_@_V_125', 'E_56_@_8', 'E_57_@_V_25', 'E_57_@_V_122', 'E_57_@_V_166', 'E_57_@_V_167', 'E_58_@_3', 'E_59_@_6', 'E_103', 'E_116', 'E_120', 'E_124', 'E_125', 'E_181', 'E_182', 'E_201', 'E_204_@_V_10', 'E_209']",
+    "INITIAL_EVIDENCE": "E_182"
+  },
+  {
+    "AGE": "49",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.2076341645460744], ['Influenza', 0.20414709067237502], ['Bronchitis', 0.18581300641754006], ['Pneumonia', 0.14605528187217792], ['Tuberculosis', 0.12054321095023764], ['HIV (initial infection)', 0.07847147800031536], ['Chagas', 0.057335767541279566]]",
+    "SEX": "M",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_41', 'E_49', 'E_50', 'E_53', 'E_54_@_V_161', 'E_54_@_V_183', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_124', 'E_55_@_V_166', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_4', 'E_91', 'E_97', 'E_144', 'E_201', 'E_204_@_V_10', 'E_222']",
+    "INITIAL_EVIDENCE": "E_50"
+  },
+  {
+    "AGE": "44",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.31804770339852023], ['Pulmonary neoplasm', 0.2817547338803509], ['Tuberculosis', 0.2802171149174098], ['Pulmonary embolism', 0.11998044780371905]]",
+    "SEX": "F",
+    "PATHOLOGY": "Tuberculosis",
+    "EVIDENCES": "['E_2', 'E_44', 'E_45', 'E_61', 'E_162', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_162"
+  },
+  {
+    "AGE": "2",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Whooping cough', 0.41467144518644367], ['Bronchitis', 0.3944176020793164], ['Pneumonia', 0.1909109527342399]]",
+    "SEX": "F",
+    "PATHOLOGY": "Whooping cough",
+    "EVIDENCES": "['E_40', 'E_70', 'E_166', 'E_203', 'E_204_@_V_10', 'E_209']",
+    "INITIAL_EVIDENCE": "E_166"
+  },
+  {
+    "AGE": "53",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Cluster headache', 1.0]]",
+    "SEX": "F",
+    "PATHOLOGY": "Cluster headache",
+    "EVIDENCES": "['E_25', 'E_53', 'E_54_@_V_112', 'E_54_@_V_179', 'E_54_@_V_180', 'E_54_@_V_191', 'E_54_@_V_192', 'E_55_@_V_108', 'E_55_@_V_125', 'E_55_@_V_126', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_10', 'E_184', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.48857420995791473], ['GERD', 0.33925206976717276], ['Pancreatic neoplasm', 0.17217372027491243]]",
+    "SEX": "M",
+    "PATHOLOGY": "GERD",
+    "EVIDENCES": "['E_53', 'E_54_@_V_180', 'E_54_@_V_181', 'E_54_@_V_193', 'E_55_@_V_104', 'E_55_@_V_197', 'E_56_@_4', 'E_57_@_V_29', 'E_57_@_V_101', 'E_58_@_6', 'E_59_@_4', 'E_70', 'E_78', 'E_79', 'E_98', 'E_173', 'E_201', 'E_204_@_V_10', 'E_210']",
+    "INITIAL_EVIDENCE": "E_210"
+  },
+  {
+    "AGE": "63",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Myasthenia gravis', 1.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Myasthenia gravis",
+    "EVIDENCES": "['E_28', 'E_38', 'E_52', 'E_63', 'E_65', 'E_84', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_63"
+  },
+  {
+    "AGE": "38",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.16732381323191603], ['Localized edema', 0.11232708342885811], ['Inguinal hernia', 0.10397573413215197], ['HIV (initial infection)', 0.10218427119592131], ['Pancreatic neoplasm', 0.09981194019694861], ['GERD', 0.09273963502260643], ['Boerhaave', 0.08939076769082299], ['Anemia', 0.08267436726830002], ['PSVT', 0.07478619391623718], ['Chagas', 0.07478619391623718]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_12', 'E_42', 'E_51', 'E_53', 'E_54_@_V_179', 'E_54_@_V_182', 'E_54_@_V_192', 'E_55_@_V_87', 'E_55_@_V_88', 'E_55_@_V_103', 'E_55_@_V_187', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_2', 'E_59_@_5', 'E_82', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_32', 'E_133_@_V_33', 'E_134_@_2', 'E_135_@_V_12', 'E_136_@_7', 'E_148', 'E_151', 'E_152_@_V_89', 'E_152_@_V_108', 'E_152_@_V_109', 'E_159', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_129"
+  },
+  {
+    "AGE": "9",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Panic attack', 0.2716271625050167], ['GERD', 0.2684700312486608], ['Myocarditis', 0.2488702939231923], ['Sarcoidosis', 0.11906389480437433], ['Scombroid food poisoning', 0.09196861751875593]]",
+    "SEX": "M",
+    "PATHOLOGY": "Myocarditis",
+    "EVIDENCES": "['E_0', 'E_53', 'E_54_@_V_179', 'E_55_@_V_29', 'E_55_@_V_56', 'E_55_@_V_160', 'E_56_@_7', 'E_57_@_V_123', 'E_58_@_5', 'E_59_@_0', 'E_66', 'E_204_@_V_10', 'E_217', 'E_218']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "35",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Atrial fibrillation', 0.13647424668995478], ['PSVT', 0.11916080452269509], ['Acute pulmonary edema', 0.11092661160544584], ['Myocarditis', 0.09155006128513879], ['Pulmonary embolism', 0.08373914386297893], ['Panic attack', 0.08267726311050758], ['Anemia', 0.07843880188105093], ['Guillain-Barré syndrome', 0.07169763394579855], ['Scombroid food poisoning', 0.05049021807238215], ['Acute dystonic reactions', 0.05049021807238215], ['Myasthenia gravis', 0.05049021807238215], ['Anaphylaxis', 0.05049021807238215], ['SLE', 0.023374560806901014]]",
+    "SEX": "F",
+    "PATHOLOGY": "Atrial fibrillation",
+    "EVIDENCES": "['E_19', 'E_22', 'E_66', 'E_69', 'E_70', 'E_76', 'E_104', 'E_105', 'E_155', 'E_164', 'E_204_@_V_10', 'E_218']",
+    "INITIAL_EVIDENCE": "E_76"
+  },
+  {
+    "AGE": "41",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Allergic sinusitis', 0.34773403514099593], ['Bronchitis', 0.25111465870017935], ['URTI', 0.20109384771167343], ['Influenza', 0.2000574584471513]]",
+    "SEX": "F",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_86', 'E_87', 'E_169', 'E_170', 'E_181', 'E_201', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "13",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.09974247925835023], ['Bronchospasm / acute asthma exacerbation', 0.08674573465507468], ['Boerhaave', 0.07612484170729907], ['Scombroid food poisoning', 0.07497324466725575], ['Panic attack', 0.06899926825504113], ['Anemia', 0.0686149680541423], ['GERD', 0.06774028880090369], ['Inguinal hernia', 0.05848586365345201], ['PSVT', 0.05701000386491387], ['Guillain-Barré syndrome', 0.053642608480099115], ['Chagas', 0.053182677633734625], ['Pericarditis', 0.05167345815871083], ['Atrial fibrillation', 0.05123839140726089], ['Acute dystonic reactions', 0.03777568172164673], ['Myasthenia gravis', 0.03777568172164673], ['Pulmonary embolism', 0.02898590923535917], ['HIV (initial infection)', 0.027288898725109315]]",
+    "SEX": "M",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_12', 'E_51', 'E_53', 'E_54_@_V_182', 'E_55_@_V_85', 'E_55_@_V_87', 'E_55_@_V_88', 'E_55_@_V_153', 'E_55_@_V_197', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_0', 'E_59_@_7', 'E_66', 'E_82', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_1', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_33', 'E_133_@_V_34', 'E_133_@_V_35', 'E_134_@_3', 'E_135_@_V_12', 'E_136_@_8', 'E_148', 'E_151', 'E_152_@_V_108', 'E_152_@_V_109', 'E_152_@_V_122', 'E_204_@_V_10', 'E_214', 'E_226']",
+    "INITIAL_EVIDENCE": "E_151"
+  },
+  {
+    "AGE": "22",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute rhinosinusitis', 0.365562084664272], ['Cluster headache', 0.29977350582507345], ['Anemia', 0.18390292526202018], ['Acute laryngitis', 0.1507614842486344]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_32', 'E_55_@_V_89', 'E_55_@_V_109', 'E_55_@_V_125', 'E_55_@_V_126', 'E_56_@_7', 'E_57_@_V_89', 'E_57_@_V_122', 'E_57_@_V_166', 'E_57_@_V_167', 'E_58_@_3', 'E_59_@_1', 'E_79', 'E_116', 'E_120', 'E_121', 'E_124', 'E_125', 'E_182', 'E_204_@_V_10', 'E_209']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "48",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.14009320803768674], ['Influenza', 0.12788262356717647], ['Viral pharyngitis', 0.12066341716721167], ['HIV (initial infection)', 0.10895755848007652], ['Bronchitis', 0.09092934526978598], ['Acute laryngitis', 0.0879885083212348], ['Chronic rhinosinusitis', 0.07802543353032516], ['Tuberculosis', 0.07594312416051015], ['Acute rhinosinusitis', 0.06946486275254457], ['Chagas', 0.05088603801921718], ['Scombroid food poisoning', 0.04916588069423062]]",
+    "SEX": "M",
+    "PATHOLOGY": "Influenza",
+    "EVIDENCES": "['E_50', 'E_53', 'E_54_@_V_161', 'E_54_@_V_183', 'E_55_@_V_26', 'E_55_@_V_53', 'E_55_@_V_62', 'E_55_@_V_89', 'E_55_@_V_148', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_0', 'E_91', 'E_94', 'E_97', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_2', 'E_133_@_V_53', 'E_134_@_5', 'E_135_@_V_12', 'E_136_@_4', 'E_181', 'E_201', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "19",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pulmonary embolism', 0.09442413324029882], ['Spontaneous pneumothorax', 0.0924021457322562], ['Possible NSTEMI / STEMI', 0.08818625739564984], ['Unstable angina', 0.06912832357733652], ['Panic attack', 0.06683861698489237], ['Pericarditis', 0.06544249643311376], ['Stable angina', 0.06535360071189511], ['GERD', 0.0632533952279878], ['Guillain-Barré syndrome', 0.05973699786984248], ['Myocarditis', 0.05881066334191316], ['Atrial fibrillation', 0.0570596353360638], ['Acute dystonic reactions', 0.042067413991902294], ['Myasthenia gravis', 0.042067413991902294], ['Anemia', 0.042067413991902294], ['Sarcoidosis', 0.03444974006642414], ['Pancreatic neoplasm', 0.03210171240486818], ['Scombroid food poisoning', 0.026610039701751142]]",
+    "SEX": "M",
+    "PATHOLOGY": "Pericarditis",
+    "EVIDENCES": "['E_0', 'E_3', 'E_53', 'E_54_@_V_179', 'E_55_@_V_29', 'E_55_@_V_101', 'E_55_@_V_159', 'E_55_@_V_160', 'E_55_@_V_197', 'E_56_@_5', 'E_57_@_V_39', 'E_57_@_V_170', 'E_57_@_V_171', 'E_58_@_2', 'E_59_@_8', 'E_66', 'E_204_@_V_10', 'E_220']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "42",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Cluster headache', 0.6850030416248103], ['Anemia', 0.31499695837518965]]",
+    "SEX": "M",
+    "PATHOLOGY": "Cluster headache",
+    "EVIDENCES": "['E_25', 'E_53', 'E_54_@_V_112', 'E_54_@_V_179', 'E_54_@_V_180', 'E_54_@_V_191', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_125', 'E_55_@_V_126', 'E_56_@_9', 'E_57_@_V_123', 'E_58_@_8', 'E_59_@_9', 'E_78', 'E_181', 'E_184', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "44",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Possible NSTEMI / STEMI', 0.08150509814229176], ['Spontaneous pneumothorax', 0.06947548907198012], ['Boerhaave', 0.058903421678518024], ['Pericarditis', 0.05733341296423173], ['Pulmonary neoplasm', 0.05349313917028905], ['Anemia', 0.05114620036466732], ['Unstable angina', 0.050191732226285576], ['GERD', 0.04950256437037167], ['Pulmonary embolism', 0.0490967481906785], ['Anaphylaxis', 0.048685809833157886], ['Guillain-Barré syndrome', 0.046750606377508504], ['Atrial fibrillation', 0.04465528310365906], ['Pancreatic neoplasm', 0.04366714236124455], ['Chagas', 0.042650521371868214], ['Panic attack', 0.04052676733083559], ['SLE', 0.037610994789503596], ['Acute dystonic reactions', 0.03292226229949148], ['Myasthenia gravis', 0.03292226229949148], ['Acute pulmonary edema', 0.030601404374794396], ['Scombroid food poisoning', 0.030417375626885405], ['HIV (initial infection)', 0.030355852555509072], ['PSVT', 0.017585911496736994]]",
+    "SEX": "M",
+    "PATHOLOGY": "Possible NSTEMI / STEMI",
+    "EVIDENCES": "['E_50', 'E_53', 'E_54_@_V_154', 'E_54_@_V_183', 'E_54_@_V_192', 'E_54_@_V_193', 'E_54_@_V_196', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_101', 'E_55_@_V_159', 'E_55_@_V_197', 'E_56_@_5', 'E_57_@_V_30', 'E_57_@_V_33', 'E_57_@_V_163', 'E_57_@_V_174', 'E_57_@_V_195', 'E_58_@_8', 'E_59_@_8', 'E_66', 'E_69', 'E_70', 'E_71', 'E_79', 'E_89', 'E_104', 'E_105', 'E_148', 'E_161', 'E_191', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_161"
+  },
+  {
+    "AGE": "19",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.16761610278506853], ['URTI', 0.1663656701390628], ['Bronchitis', 0.14843833499476722], ['Acute laryngitis', 0.11138352791740717], ['Influenza', 0.10787600671707157], ['Epiglottitis', 0.08293007809827958], ['Chronic rhinosinusitis', 0.06920049558302577], ['Tuberculosis', 0.06820947795784792], ['Acute rhinosinusitis', 0.04474280459810638], ['Chagas', 0.033237501209362974]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_192', 'E_55_@_V_32', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_125', 'E_56_@_8', 'E_57_@_V_25', 'E_57_@_V_89', 'E_57_@_V_122', 'E_57_@_V_167', 'E_58_@_6', 'E_59_@_6', 'E_79', 'E_91', 'E_118', 'E_120', 'E_121', 'E_181', 'E_201', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Possible NSTEMI / STEMI', 0.18110200125088044], ['SLE', 0.17277284561279316], ['Acute dystonic reactions', 0.09426967796336058], ['Anemia', 0.09426967796336058], ['Anaphylaxis', 0.09426967796336058], ['Myocarditis', 0.08849725078890153], ['Sarcoidosis', 0.07719908579615611], ['Pericarditis', 0.062443445241701825], ['Scombroid food poisoning', 0.05963095030655304], ['Chagas', 0.05244630910814157], ['Stable angina', 0.023099078004790587]]",
+    "SEX": "F",
+    "PATHOLOGY": "Possible NSTEMI / STEMI",
+    "EVIDENCES": "['E_53', 'E_54_@_V_183', 'E_54_@_V_192', 'E_54_@_V_193', 'E_54_@_V_196', 'E_55_@_V_31', 'E_55_@_V_39', 'E_55_@_V_101', 'E_55_@_V_159', 'E_55_@_V_160', 'E_56_@_5', 'E_57_@_V_30', 'E_57_@_V_33', 'E_57_@_V_39', 'E_57_@_V_194', 'E_57_@_V_195', 'E_58_@_4', 'E_59_@_9', 'E_66', 'E_69', 'E_71', 'E_105', 'E_161', 'E_204_@_V_10', 'E_225']",
+    "INITIAL_EVIDENCE": "E_161"
+  },
+  {
+    "AGE": "30",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Possible NSTEMI / STEMI', 0.3794946112179147], ['Unstable angina', 0.29844024630981103], ['Anemia', 0.20501378743046794], ['Pericarditis', 0.1170513550418063]]",
+    "SEX": "M",
+    "PATHOLOGY": "Unstable angina",
+    "EVIDENCES": "['E_14', 'E_53', 'E_54_@_V_183', 'E_54_@_V_198', 'E_55_@_V_29', 'E_55_@_V_101', 'E_55_@_V_159', 'E_55_@_V_160', 'E_55_@_V_197', 'E_56_@_10', 'E_57_@_V_30', 'E_57_@_V_33', 'E_57_@_V_177', 'E_57_@_V_194', 'E_57_@_V_195', 'E_58_@_5', 'E_59_@_8', 'E_70', 'E_71', 'E_78', 'E_79', 'E_89', 'E_105', 'E_143', 'E_148', 'E_204_@_V_10', 'E_225']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "6",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.40333761723810524], ['Atrial fibrillation', 0.29176560520618794], ['HIV (initial infection)', 0.18184268918492147], ['PSVT', 0.12305408837078546]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anemia",
+    "EVIDENCES": "['E_7', 'E_26', 'E_53', 'E_54_@_V_180', 'E_54_@_V_182', 'E_54_@_V_198', 'E_55_@_V_62', 'E_55_@_V_89', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_3', 'E_76', 'E_82', 'E_88', 'E_89', 'E_113', 'E_140', 'E_154', 'E_167', 'E_179', 'E_204_@_V_4', 'E_208']",
+    "INITIAL_EVIDENCE": "E_140"
+  },
+  {
+    "AGE": "5",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.35533599843654307], ['Bronchitis', 0.29937057414750196], ['URTI', 0.23503278835640423], ['Pneumonia', 0.11026063905955068]]",
+    "SEX": "F",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_148', 'E_55_@_V_163', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_1', 'E_181', 'E_201', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "58",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute rhinosinusitis', 0.20668495943619422], ['Bronchitis', 0.18580179686556195], ['Chronic rhinosinusitis', 0.13374273717760826], ['Acute laryngitis', 0.13203284499821355], ['Viral pharyngitis', 0.11859344221038821], ['Cluster headache', 0.0870899360608829], ['Chagas', 0.0680271416255755], ['Anemia', 0.0680271416255755]]",
+    "SEX": "M",
+    "PATHOLOGY": "Chronic rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_32', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_122', 'E_56_@_3', 'E_57_@_V_25', 'E_57_@_V_89', 'E_57_@_V_122', 'E_58_@_2', 'E_59_@_0', 'E_116', 'E_120', 'E_124', 'E_182', 'E_201', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "25",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute dystonic reactions', 0.17316016236552662], ['Myasthenia gravis', 0.13210907817566278], ['Pulmonary embolism', 0.10515238302755055], ['Acute pulmonary edema', 0.0984966714385633], ['Guillain-Barré syndrome', 0.09003169508365119], ['Atrial fibrillation', 0.08599654943078865], ['Myocarditis', 0.08492757266561513], ['Anemia', 0.06340125423994053], ['Anaphylaxis', 0.06340125423994053], ['Scombroid food poisoning', 0.04010491096006979], ['PSVT', 0.033866714131092296], ['SLE', 0.029351754241598593]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute dystonic reactions",
+    "EVIDENCES": "['E_15', 'E_62', 'E_66', 'E_128', 'E_147', 'E_172', 'E_180', 'E_192', 'E_193', 'E_204_@_V_10', 'E_205']",
+    "INITIAL_EVIDENCE": "E_193"
+  },
+  {
+    "AGE": "17",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Atrial fibrillation', 0.1535016664219288], ['PSVT', 0.1340280859579769], ['Myocarditis', 0.10297244578476866], ['Pulmonary embolism', 0.09418698721169805], ['Panic attack', 0.09299261927049936], ['Anemia', 0.08822533989313518], ['Guillain-Barré syndrome', 0.08064309975047919], ['Scombroid food poisoning', 0.056789707949255974], ['Acute dystonic reactions', 0.056789707949255974], ['Myasthenia gravis', 0.056789707949255974], ['Anaphylaxis', 0.056789707949255974], ['SLE', 0.026290923912490136]]",
+    "SEX": "F",
+    "PATHOLOGY": "Atrial fibrillation",
+    "EVIDENCES": "['E_19', 'E_31', 'E_66', 'E_70', 'E_76', 'E_104', 'E_105', 'E_155', 'E_164', 'E_204_@_V_10', 'E_218']",
+    "INITIAL_EVIDENCE": "E_76"
+  },
+  {
+    "AGE": "15",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Inguinal hernia', 0.48578078214145093], ['Anaphylaxis', 0.3231439918729511], ['Scombroid food poisoning', 0.19107522598559806]]",
+    "SEX": "M",
+    "PATHOLOGY": "Inguinal hernia",
+    "EVIDENCES": "['E_30', 'E_53', 'E_54_@_V_183', 'E_55_@_V_88', 'E_55_@_V_99', 'E_55_@_V_100', 'E_56_@_1', 'E_57_@_V_123', 'E_58_@_0', 'E_59_@_6', 'E_129', 'E_130_@_V_138', 'E_131_@_V_10', 'E_132_@_7', 'E_133_@_V_87', 'E_133_@_V_88', 'E_134_@_5', 'E_135_@_V_12', 'E_136_@_0', 'E_150', 'E_160', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_129"
+  },
+  {
+    "AGE": "43",
+    "DIFFERENTIAL_DIAGNOSIS": "[['HIV (initial infection)', 0.36001718615885453], ['Chagas', 0.243291933176565], ['Influenza', 0.18178790528084676], ['Possible NSTEMI / STEMI', 0.09671944106960895], ['Scombroid food poisoning', 0.05554630439136984], ['Anemia', 0.0448230796053911], ['Sarcoidosis', 0.01781415031736398]]",
+    "SEX": "M",
+    "PATHOLOGY": "HIV (initial infection)",
+    "EVIDENCES": "['E_9', 'E_27', 'E_50', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_54_@_V_184', 'E_55_@_V_89', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_8', 'E_59_@_4', 'E_61', 'E_88', 'E_91', 'E_115', 'E_129', 'E_130_@_V_138', 'E_131_@_V_10', 'E_132_@_4', 'E_133_@_V_90', 'E_133_@_V_95', 'E_133_@_V_96', 'E_133_@_V_111', 'E_133_@_V_116', 'E_134_@_8', 'E_135_@_V_12', 'E_136_@_0', 'E_148', 'E_189', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_50"
+  },
+  {
+    "AGE": "57",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pulmonary neoplasm', 0.13789190222508743], ['Bronchitis', 0.13363302645881822], ['Pulmonary embolism', 0.09659952186768161], ['Acute pulmonary edema', 0.09048517106864264], ['Guillain-Barré syndrome', 0.08270871707908832], ['Bronchospasm / acute asthma exacerbation', 0.08026275015009895], ['Atrial fibrillation', 0.07900178120649999], ['Tuberculosis', 0.07663385584774031], ['Acute dystonic reactions', 0.0582443371139284], ['Myocarditis', 0.0582443371139284], ['Anaphylaxis', 0.0582443371139284], ['Pneumonia', 0.04805026275455746]]",
+    "SEX": "M",
+    "PATHOLOGY": "Tuberculosis",
+    "EVIDENCES": "['E_66', 'E_69', 'E_162', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "26",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Unstable angina', 0.27214451187370164], ['Stable angina', 0.24308360066622925], ['Possible NSTEMI / STEMI', 0.1993931130436432], ['Pericarditis', 0.12394821857815484], ['Atrial fibrillation', 0.09741082777591537], ['Spontaneous pneumothorax', 0.06401972806235554]]",
+    "SEX": "F",
+    "PATHOLOGY": "Stable angina",
+    "EVIDENCES": "['E_53', 'E_54_@_V_154', 'E_54_@_V_183', 'E_54_@_V_198', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_101', 'E_55_@_V_159', 'E_55_@_V_194', 'E_56_@_3', 'E_57_@_V_30', 'E_57_@_V_31', 'E_57_@_V_33', 'E_57_@_V_194', 'E_57_@_V_195', 'E_58_@_3', 'E_59_@_4', 'E_70', 'E_71', 'E_78', 'E_79', 'E_105', 'E_204_@_V_10', 'E_218', 'E_225']",
+    "INITIAL_EVIDENCE": "E_218"
+  },
+  {
+    "AGE": "10",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.23124117117670676], ['Acute laryngitis', 0.15357181887125446], ['Tuberculosis', 0.1468632290313601], ['Viral pharyngitis', 0.1379399999045597], ['Epiglottitis', 0.11434117028625398], ['Pneumonia', 0.0880253400853929], ['Influenza', 0.07263068442918287], ['Chagas', 0.05538658621528942]]",
+    "SEX": "M",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_48', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_163', 'E_56_@_3', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_2', 'E_79', 'E_91', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_91"
+  },
+  {
+    "AGE": "27",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute rhinosinusitis', 0.20668495943619422], ['Bronchitis', 0.18580179686556195], ['Chronic rhinosinusitis', 0.13374273717760826], ['Acute laryngitis', 0.13203284499821355], ['Viral pharyngitis', 0.11859344221038821], ['Cluster headache', 0.0870899360608829], ['Chagas', 0.0680271416255755], ['Anemia', 0.0680271416255755]]",
+    "SEX": "M",
+    "PATHOLOGY": "Chronic rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_54_@_V_192', 'E_55_@_V_32', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_122', 'E_56_@_5', 'E_57_@_V_167', 'E_58_@_6', 'E_59_@_3', 'E_120', 'E_121', 'E_125', 'E_182', 'E_201', 'E_204_@_V_4', 'E_226']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "50",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Allergic sinusitis', 1.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_124', 'E_169', 'E_170', 'E_181', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_169"
+  },
+  {
+    "AGE": "13",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.17266607800483447], ['Chronic rhinosinusitis', 0.1639752818659108], ['Acute rhinosinusitis', 0.1463693881967589], ['Bronchitis', 0.14547116851527164], ['Cluster headache', 0.12855786059261862], ['URTI', 0.12472619289725642], ['Chagas', 0.05911701496367459], ['Anemia', 0.05911701496367459]]",
+    "SEX": "M",
+    "PATHOLOGY": "Chronic rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_32', 'E_55_@_V_89', 'E_55_@_V_109', 'E_55_@_V_122', 'E_55_@_V_125', 'E_56_@_5', 'E_57_@_V_25', 'E_57_@_V_122', 'E_57_@_V_166', 'E_57_@_V_167', 'E_58_@_6', 'E_59_@_1', 'E_79', 'E_103', 'E_118', 'E_120', 'E_121', 'E_124', 'E_181', 'E_201', 'E_204_@_V_4', 'E_226']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "19",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pulmonary embolism', 0.07907026621225297], ['Pericarditis', 0.07862412666253416], ['Bronchitis', 0.07853066729419075], ['Spontaneous pneumothorax', 0.07737706464341351], ['Spontaneous rib fracture', 0.07596922760006736], ['Possible NSTEMI / STEMI', 0.07273068736316202], ['Pneumonia', 0.06401337141746394], ['Tuberculosis', 0.05217448272082434], ['Whooping cough', 0.052053875035326325], ['Guillain-Barré syndrome', 0.05002344381884512], ['Bronchospasm / acute asthma exacerbation', 0.04854408718539555], ['Atrial fibrillation', 0.04778143469439978], ['Myocarditis', 0.03884626396448606], ['Acute dystonic reactions', 0.03522702839893438], ['Myasthenia gravis', 0.03522702839893438], ['Anemia', 0.03522702839893438], ['Sarcoidosis', 0.028848028830330125], ['Scombroid food poisoning', 0.022283105504198587], ['PSVT', 0.01881703626807777], ['Stable angina', 0.008631745588228492]]",
+    "SEX": "M",
+    "PATHOLOGY": "Spontaneous rib fracture",
+    "EVIDENCES": "['E_53', 'E_54_@_V_112', 'E_55_@_V_56', 'E_55_@_V_159', 'E_55_@_V_160', 'E_56_@_6', 'E_57_@_V_170', 'E_57_@_V_171', 'E_58_@_10', 'E_59_@_9', 'E_66', 'E_153', 'E_203', 'E_204_@_V_10', 'E_216', 'E_220']",
+    "INITIAL_EVIDENCE": "E_216"
+  },
+  {
+    "AGE": "24",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.6900532817767514], ['Chagas', 0.3099467182232486]]",
+    "SEX": "M",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_41', 'E_48', 'E_49', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_55_@_V_89', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_0', 'E_91', 'E_97', 'E_181', 'E_204_@_V_10', 'E_222']",
+    "INITIAL_EVIDENCE": "E_91"
+  },
+  {
+    "AGE": "35",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute rhinosinusitis', 0.23923373358916486], ['Bronchitis', 0.2150618878750399], ['Chronic rhinosinusitis', 0.15480456073201132], ['Acute laryngitis', 0.1528253945109792], ['Viral pharyngitis', 0.1372695528333334], ['Cluster headache', 0.10080487045947141]]",
+    "SEX": "M",
+    "PATHOLOGY": "Chronic rhinosinusitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_54_@_V_192', 'E_55_@_V_32', 'E_55_@_V_108', 'E_55_@_V_109', 'E_55_@_V_122', 'E_55_@_V_125', 'E_56_@_4', 'E_57_@_V_89', 'E_57_@_V_122', 'E_57_@_V_166', 'E_57_@_V_167', 'E_58_@_3', 'E_59_@_2', 'E_79', 'E_118', 'E_120', 'E_121', 'E_182', 'E_201', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "64",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.30360183948762487], ['Possible NSTEMI / STEMI', 0.18238334710261359], ['Unstable angina', 0.17022274410390362], ['URTI', 0.10352425346795707], ['Acute laryngitis', 0.09424850234419374], ['Influenza', 0.08344844477992402], ['Stable angina', 0.06257086871378291]]",
+    "SEX": "F",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_45', 'E_48', 'E_53', 'E_54_@_V_181', 'E_55_@_V_21', 'E_55_@_V_148', 'E_55_@_V_163', 'E_56_@_9', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_0', 'E_91', 'E_181', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_91"
+  },
+  {
+    "AGE": "51",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.07661183021497003], ['Panic attack', 0.06393869484690141], ['Possible NSTEMI / STEMI', 0.061623316795622954], ['Bronchospasm / acute asthma exacerbation', 0.06019614359913574], ['Pulmonary embolism', 0.05687997037403961], ['Unstable angina', 0.056070265053884565], ['Acute pulmonary edema', 0.05604350406553493], ['GERD', 0.053048235842854306], ['Boerhaave', 0.05153782556260469], ['Pericarditis', 0.047696926133823765], ['Anemia', 0.04761451945113745], ['Larygospasm', 0.04347645454702167], ['Stable angina', 0.04138134084432854], ['PSVT', 0.03956139622178965], ['Guillain-Barré syndrome', 0.03722463330260538], ['Atrial fibrillation', 0.03555625621483814], ['Acute COPD exacerbation / infection', 0.033200256445868], ['Chagas', 0.030353668400803283], ['SLE', 0.02994732256262312], ['Acute dystonic reactions', 0.026213973177048492], ['Myasthenia gravis', 0.026213973177048492], ['Pancreatic neoplasm', 0.025609493165515876]]",
+    "SEX": "M",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_42', 'E_53', 'E_54_@_V_179', 'E_54_@_V_192', 'E_55_@_V_84', 'E_55_@_V_85', 'E_55_@_V_187', 'E_55_@_V_197', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_2', 'E_66', 'E_82', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_32', 'E_133_@_V_33', 'E_134_@_0', 'E_135_@_V_12', 'E_136_@_7', 'E_148', 'E_151', 'E_152_@_V_109', 'E_194', 'E_204_@_V_10', 'E_214']",
+    "INITIAL_EVIDENCE": "E_42"
+  },
+  {
+    "AGE": "26",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.24942915755352604], ['Viral pharyngitis', 0.17587589079958768], ['Tuberculosis', 0.14714292224957007], ['Possible NSTEMI / STEMI', 0.14487452470236728], ['Unstable angina', 0.13521486219742887], ['Pulmonary embolism', 0.09776005172302696], ['Stable angina', 0.04970259077449304]]",
+    "SEX": "M",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_45', 'E_48', 'E_49', 'E_53', 'E_54_@_V_161', 'E_54_@_V_181', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_137', 'E_55_@_V_148', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_2', 'E_79', 'E_201', 'E_204_@_V_10', 'E_227']",
+    "INITIAL_EVIDENCE": "E_45"
+  },
+  {
+    "AGE": "24",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.06262936749984306], ['Bronchiectasis', 0.05828856471833279], ['Pneumonia', 0.05721798778652162], ['Viral pharyngitis', 0.055583948592180125], ['Allergic sinusitis', 0.055528555461843335], ['Panic attack', 0.050331669739855936], ['Possible NSTEMI / STEMI', 0.04886731218397588], ['GERD', 0.048419711862318755], ['Unstable angina', 0.04679303337470474], ['Pericarditis', 0.0466465912025479], ['Myocarditis', 0.03941940693683762], ['Stable angina', 0.03874326242743915], ['Acute laryngitis', 0.03693640519560114], ['Spontaneous pneumothorax', 0.03553405090327409], ['Guillain-Barré syndrome', 0.03541359863707451], ['Atrial fibrillation', 0.03382639061594553], ['Boerhaave', 0.033536003758868546], ['Spontaneous rib fracture', 0.030518402946197155], ['Acute dystonic reactions', 0.024938623766377243], ['Myasthenia gravis', 0.024938623766377243], ['Anemia', 0.024938623766377243], ['URTI', 0.023959093271996086], ['Scombroid food poisoning', 0.023041171345359976], ['Sarcoidosis', 0.02042267457969772], ['Tuberculosis', 0.018660199966563075], ['PSVT', 0.013321333340227538], ['SLE', 0.011545392353662075]]",
+    "SEX": "F",
+    "PATHOLOGY": "Bronchitis",
+    "EVIDENCES": "['E_53', 'E_54_@_V_181', 'E_55_@_V_29', 'E_55_@_V_55', 'E_55_@_V_148', 'E_55_@_V_170', 'E_55_@_V_171', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_2', 'E_66', 'E_77', 'E_123', 'E_181', 'E_201', 'E_204_@_V_10', 'E_209', 'E_214']",
+    "INITIAL_EVIDENCE": "E_201"
+  },
+  {
+    "AGE": "14",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Myasthenia gravis', 0.2013577047365712], ['Guillain-Barré syndrome', 0.15780502279335415], ['Pulmonary embolism', 0.11032233969564217], ['Myocarditis', 0.10616029268136686], ['Acute dystonic reactions', 0.10333939120037042], ['Atrial fibrillation', 0.0902246840803485], ['Anemia', 0.06651846117035572], ['Anaphylaxis', 0.06651846117035572], ['Chagas', 0.05567692026134478], ['Scombroid food poisoning', 0.04207672221029042]]",
+    "SEX": "F",
+    "PATHOLOGY": "Myasthenia gravis",
+    "EVIDENCES": "['E_28', 'E_38', 'E_52', 'E_63', 'E_65', 'E_66', 'E_84', 'E_90', 'E_172', 'E_176', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_52"
+  },
+  {
+    "AGE": "28",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.49953396958005936], ['Atrial fibrillation', 0.352005405026696], ['PSVT', 0.14846062539324467]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anemia",
+    "EVIDENCES": "['E_26', 'E_53', 'E_54_@_V_161', 'E_54_@_V_180', 'E_54_@_V_182', 'E_54_@_V_198', 'E_55_@_V_25', 'E_55_@_V_62', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_1', 'E_76', 'E_82', 'E_89', 'E_145', 'E_146', 'E_154', 'E_167', 'E_179', 'E_204_@_V_6', 'E_208']",
+    "INITIAL_EVIDENCE": "E_179"
+  },
+  {
+    "AGE": "39",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Allergic sinusitis', 1.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_86', 'E_87', 'E_169', 'E_181', 'E_204_@_V_10', 'E_207', 'E_226']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "45",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Scombroid food poisoning', 1.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Scombroid food poisoning",
+    "EVIDENCES": "['E_92', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_6', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_31', 'E_133_@_V_33', 'E_133_@_V_34', 'E_134_@_0', 'E_135_@_V_12', 'E_136_@_6', 'E_187', 'E_204_@_V_10', 'E_214']",
+    "INITIAL_EVIDENCE": "E_129"
+  },
+  {
+    "AGE": "72",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Unstable angina', 0.1081863266561439], ['Stable angina', 0.10174587931772093], ['Possible NSTEMI / STEMI', 0.09338881460004476], ['Atrial fibrillation', 0.0785003659231786], ['Panic attack', 0.07572347454642035], ['Myocarditis', 0.0746420161012271], ['SLE', 0.07260735456920088], ['Acute pulmonary edema', 0.07160856529078828], ['Guillain-Barré syndrome', 0.06767783718054841], ['GERD', 0.06056072062685005], ['Acute dystonic reactions', 0.04765943546332747], ['Anaphylaxis', 0.04765943546332747], ['Scombroid food poisoning', 0.03014731236120942], ['Acute laryngitis', 0.029814878570561667], ['PSVT', 0.0254579896854619], ['Viral pharyngitis', 0.014619593643988845]]",
+    "SEX": "F",
+    "PATHOLOGY": "Stable angina",
+    "EVIDENCES": "['E_53', 'E_54_@_V_154', 'E_54_@_V_183', 'E_54_@_V_198', 'E_55_@_V_29', 'E_55_@_V_160', 'E_55_@_V_163', 'E_55_@_V_177', 'E_56_@_6', 'E_57_@_V_31', 'E_57_@_V_39', 'E_57_@_V_174', 'E_57_@_V_177', 'E_57_@_V_178', 'E_58_@_5', 'E_59_@_8', 'E_66', 'E_69', 'E_78', 'E_79', 'E_104', 'E_105', 'E_143', 'E_204_@_V_10', 'E_218', 'E_225']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "35",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute pulmonary edema', 0.09480043678906662], ['Unstable angina', 0.0881720872281575], ['Stable angina', 0.08292310889546416], ['Possible NSTEMI / STEMI', 0.07611208330624793], ['Myocarditis', 0.0753887955872309], ['Pulmonary embolism', 0.06968484096762116], ['Atrial fibrillation', 0.06397796584424204], ['Panic attack', 0.06171479344286407], ['Guillain-Barré syndrome', 0.05515758181033937], ['GERD', 0.04935711662234772], ['Chagas', 0.04736350723714659], ['SLE', 0.045452469479894494], ['Acute dystonic reactions', 0.03884254166678103], ['Myasthenia gravis', 0.03884254166678103], ['Pulmonary neoplasm', 0.0350828537634656], ['Sarcoidosis', 0.03180883579383876], ['Anaphylaxis', 0.024570123946029285], ['PSVT', 0.02074831595248183]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute pulmonary edema",
+    "EVIDENCES": "['E_5', 'E_8', 'E_53', 'E_54_@_V_161', 'E_55_@_V_29', 'E_55_@_V_35', 'E_55_@_V_120', 'E_55_@_V_160', 'E_55_@_V_170', 'E_56_@_4', 'E_57_@_V_30', 'E_57_@_V_121', 'E_57_@_V_127', 'E_57_@_V_128', 'E_57_@_V_194', 'E_58_@_6', 'E_59_@_1', 'E_66', 'E_67', 'E_104', 'E_105', 'E_106', 'E_151', 'E_152_@_V_34', 'E_152_@_V_35', 'E_152_@_V_120', 'E_152_@_V_172', 'E_152_@_V_173', 'E_175', 'E_204_@_V_10', 'E_218']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "17",
+    "DIFFERENTIAL_DIAGNOSIS": "[['GERD', 0.6413848159081237], ['Pericarditis', 0.20753186162262774], ['Anaphylaxis', 0.15108332246924855]]",
+    "SEX": "F",
+    "PATHOLOGY": "GERD",
+    "EVIDENCES": "['E_53', 'E_54_@_V_161', 'E_54_@_V_179', 'E_54_@_V_193', 'E_55_@_V_29', 'E_55_@_V_101', 'E_55_@_V_104', 'E_55_@_V_197', 'E_56_@_9', 'E_57_@_V_101', 'E_58_@_3', 'E_59_@_0', 'E_70', 'E_78', 'E_79', 'E_98', 'E_204_@_V_10', 'E_215', 'E_217']",
+    "INITIAL_EVIDENCE": "E_217"
+  },
+  {
+    "AGE": "36",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Chagas', 1.0]]",
+    "SEX": "F",
+    "PATHOLOGY": "Chagas",
+    "EVIDENCES": "['E_9', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_54_@_V_180', 'E_54_@_V_184', 'E_54_@_V_198', 'E_55_@_V_25', 'E_55_@_V_26', 'E_55_@_V_62', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_2', 'E_57_@_V_123', 'E_58_@_8', 'E_59_@_5', 'E_91', 'E_152_@_V_123', 'E_175', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_91"
+  },
+  {
+    "AGE": "35",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pulmonary neoplasm', 0.12422592764580985], ['Unstable angina', 0.09829587880405635], ['Possible NSTEMI / STEMI', 0.09664457990467631], ['Acute pulmonary edema', 0.0863562047801745], ['Myocarditis', 0.08502699667607899], ['Anemia', 0.08276765116383429], ['Stable angina', 0.07957112727532317], ['Guillain-Barré syndrome', 0.07565445434387391], ['Atrial fibrillation', 0.07226368465680172], ['Pulmonary embolism', 0.06418168190730786], ['Acute dystonic reactions', 0.053276652069954564], ['Myasthenia gravis', 0.053276652069954564], ['PSVT', 0.028458508702153874]]",
+    "SEX": "F",
+    "PATHOLOGY": "Pulmonary neoplasm",
+    "EVIDENCES": "['E_45', 'E_53', 'E_54_@_V_179', 'E_55_@_V_170', 'E_56_@_2', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_5', 'E_66', 'E_79', 'E_89', 'E_161', 'E_191', 'E_204_@_V_10', 'E_222', 'E_224']",
+    "INITIAL_EVIDENCE": "E_45"
+  },
+  {
+    "AGE": "58",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Sarcoidosis', 0.36533230587538], ['Acute dystonic reactions', 0.31550754065274844], ['Myocarditis', 0.15259486905924668], ['Possible NSTEMI / STEMI', 0.09495996164073646], ['Pulmonary neoplasm', 0.07160532277188833], ['Pulmonary embolism', 0.0]]",
+    "SEX": "M",
+    "PATHOLOGY": "Sarcoidosis",
+    "EVIDENCES": "['E_9', 'E_53', 'E_54_@_V_181', 'E_55_@_V_63', 'E_55_@_V_67', 'E_55_@_V_68', 'E_55_@_V_69', 'E_55_@_V_70', 'E_56_@_4', 'E_57_@_V_123', 'E_58_@_7', 'E_59_@_4', 'E_66', 'E_74', 'E_130_@_V_11', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_123', 'E_134_@_0', 'E_135_@_V_10', 'E_136_@_0', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_74"
+  },
+  {
+    "AGE": "65",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Bronchitis', 0.6840881043322263], ['Allergic sinusitis', 0.3159118956677738]]",
+    "SEX": "M",
+    "PATHOLOGY": "Allergic sinusitis",
+    "EVIDENCES": "['E_86', 'E_87', 'E_124', 'E_169', 'E_170', 'E_201', 'E_204_@_V_10', 'E_207', 'E_226']",
+    "INITIAL_EVIDENCE": "E_169"
+  },
+  {
+    "AGE": "68",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Localized edema', 0.37005721935579977], ['Anaphylaxis', 0.2681108876993369], ['Pulmonary embolism', 0.25734063426617004], ['Chagas', 0.10225696241035204], ['SLE', 0.002234296268341174]]",
+    "SEX": "F",
+    "PATHOLOGY": "Localized edema",
+    "EVIDENCES": "['E_10', 'E_44', 'E_53', 'E_54_@_V_154', 'E_54_@_V_161', 'E_54_@_V_180', 'E_54_@_V_183', 'E_54_@_V_192', 'E_55_@_V_34', 'E_55_@_V_35', 'E_55_@_V_52', 'E_55_@_V_72', 'E_55_@_V_73', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_2', 'E_59_@_2', 'E_96', 'E_109', 'E_126', 'E_137', 'E_151', 'E_152_@_V_34', 'E_152_@_V_51', 'E_152_@_V_52', 'E_152_@_V_72', 'E_152_@_V_73', 'E_186', 'E_197', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "40",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pneumonia', 0.19131106104781995], ['Bronchitis', 0.1817873963133482], ['Influenza', 0.1682779364312408], ['URTI', 0.16259567728345403], ['Tuberculosis', 0.0993634674032935], ['Bronchiectasis', 0.08471888856714119], ['HIV (initial infection)', 0.06468384312071644], ['Chagas', 0.0472617298329858]]",
+    "SEX": "M",
+    "PATHOLOGY": "URTI",
+    "EVIDENCES": "['E_41', 'E_48', 'E_49', 'E_50', 'E_53', 'E_54_@_V_161', 'E_54_@_V_183', 'E_55_@_V_108', 'E_55_@_V_166', 'E_55_@_V_167', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_3', 'E_59_@_4', 'E_77', 'E_91', 'E_97', 'E_144', 'E_204_@_V_10', 'E_222']",
+    "INITIAL_EVIDENCE": "E_91"
+  },
+  {
+    "AGE": "18",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Unstable angina', 0.10700688721611344], ['Stable angina', 0.0924604964305755], ['Possible NSTEMI / STEMI', 0.08303667602937027], ['Myocarditis', 0.08224758439777767], ['Atrial fibrillation', 0.06979861005053249], ['Panic attack', 0.06732953674011362], ['Anemia', 0.06583361324224958], ['GERD', 0.06371798205971796], ['Acute pulmonary edema', 0.06367076466753167], ['Guillain-Barré syndrome', 0.06017575728311017], ['Pancreatic neoplasm', 0.05620682946353068], ['Acute dystonic reactions', 0.04237639292520912], ['Myasthenia gravis', 0.04237639292520912], ['Sarcoidosis', 0.03470276831152782], ['Scombroid food poisoning', 0.026805486507297163], ['PSVT', 0.022635974671315045], ['SLE', 0.019618247078818703]]",
+    "SEX": "F",
+    "PATHOLOGY": "Unstable angina",
+    "EVIDENCES": "['E_14', 'E_53', 'E_54_@_V_154', 'E_55_@_V_29', 'E_55_@_V_101', 'E_55_@_V_159', 'E_55_@_V_160', 'E_55_@_V_197', 'E_56_@_5', 'E_57_@_V_31', 'E_57_@_V_33', 'E_57_@_V_39', 'E_57_@_V_194', 'E_57_@_V_195', 'E_58_@_4', 'E_59_@_7', 'E_66', 'E_69', 'E_70', 'E_78', 'E_79', 'E_89', 'E_104', 'E_105', 'E_143', 'E_204_@_V_10', 'E_218', 'E_225']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "70",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Viral pharyngitis', 0.4060761234875044], ['Possible NSTEMI / STEMI', 0.25301837409185784], ['Acute laryngitis', 0.1307498913829224], ['Unstable angina', 0.12335174588784942], ['Stable angina', 0.08680386514986588]]",
+    "SEX": "M",
+    "PATHOLOGY": "Viral pharyngitis",
+    "EVIDENCES": "['E_41', 'E_48', 'E_49', 'E_53', 'E_54_@_V_161', 'E_55_@_V_20', 'E_55_@_V_21', 'E_55_@_V_33', 'E_55_@_V_137', 'E_55_@_V_148', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_8', 'E_59_@_0', 'E_79', 'E_181', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "37",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Acute dystonic reactions', 0.16641669235597092], ['Myasthenia gravis', 0.13318652215709495], ['Pulmonary embolism', 0.10600997588786586], ['Acute pulmonary edema', 0.09929998221249416], ['Guillain-Barré syndrome', 0.09076596792353152], ['Atrial fibrillation', 0.08669791277301812], ['Myocarditis', 0.0856202177380797], ['Anemia', 0.0639183367958058], ['Anaphylaxis', 0.0639183367958058], ['Scombroid food poisoning', 0.04043199518120366], ['PSVT', 0.03414292139720394], ['SLE', 0.029591138781925458]]",
+    "SEX": "M",
+    "PATHOLOGY": "Acute dystonic reactions",
+    "EVIDENCES": "['E_15', 'E_62', 'E_66', 'E_128', 'E_168', 'E_172', 'E_180', 'E_192', 'E_204_@_V_4', 'E_205']",
+    "INITIAL_EVIDENCE": "E_180"
+  },
+  {
+    "AGE": "75",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Pancreatic neoplasm', 0.23582868543246527], ['Possible NSTEMI / STEMI', 0.19780660146549772], ['Unstable angina', 0.14589075962965942], ['Anemia', 0.13040249153894828], ['Stable angina', 0.11453185942622257], ['Chagas', 0.10914878359408511], ['Pericarditis', 0.06639081891312147]]",
+    "SEX": "F",
+    "PATHOLOGY": "Pancreatic neoplasm",
+    "EVIDENCES": "['E_53', 'E_54_@_V_182', 'E_55_@_V_187', 'E_55_@_V_197', 'E_56_@_4', 'E_57_@_V_39', 'E_58_@_1', 'E_59_@_5', 'E_69', 'E_70', 'E_79', 'E_89', 'E_130_@_V_11', 'E_131_@_V_10', 'E_132_@_0', 'E_133_@_V_123', 'E_134_@_0', 'E_135_@_V_10', 'E_136_@_0', 'E_162', 'E_188', 'E_204_@_V_10', 'E_223']",
+    "INITIAL_EVIDENCE": "E_89"
+  },
+  {
+    "AGE": "51",
+    "DIFFERENTIAL_DIAGNOSIS": "[['URTI', 0.24392086809952523], ['Acute otitis media', 0.23521563512467986], ['Bronchitis', 0.23438534207139952], ['Influenza', 0.13127156563871933], ['Tuberculosis', 0.12372886384993743], ['Chagas', 0.031477725215738606]]",
+    "SEX": "F",
+    "PATHOLOGY": "Acute otitis media",
+    "EVIDENCES": "['E_1', 'E_53', 'E_54_@_V_192', 'E_55_@_V_129', 'E_55_@_V_130', 'E_56_@_6', 'E_57_@_V_123', 'E_58_@_10', 'E_59_@_7', 'E_91', 'E_181', 'E_201', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_181"
+  },
+  {
+    "AGE": "15",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anaphylaxis', 0.1122569478673978], ['Boerhaave', 0.0875937297985225], ['Epiglottitis', 0.08376549832755993], ['Scombroid food poisoning', 0.07946926717782243], ['Inguinal hernia', 0.07674630236756882], ['Larygospasm', 0.07648563762959032], ['Pulmonary embolism', 0.06877358750834926], ['Guillain-Barré syndrome', 0.06548716640631631], ['Atrial fibrillation', 0.06255208610379384], ['Chagas', 0.05339947119012785], ['SLE', 0.0526846102187088], ['Acute dystonic reactions', 0.04611674236414668], ['Myasthenia gravis', 0.04611674236414668], ['Anemia', 0.04611674236414668], ['HIV (initial infection)', 0.042435468311802345]]",
+    "SEX": "M",
+    "PATHOLOGY": "Anaphylaxis",
+    "EVIDENCES": "['E_12', 'E_53', 'E_54_@_V_179', 'E_54_@_V_192', 'E_55_@_V_85', 'E_55_@_V_87', 'E_55_@_V_88', 'E_56_@_9', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_2', 'E_66', 'E_129', 'E_130_@_V_156', 'E_131_@_V_10', 'E_132_@_2', 'E_133_@_V_26', 'E_133_@_V_30', 'E_133_@_V_32', 'E_133_@_V_33', 'E_133_@_V_34', 'E_134_@_3', 'E_135_@_V_12', 'E_136_@_10', 'E_148', 'E_151', 'E_152_@_V_89', 'E_152_@_V_122', 'E_194', 'E_204_@_V_10', 'E_226']",
+    "INITIAL_EVIDENCE": "E_66"
+  },
+  {
+    "AGE": "26",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Guillain-Barré syndrome', 1.0]]",
+    "SEX": "F",
+    "PATHOLOGY": "Guillain-Barré syndrome",
+    "EVIDENCES": "['E_0', 'E_83', 'E_84', 'E_156', 'E_157', 'E_176', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_176"
+  },
+  {
+    "AGE": "26",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Anemia', 0.6413025352922371], ['Cluster headache', 0.35869746470776287]]",
+    "SEX": "F",
+    "PATHOLOGY": "Anemia",
+    "EVIDENCES": "['E_24', 'E_53', 'E_54_@_V_161', 'E_54_@_V_198', 'E_55_@_V_25', 'E_55_@_V_166', 'E_56_@_5', 'E_57_@_V_123', 'E_58_@_6', 'E_59_@_0', 'E_88', 'E_89', 'E_113', 'E_146', 'E_154', 'E_167', 'E_179', 'E_204_@_V_3', 'E_208']",
+    "INITIAL_EVIDENCE": "E_154"
+  },
+  {
+    "AGE": "41",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Cluster headache', 0.20269994319526918], ['Myocarditis', 0.18334431839177567], ['Sarcoidosis', 0.16295460326813513], ['Acute dystonic reactions', 0.16295460326813513], ['Anemia', 0.12435092421345469], ['Chagas', 0.08825540502051366], ['SLE', 0.07544020264271648]]",
+    "SEX": "F",
+    "PATHOLOGY": "Chagas",
+    "EVIDENCES": "['E_9', 'E_53', 'E_54_@_V_154', 'E_54_@_V_184', 'E_54_@_V_198', 'E_55_@_V_25', 'E_55_@_V_26', 'E_55_@_V_62', 'E_55_@_V_124', 'E_55_@_V_167', 'E_56_@_8', 'E_57_@_V_123', 'E_58_@_4', 'E_59_@_4', 'E_66', 'E_152_@_V_123', 'E_174', 'E_175', 'E_204_@_V_10']",
+    "INITIAL_EVIDENCE": "E_53"
+  },
+  {
+    "AGE": "48",
+    "DIFFERENTIAL_DIAGNOSIS": "[['Boerhaave', 0.14003114611568582], ['Spontaneous pneumothorax', 0.11401699177452912], ['Panic attack', 0.11106588260185604], ['Acute pulmonary edema', 0.09159842365521526], ['Pulmonary embolism', 0.0842741606839897], ['Guillain-Barré syndrome', 0.08024702773859324], ['Atrial fibrillation', 0.0766504227337262], ['Acute dystonic reactions', 0.056510789927113066], ['Myasthenia gravis', 0.056510789927113066], ['Anemia', 0.056510789927113066], ['Sarcoidosis', 0.04627767288742986], ['Pancreatic neoplasm', 0.043123476198496685], ['PSVT', 0.030186071091604694], ['GERD', 0.012996354737534238]]",
+    "SEX": "F",
+    "PATHOLOGY": "Boerhaave",
+    "EVIDENCES": "['E_53', 'E_54_@_V_71', 'E_54_@_V_179', 'E_54_@_V_193', 'E_55_@_V_84', 'E_55_@_V_85', 'E_55_@_V_101', 'E_55_@_V_187', 'E_55_@_V_197', 'E_56_@_8', 'E_57_@_V_39', 'E_57_@_V_128', 'E_58_@_7', 'E_59_@_7', 'E_66', 'E_78', 'E_148', 'E_204_@_V_10', 'E_210', 'E_211']",
+    "INITIAL_EVIDENCE": "E_211"
+  }
+]

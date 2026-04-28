@@ -1,0 +1,5534 @@
+Proceedings of Machine Learning Research 259:1–18, 2024
+
+Machine Learning for Health (ML4H) 2024
+
+Are Clinical T5 Models Better for Clinical Text?
+Yahan Li∗
+
+yahanli@usc.edu
+
+Department of Computer Science, University of Southern California
+
+Keith Harrigian∗
+
+kharrigian@jhu.edu
+
+Department of Computer Science, Johns Hopkins University
+
+arXiv:2412.05845v1 [cs.CL] 8 Dec 2024
+
+Ayah Zirikly
+
+azirikly@jhu.edu
+Center for Language and Speech Processing, Whiting School of Engineering, Johns Hopkins University
+Malone Center for Engineering in Healthcare, Johns Hopkins University
+
+Mark Dredze
+
+mdredze@cs.jhu.edu
+
+Department of Computer Science, Johns Hopkins University
+
+Abstract
+Large language models with a transformerbased encoder/decoder architecture, such as T5
+(Raffel et al., 2023), have become standard platforms for supervised tasks. To bring these technologies to the clinical domain, recent work has
+trained new (Lehman et al., 2023) or adapted
+existing (Lu et al., 2022) models to clinical
+data. However, the evaluation of these clinical T5 models and comparison to other models
+has been limited. Are the clinical T5 models
+better choices than FLAN-tuned (Chung et al.,
+2022a) generic T5 models? Do they generalize
+better to new clinical domains that differ from
+the training sets? We comprehensively evaluate these models across several clinical tasks
+and domains. We find that clinical T5 models provide marginal improvements over existing models, and perform worse when evaluated
+on different domains. Our results inform future
+choices in developing clinical LLMs.
+Keywords: Language Models, Domain Generalization, Pre-training
+
+Data and Code Availability We do not
+release any new data or models as part of
+this study.
+The code in available on GitHub:
+https://github.com/yli-z/ml4h_are_clinical_
+t5_models_better_for_clinical_text.
+Institutional Review Board (IRB) Our clinical
+datasets were obtained from the PhysioNet website
+under the PhysioNet Credentialed Health Data Use
+Agreement and from an anonymized Hospital System
+following IRB approval.
+∗ These authors contributed equally
+
+© 2024 Y. Li, K. Harrigian, A. Zirikly & M. Dredze.
+
+1. Introduction
+There is an ongoing conversation in the community about the best strategy for developing Large
+Language Models (LLMs) for specialized domains.
+general-purpose LLMs, trained on massive amounts
+of diverse text, can generalize remarkably well to new
+domains and tasks (Brown et al., 2020; Touvron et al.,
+2023; Bubeck et al., 2023), especially with a small
+amount of domain-specific alignment data (Singhal
+et al., 2022). At the same time, specialized LLMs
+trained using domain-specific data can outperform
+their generic counterparts (Wu et al., 2023b; Taylor
+et al., 2022; Lehman et al., 2023; Lu et al., 2022). For
+supervised tasks, Text-to-Text Transfer Transformer
+(T5) models are a popular choice as they provide
+the benefits of both extensive pre-training and task
+generalization(Raffel et al., 2023); however, there are
+few studies on the benefits of domain-specialized T5
+training.
+Consider clinical text from Electronic Health
+Records (EHR). Access to this data is severely restricted and the data differs substantially from popular pre-training data sets. Recent work has explored
+developing T5 models for this domain. One approach
+adapts an existing T5 model first to the biomedical
+domain (journal articles) and then to the clinical domain using a small amount of clinical text (Lu et al.,
+2022). Another approach starts from scratch, developing a new vocabulary and model focused on clinical data (Lehman et al., 2023). As these works were
+completed concurrently, they do not include a direct
+comparison between the approaches, leaving the best
+strategy for T5 models an open question.
+
+Are Clinical T5 Models Better for Clinical Text?
+
+2. Clinical T5 Models
+
+Furthermore, while a specialized clinical T5 model
+sounds attractive, it has several potential shortcomings. First, the severe limitation of available EHR
+pre-training text means specialized T5 models are
+not only trained on less data overall, but also that
+the pre-training text is unlikely to adequately represent the true diversity of the domain. In contrast,
+pre-trained T5 models benefit from massive amounts
+of diverse data, which may yield better generalization abilities. Second, existing general T5 models
+may make use of extensive supervised datasets for
+FLAN tuning (Chung et al., 2022a), potentially leading to better generalization to new supervised tasks.
+Specialized clinical T5 models do not have the same
+opportunity nor benefit. Does FLAN training mean
+better generalization, even without access to EHR
+pre-training?
+We thereby present a series of evaluations of existing general-purpose and clinical T5 models to answer
+two questions – 1) What existing T5 model should
+clinical NLP practitioners utilize when training a supervised system, and 2) What training strategy is
+more effective in the clinical domain with severe data
+limitations nowadays?
+We make the following contributions.
+
+LLMs have become the standard base models upon
+which NLP systems are built. Instruction following
+tasks typically leverage general-purpose decode LLMs
+(e.g., GPT, LlaMa) (Radford et al., 2019; Brown
+et al., 2020; Touvron et al., 2023; Bubeck et al.,
+2023), whereas supervised tasks typically rely on encoder/decoder (Raffel et al., 2023) or encoder models
+(Devlin et al., 2019).
+Historically, clinical NLP systems have benefited
+from specialized versions of these models due to differences in the topic, style, and vocabulary of clinical text relative to other language domains. However, these advantages have been tempered under
+various circumstances (Gutiérrez et al., 2023; Lewis
+et al., 2020a), and are not necessarily guaranteed to
+hold given the existence of much larger contemporary
+LLMs. This uncertainty raises several key questions
+for clinical NLP practitioners.
+What existing models should be used to
+develop a supervised clinical NLP system?
+
+T5 (Raffel et al., 2023) and Flan-T5 (Chung et al.,
+2022a) do exceedingly well on a wide variety of supervised tasks, benefited from large amounts of pre• We evaluate 2 clinical, 2 non-clinical, and 1 training and diverse task-specific fine-tuning, respecFLAN-tuned T5 variants across 7 clinical and tively. These models balance out-of-the-box zero-shot
+biomedical tasks. We independently reproduce performance and supervised fine-tuning when a modprior results (Lu et al., 2022; Lehman et al., erate amount of supervised data is available. Within
+2023) and extend the evaluation to new clini- the clinical domain, two T5-based models (Lehman
+cal datasets. We find that general T5 models et al., 2023; Lu et al., 2022) have been trained on
+achieve similar results as the clinical variants.
+clinical text from MIMIC (Johnson et al., 2016, 2023).
+Which model should we prefer and in what setting?
+• We investigate model performance under data- Unfortunately, the publication of these two models
+limited conditions and find that FLAN-T5 excels was concurrent, so a head-to-head comparison is unon clinical tasks in the low-data settings.
+available. Therefore, we conduct a direct comparison
+with the same training and evaluation settings to de• We evaluate clinical T5 models on new clinical termine which model should be preferred.
+domains and show they perform worse than general T5 models, suggesting that existing cliniShould we train from scratch on clinical data
+cal models are overfitted to the limited clinical
+or adapt an existing pre-trained model?
+datasets available.
+Beyond determining which model is preferred, these
+Taken together with other studies on clinical LLMs two models represent different strategies for develop(Alsentzer et al., 2019; Lewis et al., 2020a; Singhal ing domain-specific models:
+et al., 2022; Lu et al., 2022; Lehman et al., 2023),
+Lu et al. (2022) utilize continued pre-training to
+our findings suggest that future work should focus tune an existing model for the clinical setting, which
+on adapting general T5 models to the clinical do- allows them to benefit from large amounts of previous
+main through new supervised training sets rather training on general-purpose and related data. They
+than training new methods from scratch.
+use MIMIC-III (Johnson et al., 2016) to train SciFive
+2
+
+Are Clinical T5 Models Better for Clinical Text?
+
+(Phan et al., 2021), which is itself adapted to the scientific domain from the base T5 model (Raffel et al.,
+2023). In contrast, Lehman et al. (2023) train a new
+T5 model from scratch on clinical text from MIMICIII and MIMIC-IV (Johnson et al., 2016, 2023), which
+enables them to leverage a domain-specific vocabulary.
+These models follow larger trends in developing domain-specific models, including training from
+scratch (Wu et al., 2023b; Taylor et al., 2022; Lewis
+et al., 2020a) and continued pre-training or aligning
+existing models (Alsentzer et al., 2019; Singhal et al.,
+2022). In the clinical domain specifically, encoder
+(masked) LLMs have been adapted from pre-trained
+models (e.g., BioBERT (Lee et al., 2019) and ClinicalBioBERT (Alsentzer et al., 2019) from BERT (Devlin
+et al., 2019)) and have also been trained from scratch
+(e.g., GatorTron was pre-trained on a combination
+of Wikipedia articles, PubMed publications, and deidentified clinical notes (Yang et al., 2022)). Decoder
+(GPT-style) LLMs have been adapted to the medical
+domain, but not necessarily the clinical domain (e.g.,
+Med-PaLm (Singhal et al., 2022) from FLAN-PaLm
+(Chowdhery et al., 2022)).
+Arguments have been made in support of both pretraining strategies. We are interested in understanding whether one strategy is preferable over another
+when a) there is a need to generalize to a new clinical domain, and b) when only a limited amount of
+supervised data in the target domain is available.
+
+ically tuned, they do incorporate a lot of supervision. Should we prefer these general-purpose models to clinical models, especially in new clinical settings or those with limited supervision? We compare these models to clinical T5 models to determine
+which should be preferred in clinical settings.
+Overall, our analysis provides practical guidance to
+practitioners, provides new evidence on LLM domain
+specialization methods, and explores the tradeoff between domain specialized and general-purpose LLMs
+for supervised tasks.
+
+3. Experiment Setup
+3.1. Models
+Text-To-Text Transfer Transformer (T5) (Raffel
+et al., 2023) and its variants are sequence-to-sequence
+models utilizing an encoder/decoder Transformer architecture (Vaswani et al., 2017). We evaluate several existing pre-trained models, all being the large
+variant (∼770M parameters), by fine-tuning them on
+(x, y) pairs, where x and y are the input and output
+of a task, formatted as text.
+Additional information about each model is included in Table 4.
+
+T5 The original T5 model was trained in two
+stages. First, it was trained with a self-supervised
+text denoising objective on web crawl data (Raffel
+et al., 2023), and then with a conditional generation
+Should we prefer domain-specialized models
+objective on labeled data from a diverse mixture of
+over powerful, general-purpose models?
+downstream tasks. To separate the effects of pretraining using non-clinical web data and performing
+Domain-specificity might not be optimal: biomedisupervised multitask pre-training, we evaluate two
+cal language models have been shown to be robust to
+versions of T5: T5-Den which is trained only using
+domain-general tokenization (Gutiérrez et al., 2023),
+the denoising objective and T5-Sup which is further
+and pre-trained LLMs have been shown to possess
+pre-trained on supervised multi-task tasks.1
+significant knowledge about the medical domain despite not having been trained specifically on biomedi- FLAN-T5 FLAN-T5 (Chung et al., 2022a) took
+cal data (Agrawal et al., 2022; Singhal et al., 2023). In the LM-Adapted T5, which was trained for addithe clinical domain, pre-trained clinical BERT mod- tional 100K steps on the LM objective from T5-Den
+els do not consistently demonstrate a significant im- (Raffel et al., 2023; Lester et al., 2021), and further
+provement over non-clinical variants of BERT (Lewis trained with extensive supervised instruction fineet al., 2020b; Harrigian et al., 2023a; Yue et al., 2020). tuning. The instruction tuning process typically imThis suggests that the benefits of in-domain pre- proves the model’s generalization ability to new tasks
+training may not always justify the additional com- (Longpre et al., 2023). We include FLAN-T5 to evalplexity and computational cost.
+uate its generalization capabilities on clinical tasks.
+Morover, in the case of T5 models, there exist highquality FLAN-tuned versions that do well on a va- 1. Most studies only evaluate T5-Sup and call it a pre-trained
+only model.
+riety of supervised tasks. While they are not clin3
+
+Are Clinical T5 Models Better for Clinical Text?
+
+tain data from Hospital System (anonymized) that
+includes five medical specialties: Internal Medicine,
+Emergency Medicine, Pediatrics, OB-GYN, and
+Surgery. We evaluate the task of detecting stigmatizing language about patients by using the setup as
+Harrigian et al. (2023b). We also use their annotations from MIMIC-IV.
+
+Clinical-T5 We evaluate two concurrently developed Clinical-T5 models – similarly named, but pretrained on different corpora and with different weight
+initialization strategies. We refer to the model introduced by Lehman et al. (2023) as MIMIC-T5
+since their model is only pre-trained on the union
+of all notes from MIMIC-III and MIMIC-IV (Johnson
+et al., 2016, 2023), including discharge summaries and
+radiology reports, from random initialization. We refer to the model introduced by Lu et al. (2022) as
+SciFive+MIMIC-T5 since their model is trained on
+MIMIC-III (Johnson et al., 2016) but initializes from
+a biomedically pre-trained model (SciFive), which
+gives it additional exposure to biomedical data. SciFive was itself trained from the base T5 initialization.
+
+4. Are Clinical T5 Models Better for
+Clinical Text?
+Both MIMIC-T5 and SciFive+MIMIC-T5 have
+demonstrated improved performance on clinical EHR
+text compared to a general-purpose model T5. Our
+first step is to replicate these findings with a more
+extensive and direct evaluation.
+
+3.2. Datasets
+Methods We began by reproducing the results reported in Lehman et al. (2023) and Lu et al. (2022),
+adhering closely to each study’s original evaluation
+methodology. Both studies only leveraged a single
+train/dev/test split for each respective task, and only
+Lehman et al. (2023) estimated uncertainty around
+their performance point estimates.3 To understand
+whether prior results were sensitive to the initial
+dataset split, we conducted an additional set of crossvalidation experiments. We merged existing training
+and development splits and randomly split them into
+5 subsets to facilitate 5-fold cross-validation. Additionally, the original held-out test split was used to
+evaluate generalization and compare to prior work.
+We considered the same evaluation metrics used in
+prior work (Table 8), using a bootstrap procedure to
+estimate confidence intervals. For uniformity across
+the metrics (e.g., exact match, F1 score), differences
+in performance between models were assessed using a paired t-test (paired by fold). We referred to
+MIMIC-T5 and SciFive-T5’s evaluation metrics on
+these datasets. Training and evaluation details are
+included in Appendix D.
+
+We evaluate models on the union of datasets considered by each of the clinical T5 studies (Lehman et al.,
+2023; Lu et al., 2022), as well as clinical data not from
+MIMIC-III.
+MIMIC-III Datasets We evaluate on CLIP
+(Mullenbach et al., 2021), a multi-label classification dataset, RadQA (Soni et al., 2022), a questionanswering dataset, and MedNLI (Romanov and Shivade, 2018), a natural language inference dataset.
+Each dataset is comprised of instances from MIMICIII (Johnson et al., 2016). Note that these datasets
+annotate data that comes from the same corpus used
+for clinical model pre-training.
+
+Biomedical Datasets We evaluate on HOC
+(Baker et al., 2015), a multi-label classification
+dataset, and two named entity recognition datasets,
+BC5CDR-disease (Li et al., 2016a) and NCBI-disease
+(Doğan et al., 2014). HOC and NCBI-disease are
+datasets derived from PubMed abstracts 2 , and
+the BC5CDR-disease dataset is derived from full
+PubMed articles. Note that some of them annotate data that comes from the same corpus used for
+Results Cross-validation results are reported in
+SciFive+MIMIC-T5 pre-training.
+Table 1, while reproducibility efforts are reported
+Clinical Stigmatizing Language Datasets Due alongside the originally reported performance metrics
+to the extremely limited availability of clinical text in Appendix F. Our results for MIMIC-T5 perform
+data, public clinical NLP datasets are drawn from slightly worse than previously reported on MedNLI
+MIMIC (MIMIC-III (Johnson et al., 2016) in partic- and RadQA, but better on CLIP. SciFive+MIMICular), the same dataset used to pre-train the clinical- T5 performs slightly better than previously reported
+T5 models. How well do these clinical models gen- on the three biomedical tasks. The average perforeralize to a novel clinical domain and task? We ob3. Lehman et al. (2023) used at least three random seeds in
+their training procedure to estimate uncertainty.
+
+2. https://pubmed.ncbi.nlm.nih.gov/
+
+4
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Dataset
+
+Metrics
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+MedNLI
+
+Acc.
+
+85.9(85.3,86.2)
+
+84.9(84.4,85.5)
+
+86.0(85.7,86.4)
+
+86.8(86.3,87.3)
+
+85.6(85.1,86.4)
+
+RadQA
+
+EM
+F1
+
+52.6(51.9,53.3)
+68.9(68.0,69.8)
+
+52.0(51.0,53.0)
+68.7(67.8,69.8)
+
+53.0(51.8,54.0)
+70.6(69.8,71.3)
+
+54.5(54.0,55.1)
+73.4(72.8,74.0)
+
+53.4(52.7,54.2)
+70.4(69.4,71.5)
+
+CLIP
+
+Macro F1
+Micro F1
+
+63.9(62.2,65.6)
+78.6(77.5,79.8)
+
+62.4(61.4,63.4)
+78.4(78.0,78.8)
+
+64.3(62.9,65.7)
+79.4(78.9,79.9)
+
+66.1(65.9,66.3)
+79.3(78.7,79.9)
+
+63.5(62.2,64.8)
+78.2(77.9,78.5)
+
+HOC
+
+F1
+P
+R
+
+84.9(84.4,85.6)
+84.7(84.2,85.6)
+85.1(84.7,85.6)
+
+84.8(84.4,85.1)
+84.8(84.4,85.1)
+84.8(84.3,85.2)
+
+84.8(84.2,85.3)
+84.6(83.9,85.2)
+85.0(84.5,85.4)
+
+82.8(82.6,83.0)
+82.9(82.8,83.1)
+82.6(82.3,83.0)
+
+85.1(84.8,85.4)
+85.0(84.7,85.5)
+85.2(84.9,85.5)
+
+BC5CDR
+
+F1
+P
+R
+
+82.9(82.3,83.4)
+81.7(80.8,82.5)
+84.2(83.6,84.6)
+
+82.9(82.5,83.5)
+81.6(81.3,82.0)
+84.3(83.6,85.0)
+
+83.3(82.9,83.8)
+82.1(81.5,82.7)
+84.5(84.2,84.9)
+
+81.2(80.9,81.5)
+80.6(80.2,80.9)
+81.7(81.2,82.3)
+
+83.6(83.4,83.8)
+83.1(82.5,83.6)
+84.2(83.6,84.8)
+
+NCBI
+
+F1
+P
+R
+
+85.1(84.6,85.5)
+83.5(82.8,84.2)
+86.7(86.3,87.2)
+
+84.6(84.2,85.0)
+83.6(83.1,84.1)
+85.6(85.2,86.2)
+
+84.4(83.9,85.0)
+82.2(81.6,83.0)
+86.8(86.3,87.3)
+
+79.1(78.3,79.9)
+78.4(77.6,78.9)
+79.9(78.7,81.3)
+
+85.4(85.0,86.2)
+83.8(83.0,84.7)
+87.1(86.9,87.5)
+
+Table 1: Mean test performance and 95% confidence intervals across 5-fold cross-validation. MIMIC-T5
+outperforms alternative models on clinical tasks, but struggles on biomedical tasks. Inclusion of
+biomedical data during pre-training is useful for the biomedical tasks.
+
+mance over the cross-validation procedure mirrored
+the single train/dev/test split results.
+
+times by more than 4 points, presumably since it
+was adapted from SciFive which is trained on similar
+data, whereas MIMIC-T5 has only seen clinical data.
+Despite minor differences from the originallyHowever, SciFive+MIMIC-T5 only slightly outperreported results, we confirm the findings of Lehman
+forms the general-purpose models, and does not do
+et al. (2023) that MIMIC-T5 outperforms T5-Sup
+so consistently at a statistically significant level. It
+across the three clinical tasks at a statistically sigis possible that the general-purpose models have alnificant level. In comparison, SciFive+MIMIC-T5 eiready seen data similar enough to the biomedical data
+ther slightly underperformed or slightly outperformed
+such that further pre-training has minimal effect.
+the non-clinical T5 variants across the clinical tasks,
+albeit not at a statistically significant level. While
+Finally, we observe the benefits of supervised inthe former outcome seems to corroborate the effistruction fine-tuning. FLAN-T5 performs compacacy of domain-specific clinical pre-training, the latrably to MIMIC-T5 on the three clinical datasets
+ter outcome suggests the effect may be moderated
+and to SCIFIVE+MIMIC-T5 on the three biomedical
+inconsistently by pre-training on out-of-domain text.
+datasets. MIMIC-T5 only outperforms FLAN-T5 on
+Given that MIMIC-T5 was pre-trained on text from
+RadQA dataset, and only under 1 metric (F1 score),
+the same corpus used for curating the evaluation
+with statistical significance. Recent work suggests
+datasets, the observed improvement may be a consethat training on relevant target tasks, either through
+quence of overfitting, which we explore below. Moreinstruction tuning or multitask training, has broad
+over, we note that the absolute increase in perfordownstream benefits (Chung et al., 2022b; Mueller
+mance (∼1.0 to ∼1.5 points across clinical tasks) falls
+et al., 2022). T5-Den and T5-Sup perform similarly
+within a range that is reasonable to expect when uson biomedical tasks, but not the clinical tasks, where
+ing domain adaptive pre-training (i.e., continued preT5-Den outperforms T5-Sup slightly, albeit not at a
+training) (Gururangan et al., 2020).
+statistically significant level. Whether the remaining
+Results on biomedical (journal article) datasets gap in performance between non-clinical and clinihighlight the differences between the adaptation and cal T5 models can be decreased via supervised pretrain from scratch strategies. SciFive+MIMIC-T5 training on related tasks or extensive pre-training in
+does better than MIMIC-T5 on these tasks, some- general is an important open area of study, especially
+5
+
+Are Clinical T5 Models Better for Clinical Text?
+
+However, neither MIMIC-T5 or SciFive+MIMIC-T5
+show improvement over T5-Sup or FLAN-T5.
+Finally, these evaluations further highlight the generalization ability of T5-Sup and FLAN-T5, which
+5. Do Clinical T5 Models Generalize
+do better than clinical T5 models on both datasets.
+Even without clinical tasks in hand, the additional
+to New Clinical Text?
+supervised training yields a model that does better
+A key limitation in developing clinical NLP systems on a novel clinical task across both data sources.
+is the lack of publicly available data due to PHI concerns. Mostly public available clinical models, including MIMIC-T5 and SCIFIVE+MIMIC-T5, and 6. Do Clinical T5 Models Perform
+Well in Low-Resource Settings?
+evaluation sets utilize MIMIC, so we do not know
+if they generalize to new clinical text sources. The
+One of the possible reasons we have observed only
+weaker performance of MIMIC-T5 on the biomedical
+a small performance gap between general-purpose
+datasets may suggest its limited ability to generaland clinical models may be the presence of sufficient
+ize, or perhaps its benefits remain when focused on
+task training data. Indeed, previous work has found
+clinical EHR text. Since the clinical pre-training and
+that tuning general-purpose BERT models for a clinevaluation sets represent only a single medical doical task using supervised data can nullify a clinical
+main from a single institution, we ask: do clinical
+model’s advantage (Harrigian et al., 2023a). In this
+T5 models generalize to new clinical text sources and
+regard, we may expect to see larger benefits to clintasks better than general-purpose models?
+ical models in a low-resource setting. Importantly,
+Methods To evaluate generalization, we consider a such settings are common in clinical tasks, where annew task for which we can evaluate on both a MIMIC notation typically requires advanced expertise, or is
+dataset and a Hospital System dataset. The task nigh impossible due to data privacy constraints. We
+is to characterize stigmatizing language in medical therefore explore if the advantages of clinical models
+records, which includes three multi-class classifica- emerge more prominently in low-resource settings.
+tion tasks that operate similarly to word sense dis- Methods We selected MedNLI and the two stigambiguation. The two datasets were curated using matizing language datasets to test a low-resource setthe annotation guidelines set forth by Harrigian et al. ting. For MedNLI, we used the same cross validation
+(2023b). We perform 5-fold cross-validation experi- splits as before, but downsampled the training subset
+ments as above on these two datasets, and compare to 1% (∼99 examples on average per cross validation
+the in-domain (MIMIC-IV) and out-of-domain (Hos- fold). For the stigmatizing language datasets, which
+pital System (anonymized)) performance.
+has less data than MedNLI to begin with, we were
+given that non-clinical task datasets are significantly
+more abundant than clinical ones.
+
+able to explore multiple downsampled training size
+settings – 1% (∼2 examples on average per fold), 5%
+(∼12 examples on average per fold), and 25% (∼59
+examples on average per fold) for every task. We
+note that 1% of training data represents an extreme
+scenario, albeit one that is not inconceivable given
+the complexities of annotating some clinical datasets
+(Spasic and Nenadic, 2020). Experimental details are
+described in the Appendix D.
+
+Results Table 2 shows the performance of the T5
+models on the two stigmatizing language datasets.
+On the MIMIC-IV dataset, T5-Sup, MIMIC-T5, and
+SciFive+MIMIC-T5 achieve similar levels of performance. For this task, the benefits of MIMIC-T5 do
+not materialize, despite the MIMIC-IV dataset being
+within the distribution of its pre-training data.4
+When we consider the out-of-distribution Hospital System (anonymized) data, MIMIC-T5 falls behind these other two models, perhaps either because
+MIMIC-T5 has been overfit to MIMIC data, or because it lacks the large-scale pre-training of the other
+models. SciFive+MIMIC-T5 performs slightly better than MIMIC-T5 on these two clinical datasets.
+
+Results Figure 1 and Figure 2 show results for the
+Hospital System (anonymized) and MIMIC-IV stigmatizing language datasets, respectively, while Table 3 shows results for MedNLI. Additional taskspecific results are reported in the Appendix G.
+In the 1% MedNLI experiment, MIMIC-T5 is no
+4. The MIMIC-IV stigmatizing language dataset may have
+longer
+leading, nor is it even competitive with, the
+been seen verbatim during MIMIC-T5 pre-training, as they
+did not leverage the same evaluation splits.
+other T5 models. For the two stigmatizing language
+6
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Hospital System (anonymized)
+Model
+
+Credibility &
+Obstinacy
+
+Compliance
+
+Descriptors
+
+T5-Sup
+MIMIC-T5
+SciFive+MIMIC-T5
+FLAN-T5
+
+88.2(86.1,90.6)
+88.1(83.1,94.1)
+87.3(82.1,91.8)
+90.4(88.3,92.3)
+
+86.7(85.5,88.2)
+84.7(81.0,88.7)
+87.2(86.8,87.6)
+88.0(86.8,88.9)
+
+90.6(89.3,91.4)
+88.9(88.2,89.5)
+90.0(89.2,90.7)
+86.8(80.0,90.7)
+
+MIMIC-IV
+Average
+
+Credibility &
+Obstinacy
+
+Compliance
+
+Descriptors
+
+Average
+
+88.5(87.8,89.0)
+87.2(85.1,89.7)
+88.2(86.6,89.2)
+88.4(86.6,90.0)
+
+76.0(74.1,77.9)
+75.0(72.1,77.8)
+74.6(70.6,78.8)
+77.4(75.0,79.3)
+
+92.9(91.7,94.2)
+91.6(90.4,92.7)
+91.0(89.9,92.1)
+92.9(91.3,94.5)
+
+85.7(83.4,88.0)
+84.8(81.9,88.2)
+86.3(85.0,87.8)
+86.3(85.3,87.0)
+
+84.9(84.2,85.8)
+83.8(82.5,84.5)
+84.0(82.0,85.8)
+85.6(85.0,86.1)
+
+Table 2: Macro F1 scores on stigmatizing language datasets from the Hospital System (anonymized) and
+MIMIC-IV.
+
+Figure 1: Mean macro-F1 scores across the three Figure 2: Mean macro-F1 scores across the three
+stigmatizing language classification tasks
+stigmatizing language classification tasks
+for the Hospital System (anonymized)
+for the MIMIC-IV dataset using a random
+dataset using a random 1%, 5%, and 25%
+1%, 5%, and 25% sample of the training
+sample of the training data.
+data.
+
+Model
+
+Accuracy
+
+T5-Sup
+MIMIC-T5
+SciFive+MIMIC-T5
+FLAN-T5
+
+78.80(77.69,79.90)
+63.87(60.35,66.95)
+78.92(78.35,79.84)
+79.49(78.97,80.06)
+
+guage models are more appropriate for new distributions and those with limited amounts of task-specific
+training data.
+
+Table 3: Performance with 1% training data on
+MedNLI dataset
+
+7. Discussion
+datasets, T5-Sup, MIMIC-T5, and SciFive+MIMICT5 all perform roughly equivalently to one another
+in the low-resource settings as we gradually increase
+the sample size. That said, MIMIC-T5 finds itself
+at the bottom of relative performance rankings in
+more cases than not. Across all three tasks, FLANT5 excels in the low-resource settings compared to
+the three non-FLAN-tuned T5 models. Altogether,
+our results suggest that strong general-purpose lan-
+
+In this study, we independently replicated and extended prior work concerning specialized clinical T5
+models (Lu et al., 2022; Lehman et al., 2023). By
+placing the models in an expanded context (i.e., additional non-clinical variants, evaluation datasets), we
+find ourselves in a position to make the following recommendations for clinical NLP practitioners.
+7
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Clinical models pre-trained from scratch
+using comparatively small datasets should
+not be used beyond their pre-training
+distributions.
+
+The combination of task fine-tuning and
+FLAN instruction fine-tuning is hard to beat.
+Recent research has shown that models pre-trained in
+a supervised manner are explicitly guided towards flat
+loss regions. Consequently, they are more robust to
+sequential fine-tuning in new domains (Mehta et al.,
+2023). It has also been shown that heterogeneity
+within pre-training data is important for promoting
+generalization in downstream tasks across diverse domains (Longpre et al., 2023). FLAN-T5’s exceptional
+performance across all tasks in our study, especially
+in low-resource settings, affirms these prior findings.
+
+Language models that are pre-trained on the target domain from scratch can achieve strong targetdomain performance due to their in-domain pretraining (Gupta et al., 2023). For example, PubMedBERT (Gu et al., 2021), which was pre-trained from
+scratch on 3.2 billion words from PubMed Abstracts
+only, achieved remarkable performance in biomedical
+tasks drawn also from PubMed Abstracts. Unfortunately, large amounts of diverse and relevant pretraining data are generally hard to obtain for most
+real-world clinical applications.
+Currently, MIMIC provides the largest public clinical text corpora, coming in at approximately 1.2
+billion words across both MIMIC-III and MIMIC-IV
+(Lehman et al., 2023). However, practitioners must
+remember that MIMIC only represents a small subset of the broader clinical text landscape. Not only
+are there sample biases related to the demographics of patients in the corpora, but also topic biases
+(e.g., intensive care unit patients) and syntactic biases (e.g., hospital-specific documentation practices).
+LLMs trained on this comparatively narrow sample
+of data provide optimistic estimates of performance
+when evaluated on data also drawn from the MIMIC
+corpora (Lehman et al., 2023). As shown in our
+experiments, they struggle to adapt to the diverse
+needs of the clinical and biomedical space. So-called
+“clinical” language models may perhaps be better described as “MIMIC” language models.
+
+Adapting general-purpose models rather
+than training from scratch, or leveraging a
+mix of both training strategies, may be the
+best option for clinical language models
+moving forward.
+General-domain pre-training is beneficial given that
+clinical text has limited availability, and domainadaptive or task-adaptive training can further improve performance on downstream tasks (Gururangan et al., 2020). For example, continued pre-training
+on small amounts of annotated clinical data (i.e.,
+task-adaptive pre-training) has improved transfer to
+out-of-domain clinical data in a note-section classification task (Zhou et al., 2023), while adapting a
+generic language model, such as BERT, has been
+shown to be more efficient than pre-training a new
+model from scratch in unseen target domains (Lamproudis et al., 2022). Various contemporary works
+have presented ways to further optimize continued
+pre-training for adaptation. For example, by reverse
+engineering the effects of instruction-tuning (Fleshman and Durme, 2024), or by finding more efficient
+warm-up strategies (Gupta et al., 2023).
+
+Clinical models should only be used in
+downstream tasks if they have access to
+sufficient supervised training data.
+
+8. Conclusion
+
+In low-data settings, specificalized clinical models are
+more likely to underperform their generic counterparts that have been pre-trained on more data and/or
+using supervised fine-tuning. For example, in §6, we
+saw that T5-Sup, SciFive+MIMIC-T5, and FLANT5 were all more qualified to operate in at the 1%
+downsample regime than MIMIC-T5. Even larger
+generic LLMs such as ChatGPT and PaLM are likely
+to provide even more significant advantages in lowresource settings (Agrawal et al., 2022; Singhal et al.,
+2023). This leads us to our next recommendation.
+
+Our study aimed to determine whether existing clinical T5 models offer performance improvements over
+non-clinical T5 variants in clinical tasks. Our findings suggest that these clinical language models may
+outperform their general counterparts, but only under specific conditions: a) the task is on clinical
+EHR data sourced from MIMIC; b) sufficient annotated training data is available. Meanwhile, generalpurpose language models, especially those leveraging supervised multi-task instructing tuning (e.g.,
+FLAN-T5), excel when these criteria are not met.
+8
+
+Are Clinical T5 Models Better for Clinical Text?
+
+More broadly, our results do provide support to
+previous claims that truly “domain-specific” language models, trained for specific data distributions
+and tasks, are ideal (Lehman et al., 2023). However,
+they also suggest that domain-specific models are not
+always practical. Data distributions may change over
+time (e.g., suddenly due to a pandemic, gradually as
+clinical practice evolves) (Khanday et al., 2020; Jeong
+et al., 2024) or across target populations (Harrigian
+et al., 2023a). Likewise, not all domains are data rich
+and diverse enough to support training a language
+model from scratch that endows broader linguistic
+abilities. In the clinical domain, non-clinical language models will almost certainly continue to have
+access to pre-training corpora that are orders of magnitude larger than clinical pre-training corpora, and
+that data scale is greatly advantageous for training
+high-performing LLMs (Kaplan et al., 2020).
+Lastly, we would be remiss not to comment on
+the cost and sustainability implications of training
+domain-specific language models. While it is true
+that given the same inference budget, a clinical model
+trained from scratch is typically able to achieve better performance than a generic model (Lehman et al.,
+2023), such a perspective regarding model efficiency
+is inherently narrow. Using floating point operations
+(FLOPs) at inference time as a proxy for efficiency
+does not accurately reflect the additional cost complexities of training a language model from scratch
+– e.g., training compute, human labor (development
+and annotation), data access, and dealing with future
+distribution shift. Put another way, specialized models may achieve improvements in performance that
+are statistically significant, but not necessarily practically significant.
+
+tasks. We have cited relevant work where applicable
+to supplement our findings.
+Hyperparameter Search Due to computational
+costs associated with training each T5 model over
+multiple cross validation folds, we were only able to
+perform limited amounts of hyperparameter tuning
+at the onset of the study. Upon identifying a reasonable set of hyperparameters that worked well across
+the different datasets and models, we opted to fix
+them across all the cross validation runs. It is certainly possible that different hyperparameters may
+have yielded different outcomes. That said, the computational limitations faced here reflect what many
+practitioners face.
+Statistical Measures We are aware that traditional statistical methods in NLP may not be sufficient to describe the divergence of performances in
+the clinical domain. While these statistical methods
+are effective in establishing the statistical significance
+of performance differences between models, they may
+fall short of providing a comprehensive understanding
+of how these differences manifest in real-world clinical settings. This limitation underscores the need for
+specialized evaluation frameworks in healthcare applications, thereby ensuring that the models not only
+perform well statistically but also deliver practical,
+reliable, and clinically relevant outcomes.
+Future Directions The clinical domain presents
+unique challenges and opportunities. Future work
+could consider extending model architectures and
+training strategies (Gema et al., 2024; Labrak et al.,
+2024; Toma et al., 2023; Wu et al., 2023a), evaluation (Tang et al., 2023; Hager et al., 2024; Ness et al.,
+2024)), and techniques for addressing data scarcity
+and privacy issues (Lin et al., 2022).
+
+Limitations
+Ethics Statement
+
+T5 Model Family Our study focused on clinically pretrained T5 models, made possible by the released models from Lu et al. (2022) and Lehman et al.
+(2023). Comparing them allowed us to study the effect of pretraining strategies while controlling for the
+architecture. Future work could extend these investigations to other pretrained model architectures.
+
+Our clinical datasets were obtained from the PhysioNet website, accessed under the PhysioNet Credentialed Health Data Use Agreement, and from Hospital
+System (anonymized) after IRB approval. All data
+from MIMIC-III or MIMIC-IV has been de-identified
+to ensure privacy and confidentiality. Clinical-T5
+models were pre-trained on MIMIC; we access and
+Data Availability Due to the scarcity of clinical use them under the PhysioNet Credentialed Health
+text datasets, our evaluation was limited to a total of Data license and data use agreement. All data
+seven datasets. This constraint might not provide a processing and model training was done on remote
+comprehensive assessment for a wide range of clinical servers secured using OS-level security protocols.
+9
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Acknowledgments
+
+Sébastien Bubeck, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar,
+This work was supported by the National Institute on
+Peter Lee, Yin Tat Lee, Yuanzhi Li, Scott LundMinority Health and Health Disparities under grant
+berg, Harsha Nori, Hamid Palangi, Marco Tulio
+number R01 MD017048. The content is solely the
+Ribeiro, and Yi Zhang. Sparks of artificial general
+responsibility of the authors and does not necessarily
+intelligence: Early experiments with gpt-4, 2023.
+represent the official views of NIMHD, NIH, or Johns
+Aakanksha Chowdhery, Sharan Narang, Jacob DeHopkins University.
+vlin, Maarten Bosma, Gaurav Mishra, Adam
+We thank Eric Lehman, Qiuhao Lu, and Long
+Roberts, Paul Barham, Hyung Won Chung,
+Phan for clarifications about their code and experCharles Sutton, Sebastian Gehrmann, Parker
+iments.
+Schuh, Kensen Shi, Sasha Tsvyashchenko, Joshua
+Maynez, Abhishek Rao, Parker Barnes, Yi Tay,
+References
+Noam Shazeer, Vinodkumar Prabhakaran, Emily
+Reif, Nan Du, Ben Hutchinson, Reiner Pope,
+Monica Agrawal, Stefan Hegselmann, Hunter Lang,
+James Bradbury, Jacob Austin, Michael Isard, Guy
+Yoon Kim, and David Sontag. Large language
+Gur-Ari, Pengcheng Yin, Toju Duke, Anselm Levmodels are few-shot clinical information extractors.
+skaya, Sanjay Ghemawat, Sunipa Dev, Henryk
+In Yoav Goldberg, Zornitsa Kozareva, and Yue
+Michalewski, Xavier Garcia, Vedant Misra, Kevin
+Zhang, editors, Proceedings of the 2022 Conference
+Robinson, Liam Fedus, Denny Zhou, Daphne Ipon Empirical Methods in Natural Language Propolito, David Luan, Hyeontaek Lim, Barret Zoph,
+cessing, pages 1998–2022, Abu Dhabi, United Arab
+Alexander Spiridonov, Ryan Sepassi, David DoEmirates, December 2022. Association for Comhan, Shivani Agrawal, Mark Omernick, Andrew M.
+putational Linguistics. doi: 10.18653/v1/2022.
+Dai, Thanumalayan Sankaranarayana Pillai, Marie
+emnlp-main.130. URL https://aclanthology.
+Pellat, Aitor Lewkowycz, Erica Moreira, Rewon
+org/2022.emnlp-main.130.
+Child, Oleksandr Polozov, Katherine Lee, Zongwei Zhou, Xuezhi Wang, Brennan Saeta, Mark
+Emily Alsentzer, John R. Murphy, Willie Boag,
+Diaz, Orhan Firat, Michele Catasta, Jason Wei,
+Wei-Hung Weng, Di Jin, Tristan Naumann, and
+Kathy Meier-Hellstern, Douglas Eck, Jeff Dean,
+Matthew B. A. McDermott. Publicly available clinSlav Petrov, and Noah Fiedel. Palm: Scaling lanical bert embeddings, 2019.
+guage modeling with pathways, 2022.
+Simon Baker, Ilona Silins, Yufan Guo, Imran Ali,
+Johan Högberg, Ulla Stenius, and Anna Korho- Hyung Won Chung, Le Hou, Shayne Longpre, Barret
+Zoph, Yi Tay, William Fedus, Yunxuan Li, Xuezhi
+nen. Automatic semantic classification of sciWang, Mostafa Dehghani, Siddhartha Brahma, Alentific literature according to the hallmarks of
+bert Webson, Shixiang Shane Gu, Zhuyun Dai,
+cancer.
+Bioinformatics, 32(3):432–440, OctoMirac Suzgun, Xinyun Chen, Aakanksha Chowdber 2015.
+ISSN 1367-4803.
+doi: 10.1093/
+hery, Alex Castro-Ros, Marie Pellat, Kevin Robinbioinformatics/btv585.
+URL http://dx.doi.
+son, Dasha Valter, Sharan Narang, Gaurav Mishra,
+org/10.1093/bioinformatics/btv585.
+Adams Yu, Vincent Zhao, Yanping Huang, Andrew
+Dai, Hongkun Yu, Slav Petrov, Ed H. Chi, Jeff
+Tom B. Brown, Benjamin Mann, Nick Ryder,
+Dean, Jacob Devlin, Adam Roberts, Denny Zhou,
+Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal,
+Quoc V. Le, and Jason Wei. Scaling instructionArvind Neelakantan, Pranav Shyam, Girish Sastry,
+finetuned language models, 2022a.
+Amanda Askell, Sandhini Agarwal, Ariel HerbertVoss, Gretchen Krueger, Tom Henighan, Rewon Hyung Won Chung, Le Hou, Shayne Longpre, Barret
+Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey
+Zoph, Yi Tay, William Fedus, Yunxuan Li, Xuezhi
+Wu, Clemens Winter, Christopher Hesse, Mark
+Wang, Mostafa Dehghani, Siddhartha Brahma,
+Chen, Eric Sigler, Mateusz Litwin, Scott Gray,
+et al. Scaling instruction-finetuned language modBenjamin Chess, Jack Clark, Christopher Berner,
+els. arXiv preprint arXiv:2210.11416, 2022b.
+Sam McCandlish, Alec Radford, Ilya Sutskever,
+and Dario Amodei. Language models are few-shot Jacob Devlin, Ming-Wei Chang, Kenton Lee, and
+learners, 2020.
+Kristina Toutanova. Bert: Pre-training of deep
+10
+
+Are Clinical T5 Models Better for Clinical Text?
+
+bidirectional transformers for language under- Keith Harrigian, Tina Tang, Anthony Gonzales,
+standing, 2019.
+Cindy X. Cai, and Mark Dredze. An eye on clinical
+bert: Investigating language model generalization
+Rezarta Islamaj Doğan, Robert Leaman, and Zhiyfor diabetic eye disease phenotyping, 2023a.
+ong Lu. NCBI disease corpus: A resource for disease name recognition and concept normalization. Keith Harrigian, Ayah Zirikly, Brant Chee, Alya Ahmad, Anne Links, Somnath Saha, Mary CatherJ. Biomed. Inform., 47:1–10, February 2014.
+ine Beach, and Mark Dredze. Characterization
+Rezarta Islamaj Doğan, Robert Leaman, and Zhiyof stigmatizing language in medical records. In
+ong Lu. Ncbi disease corpus: A resource for disease
+Anna Rogers, Jordan Boyd-Graber, and Naoaki
+name recognition and concept normalization. JourOkazaki, editors, Proceedings of the 61st Annual
+nal of Biomedical Informatics, 47:1–10, Feb 2014.
+Meeting of the Association for Computational Lindoi: 10.1016/j.jbi.2013.12.006.
+guistics (Volume 2: Short Papers), pages 312–
+329, Toronto, Canada, July 2023b. Association
+William Fleshman and Benjamin Van Durme. Refor Computational Linguistics. doi: 10.18653/v1/
+adapt: Reverse engineered adaptation of large lan2023.acl-short.28. URL https://aclanthology.
+guage models, 2024.
+org/2023.acl-short.28.
+Aryo Pradipta Gema, Pasquale Minervini, Luke
+Daines, Tom Hope, and Beatrice Alex. Parameter- Hyewon Jeong, Sarah Jabbour, Yuzhe Yang,
+Rahul Thapta, Hussein Mozannar, William Jongefficient fine-tuning of llama for the clinical domain,
+won Han, Nikita Mehandru, Michael Wornow,
+2024. URL https://arxiv.org/abs/2307.03042.
+Vladislav Lialin, Xin Liu, et al. Recent advances,
+Yu Gu, Robert Tinn, Hao Cheng, Michael Lucas,
+applications, and open challenges in machine learnNaoto Usuyama, Xiaodong Liu, Tristan Naumann,
+ing for health: Reflections from research roundtaJianfeng Gao, and Hoifung Poon. Domain-specific
+bles at ml4h 2023 symposium. arXiv preprint
+language model pretraining for biomedical natural
+arXiv:2403.01628, 2024.
+language processing. ACM Trans. Comput. Healthcare, 3(1), oct 2021. doi: 10.1145/3458754. URL Alistair E. W. Johnson, Lucas Bulgarelli, Lu Shen,
+Alvin Gayles, Ayad Shammout, Steven Horng,
+https://doi.org/10.1145/3458754.
+Tom J. Pollard, Sicheng Hao, Benjamin Moody,
+Kshitij Gupta, Benjamin Thérien, Adam Ibrahim,
+Brian Gow, and et al.
+Mimic-iv, a freely
+Mats L. Richter, Quentin Anthony, Eugene
+accessible electronic health record dataset, Jan
+Belilovsky, Irina Rish, and Timothée Lesort. Con2023. URL https://www.nature.com/articles/
+tinual pre-training of large language models: How
+s41597-022-01899-x.
+to (re)warm your model?, 2023.
+Alistair E.W. Johnson, Tom J. Pollard, Lu Shen, LiSuchin Gururangan, Ana Marasović, Swabha
+wei H. Lehman, Mengling Feng, Mohammad GhasSwayamdipta, Kyle Lo, Iz Beltagy, Doug Downey,
+semi, Benjamin Moody, Peter Szolovits, Leo Anand Noah A. Smith. Don’t stop pretraining:
+thony Celi, and Roger G. Mark. Mimic-iii, a freely
+Adapt language models to domains and tasks,
+accessible critical care database. Scientific Data, 3
+2020.
+(1), May 2016. doi: 10.1038/sdata.2016.35.
+Bernal Jiménez Gutiérrez, Huan Sun, and Yu Su.
+Biomedical language models are robust to suboptimal tokenization, 2023.
+
+Jared Kaplan, Sam McCandlish, Tom Henighan,
+Tom B Brown, Benjamin Chess, Rewon Child,
+Scott Gray, Alec Radford, Jeffrey Wu, and Dario
+Amodei. Scaling laws for neural language models.
+arXiv preprint arXiv:2001.08361, 2020.
+
+Paul Hager, Friederike Jungmann, Robbie Holland,
+Kunal Bhagat, Inga Hubrecht, Manuel Knauer,
+Jakob Vielhauer, Marcus Makowski, Rickmer Akib Mohi Ud Din Khanday, Syed Tanzeel Rabani,
+Braren, Georgios Kaissis, and et al. Evaluation
+Qamar Rayees Khan, Nusrat Rouf, and Masarat
+and mitigation of the limitations of large lanMohi Ud Din. Machine learning based approaches
+guage models in clinical decision-making. Nafor detecting covid-19 using clinical text data. Inture Medicine, 30(9):2613–2622, Jul 2024. doi:
+ternational Journal of Information Technology, 12:
+10.1038/s41591-024-03097-1.
+731–739, 2020.
+11
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Yanis Labrak, Adrien Bazoge, Emmanuel Morin,
+Pierre-Antoine Gourraud, Mickael Rouvier, and
+Richard Dufour. Biomistral: A collection of opensource pretrained large language models for medical domains, 2024. URL https://arxiv.org/
+abs/2402.10373.
+
+editors, Proceedings of the 3rd Clinical Natural
+Language Processing Workshop, pages 146–157,
+Online, November 2020a. Association for Computational Linguistics. doi: 10.18653/v1/2020.
+clinicalnlp-1.17. URL https://aclanthology.
+org/2020.clinicalnlp-1.17.
+
+Anastasios Lamproudis, Aron Henriksson, and Her- Patrick Lewis, Myle Ott, Jingfei Du, and Veselin
+cules Dalianis. Evaluating pretraining strategies
+Stoyanov. Pretrained language models for biomedifor clinical BERT models. In Nicoletta Calzolari,
+cal and clinical tasks: understanding and extending
+Frédéric Béchet, Philippe Blache, Khalid Choukri,
+the state-of-the-art. In Proceedings of the 3rd ClinChristopher Cieri, Thierry Declerck, Sara Goggi,
+ical Natural Language Processing Workshop, pages
+Hitoshi Isahara, Bente Maegaard, Joseph Mari146–157, 2020b.
+ani, Hélène Mazo, Jan Odijk, and Stelios Piperidis,
+editors, Proceedings of the Thirteenth Language Jiao Li, Yueping Sun, Robin J Johnson, Daniela SciResources and Evaluation Conference, pages 410–
+aky, Chih-Hsuan Wei, Robert Leaman, Allan Peter
+416, Marseille, France, June 2022. European LanDavis, Carolyn J Mattingly, Thomas C Wiegers,
+guage Resources Association.
+URL https://
+and Zhiyong Lu. BioCreative V CDR task corpus:
+aclanthology.org/2022.lrec-1.43.
+a resource for chemical disease relation extraction.
+Database (Oxford), 2016:baw068, May 2016a.
+Jinhyuk Lee, Wonjin Yoon, Sungdong Kim,
+Donghyeon Kim, Sunkyu Kim, Chan Ho So, and Jiao Li, Yueping Sun, Robin J. Johnson, Daniela SciJaewoo Kang. Biobert: a pre-trained biomedaky, Chih-Hsuan Wei, Robert Leaman, Allan Peter
+ical language representation model for biomediDavis, Carolyn J. Mattingly, Thomas C. Wiegers,
+cal text mining. Bioinformatics, 36(4):1234–1240,
+and Zhiyong Lu. Biocreative v cdr task corpus: A
+September 2019. ISSN 1367-4811. doi: 10.1093/
+resource for chemical disease relation extraction.
+bioinformatics/btz682. URL http://dx.doi.org/
+Database, 2016, 2016b. doi: 10.1093/database/
+10.1093/bioinformatics/btz682.
+baw068.
+Eric P. Lehman, Evan Hernandez, Diwakar Mahajan,
+Bill Yuchen Lin, Chaoyang He, Zihang Ze, Hulin
+Jonas Wulff, Micah J. Smith, Zachary M. Ziegler,
+Wang, Yufen Hua, Christophe Dupuy, Rahul
+Daniel Nadler, Peter Szolovits, Alistair E. W.
+Gupta, Mahdi Soltanolkotabi, Xiang Ren, and
+Johnson, and Emily Alsentzer. Do we still need
+Salman Avestimehr. FedNLP: Benchmarking fedclinical language models? ArXiv, abs/2302.08091,
+erated learning methods for natural language pro2023.
+cessing tasks. In Marine Carpuat, Marie-Catherine
+de Marneffe, and Ivan Vladimir Meza Ruiz, editors,
+Brian Lester, Rami Al-Rfou, and Noah Constant.
+Findings of the Association for Computational LinThe power of scale for parameter-efficient prompt
+guistics: NAACL 2022, pages 157–175, Seattle,
+tuning.
+In Marie-Francine Moens, Xuanjing
+United States, July 2022. Association for ComHuang, Lucia Specia, and Scott Wen-tau Yih, ediputational Linguistics. doi: 10.18653/v1/2022.
+tors, Proceedings of the 2021 Conference on Empirfindings-naacl.13. URL https://aclanthology.
+ical Methods in Natural Language Processing, pages
+org/2022.findings-naacl.13.
+3045–3059, Online and Punta Cana, Dominican
+Republic, November 2021. Association for Computational Linguistics. doi: 10.18653/v1/2021. Shayne Longpre, Gregory Yauney, Emily Reif,
+Katherine Lee, Adam Roberts, Barret Zoph,
+emnlp-main.243. URL https://aclanthology.
+Denny Zhou, Jason Wei, Kevin Robinson, David
+org/2021.emnlp-main.243.
+Mimno, and Daphne Ippolito. A pretrainer’s guide
+Patrick Lewis, Myle Ott, Jingfei Du, and Veselin
+to training data: Measuring the effects of data age,
+Stoyanov. Pretrained language models for biomeddomain coverage, quality, & toxicity, 2023.
+ical and clinical tasks: Understanding and extending the state-of-the-art. In Anna Rumshisky, Kirk Qiuhao Lu, Dejing Dou, and Thien Nguyen. ClinRoberts, Steven Bethard, and Tristan Naumann,
+icalT5: A generative language model for clinical
+12
+
+Are Clinical T5 Models Better for Clinical Text?
+
+text. In Findings of the Association for Compu- Pranav Rajpurkar, Jian Zhang, and Percy Liang.
+tational Linguistics: EMNLP 2022, pages 5436–
+Know what you don’t know: Unanswerable ques5443, Abu Dhabi, United Arab Emirates, Detions for squad. In ACL 2018, 2018.
+cember 2022. Association for Computational Linguistics. URL https://aclanthology.org/2022. Lance Ramshaw and Mitch Marcus. Text chunking using transformation-based learning. In Third
+findings-emnlp.398.
+Workshop on Very Large Corpora, 1995. URL
+Sanket Vaibhav Mehta, Darshan Patil, Sarath Chanhttps://www.aclweb.org/anthology/W95-0107.
+dar, and Emma Strubell. An empirical investigation of the role of pre-training in lifelong learning, Alexey Romanov and Chaitanya Shivade. Lessons
+from natural language inference in the clinical do2023.
+main, 2018.
+David Mueller, Nicholas Andrews, and Mark Dredze.
+Do text-to-text multi-task learners suffer from task Noam Shazeer and Mitchell Stern. Adafactor: Adapconflict? arXiv preprint arXiv:2212.06645, 2022.
+tive learning rates with sublinear memory cost,
+2018.
+James Mullenbach, Yada Pruksachatkun, Sean Adler,
+Jennifer Seale, Jordan Swartz, T. Greg McK- Karan Singhal, Shekoofeh Azizi, Tao Tu, S. Sara
+elvey, Hui Dai, Yi Yang, and David A. Sontag.
+Mahdavi, Jason Wei, Hyung Won Chung,
+CLIP: A dataset for extracting action items for
+Nathan Scales, Ajay Tanwani, Heather Colephysicians from hospital discharge notes. CoRR,
+Lewis, Stephen Pfohl, Perry Payne, Martin Seneviabs/2106.02524, 2021. URL https://arxiv.org/
+ratne, Paul Gamble, Chris Kelly, Nathaneal
+abs/2106.02524.
+Scharli, Aakanksha Chowdhery, Philip Mansfield,
+Blaise Aguera y Arcas, Dale Webster, Greg S. Corrado, Yossi Matias, Katherine Chou, Juraj Gottweis, Nenad Tomasev, Yun Liu, Alvin Rajkomar,
+Joelle Barral, Christopher Semturs, Alan Karthikesalingam, and Vivek Natarajan. Large language
+models encode clinical knowledge, 2022.
+
+Hiroki Nakayama. seqeval: A python framework for
+sequence labeling evaluation, 2018. URL https:
+//github.com/chakki-works/seqeval.
+Software available from https://github.com/chakkiworks/seqeval.
+
+Robert Osazuwa Ness, Katie Matton, Hayden Helm,
+Sheng Zhang, Junaid Bajwa, Carey E. Priebe, and Karan Singhal, Shekoofeh Azizi, Tao Tu, S Sara
+Mahdavi, Jason Wei, Hyung Won Chung,
+Eric Horvitz. Medfuzz: Exploring the robustness of
+Nathan Scales, Ajay Tanwani, Heather Cole-Lewis,
+large language models in medical question answerStephen Pfohl, Perry Payne, Martin Seneviratne,
+ing, 2024. URL https://arxiv.org/abs/2406.
+Paul Gamble, Chris Kelly, Abubakr Babiker,
+06573.
+Nathanael Schärli, Aakanksha Chowdhery, Philip
+Long N. Phan, James T. Anibal, Hieu Tran, ShauMansfield, Dina Demner-Fushman, Blaise Agüera
+rya Chanana, Erol Bahadroglu, Alec Peltekian,
+Y Arcas, Dale Webster, Greg S Corrado, Yossi
+and Grégoire Altan-Bonnet. SciFive: a text-toMatias, Katherine Chou, Juraj Gottweis, Nenad
+text transformer model for biomedical literature.
+Tomasev, Yun Liu, Alvin Rajkomar, Joelle BararXiv e-prints, art. arXiv:2106.03598, May 2021.
+ral, Christopher Semturs, Alan Karthikesalingam,
+doi: 10.48550/arXiv.2106.03598.
+and Vivek Natarajan. Large language models encode clinical knowledge. Nature, 620(7972):172–
+Alec Radford, Jeff Wu, Rewon Child, David
+180,
+August 2023.
+Luan, Dario Amodei, and Ilya Sutskever. Language models are unsupervised multitask learners.
+Sarvesh Soni, Meghana Gudala, Atieh Pajouhi, and
+2019. URL https://api.semanticscholar.org/
+Kirk Roberts. RadQA: A question answering
+CorpusID:160025533.
+dataset to improve comprehension of radiology
+Colin Raffel, Noam Shazeer, Adam Roberts, Katherreports. In Proceedings of the Thirteenth Lanine Lee, Sharan Narang, Michael Matena, Yanqi
+guage Resources and Evaluation Conference, pages
+Zhou, Wei Li, and Peter J. Liu. Exploring the lim6250–6259, Marseille, France, June 2022. European
+its of transfer learning with a unified text-to-text
+Language Resources Association. URL https:
+transformer, 2023.
+//aclanthology.org/2022.lrec-1.672.
+13
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Irena Spasic and Goran Nenadic. Clinical text data in
+machine learning: Systematic review. JMIR Medical Informatics, 03 2020. doi: 10.2196/17984.
+
+model to unlock patient information from unstructured electronic health records, 2022.
+
+Michihiro Yasunaga, Jure Leskovec, and Percy Liang.
+Liyan Tang, Zhaoyi Sun, Betina Idnay, Jordan G.
+Linkbert: Pretraining language models with docuNestor, Ali Soroush, Pierre A. Elias, Ziyang Xu,
+ment links, 2022.
+Ying Ding, Greg Durrett, Justin F. Rousseau, and
+et al. Evaluating large language models on medical Xiang Yue, Bernal Jimenez Gutierrez, and Huan
+Sun. Clinical reading comprehension: A thorough
+evidence summarization. npj Digital Medicine, 6
+analysis of the emrQA dataset. In Dan Jurafsky,
+(1), Aug 2023. doi: 10.1038/s41746-023-00896-7.
+Joyce Chai, Natalie Schluter, and Joel Tetreault,
+Ross Taylor, Marcin Kardas, Guillem Cucurull,
+editors, Proceedings of the 58th Annual Meeting
+Thomas Scialom, Anthony Hartshorn, Elvis Sarof the Association for Computational Linguistics,
+avia, Andrew Poulton, Viktor Kerkez, and Robert
+pages 4474–4486, Online, July 2020. Association
+Stojnic. Galactica: A large language model for scifor Computational Linguistics. doi: 10.18653/v1/
+ence, 2022.
+2020.acl-main.410. URL https://aclanthology.
+org/2020.acl-main.410.
+Augustin Toma, Patrick R. Lawler, Jimmy Ba,
+Rahul G. Krishnan, Barry B. Rubin, and Bo Wang. Weipeng Zhou, Meliha Yetisgen, Majid Afshar, YanClinical camel: An open expert-level medical lanjun Gao, Guergana Savova, and Timothy A Miller.
+guage model with dialogue-based knowledge encodImproving model transferability for clinical note
+ing, 2023. URL https://arxiv.org/abs/2305.
+section classification models using continued pre12031.
+training. Journal of the American Medical Informatics Association, 31(1):89–97, 09 2023. ISSN
+1527-974X. doi: 10.1093/jamia/ocad190. URL
+https://doi.org/10.1093/jamia/ocad190.
+
+Hugo Touvron, Thibaut Lavril, Gautier Izacard,
+Xavier Martinet, Marie-Anne Lachaux, Timothée
+Lacroix, Baptiste Rozière, Naman Goyal, Eric
+Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, and Guillaume Lample. Llama: Open and efficient foundation language
+models, 2023.
+
+Appendix A. Dataset Details
+
+We adapted the data processing methods mostly from
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob the original MIMIC-T5, SciFive+MIMIC-T5 and SciUszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Five’s paper and codebases.
+Kaiser, and Illia Polosukhin. Attention is all you
+MedNLI MedNLI (Romanov and Shivade, 2018)
+need, 2017.
+is a natural language inference dataset derived from
+Chaoyi Wu, Xiaoman Zhang, Ya Zhang, Yanfeng MIMIC-III (Johnson et al., 2016). Given two senWang, and Weidi Xie. Pmc-llama: Further fine- tences - premise and hypothesis - it labels the relation
+tuning llama on medical papers, 2023a.
+between these two sentences as “entailment”, “natural”, and “contradiction.”
+Shijie Wu, Ozan Irsoy, Steven Lu, Vadim Dabravolski, Mark Dredze, Sebastian Gehrmann, Prab- RadQA RadQA (Soni et al., 2022) is a questionhanjan Kambadur, David Rosenberg, and Gideon answering dataset sourced from the radiology report
+Mann. Bloomberggpt: A large language model for in MIMIC-III (Johnson et al., 2016). It annotates
+finance, 2023b.
+the answer span to the questions; if no answers for
+the question, the answer text is empty.
+Xi Yang, Aokun Chen, Nima PourNejatian,
+Hoo Chang Shin, Kaleb E Smith, Christopher CLIP CLIP (Mullenbach et al., 2021) is a multiParisien, Colin Compas, Cheryl Martin, Mona G label classification dataset of clinical action items,
+Flores, Ying Zhang, Tanja Magoc, Christopher A such as “patient instructions” and “appointment.”
+Harle, Gloria Lipori, Duane A Mitchell, William R Due to the long context of clinical records of these
+Hogan, Elizabeth A Shenkman, Jiang Bian, and two tasks, we referred to the methodology utilized by
+Yonghui Wu. Gatortron: A large clinical language MIMIC-T5, which involves segmenting long records
+14
+
+Are Clinical T5 Models Better for Clinical Text?
+
+• RadQA
+Context: {context} Question:
+{question} If no answer is found in the
+context, do not reply; otherwise, give
+an answer from the context:
+
+and appropriately mapping labels to the segmented
+sequences.
+BC5CDR-disease BC5CDR-disease (Li et al.,
+2016b) is a Disease Named Entity Recognition corpus, which annotates 1500 PubMed articles with disease entities labels. Suppose (x, y) is the inputoutput pair: y is the same as x except that disease
+entities are enclosed with “disease*” and “*disease”.
+
+• CLIP
+Context: {context}. Label the
+above sentence as an empty string or as
+one or more of the following options,
+delimited by comma: Options: {labels}
+• HOC
+Sentence: {input} Assign the
+above sentence as zero or more of the
+following class labels: {labels}
+
+NCBI-disease NCBI-disease (Doğan et al., 2014)
+is also a corpus for Disease Named Entity Recoginition from PubMed abtracts. Both BC5CDR-disease
+and NCBI-disease are preprocessed by SciFive and
+available in their repo.
+
+• BC5CR-disease & NCBI-disease Sentence:
+{input} Identify and label disease terms
+in the sentence:
+
+HOC HOC dataset (Baker et al., 2015) is accessible
+on Huggingface. It is developed from PubMed publication abstracts. We use the sentence-level dataset,
+where each sentence is annotated for different hallmarks of cancer.
+
+• Stigmatizing Language Dataset
+– Credibility & Obstinacy
+Classify this sentence as
+difficult, disbelief, or exclude,
+regarding the credibility and
+obstinacy of the patient: {input}
+
+Clinical Stigmatizing Language Datasets
+Clinical Stigmatizing Language Datasets (Harrigian
+et al., 2023b) characterizes stigmatizing languages in
+three classification tasks:
+1. Credibility & Obstinacy (Disbelief, Difficult,
+Exclude): expressions of doubt or resistance.
+2. Compliance (Negative, Neutral, Positive): adherence to medical advice.
+3. Descriptors (Negative, Neutral, Positive, Exclude): characterization of patient behavior and demeanor.
+
+– Compliance
+Classify this sentence as negative,
+neutral, or positive, regarding the
+patient’s compliance with medical
+advice: {input}
+– Descriptors
+Classify this sentence as exclude,
+negative, neutral, or positive,
+regarding the patient’s behavior
+and demeanor: {input}
+
+Appendix B. Prefix and Instructions
+
+T5 Prefix We used the same prefix as MIMIC-T5
+on MedNLI, RadQA, and CLIP datasets. We re- Appendix C. Model Details
+ferred to SCFIVE-T5’s github repository for NCBI,
+BC5CDR, NCBI’s prefix. On the stigmatizing lan- The details of the pre-training corpus for each model
+guage datasets, we referred to its keyword category are listed in Table 4.
+as prefix before inputs: “adamant” for the Credibility
+& Obstinacy task; “compliance” for the Compliance
+Appendix D. Training Details
+task; “other” for the Descriptors task.
+D.1. Training settings
+FLAN-T5 Instructions We didn’t exhaustively
+experiment with different instructions for FLAN-T5. Training on Full Datasets We use code provided
+We referred to some instructions from MIMIC-T5 and by prior work (Phan et al., 2021; Lehman et al.,
+2023) to fine-tune the various T5 variants with pymost instructions are straight-forward.
+torch==2.1.2. Throughout our experiments, we used
+• MedNLI Answer entailment, contradiction the adafactor optimizer (Shazeer and Stern, 2018)
+or neutral. Premise: {premise}
+with constant lr = 1e − 4, batch size of 64, and set
+Hypothesis:{hypothesis}
+max sequence lengths that depend on the dataset.
+15
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Weight Initialization
+
+pre-training Data
+
+T5-Sup
+(Raffel et al., 2023)
+
+Random
+
+Colossal Clean Crawled Corpus (C4)
++ Supervised Tasks (Raffel et al., 2023)
+
+T5-Den
+(Raffel et al., 2023)
+
+Random
+
+Colossal Clean Crawled Corpus (C4)
+(Raffel et al., 2023)
+
+Clinical-T5
+(Lehman et al., 2023)
+
+Random
+
+MIMIC-III (Johnson et al., 2016)
+& MIMIC-IV (Johnson et al., 2023)
+
+Clinical-T5
+(Lu et al., 2022)
+
+SciFive-PubMed-PMC
+(Phan et al., 2021)
+
+MIMIC-III
+(Johnson et al., 2016)
+
+Table 4: pre-training corpus for the models we compared. All models compared have 770 million parameters.
+
+For all fine-tuning runs, we train for a fixed amount
+of epochs (30) and pick the best checkpoint based on
+validation set performance. We chose accuracy for
+MedNLI, and F-1 for other datasets to pick the best
+checkpoint during the validation and then evaluated
+on the complete test split per model and dataset.
+
+1% Training data
+
+Training on Downsampled Datasets Due to
+variations in the downsampled training data, we conducted a learning rate search for all models in the
+range of [1e − 3, 5e − 4, 1e − 4, 1e − 5] using a batch
+size of 16 with 5% and 25% downsampling training
+data and using a batch size of 4 with 1% downsampling training data on stigmatizing language datasets
+and ran the learning rate search in the range of
+[5e − 3, 1e − 3, 5e − 4, 1e − 4] with a batch size of
+64 on MedNLI dataset. We trained each model for
+30 epochs. We selected the best checkpoint for each
+model based on their average validation score across
+folds (i.e. macro-F1 for the stigmatizing task and accuracy for the MedNLI task) and subsequently evaluated on the test dataset. The best-found learning
+rates are reported in Table 5, Table 6, and Table 7.
+
+Model
+T5-Sup
+FLAN-T5
+MIMIC-T5
+SCIFIVE+MIMIC-T5
+
+Learning Rate
+1e-4
+1e-4
+5e-4
+1e-4
+
+Batch Size
+4
+4
+4
+4
+
+Learning Rate
+1e-4
+1e-4
+5e-4
+5e-4
+
+Batch Size
+16
+16
+16
+16
+
+Learning Rate
+1e-4
+1e-4
+1e-4
+1e-4
+
+Batch Size
+16
+16
+16
+16
+
+5% Training data
+Model
+T5-Sup
+FLAN-T5
+MIMIC-T5
+SCIFIVE+MIMIC-T5
+25% Training data
+Model
+T5-Sup
+FLAN-T5
+MIMIC-T5
+SCIFIVE+MIMIC-T5
+
+D.2. Differences from Prior Work
+
+We summarize a list of changes we made that possibly contribute to the difference in results compared Table 5: Best-found hyperparameter settings for
+to prior Clinical-T5s works (Lu et al., 2022; Lehman
+down-sampling experiments on stigmatizing
+et al., 2023):
+language dataset - MIMIC-IV
+• We trained each model on each supervised
+dataset from scratch.
+• We implemented the 5-fold cross-validation experiment, focusing on variance in data. This is a
+different evaluation structure from prior works.
+16
+
+Are Clinical T5 Models Better for Clinical Text?
+
+• We added T5-Den and FLAN-T5 in addition to
+widely used T5-Sup into the comparison.
+1% Training data
+Model
+T5-Sup
+FLAN-T5
+MIMIC-T5
+SCIFIVE+MIMIC-T5
+
+D.3. Computing Resources
+Learning Rate
+1e-3
+1e-4
+1e-3
+5e-4
+
+Batch Size
+4
+4
+4
+4
+
+Learning Rate
+1e-4
+1e-4
+1e-3
+5e-4
+
+Batch Size
+16
+16
+16
+16
+
+We conducted our experiments on multiple 40G/80G
+A100 GPUs and Tesla M60 GPUs. Each run of
+the fine-tuning takes a few hours, except for CLIP
+dataset which could take approximately 10 hours for
+30 epochs with multiple GPUs. However, it should
+be noted that these models are approaching a size
+that is not necessarily easy to accommodate in clinical settings.
+
+5% Training data
+Model
+T5-Sup
+FLAN-T5
+MIMIC-T5
+SCIFIVE+MIMIC-T5
+
+Appendix E. Evaluation Details
+25 % Training data
+Model
+T5-Sup
+FLAN-T5
+MIMIC-T5
+SCIFIVE+MIMIC-T5
+
+Learning Rate
+1e-4
+1e-4
+5e-4
+1e-4
+
+We use the Python 3.9 packages sklearn==1.1.2, and
+evaluate==0.3.0 for evaluations.
+
+Batch Size
+16
+16
+16
+16
+
+Classification For the CLIP dataset, we followed
+the same evaluation strategy as Lehman et al., 2023
+by transforming predicted values into binary matriTable 6: Best-found hyperparameter settings for ces, whose dimensions indicate the presence of class
+down-sampling experiments on stigmatizing labels. And then used the package sklearn.metrics to
+calculate macro-F1 and micro-F1. On HOC dataset,
+language dataset - Hospital System
+we evaluate the outputs in the same manner as Phan
+et al., 2021 and Yasunaga et al., 2022. For stigmatizing datasets, we also used sklearn.metrics for macroF1 scores.
+Natural Language Inference For the MedNLI
+dataset, without additionally post-processing the
+outputs, we compute the F1 score and the accuracy
+directly between the labels and predicted values.
+
+1 % Training Data
+Model
+T5-Sup
+FLAN-T5
+MIMIC-T5
+SCIFIVE+MIMIC-T5
+
+Learning Rate
+1e-4
+1e-4
+1e-3
+1e-4
+
+Batch Size
+64
+64
+64
+64
+
+Question Answering We followed the same processing method as Lehman et al., 2023 utilizing
+SQuAD 2.0 (Rajpurkar et al., 2018).
+
+Named Entity Recognition As instructed by
+Clinical-T5 (Lu et al., 2022), we referred to the evaluTable 7: Best-found hyperparameter settings for
+ation of SciFive (Phan et al., 2021). BC5CDR-disease
+down-sampling experiments on MedNLI
+and NCBI-disease datasets label the entity by insertdataset with 1% training data
+ing ”disease*” and ”*disease” around disease names
+in the input. We convert generated sentence outputs
+into sequences of ”B-disease”, ”I-disease”, ”O”, and
+padding and then evaluate using the metrics seqeval
+(Ramshaw and Marcus, 1995; Nakayama, 2018).
+17
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Appendix F. Reproducibility
+Experiments
+We evaluated T5, MIMIC-T5, and SciFive+MIMICT5 on the six datasets, following the original methodologies (i.e. a single train/dev/test split) proposed
+in each respective paper. Results of three clinical
+datasets are shown in Table 9 and results of three
+biomedical datasets are shown in Table 10. And these
+results are single-run.
+
+Appendix G. Cross-Validation
+Experiments
+We did 5-fold cross-validation in the following procedures: we merged the training and validation datasets
+and then shuffled them. Within each fold, 4 subsets are for training and one subset is for validation.
+For down-sampling experiments, we down-sampled
+the training data only while keeping the validation
+the same per fold. In the end, all the models were
+evaluated on the original test dataset. The detailed
+performances cross models are listed in Appendix G
+with paired T-test results.
+Specifically, 11 shows 5-fold cross validation results
+on MedNLI Dataset. Table 12 shows 5-fold cross validation results on RadQA Dataset. Table 13 shows
+5-fold cross validation results on CLIP dataset. Table 14 shows 5-fold cross validation results on HOC
+dataset. Table 15 shows 5-fold cross validation results
+on BC5CDR-disease dataset. Table 16 shows 5-fold
+cross validation results on NCBI-disease dataset. Table 17 and Table 18 are results for the stigmatizing
+language datasets from MIMIC-IV and Hospital System separately. Table 19, Table 20 , and Table 21 illustrate the outcomes of down-sampling experiments
+on the MIMIC-IV dataset; Table 22, Table 23, and
+Table 24 present the outcomes of down-sampling experiments on the Hospital System dataset.
+
+18
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Task
+
+Dataset
+
+Source
+
+Evaluated By
+
+Metrics
+
+NLI
+
+MedNLI
+
+MIMIC
+
+Both
+
+Accuracy
+
+Classif.
+
+CLIP
+HOC
+
+MIMIC
+Biomedical
+
+MIMIC-T5
+SciFive+MIMIC-T5
+
+F1(Macro, Micro)
+F1, P, R
+
+QA
+
+RadQA
+
+MIMIC
+
+MIMIC-T5
+
+EM, F1
+
+NER
+
+BC5CDR
+NCBI
+
+Biomedical
+
+SciFive+MIMIC-T5
+
+F1, P, R
+
+Table 8: Statistics of datasets used in MIMIC-T5 and SciFive+MIMIC-T5
+
+MedNLI
+
+RadQA
+
+CLIP
+
+Accuracy
+
+EM
+
+F1
+
+Macro-F1
+
+Micro-F1
+
+85.16
+84.95
+
+52.44
+54.07
+
+71.42
+71.14
+
+64.68
+64.20
+
+79.11
+78.93
+
+MIMIC-T5
+— Ours
+— Reported
+
+86.64
+87.2
+
+54.72
+55.0
+
+73.38
+74.5
+
+65.76
+66.3
+
+80.11
+80.0
+
+SciFive+MIMIC-T5
+— Ours
+— Reported
+
+85.79
+85.86
+
+52.28
+N/A
+
+70.74
+N/A
+
+63.79
+N/A
+
+78.24
+N/A
+
+T5-Den
+T5-Sup
+
+Table 9: We reproduced the results of MIMIC-T5 on three clinical datasets as reported and complemented
+evaluations of SciFive+MIMIC-T5 on the clinical datasets that were not used previously.
+
+HOC
+
+BC5CDR
+
+NCBI
+
+F1
+
+P
+
+R
+
+F1
+
+P
+
+R
+
+F1
+
+P
+
+R
+
+85.57
+85.91
+
+85.81
+86.01
+
+85.34
+85.80
+
+80.43
+81.70
+
+81.74
+81.46
+
+79.17
+81.94
+
+85.29
+82.53
+
+82.86
+82.49
+
+87.88
+82.58
+
+MIMIC-T5
+— Ours
+— Reported
+
+81.93
+N/A
+
+82.00
+N/A
+
+81.85
+N/A
+
+78.39
+N/A
+
+77.52
+N/A
+
+79.29
+N/A
+
+77.97
+N/A
+
+77.80
+N/A
+
+78.14
+N/A
+
+SciFive+MIMIC-T5
+— Ours
+—Reported
+
+85.42
+84.78
+
+85.52
+85.37
+
+85.32
+84.79
+
+82.44
+80.35
+
+81.22
+79.24
+
+83.70
+81.49
+
+85.67
+86.73
+
+83.18
+86.37
+
+88.31s
+87.09
+
+T5-Den
+T5-Sup
+
+Table 10: Evaluations on three biomedical datasets in SciFive+MIMIC-T5 were also reproduced. MIMIC-T5
+and T5’s performances are also shown in the table.
+
+19
+
+Are Clinical T5 Models Better for Clinical Text?
+
+MedNLI
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+85.89
+♠
+
+84.94
+♣
+
+86.03
+♦
+
+86.75
+↑ ♠0.86, ↑ ♣1.81, ↑ ♦0.72
+
+85.64
+↓ ♠0.25, ↑ ♣0.70, ↓ ♦0.39
+
+95% CI
+
+[85.34, 86.24]
+
+[84.38, 85.49]
+
+[85.72, 86.43]
+
+[86.27, 87.29]
+
+[85.13, 86.37]
+
+Metrics
+Accuracy
+
+MedNLI-Accuracy-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=-2.63, P =.06
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=0.31, P =.77
+
+t(df=4)=3.17, P =.03
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=1.97, P =.12
+
+t(df=4)=4.14, P =.01
+
+t(df=4)=1.75, P =.15
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=-0.45, P =.68
+
+t(df=4)=1.18, P =.30
+
+t(df=4)=-1.45, P =.22
+
+t(df=4)=-2.18, P =.10
+
+-
+
+Table 11: 5-fold cross-validation results across models on MedNLI dataset and the t-test results among T5,
+MIMIC-T5, and SciFive+MIMIC-T5
+
+RadQA
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+52.57
+♠
+
+51.95
+♣
+
+53.03
+♦
+
+54.50
+↑ ♠1.92, ↑ ♣2.54, ↑ ♦1.47
+
+53.42
+↑ ♠0.85, ↑ ♣1.47, ↑ ♦0.39
+
+95% CI
+
+[51.9, 53.27]
+
+[51.04, 52.95]
+
+[51.79, 54.01]
+
+[54.04, 55.05]
+
+[52.69, 54.22]
+
+Mean
+
+68.90
+♠
+
+68.68
+♣
+
+70.62
+♦
+
+73.40
+↑ ♠4.50, ↑ ♣4.72, ↑ ♦2.78
+
+70.37
+↑ ♠1.47, ↑ ♣1.7, ↓ ♦0.25
+
+95% CI
+
+[68.04, 69.79]
+
+[67.82, 69.77]
+
+[69.76, 71.34]
+
+[72.75, 74.00]
+
+[69.44, 71.49]
+
+Metrics
+EM
+
+F1
+
+RadQA-EM-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=-0.91, P =.41
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=0.47, P =.67
+
+t(df=4)=1.4, P =.23
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=4.3, P =.01
+
+t(df=4)=2.92, P =.04
+
+t(df=4)=1.84, P =.14
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=1.19, P =.30
+
+t(df=4)=1.95, P =.12
+
+t(df=4)=0.54, P =.62
+
+t(df=4)=-1.97, P =.12
+
+-
+
+RadQA-F1-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=-0.55, P =.61
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=2.53, P =.06
+
+t(df=4)=3.65, P =.02
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=5.95, P =.004
+
+t(df=4)=5.2, P =.007
+
+t(df=4)=3.5, P =.02
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=2.19, P =.09
+
+t(df=4)=2.15, P =.10
+
+t(df=4)=-0.32, P =.76
+
+t(df=4)=-5.47, P =.005
+
+-
+
+Table 12: 5-fold cross-validation results across models on RadQA dataset and the t-test results among T5,
+MIMIC-T5, and SciFive+MIMIC-T5.
+
+20
+
+Are Clinical T5 Models Better for Clinical Text?
+
+CLIP
+Metrics
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Macro-F1
+
+Mean
+
+63.86
+♠
+
+62.42
+♣
+
+64.33
+♦
+
+66.09
+↑ ♠2.23, ↑ ♣3.67, ↑ ♦1.75
+
+63.46
+↓ ♠0.4, ↑ ♣1.04, ↓ ♦0.88
+
+95% CI
+
+[62.18, 65.55]
+
+[61.37, 63.4]
+
+[62.94, 65.72]
+
+[65.84, 66.26]
+
+[62.2, 64.76]
+
+Mean
+
+78.62
+♠
+
+78.38
+♣
+
+79.40
+♦
+
+79.28
+↑ ♠0.67, ↑ ♣0.9, ↓ ♦0.12
+
+78.23
+↓ ♠0.38, ↓ ♣0.15, ↓ ♦1.17
+
+95% CI
+
+[77.48, 79.79]
+
+[78.03, 78.77]
+
+[78.85, 79.94]
+
+[78.51, 80.01]
+
+[77.93, 78.51]
+
+Micro-F1
+
+CLIP-Macro-F1-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=-1.39, P =.24
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=0.38, P =.72
+
+t(df=4)=1.83, P =.14
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=2.15, P =.10
+
+t(df=4)=5.86, P =.004
+
+t(df=4)=2.02, P =.11
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=-0.3, P =.78
+
+t(df=4)=0.95, P =.39
+
+t(df=4)=-0.73, P =.51
+
+t(df=4)=-4.33, P =.01
+
+-
+
+CLIP-Micro-F1-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=-0.34, P =.75
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=1.83, P =.14
+
+t(df=4)=2.55, P =.06
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=0.64, P =.56
+
+t(df=4)=1.89, P =.13
+
+t(df=4)=-0.18, P =.87
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=-0.67, P =.54
+
+t(df=4)=-0.49, P =.65
+
+t(df=4)=-4.19, P =.01
+
+t(df=4)=-2.19, P =.09
+
+-
+
+Table 13: 5-fold cross-validation results across models on CLIP dataset and the t-test results among T5,
+MIMIC-T5, and SciFive+MIMIC-T5
+
+21
+
+Are Clinical T5 Models Better for Clinical Text?
+
+HOC
+Metrics
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+F1
+
+Mean
+
+84.81
+♠
+
+84.76
+♣
+
+84.79
+♦
+
+82.75
+↓ ♠2.07, ↓ ♣2.02, ↓ ♦2.05
+
+85.1
+↑ ♠0.29, ↑ ♣0.34, ↑ ♦0.31
+
+95% CI
+
+[84.26, 85.49]
+
+[84.38, 85.11]
+
+[84.22, 85.26]
+
+[82.53, 82.98]
+
+[84.81, 85.4]
+
+Mean
+
+84.72
+♠
+
+84.77
+♣
+
+84.60
+♦
+
+82.90
+↓ ♠1.82, ↓ ♣1.87, ↓ ♦1.7
+
+85.04
+↑ ♠0.32, ↑ ♣0.27, ↑ ♦0.44
+
+95% CI
+
+[84.04, 85.47]
+
+[84.43, 85.11]
+
+[83.94, 85.18]
+
+[82.77, 83.04]
+
+[84.67, 85.39]
+
+Mean
+
+84.91
+♠
+
+84.76
+♣
+
+84.99
+♦
+
+82.60
+↓ ♠2.31, ↓ ♣2.16, ↓ ♦2.4
+
+85.17
+↑ ♠0.26, ↑ ♣0.41, ↑ ♦0.18
+
+95% CI
+
+[84.49, 85.52]
+
+[84.28, 85.21]
+
+[84.47, 85.4]
+
+[82.26, 83.01]
+
+[84.85, 85.52]
+
+P
+
+R
+
+HOC-F1-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=-0.09, P =.93
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=-0.05, P =.96
+
+t(df=4)=0.07, P =.95
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=-5.75, P =.005
+
+t(df=4)=-6.86, P =.002
+
+t(df=4)=-7.02, P =.002
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=1.05, P =.35
+
+t(df=4)=1.31, P =.26
+
+t(df=4)=1.08, P =.34
+
+t(df=4)=10.06, P =¡.001
+
+-
+
+HOC-P-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=0.1, P =.92
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=-0.29, P =.79
+
+t(df=4)=-0.36, P =.73
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=-4.3, P =.01
+
+t(df=4)=-6.62, P =.003
+
+t(df=4)=-5.46, P =.005
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=0.86, P =.44
+
+t(df=4)=1.19, P =.30
+
+t(df=4)=1.41, P =.23
+
+t(df=4)=7.87, P =.001
+
+-
+
+HOC-R-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den-Large
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup-Large
+
+t(df=4)=-0.28, P =.79
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5-Large
+
+t(df=4)=0.22, P =.84
+
+t(df=4)=0.65, P =.55
+
+-
+
+-
+
+-
+
+MIMIC-T5-Large
+
+t(df=4)=-6.84, P =.002
+
+t(df=4)=-6.45, P =.003
+
+t(df=4)=-8.09, P =.001
+
+-
+
+-
+
+SciFive+MIMIC-T5-Large
+
+t(df=4)=1.26, P =.27
+
+t(df=4)=1.11, P =.33
+
+t(df=4)=0.57, P =.60
+
+t(df=4)=10.45, P =¡.001
+
+-
+
+Table 14: 5-fold cross-validation results across models on HOC dataset and the t-test results among T5,
+MIMIC-T5, and SciFive+MIMIC-T5
+
+22
+
+Are Clinical T5 Models Better for Clinical Text?
+
+BC5CDR
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+82.90
+♠
+
+82.94
+♣
+
+83.30
+♦
+
+81.17
+↓ ♠1.73, ↓ ♣1.77, ↓ ♦2.13
+
+83.61
+↑ ♠0.71, ↑ ♣0.68, ↑ ♦0.31
+
+95% CI
+
+[82.33, 83.38]
+
+[82.51, 83.45]
+
+[82.89, 83.82]
+
+[80.92, 81.53]
+
+[83.38, 83.82]
+
+Mean
+
+81.67
+♠
+
+81.62
+♣
+
+82.14
+♦
+
+80.62
+↓ ♠1.05, ↓ ♣1.01, ↓ ♦1.52
+
+83.07
+↑ ♠1.4, ↑ ♣1.44, ↑ ♦0.93
+
+95% CI
+
+[80.77, 82.51]
+
+[81.30, 81.96]
+
+[81.53, 82.72]
+
+[80.20, 80.94]
+
+[82.51, 83.6]
+
+Mean
+
+84.19
+♠
+
+84.29
+♣
+
+84.50
+♦
+
+81.73
+↓ ♠2.46, ↓ ♣2.56, ↓ ♦2.76
+
+84.17
+↓ ♠0.02, ↓ ♣0.12, ↓ ♦0.32
+
+95% CI
+
+[83.64, 84.63]
+
+[83.55, 85.05]
+
+[84.23, 84.93]
+
+[81.23, 82.31]
+
+[83.60, 84.82]
+
+Metrics
+F1
+
+P
+
+R
+
+BC5CDR-F1-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup
+
+t(df=4)=0.06, P =.96
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.82, P =.46
+
+t(df=4)=2.16, P =.10
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-9.49, P =¡.001
+
+t(df=4)=-4.01, P =.02
+
+t(df=4)=-5.29, P =.006
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=2.38, P =.08
+
+t(df=4)=1.7, P =.16
+
+t(df=4)=0.76, P =.49
+
+t(df=4)=14.45, P =¡.001
+
+-
+
+BC5CDR-P-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup
+
+t(df=4)=-0.08, P =.94
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.71, P =.52
+
+t(df=4)=2.37, P =.08
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-3.07, P =.04
+
+t(df=4)=-3.23, P =.03
+
+t(df=4)=-3.09, P =.04
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=2.08, P =.11
+
+t(df=4)=3.41, P =.03
+
+t(df=4)=1.73, P =.16
+
+t(df=4)=6.04, P =.004
+
+-
+
+BC5CDR-R-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup
+
+t(df=4)=0.19, P =.86
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.8, P =.47
+
+t(df=4)=0.78, P =.48
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-6.28, P =.003
+
+t(df=4)=-3.88, P =.02
+
+t(df=4)=-6.14, P =.004
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.07, P =.95
+
+t(df=4)=-0.17, P =.88
+
+t(df=4)=-0.61, P =.57
+
+t(df=4)=10.35, P =¡.001
+
+-
+
+Table 15: 5-fold cross-validation results across models on BC5CDR-disease dataset and the t-test results
+among T5, MIMIC-T5, and SciFive+MIMIC-T5
+
+23
+
+Are Clinical T5 Models Better for Clinical Text?
+
+NCBI
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+85.08
+♠
+
+84.58
+♣
+
+84.44
+♦
+
+79.10
+↓ ♠5.98, ↓ ♣5.49, ↓ ♦5.35
+
+85.43
+↑ ♠0.36, ↑ ♣0.85, ↑ ♦0.99
+
+95% CI
+
+[84.61, 85.46]
+
+[84.22, 85.02]
+
+[83.94, 85.03]
+
+[78.28, 79.94]
+
+[84.89, 86.06]
+
+Mean
+
+83.49
+♠
+
+83.58
+♣
+
+82.20
+♦
+
+78.35
+↓ ♠5.14, ↓ ♣5.24, ↓ ♦3.85
+
+83.80
+↑ ♠0.31, ↑ ♣0.21, ↑ ♦1.60
+
+95% CI
+
+[82.78, 84.16]
+
+[83.13, 84.12]
+
+[81.59, 83.04]
+
+[77.57, 78.87]
+
+[82.95, 84.68]
+
+Mean
+
+86.73
+♠
+
+85.61
+♣
+
+86.82
+♦
+
+79.87
+↓ ♠6.86, ↓ ♣5.74, ↓ ♦6.95
+
+87.14
+↑ ♠0.41, ↑ ♣1.54, ↑ ♦0.32
+
+95% CI
+
+[86.31, 87.22]
+
+[85.16, 86.15]
+
+[86.31, 87.30]
+
+[78.70, 81.30]
+
+[86.86, 87.50]
+
+Metrics
+F1
+
+P
+
+R
+
+NCBI-F1-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup
+
+t(df=4)=-0.95, P =.40
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=-1.73, P =.16
+
+t(df=4)=-0.33, P =.76
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-12.52, P =¡.001
+
+t(df=4)=-10.1, P =¡.001
+
+t(df=4)=-11.66, P =¡.001
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.94, P =.40
+
+t(df=4)=1.71, P =.16
+
+t(df=4)=1.62, P =.18
+
+t(df=4)=8.65, P =¡.001
+
+-
+
+NCBI-P-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup
+
+t(df=4)=0.14, P =.90
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=-1.88, P =.13
+
+t(df=4)=-3.52, P =.02
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-7.08, P =.002
+
+t(df=4)=-14.76, P =¡.001
+
+t(df=4)=-8.28, P =.001
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.74, P =.50
+
+t(df=4)=0.33, P =.76
+
+t(df=4)=1.93, P =.13
+
+t(df=4)=6.65, P =.003
+
+-
+
+NCBI-R-T-test
+Models
+
+T5-Den
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Den
+
+-
+
+-
+
+-
+
+-
+
+-
+
+T5-Sup
+
+t(df=4)=-2.0, P =.12
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.38, P =.72
+
+t(df=4)=2.71, P =.05
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-10.43, P =¡.001
+
+t(df=4)=-7.16, P =.002
+
+t(df=4)=-12.53, P =¡.001
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=1.07, P =.34
+
+t(df=4)=3.25, P =.03
+
+t(df=4)=0.72, P =.51
+
+t(df=4)=8.63, P =¡.001
+
+-
+
+Table 16: 5-fold cross-validation results across models on NCBI-disease dataset and the t-test results among
+T5, MIMIC-T5, and SciFive+MIMIC-T5
+
+24
+
+Are Clinical T5 Models Better for Clinical Text?
+
+MIMIC-IV-Credibility & Obstinacy
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+76.04
+♣
+
+77.44
+♦
+
+74.98
+↓ ♣1.06, ↓ ♦2.46
+
+74.65
+↓ ♣1.39, ↓ ♦2.79
+
+95% CI
+
+[74.14, 77.94]
+
+[74.96, 79.34]
+
+[72.11, 77.75]
+
+[70.59, 78.82]
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+92.94
+♣
+
+92.93
+♦
+
+91.57
+↓ ♣1.37, ↓ ♦1.36
+
+90.98
+↓ ♣1.96, ↓ ♦1.95
+
+95% CI
+
+[91.74, 94.18]
+
+[91.27, 94.48]
+
+[90.38, 92.70]
+
+[89.90, 92.12]
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+85.73
+♣
+
+86.31
+♦
+
+84.76
+↓ ♣0.97, ↓ ♦1.55
+
+86.28
+↑ ♣0.54, ↓ ♦0.03
+
+95% CI
+
+[83.45, 87.99]
+
+[85.32, 87.03]
+
+[81.90, 88.15]
+
+[85.00, 87.79]
+
+Metrics
+F1
+
+MIMIC-IV-Compliance
+Metrics
+F1
+
+MIMIC-IV-Descriptors
+Metrics
+F1
+
+MIMIC-IV-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+SciFive+MIMIC-T5
+-
+
+FLAN-T5
+
+t(df=4)=0.64, P =.56
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-0.52, P =.63
+
+t(df=4)=-1.05, P =.35
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.81, P =.46
+
+t(df=4)=-1.08, P =.34
+
+t(df=4)=-0.12, P =.91
+
+-
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+MIMIC-IV-Compliance-F1-T-test
+Models
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=-0.0, P =1.00
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-1.2, P =.30
+
+t(df=4)=-1.2, P =.30
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-1.5, P =.21
+
+t(df=4)=-1.93, P =.13
+
+t(df=4)=-0.84, P =.45
+
+-
+
+MIMIC-IV-Descriptors-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.37, P =.73
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-0.74, P =.50
+
+t(df=4)=-0.9, P =.42
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.33, P =.76
+
+t(df=4)=-0.04, P =.97
+
+t(df=4)=0.75, P =.50
+
+-
+
+Table 17: 5-fold cross-validation results across models on stigmatizing dataset from MIMIC-IV and the t-test
+results among T5-Sup, FLAN-T5, MIMIC-T5, and SciFive+MIMIC-T5
+
+25
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Hospital System-Credibility & Obstinacy
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+88.21
+♣
+
+90.38
+♦
+
+88.07
+↓ ♣0.15, ↓ ♦2.31
+
+87.31
+↓ ♣0.9, ↓ ♦3.07
+
+95% CI
+
+[86.12, 90.59]
+
+[88.26, 92.33]
+
+[83.11, 94.14]
+
+[82.11, 91.76]
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+86.71
+♣
+
+88.03
+♦
+
+84.72
+↓ ♣2.0, ↓ ♦3.31
+
+87.21
+↑ ♣0.49, ↓ ♦0.82
+
+95% CI
+
+[85.52, 88.19]
+
+[86.84, 88.92]
+
+[80.99, 88.67]
+
+[86.82, 87.63]
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+90.58
+♣
+
+86.82
+♦
+
+88.85
+↓ ♣1.73, ↑ ♦2.03
+
+89.98
+↓ ♣0.6, ↑ ♦3.17
+
+95% CI
+
+[89.25, 91.37]
+
+[79.94, 90.69]
+
+[88.24, 89.46]
+
+[89.21, 90.67]
+
+Metrics
+F1
+
+Hospital System-Compliance
+Metrics
+F1
+
+Hospital System-Descriptors
+Metrics
+F1
+
+Hospital System-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+SciFive+MIMIC-T5
+-
+
+FLAN-T5
+
+t(df=4)=1.02, P =.37
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-0.07, P =.95
+
+t(df=4)=-0.63, P =.56
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.34, P =.75
+
+t(df=4)=-1.48, P =.21
+
+t(df=4)=-0.23, P =.83
+
+-
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Hospital System-Compliance-F1-T-test
+Models
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=1.75, P =.16
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-1.04, P =.36
+
+t(df=4)=-1.52, P =.20
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.52, P =.63
+
+t(df=4)=-0.91, P =.42
+
+t(df=4)=1.06, P =.35
+
+-
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Hospital System-Descriptors-F1-T-test
+Models
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=-0.99, P =.38
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-2.5, P =.07
+
+t(df=4)=0.6, P =.58
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.63, P =.57
+
+t(df=4)=0.9, P =.42
+
+t(df=4)=1.71, P =.16
+
+-
+
+Table 18: 5-fold cross-validation results across models on stigmatizing dataset from Hospital System and the
+t-test results among T5-Sup, FLAN-T5, MIMIC-T5, and SciFive+MIMIC-T5
+
+26
+
+Are Clinical T5 Models Better for Clinical Text?
+
+MIMIC-IV-Credibility & Obstinacy - 25% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+63.81
+♣
+
+71.92
+♦
+
+64.44
+↑ ♣0.63, ↓ ♦7.48
+
+57.67
+↓ ♣6.15, ↓ ♦14.25
+
+95% CI
+
+[62.15, 65.77]
+
+[69.6, 74.16]
+
+[61.69, 66.63]
+
+[54.39, 61.06]
+
+Metrics
+F1
+
+MIMIC-IV-Compliance- 25% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+89.6
+♣
+
+91.44
+♦
+
+86.02
+↓ ♣3.58, ↓ ♦5.42
+
+89.58
+↓ ♣0.02, ↓ ♦1.86
+
+95% CI
+
+[86.8, 92.19]
+
+[89.15, 93.09]
+
+[84.63, 87.5]
+
+[87.19, 92.12]
+
+Metrics
+F1
+
+MIMIC-IV-Descriptors- 25% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+76.83
+♣
+
+78.21
+♦
+
+75.31
+↓ ♣1.52, ↓ ♦2.9
+
+82.46
+↑ ♣5.63, ↑ ♦4.25
+
+95% CI
+
+[72.49, 79.4]
+
+[77.29, 79.19]
+
+[72.32, 77.52]
+
+[82.02, 82.85]
+
+Metrics
+F1
+
+MIMIC-IV-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+SciFive+MIMIC-T5
+-
+
+FLAN-T5
+
+t(df=4)=3.37, P =.03
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=0.42, P =.69
+
+t(df=4)=-2.66, P =.06
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-3.08, P =.04
+
+t(df=4)=-4.9, P =.008
+
+t(df=4)=-2.42, P =.07
+
+-
+
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+MIMIC-IV-Compliance-F1-T-test
+
+FLAN-T5
+
+t(df=4)=1.2, P =.30
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-4.16, P =.01
+
+t(df=4)=-4.54, P =.01
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.01, P =.99
+
+t(df=4)=-1.47, P =.21
+
+t(df=4)=1.9, P =.13
+
+-
+
+MIMIC-IV-Descriptors-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.72, P =.51
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-0.82, P =.46
+
+t(df=4)=-1.67, P =.17
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=2.66, P =.06
+
+t(df=4)=5.61, P =.005
+
+t(df=4)=4.64, P =.010
+
+-
+
+Table 19: 5-fold cross-validation results across models on stigmatizing dataset from MIMIC-IV with 25%
+downsampled training data and the t-test results among T5-Sup, FLAN-T5, MIMIC-T5, and
+SciFive+MIMIC-T5
+
+27
+
+Are Clinical T5 Models Better for Clinical Text?
+
+MIMIC-IV-Credibility & Obstinacy - 5% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+51.62
+♣
+
+66.33
+♦
+
+58.58
+↑ ♣6.96, ↓ ♦7.76
+
+53.14
+↑ ♣1.52, ↓ ♦13.2
+
+95% CI
+
+[42.57, 58.72]
+
+[64.37, 67.61]
+
+[53.25, 64.66]
+
+[49.77, 56.59]
+
+Metrics
+F1
+
+MIMIC-IV-Compliance- 5% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+70.2
+♣
+
+82.33
+♦
+
+72.98
+↑ ♣2.78, ↓ ♦9.35
+
+69.36
+↓ ♣0.84, ↓ ♦12.97
+
+95% CI
+
+[67.48, 72.75]
+
+[74.22, 87.16]
+
+[70.25, 76.61]
+
+[55.76, 79.52]
+
+Metrics
+F1
+
+MIMIC-IV-Descriptors- 5% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+61.5
+♣
+
+63.16
+♦
+
+62.5
+↑ ♣0.99, ↓ ♦0.66
+
+67.3
+↑ ♣5.8, ↑ ♦4.14
+
+95% CI
+
+[59.2, 63.54]
+
+[49.6, 71.45]
+
+[60.26, 64.6]
+
+[64.92, 69.49]
+
+Metrics
+F1
+
+MIMIC-IV-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=2.78, P =.05
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=1.35, P =.25
+
+t(df=4)=-2.55, P =.06
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.27, P =.80
+
+t(df=4)=-5.36, P =.006
+
+t(df=4)=-1.25, P =.28
+
+-
+
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+MIMIC-IV-Compliance-F1-T-test
+
+FLAN-T5
+
+t(df=4)=2.4, P =.07
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=0.93, P =.40
+
+t(df=4)=-1.83, P =.14
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.11, P =.92
+
+t(df=4)=-1.38, P =.24
+
+t(df=4)=-0.36, P =.73
+
+-
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+MIMIC-IV-Descriptors-F1-T-test
+Models
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.25, P =.81
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=1.7, P =.16
+
+t(df=4)=-0.11, P =.92
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=9.13, P =¡.001
+
+t(df=4)=0.58, P =.59
+
+t(df=4)=5.05, P =.007
+
+-
+
+Table 20: 5-fold cross-validation results across models on stigmatizing dataset from MIMIC-IV with 5%
+downsampled training data and the t-test results among T5-Sup, FLAN-T5, MIMIC-T5, and
+SciFive+MIMIC-T5
+
+28
+
+Are Clinical T5 Models Better for Clinical Text?
+
+MIMIC-IV-Credibility & Obstinacy - 1% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+27.7
+♣
+
+51.02
+♦
+
+37.08
+↑ ♣9.38, ↓ ♦13.94
+
+33.49
+↑ ♣5.78, ↓ ♦17.54
+
+95% CI
+
+[22.94, 32.17]
+
+[45.89, 55.52]
+
+[29.74, 42.96]
+
+[27.39, 40.18]
+
+Metrics
+F1
+
+MIMIC-IV-Compliance- 1% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+54.32
+♣
+
+66.18
+♦
+
+42.1
+↓ ♣12.22, ↓ ♦24.09
+
+50.44
+↓ ♣3.88, ↓ ♦15.75
+
+95% CI
+
+[49.27, 59.91]
+
+[65.28, 66.94]
+
+[38.57, 46.91]
+
+[43.57, 56.06]
+
+Metrics
+F1
+
+MIMIC-IV-Descriptors- 1% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+43.41
+♣
+
+47.85
+♦
+
+29.09
+↓ ♣14.32, ↓ ♦18.75
+
+35.14
+↓ ♣8.27, ↓ ♦12.7
+
+95% CI
+
+[40.3, 46.32]
+
+[42.16, 55.4]
+
+[25.76, 33.03]
+
+[29.11, 41.98]
+
+Metrics
+F1
+
+MIMIC-IV-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=5.92, P =.004
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=3.43, P =.03
+
+t(df=4)=-2.43, P =.07
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=1.77, P =.15
+
+t(df=4)=-3.58, P =.02
+
+t(df=4)=-1.76, P =.15
+
+-
+
+MIMIC-IV-Compliance-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=3.46, P =.03
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-8.5, P =.001
+
+t(df=4)=-9.03, P =¡.001
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-1.14, P =.32
+
+t(df=4)=-4.2, P =.01
+
+t(df=4)=2.98, P =.04
+
+-
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+MIMIC-IV-Descriptors-F1-T-test
+Models
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=1.23, P =.29
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-3.94, P =.02
+
+t(df=4)=-4.89, P =.008
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-1.63, P =.18
+
+t(df=4)=-2.06, P =.11
+
+t(df=4)=2.25, P =.09
+
+-
+
+Table 21: 5-fold cross-validation results across models on stigmatizing dataset from MIMIC-IV with 1%
+downsampled training data and the t-test results among T5-Sup, FLAN-T5, MIMIC-T5, and
+SciFive+MIMIC-T5
+
+29
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Hospital System-Credibility & Obstinacy - 25% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+85.1
+♣
+
+86.59
+♦
+
+75.9
+↓ ♣9.19, ↓ ♦10.69
+
+84.7
+↓ ♣0.4, ↓ ♦1.89
+
+95% CI
+
+[81.26, 87.88]
+
+[83.57, 88.98]
+
+[71.71, 80.43]
+
+[80.58, 88.32]
+
+Metrics
+F1
+
+Hospital System-Compliance- 25% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+82.52
+♣
+
+85.3
+♦
+
+79.32
+↓ ♣3.2, ↓ ♦5.98
+
+81.53
+↓ ♣0.99, ↓ ♦3.77
+
+95% CI
+
+[78.41, 84.92]
+
+[82.98, 87.65]
+
+[76.29, 83.15]
+
+[75.26, 86.29]
+
+Metrics
+F1
+
+Hospital System-Descriptors- 25% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+86.45
+♣
+
+85.98
+♦
+
+87.19
+↑ ♣0.75, ↑ ♦1.22
+
+86.51
+↑ ♣0.06, ↑ ♦0.53
+
+95% CI
+
+[85.24, 88.16]
+
+[85.14, 86.69]
+
+[85.32, 89.41]
+
+[85.09, 88.14]
+
+Metrics
+F1
+
+Hospital System-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+SciFive+MIMIC-T5
+-
+
+FLAN-T5
+
+t(df=4)=0.54, P =.62
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-2.36, P =.08
+
+t(df=4)=-2.94, P =.04
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.15, P =.89
+
+t(df=4)=-0.54, P =.62
+
+t(df=4)=4.8, P =.009
+
+-
+
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+Hospital System-Compliance-F1-T-test
+
+FLAN-T5
+
+t(df=4)=1.79, P =.15
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-1.57, P =.19
+
+t(df=4)=-2.98, P =.04
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-0.78, P =.48
+
+t(df=4)=-1.37, P =.24
+
+t(df=4)=0.88, P =.43
+
+-
+
+SciFive+MIMIC-T5
+
+Hospital System-Descriptors-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=-0.43, P =.69
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=0.53, P =.62
+
+t(df=4)=1.05, P =.35
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.08, P =.94
+
+t(df=4)=0.49, P =.65
+
+t(df=4)=-0.5, P =.65
+
+-
+
+Table 22: 5-fold cross-validation results across models on stigmatizing dataset from Hospital System with
+25% downsampled training data and the t-test results among T5-Sup, FLAN-T5, MIMIC-T5, and
+SciFive+MIMIC-T5
+
+30
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Hospital System-Credibility & Obstinacy - 5% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+48.94
+♣
+
+75.66
+♦
+
+48.88
+↓ ♣0.06, ↓ ♦26.78
+
+50.2
+↑ ♣1.26, ↓ ♦25.46
+
+95% CI
+
+[43.03, 55.34]
+
+[67.77, 82.11]
+
+[46.72, 50.4]
+
+[48.32, 52.7]
+
+Metrics
+F1
+
+Hospital System - Compliance - 5% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+58.62
+♣
+
+71.09
+♦
+
+51.82
+↓ ♣6.8, ↓ ♦19.27
+
+56.84
+↓ ♣1.78, ↓ ♦14.25
+
+95% CI
+
+[55.48, 60.66]
+
+[63.96, 76.14]
+
+[49.19, 54.12]
+
+[52.65, 60.79]
+
+Metrics
+F1
+
+Hospital System - Descriptors - 5% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+69.95
+♣
+
+79.82
+♦
+
+69.71
+↓ ♣0.24, ↓ ♦10.11
+
+76.41
+↑ ♣6.46, ↓ ♦3.41
+
+95% CI
+
+[68.13, 71.33]
+
+[77.17, 82.3]
+
+[63.77, 73.81]
+
+[75.0, 77.68]
+
+Metrics
+F1
+
+Hospital System-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+SciFive+MIMIC-T5
+-
+
+FLAN-T5
+
+t(df=4)=3.89, P =.02
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-0.02, P =.99
+
+t(df=4)=-5.36, P =.006
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.42, P =.70
+
+t(df=4)=-4.42, P =.01
+
+t(df=4)=0.93, P =.40
+
+-
+
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+Hospital System-Compliance-F1-T-test
+
+FLAN-T5
+
+t(df=4)=2.52, P =.07
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-4.8, P =.009
+
+t(df=4)=-5.18, P =.007
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-1.17, P =.31
+
+t(df=4)=-3.12, P =.04
+
+t(df=4)=2.5, P =.07
+
+SciFive+MIMIC-T5
+
+Hospital System-Descriptors-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=6.01, P =.004
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-0.07, P =.95
+
+t(df=4)=-2.23, P =.09
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=4.25, P =.01
+
+t(df=4)=-3.41, P =.03
+
+t(df=4)=1.57, P =.19
+
+-
+
+Table 23: 5-fold cross-validation results across models on stigmatizing dataset from Hospital System with
+5% downsampled training data and the t-test results among T5-Sup, FLAN-T5, MIMIC-T5, and
+SciFive+MIMIC-T5
+
+31
+
+Are Clinical T5 Models Better for Clinical Text?
+
+Hospital System-Credibility & Obstinacy - 1% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+23.29
+♣
+
+54.45
+♦
+
+34.95
+↑ ♣11.66, ↓ ♦19.5
+
+31.79
+↑ ♣8.5, ↓ ♦22.66
+
+95% CI
+
+[17.55, 27.46]
+
+[45.76, 61.91]
+
+[26.12, 46.24]
+
+[25.45, 38.43]
+
+Metrics
+F1
+
+Hospital System-Compliance- 1% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+45.44
+♣
+
+70.6
+♦
+
+41.92
+↓ ♣3.52, ↓ ♦28.68
+
+38.52
+↓ ♣6.92, ↓ ♦32.08
+
+95% CI
+
+[40.34, 52.88]
+
+[68.81, 72.05]
+
+[36.33, 46.04]
+
+[33.42, 42.52]
+
+Metrics
+F1
+
+Hospital System-Descriptors- 1% downsampling data
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+Mean
+
+53.78
+♣
+
+58.36
+♦
+
+44.52
+↓ ♣9.26, ↓ ♦13.84
+
+55.52
+↑ ♣1.74, ↓ ♦2.83
+
+95% CI
+
+[45.07, 60.86]
+
+[52.25, 64.75]
+
+[32.8, 54.06]
+
+[53.29, 58.91]
+
+Metrics
+F1
+
+Hospital System-Credibility & Obstinacy-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+SciFive+MIMIC-T5
+-
+
+FLAN-T5
+
+t(df=4)=4.77, P =.009
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=1.39, P =.24
+
+t(df=4)=-5.22, P =.006
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=1.49, P =.21
+
+t(df=4)=-6.22, P =.003
+
+t(df=4)=-0.56, P =.61
+
+-
+
+Hospital System-Compliance-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=6.2, P =.003
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-0.85, P =.44
+
+t(df=4)=-9.06, P =¡.001
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=-1.63, P =.18
+
+t(df=4)=-14.93, P =¡.001
+
+t(df=4)=-1.02, P =.36
+
+-
+
+Hospital System-Descriptors-F1-T-test
+Models
+
+T5-Sup
+
+FLAN-T5
+
+MIMIC-T5
+
+SciFive+MIMIC-T5
+
+T5-Sup
+
+-
+
+-
+
+-
+
+-
+
+FLAN-T5
+
+t(df=4)=0.63, P =.56
+
+-
+
+-
+
+-
+
+MIMIC-T5
+
+t(df=4)=-2.76, P =.05
+
+t(df=4)=-1.67, P =.17
+
+-
+
+-
+
+SciFive+MIMIC-T5
+
+t(df=4)=0.44, P =.68
+
+t(df=4)=-0.75, P =.50
+
+t(df=4)=2.24, P =.09
+
+-
+
+Table 24: 5-fold cross-validation results across models on stigmatizing dataset from Hospital System with
+1% downsampled training data and the t-test results among T5-Sup, FLAN-T5, MIMIC-T5, and
+SciFive+MIMIC-T5
+
+32
+
+

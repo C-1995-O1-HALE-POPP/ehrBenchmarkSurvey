@@ -1,0 +1,3637 @@
+[
+  {
+    "doc_id": "11317090:7",
+    "text": "Outcome results applied to life expectancy tables were used to estimate QALYs .",
+    "entities": [
+      {
+        "text": "life expectancy tables",
+        "type": "outcome",
+        "start": 27,
+        "end": 49
+      },
+      {
+        "text": "QALYs",
+        "type": "outcome",
+        "start": 72,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "doc_id": "12960652:2",
+    "text": "These types of gastric myoelectrical activity and dysrhythmia can be measured by electrogastrography using cutaneous electrodes .",
+    "entities": [
+      {
+        "text": "gastric myoelectrical activity and dysrhythmia",
+        "type": "outcome",
+        "start": 15,
+        "end": 61
+      },
+      {
+        "text": "electrogastrography",
+        "type": "outcome",
+        "start": 81,
+        "end": 100
+      }
+    ]
+  },
+  {
+    "doc_id": "20560622:8",
+    "text": "Serum and urine biochemical parameters related to calcium status and bone metabolism remained unaltered .",
+    "entities": [
+      {
+        "text": "Serum and urine biochemical parameters related to calcium status and bone metabolism",
+        "type": "outcome",
+        "start": 0,
+        "end": 84
+      }
+    ]
+  },
+  {
+    "doc_id": "19802506:6",
+    "text": "After 24 months , women who took medications without exercising had significant improvements in BMD at the total hip ( +1.81 % ) and spine ( +2.85 % ) and significant decreases in Alkphase B ( -8.7 % ) and serum NTx ( -16.7 % ) .",
+    "entities": [
+      {
+        "text": "medications",
+        "type": "intervention",
+        "start": 33,
+        "end": 44
+      },
+      {
+        "text": "exercising",
+        "type": "intervention",
+        "start": 53,
+        "end": 63
+      },
+      {
+        "text": "BMD",
+        "type": "outcome",
+        "start": 96,
+        "end": 99
+      },
+      {
+        "text": "Alkphase B",
+        "type": "outcome",
+        "start": 180,
+        "end": 190
+      },
+      {
+        "text": "serum NTx",
+        "type": "outcome",
+        "start": 206,
+        "end": 215
+      }
+    ]
+  },
+  {
+    "doc_id": "23417625:10",
+    "text": "The SST-GP had higher efficacy than the LA-GP .",
+    "entities": [
+      {
+        "text": "SST-GP",
+        "type": "intervention",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "text": "LA-GP",
+        "type": "intervention",
+        "start": 40,
+        "end": 45
+      },
+      {
+        "text": "efficacy",
+        "type": "outcome",
+        "start": 22,
+        "end": 30
+      }
+    ]
+  },
+  {
+    "doc_id": "21896676:0",
+    "text": "A physiotherapy service to an emergency extended care unit does not decrease admission rates to hospital : a randomised trial .",
+    "entities": [
+      {
+        "text": "physiotherapy service",
+        "type": "intervention",
+        "start": 2,
+        "end": 23
+      },
+      {
+        "text": "admission rates to hospital",
+        "type": "outcome",
+        "start": 77,
+        "end": 104
+      }
+    ]
+  },
+  {
+    "doc_id": "11737955:0",
+    "text": "Antioxidant supplementation and exercise-induced oxidative stress in the 60-year-old as measured by antipyrine hydroxylates .",
+    "entities": [
+      {
+        "text": "Antioxidant supplementation",
+        "type": "intervention",
+        "start": 0,
+        "end": 27
+      },
+      {
+        "text": "antipyrine hydroxylates",
+        "type": "intervention",
+        "start": 100,
+        "end": 123
+      },
+      {
+        "text": "exercise-induced oxidative stress",
+        "type": "outcome",
+        "start": 32,
+        "end": 65
+      },
+      {
+        "text": "the 60-year-old",
+        "type": "participant",
+        "start": 69,
+        "end": 84
+      }
+    ]
+  },
+  {
+    "doc_id": "11891832:1",
+    "text": "We investigated whether 5 to 20mg per week oral methotrexate could slow down disease progression in 44 patients with inclusion body myositis in a randomized double-blind placebo-controlled study over 48 weeks .",
+    "entities": [
+      {
+        "text": "methotrexate",
+        "type": "intervention",
+        "start": 48,
+        "end": 60
+      },
+      {
+        "text": "disease progression",
+        "type": "outcome",
+        "start": 77,
+        "end": 96
+      },
+      {
+        "text": "44 patients with inclusion body myositis",
+        "type": "participant",
+        "start": 100,
+        "end": 140
+      }
+    ]
+  },
+  {
+    "doc_id": "7853069:8",
+    "text": "The findings indicate that this method of reporting symptoms and functioning status to primary care physicians did not significantly change patient outcomes .",
+    "entities": []
+  },
+  {
+    "doc_id": "12576806:7",
+    "text": "Followup was done with diuretic scanning at 3 , 6 , 9 and 12 months and then yearly , and thereafter with diuretic renography .",
+    "entities": [
+      {
+        "text": "diuretic scanning",
+        "type": "outcome",
+        "start": 23,
+        "end": 40
+      },
+      {
+        "text": "diuretic renography",
+        "type": "outcome",
+        "start": 106,
+        "end": 125
+      }
+    ]
+  },
+  {
+    "doc_id": "2188766:8",
+    "text": "Trials involving larger patient populations will be necessary to confirm the results of this preliminary study and to determine the extent of clinical improvement , subpopulations benefited , role in heart failure therapeutics , and so forth .",
+    "entities": []
+  },
+  {
+    "doc_id": "7853069:5",
+    "text": "573 patients who had unrecognized and untreated anxiety identified from the approximately 8,000 patients who completed the waiting room screening questionnaire .",
+    "entities": [
+      {
+        "text": "573 patients who had unrecognized and untreated anxiety identified from the approximately 8,000 patients who completed the waiting room screening questionnaire",
+        "type": "participant",
+        "start": 0,
+        "end": 159
+      }
+    ]
+  },
+  {
+    "doc_id": "12960652:0",
+    "text": "Gastric dysrhythmia in infants with gastrointestinal diseases measured by epigastric impedance .",
+    "entities": [
+      {
+        "text": "Gastric dysrhythmia",
+        "type": "outcome",
+        "start": 0,
+        "end": 19
+      },
+      {
+        "text": "epigastric impedance",
+        "type": "outcome",
+        "start": 74,
+        "end": 94
+      },
+      {
+        "text": "infants with gastrointestinal diseases",
+        "type": "participant",
+        "start": 23,
+        "end": 61
+      }
+    ]
+  },
+  {
+    "doc_id": "12595499:10",
+    "text": "Microalbuminuria itself predicts clinical proteinuria in nondiabetic and in diabetic people .",
+    "entities": [
+      {
+        "text": "clinical proteinuria",
+        "type": "outcome",
+        "start": 33,
+        "end": 53
+      },
+      {
+        "text": "nondiabetic and in diabetic people",
+        "type": "participant",
+        "start": 57,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "doc_id": "23021296:2",
+    "text": "However , there is a lack of information regarding patient 's adherence to these recommendations in daily clinical practice .",
+    "entities": [
+      {
+        "text": "patient 's adherence",
+        "type": "outcome",
+        "start": 51,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "doc_id": "11495215:1",
+    "text": "Women who smoke and take oral contraceptives ( OCs ) have significantly increased risk of cardiovascular disease , but the exact mechanismsfor the increased risk are not known .",
+    "entities": [
+      {
+        "text": "oral contraceptives ( OCs )",
+        "type": "intervention",
+        "start": 25,
+        "end": 52
+      },
+      {
+        "text": "cardiovascular disease",
+        "type": "outcome",
+        "start": 90,
+        "end": 112
+      }
+    ]
+  },
+  {
+    "doc_id": "11750293:4",
+    "text": "Patients became significantly more depressed over time .",
+    "entities": []
+  },
+  {
+    "doc_id": "11891832:0",
+    "text": "Comparison of weakness progression in inclusion body myositis during treatment with methotrexate or placebo .",
+    "entities": [
+      {
+        "text": "methotrexate",
+        "type": "intervention",
+        "start": 84,
+        "end": 96
+      },
+      {
+        "text": "placebo",
+        "type": "intervention",
+        "start": 100,
+        "end": 107
+      },
+      {
+        "text": "weakness progression",
+        "type": "outcome",
+        "start": 14,
+        "end": 34
+      },
+      {
+        "text": "inclusion body myositis",
+        "type": "participant",
+        "start": 38,
+        "end": 61
+      }
+    ]
+  },
+  {
+    "doc_id": "18503531:6",
+    "text": "Treatment group participants were better able to suggest appropriate emotion-management strategies for story characters at post-intervention than at pre-intervention , whereas control participants were not .",
+    "entities": [
+      {
+        "text": "emotion-management strategies",
+        "type": "outcome",
+        "start": 69,
+        "end": 98
+      }
+    ]
+  },
+  {
+    "doc_id": "6421395:4",
+    "text": "The increase in plasma 6-keto-prostaglandin F1 alpha concentration was associated with an increase in serum HDL2 cholesterol concentration in the group taking regular exercise .",
+    "entities": [
+      {
+        "text": "regular exercise",
+        "type": "intervention",
+        "start": 159,
+        "end": 175
+      },
+      {
+        "text": "plasma 6-keto-prostaglandin F1 alpha concentration",
+        "type": "outcome",
+        "start": 16,
+        "end": 66
+      },
+      {
+        "text": "serum HDL2 cholesterol concentration",
+        "type": "outcome",
+        "start": 102,
+        "end": 138
+      }
+    ]
+  },
+  {
+    "doc_id": "21170734:3",
+    "text": "Results showed that cortisol and glucose levels were significantly high in 700 and 500 but not 3,000 mg l⁻¹ group compared to control .",
+    "entities": [
+      {
+        "text": "cortisol and glucose levels",
+        "type": "outcome",
+        "start": 20,
+        "end": 47
+      }
+    ]
+  },
+  {
+    "doc_id": "21170734:7",
+    "text": "Results suggest that rapid anesthesia with higher dose is better than slow anesthesia with lower dose for blood sampling in Beluga .",
+    "entities": [
+      {
+        "text": "anesthesia",
+        "type": "intervention",
+        "start": 27,
+        "end": 37
+      },
+      {
+        "text": "anesthesia",
+        "type": "intervention",
+        "start": 27,
+        "end": 37
+      },
+      {
+        "text": "blood sampling",
+        "type": "outcome",
+        "start": 106,
+        "end": 120
+      },
+      {
+        "text": "Beluga",
+        "type": "participant",
+        "start": 124,
+        "end": 130
+      }
+    ]
+  },
+  {
+    "doc_id": "18337284:7",
+    "text": "GABHS isolates were serotyped to distinguish bacteriological treatment failures ( and relapses ) from new acquisitions .",
+    "entities": [
+      {
+        "text": "GABHS isolates were serotyped",
+        "type": "outcome",
+        "start": 0,
+        "end": 29
+      },
+      {
+        "text": "bacteriological treatment failures",
+        "type": "outcome",
+        "start": 45,
+        "end": 79
+      },
+      {
+        "text": "relapses",
+        "type": "outcome",
+        "start": 86,
+        "end": 94
+      },
+      {
+        "text": "new acquisitions",
+        "type": "outcome",
+        "start": 102,
+        "end": 118
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:12",
+    "text": "This difference was not significant .",
+    "entities": []
+  },
+  {
+    "doc_id": "11495215:10",
+    "text": "These data show that acute nicotine administration , in the form of nicotine gum , has no effect on cardiovascular or lipid stress reactivity in women .",
+    "entities": [
+      {
+        "text": "nicotine",
+        "type": "intervention",
+        "start": 27,
+        "end": 35
+      },
+      {
+        "text": "nicotine",
+        "type": "intervention",
+        "start": 27,
+        "end": 35
+      },
+      {
+        "text": "cardiovascular or lipid stress reactivity",
+        "type": "outcome",
+        "start": 100,
+        "end": 141
+      },
+      {
+        "text": "women",
+        "type": "participant",
+        "start": 145,
+        "end": 150
+      }
+    ]
+  },
+  {
+    "doc_id": "23417625:5",
+    "text": "Participants were randomized to the SST or LA group .",
+    "entities": [
+      {
+        "text": "SST",
+        "type": "intervention",
+        "start": 36,
+        "end": 39
+      },
+      {
+        "text": "LA",
+        "type": "intervention",
+        "start": 43,
+        "end": 45
+      }
+    ]
+  },
+  {
+    "doc_id": "10390665:4",
+    "text": "A complete response , defined as no emesis with no need for another rescue antiemetic , during the first 3 h ( 0-3 h ) after anesthesia was 87 % with granisetron and 78 % with perphenazine ( P = 0.204 ) .",
+    "entities": [
+      {
+        "text": "granisetron",
+        "type": "intervention",
+        "start": 150,
+        "end": 161
+      },
+      {
+        "text": "perphenazine",
+        "type": "intervention",
+        "start": 176,
+        "end": 188
+      },
+      {
+        "text": "complete response , defined as no emesis with no need for another rescue antiemetic",
+        "type": "outcome",
+        "start": 2,
+        "end": 85
+      }
+    ]
+  },
+  {
+    "doc_id": "20618920:0",
+    "text": "Effectiveness of hygienic-dietary recommendations as enhancers of antidepressant treatment in patients with depression : study protocol of a randomized controlled trial .",
+    "entities": [
+      {
+        "text": "hygienic-dietary recommendations",
+        "type": "intervention",
+        "start": 17,
+        "end": 49
+      },
+      {
+        "text": "Effectiveness",
+        "type": "outcome",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "text": "patients with depression",
+        "type": "participant",
+        "start": 94,
+        "end": 118
+      }
+    ]
+  },
+  {
+    "doc_id": "24515505:2",
+    "text": "We used national data from the Medical Expenditure Panel Survey linked to the National Health Interview Survey and a study-specific survey to estimate the annual utilization and costs for health care , school , ASD-related therapy , family-coordinated services , as well as caregiver time in children aged 3 to 17 years , with and without parent-reported ASD .",
+    "entities": [
+      {
+        "text": "annual utilization and costs for health care , school , ASD-related therapy , family-coordinated services , as well as caregiver time",
+        "type": "outcome",
+        "start": 155,
+        "end": 288
+      },
+      {
+        "text": "children aged 3 to 17 years , with and without parent-reported ASD .",
+        "type": "participant",
+        "start": 292,
+        "end": 360
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:5",
+    "text": "Amonafide was chosen for inclusion in the Cancer and Leukemia Group B ( CALGB ) master metastatic breast cancer protocol .",
+    "entities": [
+      {
+        "text": "Amonafide",
+        "type": "intervention",
+        "start": 0,
+        "end": 9
+      }
+    ]
+  },
+  {
+    "doc_id": "18337284:14",
+    "text": "In this adequately powered study , once-daily oral amoxicillin is not inferior to twice-daily penicillin V for the treatment and eradication of GABHS in children with pharyngitis .",
+    "entities": [
+      {
+        "text": "amoxicillin",
+        "type": "intervention",
+        "start": 51,
+        "end": 62
+      },
+      {
+        "text": "penicillin",
+        "type": "intervention",
+        "start": 94,
+        "end": 104
+      },
+      {
+        "text": "not inferior",
+        "type": "outcome",
+        "start": 66,
+        "end": 78
+      },
+      {
+        "text": "GABHS in children with pharyngitis",
+        "type": "participant",
+        "start": 144,
+        "end": 178
+      }
+    ]
+  },
+  {
+    "doc_id": "23356250:4",
+    "text": "In this preliminary , open-labeled , randomized study , the effects of lime juice on the clinical and some laboratory characteristics of children with SCA were tested .",
+    "entities": [
+      {
+        "text": "lime juice",
+        "type": "intervention",
+        "start": 71,
+        "end": 81
+      },
+      {
+        "text": "clinical and some laboratory characteristics",
+        "type": "outcome",
+        "start": 89,
+        "end": 133
+      },
+      {
+        "text": "children with SCA",
+        "type": "participant",
+        "start": 137,
+        "end": 154
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:2",
+    "text": "The drug had demonstrated significant activity in preclinical studies and some activity in Phase I trials .",
+    "entities": []
+  },
+  {
+    "doc_id": "12595499:11",
+    "text": "Ramipril prevents or delays the progression of albuminuria .",
+    "entities": [
+      {
+        "text": "Ramipril",
+        "type": "intervention",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "progression of albuminuria",
+        "type": "outcome",
+        "start": 32,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "doc_id": "16505427:1",
+    "text": "To compare maintenance epoetin alfa administered once every 3 weeks with continued weekly epoetin alfa for patients with cancer-associated anemia .",
+    "entities": [
+      {
+        "text": "epoetin alfa",
+        "type": "intervention",
+        "start": 23,
+        "end": 35
+      },
+      {
+        "text": "epoetin alfa",
+        "type": "intervention",
+        "start": 23,
+        "end": 35
+      },
+      {
+        "text": "patients with cancer-associated anemia",
+        "type": "participant",
+        "start": 107,
+        "end": 145
+      }
+    ]
+  },
+  {
+    "doc_id": "12960652:3",
+    "text": "Epigastric impedance is a non-invasive method used to study gastric emptying time and gastric phasic activity .",
+    "entities": [
+      {
+        "text": "Epigastric impedance",
+        "type": "intervention",
+        "start": 0,
+        "end": 20
+      },
+      {
+        "text": "Epigastric impedance",
+        "type": "outcome",
+        "start": 0,
+        "end": 20
+      },
+      {
+        "text": "gastric emptying time and gastric phasic activity",
+        "type": "outcome",
+        "start": 60,
+        "end": 109
+      }
+    ]
+  },
+  {
+    "doc_id": "23849147:0",
+    "text": "Bayesian adaptive trials offer advantages in comparative effectiveness trials : an example in status epilepticus .",
+    "entities": [
+      {
+        "text": "Bayesian adaptive trials",
+        "type": "intervention",
+        "start": 0,
+        "end": 24
+      },
+      {
+        "text": "effectiveness",
+        "type": "outcome",
+        "start": 57,
+        "end": 70
+      },
+      {
+        "text": "status epilepticus",
+        "type": "participant",
+        "start": 94,
+        "end": 112
+      }
+    ]
+  },
+  {
+    "doc_id": "2188766:1",
+    "text": "This study was conducted to determine the long-term effect of flosequinan , a new orally administered arterial and venous dilator , on the clinical course of patients with moderate to severe congestive heart failure .",
+    "entities": [
+      {
+        "text": "flosequinan",
+        "type": "intervention",
+        "start": 62,
+        "end": 73
+      },
+      {
+        "text": "long-term effect",
+        "type": "outcome",
+        "start": 42,
+        "end": 58
+      },
+      {
+        "text": "clinical course",
+        "type": "outcome",
+        "start": 139,
+        "end": 154
+      },
+      {
+        "text": "patients with moderate to severe congestive heart failure",
+        "type": "participant",
+        "start": 158,
+        "end": 215
+      }
+    ]
+  },
+  {
+    "doc_id": "23356250:2",
+    "text": "Intake of lime juice was recently demonstrated to facilitate clearance of the malaria parasite .",
+    "entities": [
+      {
+        "text": "lime juice",
+        "type": "intervention",
+        "start": 10,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "doc_id": "11737955:2",
+    "text": "Subjects were randomly divided in two groups : supplementation ( n 11 ) with 100 mg dl-alpha-tocopheryl acetate , 200 mg ascorbic acid , and 2 mg beta-carotene , and placebo ( n 9 ) .",
+    "entities": [
+      {
+        "text": "dl-alpha-tocopheryl acetate",
+        "type": "intervention",
+        "start": 84,
+        "end": 111
+      },
+      {
+        "text": "ascorbic acid",
+        "type": "intervention",
+        "start": 121,
+        "end": 134
+      },
+      {
+        "text": "beta-carotene",
+        "type": "intervention",
+        "start": 146,
+        "end": 159
+      },
+      {
+        "text": "placebo",
+        "type": "intervention",
+        "start": 166,
+        "end": 173
+      }
+    ]
+  },
+  {
+    "doc_id": "2188766:7",
+    "text": "The addition of chronic vasodilator therapy with flosequinan to standard digitalis-diuretic regimens is capable of inducing clinical improvement in patients with moderate to severe chronic heart failure .",
+    "entities": [
+      {
+        "text": "flosequinan",
+        "type": "intervention",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "text": "patients with moderate to severe chronic heart failure",
+        "type": "participant",
+        "start": 148,
+        "end": 202
+      }
+    ]
+  },
+  {
+    "doc_id": "18337284:6",
+    "text": "Eradication of GABHS , determined with follow-up throat cultures on days 3-6 , 12-16 and 26-36 .",
+    "entities": [
+      {
+        "text": "Eradication of GABHS ,",
+        "type": "outcome",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "text": "follow-up throat cultures",
+        "type": "outcome",
+        "start": 39,
+        "end": 64
+      }
+    ]
+  },
+  {
+    "doc_id": "18337284:1",
+    "text": "Rheumatic fever is a preventable chronic disease preceded by group A beta-haemolytic streptococcal ( GABHS ) pharyngitis .",
+    "entities": []
+  },
+  {
+    "doc_id": "2188766:4",
+    "text": "During the course of therapy , a modest improvement in the symptom scores and functional classification of the flosequinan-treated patients was observed .",
+    "entities": [
+      {
+        "text": "flosequinan-treated",
+        "type": "intervention",
+        "start": 111,
+        "end": 130
+      },
+      {
+        "text": "symptom scores and functional classification",
+        "type": "outcome",
+        "start": 59,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:8",
+    "text": "This report deals only with amonafide as a Phase II agent .",
+    "entities": [
+      {
+        "text": "amonafide",
+        "type": "intervention",
+        "start": 28,
+        "end": 37
+      }
+    ]
+  },
+  {
+    "doc_id": "18503531:7",
+    "text": "However , there was no difference in the improvements made by children in the intervention and control conditions on facial expression and body-posture recognition measures .",
+    "entities": [
+      {
+        "text": "facial expression and body-posture recognition measures",
+        "type": "outcome",
+        "start": 117,
+        "end": 172
+      }
+    ]
+  },
+  {
+    "doc_id": "20560622:3",
+    "text": "In a 2 week randomized two-period crossover trial , 18 male adolescents consumed two diets , named white diet ( WD ) and brown diet ( BD ) , which were poor and rich in MRP , respectively .",
+    "entities": [
+      {
+        "text": "white diet ( WD )",
+        "type": "intervention",
+        "start": 99,
+        "end": 116
+      },
+      {
+        "text": "brown diet ( BD )",
+        "type": "intervention",
+        "start": 121,
+        "end": 138
+      },
+      {
+        "text": "MRP",
+        "type": "intervention",
+        "start": 169,
+        "end": 172
+      },
+      {
+        "text": "18 male adolescents",
+        "type": "participant",
+        "start": 52,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "doc_id": "17321989:6",
+    "text": "Our results suggest that both drugs were well tolerated in patients with AML or MDS who received chemotherapy and that the efficacy of itraconazole for prophylaxis against systemic fungal disease is not inferior to that of fluconazole .",
+    "entities": [
+      {
+        "text": "itraconazole",
+        "type": "intervention",
+        "start": 135,
+        "end": 147
+      },
+      {
+        "text": "fluconazole",
+        "type": "intervention",
+        "start": 223,
+        "end": 234
+      },
+      {
+        "text": "efficacy",
+        "type": "outcome",
+        "start": 123,
+        "end": 131
+      },
+      {
+        "text": "patients with AML or MDS who received chemotherapy",
+        "type": "participant",
+        "start": 59,
+        "end": 109
+      }
+    ]
+  },
+  {
+    "doc_id": "12595499:6",
+    "text": "Baseline microalbuminuria predicted subsequent clinical proteinuria for the study participants overall ( adjusted odds ratio [ OR ] , 17.5 ; 95 % confidence interval [ CI ] , 12.6 to 24.4 ) , in participants without diabetes ( OR , 16.7 ; 95 % CI , 8.6 to 32.4 ) , and in participants with diabetes ( OR , 18.2 ; 95 % CI , 12.4 to 26.7 ) .",
+    "entities": [
+      {
+        "text": "clinical proteinuria",
+        "type": "outcome",
+        "start": 47,
+        "end": 67
+      }
+    ]
+  },
+  {
+    "doc_id": "11317090:9",
+    "text": "Nonparametric bootstrap sampling of costs/QALY ratios established the 95 % CI around the estimates .",
+    "entities": [
+      {
+        "text": "Nonparametric bootstrap sampling of costs/QALY ratios",
+        "type": "outcome",
+        "start": 0,
+        "end": 53
+      }
+    ]
+  },
+  {
+    "doc_id": "21106663:7",
+    "text": "MLMs indicated a slight increase in depressive symptoms over time in the sample as a whole .",
+    "entities": [
+      {
+        "text": "depressive symptoms",
+        "type": "outcome",
+        "start": 36,
+        "end": 55
+      }
+    ]
+  },
+  {
+    "doc_id": "11317090:10",
+    "text": "Aquatic exercisers reported equal ( QWB ) or better ( CHDR , HAQ , PQOL ) health-related quality of life compared with controls .",
+    "entities": [
+      {
+        "text": "Aquatic exercisers",
+        "type": "intervention",
+        "start": 0,
+        "end": 18
+      },
+      {
+        "text": "QWB",
+        "type": "outcome",
+        "start": 36,
+        "end": 39
+      },
+      {
+        "text": "CHDR , HAQ , PQOL",
+        "type": "outcome",
+        "start": 54,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "doc_id": "6421395:2",
+    "text": "In the men taking regular exercise serum cholesterol concentrations increased 26 % more in the high density lipoprotein subfraction two ( HDL2 ) and decreased 31 % more in the subfraction three ( HDL3 ) and 9 % more in the low density lipoprotein fraction than in the control group .",
+    "entities": [
+      {
+        "text": "regular exercise",
+        "type": "intervention",
+        "start": 18,
+        "end": 34
+      },
+      {
+        "text": "serum cholesterol concentrations",
+        "type": "outcome",
+        "start": 35,
+        "end": 67
+      },
+      {
+        "text": "high density lipoprotein subfraction two ( HDL2 )",
+        "type": "outcome",
+        "start": 95,
+        "end": 144
+      },
+      {
+        "text": "subfraction three ( HDL3 )",
+        "type": "outcome",
+        "start": 176,
+        "end": 202
+      },
+      {
+        "text": "low density lipoprotein fraction",
+        "type": "outcome",
+        "start": 223,
+        "end": 255
+      }
+    ]
+  },
+  {
+    "doc_id": "11317090:11",
+    "text": "Outcomes improved with regular class attendance .",
+    "entities": []
+  },
+  {
+    "doc_id": "12595499:7",
+    "text": "Any progression of albuminuria ( defined as new microalbuminuria or new clinical proteinuria ) occurred in 1859 participants ; 1542 developed new microalbuminuria , and 317 participants developed clinical proteinuria .",
+    "entities": [
+      {
+        "text": "progression of albuminuria",
+        "type": "outcome",
+        "start": 4,
+        "end": 30
+      },
+      {
+        "text": "new microalbuminuria or new clinical proteinuria",
+        "type": "outcome",
+        "start": 44,
+        "end": 92
+      },
+      {
+        "text": "new microalbuminuria",
+        "type": "outcome",
+        "start": 44,
+        "end": 64
+      },
+      {
+        "text": "clinical proteinuria",
+        "type": "outcome",
+        "start": 72,
+        "end": 92
+      }
+    ]
+  },
+  {
+    "doc_id": "7853069:2",
+    "text": "Participating physicians were randomized to either the demonstration or the control arm , and patients were assigned to a study arm based on the randomization of their physicians .",
+    "entities": [
+      {
+        "text": "demonstration",
+        "type": "intervention",
+        "start": 55,
+        "end": 68
+      }
+    ]
+  },
+  {
+    "doc_id": "11495215:5",
+    "text": "Approximately two thirds were smokers and were randomized to be tested after either a 12-hr nicotine deprivation or administration of nicotine gum .",
+    "entities": [
+      {
+        "text": "nicotine deprivation",
+        "type": "intervention",
+        "start": 92,
+        "end": 112
+      },
+      {
+        "text": "nicotine",
+        "type": "intervention",
+        "start": 92,
+        "end": 100
+      },
+      {
+        "text": "two thirds were smokers",
+        "type": "participant",
+        "start": 14,
+        "end": 37
+      }
+    ]
+  },
+  {
+    "doc_id": "20560622:2",
+    "text": "The effects of the high intake of Maillard reaction products ( MRP ) on calcium availability in adolescents and across Caco-2 cell monolayers were examined .",
+    "entities": [
+      {
+        "text": "Maillard reaction products ( MRP )",
+        "type": "intervention",
+        "start": 34,
+        "end": 68
+      },
+      {
+        "text": "calcium availability",
+        "type": "outcome",
+        "start": 72,
+        "end": 92
+      },
+      {
+        "text": "adolescents",
+        "type": "participant",
+        "start": 96,
+        "end": 107
+      }
+    ]
+  },
+  {
+    "doc_id": "24515505:9",
+    "text": "Previous analyses that focused on health care underestimated this economic burden , particularly for school systems .",
+    "entities": [
+      {
+        "text": "economic burden",
+        "type": "outcome",
+        "start": 66,
+        "end": 81
+      }
+    ]
+  },
+  {
+    "doc_id": "23103798:0",
+    "text": "Role of posterior tibial nerve stimulation in the treatment of refractory monosymptomatic nocturnal enuresis : a pilot study .",
+    "entities": [
+      {
+        "text": "posterior tibial nerve stimulation",
+        "type": "intervention",
+        "start": 8,
+        "end": 42
+      },
+      {
+        "text": "refractory monosymptomatic nocturnal enuresis",
+        "type": "participant",
+        "start": 63,
+        "end": 108
+      }
+    ]
+  },
+  {
+    "doc_id": "23103798:13",
+    "text": "No change was evident in group 2 .",
+    "entities": []
+  },
+  {
+    "doc_id": "18845996:1",
+    "text": "To develop a cycle-based risk prediction model for neutropenic complications ( NC ) during chemotherapy with doxorubicin ( DOX ) or a pegylated liposomal formulation ( PLD ) for patients with metastatic breast cancer ( MBC ) .",
+    "entities": [
+      {
+        "text": "doxorubicin ( DOX )",
+        "type": "intervention",
+        "start": 109,
+        "end": 128
+      },
+      {
+        "text": "pegylated liposomal formulation ( PLD )",
+        "type": "intervention",
+        "start": 134,
+        "end": 173
+      },
+      {
+        "text": "cycle-based risk prediction model for neutropenic complications ( NC )",
+        "type": "outcome",
+        "start": 13,
+        "end": 83
+      },
+      {
+        "text": "patients with metastatic breast cancer ( MBC )",
+        "type": "participant",
+        "start": 178,
+        "end": 224
+      }
+    ]
+  },
+  {
+    "doc_id": "16505427:5",
+    "text": "There was no difference in the proportion of patients requiring transfusions during the study ( 23 % in 40K arm and 18 % in 120K arm , P = .22 ) or specifically during the maintenance phase ( 13 % in 40K arm v 15 % in 120K arm , P = .58 ) .",
+    "entities": [
+      {
+        "text": "requiring transfusions",
+        "type": "outcome",
+        "start": 54,
+        "end": 76
+      }
+    ]
+  },
+  {
+    "doc_id": "24803369:2",
+    "text": "However , no study to date has examined whether or not they understand conceptual metaphors ( i.e . mappings between conceptual structures ) , which could be the building blocks of metaphoric thinking and understanding .",
+    "entities": [
+      {
+        "text": "conceptual metaphors",
+        "type": "intervention",
+        "start": 71,
+        "end": 91
+      },
+      {
+        "text": "conceptual metaphors",
+        "type": "outcome",
+        "start": 71,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "doc_id": "23021296:0",
+    "text": "Adherence to lifestyle recommendations by patients with depression .",
+    "entities": [
+      {
+        "text": "lifestyle recommendations",
+        "type": "intervention",
+        "start": 13,
+        "end": 38
+      },
+      {
+        "text": "Adherence",
+        "type": "outcome",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "text": "patients with depression",
+        "type": "participant",
+        "start": 42,
+        "end": 66
+      }
+    ]
+  },
+  {
+    "doc_id": "2224060:3",
+    "text": "After induction of complete remission , patients were randomized to the bestatin group ( 30 mg/bw per os ( po ) daily ) and the control group .",
+    "entities": [
+      {
+        "text": "bestatin",
+        "type": "intervention",
+        "start": 72,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "doc_id": "2224060:4",
+    "text": "The 101 eligible cases ( bestatin : 48 , control : 53 ) were analyzed ; the bestatin group achieved longer remission than the control group and a statistically significant longer survival .",
+    "entities": [
+      {
+        "text": "bestatin",
+        "type": "intervention",
+        "start": 25,
+        "end": 33
+      },
+      {
+        "text": "bestatin",
+        "type": "intervention",
+        "start": 25,
+        "end": 33
+      },
+      {
+        "text": "longer remission",
+        "type": "outcome",
+        "start": 100,
+        "end": 116
+      },
+      {
+        "text": "longer survival",
+        "type": "outcome",
+        "start": 172,
+        "end": 187
+      },
+      {
+        "text": "The 101 eligible cases ( bestatin : 48 , control : 53 )",
+        "type": "participant",
+        "start": 0,
+        "end": 55
+      }
+    ]
+  },
+  {
+    "doc_id": "24726342:8",
+    "text": "In assessing the acute functional effect of bronchodilators , ΔsRAW-based criterion is preferable to FEV1-FVC-based criteria , being more closely related to bronchodilator-induced improvements of lung mechanics and dyspnea at rest .",
+    "entities": [
+      {
+        "text": "bronchodilators",
+        "type": "intervention",
+        "start": 44,
+        "end": 59
+      },
+      {
+        "text": "bronchodilator-induced",
+        "type": "intervention",
+        "start": 157,
+        "end": 179
+      },
+      {
+        "text": "improvements of lung mechanics and dyspnea at rest",
+        "type": "outcome",
+        "start": 180,
+        "end": 230
+      }
+    ]
+  },
+  {
+    "doc_id": "2678230:0",
+    "text": "[ The effect of ionic and nonionic x-ray contrast media on myocardial perfusion and myocardial function ] .",
+    "entities": [
+      {
+        "text": "ionic",
+        "type": "intervention",
+        "start": 16,
+        "end": 21
+      },
+      {
+        "text": "nonionic x-ray contrast",
+        "type": "intervention",
+        "start": 26,
+        "end": 49
+      },
+      {
+        "text": "myocardial perfusion and myocardial function",
+        "type": "outcome",
+        "start": 59,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "doc_id": "22865017:2",
+    "text": "To compare a collaborative approach , the Three Component Model ( 3CM ) , with usual care for treating PTSD in primary care .",
+    "entities": [
+      {
+        "text": "Three Component Model ( 3CM )",
+        "type": "intervention",
+        "start": 42,
+        "end": 71
+      },
+      {
+        "text": "usual care",
+        "type": "intervention",
+        "start": 79,
+        "end": 89
+      },
+      {
+        "text": "PTSD",
+        "type": "participant",
+        "start": 103,
+        "end": 107
+      }
+    ]
+  },
+  {
+    "doc_id": "24451919:7",
+    "text": "Patients under each drug condition were compared with controls to assess normalization effects .",
+    "entities": []
+  },
+  {
+    "doc_id": "23849147:1",
+    "text": "We present a novel Bayesian adaptive comparative effectiveness trial comparing three treatments for status epilepticus that uses adaptive randomization with potential early stopping .",
+    "entities": [
+      {
+        "text": "Bayesian adaptive comparative effectiveness trial",
+        "type": "intervention",
+        "start": 19,
+        "end": 68
+      },
+      {
+        "text": "effectiveness",
+        "type": "outcome",
+        "start": 49,
+        "end": 62
+      },
+      {
+        "text": "status epilepticus",
+        "type": "participant",
+        "start": 100,
+        "end": 118
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:15",
+    "text": "Two weeks seems to be a sufficient duration to allow functional restoration across the ureteropelvic junction after endopyelotomy and decrease stent related complications .",
+    "entities": [
+      {
+        "text": "duration",
+        "type": "outcome",
+        "start": 35,
+        "end": 43
+      },
+      {
+        "text": "stent related complications",
+        "type": "outcome",
+        "start": 143,
+        "end": 170
+      },
+      {
+        "text": "endopyelotomy",
+        "type": "participant",
+        "start": 116,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "doc_id": "17321989:2",
+    "text": "There were 4 cases with possible systemic fungal infection in the itraconazole group , and there were 8 possible and 3 probable cases in the fluconazole group .",
+    "entities": [
+      {
+        "text": "itraconazole",
+        "type": "intervention",
+        "start": 66,
+        "end": 78
+      },
+      {
+        "text": "fluconazole",
+        "type": "intervention",
+        "start": 141,
+        "end": 152
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:16",
+    "text": "Toxicity was primarily hematological and bimodal : 32 % had grade 3 or 4 leukopenia and 24 % had grade 3 or 4 thrombocytopenia ; 22 % had no leukopenia and 44 % had no thrombocytopenia .",
+    "entities": [
+      {
+        "text": "Toxicity",
+        "type": "outcome",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "hematological",
+        "type": "outcome",
+        "start": 23,
+        "end": 36
+      },
+      {
+        "text": "leukopenia",
+        "type": "outcome",
+        "start": 73,
+        "end": 83
+      },
+      {
+        "text": "thrombocytopenia",
+        "type": "outcome",
+        "start": 110,
+        "end": 126
+      },
+      {
+        "text": "leukopenia",
+        "type": "outcome",
+        "start": 73,
+        "end": 83
+      },
+      {
+        "text": "thrombocytopenia",
+        "type": "outcome",
+        "start": 110,
+        "end": 126
+      }
+    ]
+  },
+  {
+    "doc_id": "18845996:6",
+    "text": "Factors with a P value of < or =0.25 within a cycle were included in a generalized estimating equations regression model .",
+    "entities": []
+  },
+  {
+    "doc_id": "23103798:15",
+    "text": "However , deterioration in some responders with time suggests the need for maintenance protocols .",
+    "entities": []
+  },
+  {
+    "doc_id": "23417625:1",
+    "text": "High-functioning autism ( HFA ) is characterized by persistent impairment in social interaction despite the absence of mental retardation .",
+    "entities": []
+  },
+  {
+    "doc_id": "23417625:6",
+    "text": "The primary outcome was defined as an improvement of 2 points in error rates for facial emotion labeling ( DANVA2 ) from baseline .",
+    "entities": [
+      {
+        "text": "improvement of 2 points in error rates for facial emotion labeling ( DANVA2 ) from baseline",
+        "type": "outcome",
+        "start": 38,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "doc_id": "18337284:10",
+    "text": "The upper 95 % CL for the differences in positive cultures between the antibiotics was 4.9 % at days 3-6 , 6.5 % at days 12-16 and 8.5 % at days 26-36 .",
+    "entities": [
+      {
+        "text": "upper 95 % CL",
+        "type": "outcome",
+        "start": 4,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "doc_id": "21170734:2",
+    "text": "Blood samples were collected after these periods , when fish were immobile and reached stage 4 anesthesia .",
+    "entities": [
+      {
+        "text": "Blood samples",
+        "type": "outcome",
+        "start": 0,
+        "end": 13
+      }
+    ]
+  },
+  {
+    "doc_id": "24803369:1",
+    "text": "Individuals with autism spectrum disorder ( ASD ) have difficulty comprehending metaphors .",
+    "entities": [
+      {
+        "text": "metaphors",
+        "type": "intervention",
+        "start": 80,
+        "end": 89
+      },
+      {
+        "text": "comprehending metaphors",
+        "type": "outcome",
+        "start": 66,
+        "end": 89
+      },
+      {
+        "text": "Individuals with autism spectrum disorder ( ASD )",
+        "type": "participant",
+        "start": 0,
+        "end": 49
+      }
+    ]
+  },
+  {
+    "doc_id": "18845996:0",
+    "text": "Identifying patients at high risk for neutropenic complications during chemotherapy for metastatic breast cancer with doxorubicin or pegylated liposomal doxorubicin : the development of a prediction model .",
+    "entities": [
+      {
+        "text": "doxorubicin",
+        "type": "intervention",
+        "start": 118,
+        "end": 129
+      },
+      {
+        "text": "pegylated liposomal doxorubicin",
+        "type": "intervention",
+        "start": 133,
+        "end": 164
+      },
+      {
+        "text": "Identifying patients at high risk for neutropenic complications",
+        "type": "outcome",
+        "start": 0,
+        "end": 63
+      },
+      {
+        "text": "metastatic breast cancer",
+        "type": "participant",
+        "start": 88,
+        "end": 112
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:3",
+    "text": "The drug is extensively metabolized and detected in plasma and urine .",
+    "entities": []
+  },
+  {
+    "doc_id": "7831628:8",
+    "text": "Since the results were essentially identical between the techniques , it seems that comparable pathophysiological factors affect TLCO during breath holding and constant exhalation .",
+    "entities": [
+      {
+        "text": "TLCO",
+        "type": "intervention",
+        "start": 129,
+        "end": 133
+      }
+    ]
+  },
+  {
+    "doc_id": "19802506:7",
+    "text": "Women who also exercised had additional increases in BMD at the femoral neck ( +0.29 % ) , total hip ( +0.34 % ) , spine ( +0.23 % ) , total radius ( +0.30 % ) , and additional decreases in Alkphase B ( -2.4 % ) and Serum NTx ( -6.5 % ) .",
+    "entities": [
+      {
+        "text": "exercised",
+        "type": "intervention",
+        "start": 15,
+        "end": 24
+      },
+      {
+        "text": "BMD",
+        "type": "outcome",
+        "start": 53,
+        "end": 56
+      },
+      {
+        "text": "Alkphase B",
+        "type": "outcome",
+        "start": 190,
+        "end": 200
+      },
+      {
+        "text": "Serum NTx",
+        "type": "outcome",
+        "start": 216,
+        "end": 225
+      }
+    ]
+  },
+  {
+    "doc_id": "10390665:0",
+    "text": "Anti-emetic efficacy of prophylactic granisetron compared with perphenazine for the prevention of post-operative vomiting in children .",
+    "entities": [
+      {
+        "text": "granisetron",
+        "type": "intervention",
+        "start": 37,
+        "end": 48
+      },
+      {
+        "text": "perphenazine",
+        "type": "intervention",
+        "start": 63,
+        "end": 75
+      },
+      {
+        "text": "Anti-emetic efficacy",
+        "type": "outcome",
+        "start": 0,
+        "end": 20
+      },
+      {
+        "text": "prevention",
+        "type": "outcome",
+        "start": 84,
+        "end": 94
+      },
+      {
+        "text": "children",
+        "type": "participant",
+        "start": 125,
+        "end": 133
+      }
+    ]
+  },
+  {
+    "doc_id": "12960652:1",
+    "text": "Gastrointestinal symptoms have been reported in association with myoelectrical dysrhythmia , where different types of gastric electrical activity have been described .",
+    "entities": [
+      {
+        "text": "myoelectrical dysrhythmia",
+        "type": "outcome",
+        "start": 65,
+        "end": 90
+      },
+      {
+        "text": "gastric electrical activity",
+        "type": "outcome",
+        "start": 118,
+        "end": 145
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:15",
+    "text": "Escalation and reduction in dose was mandated dependent on hematotoxicity or lack thereof .",
+    "entities": []
+  },
+  {
+    "doc_id": "18845996:9",
+    "text": "A precycle risk score from > or =25 to < 40 for a given patient was identified as being the optimal threshold for sensitivity ( 58.0 % ) and specificity ( 78.7 % ) .",
+    "entities": [
+      {
+        "text": "precycle risk score",
+        "type": "outcome",
+        "start": 2,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "doc_id": "21106663:10",
+    "text": "These results are not concordant with the view that intentional smoking abstinence exacerbates depressive symptoms .",
+    "entities": [
+      {
+        "text": "depressive symptoms",
+        "type": "outcome",
+        "start": 95,
+        "end": 114
+      }
+    ]
+  },
+  {
+    "doc_id": "23417625:4",
+    "text": "Eligible patients were children and adolescents with HFA .",
+    "entities": [
+      {
+        "text": "Eligible patients were children and adolescents with HFA",
+        "type": "participant",
+        "start": 0,
+        "end": 56
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:6",
+    "text": "A symptom based questionnaire was administered to all patients at stent removal .",
+    "entities": [
+      {
+        "text": "symptom based questionnaire",
+        "type": "outcome",
+        "start": 2,
+        "end": 29
+      }
+    ]
+  },
+  {
+    "doc_id": "20560622:7",
+    "text": "In accordance , calcium bioavailability in adolescents did not vary between the diets ( % WD = 40.4 +/- 5.1 , BD % = 38.2 +/- 3.6 ) .",
+    "entities": [
+      {
+        "text": "calcium bioavailability",
+        "type": "outcome",
+        "start": 16,
+        "end": 39
+      }
+    ]
+  },
+  {
+    "doc_id": "16505427:10",
+    "text": "The Hb increment is somewhat greater with continued weekly epoetin alfa .",
+    "entities": [
+      {
+        "text": "epoetin alfa",
+        "type": "intervention",
+        "start": 59,
+        "end": 71
+      },
+      {
+        "text": "Hb increment",
+        "type": "outcome",
+        "start": 4,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "doc_id": "7831628:0",
+    "text": "Measurement of transfer factor during constant exhalation .",
+    "entities": []
+  },
+  {
+    "doc_id": "12595499:5",
+    "text": "Inclusion criteria were known vascular disease or diabetes plus one other cardiovascular risk factor , exclusion criteria included heart failure or known impaired left ventricular function , dipstick-positive proteinuria ( > 1+ ) , and serum creatinine > 2.3 mg/dl ( 200 microM ) .",
+    "entities": [
+      {
+        "text": "Inclusion criteria were known vascular disease or diabetes plus one other cardiovascular risk factor , exclusion criteria included heart failure or known impaired left ventricular function , dipstick-positive proteinuria ( > 1+ ) , and serum creatinine > 2.3 mg/dl ( 200 microM )",
+        "type": "participant",
+        "start": 0,
+        "end": 279
+      }
+    ]
+  },
+  {
+    "doc_id": "11737955:5",
+    "text": "Antipyrine reacts quickly with hydroxyl radicals to form para- and ortho-hydroxyantipyrine .",
+    "entities": [
+      {
+        "text": "Antipyrine",
+        "type": "intervention",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "text": "Antipyrine",
+        "type": "outcome",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "text": "para- and ortho-hydroxyantipyrine",
+        "type": "outcome",
+        "start": 57,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "doc_id": "11829043:7",
+    "text": "For the QoL-Colostomy , however , there was no significant difference between the control and experimental groups .",
+    "entities": [
+      {
+        "text": "QoL-Colostomy",
+        "type": "outcome",
+        "start": 8,
+        "end": 21
+      }
+    ]
+  },
+  {
+    "doc_id": "18229990:0",
+    "text": "Language outcome in autism : randomized comparison of joint attention and play interventions .",
+    "entities": [
+      {
+        "text": "joint attention",
+        "type": "intervention",
+        "start": 54,
+        "end": 69
+      },
+      {
+        "text": "play interventions",
+        "type": "intervention",
+        "start": 74,
+        "end": 92
+      },
+      {
+        "text": "Language outcome",
+        "type": "outcome",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "text": "autism",
+        "type": "participant",
+        "start": 20,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "doc_id": "21106663:0",
+    "text": "Time-varying smoking abstinence predicts lower depressive symptoms following smoking cessation treatment .",
+    "entities": [
+      {
+        "text": "depressive symptoms",
+        "type": "outcome",
+        "start": 47,
+        "end": 66
+      }
+    ]
+  },
+  {
+    "doc_id": "7831628:3",
+    "text": "Additionally , because prolonged breath holding is not required , measurements can readily be made in dyspnoeic patients .",
+    "entities": [
+      {
+        "text": "dyspnoeic patients",
+        "type": "participant",
+        "start": 102,
+        "end": 120
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:14",
+    "text": "Of the group 2 patients 64 % preferred 2 weeks of stenting .",
+    "entities": []
+  },
+  {
+    "doc_id": "9816035:20",
+    "text": "We conclude that amonafide is somewhat active in previously untreated breast cancer patients .",
+    "entities": [
+      {
+        "text": "amonafide",
+        "type": "intervention",
+        "start": 17,
+        "end": 26
+      }
+    ]
+  },
+  {
+    "doc_id": "17321989:0",
+    "text": "The prophylactic effect of itraconazole capsules and fluconazole capsules for systemic fungal infections in patients with acute myeloid leukemia and myelodysplastic syndromes : a Japanese multicenter randomized , controlled study .",
+    "entities": [
+      {
+        "text": "itraconazole",
+        "type": "intervention",
+        "start": 27,
+        "end": 39
+      },
+      {
+        "text": "fluconazole",
+        "type": "intervention",
+        "start": 53,
+        "end": 64
+      },
+      {
+        "text": "prophylactic effect",
+        "type": "outcome",
+        "start": 4,
+        "end": 23
+      },
+      {
+        "text": "patients with acute myeloid leukemia and myelodysplastic syndromes",
+        "type": "participant",
+        "start": 108,
+        "end": 174
+      },
+      {
+        "text": "Japanese",
+        "type": "participant",
+        "start": 179,
+        "end": 187
+      }
+    ]
+  },
+  {
+    "doc_id": "12595499:9",
+    "text": "People without and with diabetes who are at high risk for cardiovascular disease are also at risk for a progressive rise in albuminuria .",
+    "entities": [
+      {
+        "text": "albuminuria",
+        "type": "outcome",
+        "start": 124,
+        "end": 135
+      },
+      {
+        "text": "People without and with diabetes who are at high risk for cardiovascular disease",
+        "type": "participant",
+        "start": 0,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "doc_id": "11737955:3",
+    "text": "Before and after the 12 week supplementation period , subjects cycled for 45 min at submaximal intensity ( 50 % maximal workload capacity ) .",
+    "entities": []
+  },
+  {
+    "doc_id": "21106663:5",
+    "text": "Participants were 236 heavy drinking smokers in a randomized clinical trial testing the efficacy of incorporating brief alcohol intervention into smoking cessation treatment .",
+    "entities": [
+      {
+        "text": "alcohol intervention",
+        "type": "intervention",
+        "start": 120,
+        "end": 140
+      },
+      {
+        "text": "efficacy",
+        "type": "outcome",
+        "start": 88,
+        "end": 96
+      },
+      {
+        "text": "Participants were 236 heavy drinking smokers",
+        "type": "participant",
+        "start": 0,
+        "end": 44
+      }
+    ]
+  },
+  {
+    "doc_id": "23103798:14",
+    "text": "Posterior tibial nerve stimulation can be a viable treatment option in some patients with refractory monosymptomatic nocturnal enuresis .",
+    "entities": [
+      {
+        "text": "Posterior tibial nerve stimulation",
+        "type": "intervention",
+        "start": 0,
+        "end": 34
+      },
+      {
+        "text": "patients with refractory monosymptomatic nocturnal enuresis",
+        "type": "participant",
+        "start": 76,
+        "end": 135
+      }
+    ]
+  },
+  {
+    "doc_id": "18229990:5",
+    "text": "Assessments of JA skills , SP skills , mother-child interactions , and language development were collected at 4 time points : pre- and postintervention and 6 and 12 months postintervention by independent testers .",
+    "entities": [
+      {
+        "text": "JA",
+        "type": "intervention",
+        "start": 15,
+        "end": 17
+      },
+      {
+        "text": "SP",
+        "type": "intervention",
+        "start": 27,
+        "end": 29
+      },
+      {
+        "text": "JA skills , SP skills , mother-child interactions , and language development",
+        "type": "outcome",
+        "start": 15,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "doc_id": "22865017:11",
+    "text": "MAIN MEASURES PTSD symptom severity was the primary outcome .",
+    "entities": [
+      {
+        "text": "PTSD symptom severity",
+        "type": "outcome",
+        "start": 14,
+        "end": 35
+      }
+    ]
+  },
+  {
+    "doc_id": "384815:5",
+    "text": "The rate of height gain was no different for treatment and placebo groups .",
+    "entities": [
+      {
+        "text": "placebo",
+        "type": "intervention",
+        "start": 59,
+        "end": 66
+      },
+      {
+        "text": "rate of height gain",
+        "type": "outcome",
+        "start": 4,
+        "end": 23
+      }
+    ]
+  },
+  {
+    "doc_id": "24451919:11",
+    "text": "Fluoxetine therefore has inverse effects on mPFC activation in ASD and ADHD during reversal learning , suggesting dissociated underlying serotonin abnormalities .",
+    "entities": [
+      {
+        "text": "Fluoxetine",
+        "type": "intervention",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "text": "effects",
+        "type": "outcome",
+        "start": 33,
+        "end": 40
+      },
+      {
+        "text": "mPFC activation",
+        "type": "outcome",
+        "start": 44,
+        "end": 59
+      }
+    ]
+  },
+  {
+    "doc_id": "19802506:0",
+    "text": "The effect of weight training on bone mineral density and bone turnover in postmenopausal breast cancer survivors with bone loss : a 24-month randomized controlled trial .",
+    "entities": [
+      {
+        "text": "weight training",
+        "type": "intervention",
+        "start": 14,
+        "end": 29
+      },
+      {
+        "text": "bone mineral density and bone turnover",
+        "type": "outcome",
+        "start": 33,
+        "end": 71
+      },
+      {
+        "text": "postmenopausal breast cancer survivors with bone loss",
+        "type": "participant",
+        "start": 75,
+        "end": 128
+      }
+    ]
+  },
+  {
+    "doc_id": "18337284:9",
+    "text": "353 children with positive throat swabs for GABHS were randomised to amoxicillin ( n = 177 ) or penicillin V ( n = 176 ) .",
+    "entities": [
+      {
+        "text": "amoxicillin",
+        "type": "intervention",
+        "start": 69,
+        "end": 80
+      },
+      {
+        "text": "penicillin",
+        "type": "intervention",
+        "start": 96,
+        "end": 106
+      },
+      {
+        "text": "353 children with positive throat swabs for GABHS",
+        "type": "participant",
+        "start": 0,
+        "end": 49
+      }
+    ]
+  },
+  {
+    "doc_id": "23849147:2",
+    "text": "The trial will enroll 720 unique patients in emergency departments and uses a Bayesian adaptive design .",
+    "entities": [
+      {
+        "text": "Bayesian adaptive design",
+        "type": "intervention",
+        "start": 78,
+        "end": 102
+      },
+      {
+        "text": "720 unique patients in emergency departments and uses a Bayesian adaptive design",
+        "type": "participant",
+        "start": 22,
+        "end": 102
+      }
+    ]
+  },
+  {
+    "doc_id": "2188766:3",
+    "text": "Changes in symptomatology , exercise performance , and left ventricular function were assessed serially during the two-month treatment period .",
+    "entities": [
+      {
+        "text": "Changes in symptomatology , exercise performance , and left ventricular function",
+        "type": "outcome",
+        "start": 0,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:18",
+    "text": "When response was analyzed by hematological toxicity , there was a 35.7 % response if patients had leukopenia grade 3/4 ( versus 8.3 % , P = 0.08 ) .",
+    "entities": [
+      {
+        "text": "hematological toxicity",
+        "type": "outcome",
+        "start": 30,
+        "end": 52
+      },
+      {
+        "text": "leukopenia",
+        "type": "outcome",
+        "start": 99,
+        "end": 109
+      }
+    ]
+  },
+  {
+    "doc_id": "11495215:9",
+    "text": "However , among OC users , nonsmokers had significantly greater heart rate and diastolic blood pressure reactivity to stress .",
+    "entities": [
+      {
+        "text": "OC",
+        "type": "intervention",
+        "start": 16,
+        "end": 18
+      },
+      {
+        "text": "heart rate and diastolic blood pressure reactivity",
+        "type": "outcome",
+        "start": 64,
+        "end": 114
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:10",
+    "text": "Patients had to have histologically documented measurable breast cancer and a performance status of 0-1 .",
+    "entities": [
+      {
+        "text": "Patients had to have histologically documented measurable breast cancer and a performance status of 0-1 .",
+        "type": "participant",
+        "start": 0,
+        "end": 105
+      }
+    ]
+  },
+  {
+    "doc_id": "18229990:2",
+    "text": "Participants were 58 children ( 46 boys ) with autism between 3 and 4 years of age .",
+    "entities": [
+      {
+        "text": "Participants were 58 children ( 46 boys ) with autism between 3 and 4 years of age .",
+        "type": "participant",
+        "start": 0,
+        "end": 84
+      }
+    ]
+  },
+  {
+    "doc_id": "21896676:1",
+    "text": "One of the reasons physiotherapy services are provided to emergency departments ( EDs ) and emergency extended care units ( EECUs ) is to review patients ' mobility to ensure they are safe to be discharged home .",
+    "entities": [
+      {
+        "text": "physiotherapy",
+        "type": "intervention",
+        "start": 19,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "doc_id": "24515505:1",
+    "text": "To estimate the associations between autism spectrum disorder ( ASD ) diagnoses and service use , caregiver time , and cost outcomes .",
+    "entities": [
+      {
+        "text": "service use , caregiver time , and cost outcomes",
+        "type": "outcome",
+        "start": 84,
+        "end": 132
+      },
+      {
+        "text": "autism spectrum disorder ( ASD )",
+        "type": "participant",
+        "start": 37,
+        "end": 69
+      }
+    ]
+  },
+  {
+    "doc_id": "24803369:4",
+    "text": "Individuals with ASD performed at greater than chance levels on both metaphor types , although their performance was lower than TD participants .",
+    "entities": [
+      {
+        "text": "metaphor",
+        "type": "intervention",
+        "start": 69,
+        "end": 77
+      },
+      {
+        "text": "metaphor",
+        "type": "outcome",
+        "start": 69,
+        "end": 77
+      },
+      {
+        "text": "Individuals with ASD",
+        "type": "participant",
+        "start": 0,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "doc_id": "21106663:9",
+    "text": "During the first 6 months following a planned quit attempt , being abstinent in a particular week appears to be associated with lower levels of concurrent depressive symptoms .",
+    "entities": [
+      {
+        "text": "depressive symptoms",
+        "type": "outcome",
+        "start": 155,
+        "end": 174
+      }
+    ]
+  },
+  {
+    "doc_id": "11829043:0",
+    "text": "A pilot study on the effect of progressive muscle relaxation training of patients after stoma surgery .",
+    "entities": [
+      {
+        "text": "progressive muscle relaxation training",
+        "type": "intervention",
+        "start": 31,
+        "end": 69
+      },
+      {
+        "text": "patients after stoma surgery",
+        "type": "participant",
+        "start": 73,
+        "end": 101
+      }
+    ]
+  },
+  {
+    "doc_id": "7853069:9",
+    "text": "Improvement in outcomes appeared to be more closely associated with the patient 's severity of psychological distress .",
+    "entities": []
+  },
+  {
+    "doc_id": "17321989:3",
+    "text": "Adverse events did not significantly differ in the 2 groups .",
+    "entities": [
+      {
+        "text": "Adverse events",
+        "type": "outcome",
+        "start": 0,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:22",
+    "text": "Rates of responses in patients adequately dosed ( i.e. , with significant hematotoxicity ) with amonafide ranged from 35 to 50 % .",
+    "entities": [
+      {
+        "text": "amonafide",
+        "type": "intervention",
+        "start": 96,
+        "end": 105
+      },
+      {
+        "text": "Rates of responses",
+        "type": "outcome",
+        "start": 0,
+        "end": 18
+      },
+      {
+        "text": "hematotoxicity",
+        "type": "outcome",
+        "start": 74,
+        "end": 88
+      }
+    ]
+  },
+  {
+    "doc_id": "12595499:8",
+    "text": "Ramipril reduced the risk for any progression ( OR , 0.87 ; 95 % CI , 0.78 to 0.97 ; P = 0.0146 ) .",
+    "entities": [
+      {
+        "text": "Ramipril",
+        "type": "intervention",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "progression",
+        "type": "outcome",
+        "start": 34,
+        "end": 45
+      }
+    ]
+  },
+  {
+    "doc_id": "24726342:0",
+    "text": "Assessment of acute bronchodilator effects from specific airway resistance changes in stable COPD patients .",
+    "entities": [
+      {
+        "text": "bronchodilator",
+        "type": "intervention",
+        "start": 20,
+        "end": 34
+      },
+      {
+        "text": "effects",
+        "type": "outcome",
+        "start": 35,
+        "end": 42
+      },
+      {
+        "text": "stable COPD patients",
+        "type": "participant",
+        "start": 86,
+        "end": 106
+      }
+    ]
+  },
+  {
+    "doc_id": "12960652:8",
+    "text": "A pathologic result was found in 90 % of the patients .",
+    "entities": []
+  },
+  {
+    "doc_id": "18503531:0",
+    "text": "A multi-component social skills intervention for children with Asperger syndrome : the Junior Detective Training Program .",
+    "entities": [
+      {
+        "text": "multi-component social skills intervention",
+        "type": "intervention",
+        "start": 2,
+        "end": 44
+      },
+      {
+        "text": "Junior Detective Training Program",
+        "type": "intervention",
+        "start": 87,
+        "end": 120
+      },
+      {
+        "text": "children with Asperger syndrome",
+        "type": "participant",
+        "start": 49,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "doc_id": "11495215:6",
+    "text": "One third were nonsmokers .",
+    "entities": [
+      {
+        "text": "One third were nonsmokers",
+        "type": "participant",
+        "start": 0,
+        "end": 25
+      }
+    ]
+  },
+  {
+    "doc_id": "16505427:0",
+    "text": "Phase III study of two different dosing schedules of erythropoietin in anemic patients with cancer .",
+    "entities": [
+      {
+        "text": "erythropoietin",
+        "type": "intervention",
+        "start": 53,
+        "end": 67
+      },
+      {
+        "text": "anemic patients with cancer",
+        "type": "participant",
+        "start": 71,
+        "end": 98
+      }
+    ]
+  },
+  {
+    "doc_id": "21896676:9",
+    "text": "Differences between groups for use of community healthcare resources , return to usual work/home/leisure activities and satisfaction with their EECU care were small and not significant .",
+    "entities": [
+      {
+        "text": "use of community healthcare resources , return to usual work/home/leisure activities and satisfaction with their EECU care",
+        "type": "outcome",
+        "start": 31,
+        "end": 153
+      }
+    ]
+  },
+  {
+    "doc_id": "11495215:8",
+    "text": "Results indicated that , among OC nonusers , there was no effect of smoking status or nicotine administration on cardiovascular reactivity .",
+    "entities": [
+      {
+        "text": "OC",
+        "type": "intervention",
+        "start": 31,
+        "end": 33
+      },
+      {
+        "text": "nicotine",
+        "type": "intervention",
+        "start": 86,
+        "end": 94
+      }
+    ]
+  },
+  {
+    "doc_id": "11317090:2",
+    "text": "Randomized trial of 20-week aquatic classes .",
+    "entities": [
+      {
+        "text": "aquatic classes",
+        "type": "intervention",
+        "start": 28,
+        "end": 43
+      }
+    ]
+  },
+  {
+    "doc_id": "7831628:4",
+    "text": "Exhalation TLCO ( TLCO , ex ) was compared with the standard ( Jones and Meade ) 10 second breath holding TLCO ( TLCO , bh ) in 100 consecutive patients .",
+    "entities": [
+      {
+        "text": "TLCO",
+        "type": "intervention",
+        "start": 11,
+        "end": 15
+      },
+      {
+        "text": "TLCO",
+        "type": "intervention",
+        "start": 11,
+        "end": 15
+      },
+      {
+        "text": "standard ( Jones and Meade )",
+        "type": "intervention",
+        "start": 52,
+        "end": 80
+      },
+      {
+        "text": "TLCO",
+        "type": "intervention",
+        "start": 11,
+        "end": 15
+      },
+      {
+        "text": "TLCO",
+        "type": "intervention",
+        "start": 11,
+        "end": 15
+      },
+      {
+        "text": "Exhalation TLCO ( TLCO , ex )",
+        "type": "outcome",
+        "start": 0,
+        "end": 29
+      },
+      {
+        "text": "standard ( Jones and Meade ) 10 second breath holding TLCO ( TLCO , bh )",
+        "type": "outcome",
+        "start": 52,
+        "end": 124
+      },
+      {
+        "text": "100 consecutive patients",
+        "type": "participant",
+        "start": 128,
+        "end": 152
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:17",
+    "text": "The response rate was 18 % , including one complete response .",
+    "entities": [
+      {
+        "text": "response rate",
+        "type": "outcome",
+        "start": 4,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "doc_id": "23356250:1",
+    "text": "The pain in sickle cell anemia ( SCA ) is often triggered by dehydration , acidosis , and fever that are usually due to malaria .",
+    "entities": [
+      {
+        "text": "sickle cell anemia ( SCA )",
+        "type": "participant",
+        "start": 12,
+        "end": 38
+      }
+    ]
+  },
+  {
+    "doc_id": "21170734:6",
+    "text": "There were no significant differences in serum levels of cholesterol , total protein , lactate dehydrogenase , aspartate aminotransferase , alanine aminotransferase , Na⁺ , Cl⁻ , K⁺ , and Ca²⁺ .",
+    "entities": [
+      {
+        "text": "serum levels of cholesterol , total protein , lactate dehydrogenase , aspartate aminotransferase , alanine aminotransferase , Na⁺ , Cl⁻ , K⁺ , and Ca²⁺",
+        "type": "outcome",
+        "start": 41,
+        "end": 192
+      }
+    ]
+  },
+  {
+    "doc_id": "11750293:5",
+    "text": "A set of five factors were found to consistently predict depression at the following assessment .",
+    "entities": [
+      {
+        "text": "predict depression",
+        "type": "outcome",
+        "start": 49,
+        "end": 67
+      }
+    ]
+  },
+  {
+    "doc_id": "7853069:0",
+    "text": "Necessary but not sufficient : the effect of screening and feedback on outcomes of primary care patients with untreated anxiety .",
+    "entities": [
+      {
+        "text": "outcomes",
+        "type": "outcome",
+        "start": 71,
+        "end": 79
+      },
+      {
+        "text": "primary care patients with untreated anxiety",
+        "type": "participant",
+        "start": 83,
+        "end": 127
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:10",
+    "text": "Mean followup was 22.3 ( range 12 to 36 ) and 21.3 months ( range 12 to 35 ) in groups 1 and 2 , respectively .",
+    "entities": []
+  },
+  {
+    "doc_id": "18337284:4",
+    "text": "Children presenting with GABHS pharyngitis were randomised to oral amoxicillin 1500 mg QD ( or 750 mg if bodyweight was < or=30 kg ) or to oral penicillin V 500 mg BID ( or 250 mg if bodyweight was < or=20 kg ) for 10 days .",
+    "entities": [
+      {
+        "text": "amoxicillin",
+        "type": "intervention",
+        "start": 67,
+        "end": 78
+      },
+      {
+        "text": "penicillin",
+        "type": "intervention",
+        "start": 144,
+        "end": 154
+      },
+      {
+        "text": "Children presenting with GABHS pharyngitis",
+        "type": "participant",
+        "start": 0,
+        "end": 42
+      }
+    ]
+  },
+  {
+    "doc_id": "23103798:8",
+    "text": "After treatment 11 group 1 patients ( 78.6 % ) had a partial or full response to posterior tibial nerve stimulation but only 2 ( 14.3 % ) in group 2 had a partial response ( p = 0.002 ) .",
+    "entities": [
+      {
+        "text": "posterior tibial nerve stimulation",
+        "type": "intervention",
+        "start": 81,
+        "end": 115
+      },
+      {
+        "text": "response to posterior tibial nerve stimulation",
+        "type": "outcome",
+        "start": 69,
+        "end": 115
+      },
+      {
+        "text": "response",
+        "type": "outcome",
+        "start": 69,
+        "end": 77
+      }
+    ]
+  },
+  {
+    "doc_id": "18337284:11",
+    "text": "Treatment failures ( including relapses ) occurred at each visit in 5.8 % , 12.7 % and 10.7 % of amoxicillin recipients and 6.2 % , 11.9 % and 11.3 % of penicillin V recipients , respectively .",
+    "entities": [
+      {
+        "text": "amoxicillin",
+        "type": "intervention",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "text": "penicillin",
+        "type": "intervention",
+        "start": 153,
+        "end": 163
+      },
+      {
+        "text": "Treatment failures",
+        "type": "outcome",
+        "start": 0,
+        "end": 18
+      },
+      {
+        "text": "relapses",
+        "type": "outcome",
+        "start": 31,
+        "end": 39
+      }
+    ]
+  },
+  {
+    "doc_id": "23417625:9",
+    "text": "QoL increased in the SST Group in the dimension of school environment , as a marker of the transfer of skills acquired in the treatment setting to their use in the community .",
+    "entities": [
+      {
+        "text": "SST",
+        "type": "intervention",
+        "start": 21,
+        "end": 24
+      },
+      {
+        "text": "QoL",
+        "type": "outcome",
+        "start": 0,
+        "end": 3
+      }
+    ]
+  },
+  {
+    "doc_id": "16505427:6",
+    "text": "Patients randomly assigned to the 40K arm were more likely to have a > or = 2 or > or = 3 g/dL hemoglobin ( Hb ) increment , were more likely to have a drug dose held because of high Hb , and had higher mean end-of-study Hb levels .",
+    "entities": [
+      {
+        "text": "hemoglobin ( Hb ) increment",
+        "type": "outcome",
+        "start": 95,
+        "end": 122
+      },
+      {
+        "text": "drug dose",
+        "type": "outcome",
+        "start": 152,
+        "end": 161
+      },
+      {
+        "text": "Hb",
+        "type": "outcome",
+        "start": 108,
+        "end": 110
+      },
+      {
+        "text": "Hb",
+        "type": "outcome",
+        "start": 108,
+        "end": 110
+      }
+    ]
+  },
+  {
+    "doc_id": "11829043:1",
+    "text": "Eighteen patients who had undergone stoma surgery were assessed with respect to their anxiety level and self-reported quality of life ( QoL ) on three occasions ; namely , immediately after surgery , 5 weeks after surgery , and 10 weeks after surgery .",
+    "entities": [
+      {
+        "text": "anxiety level and self-reported quality of life ( QoL )",
+        "type": "outcome",
+        "start": 86,
+        "end": 141
+      },
+      {
+        "text": "Eighteen patients who had undergone stoma surgery",
+        "type": "participant",
+        "start": 0,
+        "end": 49
+      }
+    ]
+  },
+  {
+    "doc_id": "16505427:4",
+    "text": "One hundred eighty-three patients were assigned to the 40K arm , and 182 were assigned to the 120K arm .",
+    "entities": []
+  },
+  {
+    "doc_id": "23356250:5",
+    "text": "Among the 113 children with SCA studied in two hospitals , the 58 receiving lime treatment had lower rates of significant painful episodes than the 55 without lime ( 37 versus 83 crises in 6 months , and 0.64±0.11 versus 1.51±0.34 average rates per child , p < 0.001 ) .",
+    "entities": [
+      {
+        "text": "lime",
+        "type": "intervention",
+        "start": 76,
+        "end": 80
+      },
+      {
+        "text": "without lime",
+        "type": "intervention",
+        "start": 151,
+        "end": 163
+      },
+      {
+        "text": "rates of significant painful episodes",
+        "type": "outcome",
+        "start": 101,
+        "end": 138
+      },
+      {
+        "text": "113 children with SCA studied in two hospitals",
+        "type": "participant",
+        "start": 10,
+        "end": 56
+      }
+    ]
+  },
+  {
+    "doc_id": "24726342:2",
+    "text": "By lowering peripheral airway smooth muscle tone , bronchodilators should decrease dynamic hyperinflation , gas trapping , and possibly dyspnea at rest .",
+    "entities": [
+      {
+        "text": "bronchodilators",
+        "type": "intervention",
+        "start": 51,
+        "end": 66
+      },
+      {
+        "text": "dynamic hyperinflation , gas trapping",
+        "type": "outcome",
+        "start": 83,
+        "end": 120
+      },
+      {
+        "text": "dyspnea at rest",
+        "type": "outcome",
+        "start": 136,
+        "end": 151
+      }
+    ]
+  },
+  {
+    "doc_id": "18503531:9",
+    "text": "The Junior Detective Training Program appeared to be effective in enhancing the social skills and emotional understanding of children with AS .",
+    "entities": [
+      {
+        "text": "Junior Detective Training Program",
+        "type": "intervention",
+        "start": 4,
+        "end": 37
+      },
+      {
+        "text": "effective",
+        "type": "outcome",
+        "start": 53,
+        "end": 62
+      },
+      {
+        "text": "social skills and emotional understanding",
+        "type": "outcome",
+        "start": 80,
+        "end": 121
+      },
+      {
+        "text": "children with AS",
+        "type": "participant",
+        "start": 125,
+        "end": 141
+      }
+    ]
+  },
+  {
+    "doc_id": "7831628:1",
+    "text": "Transfer factor of the lung for carbon monoxide ( TLCO ) was measured by a new method based on analysis of the ratio of the concentrations of carbon monoxide to an inert gas ( methane ) relative to lung volume during a constant exhalation .",
+    "entities": [
+      {
+        "text": "Transfer factor of the lung for carbon monoxide",
+        "type": "intervention",
+        "start": 0,
+        "end": 47
+      },
+      {
+        "text": "Transfer factor of the lung for carbon monoxide ( TLCO )",
+        "type": "outcome",
+        "start": 0,
+        "end": 56
+      },
+      {
+        "text": "ratio of the concentrations of carbon monoxide",
+        "type": "outcome",
+        "start": 111,
+        "end": 157
+      }
+    ]
+  },
+  {
+    "doc_id": "11317090:3",
+    "text": "Cost per quality-adjusted life year ( QALY ) gained was estimated using trial data .",
+    "entities": [
+      {
+        "text": "Cost per quality-adjusted life year ( QALY ) gained",
+        "type": "outcome",
+        "start": 0,
+        "end": 51
+      }
+    ]
+  },
+  {
+    "doc_id": "22865017:15",
+    "text": "3CM participants also had more mental health visits and higher outpatient pharmacy costs .",
+    "entities": [
+      {
+        "text": "3CM",
+        "type": "intervention",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "text": "mental health visits",
+        "type": "outcome",
+        "start": 31,
+        "end": 51
+      },
+      {
+        "text": "outpatient pharmacy costs",
+        "type": "outcome",
+        "start": 63,
+        "end": 88
+      }
+    ]
+  },
+  {
+    "doc_id": "10390665:1",
+    "text": "We have compared the efficacy of granisetron with perphenazine in the prevention of vomiting after tonsillectomy with or without adenoidectomy in children .",
+    "entities": [
+      {
+        "text": "granisetron",
+        "type": "intervention",
+        "start": 33,
+        "end": 44
+      },
+      {
+        "text": "perphenazine",
+        "type": "intervention",
+        "start": 50,
+        "end": 62
+      },
+      {
+        "text": "efficacy",
+        "type": "outcome",
+        "start": 21,
+        "end": 29
+      },
+      {
+        "text": "tonsillectomy with or without adenoidectomy in children",
+        "type": "participant",
+        "start": 99,
+        "end": 154
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:23",
+    "text": "Further studies will incorporate individualized dosing based on pretreatment acetylator phenotyping .",
+    "entities": []
+  },
+  {
+    "doc_id": "22865017:12",
+    "text": "Depression , functioning , perceived quality of care , utilization , and costs were secondary outcomes .",
+    "entities": [
+      {
+        "text": "Depression , functioning , perceived quality of care , utilization , and costs",
+        "type": "outcome",
+        "start": 0,
+        "end": 78
+      }
+    ]
+  },
+  {
+    "doc_id": "24515505:3",
+    "text": "Regression analyses estimated the association between ASD diagnosis and cost , controlling for child gender , age , race/ethnicity , insurance status , household income , country region and urban/rural classification , and non-ASD-related illnesses .",
+    "entities": [
+      {
+        "text": "Regression analyses",
+        "type": "outcome",
+        "start": 0,
+        "end": 19
+      },
+      {
+        "text": "association between ASD diagnosis and cost , controlling for child gender , age , race/ethnicity , insurance status , household income , country region and urban/rural classification , and non-ASD-related illnesses",
+        "type": "outcome",
+        "start": 34,
+        "end": 248
+      }
+    ]
+  },
+  {
+    "doc_id": "10390665:6",
+    "text": "No clinically serious adverse events were observed in any of the groups .",
+    "entities": [
+      {
+        "text": "adverse events",
+        "type": "outcome",
+        "start": 22,
+        "end": 36
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:8",
+    "text": "In each group 26 patients were available for evaluation .",
+    "entities": []
+  },
+  {
+    "doc_id": "20618920:5",
+    "text": "Outcome measures will be assessed before and after the 6 month intervention period .",
+    "entities": [
+      {
+        "text": "Outcome measures",
+        "type": "outcome",
+        "start": 0,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "doc_id": "11317090:4",
+    "text": "Sample size was based on 80 % power to reject the null hypothesis that the cost/QALY gained would not exceed $ 50,000 .",
+    "entities": [
+      {
+        "text": "cost/QALY gained",
+        "type": "outcome",
+        "start": 75,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "doc_id": "23103798:10",
+    "text": "All urodynamic parameters significantly improved in group 1 .",
+    "entities": [
+      {
+        "text": "urodynamic parameters",
+        "type": "outcome",
+        "start": 4,
+        "end": 25
+      }
+    ]
+  },
+  {
+    "doc_id": "22865017:13",
+    "text": "There were no differences between 3CM and usual care in symptoms or functioning .",
+    "entities": [
+      {
+        "text": "3CM",
+        "type": "intervention",
+        "start": 34,
+        "end": 37
+      },
+      {
+        "text": "usual care",
+        "type": "intervention",
+        "start": 42,
+        "end": 52
+      },
+      {
+        "text": "symptoms or functioning",
+        "type": "outcome",
+        "start": 56,
+        "end": 79
+      }
+    ]
+  },
+  {
+    "doc_id": "11829043:6",
+    "text": "Among the domains of WHOQoL , a significant difference was shown in physical health/independence and general perception of QoL , with the experimental group demonstrating better functioning .",
+    "entities": [
+      {
+        "text": "WHOQoL",
+        "type": "outcome",
+        "start": 21,
+        "end": 27
+      },
+      {
+        "text": "QoL",
+        "type": "outcome",
+        "start": 24,
+        "end": 27
+      }
+    ]
+  },
+  {
+    "doc_id": "21106663:1",
+    "text": "The question of whether abstinence during the months following a planned quit attempt exacerbates or improves depressive symptoms is an important clinical issue .",
+    "entities": [
+      {
+        "text": "depressive symptoms",
+        "type": "outcome",
+        "start": 110,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "doc_id": "12595499:4",
+    "text": "This report is restricted to 7674 participants with albuminuria data at baseline and at follow-up .",
+    "entities": [
+      {
+        "text": "7674 participants with albuminuria data at baseline and at follow-up",
+        "type": "participant",
+        "start": 29,
+        "end": 97
+      }
+    ]
+  },
+  {
+    "doc_id": "19802506:9",
+    "text": "Subjects who were > or =50 % adherent to exercise were less likely to lose BMD at the total hip ( chi-square [ 1 ] = 4.66 , p = 0.03 ) and femoral neck ( chi-square [ 1 ] = 4.63 , p = 0.03 ) .",
+    "entities": [
+      {
+        "text": "exercise",
+        "type": "intervention",
+        "start": 41,
+        "end": 49
+      },
+      {
+        "text": "BMD",
+        "type": "outcome",
+        "start": 75,
+        "end": 78
+      }
+    ]
+  },
+  {
+    "doc_id": "23417625:8",
+    "text": "Progress in the ability to recognize anger in the SST Group was due to better recognition of low intensity stimuli on adult faces .",
+    "entities": [
+      {
+        "text": "SST",
+        "type": "intervention",
+        "start": 50,
+        "end": 53
+      },
+      {
+        "text": "ability to recognize anger",
+        "type": "outcome",
+        "start": 16,
+        "end": 42
+      }
+    ]
+  },
+  {
+    "doc_id": "11495215:4",
+    "text": "Sixty healthy women , half of whom had been using OCs for at least the previous 6 months , participated in the study .",
+    "entities": [
+      {
+        "text": "OCs",
+        "type": "intervention",
+        "start": 50,
+        "end": 53
+      },
+      {
+        "text": "Sixty healthy women , half of whom had been using OCs for at least the previous 6 months ,",
+        "type": "participant",
+        "start": 0,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "doc_id": "18503531:1",
+    "text": "The study aimed to investigate the effectiveness of a new multi-component social skills intervention for children with Asperger syndrome ( AS ) : The Junior Detective Training Program .",
+    "entities": [
+      {
+        "text": "multi-component social skills intervention",
+        "type": "intervention",
+        "start": 58,
+        "end": 100
+      },
+      {
+        "text": "effectiveness",
+        "type": "outcome",
+        "start": 35,
+        "end": 48
+      },
+      {
+        "text": "children with Asperger syndrome ( AS )",
+        "type": "participant",
+        "start": 105,
+        "end": 143
+      }
+    ]
+  },
+  {
+    "doc_id": "16505427:2",
+    "text": "Eligible patients were randomly assigned at enrollment to receive three weekly doses of epoetin alfa 40,000 U subcutaneously ( SC ) , followed by either standard weekly epoetin alfa ( 40K arm ) or 120,000 U of epoetin alfa ( 120K arm ) SC every 3 weeks for 18 additional weeks .",
+    "entities": [
+      {
+        "text": "epoetin alfa",
+        "type": "intervention",
+        "start": 88,
+        "end": 100
+      },
+      {
+        "text": "epoetin alfa",
+        "type": "intervention",
+        "start": 88,
+        "end": 100
+      },
+      {
+        "text": "epoetin alfa",
+        "type": "intervention",
+        "start": 88,
+        "end": 100
+      }
+    ]
+  },
+  {
+    "doc_id": "11829043:3",
+    "text": "A 20-min set of audiotaped instructions on progressive muscle relaxation training ( PMRT ) was given to the patients in the experimental group for home practice .",
+    "entities": [
+      {
+        "text": "progressive muscle relaxation training ( PMRT )",
+        "type": "intervention",
+        "start": 43,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "doc_id": "24515505:5",
+    "text": "A greater proportion of children in the ASD group used special educational services ( 76 % vs. 7 % in the control group , P < .05 ) .",
+    "entities": [
+      {
+        "text": "special educational services",
+        "type": "outcome",
+        "start": 55,
+        "end": 83
+      }
+    ]
+  },
+  {
+    "doc_id": "21170734:1",
+    "text": "In order to investigate the effect of anesthesia on serum parameters , Beluga , Huso huso ( L. ) were blood-sampled immediately without anesthesia ( control ) or subjected to following anesthesia procedure : 40 , 120 , and 240 s exposure to 3,000 , 700 , and 500 mg l⁻¹ clove solution , respectively .",
+    "entities": [
+      {
+        "text": "anesthesia",
+        "type": "intervention",
+        "start": 38,
+        "end": 48
+      },
+      {
+        "text": "anesthesia",
+        "type": "intervention",
+        "start": 38,
+        "end": 48
+      },
+      {
+        "text": "anesthesia",
+        "type": "intervention",
+        "start": 38,
+        "end": 48
+      },
+      {
+        "text": "clove solution",
+        "type": "intervention",
+        "start": 270,
+        "end": 284
+      },
+      {
+        "text": "serum parameters",
+        "type": "outcome",
+        "start": 52,
+        "end": 68
+      },
+      {
+        "text": "Beluga , Huso huso ( L. )",
+        "type": "participant",
+        "start": 71,
+        "end": 96
+      }
+    ]
+  },
+  {
+    "doc_id": "22865017:9",
+    "text": "Participants assigned to 3CM also received telephone care management .",
+    "entities": [
+      {
+        "text": "3CM",
+        "type": "intervention",
+        "start": 25,
+        "end": 28
+      },
+      {
+        "text": "telephone care management",
+        "type": "intervention",
+        "start": 43,
+        "end": 68
+      }
+    ]
+  },
+  {
+    "doc_id": "23021296:4",
+    "text": "They wore a wrist-watch-like actimetry sensor to measure physical activity and sun exposure 24 hours a day .",
+    "entities": [
+      {
+        "text": "physical activity",
+        "type": "intervention",
+        "start": 57,
+        "end": 74
+      },
+      {
+        "text": "sun exposure",
+        "type": "intervention",
+        "start": 79,
+        "end": 91
+      },
+      {
+        "text": "physical activity and sun exposure",
+        "type": "outcome",
+        "start": 57,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "doc_id": "7831628:7",
+    "text": "The relation was equally strong in patients with severe pulmonary disease ; for patients with FEV1 < 1.51 the mean difference was 0.21 ( 0.80 ) mmol/min/kPa .",
+    "entities": [
+      {
+        "text": "relation",
+        "type": "outcome",
+        "start": 4,
+        "end": 12
+      },
+      {
+        "text": "FEV1",
+        "type": "outcome",
+        "start": 94,
+        "end": 98
+      },
+      {
+        "text": "patients with severe pulmonary disease",
+        "type": "participant",
+        "start": 35,
+        "end": 73
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:13",
+    "text": "Stent related symptoms were present in a good proportion of patients in groups 1 and 2 but there was a significant difference in the incidence of urinary tract infections ( 11.5 % versus 38.1 % , p = 0.04 ) .",
+    "entities": [
+      {
+        "text": "Stent",
+        "type": "intervention",
+        "start": 0,
+        "end": 5
+      },
+      {
+        "text": "Stent related symptoms",
+        "type": "outcome",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "text": "urinary tract infections",
+        "type": "outcome",
+        "start": 146,
+        "end": 170
+      }
+    ]
+  },
+  {
+    "doc_id": "11229858:0",
+    "text": "Effect of antipyretic drugs in children with malaria .",
+    "entities": [
+      {
+        "text": "antipyretic drugs",
+        "type": "intervention",
+        "start": 10,
+        "end": 27
+      },
+      {
+        "text": "children with malaria",
+        "type": "participant",
+        "start": 31,
+        "end": 52
+      }
+    ]
+  },
+  {
+    "doc_id": "6421395:3",
+    "text": "A tendency towards increased plasma 6-keto-prostaglandin F1 alpha concentration and decreased serum thromboxane B2 concentration was found during the period of regular exercise , but prostaglandin E2 concentrations remained unchanged .",
+    "entities": [
+      {
+        "text": "regular exercise",
+        "type": "intervention",
+        "start": 160,
+        "end": 176
+      },
+      {
+        "text": "plasma 6-keto-prostaglandin F1 alpha concentration",
+        "type": "outcome",
+        "start": 29,
+        "end": 79
+      },
+      {
+        "text": "serum thromboxane B2 concentration",
+        "type": "outcome",
+        "start": 94,
+        "end": 128
+      },
+      {
+        "text": "prostaglandin E2 concentrations",
+        "type": "outcome",
+        "start": 183,
+        "end": 214
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:6",
+    "text": "CALGB 8642 randomizes previously untreated metastatic breast cancer patients either to one of several Phase II agents given for up to four cycles and then followed by standard cyclophosphamide-doxorubicin-5-fluorouracil , or to immediate treatment with standard cyclophosphamide-doxorubicin-5-fluorouracil .",
+    "entities": [
+      {
+        "text": "cyclophosphamide-doxorubicin-5-fluorouracil",
+        "type": "intervention",
+        "start": 176,
+        "end": 219
+      },
+      {
+        "text": "cyclophosphamide-doxorubicin-5-fluorouracil",
+        "type": "intervention",
+        "start": 176,
+        "end": 219
+      },
+      {
+        "text": "previously untreated metastatic breast cancer patients",
+        "type": "participant",
+        "start": 22,
+        "end": 76
+      }
+    ]
+  },
+  {
+    "doc_id": "22865017:0",
+    "text": "RESPECT-PTSD : re-engineering systems for the primary care treatment of PTSD , a randomized controlled trial .",
+    "entities": [
+      {
+        "text": "PTSD",
+        "type": "participant",
+        "start": 8,
+        "end": 12
+      }
+    ]
+  },
+  {
+    "doc_id": "9816035:19",
+    "text": "There was a 50 % response if patients had thrombocytopenia grade 3/4 ( versus 7.1 % , P = < 0.01 ) .",
+    "entities": [
+      {
+        "text": "thrombocytopenia",
+        "type": "outcome",
+        "start": 42,
+        "end": 58
+      }
+    ]
+  },
+  {
+    "doc_id": "384815:0",
+    "text": "Ascaris and growth rates : a randomized trial of treatment .",
+    "entities": [
+      {
+        "text": "growth rates",
+        "type": "outcome",
+        "start": 12,
+        "end": 24
+      }
+    ]
+  },
+  {
+    "doc_id": "2224060:6",
+    "text": "Bestatin is shown to be a clinically useful drug for immunotherapy of adult ANLL , since it has prolonged survival and remission especially in elderly patients , with few side-effects .",
+    "entities": [
+      {
+        "text": "Bestatin",
+        "type": "intervention",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "prolonged survival and remission",
+        "type": "outcome",
+        "start": 96,
+        "end": 128
+      },
+      {
+        "text": "side-effects",
+        "type": "outcome",
+        "start": 171,
+        "end": 183
+      }
+    ]
+  },
+  {
+    "doc_id": "11495215:3",
+    "text": "The purpose of this study was to examine the effect of chronic cigarette smoking , acute nicotine administration , and OC use on cardiovascular and lipid reactivity .",
+    "entities": [
+      {
+        "text": "cigarette smoking",
+        "type": "intervention",
+        "start": 63,
+        "end": 80
+      },
+      {
+        "text": "nicotine",
+        "type": "intervention",
+        "start": 89,
+        "end": 97
+      },
+      {
+        "text": "OC",
+        "type": "intervention",
+        "start": 119,
+        "end": 121
+      },
+      {
+        "text": "cardiovascular and lipid reactivity",
+        "type": "outcome",
+        "start": 129,
+        "end": 164
+      }
+    ]
+  },
+  {
+    "doc_id": "12576806:3",
+    "text": "Inherent stent related problems warrant a minimum possible duration of stenting without compromising the results of endopyelotomy .",
+    "entities": [
+      {
+        "text": "stent",
+        "type": "intervention",
+        "start": 9,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "doc_id": "22865017:10",
+    "text": "Care managers received supervision from a psychiatrist .",
+    "entities": []
+  },
+  {
+    "doc_id": "7831628:2",
+    "text": "Since this new technique is based solely upon exhalation , anomalies associated with inspiration and breath holding do not affect results .",
+    "entities": []
+  },
+  {
+    "doc_id": "18337284:3",
+    "text": "This was a randomised non-inferiority trial carried out in a school-based clinic in New Zealand .",
+    "entities": [
+      {
+        "text": "non-inferiority",
+        "type": "outcome",
+        "start": 22,
+        "end": 37
+      },
+      {
+        "text": "school-based clinic in New Zealand",
+        "type": "participant",
+        "start": 61,
+        "end": 95
+      }
+    ]
+  },
+  {
+    "doc_id": "11317090:13",
+    "text": "Aquatic exercise exceeded $ 50,000 per QALY gained using the community-weighted outcome but fell below this arbitrary budget constraint when using the participant-weighted measure .",
+    "entities": [
+      {
+        "text": "Aquatic exercise",
+        "type": "intervention",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "text": "QALY gained",
+        "type": "outcome",
+        "start": 39,
+        "end": 50
+      }
+    ]
+  },
+  {
+    "doc_id": "23356250:3",
+    "text": "It was therefore sought to determine whether regular intake of lime juice will ameliorate crisis , especially recurrent bone pain .",
+    "entities": [
+      {
+        "text": "lime juice",
+        "type": "intervention",
+        "start": 63,
+        "end": 73
+      },
+      {
+        "text": "crisis",
+        "type": "outcome",
+        "start": 90,
+        "end": 96
+      },
+      {
+        "text": "recurrent bone pain",
+        "type": "outcome",
+        "start": 110,
+        "end": 129
+      }
+    ]
+  },
+  {
+    "doc_id": "2188766:6",
+    "text": "While long-term flosequinan administration also effected a progressive increase in resting heart rate , it did not consistently improve indices of left ventricular systolic function .",
+    "entities": [
+      {
+        "text": "flosequinan",
+        "type": "intervention",
+        "start": 16,
+        "end": 27
+      },
+      {
+        "text": "resting heart rate",
+        "type": "outcome",
+        "start": 83,
+        "end": 101
+      },
+      {
+        "text": "left ventricular systolic function",
+        "type": "outcome",
+        "start": 147,
+        "end": 181
+      }
+    ]
+  },
+  {
+    "doc_id": "384815:3",
+    "text": "Among the 273 children who were seen and weighed at the one-year follow-up visit , the rate of weight gain was 8 per cent greater for those receiving levamisole than for placebo-treated controls ( p = .06 ) .",
+    "entities": [
+      {
+        "text": "levamisole",
+        "type": "intervention",
+        "start": 150,
+        "end": 160
+      },
+      {
+        "text": "placebo-treated",
+        "type": "intervention",
+        "start": 170,
+        "end": 185
+      },
+      {
+        "text": "rate of weight gain",
+        "type": "outcome",
+        "start": 87,
+        "end": 106
+      }
+    ]
+  },
+  {
+    "doc_id": "23103798:12",
+    "text": "At 3-month followup the number of patients with a partial or full response in group 1 had decreased from 11 ( 78.6 % ) to 6 ( 42.9 % ) .",
+    "entities": [
+      {
+        "text": "response",
+        "type": "outcome",
+        "start": 66,
+        "end": 74
+      }
+    ]
+  }
+]

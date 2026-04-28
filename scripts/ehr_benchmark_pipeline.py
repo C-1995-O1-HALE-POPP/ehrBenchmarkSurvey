@@ -672,6 +672,51 @@ def parse_scalar(value: str) -> Any:
     return value
 
 
+def _is_benchmark_entry(line: str) -> bool:
+    """Return True if line looks like a top-level benchmark YAML list item."""
+    return bool(re.match(r"^\s*-\s+canonical_name:", line))
+
+
+def _detect_bench_indent(first_entry_line: str) -> int:
+    """Return the indentation of the '-' marker for benchmark entries."""
+    m = re.match(r"^(\s*)-\s", first_entry_line)
+    return len(m.group(1)) if m else 0
+
+
+def _peek_list_indent(lines: list[str], start_idx: int) -> int:
+    """Look ahead from start_idx to find the indentation of the first nested '- ' item."""
+    j = start_idx
+    while j < len(lines):
+        stripped = lines[j].lstrip()
+        if stripped.startswith("- ") and ":" in stripped:
+            return len(lines[j]) - len(lines[j].lstrip())
+        if stripped and not stripped.startswith("- "):
+            return len(lines[j]) - len(lines[j].lstrip())
+        j += 1
+    return -1
+
+
+def _peek_subfield_indent(lines: list[str], start_idx: int, list_indent: int) -> int:
+    """Look ahead to find the indentation of sub-fields within a list item."""
+    j = start_idx
+    saw_list_item = False
+    while j < len(lines):
+        line_indent = len(lines[j]) - len(lines[j].lstrip())
+        stripped = lines[j].lstrip()
+        if stripped.startswith("- ") and ":" in stripped:
+            saw_list_item = True
+            j += 1
+            continue
+        if saw_list_item and stripped and ":" in stripped and not stripped.startswith("- "):
+            if line_indent > list_indent:
+                return line_indent
+            break
+        if stripped and not stripped.startswith("- "):
+            break
+        j += 1
+    return list_indent + 2
+
+
 def parse_registry_yaml(path: Path) -> dict[str, Any]:
     if not path.exists():
         return {"last_updated": "", "benchmarks": []}
@@ -691,24 +736,32 @@ def parse_registry_yaml(path: Path) -> dict[str, Any]:
             continue
         if line.startswith("benchmarks:"):
             i += 1
+            bench_indent = -1  # detected from first entry
             while i < len(lines):
                 line = lines[i]
                 if not line.strip():
                     i += 1
                     continue
-                if not line.startswith("  - "):
+                if bench_indent == -1 and _is_benchmark_entry(line):
+                    bench_indent = _detect_bench_indent(line)
+                if bench_indent == -1:
                     break
+                if not _is_benchmark_entry(line):
+                    break
+
                 bench: dict[str, Any] = {}
                 bench["canonical_name"] = parse_scalar(line.split(":", 1)[1])
+                field_indent = bench_indent + 2
                 i += 1
                 while i < len(lines):
                     line = lines[i]
                     if not line.strip():
                         i += 1
                         continue
-                    if line.startswith("  - "):
+                    if _is_benchmark_entry(line):
                         break
-                    if not line.startswith("    "):
+                    line_indent = len(line) - len(line.lstrip())
+                    if line_indent < field_indent:
                         break
 
                     stripped = line.strip()
@@ -720,7 +773,8 @@ def parse_registry_yaml(path: Path) -> dict[str, Any]:
                         else:
                             items = []
                             i += 1
-                            while i < len(lines) and lines[i].startswith("      - "):
+                            list_indent = _peek_list_indent(lines, i)
+                            while i < len(lines) and lines[i].startswith(" " * list_indent + "- "):
                                 items.append(parse_scalar(lines[i].split("-", 1)[1]))
                                 i += 1
                             bench["aliases"] = items
@@ -729,7 +783,8 @@ def parse_registry_yaml(path: Path) -> dict[str, Any]:
                     if stripped.startswith("task_families:"):
                         items = []
                         i += 1
-                        while i < len(lines) and lines[i].startswith("      - "):
+                        list_indent = _peek_list_indent(lines, i)
+                        while i < len(lines) and lines[i].startswith(" " * list_indent + "- "):
                             items.append(parse_scalar(lines[i].split("-", 1)[1]))
                             i += 1
                         bench["task_families"] = items
@@ -738,13 +793,17 @@ def parse_registry_yaml(path: Path) -> dict[str, Any]:
                     if stripped.startswith("source_papers:"):
                         papers = []
                         i += 1
-                        while i < len(lines) and lines[i].startswith("      - "):
+                        list_indent = _peek_list_indent(lines, i)
+                        subfield_indent = _peek_subfield_indent(lines, i, list_indent)
+                        while i < len(lines) and lines[i].startswith(" " * list_indent + "- "):
                             paper: dict[str, Any] = {}
-                            first_field = lines[i].strip()[2:]
+                            first_field = lines[i].strip()
+                            if first_field.startswith("- "):
+                                first_field = first_field[2:]
                             key, raw = first_field.split(":", 1)
                             paper[key.strip()] = parse_scalar(raw)
                             i += 1
-                            while i < len(lines) and lines[i].startswith("        "):
+                            while i < len(lines) and len(lines[i]) - len(lines[i].lstrip()) >= subfield_indent and lines[i].strip() and not lines[i].strip().startswith("- "):
                                 sub = lines[i].strip()
                                 if ":" in sub:
                                     sub_key, sub_raw = sub.split(":", 1)

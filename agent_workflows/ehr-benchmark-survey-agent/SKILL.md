@@ -23,7 +23,7 @@ Produce a survey-ready Markdown summary that is structurally consistent across p
 - Cached paper assets: usually `papers/<paper_key>/source.pdf`, `papers/<paper_key>/source.txt`, and `papers/<paper_key>/metadata.json`.
 - Example-search audit report when needed: usually a Markdown report under `reports/`.
 - Registry update: edit `/Users/cometp/Documents/ehrBenchmarkSurvey/registry/ehr_benchmark_registry.yaml`.
-- Optional repo-level follow-up: update reports such as `/Users/cometp/Documents/ehrBenchmarkSurvey/reports/benchmark_taxonomy.md` if a new alias, benchmark family, or organizational pattern materially changes the current taxonomy.
+- Optional repo-level follow-up: update reports such as `reports/benchmark_taxonomy.md` if a new alias, benchmark family, or organizational pattern materially changes the current taxonomy. For the full report maintenance workflow, see the companion skill at `agent_workflows/benchmark-report-maintainer/SKILL.md`.
 
 ## Automation entrypoint
 

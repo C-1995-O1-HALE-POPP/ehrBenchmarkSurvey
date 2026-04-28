@@ -1,0 +1,4138 @@
+[
+  {
+    "text": "产后抑郁症@区分产后抑郁症与轻度情绪失调（产后忧郁或“婴儿忧郁”）是重要的，因为轻度情绪失调不需要治疗。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "鉴别诊断",
+        "subject": "产后抑郁症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "轻度情绪失调"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "类风湿关节炎@尺侧偏斜是由于MCP关节炎症造成的。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "临床表现",
+        "subject": "MCP关节炎症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尺侧偏斜"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "唇腭裂@ ### 腭瘘 | 存在差异 | 低 大约 10% 至 20% 颚成形术发生腭瘘。 唇腭裂@腭瘘发生机率与婴儿伤口，营养状况，外科技术和其他因素相关。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "风险评估因素",
+        "subject": "腭瘘",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "婴儿伤口"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "风险评估因素",
+        "subject": "腭瘘",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "营养状况"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "风险评估因素",
+        "subject": "腭瘘",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "外科技术"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "成人哮喘@ 应在低剂量 ICS 的基础上加用一种 LABA， 或将ICS增加到中等剂量。 成人哮喘@第 5 级将中等剂量 ICS 改为高剂量 ICS。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "成人哮喘",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "ICS"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "哮喘",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "中等剂量 ICS"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "口咽癌@[ 声嘶及发声障碍的评估 ](/topics/zh-cn/845) ### 手术或放疗后吞咽困难和误吸 | 存在差异 | 高 由于一半的患者治疗后会抑制咳嗽反射，医生最常忽略的最严重的并发症就是吸入性肺炎和死亡的可能性。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "并发症",
+        "subject": "口咽癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "放疗后吞咽困难"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "并发症",
+        "subject": "口咽癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "误吸"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "急性胰腺炎@结果 异常发现可能包括结石、弥漫性或节段性胰腺肿大和胰腺周围脂肪轮廓不规则或消失、坏死或假性囊肿 ### 内镜逆行胰胆管造影术 (ERCP) 检查 结果 检查 内镜逆行胰胆管造影术仅在急性胰腺炎急性发作时作为诊断工具使用，已被超声检查和磁共振胆胰管造影术取代。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "同义词",
+        "subject": "内镜逆行胰胆管造影术",
+        "subject_type": "检查",
+        "object": {
+          "@value": "ERCP"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "急性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "内镜逆行胰胆管造影术"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "急性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "超声检查"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "急性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "磁共振胆胰管造影术"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "成人资料约1/3 AHF患者并发真菌感染，主要为白假丝酵母。 （五）循环系统 可发生窦性心动过速，心率减慢发生较晚，少数可心跳突然停止。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "并发症",
+        "subject": "AHF",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "窦性心动过速"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "并发症",
+        "subject": "AHF",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "真菌感染"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "真菌感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "白假丝酵母"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "二、胱氨酸尿症 胱氨酸尿症（cystinuria）是一种家族性遗传性疾病，为常染色体隐性遗传，是由近端肾小管上皮细胞及空肠黏膜对二碱基氨基酸（包括赖氨酸和精氨酸）及胱氨酸等转运障碍所致。 （三）碱化尿液 服枸橼酸钠或碳酸氢钠，以碱化尿液（使尿pH＞7. 5），可增加胱氨酸溶解度，防止结石形成。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "辅助治疗",
+        "subject": "胱氨酸尿症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "碱化尿液"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "胱氨酸尿症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "枸橼酸钠"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "胱氨酸尿症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "碳酸氢钠"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "胱氨酸尿症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "cystinuria"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "遗传因素",
+        "subject": "胱氨酸尿症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "常染色体隐性遗传"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "第五节 再生障碍性贫血 再生障碍性贫血（aplastic anemia，AA，简称再障）是一种由于多种原因引起的骨髓造血功能代偿不全，临床上出现全血细胞减少而肝、脾、淋巴结不增大的一组综合病征。接触化学因素如苯、油漆、汽油、农药等也与再障发生有关。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "发病机制",
+        "subject": "再生障碍性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "接触化学因素"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "再生障碍性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "全血细胞减少"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "再生障碍性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "不增大"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "再生障碍性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "骨髓造血功能代偿"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "再生障碍性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "aplastic anemia"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "再生障碍性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "AA"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "再生障碍性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "再障"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "再障",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "接触化学因素"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "再障",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "苯"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "再障",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "油漆"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "再障",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "汽油"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "再障",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "农药"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "三尖瓣闭锁@若患有感染性心内膜炎，细菌栓子亦可进入脑部。三尖瓣闭锁@所以，对于任何大于2岁的青紫型先心患儿，当出现头痛、呕吐、神经定位症状时，尚需考虑脑部疾病的存在。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "三尖瓣闭锁",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "呕吐"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "三尖瓣闭锁",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "神经定位症状"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "卵巢癌@经常会发现与腹水相符的表现（如液波震颤、移动性浊音）以及与右侧胸腔积液相符的表现（如呼吸音减弱、啰音）。卵巢癌@盆腔查体时，可以在附件区或直肠阴道间隙触及包块。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "辅助检查",
+        "subject": "卵巢癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "盆腔查体"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "川崎病@ （五）较大年龄儿童的川崎病 川崎病极少发生于大于8岁的儿童。川崎病@更重要的是，年长儿更易发生冠状动脉畸形。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "冠状动脉畸形"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "发病年龄",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "大于8岁的儿童"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "【临床表现】 按病程发展及主要临床表现，可分为急性、慢性及晚期血吸虫病。 （一）急性血吸虫病 多见于夏秋季，以小儿及青壮年为多。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "血吸虫病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "急性血吸虫病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "急性血吸虫病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "血吸虫病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "多发群体",
+        "subject": "急性血吸虫病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "小儿及青壮年"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "胰腺癌@首次治疗4个月后,上腹部超声检查显示胰腺肿块与肝转移。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "胰腺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "上腹部超声检查"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "临床表现",
+        "subject": "胰腺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "胰腺肿块"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "临床表现",
+        "subject": "胰腺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肝转移"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "溃疡性结肠炎@研究发现，在作为溃疡性结肠炎的维持治疗时，5-ASA 优于安慰剂。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "溃疡性结肠炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "5-ASA"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "溃疡性结肠炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "安慰剂"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "（三）凝血障碍引起的出血性疾病 1.血友病 凝血障碍性出血性疾病约占我国小儿出血性疾病的12%，其中血友病甲约占70%～80%，血友病乙约占10%～15%，血友病丙仅占1%～2%，前二者为性联隐性遗传，后者为不完全性常染色体隐性遗传。凝血时间敏感度较差，本病只有重型才明显延长；而APTT多延长，PT 及TT正常，APTT纠正试验及凝血因子活性测定有助诊断。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "血友病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "APTT"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "血友病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "PT"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "血友病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "TT"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "血友病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "凝血因子活性测定"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "血友病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "血友病甲"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "血友病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "血友病乙"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "血友病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "血友病丙"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "遗传因素",
+        "subject": "血友病甲",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "性联隐性遗传"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "遗传因素",
+        "subject": "血友病乙",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "性联隐性遗传"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "缺血性卒中@应使用抗凝剂，除非存在出血性转化，在这种情况下，可以用气动压缩装置来代替。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "缺血性卒中",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "抗凝剂"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "传染性单核细胞增多症（infectious mononucleosis,IM)是由 EB 病毒（Epstein-Barr virus,EBV)所致的急性感染性疾病,主要侵犯儿童和青少年,临床上以发热、咽喉痛、肝脾和淋巴结肿大、外周血中淋巴细胞增多并出现异型淋巴细胞等为特征。由于病毒主要在口腔分泌物中，因此口-口传播是重要的传播途径，飞沫传播虽有可能但并不重要,偶可经输血传播。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "传播途径",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "口-口传播"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "传播途径",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "飞沫传播"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "传播途径",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "输血传播"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "infectious mononucleosis"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "IM"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "infectious mononucleosis",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "IM"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "由 EB 病毒（Epstein-Barr virus,EBV)所致"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "多发群体",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "儿童"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "发热"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "咽喉痛"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肝脾和淋巴结肿大"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "多发群体",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "青少年"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "脐肉芽肿（umbilical granuloma)是指断脐后创面受异物刺激、反复摩擦或感染等,在局部形成小的肉芽组织增生。脐肉芽组织表面湿润，有少许黏液或黏液脓性渗出物，可用碘伏一日数次清洁肉芽组织表面，预后良好。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "脐肉芽肿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "碘伏"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "预后状况",
+        "subject": "脐肉芽肿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "良好"
+        },
+        "object_type": {
+          "@value": "预后"
+        }
+      }
+    ]
+  },
+  {
+    "text": "神经皮肤综合征@ 3.眼部损害 裂隙灯下见虹膜上粟粒状、棕黄色圆形小结节，一般检查不能发现，亦无特殊症状，此为Lisch结节，又称虹膜错构瘤，为NFⅠ所特有。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "临床表现",
+        "subject": "Lisch结节",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "棕黄色圆形小结节"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "同义词",
+        "subject": "Lisch结节",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "虹膜错构瘤"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "对于临床和新生儿筛查检出的高苯丙氨酸血症（HPA），排除BH4缺乏症后，Phe浓度＞360μmol/L可诊断为苯丙酮尿症，血Phe≤360μmol/L为轻度HPA。约1/4病儿有癫痫发作。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "苯丙酮尿症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "癫痫发作"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "高苯丙氨酸血症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "癫痫发作"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "高苯丙氨酸血症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "HPA"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "高苯丙氨酸血症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "BH4缺乏症"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "高苯丙氨酸血症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "苯丙酮尿症"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "苯丙酮尿症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "Phe浓度＞360μmol/L"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "轻度HPA",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "血Phe≤360μmol/L"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "破伤风@经常会使用地西泮。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "破伤风",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "地西泮"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "非小细胞肺癌@结果 直接看到胸膜和胸腔积液 ### 脑部MRI或CT 检查 结果 检查 局部晚期NSCLC患者，尤其是腺癌患者，脑转移风险高，治疗进行前应进行头部CT或MRT检查以准确分期。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "非小细胞肺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "脑部MRI或CT"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "基底细胞癌@## 二级预防 应告知患者使用防晒霜和防护服与装置，或避开日光。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "预防",
+        "subject": "基底细胞癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "使用防晒霜"
+        },
+        "object_type": {
+          "@value": "其他"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "预防",
+        "subject": "基底细胞癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "防护服与装置"
+        },
+        "object_type": {
+          "@value": "其他"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "预防",
+        "subject": "基底细胞癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "避开日光"
+        },
+        "object_type": {
+          "@value": "其他"
+        }
+      }
+    ]
+  },
+  {
+    "text": "ST段抬高型心肌梗死@存在左心室动脉瘤可能增加血栓- 栓塞性并发症和心律失常的风险，但很少需要手术方法治疗动脉瘤。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "心律失常",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "左心室动脉瘤"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "肝癌@这些患者即使是小肝癌也仅用 TACE 治疗。 肝癌@肝功能差有合并疾病：病变<2 cm – 首选 –   经动脉化疗栓塞 (TACE) 或者射频消融 (RFA) BCLC 0-A 期： -Child-Pugh A-B [ Child-Turcotte-Pugh calculator ](http://www.hepatitisc.uw.edu/page/clinical-calculators/ctp) -体力状态 0～2。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "肝癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "经动脉化疗栓塞 (TACE)"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "目前空肠弯曲杆菌及GBS的相关性引起广泛关注，空肠弯曲杆菌（CJ）是引起急性胃肠炎的主要病原，也是最常见的GBS的前驱感染源。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "病因",
+        "subject": "急性胃肠炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "空肠弯曲杆菌"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "同义词",
+        "subject": "空肠弯曲杆菌",
+        "subject_type": "社会学",
+        "object": {
+          "@value": "CJ"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "GBS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "空肠弯曲杆菌"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "1938年Wilmer首先提出了融合肾的概念，1957年McDonald和McClellan对其作了修正，并扩展至包括伴或不伴融合的交叉异位肾、孤立交叉异位肾和双侧交叉异位肾。 交叉和融合畸形的肾脏，其伴发畸形的发生率不高，最常见的是无肛，其次分别为骨骼畸形、肌肉畸形和心血管畸形。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "融合肾",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "交叉和融合畸形的肾脏"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "交叉和融合畸形的肾脏",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "无肛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "交叉和融合畸形的肾脏",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "骨骼畸形"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "交叉和融合畸形的肾脏",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肌肉畸形"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "交叉和融合畸形的肾脏",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "心血管畸形"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "肥厚型心肌病@有阵发性或慢性心房颤动的 HCM 患者使用华法林抗凝的国际标准化比值 (INR) 目标值推荐为 2.0-3.0。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "HCM",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "华法林"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "高血压急症@二线治疗药物为拉贝洛尔加硝酸甘油。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "高血压急症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "拉贝洛尔加硝酸甘油"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "外伤性脑动静脉畸形较少见，仅发生于海绵窦，因颈内动脉位于此处，故外伤可致颈动脉-海绵窦瘘。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "发病部位",
+        "subject": "外伤性脑动静脉畸形",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "海绵窦"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "病因",
+        "subject": "颈动脉-海绵窦瘘",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "外伤"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "乳腺原位癌@一些患者可能选择乳房切除术（不论预后评分如何），但有证据显示，完全切除联合体外放疗在总生存期方面与乳房切除术相同。乳腺原位癌@对于绝经前女性和年龄在 60 岁及以上的女性，认为对于降低完全切除联合/不联合放射治疗后的同侧乳腺风险，和降低乳房切除术或完全切除联合/不联合放射治疗后对侧乳腺风险，他莫昔芬是一线治疗。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "乳腺原位癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "他莫昔芬"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "非小细胞肺癌@## 并发症 ### 查看全部   并发症 table 并发症 | 时间表 | 可能性 ---|---|--- ### 梗阻后肺炎/缺氧 | 短期 | 高 肺炎在肺癌患者中常见，通常是由一个大型，中央的，阻碍性肿瘤引起。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "并发症",
+        "subject": "非小细胞肺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "梗阻后肺炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "并发症",
+        "subject": "非小细胞肺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "缺氧"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "并发症",
+        "subject": "肺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肺炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "肝硬化@### 门体肝性脑病 肝硬化患者每年肝性脑病的发生率为2%-3%。肝硬化@诱因包括消化道出血、便秘、饮食摄入蛋白过多、腹泻和呕吐、低血糖、电解质紊乱；药物因素包括利尿剂和镇静剂、诊疗因素如腹穿放液和TIPSS；感染、贫血、缺氧和低血压。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "消化道出血"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "便秘"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "饮食摄入蛋白过多"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "腹泻和呕吐"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "低血糖"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "电解质紊乱"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "利尿剂和镇静剂"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "腹穿放液"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "感染"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "贫血"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "缺氧"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "低血压"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "肝硬化",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "门体肝性脑病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "发病率",
+        "subject": "肝性脑病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "2%-3%"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "新生儿泌尿道感染常伴有败血症,但其局部排尿刺激症状多不明显, 30%的患儿血和尿培养出的致病菌一致。同时尿路刺激症状明显,患儿可出现尿频、尿急、尿痛、尿液混浊，偶见肉眼血尿。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "新生儿泌尿道感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿频"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "新生儿泌尿道感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿急"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "新生儿泌尿道感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿痛"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "新生儿泌尿道感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿液混浊"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "新生儿泌尿道感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "偶见肉眼血尿"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "并发症",
+        "subject": "新生儿泌尿道感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "败血症"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "宫颈癌@因此，基于与其他癌症类型一样的临床分期，宫颈腺癌的治疗采用相同治疗模式。宫颈癌@对于存在淋巴血管入侵的 IA1 期宫颈癌患者，除锥切活检外，还推荐进行盆腔淋巴结清除术。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "宫颈癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "锥切活检"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "另外,本病可能发生致死性并发症，即巨噬细胞活化综合征（MAS),其临床表现主要以发热、肝脾淋巴结增大、全血细胞减少、肝功能急剧恶化、凝血功能异常以及中枢神经系统表现为特征,重者甚至发生急性肺损伤及多脏器功能衰竭。骨髓穿刺活检可见吞噬血细胞现象。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "骨髓穿刺活检"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "巨噬细胞活化综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "MAS"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "发热"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肝脾淋巴结增大"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "全血细胞减少"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肝功能急剧恶化"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "凝血功能异常"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "急性肺损伤"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "MAS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "多脏器功能衰竭"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "胆管癌@肿瘤相关因素：肿瘤侵及二级胆管;门静脉主干近分叉处套绕或闭塞;一个肝叶萎缩伴对侧门静脉分支套绕或闭塞;一个肝叶萎缩和对侧肿瘤侵及二级胆管;单侧肿瘤侵及二级胆管伴对侧门静脉分支套绕或闭塞;病理证实区域淋巴结转移;肺，肝，或腹膜转移。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "外侵部位",
+        "subject": "肿瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "胆管"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "外侵部位",
+        "subject": "肿瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "门静脉"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "转移部位",
+        "subject": "肿瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "淋巴结"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "转移部位",
+        "subject": "肿瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肺"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "转移部位",
+        "subject": "肿瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肝"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "转移部位",
+        "subject": "肿瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "腹膜"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      }
+    ]
+  },
+  {
+    "text": "慢性胰腺炎@## 病因学 全球范围内慢性胰腺炎的最主要病因是酒精（占 70%-80%），其次是特发性慢性胰腺炎 和其他类型的胰腺炎。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "病因",
+        "subject": "慢性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "酒精"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "相关（导致）",
+        "subject": "特发性慢性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "慢性胰腺炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "相关（导致）",
+        "subject": "其他类型的胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "慢性胰腺炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "第九章 川崎病 川崎病（Kawasaki syndrome）为一种急性全身性血管炎，以婴幼儿发病为主。川崎病@1967年日本的川崎博士总结了自1961年到1967年之间50例有持续性发热、皮疹、淋巴结炎等特征性表现的病例后，将本病命名为皮肤黏膜淋巴结综合征而首先报道。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "皮肤黏膜淋巴结综合征"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "有持续性发热"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "皮疹"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "淋巴结炎"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "Kawasaki syndrome"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "ST段抬高型心肌梗死@[ 主动脉夹层 ](/topics/zh-cn/445) ### 肺栓塞 体征/症状 检查 体征/症状 患者的典型表现为胸膜炎导致的胸部尖锐刺痛急性发作，并与气促有关。 ST段抬高型心肌梗死@其他危险因素包括近期长时间制动和肢体创伤。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "风险评估因素",
+        "subject": "肺栓塞",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "近期长时间制动"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "风险评估因素",
+        "subject": "肺栓塞",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肢体创伤"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "肺栓塞",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "胸膜炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "肺栓塞",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "气促"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "ST段抬高型心肌梗死",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肺栓塞"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "毛细胞白血病@然而，随着嘌呤类似物的出现，脾切除很少应用，除非在一些罕见情况如巨脾、脾破裂或非化疗导致的显著血小板减少等。毛细胞白血病@ 威罗菲尼 * 根据最近发现（BRAF V600E 突变存在于所有的 HCL 病例中），BRAF 抑制剂近期被引入用于治疗对嘌呤类似物耐药的 HCL。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "毛细胞白血病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "威罗菲尼"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "胃炎@### 危险因素 ### 强 查看全部   ### 幽门螺杆菌感染 急性非糜烂性胃炎通常由 _幽门螺杆菌_ 感染引起。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "胃炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "幽门螺杆菌感染"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "病因",
+        "subject": "急性非糜烂性胃炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "_幽门螺杆菌_ 感染"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "急性胰腺炎@超声检查将显示胆结石，胆总管内有结石，伴肝外和/或肝内胆管扩张。 急性胰腺炎@生化检查将显示梗阻表现，总胆红素和直接胆红素、碱性磷酸酶和 γ-谷氨酰转肽酶水平升高，谷丙转氨酶/谷草转氨酶略有升高，但是胰酶水平正常（特别是脂肪酶）。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "辅助检查",
+        "subject": "胆结石",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "生化检查"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "婴儿猝死综合征@## 病史和查体 ### 关键诊断因素 ### 常见 查看全部   ### 存在的危险因素 主要危险因素包括最后一次睡眠采用俯卧睡姿、同床、柔软的床面/环境、母亲吸烟、家中吸烟者数量增加、在有儿童的房间内吸烟、早产、配方奶粉喂养、未使用安抚奶嘴以及母亲饮酒或使用药物。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "俯卧睡姿"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "同床"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "柔软的床面/环境"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "母亲吸烟"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "家中吸烟者数量增加"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "在有儿童的房间内吸烟"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "早产"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "配方奶粉喂养"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "未使用安抚奶嘴"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "母亲饮酒或使用药物"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "B族链球菌感染@早产也是一个强危险因素。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "B族链球菌感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "早产"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "转移性乳腺癌@HER2-阴性：绝经前 – 第五 –   化疗 经三线激素治疗后，对另一激素治疗有反应的可能性很低，建议进行化疗。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "化疗",
+        "subject": "转移性乳腺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "化疗"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      }
+    ]
+  },
+  {
+    "text": "急性胰腺炎@### 腹部CT胰腺外炎症评分 腹部CT胰腺外炎症 (EPIC) 评分根据胰腺外并发症评估急性胰腺炎的炎症程度。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "筛查",
+        "subject": "急性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "腹部CT胰腺外炎症评分"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "感染性心内膜炎@### 危险因素 ### 强 查看全部   ### 既往感染性心内膜炎病史 被认为是有心内膜炎结局不良最大风险的疾病之一。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "心内膜炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "感染性心内膜炎病史"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "2002年，北京报道该市顺义区12个月以前的婴儿缺铁性贫血的发生率仍达30%。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "发病率",
+        "subject": "缺铁性贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "30%"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "儿童偏头痛@支持的证据包括针对具体的药物干预措施已发布的数据中重要的安慰剂效应。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "辅助治疗",
+        "subject": "儿童偏头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "安慰剂效应"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      }
+    ]
+  },
+  {
+    "text": "阿尔茨海默病@经常在 50-60 岁时发病，但可能更早。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "发病年龄",
+        "subject": "阿尔茨海默病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "50-60"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "第七章 气管、支气管疾病 第一节 先天性气道畸形 一、气管软化 气管软化（tracheomalacia）因气管软骨先天发育不良所致，可同时伴有喉软化（laryngomalacia），两者是先天性喉喘鸣的主要原因。对严重呼吸困难、常规治疗无效、尤其是气管切开后不能拔管者，可采用大血管固定、气管悬吊术、气囊扩张金属支架等方法。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "手术治疗",
+        "subject": "气管软化",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "大血管固定"
+        },
+        "object_type": {
+          "@value": "手术治疗"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "手术治疗",
+        "subject": "气管软化",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "气管悬吊术"
+        },
+        "object_type": {
+          "@value": "手术治疗"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "手术治疗",
+        "subject": "气管软化",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "气囊扩张金属支架"
+        },
+        "object_type": {
+          "@value": "手术治疗"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病因",
+        "subject": "气管软化",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "气管软骨先天发育不良"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "气管软化",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "先天性喉喘鸣"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "喉软化",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "先天性喉喘鸣"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "急性支气管炎（acute bronchitis)是指由于各种致病原引起的支气管黏膜感染，由于气管常同时受累,故称为急性气管支气管炎(acute tracheobronchitis)。喘憋严重可应用支气管舒张剂，如雾化吸入沙丁胺醇或硫酸特布他林等β2受体激动剂。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "急性支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "支气管舒张剂"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "急性支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "雾化吸入沙丁胺醇"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "急性支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "硫酸特布他林"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "急性支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "acute bronchitis"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "急性支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "性气管支气管炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "性气管支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "acute tracheobronchitis"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "肥厚型心肌病@\\-- 和 -- [ 双异丙吡胺 ](/druglink?dd=MARTINDALE) open_in_new : ＜50kg体重：200mg口服（缓释型），每日2次；＞50kg体重：300mg口服（缓释型），每日2次 静息或诱发后流出道梗阻的有症状患者可首先使用负性肌力或负性传导药物，以减轻梗阻。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "肥厚型心肌病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "双异丙吡胺"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "【头痛的分类】 根据发病的缓急可分为急性头痛（病程在2周内）、亚急性头痛（病程在3个月内）和慢性头痛（病程大于3个月）。根据头痛的严重程度可分为轻度头痛、中度头痛和重度头痛。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "轻度头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "中度头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "重度头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "急性头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "亚急性头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "慢性头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "登革热@## 案例 ### 案例 #1 21岁男子，持续性高热3天。登革热@体格检查发现，他的体温 38.3 ℃（101 °F）；血压 110/80 mmHg，桡动脉脉率 92 次/分。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "辅助检查",
+        "subject": "登革热",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "体格检查"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "登革热",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "持续性高热3天"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "第四节 毛细支气管炎第八篇 呼吸系统疾病 第七章 气管、支气管疾病毛细支气管炎（ bronchiolitis ）是婴儿期常见的下呼吸道炎症性疾病。多发于冬春两季，呈散发性或流行性发病，后者称为流行性毛细支气管炎，又因该病是以喘憋为主要特征的一种特殊类型的肺炎，故又称喘憋性肺炎。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "毛细支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "流行性毛细支气管炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "毛细支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "喘憋"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "毛细支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "喘憋性肺炎"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "多发季节",
+        "subject": "毛细支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "冬春"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "毛细支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "bronchiolitis"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "多发群体",
+        "subject": "毛细支气管炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "婴儿期"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "喘憋性肺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "喘憋"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "HIV 感染@目前已发现每 4 或 8 周给药一次的cabotegravir+利匹韦林的注射治疗方案与cabotegravir+利匹韦林口服方案在维持病毒抑制达 96 周方面的有效性相同，并且被患者广泛接受且耐受性良好。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "HIV 感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "cabotegravir+利匹韦林的注射"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "HIV 感染",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "cabotegravir+利匹韦林口服"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "（二）循环系统 大部分中毒患儿均会出现循环系统症状，如心动过速、周围循环灌注变差等。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "临床表现",
+        "subject": "中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "心动过速"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "临床表现",
+        "subject": "中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "周围循环灌注变差"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "对诊断一时不明确且伴昏迷者，应与下列疾病进行鉴别：①低血糖；②酮症酸中毒；③颅内出血；④中枢感染；⑤肝性脑病；⑥尿毒症；⑦电解质紊乱。 急性中毒伴有下列表现时，提示病情危重：①深昏迷；②休克或血压不稳定；③高热或体温不升；④呼吸衰竭；⑤心力衰竭或严重心律失常；⑥惊厥持续状态；⑦肾衰竭；⑧DIC；⑨血钠高于150mmol/L或低于120mmol/L。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "低血糖"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "酮症酸中毒"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "颅内出血"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "中枢感染"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肝性脑病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿毒症"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "鉴别诊断",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "电解质紊乱"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "深昏迷"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "休克或血压不稳定"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "呼吸衰竭"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "惊厥持续状态"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肾衰竭"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "DIC"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "急性中毒",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "血钠高于150mmol/L或低于120mmol/L"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "婴儿猝死综合征@### 弱 查看全部   ### 母亲使用/滥用药物 由于通常难以将饮酒、使用个人违禁药物和吸烟分开，所以难以确定母亲饮酒或使用违禁药物对增加 SIDS 风险的单独作用。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "高危因素",
+        "subject": "婴儿猝死综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "母亲使用/滥用药物"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "稳定型缺血性心脏疾病@ 钙化病变和冠状动脉钙化积分可作为冠状动脉心脏疾病整体风险评估的指标。稳定型缺血性心脏疾病@ 低钙化积分（<100）患者负荷心肌灌注检查结果异常的可能性很低（<2％）， 冠脉造影结果有显著狭窄的可能也低（<3％） 钙化积分不能提供负荷试验可提供的功能信息，但钙化积分的准确性不受药物、患者运动能力、基线室壁运动或心电图异常的限制。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "影像学检查",
+        "subject": "冠状动脉心脏疾病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "冠脉造影结果"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "非小细胞肺癌@结果 在某些肿瘤中阳性，多发生在不吸烟、轻度吸烟的腺癌中 ### ROS1检测 检查 结果 检查 在大约 1% 到 2% NSCLC 中发现了 ROS1 融合，通常通过荧光原位杂交 (FISH) 检测出。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "辅助检查",
+        "subject": "非小细胞肺癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "ROS1检测"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "PKU属常染色体隐性遗传，其特点是：①患儿父母都是致病基因携带者（杂合子）；②患儿从父母各得到一个致病基因，是纯合子；③患儿母亲每次生育有1/4可能性为PKU患儿；④近亲结婚的子女发病率较一般人群为高。 【临床表现】 患儿出生时大多表现正常，新生儿期无明显特殊的临床症状，部分患儿可能出现喂养困难、呕吐及易激惹等非特异性症状。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "PKU",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "喂养困难"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "PKU",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "呕吐"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "PKU",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "易激惹"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "5.酸化甘油试验（AGLT）不同红细胞在酸化甘油中的破裂速度不同，在pH为6. 85，离子强度为0. 3M的甘油溶液中，红细胞可发生缓慢溶血，光密度随溶血增加而下降。 HS须与其他有球形红细胞的溶血性贫血病症鉴别。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "HS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "酸化甘油试验"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "酸化甘油试验",
+        "subject_type": "检查",
+        "object": {
+          "@value": "AGLT"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "成人哮喘@然而，质子泵抑制剂治疗并不能改善哮喘控制。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "哮喘",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "质子泵抑制剂"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "消化性溃疡病@米索前列醇应该运用在NSAID相关的溃疡病患者中，这类溃疡应用抑酸治疗效果不明显。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "溃疡",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "米索前列醇"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "痛风@ 该方法也可能比使用丙磺舒更有效。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "痛风",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "丙磺舒"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "遇有发热、咽峡炎和淋巴结肿大三联症，血中淋巴细胞增多并出现异淋时，称传染性单核细胞增多症（ infectious mononucleosis ， IM 。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "同义词",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "infectious mononucleosis"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "同义词",
+        "subject": "传染性单核细胞增多症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "IM"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "慢性心房颤动@此外，超声心动图还可显示左心房血栓。 慢性心房颤动@### 实验室评估 应在所有慢性心房颤动患者中进行甲状腺功能测试。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "慢性心房颤动",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "甲状腺功能测试"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "（四）康复治疗 ICH患儿在病情好转后即应进行医学康复训练，包括物理治疗、作业治疗和语言治疗等。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "辅助治疗",
+        "subject": "ICH",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "物理治疗"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "辅助治疗",
+        "subject": "ICH",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "作业治疗"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      }
+    ]
+  },
+  {
+    "text": "重型:又称Cooley贫血。若只纠正贫血，不进行铁整合治疗，易并发含铁血黄素沉着症:过多的铁沉着于心肌和其他脏器，如肝、胰腺、脑垂体等而引起该脏器损害,其中最严重的是心力衰竭,是导致患儿死亡的重要原因之一。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "并发症",
+        "subject": "Cooley贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "含铁血黄素沉着症"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "重型",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "Cooley贫血"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "【治疗】 刺激迷走神经，如在年长儿将脸浸于冰水，或在婴儿将冰袋置于脸上可终止发作。如患儿稳定，首选腺苷快速静脉推注，因为腺苷起效快，对心肌收缩性影响小。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "刺激迷走神经",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "腺苷"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "辅助治疗",
+        "subject": "刺激迷走神经",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "将脸浸于冰水"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "辅助治疗",
+        "subject": "刺激迷走神经",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "将冰袋置于脸上"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      }
+    ]
+  },
+  {
+    "text": "溃疡性结肠炎@在一项非盲随机对照研究中，使用另一种选择性血浆分离置换设备（Cellsorba）的活动性UC患者与使用高剂量泼尼松龙的患者相比，前者治疗效果增加明显（74% vs 38%），副作用发生率更低（24% vs 68%）。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "溃疡性结肠炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "泼尼松龙"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "基底细胞癌@# 证据 ## 证据评分 美容外观：对于直径＜2 cm 的头颈部 BCC 患者，相对于刮除术联合冷冻治疗，尚不明确手术治疗是否能在 1 年时获得更好的美容效果。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "辅助治疗",
+        "subject": "基底细胞癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "刮除术联合冷冻治疗"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "手术治疗",
+        "subject": "基底细胞癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "手术治疗"
+        },
+        "object_type": {
+          "@value": "手术治疗"
+        }
+      }
+    ]
+  },
+  {
+    "text": "第三节 钩虫 病 钩虫病（hookworm diseases）的病原体是钩虫，钩虫共有3种，即十二指肠钩虫、美洲钩虫和锡兰钩虫，其中以前两者引起人类感染最为重要。 3.左旋咪唑 对十二指肠钩虫疗效较好。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "钩虫病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "左旋咪唑"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "登革热@### WHO C组（确定警示征象） 查看全部   首选 –   紧急医疗干预 C组：存在明确的警示征象：在严重感染血浆渗漏的关键阶段（伴或不伴休克）、严重出血或严重的器官损害（例如肝脏和肾脏损害、心肌病、脑病或脑炎）。 登革热@患者需要紧急医疗干预。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "登革热",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "严重出血"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "登革热",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "严重的器官损害"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      }
+    ]
+  },
+  {
+    "text": "1）禁食：急性胰腺炎的患者应绝对禁食，直到腹痛消失可开始进少量流质。脂肪乳剂有利于补充代谢需要，有利于重型胰腺炎的恢复，故现主张可予以适量的脂肪乳剂。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "急性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "脂肪乳剂"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "第三节 恶性组织细胞增生症第十篇 血液系统疾病 第六章 组织细胞增生症本组疾病中包括急性单核细胞性白血病（急单） 、真正的恶性组织细胞病、恶性组织细胞肉瘤和少见的恶性郎罕细胞病，参见恶性肿瘤有关章节。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "病理分型",
+        "subject": "组织细胞增生症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "急性单核细胞性白血病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "病理分型",
+        "subject": "组织细胞增生症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "恶性组织细胞病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "病理分型",
+        "subject": "组织细胞增生症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "恶性组织细胞肉瘤"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "病理分型",
+        "subject": "组织细胞增生症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "恶性郎罕细胞病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "睾丸癌@## 分类 ### 睾丸肿瘤组织学分类（IHCT No 16） 原发性睾丸新生物 * A.生殖细胞（占睾丸所有癌症的90%-95%） * 精原细胞瘤（56%） * 胚胎癌（20%） * 畸胎瘤（5%-10%） * 畸胎癌（10%-20%） * 绒毛膜癌（1%） * 卵黄囊瘤（1%）——在青春期前的男孩中常见。睾丸癌@ * B.非生殖细胞（5%-10%） * 睾丸间质细胞或其他特殊的间质肿瘤 * 性腺母细胞瘤 * 混杂的（睾丸网腺癌、类癌、间叶细胞来源的和剩余肾上腺） * C.任何混合组织类型的肿瘤均考虑非精原细胞瘤。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "睾丸癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "卵黄囊瘤"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "（二）糖皮质激素 用于系统性硬化症，缓解炎性肌病及肺纤维化，但不能阻止本病的进展。 （三）免疫抑制剂 氨甲蝶呤0. 25～0. 5mg/kg，每周一次口服。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "系统性硬化症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "氨甲蝶呤"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "新生儿黄疸@在换血疗法使用血液前建议辐照血液，以降低移植物抗宿主病的风险。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "手术治疗",
+        "subject": "新生儿黄疸",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "换血疗法"
+        },
+        "object_type": {
+          "@value": "手术治疗"
+        }
+      }
+    ]
+  },
+  {
+    "text": "三、真菌感染性口炎第十三篇 消化系统疾病 第三章 口炎 第一节 感染性口炎【病因】 【临床表现及诊断】 【治疗】鹅口疮（ thrush ） ：念珠菌感染引起的口炎中以白色念珠菌致病力最强，儿童期感染常称之为鹅口疮。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "同义词",
+        "subject": "鹅口疮",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "thrush"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "病因",
+        "subject": "鹅口疮",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "念珠菌感染"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "病因",
+        "subject": "口炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "念珠菌感染"
+        },
+        "object_type": {
+          "@value": "社会学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "【病理】 CNS的肾脏病理为非特异性,病理所见因病期早晚不同。 水肿 半数于生后1~2周内即见水肿,严重者宫内就出现水肿，伴有胸腹腔积液。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "CNS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "水肿"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "CNS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "胸腹腔积液"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "发病部位",
+        "subject": "CNS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肾脏"
+        },
+        "object_type": {
+          "@value": "部位"
+        }
+      }
+    ]
+  },
+  {
+    "text": "痛风@如果非甾体抗炎药和秋水仙碱均有禁忌，可选择皮质类固醇（例如，肾功能不全患者）。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "痛风",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "非甾体抗炎药"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "药物治疗",
+        "subject": "痛风",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "秋水仙碱"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "十一、恶性间叶瘤 恶性间叶瘤（malignant mesenchymoma）是一种来自间叶成分软组织肉瘤，儿童少见。术前放疗可使肿瘤体积变小，以便手术切除。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "放射治疗",
+        "subject": "恶性间叶瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "放疗"
+        },
+        "object_type": {
+          "@value": "其他治疗"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "恶性间叶瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "malignant mesenchymoma"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "发病年龄",
+        "subject": "恶性间叶瘤",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "儿童少见"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "帕金森病@检查 脑部 MRI 显示与特定病因一致的异常（即，肿瘤=占位；卒中=脑软化区域；硬膜下血肿=血液聚集）。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "帕金森病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "脑部 MRI"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "α地中海贫血 静止型:患者无症状,也可呈现正常血红蛋白量;红细胞形态正常，甚至没有红细胞体积的变小，出生时脐带血中Hb Bart含量为0.01 -0. 02,但3个月后即消失，故容易漏诊。红细胞形态有轻度改变，如大小不等、中央浅染、异形等;红细胞渗透脆性正常/降低;变性珠蛋白小体阳性;HbA2和HbF含量正常或稍低。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "α地中海贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "HbA2和HbF含量正常或稍低"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "病理分型",
+        "subject": "α地中海贫血",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "静止型"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "【头痛的病因】 引起小儿头痛的病因很多，一般可归纳为以下三大方面。 7.发作性头痛 偏头痛，以及癫痫发作前后头痛等。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "发作性头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "小儿头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "偏头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "小儿头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "癫痫发作前后头痛",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "小儿头痛"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "婴儿猝死综合征@在 21 世纪初，美国 SIDS 发病率为每 1000 例活产中发生 0.5-0.6 例，与 10 年前相比大约减少了 50%（10 年前为每 1000 例活产中发生 1.2 例）。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "发病率",
+        "subject": "SIDS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "每 1000 例活产中发生 0.5-0.6 例"
+        },
+        "object_type": {
+          "@value": "流行病学"
+        }
+      }
+    ]
+  },
+  {
+    "text": "③对于某些新生儿,如患有严重RDS、窒息、感染性休克，以及PPHN等，也应持续静脉补钙,使血清游离钙维持在1. 2 ~ 1. 5mmol/L(出生体重>1500g)或1 ~ 1. 4mmol/L(出生体重<1500g),以预防低钙血症发生。若血镁<0.6mmd/L,肌内注射25% 硫酸镁，每次0. 4ml/kg。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "低钙血症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "25% 硫酸镁"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "严重RDS",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "补钙"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "窒息",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "补钙"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "感染性休克",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "补钙"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "PPHN",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "补钙"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "低钙血症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "补钙"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "多发性硬化症@## 病因学 虽然通常被认为是一种 CNS 白质疾病，现在有大量证据支持灰质和白质均受到累及。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "鉴别诊断",
+        "subject": "多发性硬化症",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "CNS 白质疾病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "胃炎@非甾体类抗炎药（NSAID）/酒精相关的糜烂性胃炎对症治疗效果很差的患者，需要进行内镜检查并取活检。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "内窥镜检查",
+        "subject": "糜烂性胃炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "内镜检查"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "组织学检查",
+        "subject": "糜烂性胃炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "活检"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "同义词",
+        "subject": "非甾体类抗炎药",
+        "subject_type": "药物",
+        "object": {
+          "@value": "NSAID"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "儿童糖尿病有特殊的自然病程： 1．急性代谢紊乱期 从出现症状到临床确诊，时间多在1个月以内。 血脂:血清胆固醇、甘油三酯和游离脂肪酸明显增加,适当的治疗可使之降低，故定期检测血脂水平,有助于判断病情控制情况。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "实验室检查",
+        "subject": "儿童糖尿病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "血脂"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "阶段",
+        "subject": "儿童糖尿病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "急性代谢紊乱期"
+        },
+        "object_type": {
+          "@value": "其他"
+        }
+      }
+    ]
+  },
+  {
+    "text": "川崎病（Kawasaki disease，KD)于1967年由日本川崎富作首先报告，又称为黏膜皮肤淋巴结综合征（mucocutaneous lymphnode syndrome，MCLS)，约15% ~20%未经治疗的患儿发生冠状动脉损害。 手足症状:急性期手足硬性水肿和掌跖红斑，恢复期指（趾）端甲下和皮肤交界处出现膜状脱皮，指（趾）甲有横沟，重者指（趾）甲亦可脱落。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "指（趾）甲有横沟"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "指（趾）甲亦可脱落"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（症状）",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "急性期手足硬性水肿"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（症状）",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "掌跖红斑"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "Kawasaki disease"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "KD"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "川崎病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "黏膜皮肤淋巴结综合征"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "黏膜皮肤淋巴结综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "mucocutaneous lymphnode syndrome"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "同义词",
+        "subject": "黏膜皮肤淋巴结综合征",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "MCLS"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "肾细胞癌@早期试验证明了贝伐单抗单药治疗对有既往免疫治疗史的患者有效。肾细胞癌@贝伐单抗与α干扰素联合使用的疗效更具说服力，与单独使用干扰素相比，贝伐单抗可以改善无进展生存期； 这项 3 期试验显示，贝伐单抗组的总生存率较高，但无统计学意义。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "药物治疗",
+        "subject": "肾细胞癌",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "贝伐单抗"
+        },
+        "object_type": {
+          "@value": "药物"
+        }
+      }
+    ]
+  },
+  {
+    "text": "慢性胰腺炎@腹部超声/CT扫描发现主胰管直径2-4mm，或腺体较正常1-2倍增大。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "慢性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "腹部超声"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      },
+      {
+        "Combined": false,
+        "predicate": "影像学检查",
+        "subject": "慢性胰腺炎",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "CT扫描"
+        },
+        "object_type": {
+          "@value": "检查"
+        }
+      }
+    ]
+  },
+  {
+    "text": "成人特发性高钙尿者最终可有40%～60%发生肾结石，而儿童仅有2%～5%可出现肾结石。 （二）泌尿系症状 少数病例有尿频、尿急、尿痛、排尿困难、遗尿及肾绞痛等症状。",
+    "spo_list": [
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "特发性高钙尿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿频"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "特发性高钙尿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿急"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "特发性高钙尿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "尿痛"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "特发性高钙尿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "排尿困难"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "特发性高钙尿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "遗尿"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "临床表现",
+        "subject": "特发性高钙尿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肾绞痛"
+        },
+        "object_type": {
+          "@value": "症状"
+        }
+      },
+      {
+        "Combined": true,
+        "predicate": "相关（导致）",
+        "subject": "特发性高钙尿",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "肾结石"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  },
+  {
+    "text": "垂体功能减退@ * 真菌性垂体疾病可能会作为艾滋病的并发症发生，但并不常见。",
+    "spo_list": [
+      {
+        "Combined": false,
+        "predicate": "并发症",
+        "subject": "艾滋病",
+        "subject_type": "疾病",
+        "object": {
+          "@value": "真菌性垂体疾病"
+        },
+        "object_type": {
+          "@value": "疾病"
+        }
+      }
+    ]
+  }
+]
