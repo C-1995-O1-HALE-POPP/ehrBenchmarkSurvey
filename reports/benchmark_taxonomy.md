@@ -77,6 +77,7 @@ Interpretation note:
 - `EHRQA`: `task=MIX`; `interaction=MT-X`; `source=DIAL`; `role=CORE`
 - `Real-World Clinical Cases`: `task=MIX`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `MedAlign`: `task=MIX`; `interaction=ST-L`; `source=MIX`; `role=CORE`
+- `TIMER-Eval`: `task=GEN`; `interaction=ST-L`; `source=SEHR`; `role=CORE`
 - `N2C2-CT`, `CHIP-CTC`: `task=CLS`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 - `n2c2 2014 - Heart Disease Challenge`: `task=CLS`; `interaction=ST-L`; `source=NOTE`; `role=CORE`
 

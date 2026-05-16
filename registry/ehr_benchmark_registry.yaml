@@ -1,4 +1,4 @@
-last_updated: "2026-04-27"
+last_updated: "2026-05-11"
 benchmarks:
   - canonical_name: "EHR-Bench"
     aliases: []
@@ -1070,4 +1070,48 @@ benchmarks:
         year: 2024
         url: "https://arxiv.org/abs/2412.05845"
         role_in_paper: "out-of-distribution generalization benchmark"
+    notes: ""
+
+  - canonical_name: "MedAlign"
+    aliases: []
+    benchmark_type: "generation + comparative evaluation"
+    source_system: "Stanford Medicine EHR"
+    task_families: []
+    source_papers:
+      - title: "MedAlign: A Clinician-Generated Dataset for Instruction Following with Electronic Medical Records"
+        year: 2024
+        url: "https://doi.org/10.1609/AAAI.V38I20.30205"
+        role_in_paper: "primary benchmark"
+      - title: "TIMER: temporal instruction modeling and evaluation for longitudinal clinical records"
+        year: 2025
+        url: "https://www.nature.com/articles/s41746-025-01965-9"
+        role_in_paper: "benchmark used in paper"
+    notes: "Clinician-curated benchmark with 983 instruction-response pairs across 276 longitudinal patient EHRs. 6 task families: Retrieve & Summarize, Care Planning, Calculation & Scoring, Diagnosis Support, Translation, and Other."
+
+  - canonical_name: "TIMER-Eval"
+    aliases: []
+    benchmark_type: "generation + comparative evaluation"
+    source_system: "Stanford Medicine EHR (STARR OMOP-CDM)"
+    task_families: []
+    source_papers:
+      - title: "TIMER: temporal instruction modeling and evaluation for longitudinal clinical records"
+        year: 2025
+        url: "https://www.nature.com/articles/s41746-025-01965-9"
+        role_in_paper: "primary benchmark"
+    notes: "Model-generated temporal reasoning benchmark (Gemini-1.5-Pro). Requires STARR OMOP-CDM access for data generation. Code publicly available at https://github.com/som-shahlab/TIMER. Validated by 3 clinicians. Three temporal distribution patterns: Recency-Focused, Edge-Focused, Uniformly-Distributed."
+
+  - canonical_name: "ER-REASON"
+    aliases: []
+    benchmark_type: "mixed: classification + generation / summarization + generation / clinical reasoning + classification / generation"
+    source_system: "UCSF EHR data with HIPAA-compliant de-identification"
+    task_families:
+      - "classification"
+      - "generation / summarization"
+      - "generation / clinical reasoning"
+      - "classification / generation"
+    source_papers:
+      - title: "ER-REASON: A Benchmark Dataset for LLM-Based Clinical Reasoning in the Emergency Room"
+        year: 2025
+        url: "https://arxiv.org/abs/2505.22919"
+        role_in_paper: "primary benchmark"
     notes: ""

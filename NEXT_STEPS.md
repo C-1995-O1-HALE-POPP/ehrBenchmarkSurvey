@@ -45,14 +45,15 @@
 
 你有 PhysioNet 认证账号，但以下模块需要**单独下载**（不在 MIMIC-III/IV 基础包内）：
 
-| 数据集 | PhysioNet 链接 | 大小 | 用于哪些 benchmark |
-|---|---|---|---|
-| **MIMIC-IV-ED** | [链接](https://physionet.org/content/mimic-iv-ed/) | ~1GB | MIMIC4ED (3 个 ED 预测任务) |
-| **MIMIC-CXR** | [链接](https://physionet.org/content/mimic-cxr/) | ~470GB (仅文本 ~5GB) | MIMIC-CXR (X 光报告摘要) |
-| **HiRID 1.1.1** | [链接](https://physionet.org/content/hirid/1.1.1/) | ~10GB | HiRID-ICU-Benchmark (6 个 ICU 预测任务，已有 repo) |
-| **MIMIC-IV FHIR Demo** | [链接](https://physionet.org/content/mimic-iv-fhir-demo/2.1.0/) | ~500MB | FHIR-AgentBench (已有 repo) |
-| **MIMIC-IV Demo (SQL)** | [链接](https://physionet.org/content/mimic-iv-demo/2.2/) | 公开（ODC License） | EHRSQL-2024 (已有 repo，无需认证) |
-| **eICU 2.0** | [链接](https://physionet.org/content/eicu-crd/2.0/) | ~3GB | EHRSQL 的 eICU 部分、EHR-ChatQA |
+| 数据集                     | PhysioNet 链接                                                  | 大小                | 用于哪些 benchmark                             |
+| ----------------------- | ------------------------------------------------------------- | ----------------- | ------------------------------------------ |
+| **MIMIC-IV-ED**         | [链接](https://physionet.org/content/mimic-iv-ed/)              | ~1GB              | MIMIC4ED (3 个 ED 预测任务)                     |
+| **MIMIC-CXR**           | [链接](https://physionet.org/content/mimic-cxr/)                | ~470GB (仅文本 ~5GB) | MIMIC-CXR (X 光报告摘要)                        |
+| **HiRID 1.1.1**         | [链接](https://physionet.org/content/hirid/1.1.1/)              | ~10GB             | HiRID-ICU-Benchmark (6 个 ICU 预测任务，已有 repo) |
+| **MIMIC-IV FHIR Demo**  | [链接](https://physionet.org/content/mimic-iv-fhir-demo/2.1.0/) | ~500MB            | FHIR-AgentBench (已有 repo)                  |
+| **MIMIC-IV Demo (SQL)** | [链接](https://physionet.org/content/mimic-iv-demo/2.2/)        | 公开（ODC License）   | EHRSQL-2024 (已有 repo，无需认证)                 |
+| **eICU 2.0**            | [链接](https://physionet.org/content/eicu-crd/2.0/)             | ~3GB              | EHRSQL 的 eICU 部分、EHR-ChatQA                |
+
 
 ---
 

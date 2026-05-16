@@ -776,6 +776,11 @@ Rule of inclusion:
 
 - Disease Named Entity Recognition
 
+## TIMER-Eval
+
+- Temporal Reasoning QA
+- Temporal Distribution Ablation — Head-to-Head Comparison
+
 ## Clinical Stigmatizing Language
 
 - Credibility & Obstinacy Classification

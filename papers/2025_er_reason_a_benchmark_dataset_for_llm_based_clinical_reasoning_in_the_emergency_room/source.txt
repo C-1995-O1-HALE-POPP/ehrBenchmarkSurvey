@@ -1,0 +1,1019 @@
+ER-R EASON: A Benchmark Dataset for LLM-Based
+Clinical Reasoning in the Emergency Room
+
+arXiv:2505.22919v2 [cs.CL] 30 May 2025
+
+Nikita Mehandru
+University of California, Berkeley
+nmehandru@berkeley.edu
+
+Niloufar Golchini
+University of California, Berkeley
+ngolchini@berkeley.edu
+
+Travis Zack
+University of California, San Francisco
+travis.zack@ucsf.edu
+Melanie Molina*
+University of California, San Francisco
+Melanie.Molina@ucsf.edu
+
+David Bamman
+University of California, Berkeley
+dbamman@berkeley.edu
+Ahmed Alaa*
+UC Berkeley and UCSF
+amalaa@berkeley.edu
+
+Abstract
+Large language models (LLMs) have been extensively evaluated on medical question answering tasks based on licensing exams. However, real-world evaluations
+often depend on costly human annotators, and existing benchmarks tend to focus on
+isolated tasks that rarely capture the clinical reasoning or full workflow underlying
+medical decisions. In this paper, we introduce ER-R EASON, a benchmark designed
+to evaluate LLM-based clinical reasoning and decision-making in the emergency
+room (ER)—a high-stakes setting where clinicians make rapid, consequential decisions across diverse patient presentations and medical specialties under time
+pressure. ER-R EASON includes data from 3,984 patients, encompassing 25,174 deidentified longitudinal clinical notes spanning discharge summaries, progress notes,
+history and physical exams, consults, echocardiography reports, imaging notes, and
+ER provider documentation. The benchmark includes evaluation tasks that span
+key stages of the ER workflow: triage intake, initial assessment, treatment selection,
+disposition planning, and final diagnosis—each structured to reflect core clinical
+reasoning processes such as differential diagnosis via rule-out reasoning. We also
+collected 72 full physician-authored rationales explaining reasoning processes that
+mimic the teaching process used in residency training, and are typically absent from
+ER documentation. Evaluations of state-of-the-art LLMs on ER-R EASON reveal
+a gap between LLM-generated and clinician-authored clinical reasoning for ER
+decisions, highlighting the need for future research to bridge this divide.
+Benchmark and code: https://github.com/AlaaLab/ER-Reason
+
+1
+
+Introduction
+
+Large language models (LLMs) have shown significant promise in clinical applications. Recent studies
+have demonstrated that LLMs not only encode substantial clinical knowledge [1], but also exhibit the
+ability to perform diagnostic and treatment tasks when provided with curated patient information [2–5].
+However, it remains unclear whether LLMs can reason about real-world patient cases in the same way
+clinicians do. Real-world clinical reasoning involves synthesizing information from a patient’s longitudinal clinical history, selecting appropriate investigations, integrating relevant clinical guidelines,
+*Equal contribution.
+
+Reasoning
+process
+
+Decision
+factors
+
+Treatment
+planning
+
+Decision to
+admit,
+discharge or
+escalate care
+
+Initial
+Assessment
+
+Treatment
+choice
+
+Disposition
+plan
+
+ER provider
+note – HPI and
+Physical Exam
+
+ER provider
+note –
+Assessment
+and Plan
+
+Final Diagnosis
+and Disposition
+
+Pattern
+recognition
+
+Initial DDx
+formation from
+relevant PMH
+
+Rule-out
+reasoning
+
+Triage intake
+
+EHR Review
+
+Presentation of
+chief complaint
++ Acuity score
+
+Longitudinal clinical notes
+
+ER workflow
+
+ER-REASON
+benchmark data
+
+...
+Time
+
+Figure 1: Overview of the ER-R EASON benchmark. The benchmark consists of de-identified, longitudinal
+clinical notes spanning a wide range of document types, including discharge summaries, progress notes, History
+and Physical exams, consult notes, imaging reports, and ER provider notes. The dataset covers key stages of the
+ER workflow—triage intake, initial assessment, treatment selection, disposition plan, and final diagnosis. Each
+stage of the workflow involves different physician decisions and assessments alongside the underlying rationale.
+
+and systematically ruling out and ranking differential diagnoses. Crucially, this reasoning must be conducted using documentation that is often incomplete, noisy, and temporally fragmented—conditions
+that differ substantially from the curated clinical vignettes often used in LLM evaluation.
+Early benchmark datasets for evaluating LLMs in medicine have primarily relied on multiple-choice
+questions from medical licensing exams such as the USMLE [6]. These benchmarks feature curated
+clinical vignettes with simplified patient contexts and unambiguous answer choices that map directly
+to diagnostic or treatment decisions. However, they fall short of capturing the complexity and ambiguity inherent in real-world clinical decision-making. As noted in [7, 8], such toy benchmarks generally
+lack construct validity—that is, they do not adequately represent the real-world clinical workflows
+and decision-making scenarios in which LLMs are expected to assist in patient care.
+To improve the validity of medical LLM benchmarks, several recent efforts have sought to move beyond traditional medical question answering tasks. These include interactive evaluation platforms such
+as MedArena1 and real-world electronic health record (EHR) benchmarks such as MedHELM2 and
+EHRSHOT [9, 10]. While these benchmarks represent progress, they typically consist of fragmented
+tasks that do not capture end-to-end clinical workflows and often lack detailed, context-specific documentation of the clinician reasoning processes underlying patient care. This gap exists in part because
+clinical reasoning generally relies on tacit knowledge, training, and professional judgment—elements
+that are rarely captured explicitly in EHR documentation. As more advanced LLMs designed for
+complex reasoning emerge—such as Deepseek-R1 [11], OpenAI o1 [12], and o3-mini [13]—there is
+a need for new benchmark datasets that enable rigorous evaluation of the ability of LLMs to emulate
+clinician reasoning underlying decision-making in realistic, context-rich clinical settings.
+Contribution. In this paper, we introduce ER-R EASON, a benchmark designed to evaluate LLM-based
+clinical reasoning and decision-making in the emergency room (ER). The ER provides a unique setting
+for evaluating LLMs for multiple reasons. First, emergency physicians must make rapid, high-stakes
+decisions based on fragmented, heterogeneous clinical documentation—a setting where LLMs could
+support clinicians by synthesizing and contextualizing disparate sources of information. Second, ER
+decision-making follows a structured workflow that involves multiple interdependent stages—triage,
+assessment, treatment, and disposition—each influenced by both patient-specific factors and systemic
+constraints such as hospital capacity and acuity levels [14]. Third, unlike some other clinical settings,
+ER provider notes often contain explicit justifications for diagnostic and treatment choices. Due to
+the episodic nature of emergency care, clinicians adopt a “worst-first” approach that prioritizes the
+exclusion of life-threatening conditions over comprehensive care, and must clearly communicate their
+reasoning to downstream providers [15, 16]. The ER provider note thus serves as a communication
+tool that reflects clinical reasoning, including which differential diagnoses were considered, which
+were ruled out, and the rationale behind key decisions. However, due to the intense pace and workload
+of the ER, these notes can also under-document the full scope of clinician reasoning [17].
+1
+2
+
+https://medarena.ai/
+https://crfm.stanford.edu/helm/medhelm/latest/
+
+2
+
+ER-R EASON captures the full trajectory of patients in the ER of a large academic medical center, with
+data reflecting the unique characteristics of ER care described above. The benchmark includes:
+
+• Data from 3,984 patients, comprising 25,174 de-identified, longitudinal clinical notes across a
+range of document types, including discharge summaries, progress notes, history and physical exams
+(H&Ps), consult notes, imaging and echocardiography reports, and ER provider notes.
+• LLM evaluation tasks aligned with key stages of the ER workflow, including triage intake, EHR
+review, initial assessment, diagnostic and treatment selection, disposition, and final diagnosis. Each
+task is grounded in realistic input derived from the patients’ longitudinal clinical documentation.
+• Annotations capturing clinical reasoning behind decision-making at each stage of the ER
+workflow. In addition to the clinical rationales documented in ER provider notes, the benchmark includes 72 expert-authored rationales by practicing ER attending and resident physicians, with
+annotations of the reasoning processes that mimic the teaching process used in residency training.
+The term “clinical reasoning” is often used ambiguously or imprecisely in the literature. In this paper,
+we define clinical reasoning as the underlying rationale for a physician’s diagnostic or treatment
+decisions. Put simply, it is the cognitive process by which clinicians synthesize patient information and
+apply medical knowledge to construct a mental representation of the case to determine an appropriate
+course of action [18]. Accordingly, an LLM demonstrates strong clinical reasoning not only when it
+reaches the same decisions as a physician, but when it does so using a similar line of reasoning.
+
+2
+
+Related Work
+
+Benchmarks for evaluating LLMs in medicine. A growing body of research has sought to develop
+benchmarks for evaluating LLMs in medical applications. Most early efforts focused on developing
+stylized benchmarks based on multiple choice question answering (QA) from medical licensing exams.
+Examples of such benchmarks include MedQA [6] and PubMedQA [19], which assess factual recall
+and basic clinical knowledge. However, there has been a growing realization that these benchmarks
+do not capture true clinical utility [8]. To better assess LLM performance in real-world settings,
+EHRSHOT [10] incorporates EHR data to evaluate clinical documentation, summarization, and treatment recommendation tasks. Interactive platforms such as MedArena3 allow for multi-turn dialogue
+evaluations and head-to-head model comparisons. Despite these advancements, most existing benchmarks emphasize the “what” of clinical decisions—what tests were ordered, what diagnoses were
+given, what treatments were prescribed—while largely neglecting the “why”: the underlying clinical
+reasoning tied to the patient context and the broader workflow in which care is delivered.
+Table 1: Comparison between benchmark datasets for clinical LLMs.
+Benchmark
+
+# of Patients
+
+Note Types
+
+# of Notes
+
+Clinical Setting
+
+Reasoning
+
+ER-R EASON
+
+3,984
+
+Discharge Summary, Progress, Consult,
+H&P, Imaging, Echo, ECG, ED Provider
+
+25,174
+
+ER
+
+Yes
+
+DiRECT [20]
+Xie et al. [21]
+MC-BEC [22]
+DR. BENCH [23]
+HiRID-ICU [24]
+PROBSUM [25]
+EHRSHOT [10]
+
+–
+217k
+63k
+–
+33,905
+–
+6,739
+
+Free-text, SOAP-style notes
+Free-text notes, vital signs
+Radiology reports
+Progress Notes
+EHR codes, vital signs
+Progress notes
+Tabular EHR data
+
+276
+
+Structured EHR data
+
+Hospital & ICU
+ER
+ER
+ICU
+ICU
+Hospital
+Hospital
+Mixed inpatient
+and ambulatory
+
+Yes
+No
+No
+Yes
+No
+No
+No
+
+MEDALIGN [26]
+
+511
+–
+–
+603
+–
+1k
+None –
+983 instructions
+(303 with responses)
+
+No
+
+Benchmarks for LLM-based clinical reasoning. A small number of recent benchmarks have begun
+to focus explicitly on evaluating clinical reasoning in LLMs. DiReCT [20] provides a dataset aimed
+at evaluating LLMs on their ability to reason through clinical notes to reach a diagnosis, but it only
+covers a limited subset of disease categories and does not capture the broader scope of reasoning that
+clinicians engage in, particularly in real-time environments like the ER. Similarly, Dr.Bench [23]
+covers six tasks built from ten public datasets, but these are centered around reasoning in the context of
+clinical text understanding and diagnosis without being grounded in a real-world clinical workflow.
+3
+
+https://medarena.ai/
+
+3
+
+ER-R EASON differs from DiReCT and Dr.Bench in several key ways. First, it is designed to mirror
+the full trajectory of a patient’s journey in the ER along the entire ER workflow. This allows the
+benchmark to capture a wide range of clinically relevant reasoning tasks under realistic decisionmaking conditions—including initial differential diagnoses, rule-out reasoning, identification of key
+decision factors, and treatment planning. In contrast to benchmarks that focus narrowly on diagnostic
+outcomes, ER-R EASON captures stage-by-stage clinical reasoning throughout the care process.
+Moreover, a unique aspect of the ER setting compared to other forms of care is that it involves provider
+notes that naturally reflect elements of clinical reasoning. To further support fine-grained evaluation,
+we also collected structured annotations of reasoning steps for a subset of patient cases.
+The data in ER-R EASON also depart from widely used clinical datasets such as MIMIC-III [27],
+MIMIC-IV [28], and eICU [29], which primarily focus on intensive care unit (ICU) or inpatient
+hospital settings and emphasize structured data sources—such as vital signs, laboratory values, and
+medication records. While valuable for certain predictive modeling tasks, these datasets offer limited
+insight into clinical reasoning due to their minimal inclusion of unstructured text. As highlighted by
+prior work [10], a key limitation of structured-data-focused benchmarks is their inability to capture the
+narrative context and decision-making rationale typically recorded in free-text clinical documentation.
+Different variants of the MIMIC dataset include a substantial amount of free-text clinical documentation, but are limited by annotation gaps, inconsistent linking of patient records across time, and
+task ambiguity. In contrast, ER-R EASON contains longitudinal unstructured notes and incorporates a
+diverse range of note types—such as imaging reports, echocardiography findings, and ER provider
+notes—annotations of both clinical decisions and their underlying rationales [25].
+
+Figure 2: Distribution of the top ten chief complaints (left) and distribution of note types in ER-R EASON (right).
+
+3
+
+ER-R EASON: A Benchmark for LLM-Based Clinical Reasoning in the ER
+
+ER-R EASON is designed to mirror the full trajectory of patient care in the ER, with evaluation tasks
+that cover key stages of the real-world ER workflow: triage intake, EHR review, diagnostic reasoning,
+disposition planning, and final diagnosis. Each task is based on de-identified, real-world patient data
+and designed to evaluate different aspects of clinical reasoning as they naturally occur in the ER.
+3.1
+
+Longitudinal Clinical Notes
+
+The ER-R EASON dataset consists of longitudinal clinical notes of patients visiting the ER of a large
+academic medical center from March 1, 2022, and March 31, 2024. In total, our dataset spans 3,437
+patients across 3,984 ER encounters, and encompasses 25,174 de-identified clinical notes. Each
+patient encounter contains multiple note types, such as discharge summaries, progress notes, history
+and physical examination (H&P), consults, echocardiogram reports, electrocardiogram (ECG) reports,
+imaging notes, and ED provider notes. On average, there are seven notes per encounter. Unlike standardized note formats such as SOAP (subjective, objective, assessment, and plan) [20],the diversity
+and unstructured nature of these notes present additional complexity for reasoning tasks.
+In terms of clinical presentation, the dataset includes 395 unique chief complaints, reflecting the broad
+variability of symptoms in the ER. The most frequent complaints include abdominal pain, shortness
+of breath, and chest pain—conditions that consistently demand urgent evaluation and require nuanced
+clinical reasoning. Figure 2 summarizes the top ten chief complaints in our dataset and the distribution
+4
+
+of note types across all our patient encounters, with the most common being discharge summaries,
+ED provider notes, imaging reports, and progress notes. These notes span a wide range of specialties
+and care stages, capturing the full context necessary for effective longitudinal reasoning.
+For each admitted ER patient, we include clinical notes from their previous hospital encounter, and
+thus capture the complexity and temporal progression of patient care across multiple visits. There are
+on average seven notes per encounter. To our knowledge, this is the first publicly released dataset
+providing longitudinal, multi-encounter clinical notes for ER patients to enable evaluation of LLMs
+on realistic clinical reasoning tasks. All clinical notes in the ER-R EASON dataset were de-identified
+in accordance with HIPAA Safe Harbor standards to protect patient privacy and were approved by
+the institutional compliance. By providing multi-encounter documentation with heterogeneous note
+types, ER-R EASON offers a realistic benchmark for evaluating LLMs in emergency medicine.
+3.2
+
+Data Annotation
+
+While elements of clinical reasoning are occasionally documented in ER notes, they are often incomplete or inconsistently recorded. To address this documentation gap, we collected 72 expert-authored
+rationales from emergency medicine residents and attending physicians. Each clinician provided
+detailed, step-by-step explanations capturing their core clinical reasoning process, specifically the ruleout reasoning, relevant medical factors, and treatment planning for the given ER patient. This study
+was approved by our Institutional Review Board (IRB), and all participants were compensated for
+their time. To support structured data collection, we developed a custom application that guided participants through a sequential workflow designed to mirror their real-world reasoning process.
+3.3
+
+Benchmark Tasks
+
+In this section, we describe the evaluation tasks that comprise the ER-R EASON benchmark. The
+benchmark consists of five tasks, each corresponding to a distinct stage of the ER workflow, as
+illustrated in Fig. 1. For each task, the input to the LLM consists of longitudinal clinical notes for
+a specific patient, and the outputs include clinical decisions or assessments—along with rationales
+for those decisions in selected stages. Clinical reasoning is captured both implicitly, through the
+coherence of decisions across stages (e.g., how earlier assessments inform later choices), and explicitly,
+through documented rationales that articulate the reasoning behind key clinical actions.
+3.3.1
+
+Stage 1 (Triage Intake): ER Acuity Assessment Task
+
+Task definition. The first stage of the ER workflow is triage intake, a critical process in which patients
+are rapidly evaluated and prioritized according to their illness severity. Triage intake ensures that highrisk patients receive timely care while maintaining overall departmental efficiency. The initial task in
+ER-R EASON models this stage by assessing the capability of LLMs to determine patient acuity. This
+task simulates real-time clinical reasoning that occurs before a full diagnostic workup is available.
+Task 1: ER Acuity Assessment
+• Inputs: The inputs to the LLM at this stage are sparse initial patient intake information, including the chief complaint, vital signs, and demographic features.
+• Target: Emergency Severity Index (ESI) scores ranging from 1 (critical) to 5 (non-urgent).
+• Relevant reasoning capabilities: Pattern recognition, Rule Out Worst-Case Scenario (ROWS),
+and common heuristics based on red flag symptoms or anchoring on prominent symptoms.
+Evaluation metric. Performance on this task is evaluated by measuring the accuracy of ESI scores
+predicted by LLMs against the scores assigned by ER physicians during actual patient admissions.
+3.3.2
+
+Stage 2 (EHR Review): Patient Case Summarization Task
+
+Task definition. The second step in the ER workflow is EHR review, where the ER physician reviews
+a patient’s medical record to create a concise “one-liner” summary for the new ER patient. Often, the
+physician focuses on the patient’s most recent discharge summary, as it is one of the most comprehensive sources of past medical history. The physician must prioritize relevant information from the
+patient’s medical history based on the current chief complaint. For example, a patient presenting with
+chest pain might prompt the physician to focus on prior cardiac-related clinical information in the
+5
+
+most recent discharge summary. Models are evaluated on their ability to extract and summarize key
+details from the hospital discharge notes that encode relevant and actionable information.
+Task 2: Patient Case Summarization
+• Inputs: Discharge note and current chief complaint
+• Target: One-line summary of a patient case.
+• Relevant reasoning capabilities: Information gathering and abductive reasoning.
+Evaluation metric. We use ROUGE (Recall-Oriented Understudy for Gisting Evaluation) and F1 metrics to assess LLM-based one-liner patient summaries compared to those generated by ER physicians.
+3.3.3
+
+Stages 3 & 4 (Initial Assessment & Treatment Choice): Treatment Planning Task
+
+Task definition. The third and fourth stages of the ER workflow are closely intertwined. During this
+phase, the ER physician conducts an initial assessment of the patient to develop their differential diagnoses, identifying medical factors that inform decision-making, followed by forming diagnostic and
+treatment plans. This is where clinical reasoning is most critical. Accordingly, in the treatment planning task, we evaluate not only the agreement between the model-generated treatment plans and those
+proposed by physicians (Stage 4), but also the similarity in the step-by-step diagnostic reasoning
+process that precedes them (Stage 3). Specifically, we assess the model along three dimensions:
+• Rule-out Reasoning: Does the model correctly enumerate plausible diagnoses based on the
+patient history and current presentation?
+• Medical Factors: Does the model identify appropriate labs, imaging, or diagnostic steps to
+confirm or rule out differential diagnoses?
+• Treatment Planning: Does the model propose a clinically sound management plan, including immediate interventions in the ER and a preliminary treatment plan?
+Task 3: Treatment Planning Task
+• Inputs:
+• All available EHR notes (past medical history) for the patient
+• Current chief complaint
+• ER clinical presentation
+• Target: Clinician-authored rule-out reasoning, medical decision factors, and treatment plan.
+• Relevant reasoning capabilities Deductive reasoning and diagnostic reasoning.
+Evaluation metric. To assess clinical reasoning, we apply the cTAKES toolkit [30], which maps
+free-text outputs to UMLS Concept Unique Identifiers (CUIs). This enables a structured comparison
+between model outputs and gold-standard clinical rationales authored by physicians. The CUIs
+map to a formal medical ontology (UMLS) that captures a wide range of medical coding systems
+including ICD, SNOMED-CT, CMS, RxNorm, and LOINC. For example, if a model predicts
+“Coronary Artery Disease” and a physician writes “CAD” in their differential, both are assigned to
+the same CUI (C1956346), maintaining semantic equivalence despite lexical variation. This mapping
+spans diagnoses, medications, labs, signs, and symptoms to support comprehensive, concept-level
+evaluation of clinical reasoning. The evaluation metric measures the proportion of clinical concepts
+from the 72 gold-standard physician-authored rationales that are also present in the model output, i.e.,
+Clinical Concept Recall =
+3.3.4
+
+|CUIsLLM ∩ CUIsPhysician |
+.
+|CUIsPhysician |
+
+Stage 5 (Disposition Plan): Final Diagnosis and Disposition Tasks
+
+Task definition. The final stage of the ER workflow involves reassessing the patient to establish a
+definitive diagnosis (if possible) and determining a disposition plan—whether the patient should be
+6
+
+discharged, admitted, observed, or transferred. At this stage, we define two tasks: assigning a final
+diagnosis (with or without further diagnostics or treatment) and selecting an appropriate disposition.
+Both tasks require synthesizing structured demographic information and unstructured clinical notes
+to support informed decision-making that can be compared with physicians’ documented decisions.
+Evaluation metric. Model performance on the final diagnosis task is evaluated at two levels of
+granularity. First, we measure ICD-10 Exact Match accuracy, where the model-predicted diagnosis
+must match the true ICD-10 code assigned to the patient. Second, we assess HCC Category Match
+accuracy, grouping diagnoses into broader, clinically meaningful categories as defined by CMS.
+For the disposition task, model-generated decisions are compared against physician-documented
+dispositions recorded in the structured tabular data from the corresponding ER visit.
+Task 4: Final Diagnosis Task
+• Inputs: Age, sex, chief complaint, past medical history, ER clinical presentation
+• Target: Standardized CMS (Centers for Medicare & Medicaid Services) diagnosis codes.
+• Relevant reasoning capabilities: Diagnostic reasoning.
+Task 5: Final Disposition Decision
+• Inputs: Age, sex, chief complaint, past medical history, ED clinical presentation
+• Target: Discharge, Admit, Eloped, Transfer to Another Facility.
+• Relevant reasoning capabilities: Risk assessment and predictive reasoning.
+
+4
+
+Experiments
+
+We evaluate four recent LLMs spanning a range of model families, sizes, and levels of accessibility:
+LLaMA 3.2–3B Instruct,4 GPT-3.5, GPT-4o [31], and o3-mini [32]. Experiments involving closedweight models were conducted using a HIPAA-compliant API service hosted within our institution.
+Each model was evaluated across the five key tasks in ER-R EASON to assess their clinical reasoning
+capabilities, examine differences between open- and closed-weight models, and assess whether
+models explicitly designed for reasoning show improved performance in clinical contexts.
+Task 1: ER acuity assessment. We find that o3-mini, explicitly designed for reasoning, achieves the
+best performance in predicting ER acuity. However, the model takes a conservative approach. The
+model over-classifies patients as Urgent (73.62% predicted vs. 54.83% actual). Of particular concern,
+the model fails to identify any Less Urgent or Non-Urgent cases, effectively compressing the acuity
+spectrum and losing granularity in lower-acuity classifications. This pattern of classification may lead
+to resource misallocation—potentially undertreating truly emergent cases while overtreating urgent
+ones. While o3-mini demonstrates strong reasoning capabilities, its limitations in clinical judgment
+are evident, which highlights a gap between state-of-the-art reasoning models that are evaluated on
+toy benchmarks and real-world decision-making. The model’s tendency to default to mid-level acuity
+(Urgent) appears to come at the expense of accurately identifying both the highest and lowest acuity
+cases, suggesting a “regression to the mean” phenomenon in its clinical assessments.
+Table 2: ER acuity assessment
+
+Table 3: Performance of baseline LLMs on patient case summarization
+
+Model
+
+Model
+
+LLaMA 3.2
+GPT-3.5
+GPT-4o
+o3-mini
+
+Accuracy
+53.63
+62.11
+61.98
+62.70
+
+ROUGE-1-F1
+
+ROUGE-2-F1
+
+ROUGE-L-F1
+
+0.293
+0.310
+0.347
+0.312
+
+0.110
+0.132
+0.127
+0.120
+
+0.251
+0.262
+0.286
+0.272
+
+LLaMA 3.2
+GPT-3.5
+GPT-4o
+o3-mini
+
+Task 2: Patient case summarization. Prior research on clinical text summarization has largely
+focused on structured or semi-structured sources of clinical documentation, such as radiology reports
+and other standardized clinical notes [33]. In contrast, our task involves summarizing a set of unstructured clinical notes that would typically be authored by multiple providers with diverse documentation
+4
+
+We refer to LLaMA 3.2–3B Instruct as LLaMA 3.2 for brevity.
+
+7
+
+Physician-authored rationale
+
+LLM-based reasoning
+1. DIFFERENTIAL DIAGNOSIS
+**Differential Diagnosis for Syncope in a 78-year-old Male with History of Lymphoma,
+Prostate Cancer, and Bladder Cancer:**
+
+1. **Cardiac Arrhythmia:** Given the patient's age and history of cancer treatments, he
+may be at risk for arrhythmias. The echocardiogram shows hyperdynamic LV function
+and mild tricuspid regurgitation, which could contribute to arrhythmias.
+
+Differential includes vasovagal syncope (especially in the setting of
+having a foley catheter in place, which may trigger vasovagal syncope
+
+2. **Orthostatic Hypotension:** The patient’s age and potential dehydration (as indicated
+by the previous acute kidney injury and urinary retention) could lead to orthostatic
+hypotension, causing syncope.
+3. **Vasovagal Syncope:** This is a common cause of syncope and could be triggered by
+pain or discomfort related to his urinary issues.
+
+if accidentally manipulated or tugged) vs dehydration vs aortic
+stenosis (echocardiogram was unable to visualize aortic valve) vs
+
+cardiac arrhythmia. PE is also on the differential, given the patient has
+known bladder cancer and lymphoma and therefore may be at
+increased risk of thrombosis. If he is undergoing active chemotherapy,
+
+4. **Medication Side Effects:** If the patient is on medications for hi
+conditions, side effects such as
+
+a medication side effect or reaction is also possible. Finally, pericardial
+effusion with tamponade is possible, given the cancer history and the
+echo that shows a small pericardial effusion.
+
+**Lowest on Differential:**
+
+- **Neurological Causes:** Given the absence of neurological symptoms or history,
+neurological causes are less likely.
+- **Pulmonary Embolism:** The echocardiogram findings do not strongly suggest
+pulmonary embolism, and there is no history of respiratory symptoms.
+
+Figure 3: Comparison of GPT-4o–generated and physician-annotated reasoning for a differential diagnosis in a
+syncope case. cTakes was used to extract clinical concepts in both cases. Color highlights indicate overlapping
+disease entities (red), diagnostic procedures and labs (blue), and patient symptoms (green).
+
+styles and inconsistent terminology. Moreover, the goal is not to produce a general-purpose summary,
+but rather to generate a concise, actionable synopsis tailored to the next step in the ER workflow. To
+support this, all baseline models were guided with a detailed prompt specifying the intended use of the
+summary within the clinical context of ER patient care (see Appendix for prompt details).
+Table 3 highlights the performance of the four baseline LLMs in generating one-liner patient summaries from longitudinal clinical notes. GPT-4o outperformed other models across ROUGE metrics,
+achieving a ROUGE-F1 score of 0.347, but the absolute scores remain modest for all models. Thus,
+despite improvements in general-purpose clinical text summarization, LLMs still struggle to reason
+about what information in sparse clinical text would best inform actions within a real-world workflow.
+Table 4: Performance of baseline LLMs in treatment planning: (Average cTAKES CUI Overlap Ratio)
+
+Model
+LLaMA 3.2
+GPT-3.5
+GPT-4o
+o3-mini
+
+Rule-out Reasoning
+
+Medical Decision Factors
+
+Treatment Planning
+
+27.68
+39.60
+38.76
+41.56
+
+31.32
+46.34
+46.01
+54.71
+
+32.04
+39.83
+39.80
+44.98
+
+Table 5: Physician Rating of Mean Hallucination Severity and Clinical Utility Scores for 20 GPT-4o Rationales
+
+Category
+Hallucination Severity
+Clinical Utility
+
+Rule-out Reasoning
+
+Medical Factors
+
+Treatment Planning
+
+1.9 ± 0.98
+4 ± 0.86
+
+1.1 ± 0.22
+4.1 ± 0.72
+
+1.3 ± 0.47
+4.1 ± 1.19
+
+Task 3: Treatment planning. Evaluation of the baseline LLMs across the three dimensions of clinical reasoning (diagnostic rule-out reasoning, identification of medical decision factors, and treatment
+planning) show the highest agreement with physicians in the domain of medical decision factors.
+However, overall agreement rates remained modest. These results suggest that while LLMs are
+relatively effective at recommending appropriate laboratory tests to support the exclusion of differential diagnoses during an ER visit, their broader clinical reasoning capabilities remain limited. The
+key barrier to strong performance on this task is likely the need to integrate large volumes of often
+incomplete and sparse clinical notes, while simultaneously anticipating the necessary diagnostic
+steps—such as laboratory tests, imaging, or other workups—to confirm or rule out these possibilities.
+This process requires not only factual recall (which LLMs excel at), but also clinical inference and
+prioritization, all of which seem to present significant challenges for the baseline models.
+Figure 3 presents a comparison between the reasoning outputs from GPT-4o and an annotated example
+of clinical reasoning by an ER physician for a patient presenting with syncope. We observe substantial
+8
+
+overlap in disease entities (red) and in references to diagnostic procedures and laboratory tests (blue),
+which suggests that GPT-4o closely mirrors physician reasoning in narrowing differential diagnoses
+and recommending appropriate workups. However, the model fails to incorporate any patient
+symptoms (green), which are critical anchors in clinical diagnostic reasoning. Notably, neither the ER
+physician nor GPT-4o were provided with the patient’s presenting symptoms at the time of differential
+diagnosis. Nonetheless, the model’s omission of symptom references highlights a limitation in its
+ability to emulate the symptom-driven nature of human clinical reasoning.
+Despite the gaps in the clinical reasoning process by LLMs, expert evaluators still found their outputs
+to have meaningful clinical utility. Table 5 shows the results of expert evaluations by a single boardcertified ER physician of GPT-4o-generated rationales across the three clinical reasoning domains.
+The physician reviewed 20 clinical cases and rated hallucination severity and clinical utility on a
+scale of 1-5 to provide expert judgment on the clinical validity of the reasoning processes of LLMs.
+Hallucination severity was defined as the degree to which an LLM generates factually incorrect or
+fabricated clinical content, with a score of 5 represent most severe hallucinations. Clinical utility is
+defined as the extent to which LLM outputs contribute meaningfully to clinical decisions from the
+perspective of an ER physician, with a score of 5 corresponding to most clinically useful outputs.
+Hallucination severity was low across all three categories, indicating that the model typically did
+not produce factually incorrect or fabricated content. Hallucination severity was slightly higher in
+the rule-out reasoning category, potentially because models were compelled to draw inferences on
+undocumented clinical information to rule out diagnoses. Crucially, the LLM outputs were consistently rated as highly clinically useful across all categories, with mean utility scores above 4.0. This
+indicates that, even when minor hallucinations were present, the rationales remained actionable and
+aligned with clinical expectations. The utility of GPT-4o responses supports its potential usefulness
+for real-time augmentation of decision-making in emergency care settings. The results in Tables 4
+and 5 indicate the potential of LLMs as valuable decision support tools for ER physicians, especially
+when integrated with appropriate human oversight identify and address their reasoning gaps.
+
+Table 6: LLM performance on final diagnosis
+
+Model
+LLaMA 3.2
+GPT-3.5
+GPT-4o
+o3-mini
+
+ICD-10 Match
+
+HCC Match
+
+2.66
+25.16
+29.44
+34.40
+
+73.44
+81.08
+79.44
+81.08
+
+Table 7: LLM performance on final disposition
+
+Model
+LLaMA 3.2
+GPT-3.5
+GPT-4o
+o3-mini
+
+Accuracy (%)
+42.44
+57.08
+59.04
+63.08
+
+Tasks 4 & 5: Final diagnosis and disposition. Table 6 presents model performance on the final
+diagnosis task, evaluated by exact ICD-10 code matches and broader Hierarchical Condition Category
+(HCC) matches. Notably, o3-mini achieved the highest ICD-10 code match accuracy (34.40%),
+surpassing LLaMA 3.2, GPT-3.5, and GPT-4o. Across models, HCC category match rates were
+substantially higher, hovering around 80%, reflecting models’ ability to reason correctly at a clinically
+meaningful categorical level despite variability in exact diagnostic coding. Physicians frequently
+document diagnoses as free-text or select from a standardized list of CMS codes, often introducing
+subtle lexical differences (e.g, “sepsis” vs. “acute sepsis”) that do not reflect clinical disagreement.
+Therefore, the HCC grouping metric mitigates this issue by aggregating related diagnoses into broader,
+clinically relevant categories, to enable more robust evaluation of diagnostic fidelity.
+As seen in Table 7, o3-mini demonstrates superior performance in predicting patient disposition,
+outperforming LLaMA 3.2, GPT-3.5, and GPT-4o. o3-mini predicts discharge in about 15% of cases,
+substantially underestimating the true discharge rate of 37%. Conversely, the model overestimates
+admissions by approximately 37%. This skew toward admitting patients suggests a risk-averse
+strategy that, although potentially reducing the chance of missing critical cases, could contribute to
+unnecessary hospitalizations, increasing healthcare costs, and resource utilization. The imbalance
+indicates the model tends to favor safety at the expense of specificity, mirroring its tendency in
+ER acuity classification to compress categories toward a mid- to high-risk default. These results
+underscore that despite strong reasoning capabilities, such models require careful calibration and
+integration with clinical workflows to mitigate the consequences of systematic prediction biases.
+9
+
+5
+
+Conclusion & Limitations
+
+Much of the existing benchmarking for clinical LLMs relies on either toy datasets derived from
+medical licensing exams or curated real-world data with stylized and narrowly scoped tasks. These
+approaches to model evaluation often fail to reflect the realities of clinical practice, where decisionmaking occurs under conditions of incomplete, unstructured, and sparse information, and where
+clinicians make a series of interdependent decisions informed by evolving patient data within complex
+workflows. ER-R EASON is one of the first benchmarks to model multiple stages of the emergency care
+workflow, and introduces realistic tasks that closely mirror the types of decisions ER physicians make
+in real-world settings, as well physician-authored rationales for these decisions. Nonetheless, a key
+limitation of ER-R EASON is that it does not yet account for hospital-level contextual factors—such
+as bed availability, staffing constraints, and institutional protocols—which can significantly influence
+decisions such as triage prioritization and patient disposition.
+
+Acknowledgements
+We would like to thank Albert Lee, Research Solutions Lead Specialist at UCSF, for his invaluable
+technical support and assistance with the clinical notes database. We would also like to thank the
+physician participants for their time and contributions. This work was supported in part by a Marcus
+Program in Precision Medicine award from the George and Judy Marcus Innovation Fund.
+
+Code and Data Availability
+The ER-Reason benchmark dataset and code to reproduce our experiments are available at https:
+//github.com/AlaaLab/ER-Reason.
+
+References
+[1] Karan Singhal, Shekoofeh Azizi, Tao Tu, S Sara Mahdavi, Jason Wei, Hyung Won Chung,
+Nathan Scales, Ajay Tanwani, Heather Cole-Lewis, Stephen Pfohl, et al. Large language models
+encode clinical knowledge. Nature, 620(7972):172–180, 2023.
+[2] Tao Tu, Anil Palepu, Mike Schaekermann, Khaled Saab, Jan Freyberg, Ryutaro Tanno, Amy
+Wang, Brenna Li, Mohamed Amin, Nenad Tomasev, et al. Towards conversational diagnostic ai.
+arXiv preprint arXiv:2401.05654, 2024.
+[3] Zahir Kanjee, Byron Crowe, and Adam Rodman. Accuracy of a generative artificial intelligence
+model in a complex diagnostic challenge. Jama, 330(1):78–80, 2023.
+[4] Daniel McDuff, Mike Schaekermann, Tao Tu, Anil Palepu, Amy Wang, Jake Garrison, Karan
+Singhal, Yash Sharma, Shekoofeh Azizi, Kavita Kulkarni, et al. Towards accurate differential
+diagnosis with large language models. Nature, pages 1–7, 2025.
+[5] Anil Palepu, Valentin Liévin, Wei-Hung Weng, Khaled Saab, David Stutz, Yong Cheng, Kavita
+Kulkarni, S Sara Mahdavi, Joëlle Barral, Dale R Webster, et al. Towards conversational ai for
+disease management. arXiv preprint arXiv:2503.06074, 2025.
+[6] Di Jin, Eileen Pan, Nassim Oufattole, Wei-Hung Weng, Hanyi Fang, and Peter Szolovits. What
+disease does this patient have? a large-scale open domain question answering dataset from
+medical exams. Applied Sciences, 11(14):6421, 2021.
+[7] Inioluwa Deborah Raji, Roxana Daneshjou, and Emily Alsentzer. It’s time to bench the medical
+exam benchmark, 2025.
+[8] Ahmed Alaa, Thomas Hartvigsen, Niloufar Golchini, Shiladitya Dutta, Frances Dean, Inioluwa Deborah Raji, and Travis Zack. Medical large language model benchmarks should
+prioritize construct validity. arXiv preprint arXiv:2503.10694, 2025.
+[9] Percy Liang, Rishi Bommasani, Tony Lee, Dimitris Tsipras, Dilara Soylu, Michihiro Yasunaga,
+Yian Zhang, Deepak Narayanan, Yuhuai Wu, Ananya Kumar, et al. Holistic evaluation of
+language models. Transactions on Machine Learning Research.
+10
+
+[10] Michael Wornow, Rahul Thapa, Ethan Steinberg, Jason Fries, and Nigam Shah. Ehrshot: An
+ehr benchmark for few-shot evaluation of foundation models. Advances in Neural Information
+Processing Systems, 36:67125–67137, 2023.
+[11] Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Ruoyu Zhang, Runxin Xu, Qihao Zhu,
+Shirong Ma, Peiyi Wang, Xiao Bi, et al. Deepseek-r1: Incentivizing reasoning capability in
+llms via reinforcement learning. arXiv preprint arXiv:2501.12948, 2025.
+[12] Tianyang Zhong, Zhengliang Liu, Yi Pan, Yutong Zhang, Yifan Zhou, Shizhe Liang, Zihao
+Wu, Yanjun Lyu, Peng Shu, Xiaowei Yu, et al. Evaluation of openai o1: Opportunities and
+challenges of agi. arXiv preprint arXiv:2409.18486, 2024.
+[13] Gianluca Mondillo, Mariapia Masino, Simone Colosimo, Alessandra Perrotta, and Vittoria
+Frattolillo. Evaluating ai reasoning models in pediatric medicine: A comparative analysis of
+o3-mini and o3-mini-high. medRxiv, pages 2025–02, 2025.
+[14] Hemal K Kanzaria, Robert H Brook, Marc A Probst, Dustin Harris, Sandra H Berry, and
+Jerome R Hoffman. Emergency physician perceptions of shared decision-making. Academic
+emergency medicine, 22(4):399–405, 2015.
+[15] Pat Croskerry. A universal model of diagnostic reasoning. Academic medicine, 84(8):1022–1028,
+2009.
+[16] Arthur L Kellermann, Renee Y Hsia, Charlotte Yeh, and Kristine G Morganti. Emergency care:
+then, now, and next. Health affairs, 32(12):2069–2074, 2013.
+[17] Robert G Hill Jr, Lynn Marie Sears, and Scott W Melanson. 4000 clicks: a productivity analysis
+of electronic medical records in a community hospital ed. The American journal of emergency
+medicine, 31(11):1591–1594, 2013.
+[18] Larry D Gruppen. Clinical reasoning: defining it, teaching it, assessing it, studying it. Western
+Journal of Emergency Medicine, 18(1):4, 2016.
+[19] Qiao Jin, Bhuwan Dhingra, Zhengping Liu, William W Cohen, and Xinghua Lu. Pubmedqa: A
+dataset for biomedical research question answering. arXiv preprint arXiv:1909.06146, 2019.
+[20] Bowen Wang, Jiuyang Chang, Yiming Qian, Guoxin Chen, Junhao Chen, Zhouqiang Jiang,
+Jiahao Zhang, Yuta Nakashima, and Hajime Nagahara. Direct: Diagnostic reasoning for clinical
+notes via large language models. arXiv preprint arXiv:2408.01933, 2024.
+[21] Feng Xie, Jun Zhou, Jin Wee Lee, Mingrui Tan, Siqi Li, Logasan S/O Rajnthern, Marcel Lucas
+Chee, Bibhas Chakraborty, An-Kwok Ian Wong, Alon Dagan, et al. Benchmarking emergency
+department prediction models with machine learning and public electronic health records.
+Scientific Data, 9(1):658, 2022.
+[22] Emma Chen, Aman Kansal, Julie Chen, Boyang Tom Jin, Julia Reisler, David E Kim, and Pranav
+Rajpurkar. Multimodal clinical benchmark for emergency care (mc-bec): A comprehensive
+benchmark for evaluating foundation models in emergency medicine. Advances in Neural
+Information Processing Systems, 36:45794–45811, 2023.
+[23] Yanjun Gao, Dmitriy Dligach, Timothy Miller, John Caskey, Brihat Sharma, Matthew M
+Churpek, and Majid Afshar. Dr. bench: Diagnostic reasoning benchmark for clinical natural
+language processing. Journal of biomedical informatics, 138:104286, 2023.
+[24] Yèche Hugo, Kuznetsova Rita, Zimmermann Marc, Hüser Matthias, Lyu Xinrui, Faltys Martin,
+and Rätsch Gunnar. Hiridicu-benchmark–a comprehensive machine learning benchmark on
+high-resolution icu data. arXiv preprint arXiv:2111.08536, 2021.
+[25] Yanjun Gao, Dmitriy Dligach, Timothy Miller, Matthew M Churpek, and Majid Afshar.
+Overview of the problem list summarization (probsum) 2023 shared task on summarizing
+patients’ active diagnoses and problems from electronic health record progress notes. In Proceedings of the conference. Association for Computational Linguistics. Meeting, volume 2023,
+page 461, 2023.
+11
+
+[26] Scott L Fleming, Alejandro Lozano, William J Haberkorn, Jenelle A Jindal, Eduardo Reis,
+Rahul Thapa, Louis Blankemeier, Julian Z Genkins, Ethan Steinberg, Ashwin Nayak, et al.
+Medalign: A clinician-generated dataset for instruction following with electronic medical
+records. In Proceedings of the AAAI Conference on Artificial Intelligence, volume 38, pages
+22021–22030, 2024.
+[27] Alistair EW Johnson, Tom J Pollard, Lu Shen, Li-wei H Lehman, Mengling Feng, Mohammad
+Ghassemi, Benjamin Moody, Peter Szolovits, Leo Anthony Celi, and Roger G Mark. Mimic-iii,
+a freely accessible critical care database. Scientific data, 3(1):1–9, 2016.
+[28] Alistair EW Johnson, Lucas Bulgarelli, Lu Shen, Alvin Gayles, Ayad Shammout, Steven Horng,
+Tom J Pollard, Sicheng Hao, Benjamin Moody, Brian Gow, et al. Mimic-iv, a freely accessible
+electronic health record dataset. Scientific data, 10(1):1, 2023.
+[29] Tom J Pollard, Alistair EW Johnson, Jesse D Raffa, Leo A Celi, Roger G Mark, and Omar
+Badawi. The eicu collaborative research database, a freely available multi-center database for
+critical care research. Scientific data, 5(1):1–13, 2018.
+[30] Guergana K Savova, James J Masanz, Philip V Ogren, Jiaping Zheng, Sunghwan Sohn, Karin C
+Kipper-Schuler, and Christopher G Chute. Mayo clinical text analysis and knowledge extraction
+system (ctakes): architecture, component evaluation and applications. Journal of the American
+Medical Informatics Association, 17(5):507–513, 2010.
+[31] Aaron Hurst, Adam Lerer, Adam P Goucher, Adam Perelman, Aditya Ramesh, Aidan Clark,
+AJ Ostrow, Akila Welihinda, Alan Hayes, Alec Radford, et al. Gpt-4o system card. arXiv
+preprint arXiv:2410.21276, 2024.
+[32] Marthe Ballon, Andres Algaba, and Vincent Ginis. The relationship between reasoning and
+performance in large language models–o3 (mini) thinks harder, not longer. arXiv preprint
+arXiv:2502.15631, 2025.
+[33] Dave Van Veen, Cara Van Uden, Louis Blankemeier, Jean-Benoit Delbrouck, Asad Aali, Christian Bluethgen, Anuj Pareek, Malgorzata Polacin, Eduardo Pontes Reis, Anna Seehofnerová,
+et al. Adapted large language models can outperform medical experts in clinical text summarization. Nature Medicine, pages 1–9, 2024.
+
+A
+
+Appendix
+
+Supplementary Materials: Input Prompts for ER-REASON Tasks
+Task 1: Acuity Assessment Prompt
+
+Table 8: Acuity Assessment Prompt
+Predict the emergency department acuity level for this patient.
+Chief Complaint: {row[’primarychiefcomplaintname’]}
+Age: {row[’age’]}
+Sex: {row[’sex’]}
+Race: {row[’firstrace’]}
+Vital Signs: {vital_signs}
+Select the most appropriate acuity level from the following options ONLY:
+’Immediate’, ’Emergent’, ’Urgent’, ’Less Urgent’, ’Non-Urgent’
+Respond with ONLY ONE of these five options.
+
+12
+
+Task 2: EHR Review / One-Liner Summary
+
+Table 9: EHR Review Prompt
+System: You are an experienced emergency department (ED) physician creating a one-liner for a NEW patient who has just arrived at the
+ED. The patient’s past medical records are available to you. Your task is to summarize the patient’s relevant PAST medical history and end
+with their CURRENT chief complaint that is given with no adjectives about the chief complaint as you can NOT assume anything about
+their current condition. All notes and medical records provided are from PAST encounters, not the current visit.
+User: Create a concise one-liner summary for a patient who has just arrived at the Emergency Department. The one-liner must:
+1. Start with demographic information (age, sex). Example of a one liner: 80 y.o. old male, with h/o of HFpEF (EF 55-60% 05/20/22),
+HTN, HLD, and bipolar disorder presenting with shortness of breath.
+2. Include a concise summary of relevant PAST medical history from previous visits/notes
+3. End with just CURRENT presenting chief complaint that is not capitalized in the summary and does have additional information
+regarding the chief complaint: ’{chief_complaint}’
+IMPORTANT: Everything in the notes is from PAST encounters. The patient is NOW presenting with a NEW complaint:
+’{chief_complaint}’.
+Age: {age}
+Sex: {sex}
+PAST Medical Records: {discharge_summary}
+
+Tasks 3 & 4: Clinical Reasoning and Treatment Planning
+Common System Message
+
+Table 10: Clinical Reasoning System Message
+You are an experienced Emergency Department (ED) physician tasked with creating a comprehensive assessment and plan for patients.
+Based on the available clinical information, you will provide: 1) A differential diagnosis list, 2) Medical decision factors including necessary
+exams/imaging to rule out diagnoses, and 3) A treatment plan including disposition and recommendations. Answer these questions:
+
+Differential Diagnosis Prompt
+
+Table 11: Differential Diagnosis Prompt
+System: [Common System Message] + DIFFERENTIAL QUESTION: What are your initial differential diagnoses based on the past
+medical history (PREVIOUS HOSPITAL ENCOUNTER) and the chief complaint (CURRENT CHIEF COMPLAINT – THIS IS THE
+TREATMENT FOCUS), and why? Please also address which diagnoses are lowest on your differential and why.
+User: Based on the patient’s chief complaint, age, sex, and available clinical information, provide:
+DIFFERENTIAL DIAGNOSIS: List of differential diagnoses to consider for the CURRENT chief complaint given clinically relevant
+information such as the PAST medical notes.
+IMPORTANT: Everything in the notes is from PAST encounters. The patient is NOW presenting with a NEW complaint: Chief Complaint:
+{chief_complaint}
+Age: {age}
+Sex: {sex}
+Patient One-liner Summary: {one_liner}
+REMINDER: All of these notes are from the PREVIOUS hospital encounter for this patient. This should only give you context for their
+current complaint: {notes_content}
+
+Medical Decision Factors Prompt
+
+Table 12: Medical Decision Factors Prompt
+System: [Common System Message] + DECISION FACTORS: What additional information or studies would you want in order to help
+narrow your differential diagnoses? How would you weigh their relative importance?
+User: Based on the patient’s chief complaint, age, sex, and available clinical information, provide:
+MEDICAL DECISION FACTORS: List what important additional information you’d like to know on history, what important exam findings
+you’d assess for, and what imaging/tests you would do, in addition to any formal consultations you’d made with specialists – this should be
+items that would be necessary to rule out diagnoses on the differential list for the CURRENT chief complaint. NOTE: NOTHING has
+currently been performed.
+IMPORTANT: Everything in the notes is from PAST encounters. The patient is NOW presenting with a NEW complaint: Chief Complaint:
+{chief_complaint}
+Age: {age}
+Sex: {sex}
+Patient One-liner Summary: {one_liner}
+REMINDER: All of these notes are from the PREVIOUS hospital encounter for this patient. This should only give you context for their
+current complaint: {notes_content}
+
+13
+
+Treatment Plan Prompt
+Table 13: Treatment Plan Prompt
+System: [Common System Message] + TREATMENT PLAN: Given the additional history and physical exam provided in the ED provider
+note, which additional diagnostic tests would you like to order and what is your recommended initial treatment plan?
+User: Based on the patient’s chief complaint, age, sex, and available clinical information, provide:
+TREATMENT PLAN: Given the current history and physical provided in the ED note, what do you think is the most likely diagnosis and
+what is your recommended treatment plan? If you do not have enough information to conclude a final diagnosis, describe what information
+you still need. Include disposition (discharge, admit, ICU, etc.) and treatment recommendations for the patient given the history and
+physical exam in the current ER visit.
+IMPORTANT: Everything in the notes is from PAST encounters. The patient is NOW presenting with a NEW complaint: Chief Complaint:
+{chief_complaint}
+Age: {age}
+Sex: {sex}
+Patient One-liner Summary: {one_liner}
+REMINDER: All of these notes are from the PREVIOUS hospital encounter for this patient. This should only give you context for their
+current complaint: {notes_content}
+
+Task 5a: Final Diagnosis Prediction
+Table 14: Diagnosis Prompt
+System: You are an experienced Emergency Department (ED) physician tasked with predicting the most likely diagnosis for a patient based
+on their presentation, chief complaint, and available medical information.
+User: Based on the patient’s chief complaint, age, sex, and available clinical information, predict the most likely ED diagnosis. Provide a
+single diagnosis for the CURRENT ED Visit from the standardized CMS codes without explanation but with the word, not the code.
+Chief Complaint: {chief_complaint}
+Age: {age}
+Sex: {sex}
+Current ED Presentation: {presentation}
+{notes_content}
+
+Task 5b: Final Disposition Prediction
+Table 15: Disposition Prompt
+System: You are an experienced Emergency Department (ED) physician tasked with predicting the most likely disposition for a patient
+based on their presentation and physical, chief complaint, and available past medical information.
+User: Based on the patient’s chief complaint, age, sex, and available clinical information, predict the most likely ED disposition from the
+following choices: ’Discharge’, ’Admit’, ’Eloped’, ’Transfer to Another Facility’, ’AMA’, ’OR Admit’, ’LWBS after Triage’, ’Send to
+L&D’, ’Expired’, ’Dismissed - Never Arrived’, ’Observation’, ’None’ – ONLY RESPOND WITH THESE OPTIONS, no explanations.
+Chief Complaint: {chief_complaint}
+Age: {age}
+Sex: {sex}
+Current ED Presentation: {presentation}
+{notes_content}
+
+Note Selection Prompt (Used Across Tasks 3–5)
+Table 16: Note Selection Subprompt
+System: You are an experienced Emergency Department (ED) physician. Your task is to decide which medical notes you need to read to
+predict the patient’s ED disposition based on the chief complaint, PMH, physical exam findings, age, and sex.
+User: Patient basic info: {age}yo {sex} with chief complaint: {chief_complaint}
+Available notes (respond ONLY with the names of notes you want to see, separated by commas):
+- Discharge Summary: {Available/Not available} - Progress Notes: {Available/Not available} - H&P: {Available/Not available} - Echo:
+{Available/Not available} - Imaging: {Available/Not available} - Consult: {Available/Not available} - ECG: {Available/Not available}
+Based on the chief complaint, list ONLY the note types you need to review (comma-separated, no explanation). Always include Discharge
+Summary if available.
+
+Model Settings
+• Temperature Settings: All OpenAI models used a temperature 0.1; LLaMA used a temperature 0.5.
+• Reasoning Setup: For Diagnosis, Disposition, and Rationale prompts, the model was
+prompted to reason and select its own materials for medical history through the note
+selection prompt.
+14
+
+

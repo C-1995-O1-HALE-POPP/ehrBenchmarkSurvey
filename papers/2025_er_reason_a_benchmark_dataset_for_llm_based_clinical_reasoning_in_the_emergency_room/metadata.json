@@ -1,0 +1,12 @@
+{
+  "paper_key": "2025_er_reason_a_benchmark_dataset_for_llm_based_clinical_reasoning_in_the_emergency_room",
+  "title": "ER-REASON: A Benchmark Dataset for LLM-Based Clinical Reasoning in the Emergency Room",
+  "year": 2025,
+  "paper_url": "https://arxiv.org/abs/2505.22919",
+  "pdf_url": "https://arxiv.org/pdf/2505.22919.pdf",
+  "input_url": "https://arxiv.org/abs/2505.22919",
+  "summary_path": "/home/cometp/ehrBenchmarkSurvey/summaries/2025_er_reason_a_benchmark_dataset_for_llm_based_clinical_reasoning_in_the_emergency_room_benchmark_summary.md",
+  "pdf_path": "/home/cometp/ehrBenchmarkSurvey/papers/2025_er_reason_a_benchmark_dataset_for_llm_based_clinical_reasoning_in_the_emergency_room/source.pdf",
+  "text_path": "/home/cometp/ehrBenchmarkSurvey/papers/2025_er_reason_a_benchmark_dataset_for_llm_based_clinical_reasoning_in_the_emergency_room/source.txt",
+  "created_on": "2026-05-11T20:49:50"
+}

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reports/deduped_benchmark_tasks_list.md",
+                "file": "NEXT_STEPS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "deduped_benchmark_tasks_list"
+              "title": "NEXT_STEPS"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "dad9ec887002884e",
   "lastOpenFiles": [
+    "reports/deduped_benchmark_tasks_list.md",
     "agent_workflows/ehr-benchmark-survey-agent/SKILL.md",
     "scripts/__pycache__/ehr_benchmark_pipeline.cpython-312.pyc",
     "scripts/__pycache__",
@@ -206,7 +207,6 @@
     "papers/2021_hirid_icu_benchmark_a_comprehensive_machine_learning_benchmark_on_high_resolution_icu_data",
     "papers/2018_emrqa_a_large_corpus_for_question_answering_on_electronic_medical_records",
     "reports/benchmark_taxonomy.md",
-    "reports/deduped_benchmark_tasks_list.md",
     "reports/example_search_audit_2026-04-15.md",
     "summaries/2023_ehrsql_a_practical_text_to_sql_benchmark_for_electronic_health_records_benchmark_summary.md",
     "summaries/2019_text_to_sql_generation_for_question_answering_on_electronic_medical_records_benchmark_summary.md",
